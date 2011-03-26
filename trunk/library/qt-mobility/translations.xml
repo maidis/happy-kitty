@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>qt-mobility</Name>
+        <Summary xml:lang="tr">Qt taşınabilir aygıt UPAları</Summary>
+        <Description xml:lang="tr">Qt Mobility, Qt geliştiricilerine uygulamalarında taşınabilir aygıt fonksiyonelliğini kullanmalarına imakan verir.</Description>
+    </Source>
+</PISI>
