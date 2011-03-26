@@ -116,6 +116,73 @@
             </Update>
         </History>
     </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>qt-mobility</Name>
+            <Homepage>http://qt.nokia.com/products/qt-addons/mobility</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>LGPLv2.1</License>
+            <License>FDL-1.2</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">Qt APIs for mobile devices</Summary>
+            <Summary xml:lang="tr">Qt taşınabilir aygıt UPAları</Summary>
+            <Description xml:lang="en">Qt Mobility enables Qt developers to include standard mobile functionality in their applications, but also provide useful application functionality across desktop platforms.</Description>
+            <Description xml:lang="tr">Qt Mobility, Qt geliştiricilerine uygulamalarında taşınabilir aygıt fonksiyonelliğini kullanmalarına imakan verir.</Description>
+            <Archive type="targz" sha1sum="8fba3540f09e56a9efd24c799fb1d07c9d953f2a">http://get.qt.nokia.com/qt/add-ons/qt-mobility-opensource-src-1.1.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>alsa-lib-devel</Dependency>
+                <Dependency>bluez-libs-devel</Dependency>
+                <Dependency>qt-devel</Dependency>
+                <Dependency>qt-sql-sqlite</Dependency>
+                <Dependency>gstreamer-devel</Dependency>
+                <Dependency>gst-plugins-base-devel</Dependency>
+                <Dependency>libX11-devel</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>libXrandr-devel</Dependency>
+                <Dependency>libXv-devel</Dependency>
+                <Dependency>perl</Dependency>
+                <Dependency>pulseaudio-libs-devel</Dependency>
+                <Dependency>kernel-headers</Dependency>
+            </BuildDependencies>
+            <SourceURI>library/qt-mobility/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>qt-mobility</Name>
+            <RuntimeDependencies>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>bluez-libs</Dependency>
+                <Dependency>qt</Dependency>
+                <Dependency>qt-sql-sqlite</Dependency>
+                <Dependency>gstreamer</Dependency>
+                <Dependency>gst-plugins-base</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXv</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>pulseaudio-libs</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/share/qt4</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-03-26</Date>
+                <Version>1.1.1</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
     <Component>
         <Name>library</Name>
         <LocalName xml:lang="en">FIXME</LocalName>
