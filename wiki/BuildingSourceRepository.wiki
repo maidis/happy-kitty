@@ -1,4 +1,5 @@
 #summary Build a source repository for Pardus
+#labels devel
 
 = Introduction =
 
@@ -34,7 +35,7 @@ game/action/component.xml:
 
 }}}
 
-  * Create a components.xml file which contains all components and components related informations in root director of repository.
+  * Create a components.xml file which contains all components and components related informations in root directory of repository.
 {{{
 <PISI>
     <Components>
@@ -87,7 +88,7 @@ game/action/component.xml:
 </PISI>
 }}}
 
-  * Create a distribution.xml in root director of repository.
+  * Create a distribution.xml in root directory of repository.
 {{{
 <PISI>
     <SourceName>Pardus</SourceName>
@@ -110,7 +111,7 @@ game/action/component.xml:
 </PISI>
 }}}
 
-  * Run pisi index command in root director of repository.
+  * Run pisi index command in root directory of repository.
 {{{
 $ pisi index --skip-signing
 * Building index of PiSi files under .
@@ -126,3 +127,7 @@ pisi-index.xml  pisi-index.xml.sha1sum  pisi-index.xml.xz  pisi-index.xml.xz.sha
 }}}
 
 That's all. Realy? Yes :)
+
+= References =
+  * [http://tr.pardus-wiki.org/NASIL:Paket_deposu_haz%C4%B1rlamak Paket deposu hazırlamak (Turkish)]
+  * [http://developer.pardus.org.tr/guides/releasing/repository_concepts/index.html Repository Concepts]
