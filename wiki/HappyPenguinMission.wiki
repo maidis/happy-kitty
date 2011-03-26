@@ -1,0 +1,16 @@
+#summary Be part of Happy Penguin Mission
+
+= About The Linux Game Tome =
+
+[http://www.happypenguin.org/ The Linux Game Tome] is a website which provides a comprehensive list of games for Linux. The site was started by Tessa Lau in 1995. She collected games from SunSITE's Linux games directories, and classic X11 games - for a database of just over 100 games. In 1998 maintenance was taken over by Bob Zimbinski who has run the site since that time. The database now contains well over 2,000 games and game-related items and also now includes a user rating system, active discussion forums, and an IRC channel.
+
+  * [http://en.wikipedia.org/wiki/The_Linux_Game_Tome Wikipedia - The Linux Game Tome]
+  * [http://www.happypenguin.org/about/ The Linux Game Tome - About]
+
+= About Happy Penguin Mission =
+
+The Linux Game Tome contains 2689 games and game related stuffs. Some of them are very old, not supported and not possible make packages for them :( But still hundreds of game waiting us. Our mission is making packages for these games :)
+
+= Details =
+
+...
