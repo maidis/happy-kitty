@@ -1,0 +1,19 @@
+<PISI>
+    <SourceName>Pardus</SourceName>
+    <Version>2011</Version>
+    <Description xml:lang="tr">Happy Kitty Deposu</Description>
+    <Description xml:lang="en">Happy Kitty Repository</Description>
+    <Type>Extra</Type>
+    <BinaryName>Pardus</BinaryName>
+    <Obsoletes>
+        <!-- Dropped packages -->
+
+
+        <!--
+            ************************************************************
+            not gone to binary stable yet, please don't remove this mark
+            ************************************************************
+        -->
+
+    </Obsoletes>
+</PISI>
