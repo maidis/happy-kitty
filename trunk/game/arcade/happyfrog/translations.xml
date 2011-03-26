@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>happyfrog</Name>
+        <Summary xml:lang="tr">Qt ve Box2D temelli eğlenceli bir oyun</Summary>
+        <Description xml:lang="tr">HappyFrog, Angry Birds benzeri, Qt ve Box2D temelli eğlenceli bir oyundur.</Description>
+    </Source>
+</PISI>
