@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>box2d</Name>
+        <Homepage>http://www.box2d.org</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>ZLIB</License>
+        <IsA>library</IsA>
+        <Summary>2D rigid body simulation library</Summary>
+        <Description>Box2D is a 2D rigid body simulation library for games.</Description>
+        <Archive sha1sum="b1f09f38fc130ae6c17e1767747a3a82bf8e517f" type="zip">http://box2d.googlecode.com/files/Box2D_v2.1.2.zip</Archive>
+        <BuildDependencies>
+            <Dependency>freeglut-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>box2d</Name>
+        <RuntimeDependencies>
+            <Dependency>freeglut</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/Box2D</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-09-12</Date>
+            <Version>2.1.2</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
