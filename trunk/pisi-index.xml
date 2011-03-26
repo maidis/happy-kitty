@@ -9,6 +9,52 @@
     </Distribution>
     <SpecFile>
         <Source>
+            <Name>happyfrog</Name>
+            <Homepage>http://code.google.com/p/happyfrog</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>LGPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A funny game based on Qt and Box2D</Summary>
+            <Summary xml:lang="tr">Qt ve Box2D temelli eğlenceli bir oyun</Summary>
+            <Description xml:lang="en">HappyFrog is a funny, Angry Birds similar game which is based on Qt and Box2D.</Description>
+            <Description xml:lang="tr">HappyFrog, Angry Birds benzeri, Qt ve Box2D temelli eğlenceli bir oyundur.</Description>
+            <Icon>HappyFrog</Icon>
+            <Archive type="tarbz2" sha1sum="7f4dadc3806b547a1f458d64173882492f2391a6">http://happyfrog.googlecode.com/files/HappyFrog.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>box2d</Dependency>
+                <Dependency>qt-mobility</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">happyfrog-0.0.1-make.diff</Patch>
+            </Patches>
+            <SourceURI>game/arcade/happyfrog/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>happyfrog</Name>
+            <RuntimeDependencies>
+                <Dependency>box2d</Dependency>
+                <Dependency>qt-mobility</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="all">/</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-03-26</Date>
+                <Version>0.0.1</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>airstrike</Name>
             <Homepage>http://icculus.org/airstrike</Homepage>
             <Packager>
