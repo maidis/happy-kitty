@@ -73,6 +73,49 @@
             </Update>
         </History>
     </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>box2d</Name>
+            <Homepage>http://www.box2d.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>ZLIB</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">2D rigid body simulation library</Summary>
+            <Summary xml:lang="tr">2B katı cisin simülasyon kütüphanesi</Summary>
+            <Description xml:lang="en">Box2D is a 2D rigid body simulation library for games.</Description>
+            <Description xml:lang="tr">Box2D, oyunlar için bir 2B katı cisin simülasyon kütüphanesidir.</Description>
+            <Archive type="zip" sha1sum="b1f09f38fc130ae6c17e1767747a3a82bf8e517f">http://box2d.googlecode.com/files/Box2D_v2.1.2.zip</Archive>
+            <BuildDependencies>
+                <Dependency>freeglut-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>library/box2d/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>box2d</Name>
+            <RuntimeDependencies>
+                <Dependency>freeglut</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/Box2D</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-09-12</Date>
+                <Version>2.1.2</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
     <Component>
         <Name>library</Name>
         <LocalName xml:lang="en">FIXME</LocalName>
