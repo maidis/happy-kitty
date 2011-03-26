@@ -12,7 +12,7 @@ This document shows how to use a source repository at Pardus.
 $ sudo pisi ar happy-kitty http://happy-kitty.googlecode.com/svn/trunk/pisi-index.xml.xz
 Repo happy-kitty added to system.
 Updating repository: happy-kitty
-pisi-index.xml.xz.sha1sum      (40.0  B)100%    157.54 KB/s [00:00:00] [complete]                                     
+pisi-index.xml.xz.sha1sum      (40.0  B)100%    157.54 KB/s [00:00:00] [complete]
 pisi-index.xml.xz              (1.0 KB)100%      4.70 MB/s [00:00:00] [complete]
 No signature found for http://happy-kitty.googlecode.com/svn/trunk/pisi-index.xml.xz
 * Package database updated. 
@@ -24,7 +24,7 @@ $ sudo pisi em airstrike
 Outputting binary packages in the package cache.
 The following list of packages will be built and
 installed in the respective order to satisfy dependencies:
-airstrike 
+airstrike
 pspec.xml                      (2.0 KB)100%      8.54 MB/s [00:00:00] [complete]
 actions.py                     (548.0  B)100%      2.20 MB/s [00:00:00] [complete]
 Safety switch: system.devel is already installed
@@ -41,37 +41,37 @@ system-flags.diff              (617.0  B)100%      2.38 MB/s [00:00:00] [complet
 airstrike.desktop              (313.0  B)100%    952.49 KB/s [00:00:00] [complete]
 airstrike.png                  (43.0 KB)100%      3.89 MB/s [00:00:00] [complete]
 Building source package: airstrike
-Safety switch: system.devel is already installed                                                                      
+Safety switch: system.devel is already installed
 PartOf tag not defined, looking for component
 component.xml                  (44.0  B)100%    172.63 KB/s [00:00:00] [complete]
 Source is part of game.arcade component
 airstrike-pre6a-src.tar.gz [cached]
 Unpacking archive(s)...
-* Applying patch: airstrikerc.diff                                                                                    
-* Applying patch: fix-buffer-overflow.diff                                                                            
-* Applying patch: fix_paths.diff                                                                                      
-* Applying patch: fix-red-baron-has-unlimited-bombs.diff                                                              
-* Applying patch: fix-segfault-on-close.diff                                                                          
-* Applying patch: fix-spawn-level.diff                                                                                
-* Applying patch: fix-unusable-on-amd64.diff                                                                          
-* Applying patch: manpage.diff                                                                                        
-* Applying patch: system-flags.diff                                                                                   
- unpacked (/var/pisi/airstrike-0.99-1/work)                                                                           
+* Applying patch: airstrikerc.diff
+* Applying patch: fix-buffer-overflow.diff
+* Applying patch: fix_paths.diff
+* Applying patch: fix-red-baron-has-unlimited-bombs.diff
+* Applying patch: fix-segfault-on-close.diff
+* Applying patch: fix-spawn-level.diff
+* Applying patch: fix-unusable-on-amd64.diff
+* Applying patch: manpage.diff
+* Applying patch: system-flags.diff
+ unpacked (/var/pisi/airstrike-0.99-1/work)
 Setting up source...
-Building source...                                                                                                    
-Sandbox enabled build...                                                                                              
+Building source...
+Sandbox enabled build...
 Installing...
-Sandbox enabled build...                                                                                              
+Sandbox enabled build...
 Including directory '/var/pisi/airstrike-0.99-1/install/usr/share/airstrike/sound'
 Building package: airstrike
-Creating /var/cache/pisi/packages/airstrike-0.99-1-p11-i686.pisi...                                                   
+Creating /var/cache/pisi/packages/airstrike-0.99-1-p11-i686.pisi...
 Keeping build directory
-Installation order: airstrike 
+Installation order: airstrike
 Installing airstrike, version 0.99, release 1
-Running pre removal operations for airstrike                                                                          
+Running pre removal operations for airstrike
 Running post removal operations for airstrike
 Extracting the files of airstrike
-Configuring airstrike package                                                                                         
+Configuring airstrike package
 Configured airstrike
 Installed airstrike
 }}}
