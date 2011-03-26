@@ -1,5 +1,5 @@
 #summary Use a source repository at Pardus
-#labels howto
+#labels howto,Featured
 
 = Introduction =
 
