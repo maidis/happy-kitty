@@ -128,6 +128,30 @@ pisi-index.xml  pisi-index.xml.sha1sum  pisi-index.xml.xz  pisi-index.xml.xz.sha
 
 That's all. Realy? Yes :)
 
+= Additional Information =
+  * pisi index (or pisi ix) manual:
+{{{
+$ pisi index --help
+usage: Index PiSi files in a given directory
+
+Usage: index <directory> ...
+
+This command searches for all PiSi files in a directory, collects PiSi
+tags from them and accumulates the information in an output XML file,
+named by default 'pisi-index.xml'. In particular, it indexes both
+source and binary packages.
+
+If you give multiple directories, the command still works, but puts
+everything in a single index file.
+
+ index options:
+  -a [--absolute-urls]        : Store absolute links for indexed files.
+  -o [--output] arg           : Index output file
+  --compression-types arg     : Comma-separated compression types for index file
+  --skip-sources              : Do not index PiSi spec files.
+  --skip-signing              : Do not sign index.
+}}}
+
 = References =
   * [http://tr.pardus-wiki.org/NASIL:Paket_deposu_haz%C4%B1rlamak Paket deposu hazırlamak (Turkish)]
   * [http://developer.pardus.org.tr/guides/releasing/repository_concepts/index.html Repository Concepts]
