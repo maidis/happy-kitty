@@ -40,7 +40,10 @@
                 <Dependency>qt-mobility</Dependency>
             </RuntimeDependencies>
             <Files>
-                <Path fileType="all">/</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
             </Files>
         </Package>
         <History>
