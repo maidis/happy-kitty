@@ -87,9 +87,9 @@ airstrike - A 2d dogfight game
 $ sudo pisi rm airstrike
 The following list of packages will be removed
 in the respective order to satisfy dependencies:
-airstrike 
+airstrike
 Removing package airstrike
-Running pre removal operations for airstrike                                                                          
+Running pre removal operations for airstrike
 Running post removal operations for airstrike
 Removed airstrike
 }}}
