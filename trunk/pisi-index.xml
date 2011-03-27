@@ -181,6 +181,69 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>powermanga</Name>
+            <Homepage>http://linux.tlk.fr/games/Powermanga</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">An arcade 2D shoot-em-up game</Summary>
+            <Summary xml:lang="tr">An arcade 2D shoot-em-up game</Summary>
+            <Description xml:lang="en">Powermanga is an arcade 2D shoot-em-up game with 41 levels and more than 200 sprites.</Description>
+            <Description xml:lang="tr">Powermanga is an arcade 2D shoot-em-up game with 41 levels and more than 200 sprites.</Description>
+            <Icon>powermanga</Icon>
+            <Archive type="targz" sha1sum="50ca2844f8d3fa53af89e94aeb6dd10d7b320cc8">http://linux.tlk.fr/games/Powermanga/download/powermanga-0.90.tgz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>libpng-devel</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>libXxf86dga-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">powermanga-0.90-assembler_opt.diff</Patch>
+                <Patch level="1">powermanga-0.90-paths.diff</Patch>
+            </Patches>
+            <SourceURI>game/arcade/powermanga/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>powermanga</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXxf86dga</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/var</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/powermanga</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/powermanga.desktop" permission="0644" owner="root">powermanga.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/powermanga.png" permission="0644" owner="root">powermanga.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-03-27</Date>
+                <Version>0.90</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>barrage</Name>
             <Homepage>http://lgames.sourceforge.net/index.php?project=Barrage</Homepage>
             <Packager>
