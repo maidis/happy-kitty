@@ -82,6 +82,24 @@ $ pisi sr -s airstrike
 airstrike - A 2d dogfight game
 }}}
 
+  * For update Happy Kitty database:
+{{{
+$ pisi ur happy-kitty
+Updating repository: happy-kitty
+pisi-index.xml.xz.sha1sum      (40.0  B)100%    124.40 KB/s [00:00:00] [complete]                           
+happy-kitty repository information is up-to-date.
+}}}
+
+  * For list available sources at Happy Kitty:
+{{{
+$ pisi ls happy-kitty
+airstrike - A 2d dogfight game
+apricots - A simple 2D flying and bombing game
+box2d - 2D rigid body simulation library
+happyfrog - A funny game based on Qt and Box2D
+qt-mobility - Qt APIs for mobile devices
+}}}
+
   * For remove a package from system:
 {{{
 $ sudo pisi rm airstrike
