@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>lc</Name>
+        <Summary xml:lang="tr">Bir ekran yakalama aracı</Summary>
+        <Description xml:lang="tr">glc, ALSA ve OpenGL temelli bir ekran yakalama aracıdır. glc, çizim için OpenGL ve ses için ALSA kullanan tüm uygulamaları yakalayabilir. Epey yeni bir proje olmasına rağmen bir dolu özelliğe sahiptir.</Description>
+    </Source>
+</PISI>
