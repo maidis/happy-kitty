@@ -1,6 +1,13 @@
 #summary Package list of Happy Kitty
 #labels Featured
 
+= Help =
+  * [UsingSourceRepository]
+
+= Contribute =
+  * [BuildingSourceRepository]
+  * [HappyPenguinMission]
+
 = Packages =
 
 == Games ==
