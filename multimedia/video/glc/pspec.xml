@@ -18,6 +18,9 @@
         <BuildDependencies>
             <Dependency>elfhacks</Dependency>
             <Dependency>packetstream</Dependency>
+            <Dependency>alsa-lib-devel</Dependency>
+            <Dependency>libXxf86vm-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">typo-in-alsa_capture_stop_all.diff</Patch>
@@ -29,6 +32,9 @@
         <RuntimeDependencies>
             <Dependency>elfhacks</Dependency>
             <Dependency>packetstream</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libXxf86vm</Dependency>
+            <Dependency>mesa</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
