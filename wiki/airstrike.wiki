@@ -1,0 +1,5 @@
+#summary 2d dogfight game
+#labels sdl,arcade
+
+|| Airstrike is a 2d dogfight game in the tradition of Biplanes on Intellivision and BIP on the Amiga. You control a WWI biplane and try to shoot you opponent to tiny bits. || <wiki:video url="http://www.youtube.com/watch?v=J0_tMj5QVmk"/> ||
+||[http://icculus.org/airstrike/ Airstrike Home Page]||Packager name?||
