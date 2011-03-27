@@ -9,6 +9,8 @@
             <Email>ozbekanil@gmail.com</Email>
         </Packager>
         <License>ZLIB</License>
+        <License>CDDL</License>
+        <License>GPLv2</License>
         <IsA>app:console</IsA>
         <Summary>A capture tool</Summary>
         <Description>glc is an ALSA and OpenGL capture tool. glc should be able to capture any application that uses ALSA for sound and OpenGL for drawing. It is still a relatively new project but already has a long list of features.</Description>
