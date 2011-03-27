@@ -1,0 +1,21 @@
+--- barrage.desktop.in.orig	2010-12-24 12:45:45.000000000 +0200
++++ barrage.desktop.in	2011-03-27 14:56:50.132000022 +0200
+@@ -1,7 +1,14 @@
+ [Desktop Entry]
++Type=Application
++Version=1.0
++Encoding=UTF-8
+ Name=Barrage
+-Comment=A rather destructive action game.
++GenericName=Shooting Game
++GenericName[tr]=Atış Oyunu
++Comment=A rather destructive action game
++Comment[tr]=Yıkıcı bir aksiyon oyunu
+ Exec=barrage
+-Icon=
+-Type=Application
+-Categories=Game;
++Icon=
++Terminal=false
++StartupNotify=false
++Categories=Application;Game;ActionGame;

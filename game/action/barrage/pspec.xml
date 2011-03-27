@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>barrage</Name>
+        <Homepage>http://lgames.sourceforge.net/index.php?project=Barrage</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>barrage</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A violent point-and-click shooting game</Summary>
+        <Description>Barrage is a rather destructive action game that puts you on a shooting range with the objective to hit as many dummy targets as possible within 3 minutes. You control a gun that may either fire small or large grenades at soldiers, jeeps and tanks. Targets are fast paced and require careful aiming as it takes half a second to reload the gun. In addition, you have to keep an eye on your ammo and reload in time.</Description>
+        <Archive sha1sum="d4e5606c6082a40c335bbe6bdf612d9f60a89b81" type="targz">mirrors://sourceforge/lgames/barrage/barrage-1.0.3.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">barrage-1.0.3-paths.diff</Patch>
+            <Patch>barrage-desktop.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>barrage</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/barrage</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-03-27</Date>
+            <Version>1.0.3</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
