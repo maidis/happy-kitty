@@ -2,11 +2,10 @@
 #labels Featured
 
 = Packages =
+== Games ==
+  * airstrike - A 2d dogfight game
+  * happyfrog - A funny game based on Qt and Box2D
 
-{{{
-$ pisi ls happy-kitty
-airstrike - A 2d dogfight game
-box2d - 2D rigid body simulation library
-happyfrog - A funny game based on Qt and Box2D
-qt-mobility - Qt APIs for mobile devices
-}}}
+== Libraries ==
+  * box2d - 2D rigid body simulation library
+  * qt-mobility - Qt APIs for mobile devices
