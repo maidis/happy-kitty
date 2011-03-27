@@ -181,6 +181,58 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>barrage</Name>
+            <Homepage>http://lgames.sourceforge.net/index.php?project=Barrage</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.action</PartOf>
+            <Summary xml:lang="en">A violent point-and-click shooting game</Summary>
+            <Summary xml:lang="tr">Şiddetli bir hedef al ve vur oyunu</Summary>
+            <Description xml:lang="en">Barrage is a rather destructive action game that puts you on a shooting range with the objective to hit as many dummy targets as possible within 3 minutes. You control a gun that may either fire small or large grenades at soldiers, jeeps and tanks. Targets are fast paced and require careful aiming as it takes half a second to reload the gun. In addition, you have to keep an eye on your ammo and reload in time.</Description>
+            <Description xml:lang="tr">Barrage, üç dakika içinde olabildiğince çok hedef vurmaya çalıştığınız yıkıcı bir aksiyon oyunudur.</Description>
+            <Icon>barrage</Icon>
+            <Archive type="targz" sha1sum="d4e5606c6082a40c335bbe6bdf612d9f60a89b81">mirrors://sourceforge/lgames/barrage/barrage-1.0.3.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">barrage-1.0.3-paths.diff</Patch>
+                <Patch>barrage-desktop.diff</Patch>
+            </Patches>
+            <SourceURI>game/action/barrage/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>barrage</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/barrage</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-03-27</Date>
+                <Version>1.0.3</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>box2d</Name>
             <Homepage>http://www.box2d.org</Homepage>
             <Packager>
