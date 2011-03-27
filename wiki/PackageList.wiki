@@ -4,7 +4,10 @@
 = Packages =
 == Games ==
   * [airstrike] - A 2d dogfight game
+  * [apricots] - A simple 2D flying and bombing game
+  * [barrage] - A violent point-and-click shooting game
   * [happyfrog] - A funny game based on Qt and Box2D
+  * [powermanga] - An arcade 2D shoot-em-up game
 
 == Libraries ==
   * [box2d] - 2D rigid body simulation library
