@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>briquolo</Name>
+        <Summary xml:lang="tr">Bağımlılık yapıcı bir tuğla kırma oyunu</Summary>
+        <Description xml:lang="tr">BRIQUOLO, OpenGL temelli 3B bir tuğla kırma oyunudur.</Description>
+    </Source>
+</PISI>

@@ -1,0 +1,12 @@
+diff -Naur briquolo-0.5.7.orig/Makefile.in briquolo-0.5.7/Makefile.in
+--- briquolo-0.5.7.orig/Makefile.in	2008-03-24 14:51:51.000000000 +0200
++++ briquolo-0.5.7/Makefile.in	2011-03-27 20:29:18.108000011 +0200
+@@ -220,7 +220,7 @@
+ target_cpu = @target_cpu@
+ target_os = @target_os@
+ target_vendor = @target_vendor@
+-SUBDIRS = m4  intl src po data desktop
++SUBDIRS = m4  intl src po data 
+ ACLOCAL_AMFLAGS = -I m4
+ EXTRA_DIST = mkinstalldirs  config.rpath  data blender msvc++ config.h.in README.fr DejaVuSans.ttf-LICENSE
+ all: config.h
