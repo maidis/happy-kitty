@@ -3,11 +3,13 @@
 
 = Help =
   * [UsingSourceRepository]
+----
 
 = Contribute =
   * [BuildingSourceRepository]
   * [HappyPenguinMission]
 ----
+
 = Packages =
 
 == Games ==
