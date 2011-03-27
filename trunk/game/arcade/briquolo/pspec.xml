@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>briquolo</Name>
+        <Homepage>http://briquolo.free.fr</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>briquolo</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>An addictive block game</Summary>
+        <Description>BRIQUOLO is a breakout with 3D representation based on OpenGL.</Description>
+        <Archive sha1sum="72823b6548e0b76bbf5fdf63fe1803eec89a1cba" type="tarbz2">http://briquolo.free.fr/download/briquolo-0.5.7.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>sdl-ttf-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>briquolo-gcc.patch</Patch>
+            <Patch level="1">briquolo-libpng.patch</Patch>
+            <Patch level="1">briquolo-0.5.7-desktop.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>briquolo</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>sdl-ttf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/briquolo</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/briquolo.desktop">briquolo.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/briquolo.png">briquolo.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-03-27</Date>
+            <Version>0.5.7</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

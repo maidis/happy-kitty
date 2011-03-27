@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=BRIQUOLO
+GenericName=OpenGL Breakout
+GenericName[tr]=OpenGL Tuğla Kırma
+Comment=An addictive block game
+Comment[tr]=Bağımlıkık yapıcı bir tuğla kırma oyunu
+Icon=briquolo
+Exec=briquolo
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;
