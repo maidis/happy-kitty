@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>glc</Name>
+        <Homepage>https://github.com/nullkey/glc</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>ZLIB</License>
+        <IsA>app:console</IsA>
+        <Summary>A capture tool</Summary>
+        <Description>glc is an ALSA and OpenGL capture tool. glc should be able to capture any application that uses ALSA for sound and OpenGL for drawing. It is still a relatively new project but already has a long list of features.</Description>
+        <Archive sha1sum="012812ad68be4ffcdcbd064023b1e4e1c2157261" type="targz">http://nullkey.ath.cx/glc/archive/glc-0.5.8.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>elfhacks</Dependency>
+            <Dependency>packetstream</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">typo-in-alsa_capture_stop_all.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>glc</Name>
+        <RuntimeDependencies>
+            <Dependency>elfhacks</Dependency>
+            <Dependency>packetstream</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-05-11</Date>
+            <Version>0.5.8</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

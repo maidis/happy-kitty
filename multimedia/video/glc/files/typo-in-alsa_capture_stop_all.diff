@@ -1,0 +1,12 @@
+diff -Naur glc.orig/src/hook/alsa.c glc/src/hook/alsa.c
+--- glc.orig/src/hook/alsa.c	2009-07-20 19:46:10.000000000 +0300
++++ glc/src/hook/alsa.c	2011-03-27 23:55:38.636000023 +0200
+@@ -214,7 +214,7 @@
+ 
+ 	while (stream != NULL) {
+ 		if (stream->capture)
+-			alsa_capture_start(stream->capture);
++			alsa_capture_stop(stream->capture);
+ 		stream = stream->next;
+ 	}
+ 
