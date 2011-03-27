@@ -1,0 +1,20 @@
+diff -Naur powermanga-0.90.orig/src/assembler_opt.S powermanga-0.90/src/assembler_opt.S
+--- powermanga-0.90.orig/src/assembler_opt.S	2007-07-09 23:21:36.000000000 +0300
++++ powermanga-0.90/src/assembler_opt.S	2011-03-27 16:57:13.815000027 +0200
+@@ -407,3 +407,6 @@
+     leave
+     ret
+ 
++#if defined(__linux__) && defined(__ELF__)
++.section .note.GNU-stack,"",%progbits
++#endif
+diff -Naur powermanga-0.90.orig/src/assembler.S powermanga-0.90/src/assembler.S
+--- powermanga-0.90.orig/src/assembler.S	2007-09-02 19:13:56.000000000 +0300
++++ powermanga-0.90/src/assembler.S	2011-03-27 16:57:13.809000027 +0200
+@@ -2076,3 +2076,6 @@
+ _et_col2:       .int 0    #13
+ #_et_col1:       .byte 11
+ #_et_col2:       .byte 13
++#if defined(__linux__) && defined(__ELF__)
++.section .note.GNU-stack,"",%progbits
++#endif

@@ -1,0 +1,595 @@
+diff -Naur powermanga-0.90.orig/data/curves/Makefile powermanga-0.90/data/curves/Makefile
+--- powermanga-0.90.orig/data/curves/Makefile	2007-09-04 11:41:12.000000000 +0300
++++ powermanga-0.90/data/curves/Makefile	2011-03-27 18:32:03.442000002 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/data/curves
++pkgdatadir = $(datadir)/powermanga/data/curves
+ ACLOCAL = ${SHELL} /home/bubux/dev/tempo/powermanga-0.90/autotools/missing --run aclocal-1.9
+ AMDEP_FALSE = #
+ AMDEP_TRUE = 
+diff -Naur powermanga-0.90.orig/data/curves/Makefile.am powermanga-0.90/data/curves/Makefile.am
+--- powermanga-0.90.orig/data/curves/Makefile.am	2007-07-13 08:31:49.000000000 +0300
++++ powermanga-0.90/data/curves/Makefile.am	2011-03-27 18:34:49.279000001 +0200
+@@ -1,5 +1,5 @@
+ 
+-pkgdatadir = $(datadir)/games/powermanga/data/curves
++pkgdatadir = $(datadir)/powermanga/data/curves
+ 
+ dist_pkgdata_DATA = \
+   bezier_curve_000.bin \
+diff -Naur powermanga-0.90.orig/data/curves/Makefile.in powermanga-0.90/data/curves/Makefile.in
+--- powermanga-0.90.orig/data/curves/Makefile.in	2007-09-04 11:41:02.000000000 +0300
++++ powermanga-0.90/data/curves/Makefile.in	2011-03-27 18:36:19.693000001 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/data/curves
++pkgdatadir = $(datadir)/powermanga/data/curves
+ ACLOCAL = @ACLOCAL@
+ AMDEP_FALSE = @AMDEP_FALSE@
+ AMDEP_TRUE = @AMDEP_TRUE@
+diff -Naur powermanga-0.90.orig/data/levels/curves_phase/Makefile powermanga-0.90/data/levels/curves_phase/Makefile
+--- powermanga-0.90.orig/data/levels/curves_phase/Makefile	2007-09-04 11:41:12.000000000 +0300
++++ powermanga-0.90/data/levels/curves_phase/Makefile	2011-03-27 18:31:42.248000001 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/data/levels/curves_phase
++pkgdatadir = $(datadir)/powermanga/data/levels/curves_phase
+ ACLOCAL = ${SHELL} /home/bubux/dev/tempo/powermanga-0.90/autotools/missing --run aclocal-1.9
+ AMDEP_FALSE = #
+ AMDEP_TRUE = 
+diff -Naur powermanga-0.90.orig/data/levels/curves_phase/Makefile.am powermanga-0.90/data/levels/curves_phase/Makefile.am
+--- powermanga-0.90.orig/data/levels/curves_phase/Makefile.am	2007-07-13 08:31:50.000000000 +0300
++++ powermanga-0.90/data/levels/curves_phase/Makefile.am	2011-03-27 18:35:05.424000002 +0200
+@@ -1,5 +1,5 @@
+ 
+-pkgdatadir = $(datadir)/games/powermanga/data/levels/curves_phase
++pkgdatadir = $(datadir)/powermanga/data/levels/curves_phase
+ 
+ dist_pkgdata_DATA = \
+   curves_00.bin \
+diff -Naur powermanga-0.90.orig/data/levels/curves_phase/Makefile.in powermanga-0.90/data/levels/curves_phase/Makefile.in
+--- powermanga-0.90.orig/data/levels/curves_phase/Makefile.in	2007-09-04 11:41:02.000000000 +0300
++++ powermanga-0.90/data/levels/curves_phase/Makefile.in	2011-03-27 18:36:00.676000001 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/data/levels/curves_phase
++pkgdatadir = $(datadir)/powermanga/data/levels/curves_phase
+ ACLOCAL = @ACLOCAL@
+ AMDEP_FALSE = @AMDEP_FALSE@
+ AMDEP_TRUE = @AMDEP_TRUE@
+diff -Naur powermanga-0.90.orig/data/levels/grids_phase/Makefile powermanga-0.90/data/levels/grids_phase/Makefile
+--- powermanga-0.90.orig/data/levels/grids_phase/Makefile	2007-09-04 11:41:12.000000000 +0300
++++ powermanga-0.90/data/levels/grids_phase/Makefile	2011-03-27 18:31:53.615000002 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/data/levels/grids_phase
++pkgdatadir = $(datadir)/powermanga/data/levels/grids_phase
+ ACLOCAL = ${SHELL} /home/bubux/dev/tempo/powermanga-0.90/autotools/missing --run aclocal-1.9
+ AMDEP_FALSE = #
+ AMDEP_TRUE = 
+diff -Naur powermanga-0.90.orig/data/levels/grids_phase/Makefile.am powermanga-0.90/data/levels/grids_phase/Makefile.am
+--- powermanga-0.90.orig/data/levels/grids_phase/Makefile.am	2007-07-13 09:22:53.000000000 +0300
++++ powermanga-0.90/data/levels/grids_phase/Makefile.am	2011-03-27 18:34:57.632000002 +0200
+@@ -1,5 +1,5 @@
+ 
+-pkgdatadir = $(datadir)/games/powermanga/data/levels/grids_phase
++pkgdatadir = $(datadir)/powermanga/data/levels/grids_phase
+ 
+ dist_pkgdata_DATA = \
+  grid_00.bin \
+diff -Naur powermanga-0.90.orig/data/levels/grids_phase/Makefile.in powermanga-0.90/data/levels/grids_phase/Makefile.in
+--- powermanga-0.90.orig/data/levels/grids_phase/Makefile.in	2007-09-04 11:41:03.000000000 +0300
++++ powermanga-0.90/data/levels/grids_phase/Makefile.in	2011-03-27 18:36:12.389000002 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/data/levels/grids_phase
++pkgdatadir = $(datadir)/powermanga/data/levels/grids_phase
+ ACLOCAL = @ACLOCAL@
+ AMDEP_FALSE = @AMDEP_FALSE@
+ AMDEP_TRUE = @AMDEP_TRUE@
+diff -Naur powermanga-0.90.orig/data/Makefile powermanga-0.90/data/Makefile
+--- powermanga-0.90.orig/data/Makefile	2007-09-04 11:41:12.000000000 +0300
++++ powermanga-0.90/data/Makefile	2011-03-27 18:31:33.679000002 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/data
++pkgdatadir = $(datadir)/powermanga/data
+ ACLOCAL = ${SHELL} /home/bubux/dev/tempo/powermanga-0.90/autotools/missing --run aclocal-1.9
+ AMDEP_FALSE = #
+ AMDEP_TRUE = 
+diff -Naur powermanga-0.90.orig/data/Makefile.am powermanga-0.90/data/Makefile.am
+--- powermanga-0.90.orig/data/Makefile.am	2007-07-13 10:07:28.000000000 +0300
++++ powermanga-0.90/data/Makefile.am	2011-03-27 18:35:12.982000002 +0200
+@@ -1,5 +1,5 @@
+ 
+-pkgdatadir = $(datadir)/games/powermanga/data
++pkgdatadir = $(datadir)/powermanga/data
+ 
+ dist_pkgdata_DATA = \
+   menu_order_keystrokes.bin 
+diff -Naur powermanga-0.90.orig/data/Makefile.in powermanga-0.90/data/Makefile.in
+--- powermanga-0.90.orig/data/Makefile.in	2007-09-04 11:41:02.000000000 +0300
++++ powermanga-0.90/data/Makefile.in	2011-03-27 18:35:52.555000002 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/data
++pkgdatadir = $(datadir)/powermanga/data
+ ACLOCAL = @ACLOCAL@
+ AMDEP_FALSE = @AMDEP_FALSE@
+ AMDEP_TRUE = @AMDEP_TRUE@
+diff -Naur powermanga-0.90.orig/graphics/bitmap/fonts/Makefile powermanga-0.90/graphics/bitmap/fonts/Makefile
+--- powermanga-0.90.orig/graphics/bitmap/fonts/Makefile	2007-09-04 11:41:13.000000000 +0300
++++ powermanga-0.90/graphics/bitmap/fonts/Makefile	2011-03-27 18:32:34.052000001 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/graphics/bitmap/fonts
++pkgdatadir = $(datadir)/powermanga/graphics/bitmap/fonts
+ ACLOCAL = ${SHELL} /home/bubux/dev/tempo/powermanga-0.90/autotools/missing --run aclocal-1.9
+ AMDEP_FALSE = #
+ AMDEP_TRUE = 
+diff -Naur powermanga-0.90.orig/graphics/bitmap/fonts/Makefile.am powermanga-0.90/graphics/bitmap/fonts/Makefile.am
+--- powermanga-0.90.orig/graphics/bitmap/fonts/Makefile.am	2007-09-04 11:26:27.000000000 +0300
++++ powermanga-0.90/graphics/bitmap/fonts/Makefile.am	2011-03-27 18:34:30.501000002 +0200
+@@ -1,5 +1,5 @@
+ 
+-pkgdatadir = $(datadir)/games/powermanga/graphics/bitmap/fonts
++pkgdatadir = $(datadir)/powermanga/graphics/bitmap/fonts
+ 
+ dist_pkgdata_DATA = \
+   font_big.spr \
+diff -Naur powermanga-0.90.orig/graphics/bitmap/fonts/Makefile.in powermanga-0.90/graphics/bitmap/fonts/Makefile.in
+--- powermanga-0.90.orig/graphics/bitmap/fonts/Makefile.in	2007-09-04 11:41:03.000000000 +0300
++++ powermanga-0.90/graphics/bitmap/fonts/Makefile.in	2011-03-27 18:36:42.552000002 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/graphics/bitmap/fonts
++pkgdatadir = $(datadir)/powermanga/graphics/bitmap/fonts
+ ACLOCAL = @ACLOCAL@
+ AMDEP_FALSE = @AMDEP_FALSE@
+ AMDEP_TRUE = @AMDEP_TRUE@
+diff -Naur powermanga-0.90.orig/graphics/bitmap/Makefile powermanga-0.90/graphics/bitmap/Makefile
+--- powermanga-0.90.orig/graphics/bitmap/Makefile	2007-09-04 11:41:13.000000000 +0300
++++ powermanga-0.90/graphics/bitmap/Makefile	2011-03-27 18:32:24.414000001 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/graphics/bitmap
++pkgdatadir = $(datadir)/powermanga/graphics/bitmap
+ ACLOCAL = ${SHELL} /home/bubux/dev/tempo/powermanga-0.90/autotools/missing --run aclocal-1.9
+ AMDEP_FALSE = #
+ AMDEP_TRUE = 
+diff -Naur powermanga-0.90.orig/graphics/bitmap/Makefile.am powermanga-0.90/graphics/bitmap/Makefile.am
+--- powermanga-0.90.orig/graphics/bitmap/Makefile.am	2007-07-14 10:19:18.000000000 +0300
++++ powermanga-0.90/graphics/bitmap/Makefile.am	2011-03-27 18:34:36.862000002 +0200
+@@ -1,5 +1,5 @@
+ 
+-pkgdatadir = $(datadir)/games/powermanga/graphics/bitmap
++pkgdatadir = $(datadir)/powermanga/graphics/bitmap
+ 
+ dist_pkgdata_DATA = \
+   main_menu.spr \
+diff -Naur powermanga-0.90.orig/graphics/bitmap/Makefile.in powermanga-0.90/graphics/bitmap/Makefile.in
+--- powermanga-0.90.orig/graphics/bitmap/Makefile.in	2007-09-04 11:41:03.000000000 +0300
++++ powermanga-0.90/graphics/bitmap/Makefile.in	2011-03-27 18:36:34.570000001 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/graphics/bitmap
++pkgdatadir = $(datadir)/powermanga/graphics/bitmap
+ ACLOCAL = @ACLOCAL@
+ AMDEP_FALSE = @AMDEP_FALSE@
+ AMDEP_TRUE = @AMDEP_TRUE@
+diff -Naur powermanga-0.90.orig/graphics/Makefile powermanga-0.90/graphics/Makefile
+--- powermanga-0.90.orig/graphics/Makefile	2007-09-04 11:41:12.000000000 +0300
++++ powermanga-0.90/graphics/Makefile	2011-03-27 18:32:13.362000002 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/graphics
++pkgdatadir = $(datadir)/powermanga/graphics
+ ACLOCAL = ${SHELL} /home/bubux/dev/tempo/powermanga-0.90/autotools/missing --run aclocal-1.9
+ AMDEP_FALSE = #
+ AMDEP_TRUE = 
+diff -Naur powermanga-0.90.orig/graphics/Makefile.am powermanga-0.90/graphics/Makefile.am
+--- powermanga-0.90.orig/graphics/Makefile.am	2007-08-02 19:19:51.000000000 +0300
++++ powermanga-0.90/graphics/Makefile.am	2011-03-27 18:34:43.641000001 +0200
+@@ -1,5 +1,5 @@
+ 
+-pkgdatadir = $(datadir)/games/powermanga/graphics
++pkgdatadir = $(datadir)/powermanga/graphics
+ 
+ dist_pkgdata_DATA = \
+   256_colors_palette.bin \
+diff -Naur powermanga-0.90.orig/graphics/Makefile.in powermanga-0.90/graphics/Makefile.in
+--- powermanga-0.90.orig/graphics/Makefile.in	2007-09-04 11:41:03.000000000 +0300
++++ powermanga-0.90/graphics/Makefile.in	2011-03-27 18:36:26.862000002 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/graphics
++pkgdatadir = $(datadir)/powermanga/graphics
+ ACLOCAL = @ACLOCAL@
+ AMDEP_FALSE = @AMDEP_FALSE@
+ AMDEP_TRUE = @AMDEP_TRUE@
+diff -Naur powermanga-0.90.orig/graphics/sprites/guardians/Makefile powermanga-0.90/graphics/sprites/guardians/Makefile
+--- powermanga-0.90.orig/graphics/sprites/guardians/Makefile	2007-09-04 11:41:13.000000000 +0300
++++ powermanga-0.90/graphics/sprites/guardians/Makefile	2011-03-27 18:33:21.000000002 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/graphics/sprites/guardians
++pkgdatadir = $(datadir)/powermanga/graphics/sprites/guardians
+ ACLOCAL = ${SHELL} /home/bubux/dev/tempo/powermanga-0.90/autotools/missing --run aclocal-1.9
+ AMDEP_FALSE = #
+ AMDEP_TRUE = 
+diff -Naur powermanga-0.90.orig/graphics/sprites/guardians/Makefile.am powermanga-0.90/graphics/sprites/guardians/Makefile.am
+--- powermanga-0.90.orig/graphics/sprites/guardians/Makefile.am	2007-07-13 22:25:51.000000000 +0300
++++ powermanga-0.90/graphics/sprites/guardians/Makefile.am	2011-03-27 18:33:53.752000002 +0200
+@@ -1,5 +1,5 @@
+ 
+-pkgdatadir = $(datadir)/games/powermanga/graphics/sprites/guardians
++pkgdatadir = $(datadir)/powermanga/graphics/sprites/guardians
+ 
+ dist_pkgdata_DATA = \
+   guardian_00.spr \
+diff -Naur powermanga-0.90.orig/graphics/sprites/guardians/Makefile.in powermanga-0.90/graphics/sprites/guardians/Makefile.in
+--- powermanga-0.90.orig/graphics/sprites/guardians/Makefile.in	2007-09-04 11:41:03.000000000 +0300
++++ powermanga-0.90/graphics/sprites/guardians/Makefile.in	2011-03-27 18:37:24.976000001 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/graphics/sprites/guardians
++pkgdatadir = $(datadir)/powermanga/graphics/sprites/guardians
+ ACLOCAL = @ACLOCAL@
+ AMDEP_FALSE = @AMDEP_FALSE@
+ AMDEP_TRUE = @AMDEP_TRUE@
+diff -Naur powermanga-0.90.orig/graphics/sprites/Makefile powermanga-0.90/graphics/sprites/Makefile
+--- powermanga-0.90.orig/graphics/sprites/Makefile	2007-09-04 11:41:13.000000000 +0300
++++ powermanga-0.90/graphics/sprites/Makefile	2011-03-27 18:32:43.074000001 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/graphics/sprites
++pkgdatadir = $(datadir)/powermanga/graphics/sprites
+ ACLOCAL = ${SHELL} /home/bubux/dev/tempo/powermanga-0.90/autotools/missing --run aclocal-1.9
+ AMDEP_FALSE = #
+ AMDEP_TRUE = 
+diff -Naur powermanga-0.90.orig/graphics/sprites/Makefile.am powermanga-0.90/graphics/sprites/Makefile.am
+--- powermanga-0.90.orig/graphics/sprites/Makefile.am	2007-07-13 22:46:20.000000000 +0300
++++ powermanga-0.90/graphics/sprites/Makefile.am	2011-03-27 18:34:24.456000002 +0200
+@@ -1,5 +1,5 @@
+ 
+-pkgdatadir = $(datadir)/games/powermanga/graphics/sprites
++pkgdatadir = $(datadir)/powermanga/graphics/sprites
+ 
+ dist_pkgdata_DATA = \
+   all_enemies.spr \
+diff -Naur powermanga-0.90.orig/graphics/sprites/Makefile.in powermanga-0.90/graphics/sprites/Makefile.in
+--- powermanga-0.90.orig/graphics/sprites/Makefile.in	2007-09-04 11:41:03.000000000 +0300
++++ powermanga-0.90/graphics/sprites/Makefile.in	2011-03-27 18:36:50.871000002 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/graphics/sprites
++pkgdatadir = $(datadir)/powermanga/graphics/sprites
+ ACLOCAL = @ACLOCAL@
+ AMDEP_FALSE = @AMDEP_FALSE@
+ AMDEP_TRUE = @AMDEP_TRUE@
+diff -Naur powermanga-0.90.orig/graphics/sprites/meteors/Makefile powermanga-0.90/graphics/sprites/meteors/Makefile
+--- powermanga-0.90.orig/graphics/sprites/meteors/Makefile	2007-09-04 11:41:13.000000000 +0300
++++ powermanga-0.90/graphics/sprites/meteors/Makefile	2011-03-27 18:32:53.661000002 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/graphics/sprites/meteors
++pkgdatadir = $(datadir)/powermanga/graphics/sprites/meteors
+ ACLOCAL = ${SHELL} /home/bubux/dev/tempo/powermanga-0.90/autotools/missing --run aclocal-1.9
+ AMDEP_FALSE = #
+ AMDEP_TRUE = 
+diff -Naur powermanga-0.90.orig/graphics/sprites/meteors/Makefile.am powermanga-0.90/graphics/sprites/meteors/Makefile.am
+--- powermanga-0.90.orig/graphics/sprites/meteors/Makefile.am	2007-07-12 22:30:55.000000000 +0300
++++ powermanga-0.90/graphics/sprites/meteors/Makefile.am	2011-03-27 18:34:18.924000002 +0200
+@@ -1,5 +1,5 @@
+ 
+-pkgdatadir = $(datadir)/games/powermanga/graphics/sprites/meteors
++pkgdatadir = $(datadir)/powermanga/graphics/sprites/meteors
+ 
+ dist_pkgdata_DATA = \
+   meteor_00.spr \
+diff -Naur powermanga-0.90.orig/graphics/sprites/meteors/Makefile.in powermanga-0.90/graphics/sprites/meteors/Makefile.in
+--- powermanga-0.90.orig/graphics/sprites/meteors/Makefile.in	2007-09-04 11:41:03.000000000 +0300
++++ powermanga-0.90/graphics/sprites/meteors/Makefile.in	2011-03-27 18:37:00.188000001 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/graphics/sprites/meteors
++pkgdatadir = $(datadir)/powermanga/graphics/sprites/meteors
+ ACLOCAL = @ACLOCAL@
+ AMDEP_FALSE = @AMDEP_FALSE@
+ AMDEP_TRUE = @AMDEP_TRUE@
+diff -Naur powermanga-0.90.orig/graphics/sprites/spaceships/Makefile powermanga-0.90/graphics/sprites/spaceships/Makefile
+--- powermanga-0.90.orig/graphics/sprites/spaceships/Makefile	2007-09-04 11:41:13.000000000 +0300
++++ powermanga-0.90/graphics/sprites/spaceships/Makefile	2011-03-27 18:33:11.881000001 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/graphics/sprites/spaceships
++pkgdatadir = $(datadir)/powermanga/graphics/sprites/spaceships
+ ACLOCAL = ${SHELL} /home/bubux/dev/tempo/powermanga-0.90/autotools/missing --run aclocal-1.9
+ AMDEP_FALSE = #
+ AMDEP_TRUE = 
+diff -Naur powermanga-0.90.orig/graphics/sprites/spaceships/Makefile.am powermanga-0.90/graphics/sprites/spaceships/Makefile.am
+--- powermanga-0.90.orig/graphics/sprites/spaceships/Makefile.am	2007-07-13 14:06:05.000000000 +0300
++++ powermanga-0.90/graphics/sprites/spaceships/Makefile.am	2011-03-27 18:34:03.896000002 +0200
+@@ -1,5 +1,5 @@
+ 
+-pkgdatadir = $(datadir)/games/powermanga/graphics/sprites/spaceships
++pkgdatadir = $(datadir)/powermanga/graphics/sprites/spaceships
+ 
+ dist_pkgdata_DATA = \
+   spaceship_1_frame_0.spr \
+diff -Naur powermanga-0.90.orig/graphics/sprites/spaceships/Makefile.in powermanga-0.90/graphics/sprites/spaceships/Makefile.in
+--- powermanga-0.90.orig/graphics/sprites/spaceships/Makefile.in	2007-09-04 11:41:03.000000000 +0300
++++ powermanga-0.90/graphics/sprites/spaceships/Makefile.in	2011-03-27 18:37:16.587000002 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/graphics/sprites/spaceships
++pkgdatadir = $(datadir)/powermanga/graphics/sprites/spaceships
+ ACLOCAL = @ACLOCAL@
+ AMDEP_FALSE = @AMDEP_FALSE@
+ AMDEP_TRUE = @AMDEP_TRUE@
+diff -Naur powermanga-0.90.orig/graphics/sprites/stars/Makefile powermanga-0.90/graphics/sprites/stars/Makefile
+--- powermanga-0.90.orig/graphics/sprites/stars/Makefile	2007-09-04 11:41:13.000000000 +0300
++++ powermanga-0.90/graphics/sprites/stars/Makefile	2011-03-27 18:33:02.922000002 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/graphics/sprites/stars
++pkgdatadir = $(datadir)/powermanga/graphics/sprites/stars
+ ACLOCAL = ${SHELL} /home/bubux/dev/tempo/powermanga-0.90/autotools/missing --run aclocal-1.9
+ AMDEP_FALSE = #
+ AMDEP_TRUE = 
+diff -Naur powermanga-0.90.orig/graphics/sprites/stars/Makefile.am powermanga-0.90/graphics/sprites/stars/Makefile.am
+--- powermanga-0.90.orig/graphics/sprites/stars/Makefile.am	2007-07-13 21:22:31.000000000 +0300
++++ powermanga-0.90/graphics/sprites/stars/Makefile.am	2011-03-27 18:34:12.014000002 +0200
+@@ -1,5 +1,5 @@
+ 
+-pkgdatadir = $(datadir)/games/powermanga/graphics/sprites/stars
++pkgdatadir = $(datadir)/powermanga/graphics/sprites/stars
+ 
+ dist_pkgdata_DATA = \
+   star_big_0.spr \
+diff -Naur powermanga-0.90.orig/graphics/sprites/stars/Makefile.in powermanga-0.90/graphics/sprites/stars/Makefile.in
+--- powermanga-0.90.orig/graphics/sprites/stars/Makefile.in	2007-09-04 11:41:04.000000000 +0300
++++ powermanga-0.90/graphics/sprites/stars/Makefile.in	2011-03-27 18:37:08.960000003 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/graphics/sprites/stars
++pkgdatadir = $(datadir)/powermanga/graphics/sprites/stars
+ ACLOCAL = @ACLOCAL@
+ AMDEP_FALSE = @AMDEP_FALSE@
+ AMDEP_TRUE = @AMDEP_TRUE@
+diff -Naur powermanga-0.90.orig/powermanga.6 powermanga-0.90/powermanga.6
+--- powermanga-0.90.orig/powermanga.6	2007-09-02 17:55:29.000000000 +0300
++++ powermanga-0.90/powermanga.6	2011-03-27 18:37:55.832000003 +0200
+@@ -113,22 +113,22 @@
+ .B \--hard
+ make the game harder
+ .SH FILES
+-.B /usr/share/games/powermanga/graphics/
++.B /usr/share/powermanga/graphics/
+ .br
+ .RS
+ Graphics files.
+ .RE
+-.B /usr/share/games/powermanga/data/
++.B /usr/share/powermanga/data/
+ .br
+ .RS
+ Levels and data files.
+ .RE
+-.B /usr/share/games/powermanga/sound/
++.B /usr/share/powermanga/sound/
+ .br
+ .RS
+ Sound files.
+ .RE
+-.B /usr/share/games/powermanga/texts/
++.B /usr/share/powermanga/texts/
+ .br
+ .RS
+ Texts files.
+diff -Naur powermanga-0.90.orig/sounds/handheld_console/Makefile powermanga-0.90/sounds/handheld_console/Makefile
+--- powermanga-0.90.orig/sounds/handheld_console/Makefile	2007-09-04 11:41:13.000000000 +0300
++++ powermanga-0.90/sounds/handheld_console/Makefile	2011-03-27 18:31:22.824000001 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/sound/handheld_console
++pkgdatadir = $(datadir)/powermanga/sound/handheld_console
+ ACLOCAL = ${SHELL} /home/bubux/dev/tempo/powermanga-0.90/autotools/missing --run aclocal-1.9
+ AMDEP_FALSE = #
+ AMDEP_TRUE = 
+diff -Naur powermanga-0.90.orig/sounds/handheld_console/Makefile.am powermanga-0.90/sounds/handheld_console/Makefile.am
+--- powermanga-0.90.orig/sounds/handheld_console/Makefile.am	2007-08-13 09:43:23.000000000 +0300
++++ powermanga-0.90/sounds/handheld_console/Makefile.am	2011-03-27 18:35:20.382000001 +0200
+@@ -1,5 +1,5 @@
+ 
+-pkgdatadir = $(datadir)/games/powermanga/sound/handheld_console
++pkgdatadir = $(datadir)/powermanga/sound/handheld_console
+ dist_pkgdata_DATA = \
+   music_congratulations.ogg \
+   music_game.ogg \
+diff -Naur powermanga-0.90.orig/sounds/handheld_console/Makefile.in powermanga-0.90/sounds/handheld_console/Makefile.in
+--- powermanga-0.90.orig/sounds/handheld_console/Makefile.in	2007-09-04 11:41:04.000000000 +0300
++++ powermanga-0.90/sounds/handheld_console/Makefile.in	2011-03-27 18:35:43.114000002 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/sound/handheld_console
++pkgdatadir = $(datadir)/powermanga/sound/handheld_console
+ ACLOCAL = @ACLOCAL@
+ AMDEP_FALSE = @AMDEP_FALSE@
+ AMDEP_TRUE = @AMDEP_TRUE@
+diff -Naur powermanga-0.90.orig/sounds/Makefile powermanga-0.90/sounds/Makefile
+--- powermanga-0.90.orig/sounds/Makefile	2007-09-04 11:41:13.000000000 +0300
++++ powermanga-0.90/sounds/Makefile	2011-03-27 18:31:10.733000002 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/sounds
++pkgdatadir = $(datadir)/powermanga/sounds
+ ACLOCAL = ${SHELL} /home/bubux/dev/tempo/powermanga-0.90/autotools/missing --run aclocal-1.9
+ AMDEP_FALSE = #
+ AMDEP_TRUE = 
+diff -Naur powermanga-0.90.orig/sounds/Makefile.am powermanga-0.90/sounds/Makefile.am
+--- powermanga-0.90.orig/sounds/Makefile.am	2007-08-13 09:43:22.000000000 +0300
++++ powermanga-0.90/sounds/Makefile.am	2011-03-27 18:35:26.210000001 +0200
+@@ -1,5 +1,5 @@
+ 
+-pkgdatadir = $(datadir)/games/powermanga/sounds
++pkgdatadir = $(datadir)/powermanga/sounds
+ 
+ dist_pkgdata_DATA = \
+   music_congratulations.zik \
+diff -Naur powermanga-0.90.orig/sounds/Makefile.in powermanga-0.90/sounds/Makefile.in
+--- powermanga-0.90.orig/sounds/Makefile.in	2007-09-04 11:41:04.000000000 +0300
++++ powermanga-0.90/sounds/Makefile.in	2011-03-27 18:35:34.872000002 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/sounds
++pkgdatadir = $(datadir)/powermanga/sounds
+ ACLOCAL = @ACLOCAL@
+ AMDEP_FALSE = @AMDEP_FALSE@
+ AMDEP_TRUE = @AMDEP_TRUE@
+diff -Naur powermanga-0.90.orig/src/Makefile powermanga-0.90/src/Makefile
+--- powermanga-0.90.orig/src/Makefile	2007-09-04 11:41:13.000000000 +0300
++++ powermanga-0.90/src/Makefile	2011-03-27 18:23:46.992000002 +0200
+@@ -220,7 +220,7 @@
+ target_cpu = i686
+ target_os = linux-gnu
+ target_vendor = pc
+-gamesdir = $(prefix)/games
++gamesdir = $(prefix)/bin
+ scoredir = /var/games
+ score = powermanga.hi
+ powermanga_SOURCES = $(SOURCES_MAIN) $(SOURCES_EXTRA)
+diff -Naur powermanga-0.90.orig/src/Makefile.am powermanga-0.90/src/Makefile.am
+--- powermanga-0.90.orig/src/Makefile.am	2007-08-31 23:46:43.000000000 +0300
++++ powermanga-0.90/src/Makefile.am	2011-03-27 18:23:56.382000001 +0200
+@@ -1,5 +1,5 @@
+ 
+-gamesdir = $(prefix)/games
++gamesdir = $(prefix)/bin
+ scoredir = /var/games
+ score = powermanga.hi
+ 
+diff -Naur powermanga-0.90.orig/src/Makefile.in powermanga-0.90/src/Makefile.in
+--- powermanga-0.90.orig/src/Makefile.in	2007-09-04 11:41:04.000000000 +0300
++++ powermanga-0.90/src/Makefile.in	2011-03-27 18:24:09.643000002 +0200
+@@ -220,7 +220,7 @@
+ target_cpu = @target_cpu@
+ target_os = @target_os@
+ target_vendor = @target_vendor@
+-gamesdir = $(prefix)/games
++gamesdir = $(prefix)/bin
+ scoredir = /var/games
+ score = powermanga.hi
+ powermanga_SOURCES = $(SOURCES_MAIN) $(SOURCES_EXTRA)
+diff -Naur powermanga-0.90.orig/src/tools.c powermanga-0.90/src/tools.c
+--- powermanga-0.90.orig/src/tools.c	2007-08-31 23:46:43.000000000 +0300
++++ powermanga-0.90/src/tools.c	2011-03-27 18:38:15.524000003 +0200
+@@ -474,7 +474,7 @@
+ {
+   /* normally unused, except when running from the source directory... */
+   ".",
+-  /* special value meaning "$(PREFIX)/share/games/powermanga/" */
++  /* special value meaning "$(PREFIX)/share/powermanga/" */
+   /* also marks end of list */
+   0
+ };
+@@ -498,7 +498,7 @@
+ #else
+   struct stat s;
+ #endif
+-  const char *subdir = "/share/games/powermanga/";
++  const char *subdir = "/share/powermanga/";
+ 
+   if (name == NULL)
+     {
+diff -Naur powermanga-0.90.orig/texts/Makefile powermanga-0.90/texts/Makefile
+--- powermanga-0.90.orig/texts/Makefile	2007-09-04 11:41:13.000000000 +0300
++++ powermanga-0.90/texts/Makefile	2011-03-27 18:33:30.183000002 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/texts
++pkgdatadir = $(datadir)/powermanga/texts
+ ACLOCAL = ${SHELL} /home/bubux/dev/tempo/powermanga-0.90/autotools/missing --run aclocal-1.9
+ AMDEP_FALSE = #
+ AMDEP_TRUE = 
+diff -Naur powermanga-0.90.orig/texts/Makefile.am powermanga-0.90/texts/Makefile.am
+--- powermanga-0.90.orig/texts/Makefile.am	2007-07-13 14:24:49.000000000 +0300
++++ powermanga-0.90/texts/Makefile.am	2011-03-27 18:33:45.745000002 +0200
+@@ -1,5 +1,5 @@
+ 
+-pkgdatadir = $(datadir)/games/powermanga/texts
++pkgdatadir = $(datadir)/powermanga/texts
+ 
+ dist_pkgdata_DATA = \
+   about_en.txt \
+diff -Naur powermanga-0.90.orig/texts/Makefile.in powermanga-0.90/texts/Makefile.in
+--- powermanga-0.90.orig/texts/Makefile.in	2007-09-04 11:41:05.000000000 +0300
++++ powermanga-0.90/texts/Makefile.in	2011-03-27 18:37:35.014000003 +0200
+@@ -58,7 +58,7 @@
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
+ DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-pkgdatadir = $(datadir)/games/powermanga/texts
++pkgdatadir = $(datadir)/powermanga/texts
+ ACLOCAL = @ACLOCAL@
+ AMDEP_FALSE = @AMDEP_FALSE@
+ AMDEP_TRUE = @AMDEP_TRUE@

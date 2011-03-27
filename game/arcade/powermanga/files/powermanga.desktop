@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Powermanga
+GenericName=Powermanga
+GenericName[tr]=Powermanga
+Comment=An arcade 2D shoot-em-up game
+Comment[tr]=2B hepsini vur oyunu
+Icon=powermanga
+Exec=powermanga
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;
