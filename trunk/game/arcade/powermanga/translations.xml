@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>powermanga</Name>
+        <Summary xml:lang="tr">An arcade 2D shoot-em-up game</Summary>
+        <Description xml:lang="tr">Powermanga is an arcade 2D shoot-em-up game with 41 levels and more than 200 sprites.</Description>
+    </Source>
+</PISI>

@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>powermanga</Name>
+        <Homepage>http://linux.tlk.fr/games/Powermanga</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>powermanga</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>An arcade 2D shoot-em-up game</Summary>
+        <Description>Powermanga is an arcade 2D shoot-em-up game with 41 levels and more than 200 sprites.</Description>
+        <Archive sha1sum="50ca2844f8d3fa53af89e94aeb6dd10d7b320cc8" type="targz">http://linux.tlk.fr/games/Powermanga/download/powermanga-0.90.tgz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>libpng-devel</Dependency>
+            <Dependency>libXext-devel</Dependency>
+            <Dependency>libXxf86dga-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">powermanga-0.90-assembler_opt.diff</Patch>
+            <Patch level="1">powermanga-0.90-paths.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>powermanga</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXxf86dga</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/var</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/powermanga</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/powermanga.desktop">powermanga.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/powermanga.png">powermanga.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-03-27</Date>
+            <Version>0.90</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
