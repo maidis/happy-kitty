@@ -3,7 +3,7 @@
 
 = Packages =
 == Games ==
-  * airstrike - A 2d dogfight game
+  * [airstrike] - A 2d dogfight game
   * happyfrog - A funny game based on Qt and Box2D
 
 == Libraries ==
