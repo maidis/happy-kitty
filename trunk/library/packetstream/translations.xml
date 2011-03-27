@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>packetstream</Name>
+        <Summary xml:lang="tr">İş parçacığı güvenlikli tampon kütüphanesi</Summary>
+        <Description xml:lang="tr">packetstream, iş parçacığı güvenlikli tampon kütüphanesidir. packetstream, glc projesinin bir parçasıdır.</Description>
+    </Source>
+</PISI>

@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>elfhacks</Name>
+        <Homepage>https://github.com/nullkey/glc</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>ZLIB</License>
+        <IsA>library</IsA>
+        <Summary>Various ELF run-time hacks</Summary>
+        <Description>elfhacks is a library for doing magic with ELF. It is a part of glc project.</Description>
+        <Archive sha1sum="471ee23a9030edefe193f162a0cb8bb492231109" type="targz">http://nullkey.ath.cx/elfhacks/archive/elfhacks-0.4.1.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>elfhacks</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-05-11</Date>
+            <Version>0.4.1</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

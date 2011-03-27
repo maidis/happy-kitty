@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>packetstream</Name>
+        <Homepage>https://github.com/nullkey/glc</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>ZLIB</License>
+        <IsA>library</IsA>
+        <Summary>Thread-safe buffer library</Summary>
+        <Description>packetstream is a thread-safe buffer library. It is a part of glc project.</Description>
+        <Archive sha1sum="9859fb832c34fc999ea29e755f35a903f6018f38" type="targz">http://nullkey.ath.cx/packetstream/archive/packetstream-0.1.4.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>packetstream</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-05-11</Date>
+            <Version>0.1.4</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
