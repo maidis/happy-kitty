@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ballway</Name>
+        <Homepage>http://qt-apps.org/content/show.php/Ballway?content=133040</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>ballway</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>An arcade game with ball</Summary>
+        <Description>Ballway is an arcade game. Your target is to move the ball to the finish circle. But you can only accelerate the ball in the 4 directions up, down, left and right.</Description>
+        <Archive sha1sum="a06cf51ced4f9ecde8642711e5b80d5f37e203fa" type="tarbz2">http://dl.dropbox.com/u/1836567/Paketler/ballway-1.0.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>qt-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ballway</Name>
+        <RuntimeDependencies>
+            <Dependency>qt</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/opt/ballway/Ballway</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/opt/ballway</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/ballway.desktop">ballway.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-03-26</Date>
+            <Version>1.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

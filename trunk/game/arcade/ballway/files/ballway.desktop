@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=ballway
+GenericName=Ballway
+GenericName[tr]=Ballway
+Comment=An arcade game with ball
+Comment[tr]=Toplu bir ateri oyunu
+Icon=ballway
+Exec=/opt/ballway/Ballway
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;

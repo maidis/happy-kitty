@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>ballway</Name>
+        <Summary xml:lang="tr">Toplu bir ateri oyunu</Summary>
+        <Description xml:lang="tr">Ballway, bir ateri oyunudur. Oyundaki hedefiniz topu bitişteki çemberin içine taşımaktır. Fakat topu yalnızca yukarı, aşağı, sağa ve sola doğru hareket ettirebilirsiniz.</Description>
+    </Source>
+</PISI>
