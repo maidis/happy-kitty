@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>apricots</Name>
+        <Summary xml:lang="tr">Basit bir 2B uçma ve bomba oyunu</Summary>
+        <Description xml:lang="tr">Apricots, küçük bir uçakla uçtuğunuz, düşman hedeflere ateş ettiğiniz ve bomba attığınız bir oyundur.</Description>
+    </Source>
+</PISI>

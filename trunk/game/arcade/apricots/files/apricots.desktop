@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Apricots
+GenericName=Apricots
+GenericName[tr]=Apricots
+Comment=A simple 2D flying and bombing game
+Comment[tr]=Basit bir 2B uçma ve bomba oyunu
+Icon=apricots
+Exec=apricots
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;
