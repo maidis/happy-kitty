@@ -181,6 +181,65 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>briquolo</Name>
+            <Homepage>http://briquolo.free.fr</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">An addictive block game</Summary>
+            <Summary xml:lang="tr">Bağımlılık yapıcı bir tuğla kırma oyunu</Summary>
+            <Description xml:lang="en">BRIQUOLO is a breakout with 3D representation based on OpenGL.</Description>
+            <Description xml:lang="tr">BRIQUOLO, OpenGL temelli 3B bir tuğla kırma oyunudur.</Description>
+            <Icon>briquolo</Icon>
+            <Archive type="tarbz2" sha1sum="72823b6548e0b76bbf5fdf63fe1803eec89a1cba">http://briquolo.free.fr/download/briquolo-0.5.7.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-ttf-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>briquolo-gcc.patch</Patch>
+                <Patch level="1">briquolo-libpng.patch</Patch>
+                <Patch level="1">briquolo-0.5.7-desktop.diff</Patch>
+            </Patches>
+            <SourceURI>game/arcade/briquolo/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>briquolo</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>sdl-ttf</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/briquolo</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/briquolo.desktop" permission="0644" owner="root">briquolo.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/briquolo.png" permission="0644" owner="root">briquolo.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-03-27</Date>
+                <Version>0.5.7</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>powermanga</Name>
             <Homepage>http://linux.tlk.fr/games/Powermanga</Homepage>
             <Packager>
