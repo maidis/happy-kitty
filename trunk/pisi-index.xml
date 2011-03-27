@@ -9,6 +9,54 @@
     </Distribution>
     <SpecFile>
         <Source>
+            <Name>glc</Name>
+            <Homepage>https://github.com/nullkey/glc</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>ZLIB</License>
+            <License>CDDL</License>
+            <License>GPLv2</License>
+            <IsA>app:console</IsA>
+            <PartOf>multimedia.video</PartOf>
+            <Summary xml:lang="en">A capture tool</Summary>
+            <Description xml:lang="en">glc is an ALSA and OpenGL capture tool. glc should be able to capture any application that uses ALSA for sound and OpenGL for drawing. It is still a relatively new project but already has a long list of features.</Description>
+            <Archive type="targz" sha1sum="012812ad68be4ffcdcbd064023b1e4e1c2157261">http://nullkey.ath.cx/glc/archive/glc-0.5.8.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>elfhacks</Dependency>
+                <Dependency>packetstream</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">typo-in-alsa_capture_stop_all.diff</Patch>
+            </Patches>
+            <SourceURI>multimedia/video/glc/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>glc</Name>
+            <RuntimeDependencies>
+                <Dependency>elfhacks</Dependency>
+                <Dependency>packetstream</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-05-11</Date>
+                <Version>0.5.8</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>happyfrog</Name>
             <Homepage>http://code.google.com/p/happyfrog</Homepage>
             <Packager>
@@ -511,6 +559,76 @@
             </Update>
         </History>
     </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>elfhacks</Name>
+            <Homepage>https://github.com/nullkey/glc</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>ZLIB</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">Various ELF run-time hacks</Summary>
+            <Description xml:lang="en">elfhacks is a library for doing magic with ELF. It is a part of glc project.</Description>
+            <Archive type="targz" sha1sum="471ee23a9030edefe193f162a0cb8bb492231109">http://nullkey.ath.cx/elfhacks/archive/elfhacks-0.4.1.tar.gz</Archive>
+            <SourceURI>library/elfhacks/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>elfhacks</Name>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-05-11</Date>
+                <Version>0.4.1</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>packetstream</Name>
+            <Homepage>https://github.com/nullkey/glc</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>ZLIB</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">Thread-safe buffer library</Summary>
+            <Summary xml:lang="tr">İş parçacığı güvenlikli tampon kütüphanesi</Summary>
+            <Description xml:lang="en">packetstream is a thread-safe buffer library. It is a part of glc project.</Description>
+            <Description xml:lang="tr">packetstream, iş parçacığı güvenlikli tampon kütüphanesidir. packetstream, glc projesinin bir parçasıdır.</Description>
+            <Archive type="targz" sha1sum="9859fb832c34fc999ea29e755f35a903f6018f38">http://nullkey.ath.cx/packetstream/archive/packetstream-0.1.4.tar.gz</Archive>
+            <SourceURI>library/packetstream/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>packetstream</Name>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-05-11</Date>
+                <Version>0.1.4</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
     <Component>
         <Name>library</Name>
         <LocalName xml:lang="en">FIXME</LocalName>
@@ -693,6 +811,28 @@
         <Summary xml:lang="en">FIXME</Summary>
         <Description xml:lang="en">FIXME</Description>
         <Group>games</Group>
+        <Maintainer>
+            <Name>FIXME</Name>
+            <Email>FIXME</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>multimedia</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>multimedia</Group>
+        <Maintainer>
+            <Name>FIXME</Name>
+            <Email>FIXME</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>multimedia.video</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>multimedia</Group>
         <Maintainer>
             <Name>FIXME</Name>
             <Email>FIXME</Email>
