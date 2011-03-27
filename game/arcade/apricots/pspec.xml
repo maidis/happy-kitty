@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>apricots</Name>
+        <Homepage>http://www.fishies.org.uk/apricots.html</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>apricots</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A simple 2D flying and bombing game</Summary>
+        <Description>Apricots is a game where you fly a little plane around the screen and shoot things and drop bombs on enemy targets.</Description>
+        <Archive sha1sum="4b5b4c867fc92d4fc717d16b30dbaf8411f24a48" type="targz">http://www.fishies.org.uk/apricots-0.2.6.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>openal-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>freealut-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>apricots-0.2.6-freealut.patch</Patch>
+            <Patch>apricots-0.2.6-ldflags.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>apricots</Name>
+        <RuntimeDependencies>
+            <Dependency>openal</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>freealut</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/apricots</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/apricots.desktop">apricots.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/apricots.png">apricots.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-03-27</Date>
+            <Version>0.2.6</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
