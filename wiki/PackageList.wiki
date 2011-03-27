@@ -2,7 +2,9 @@
 #labels Featured
 
 = Packages =
+
 == Games ==
+
   * [airstrike]
   * [apricots]
   * [barrage]
@@ -10,5 +12,6 @@
   * [powermanga]
 
 == Libraries ==
+
   * [box2d]
   * [qt-mobility]
