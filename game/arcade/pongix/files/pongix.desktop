@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=pongix
+GenericName=Pong Game
+GenericName[tr]=Pong Oyunu
+Comment=A pong game
+Comment[tr]=Bir pong oyunu
+Icon=pongix
+Exec=pongix
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;
