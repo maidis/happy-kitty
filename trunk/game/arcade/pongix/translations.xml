@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>pongix</Name>
+        <Summary xml:lang="tr">Bir pong oyunu</Summary>
+        <Description xml:lang="tr">Pongix, iki kişi oynanan bir Pong oyunudur.</Description>
+    </Source>
+</PISI>

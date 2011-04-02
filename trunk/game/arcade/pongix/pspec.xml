@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>pongix</Name>
+        <Homepage>http://www.losersjuegos.com.ar/juegos/pongix</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>pongix</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A pong game</Summary>
+        <Description>Pongix is ​​a very simple game for two players inspired by the classic Pong.</Description>
+        <Archive sha1sum="f76f55396984804714e5ecfa14dcf4e3a030f937" type="targz">http://www.losersjuegos.com.ar/_media/juegos/pongix/descargas/pongix-0.4.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-net-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>pongix</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-net</Dependency>
+            <Dependency>sdl-image</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/pongix</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/pongix.desktop">pongix.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/pongix.png">pongix.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-04-02</Date>
+            <Version>0.4</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
