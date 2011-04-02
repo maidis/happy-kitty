@@ -342,6 +342,59 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>pongix</Name>
+            <Homepage>http://www.losersjuegos.com.ar/juegos/pongix</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A pong game</Summary>
+            <Summary xml:lang="tr">Bir pong oyunu</Summary>
+            <Description xml:lang="en">Pongix is ​​a very simple game for two players inspired by the classic Pong.</Description>
+            <Description xml:lang="tr">Pongix, iki kişi oynanan bir Pong oyunudur.</Description>
+            <Icon>pongix</Icon>
+            <Archive type="targz" sha1sum="f76f55396984804714e5ecfa14dcf4e3a030f937">http://www.losersjuegos.com.ar/_media/juegos/pongix/descargas/pongix-0.4.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-net-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/arcade/pongix/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>pongix</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-net</Dependency>
+                <Dependency>sdl-image</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/pongix</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/pongix.desktop" permission="0644" owner="root">pongix.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/pongix.png" permission="0644" owner="root">pongix.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-04-02</Date>
+                <Version>0.4</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>powermanga</Name>
             <Homepage>http://linux.tlk.fr/games/Powermanga</Homepage>
             <Packager>
@@ -397,6 +450,60 @@
             <Update release="1">
                 <Date>2011-03-27</Date>
                 <Version>0.90</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>tuxfootball</Name>
+            <Homepage>http://tuxfootball.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.action</PartOf>
+            <Summary xml:lang="en">A 2D soccer game</Summary>
+            <Summary xml:lang="tr">2B futbol oyunu</Summary>
+            <Description xml:lang="en">Tux Football is a great 2D soccer game. It&apos;s bringing old style gameplay from DOS times back to the desktop with up to date graphics! It&apos;s gameplay is similar to old classics such as Amco&apos;s Kick Off and Sensible Software&apos;s Sensible Soccer.</Description>
+            <Description xml:lang="tr">Tux Football, güzel bir 2B futbol oyunudur. DOS zamanlarından kalma oynanış tarzını güncel grafiklerle ekranlarımıza getiren oyun, Amco&apos;s Kick Off ve Sensible Software&apos;s Sensible Soccer gibi klasiklerin izini takip etmektedir.</Description>
+            <Icon>tuxfootball</Icon>
+            <Archive type="targz" sha1sum="e2602da5c50516ec6ab211bd1a70e8045a997594">mirrors://sourceforge/tuxfootball/0.3/tuxfootball-0.3.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/action/tuxfootball/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>tuxfootball</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/tuxfootball</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/tuxfootball.desktop" permission="0644" owner="root">tuxfootball.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/tuxfootball.png" permission="0644" owner="root">tuxfootball.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-04-02</Date>
+                <Version>0.3.0</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -507,7 +614,7 @@
                 <Email>ozbekanil@gmail.com</Email>
             </Packager>
             <License>LGPLv2.1</License>
-            <License>FDL-1.2</License>
+            <License>FDL-1.3</License>
             <IsA>library</IsA>
             <PartOf>library</PartOf>
             <Summary xml:lang="en">Qt APIs for mobile devices</Summary>
