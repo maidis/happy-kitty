@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>tuxfootball</Name>
+        <Summary xml:lang="tr">2B futbol oyunu</Summary>
+        <Description xml:lang="tr">Tux Football, güzel bir 2B futbol oyunudur. DOS zamanlarından kalma oynanış tarzını güncel grafiklerle ekranlarımıza getiren oyun, Amco's Kick Off ve Sensible Software's Sensible Soccer gibi klasiklerin izini takip etmektedir.</Description>
+    </Source>
+</PISI>
