@@ -24,7 +24,7 @@ This section contains a number of well known categories and suggestions on how t
 
 The table below lists all Main Categories. Note that category names are case-sensitive.
 
-|| Main Category || Description ||
+|| *Main Category* || *Description* ||
 || AudioVideo || Application for presenting, creating, or processing multimedia (audio/video) ||
 || Audio || An audio application ||
 || Video || A video application ||
