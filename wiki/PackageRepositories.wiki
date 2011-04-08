@@ -56,6 +56,18 @@ In addition to the repositories, the Arch User Repository provides user-made PKG
 
   * [https://build.opensuse.org/ openSUSE Build Service]
 
+== Pardus ==
+[http://www.pardus.org.tr/eng/ Pardus] is a GNU/Linux distribution developed in Turkey, as a product of the Pardus Project. It was named after the Latin (and scientific) name for the Anatolian leopard. There are many applications included in its standard package. Users do not need to have an advanced knowledge of GNU/Linux to use it.
+
+  * [http://packages.pardus.org.tr/ Pardus Repositories]
+  * [https://svn.pardus.org.tr/pardus/2011/devel/ Pardus 2011 Devel Repository]
+  * [https://svn.pardus.org.tr/pardus/playground/ Pardus Playground Repository]
+  * [http://pardus.linux.org.tr/browser Pardus Corporate 2 Contrib Repository]
+  * [http://svn.sudrap.org/repository/users/ Sudrap]
+  * [http://www.pardususer.de/index.php?action=repository&dir=/build-files/2011 PardusUser.de Pardus 2011 Repository]
+  * [http://www.pardususer.de/index.php?action=repository&dir=/playground PardusUser.de Playground Repository]
+  * [http://svn.pardus-linux.org/paketler/2011/P2011/ Pardus-Linux.org Repository]
+
 == PLD Linux Distribution ==
 [http://www.pld-linux.org/ PLD] is a free, RPM-based Linux distribution, aimed at the more advanced users and administrators, who accept the tradeoffs of using a system, that might require manual tweaking in exchange for much flexibility.
 
