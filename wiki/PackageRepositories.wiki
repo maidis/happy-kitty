@@ -14,7 +14,7 @@ I'm going to add my content here.
   * [http://sisyphus.ru/en/packages/ Alt Linux Sisyphus Repository]
 
 == Arch Linux ==
-Arch Linux is a Linux distribution intended to be lightweight and simple. The design approach of the development team focuses on simplicity, elegance, code correctness and minimalism.
+[http://www.archlinux.org/ Arch Linux] is a Linux distribution intended to be lightweight and simple. The design approach of the development team focuses on simplicity, elegance, code correctness and minimalism.
 
 Arch is largely based around binary packages. Packages are targeted for i686 and x86-64 microprocessors to assist performance on modern hardware. A ports/ebuild-like system is also provided for automated source compilation, known as the Arch Build System.
 
@@ -24,7 +24,25 @@ In addition to the repositories, the Arch User Repository provides user-made PKG
   * [https://aur.archlinux.org/ AUR (Arch User Repository)]
 
 == Debian ==
-Debian is a computer operating system composed of software packages released as free and open source software especially under the GNU General Public License and other free software licenses. The primary form, Debian GNU/Linux, which uses the Linux kernel and GNU OS tools, is a popular and influential GNU/Linux distribution. It is distributed with access to repositories containing thousands of software packages ready for installation and use.
+[http://www.debian.org/ Debian] is a computer operating system composed of software packages released as free and open source software especially under the GNU General Public License and other free software licenses. The primary form, Debian GNU/Linux, which uses the Linux kernel and GNU OS tools, is a popular and influential GNU/Linux distribution. It is distributed with access to repositories containing thousands of software packages ready for installation and use.
 
   * [http://www.debian.org/distrib/packages Debian Packages]
   * [http://patch-tracker.debian.org/ Debian Patch Tracking System]
+
+== Fedora ==
+[http://fedoraproject.org/ Fedora] is an RPM-based, general purpose collection of software, including an operating system based on the Linux kernel, developed by the community-supported Fedora Project and sponsored by Red Hat. The Fedora Project's mission is to lead the advancement of free and open source software and content as a collaborative community.
+
+  * [https://admin.fedoraproject.org/pkgdb/ Fedora Package Database]
+  * [http://pkgs.fedoraproject.org/gitweb/ Fedora Packages Git Repositories]
+  * [http://koji.fedoraproject.org/koji/ Fedora Build System]
+
+== Red Hat ==
+[http://www.redhat.com/ Red Hat] is a company in the free and open source software sector, and a major Linux distribution vendor. Founded in 1993.
+
+Red Hat creates, maintains, and contributes to many free software projects and has also acquired several proprietary software packages and released their source code under mostly GNU GPL while holding copyright under single commercial entity and selling looser licenses. As of February 2009, Red Hat was the largest corporate contributor to the Linux kernel.
+
+  * [http://rpmfind.net/ Rpmfind]
+  * [http://rpm.pbone.net/ RPM Search]
+  * [http://freshrpms.net/packages/ Freshrpms]
+  * [http://svn.rpmforge.net/svn/trunk/rpms/ RPMforge]
+  * [http://sophie.zarb.org/ Sophie]
