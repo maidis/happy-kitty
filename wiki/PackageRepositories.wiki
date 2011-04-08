@@ -51,6 +51,16 @@ In addition to the repositories, the Arch User Repository provides user-made PKG
   * [http://svn.mandriva.com/svn/packages/cooker/ Cooker]
   * [http://svn.mandriva.com/cgi-bin/viewvc.cgi/packages/cooker/ Cooker ViewVC]
 
+== openSUSE ==
+[http://www.opensuse.org/ openSUSE] is a general purpose operating system built on top of the Linux kernel, developed by the community-supported openSUSE Project and sponsored by Novell. After acquiring SUSE Linux in January 2004, Novell decided to release the SUSE Linux Professional product as a 100% open source project, involving the community in the development process.
+
+  * [https://build.opensuse.org/ openSUSE Build Service]
+
+== PLD Linux Distribution ==
+[http://www.pld-linux.org/ PLD] is a free, RPM-based Linux distribution, aimed at the more advanced users and administrators, who accept the tradeoffs of using a system, that might require manual tweaking in exchange for much flexibility.
+
+  * [http://cvs.pld-linux.org/cgi-bin/cvsweb/packages/ PLD CVS Tree]
+
 == Red Hat Linux ==
 [http://www.redhat.com/ Red Hat Linux], assembled by the company Red Hat, was a popular Linux based operating system until its discontinuation in 2004.
 
@@ -63,6 +73,29 @@ Since 2003, Red Hat has discontinued the Red Hat Linux line in favor of Red Hat 
   * [http://freshrpms.net/packages/ Freshrpms]
   * [http://svn.rpmforge.net/svn/trunk/rpms/ RPMforge]
   * [http://sophie.zarb.org/ Sophie]
+
+== Sabayon ==
+[http://www.sabayon.org/ Sabayon] (formerly RR4 Linux and RR64 Linux), is a Gentoo-based Linux distribution created by Fabio Erculiani and the Sabayon development team. Sabayon follows the "Out of the box" philosophy, aiming to give the user a wide number of applications ready to use and a self-configured operating system.
+
+  * [http://packages.sabayon.org/ Sabayon Entropy Store]
+  * [http://gitweb.sabayon.org/?p=overlay.git;a=tree Sabayon Linux Portage Overlay]
+
+== Slackware ==
+[http://www.slackware.com/ Slackware] is a free and open source Linux-based operating system. It was one of the earliest operating systems to be built on top of the Linux kernel and is the oldest currently being maintained. Slackware was created by Patrick Volkerding of Slackware Linux, Inc. in 1993. The current stable version is 13.1, released on May 24, 2010.
+
+Slackware aims for design stability and simplicity, and to be the most "Unix-like" Linux distribution, using plain text files for configuration and making as few modifications as possible to software packages from upstream.
+
+  * [http://repository.slacky.eu/ Slacky.eu]
+  * [http://slackbuilds.org/repository/13.1/ SlackBuilds Repository]
+
+== Ubuntu ==
+[http://www.ubuntu.com/ Ubuntu] is a computer operating system based on the Debian GNU/Linux distribution and distributed as free and open source software. It is named after the Southern African philosophy of Ubuntu ("humanity towards others").
+
+With an estimated global usage of more than 12 million users, Ubuntu is designed primarily for desktop use, although netbook and server editions exist as well.
+
+  * [https://launchpad.net/ubuntu Ubuntu in Launchpad]
+  * [http://packages.ubuntu.com/ Ubuntu Packages Search]
+  * [http://patches.ubuntu.com/ Ubuntu's Debian patches repository]
 
 = References =
   * [http://tr.pardus-wiki.org/Pardus:Paket_depo_ba%C4%9Flant%C4%B1lar%C4%B1 Paket Depo Bağlantıları (Turkish)]
