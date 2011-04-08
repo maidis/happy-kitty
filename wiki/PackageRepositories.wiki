@@ -36,13 +36,34 @@ In addition to the repositories, the Arch User Repository provides user-made PKG
   * [http://pkgs.fedoraproject.org/gitweb/ Fedora Packages Git Repositories]
   * [http://koji.fedoraproject.org/koji/ Fedora Build System]
 
-== Red Hat ==
-[http://www.redhat.com/ Red Hat] is a company in the free and open source software sector, and a major Linux distribution vendor. Founded in 1993.
+== Gentoo Linux ==
+[http://www.gentoo.org/ Gentoo Linux] is a computer operating system built on top of the Linux kernel and based on the Portage package management system. It is distributed as free and open source software, but includes some proprietary software packages. Unlike a conventional software distribution, the user compiles the source code locally according to their chosen configuration. There are normally no precompiled binaries for software, continuing the tradition of the ports collection, although for convenience, some software packages (such as Mozilla Firefox and OpenOffice.org) are also available as precompiled binaries for various architectures where compiling would otherwise be very time consuming.
 
-Red Hat creates, maintains, and contributes to many free software projects and has also acquired several proprietary software packages and released their source code under mostly GNU GPL while holding copyright under single commercial entity and selling looser licenses. As of February 2009, Red Hat was the largest corporate contributor to the Linux kernel.
+  * [http://sources.gentoo.org/ Gentoo Repository Listing]
+  * [http://gentoo-portage.com/ Gentoo Portage]
+  * [http://gpo.zugaina.org/ Gentoo Portage Overlays]
+  * [http://packages.gentoo.org/ Gentoo Packages]
+  * [http://kambing.ui.ac.id/gentoo-portage/ Gentoo Portage Index]
+
+== Mandriva Linux ==
+[http://www.mandriva.com/ Mandriva Linux] (formerly Mandrakelinux or Mandrake Linux) is a French Linux distribution distributed by Mandriva (formerly Mandrakesoft). It uses the RPM Package Manager. The product lifetime of Mandriva Linux releases is 18 months for base updates (Linux, system software, etc.) and 12 months for desktop updates (window managers, desktop environments, web browsers, etc.). Server products receive full updates for at least 24 months after their release.
+
+  * [http://svn.mandriva.com/svn/packages/cooker/ Cooker]
+  * [http://svn.mandriva.com/cgi-bin/viewvc.cgi/packages/cooker/ Cooker ViewVC]
+
+== Red Hat Linux ==
+[http://www.redhat.com/ Red Hat Linux], assembled by the company Red Hat, was a popular Linux based operating system until its discontinuation in 2004.
+
+Red Hat Linux 1.0 was released on November 3, 1994. It was originally called "Red Hat Commercial Linux". It was the first Linux distribution to use the RPM Package Manager as its packaging format, and over time has served as the starting point for several other distributions, such as Mandriva Linux and Yellow Dog Linux.
+
+Since 2003, Red Hat has discontinued the Red Hat Linux line in favor of Red Hat Enterprise Linux (RHEL) for enterprise environments. Fedora, developed by the community-supported Fedora Project and sponsored by Red Hat, is the free version best suited for home use. Red Hat Linux 9, the final release, hit its official end-of-life on 2004-04-30, although updates were published for it through 2006 by the Fedora Legacy project until that shut down in early 2007.
 
   * [http://rpmfind.net/ Rpmfind]
   * [http://rpm.pbone.net/ RPM Search]
   * [http://freshrpms.net/packages/ Freshrpms]
   * [http://svn.rpmforge.net/svn/trunk/rpms/ RPMforge]
   * [http://sophie.zarb.org/ Sophie]
+
+= References =
+  * [http://tr.pardus-wiki.org/Pardus:Paket_depo_ba%C4%9Flant%C4%B1lar%C4%B1 Paket Depo Bağlantıları (Turkish)]
+  * [http://en.wikipedia.org/ Wikipedia]
