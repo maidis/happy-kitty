@@ -7,6 +7,8 @@
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import qt4
 
+WorkDir = "happyfrog"
+
 def setup():
     qt4.configure()
 

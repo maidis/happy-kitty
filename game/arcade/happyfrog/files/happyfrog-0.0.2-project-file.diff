@@ -1,51 +1,10 @@
-diff -Naur HappyFrog.orig/deployment.pri HappyFrog/deployment.pri
---- HappyFrog.orig/deployment.pri	2011-03-18 04:48:57.000000000 +0200
-+++ HappyFrog/deployment.pri	2011-03-26 21:04:33.000000000 +0200
-@@ -47,10 +47,10 @@
-     }
- } else:unix {
-     maemo5 {
--        installPrefix = /opt/usr
-+        installPrefix = /usr
-         desktopfile.path = /usr/share/applications/hildon
-     } else {
--        installPrefix = /usr/local
-+        installPrefix = /usr
-         desktopfile.path = /usr/share/applications
-         copyCommand =
-         for(deploymentfolder, DEPLOYMENTFOLDERS) {
-diff -Naur HappyFrog.orig/HappyFrog.desktop HappyFrog/HappyFrog.desktop
---- HappyFrog.orig/HappyFrog.desktop	2011-03-18 04:48:57.000000000 +0200
-+++ HappyFrog/HappyFrog.desktop	2011-03-26 21:07:22.000000000 +0200
-@@ -1,11 +1,14 @@
- [Desktop Entry]
--Encoding=UTF-8
--Version=1.0
- Type=Application
--Terminal=false
-+Version=1.0
-+Encoding=UTF-8
- Name=HappyFrog
--Exec=/opt/usr/bin/HappyFrog
-+GenericName=HappyFrog
-+GenericName[tr]=MutluKurbiş
-+Comment=An Angry Birds like game
-+Comment[tr]=Angry Birds benzeri bir oyun
- Icon=HappyFrog
--X-Window-Icon=
--X-HildonDesk-ShowInToolbar=true
--X-Osso-Type=application/x-executable
-+Exec=HappyFrog
-+Terminal=false
-+StartupNotify=false
-+Categories=Application;Game;ArcadeGame;
-diff -Naur HappyFrog.orig/HappyFrog.pro HappyFrog/HappyFrog.pro
---- HappyFrog.orig/HappyFrog.pro	2011-03-18 05:02:32.000000000 +0200
-+++ HappyFrog/HappyFrog.pro	2011-03-26 20:51:42.000000000 +0200
-@@ -1,47 +1,12 @@
+--- HappyFrog.pro.orig	2011-04-10 13:07:36.000000000 +0300
++++ HappyFrog.pro	2011-04-10 14:37:27.859000024 +0300
+@@ -1,47 +1,14 @@
  QT     += core gui declarative xml xmlpatterns
--
+ 
 +LIBS   += -lBox2D
++
  TARGET = HappyFrog
  TEMPLATE = app
  
@@ -88,11 +47,11 @@ diff -Naur HappyFrog.orig/HappyFrog.pro HappyFrog/HappyFrog.pro
 -    ./Box2D/Dynamics/b2World.cpp \
 -    ./Box2D/Dynamics/b2WorldCallbacks.cpp \
 -    main.cpp \
-+SOURCES +=main.cpp \
++SOURCES += main.cpp \
      slingshot.cpp \
      frog.cpp \
      fixture.cpp \
-@@ -50,42 +15,8 @@
+@@ -50,42 +17,8 @@
      fadeeffect.cpp \
      mainwindow.cpp
  
@@ -137,15 +96,16 @@ diff -Naur HappyFrog.orig/HappyFrog.pro HappyFrog/HappyFrog.pro
      slingshot.h \
      frog.h \
      fixture.h \
-@@ -131,9 +62,9 @@
- 
- unix:!symbian {
+@@ -135,11 +68,10 @@
      maemo5 {
--        target.path = /opt/usr/bin
-+        target.path = /usr/bin
+         target.path = /opt/usr/bin
      } else {
 -        target.path = /usr/local/bin
 +        target.path = /usr/bin
      }
      INSTALLS += target
  }
+ # Please do not modify the following two lines. Required for deployment.
+ include(deployment.pri)
+ qtcAddDeployment()
+-
