@@ -1,0 +1,11 @@
+--- deployment.pri.orig	2011-03-30 04:24:36.000000000 +0300
++++ deployment.pri	2011-04-10 14:30:30.519000024 +0300
+@@ -50,7 +50,7 @@
+         installPrefix = /opt/usr
+         desktopfile.path = /usr/share/applications/hildon
+     } else {
+-        installPrefix = /usr/local
++        installPrefix = /usr
+         desktopfile.path = /usr/share/applications
+         copyCommand =
+         for(deploymentfolder, DEPLOYMENTFOLDERS) {

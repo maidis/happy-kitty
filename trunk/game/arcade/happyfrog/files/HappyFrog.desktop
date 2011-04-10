@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Version=1.0
+Name=HappyFrog
+GenericName=HappyFrog
+GenericName[tr]=MutluKurbiş
+Comment=An Angry Birds like game
+Comment[tr]=Angry Birds benzeri bir oyun
+Exec=HappyFrog
+Icon=HappyFrog
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;
