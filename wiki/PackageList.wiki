@@ -8,6 +8,8 @@
 = Contribute =
   * [BuildingSourceRepository]
   * [HappyPenguinMission]
+  * [PackageRepositories]
+  * [DesktopFiles]
 ----
 
 = Packages =
@@ -16,11 +18,20 @@
 
   * [airstrike]
   * [apricots]
+  * [ballway]
   * [barrage]
+  * [briquolo]
   * [happyfrog]
+  * [pongix]
   * [powermanga]
+  * [tuxfootball]
+
+== Tools ==
+  * [glc]
 
 == Libraries ==
 
   * [box2d]
   * [qt-mobility]
+  * [elfhacks]
+  * [packetstream]
