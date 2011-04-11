@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>viruskiller</Name>
+        <Homepage>http://www.parallelrealities.co.uk/projects/virusKiller.php</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <Icon>viruskiller</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A shoot 'em up</Summary>
+        <Description>Virus Killer is an arcade game that relies on quick reflexes, luck and your file system.</Description>
+        <Archive sha1sum="d17d3e07879d03688e3c1425da506216334eedca" type="targz">http://www.parallelrealities.co.uk/download/viruskiller/viruskiller-1.03-1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>sdl-net-devel</Dependency>
+            <Dependency>sdl-ttf-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>make.patch</Patch>
+            <Patch>desktop.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>viruskiller</Name>
+        <RuntimeDependencies>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>sdl-net</Dependency>
+            <Dependency>sdl-ttf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/viruskiller</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-09-03</Date>
+            <Version>1.03</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
