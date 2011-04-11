@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=The Butterfly Effect
+Name[tr]=Kelebek Etkisi
+GenericName=Incredible Machines
+GenericName[tr]=İnanılmaz Makineler
+Comment=A logic game in the style of The Incredible Machine
+Comment[tr]=The Incredible Machine tarzı bir mantık oyunu
+Icon=thebutterflyeffect
+Exec=/opt/thebutterflyeffect/tbe
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;

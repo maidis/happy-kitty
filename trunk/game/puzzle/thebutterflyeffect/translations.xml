@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>thebutterflyeffect</Name>
+        <Summary xml:lang="tr">The Incredible Machine tarzı bir mantık oyunu</Summary>
+        <Description xml:lang="tr">The Butterfly Effect, nedenler ve sonuçlar üzerine kurulu bir fizik oyunudur. Basit görevleri yerine getirmek için karmaşık sistemler inşa ederken çok eğleneceksiniz.</Description>
+    </Source>
+</PISI>
