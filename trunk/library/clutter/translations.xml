@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>clutter</Name>
+        <Summary xml:lang="tr">OpenGL grafik arabirim kütüphanesi</Summary>
+        <Description xml:lang="tr">Clutter, görsel olarak zengin ve hızlı grafik arabirimler oluşturmak için hazırlanmış açık kaynak bir kütüphanedir. Kullanım alanlarına en belirgin örnek olarak çoklu ortam yazılımları gösterilebilir.</Description>
+    </Source>
+</PISI>
