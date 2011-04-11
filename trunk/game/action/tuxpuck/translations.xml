@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>tuxpuck</Name>
+        <Summary xml:lang="tr">Bir hava hokeyi oyunu</Summary>
+        <Description xml:lang="tr">TuxPuck, bir hava okeyi simülatörüdür. Tux'u yenmeye çalışırken çok eğleneceksiniz.</Description>
+    </Source>
+</PISI>

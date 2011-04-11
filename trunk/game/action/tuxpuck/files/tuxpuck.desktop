@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Version=1.0
+Name=Tuxpuck
+Name[tr]=Tuxpuck
+GenericName=Air Hockey Game
+GenericName[tr]=Hava Hokeyi Oyunu
+Comment=Try to beat Tux
+Comment[tr]= Tux'u yenmeye çalışın
+Exec=tuxpuck
+Icon=tuxpuck
+StartupNotify=false
+Terminal=false
+Categories=Application;Game;ActionGame;
