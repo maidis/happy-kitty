@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>radius-engine</Name>
+        <Summary xml:lang="tr">SDL, OpenGL ve Lua üzerine kurulu bir 2B oyun motoru</Summary>
+        <Description xml:lang="tr">Radius Engine; SDL, OpenGL ve Lua üzerine kurulu bir 2B oyun motorudur. Şu an GNU/Linux dışında yalnızca Windows üzerinde çalışmaktadır.</Description>
+    </Source>
+</PISI>
