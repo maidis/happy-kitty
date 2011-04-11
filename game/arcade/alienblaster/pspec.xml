@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>alienblaster</Name>
+        <Homepage>http://www.schwardtnet.de/alienblaster/</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>alienblaster</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Alien Blaster</Summary>
+        <Description>Alien Blaster is an action-loaded 2D arcade shooter game and your mission is simple: stop the invasion of the aliens and blast them!</Description>
+        <Archive sha1sum="1f3c30cc29a0578c7008227020d30ebb1610bb55" type="targz">http://www.schwardtnet.de/alienblaster/archives/alienblaster-1.1.0.tgz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>yollarda-yamalarim.seni</Patch>
+            <Patch level="1">alienblaster-1.1.0-64bit.patch</Patch>
+            <Patch level="1">alienblaster-1.1.0-fullscreen.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>alienblaster</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/alienblaster</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/alienblaster.desktop">alienblaster.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/alienblaster.png">alienblaster.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-11-28</Date>
+            <Version>1.1.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
