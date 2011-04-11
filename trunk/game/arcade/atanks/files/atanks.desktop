@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Atanks
+GenericName=Atomic Tanks
+GenericName[tr]=Atomik Tanklar
+Comment=A Worms and Scorched Earth-like game
+Comment[tr]=Worms ve Scorched Earth benzeri oyun
+Icon=atanks
+Exec=atanks
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;

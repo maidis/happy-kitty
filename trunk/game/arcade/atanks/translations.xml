@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>atanks</Name>
+        <Summary xml:lang="tr">Worms ve Scorched Earth benzeri oyun</Summary>
+        <Description xml:lang="tr">Atomic Tanks, güçlü bir tankı kontrol ettiğiniz ve diğer güçlü tankları vurmaya çalıştığınız bir oyundur.</Description>
+    </Source>
+</PISI>
