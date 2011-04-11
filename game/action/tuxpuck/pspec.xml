@@ -9,7 +9,7 @@
             <Email>ozbekanil@gmail.com</Email>
         </Packager>
         <License>GPLv2</License>
-        <Icon>puck</Icon>
+        <Icon>tuxpuck</Icon>
         <IsA>app:gui</IsA>
         <Summary>An Air Hockey Game</Summary>
         <Description>TuxPuck is an air hockey simulator. You will lots of fun trying to beat Tux.</Description>
@@ -44,7 +44,7 @@
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/tuxpuck.desktop">tuxpuck.desktop</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/puck.png">puck.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/tuxpuck.png">tuxpuck.png</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
