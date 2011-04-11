@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Version=1.0
+Name=Emilia Pinball
+Name[tr]=Emilia Pinball 
+GenericName=OpenGL Pinball Game
+GenericName[tr]=OpenGL Tilt Oyunu
+Comment=An Open Source Pinball Simulator
+Comment[tr]=Özgür Bir Tilt Simülatörü
+Exec=pinball
+Icon=pinball
+StartupNotify=false
+Terminal=false
+Categories=Application;Game;ActionGame;

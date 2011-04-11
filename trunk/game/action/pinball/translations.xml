@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>pinball</Name>
+        <Summary xml:lang="tr">Bir tilt simülatörü</Summary>
+        <Description xml:lang="tr">Emilia Pinball, özgür bir tilt simülatörüdür.</Description>
+    </Source>
+</PISI>
