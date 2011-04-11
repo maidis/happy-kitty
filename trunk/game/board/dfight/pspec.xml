@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>dfight</Name>
+        <Homepage>http://www.busydoingnothing.co.uk/dfight</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>dfight</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A multi-player 3D board game</Summary>
+        <Description>DFight is a multi-player 3D board game for Linux written using Clutter. It is inspired by a popular board game called Khet.</Description>
+        <Archive sha1sum="1ed014e55328cf4850da3a835d38867289b7ef21" type="targz">http://www.busydoingnothing.co.uk/dfight/releases/dfight-0.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>clutter</Dependency>
+            <Dependency>mesa-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>dfight</Name>
+        <RuntimeDependencies>
+            <Dependency>pango</Dependency>
+            <Dependency>clutter</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>icon-theme-hicolor</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/dfight</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-04-11</Date>
+            <Version>0.2</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

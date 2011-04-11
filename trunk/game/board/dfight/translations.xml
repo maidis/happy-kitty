@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>dfight</Name>
+        <Summary xml:lang="tr">Çok oyunculu 3B masa oyunu</Summary>
+        <Description xml:lang="tr">DFight, Clutter ile yazılmış çok oyunculu bir 3B masa oyunudur. Popüler bir oyun olan Khet'ten ilham almıştır.</Description>
+    </Source>
+</PISI>
