@@ -1,0 +1,18 @@
+--- icons/viruskiller.desktop.orig	2010-02-12 14:59:38.000000000 +0200
++++ icons/viruskiller.desktop	2010-09-03 22:53:11.888938424 +0300
+@@ -1,9 +1,9 @@
+ [Desktop Entry]
+ Encoding=UTF-8
+-Categories=Application;Game;ArcadeGame;
+-X-Desktop-File-Install-Version=1.0
+-Name=Virus Killer
+-Icon=viruskiller.png
+-Exec=/usr/games/viruskiller
+-Terminal=0
+ Type=Application
++Version=1.0
++Name=Virus Killer
++Icon=viruskiller
++Exec=viruskiller
++Terminal=false
++Categories=Application;Game;ArcadeGame;

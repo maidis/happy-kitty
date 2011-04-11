@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>viruskiller</Name>
+        <Summary xml:lang="tr">Bir hepsini vur oyunu</Summary>
+        <Description xml:lang="tr">Virus Killer, hız, refleks ve dosya sisteminize dayanan bir deli oyundur.</Description>
+    </Source>
+</PISI>
