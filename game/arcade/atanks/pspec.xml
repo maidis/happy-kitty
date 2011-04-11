@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>atanks</Name>
+        <Homepage>http://atanks.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>atanks</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A Worms and Scorched Earth-like game</Summary>
+        <Description>Atomic Tanks is a game in which you control an overly-powerful tank and attempt to blow up other highly powerful tanks.</Description>
+        <Archive sha1sum="bcb731c2c84d16efa1930fde8756b62c28993b24" type="targz">mirrors://sourceforge/atanks/atanks/atanks-4.7/atanks-4.7.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>allegro-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">atanks-4.7-build.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>atanks</Name>
+        <RuntimeDependencies>
+            <Dependency>allegro</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/atanks</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-11-29</Date>
+            <Version>4.7</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
