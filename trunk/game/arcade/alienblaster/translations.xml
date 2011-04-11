@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>alienblaster</Name>
+        <Summary xml:lang="tr">Alien Blaster</Summary>
+        <Description xml:lang="tr">Alien Blaster, aksiyon yüklü bir 2B düşmanları vur oyunudur.</Description>
+    </Source>
+</PISI>

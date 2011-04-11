@@ -1,0 +1,488 @@
+diff -Naur src.orig/global.cc src/global.cc
+--- src.orig/global.cc	2004-08-19 19:24:20.000000000 +0300
++++ src/global.cc	2010-12-08 03:02:40.592000012 +0200
+@@ -317,64 +317,64 @@
+ /////////////////////////////
+ 
+ void initAllSurfaces() {
+-  surfaceDB.loadSurface("./images/fighter.bmp" );
+-  surfaceDB.loadSurface("./images/fighterShadow.bmp", true);
+-  surfaceDB.loadSurface("./images/bomber.bmp");
+-  surfaceDB.loadSurface("./images/bomberShadow.bmp", true);
+-  surfaceDB.loadSurface("./images/tank.bmp");
+-  surfaceDB.loadSurface("./images/boss1MainGun.bmp");
+-  surfaceDB.loadSurface("./images/boss1RocketLauncher.bmp");
+-  surfaceDB.loadSurface("./images/boss1ShotBatteryLeft.bmp");
+-  surfaceDB.loadSurface("./images/boss1ShotBatteryRight.bmp");
+-  surfaceDB.loadSurface("./images/wreckFighter.bmp");
+-  surfaceDB.loadSurface("./images/wreckBomber.bmp");
+-  surfaceDB.loadSurface("./images/wreckTank.bmp");
+-  surfaceDB.loadSurface("./images/wreckBoss1.bmp");
+-  surfaceDB.loadSurface("./images/wreckBossBackground.bmp");
+-  surfaceDB.loadSurface("./images/boss.bmp");
+-  surfaceDB.loadSurface("./images/normalShot.bmp");
+-  surfaceDB.loadSurface("./images/heavyShot.bmp");
+-  surfaceDB.loadSurface("./images/normalShotHF.bmp");
+-  surfaceDB.loadSurface("./images/dumbfire.bmp");
+-  surfaceDB.loadSurface("./images/kickAssRocket.bmp");
+-  surfaceDB.loadSurface("./images/kickAssRocketShadow.bmp", true);
+-  surfaceDB.loadSurface("./images/hellfire.bmp");
+-  surfaceDB.loadSurface("./images/hellfireShadow.bmp", true);
+-  surfaceDB.loadSurface("./images/machineGun.bmp");
+-  surfaceDB.loadSurface("./images/energyBeam.bmp", true);
+-  surfaceDB.loadSurface("./images/laser.bmp");
+-  surfaceDB.loadSurface("./images/enemyShotNormal.bmp");
+-  surfaceDB.loadSurface("./images/tankRocket.bmp");
+-  surfaceDB.loadSurface("./images/tankRocketShadow.bmp", true);
+-  surfaceDB.loadSurface("./images/heatseeker.bmp");
+-  surfaceDB.loadSurface("./images/shotNuke.bmp");
+-  surfaceDB.loadSurface("./images/shotNukeShadow.bmp", true);
+-  surfaceDB.loadSurface("./images/nukeEffect.bmp");
+-  surfaceDB.loadSurface("./images/sonic.bmp");
+-  surfaceDB.loadSurface("./images/itemPrimaryUpgrade.bmp");
+-  surfaceDB.loadSurface("./images/itemDumbfireDouble.bmp");
+-  surfaceDB.loadSurface("./images/itemKickAssRocket.bmp");
+-  surfaceDB.loadSurface("./images/itemHellfire.bmp");
+-  surfaceDB.loadSurface("./images/itemMachineGun.bmp");
+-  surfaceDB.loadSurface("./images/itemHealth.bmp");
+-  surfaceDB.loadSurface("./images/itemHeatseeker.bmp");
+-  surfaceDB.loadSurface("./images/itemNuke.bmp");
+-  surfaceDB.loadSurface("./images/itemDeflector.bmp");
+-  surfaceDB.loadSurface("./images/itemEnergyBeam.bmp");
+-  surfaceDB.loadSurface("./images/itemLaser.bmp");
+-  surfaceDB.loadSurface("./images/background.bmp");
+-  surfaceDB.loadSurface("./images/lightFighterShieldDamaged.bmp");
+-  surfaceDB.loadSurface("./images/heavyFighterShieldDamaged.bmp");
+-  surfaceDB.loadSurface("./images/heavyFighterDeflector.bmp", true);
+-  surfaceDB.loadSurface("./images/font-20red.bmp");
+-  surfaceDB.loadSurface("./images/font-20blue.bmp");
+-  surfaceDB.loadSurface("./images/explosion.bmp");
+-  surfaceDB.loadSurface("./images/explosionEnemy.bmp");
+-  surfaceDB.loadSurface("./images/bannerExcellent.bmp", true);
+-  surfaceDB.loadSurface("./images/bannerYouRule.bmp", true);
+-  surfaceDB.loadSurface("./images/bannerHeiho.bmp", true);
+-  surfaceDB.loadSurface("./images/bannerHealth.bmp", true);
+-  surfaceDB.loadSurface("./images/bannerEnemysKilled.bmp", true);
+-  surfaceDB.loadSurface("./images/bannerBonus100.bmp", true);
+-  surfaceDB.loadSurface("./images/bannerBonus200.bmp", true);
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/fighter.bmp" );
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/fighterShadow.bmp", true);
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/bomber.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/bomberShadow.bmp", true);
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/tank.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/boss1MainGun.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/boss1RocketLauncher.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/boss1ShotBatteryLeft.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/boss1ShotBatteryRight.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/wreckFighter.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/wreckBomber.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/wreckTank.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/wreckBoss1.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/wreckBossBackground.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/boss.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/normalShot.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/heavyShot.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/normalShotHF.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/dumbfire.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/kickAssRocket.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/kickAssRocketShadow.bmp", true);
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/hellfire.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/hellfireShadow.bmp", true);
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/machineGun.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/energyBeam.bmp", true);
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/laser.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/enemyShotNormal.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/tankRocket.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/tankRocketShadow.bmp", true);
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/heatseeker.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/shotNuke.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/shotNukeShadow.bmp", true);
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/nukeEffect.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/sonic.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/itemPrimaryUpgrade.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/itemDumbfireDouble.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/itemKickAssRocket.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/itemHellfire.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/itemMachineGun.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/itemHealth.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/itemHeatseeker.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/itemNuke.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/itemDeflector.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/itemEnergyBeam.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/itemLaser.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/background.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/lightFighterShieldDamaged.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/heavyFighterShieldDamaged.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/heavyFighterDeflector.bmp", true);
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/font-20red.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/font-20blue.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/explosion.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/explosionEnemy.bmp");
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/bannerExcellent.bmp", true);
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/bannerYouRule.bmp", true);
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/bannerHeiho.bmp", true);
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/bannerHealth.bmp", true);
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/bannerEnemysKilled.bmp", true);
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/bannerBonus100.bmp", true);
++  surfaceDB.loadSurface("/usr/share/alienblaster/images/bannerBonus200.bmp", true);
+ }
+diff -Naur src.orig/global.h src/global.h
+--- src.orig/global.h	2004-08-19 19:24:20.000000000 +0300
++++ src/global.h	2010-12-08 03:01:22.526000013 +0200
+@@ -100,30 +100,30 @@
+ 		   BANNER_ITEM_ENERGY_BEAM_COLLECTED,
+ 		   BANNER_ITEM_LASER_COLLECTED };
+ const std::string FN_BANNER_TEXTS[] =
+-{ "./images/bannerExcellent.bmp",
+-  "./images/bannerYouRule.bmp",
+-  "./images/bannerHeiho.bmp",
+-  "./images/bannerHealth.bmp",
+-  "./images/bannerEnemysKilled.bmp",
+-  "./images/bannerItemHealthCollected.bmp",
+-  "./images/bannerItemPrimaryUpgradeCollected.bmp",
+-  "./images/bannerItemDumbfireDoubleCollected.bmp",
+-  "./images/bannerItemKickAssRocketCollected.bmp",
+-  "./images/bannerItemHellfireCollected.bmp",
+-  "./images/bannerItemMachineGunCollected.bmp",
+-  "./images/bannerItemHeatseekerCollected.bmp",
+-  "./images/bannerItemNukeCollected.bmp",
+-  "./images/bannerItemDeflectorCollected.bmp",
+-  "./images/bannerItemEnergyBeamCollected.bmp",
+-  "./images/bannerItemLaserCollected.bmp" };
++{ "/usr/share/alienblaster/images/bannerExcellent.bmp",
++  "/usr/share/alienblaster/images/bannerYouRule.bmp",
++  "/usr/share/alienblaster/images/bannerHeiho.bmp",
++  "/usr/share/alienblaster/images/bannerHealth.bmp",
++  "/usr/share/alienblaster/images/bannerEnemysKilled.bmp",
++  "/usr/share/alienblaster/images/bannerItemHealthCollected.bmp",
++  "/usr/share/alienblaster/images/bannerItemPrimaryUpgradeCollected.bmp",
++  "/usr/share/alienblaster/images/bannerItemDumbfireDoubleCollected.bmp",
++  "/usr/share/alienblaster/images/bannerItemKickAssRocketCollected.bmp",
++  "/usr/share/alienblaster/images/bannerItemHellfireCollected.bmp",
++  "/usr/share/alienblaster/images/bannerItemMachineGunCollected.bmp",
++  "/usr/share/alienblaster/images/bannerItemHeatseekerCollected.bmp",
++  "/usr/share/alienblaster/images/bannerItemNukeCollected.bmp",
++  "/usr/share/alienblaster/images/bannerItemDeflectorCollected.bmp",
++  "/usr/share/alienblaster/images/bannerItemEnergyBeamCollected.bmp",
++  "/usr/share/alienblaster/images/bannerItemLaserCollected.bmp" };
+ const int NR_BANNER_TEXTS = 3;
+ 
+ enum BannerBoni { BANNER_BONUS_100=0, 
+ 		  BANNER_BONUS_200,
+ 		  BANNER_BONUS_NONE=1000 };
+ const std::string FN_BANNER_BONUS[] = 
+-{ "./images/bannerBonus100.bmp", 
+-  "./images/bannerBonus200.bmp" };
++{ "/usr/share/alienblaster/images/bannerBonus100.bmp", 
++  "/usr/share/alienblaster/images/bannerBonus200.bmp" };
+ const int NR_BANNER_BONI = 2;
+ 
+ const float ARCADE_POINTS_FOR_FORMATION_DESTRUCTION = 100;
+@@ -315,8 +315,8 @@
+ enum SmokePuffTypes { SMOKE_PUFF_SMALL=0, SMOKE_PUFF_MEDIUM };
+ const int NR_SMOKE_PUFF_TYPES = 2;
+ const std::string FN_SMOKE_PUFF[ NR_SMOKE_PUFF_TYPES ] =
+-{ "./images/smokePuffSmall.bmp", 
+-  "./images/smokePuffMedium.bmp" };
++{ "/usr/share/alienblaster/images/smokePuffSmall.bmp", 
++  "/usr/share/alienblaster/images/smokePuffMedium.bmp" };
+ const int LIFETIME_SMOKE_PUFF[ NR_SMOKE_PUFF_TYPES ] = { 500, 1000 };
+ const int SMOKE_PUFF_DELAY_TO_NEXT_PUFF[ NR_SMOKE_PUFF_TYPES ] = { 100, 100 };
+ const float SMOKE_PUFF_VELOCITY_FACTOR = 0.3;
+@@ -498,160 +498,160 @@
+ extern int LIGHT_FIGHTER_MAX_DAMAGE;
+ extern int HEAVY_FIGHTER_MAX_DAMAGE;
+ 
+-const std::string FN_SOUND_SHOT_PRIMARY = "./sound/shotPrimary.wav";
+-const std::string FN_SOUND_SHOT_SECONDARY = "./sound/shotSecondary.wav";
+-const std::string FN_SOUND_EXPLOSION_NORMAL = "./sound/explosion.wav";
+-const std::string FN_SOUND_EXPLOSION_BOSS = "./sound/explosionBoss.wav";
+-const std::string FN_SOUND_BOSS_ALARM = "./sound/alarm.wav";
+-const std::string FN_SOUND_ARCADE_CONFIRM = "./sound/alarm.wav";
+-const std::string FN_SOUND_ARCADE_CHOOSE = "./sound/choose.wav";
+-const std::string FN_SOUND_INTRO_CONFIRM = "./sound/confirm.wav";
+-const std::string FN_SOUND_INTRO_CHOOSE = "./sound/choose.wav";
+-
+-const std::string FN_ENEMY_FIGHTER = "./images/fighter.bmp";
+-const std::string FN_ENEMY_FIGHTER_SHADOW = "./images/fighterShadow.bmp";
+-const std::string FN_ENEMY_BOMBER = "./images/bomber.bmp";
+-const std::string FN_ENEMY_BOMBER_SHADOW = "./images/bomberShadow.bmp";
+-const std::string FN_ENEMY_TANK = "./images/tank.bmp";
+-const std::string FN_ENEMY_BOSS_1_MAIN_GUN = "./images/boss1MainGun.bmp";
+-const std::string FN_ENEMY_BOSS_1_ROCKET_LAUNCHER = "./images/boss1RocketLauncher.bmp";
+-const std::string FN_ENEMY_BOSS_1_SHOT_BATTERY_LEFT = "./images/boss1ShotBatteryLeft.bmp";
+-const std::string FN_ENEMY_BOSS_1_SHOT_BATTERY_RIGHT = "./images/boss1ShotBatteryRight.bmp";
+-const std::string FN_ENEMY_BOSS_2 = "./images/boss2.bmp";
+-const std::string FN_ENEMY_BOSS_2_SHADOW = "./images/boss2Shadow.bmp";
+-
+-const std::string FN_WRECK_FIGHTER = "./images/wreckFighter.bmp";
+-const std::string FN_WRECK_BOMBER = "./images/wreckBomber.bmp";
+-const std::string FN_WRECK_TANK = "./images/wreckTank.bmp";
+-const std::string FN_WRECK_BOSS_1 = "./images/wreckBoss1.bmp";
+-const std::string FN_WRECK_BOSS_1_BACKGROUND = "./images/wreckBossBackground.bmp";
+-const std::string FN_WRECK_BOSS_1_DESTROYED = "./images/boss.bmp";
+-const std::string FN_WRECK_BOSS_2_DESTROYED = "./images/wreckBoss2.bmp";
+-
+-const std::string FN_SHOT_NORMAL = "./images/normalShot.bmp";
+-const std::string FN_SHOT_NORMAL_HEAVY = "./images/heavyShot.bmp";
+-const std::string FN_SHOT_DOUBLE = "./images/normalShot.bmp";
+-const std::string FN_SHOT_DOUBLE_HEAVY = "./images/heavyShot.bmp";
+-const std::string FN_SHOT_TRIPLE = "./images/heavyShot.bmp";
+-
+-const std::string FN_SHOT_HF_NORMAL = "./images/normalShotHF.bmp";
+-const std::string FN_SHOT_HF_DOUBLE = "./images/normalShotHF.bmp";
+-const std::string FN_SHOT_HF_TRIPLE = "./images/normalShotHF.bmp";
+-const std::string FN_SHOT_HF_QUATTRO = "./images/normalShotHF.bmp";
+-const std::string FN_SHOT_HF_QUINTO = "./images/normalShotHF.bmp";
+-
+-const std::string FN_SHOT_DUMBFIRE = "./images/dumbfire.bmp";
+-const std::string FN_SHOT_DUMBFIRE_DOUBLE = "./images/dumbfire.bmp";
+-const std::string FN_SHOT_KICK_ASS_ROCKET = "./images/kickAssRocket.bmp";
+-const std::string FN_SHOT_KICK_ASS_ROCKET_SHADOW = "./images/kickAssRocketShadow.bmp";
+-const std::string FN_SHOT_HELLFIRE = "./images/hellfire.bmp";
+-const std::string FN_SHOT_HELLFIRE_SHADOW = "./images/hellfireShadow.bmp";
+-const std::string FN_SHOT_MACHINE_GUN = "./images/machineGun.bmp";
+-const std::string FN_SHOT_ENERGY_BEAM = "./images/energyBeam.bmp";
+-
+-const std::string FN_SHOT_HF_DUMBFIRE = "./images/dumbfire.bmp";
+-const std::string FN_SHOT_HF_DUMBFIRE_DOUBLE = "./images/dumbfire.bmp";
+-const std::string FN_SHOT_HF_KICK_ASS_ROCKET = "./images/kickAssRocket.bmp";
+-const std::string FN_SHOT_HF_KICK_ASS_ROCKET_SHADOW = "./images/kickAssRocketShadow.bmp";
+-const std::string FN_SHOT_HF_LASER = "./images/laser.bmp";
+-
+-const std::string FN_ENEMY_SHOT_NORMAL = "./images/enemyShotNormal.bmp";
+-const std::string FN_ENEMY_SHOT_TANK_ROCKET = "./images/tankRocket.bmp";
+-const std::string FN_ENEMY_SHOT_TANK_ROCKET_SHADOW = "./images/tankRocketShadow.bmp";
+-
+-const std::string FN_SPECIAL_SHOT_HEATSEEKER = "./images/heatseeker.bmp";
+-const std::string FN_SPECIAL_SHOT_NUKE = "./images/shotNuke.bmp";
+-const std::string FN_SPECIAL_SHOT_NUKE_SHADOW = "./images/shotNukeShadow.bmp";
+-const std::string FN_NUKE_EFFECT = "./images/nukeEffect.bmp";
+-const std::string FN_SONIC_EFFECT = "./images/sonic.bmp";
+-
+-const std::string FN_ITEM_PRIMARY_UPGRADE = "./images/itemPrimaryUpgrade.bmp";
+-const std::string FN_ITEM_DUMBFIRE_DOUBLE = "./images/itemDumbfireDouble.bmp";
+-const std::string FN_ITEM_KICK_ASS_ROCKET = "./images/itemKickAssRocket.bmp";
+-const std::string FN_ITEM_HELLFIRE = "./images/itemHellfire.bmp";
+-const std::string FN_ITEM_MACHINE_GUN = "./images/itemMachineGun.bmp";
+-const std::string FN_ITEM_HEALTH = "./images/itemHealth.bmp";
+-const std::string FN_ITEM_HEATSEEKER = "./images/itemHeatseeker.bmp";
+-const std::string FN_ITEM_NUKE = "./images/itemNuke.bmp";
+-const std::string FN_ITEM_DEFLECTOR = "./images/itemDeflector.bmp";
+-const std::string FN_ITEM_ENERGY_BEAM = "./images/itemEnergyBeam.bmp";
+-const std::string FN_ITEM_LASER = "./images/itemLaser.bmp";
+-
+-const std::string FN_ALIENBLASTER_INTRO = "./images/alienblasterintro.bmp";
+-const std::string FN_ALIENBLASTER_ICON = "./images/alienblastericon.bmp";
+-const std::string FN_BACKGROUND = "./images/background.bmp";
+-const std::string FN_PAUSED = "./images/paused.bmp";
+-const std::string FN_YOU_LOSE = "./images/youLose.bmp";
+-const std::string FN_YOU_WIN = "./images/youWin.bmp";
+-const std::string FN_GAME_OVER = "./images/gameOver.bmp";
+-const std::string FN_ARCADE_LOGO = "./images/arcadeLogo.bmp";
++const std::string FN_SOUND_SHOT_PRIMARY = "/usr/share/alienblaster/sound/shotPrimary.wav";
++const std::string FN_SOUND_SHOT_SECONDARY = "/usr/share/alienblaster/sound/shotSecondary.wav";
++const std::string FN_SOUND_EXPLOSION_NORMAL = "/usr/share/alienblaster/sound/explosion.wav";
++const std::string FN_SOUND_EXPLOSION_BOSS = "/usr/share/alienblaster/sound/explosionBoss.wav";
++const std::string FN_SOUND_BOSS_ALARM = "/usr/share/alienblaster/sound/alarm.wav";
++const std::string FN_SOUND_ARCADE_CONFIRM = "/usr/share/alienblaster/sound/alarm.wav";
++const std::string FN_SOUND_ARCADE_CHOOSE = "/usr/share/alienblaster/sound/choose.wav";
++const std::string FN_SOUND_INTRO_CONFIRM = "/usr/share/alienblaster/sound/confirm.wav";
++const std::string FN_SOUND_INTRO_CHOOSE = "/usr/share/alienblaster/sound/choose.wav";
++
++const std::string FN_ENEMY_FIGHTER = "/usr/share/alienblaster/images/fighter.bmp";
++const std::string FN_ENEMY_FIGHTER_SHADOW = "/usr/share/alienblaster/images/fighterShadow.bmp";
++const std::string FN_ENEMY_BOMBER = "/usr/share/alienblaster/images/bomber.bmp";
++const std::string FN_ENEMY_BOMBER_SHADOW = "/usr/share/alienblaster/images/bomberShadow.bmp";
++const std::string FN_ENEMY_TANK = "/usr/share/alienblaster/images/tank.bmp";
++const std::string FN_ENEMY_BOSS_1_MAIN_GUN = "/usr/share/alienblaster/images/boss1MainGun.bmp";
++const std::string FN_ENEMY_BOSS_1_ROCKET_LAUNCHER = "/usr/share/alienblaster/images/boss1RocketLauncher.bmp";
++const std::string FN_ENEMY_BOSS_1_SHOT_BATTERY_LEFT = "/usr/share/alienblaster/images/boss1ShotBatteryLeft.bmp";
++const std::string FN_ENEMY_BOSS_1_SHOT_BATTERY_RIGHT = "/usr/share/alienblaster/images/boss1ShotBatteryRight.bmp";
++const std::string FN_ENEMY_BOSS_2 = "/usr/share/alienblaster/images/boss2.bmp";
++const std::string FN_ENEMY_BOSS_2_SHADOW = "/usr/share/alienblaster/images/boss2Shadow.bmp";
++
++const std::string FN_WRECK_FIGHTER = "/usr/share/alienblaster/images/wreckFighter.bmp";
++const std::string FN_WRECK_BOMBER = "/usr/share/alienblaster/images/wreckBomber.bmp";
++const std::string FN_WRECK_TANK = "/usr/share/alienblaster/images/wreckTank.bmp";
++const std::string FN_WRECK_BOSS_1 = "/usr/share/alienblaster/images/wreckBoss1.bmp";
++const std::string FN_WRECK_BOSS_1_BACKGROUND = "/usr/share/alienblaster/images/wreckBossBackground.bmp";
++const std::string FN_WRECK_BOSS_1_DESTROYED = "/usr/share/alienblaster/images/boss.bmp";
++const std::string FN_WRECK_BOSS_2_DESTROYED = "/usr/share/alienblaster/images/wreckBoss2.bmp";
++
++const std::string FN_SHOT_NORMAL = "/usr/share/alienblaster/images/normalShot.bmp";
++const std::string FN_SHOT_NORMAL_HEAVY = "/usr/share/alienblaster/images/heavyShot.bmp";
++const std::string FN_SHOT_DOUBLE = "/usr/share/alienblaster/images/normalShot.bmp";
++const std::string FN_SHOT_DOUBLE_HEAVY = "/usr/share/alienblaster/images/heavyShot.bmp";
++const std::string FN_SHOT_TRIPLE = "/usr/share/alienblaster/images/heavyShot.bmp";
++
++const std::string FN_SHOT_HF_NORMAL = "/usr/share/alienblaster/images/normalShotHF.bmp";
++const std::string FN_SHOT_HF_DOUBLE = "/usr/share/alienblaster/images/normalShotHF.bmp";
++const std::string FN_SHOT_HF_TRIPLE = "/usr/share/alienblaster/images/normalShotHF.bmp";
++const std::string FN_SHOT_HF_QUATTRO = "/usr/share/alienblaster/images/normalShotHF.bmp";
++const std::string FN_SHOT_HF_QUINTO = "/usr/share/alienblaster/images/normalShotHF.bmp";
++
++const std::string FN_SHOT_DUMBFIRE = "/usr/share/alienblaster/images/dumbfire.bmp";
++const std::string FN_SHOT_DUMBFIRE_DOUBLE = "/usr/share/alienblaster/images/dumbfire.bmp";
++const std::string FN_SHOT_KICK_ASS_ROCKET = "/usr/share/alienblaster/images/kickAssRocket.bmp";
++const std::string FN_SHOT_KICK_ASS_ROCKET_SHADOW = "/usr/share/alienblaster/images/kickAssRocketShadow.bmp";
++const std::string FN_SHOT_HELLFIRE = "/usr/share/alienblaster/images/hellfire.bmp";
++const std::string FN_SHOT_HELLFIRE_SHADOW = "/usr/share/alienblaster/images/hellfireShadow.bmp";
++const std::string FN_SHOT_MACHINE_GUN = "/usr/share/alienblaster/images/machineGun.bmp";
++const std::string FN_SHOT_ENERGY_BEAM = "/usr/share/alienblaster/images/energyBeam.bmp";
++
++const std::string FN_SHOT_HF_DUMBFIRE = "/usr/share/alienblaster/images/dumbfire.bmp";
++const std::string FN_SHOT_HF_DUMBFIRE_DOUBLE = "/usr/share/alienblaster/images/dumbfire.bmp";
++const std::string FN_SHOT_HF_KICK_ASS_ROCKET = "/usr/share/alienblaster/images/kickAssRocket.bmp";
++const std::string FN_SHOT_HF_KICK_ASS_ROCKET_SHADOW = "/usr/share/alienblaster/images/kickAssRocketShadow.bmp";
++const std::string FN_SHOT_HF_LASER = "/usr/share/alienblaster/images/laser.bmp";
++
++const std::string FN_ENEMY_SHOT_NORMAL = "/usr/share/alienblaster/images/enemyShotNormal.bmp";
++const std::string FN_ENEMY_SHOT_TANK_ROCKET = "/usr/share/alienblaster/images/tankRocket.bmp";
++const std::string FN_ENEMY_SHOT_TANK_ROCKET_SHADOW = "/usr/share/alienblaster/images/tankRocketShadow.bmp";
++
++const std::string FN_SPECIAL_SHOT_HEATSEEKER = "/usr/share/alienblaster/images/heatseeker.bmp";
++const std::string FN_SPECIAL_SHOT_NUKE = "/usr/share/alienblaster/images/shotNuke.bmp";
++const std::string FN_SPECIAL_SHOT_NUKE_SHADOW = "/usr/share/alienblaster/images/shotNukeShadow.bmp";
++const std::string FN_NUKE_EFFECT = "/usr/share/alienblaster/images/nukeEffect.bmp";
++const std::string FN_SONIC_EFFECT = "/usr/share/alienblaster/images/sonic.bmp";
++
++const std::string FN_ITEM_PRIMARY_UPGRADE = "/usr/share/alienblaster/images/itemPrimaryUpgrade.bmp";
++const std::string FN_ITEM_DUMBFIRE_DOUBLE = "/usr/share/alienblaster/images/itemDumbfireDouble.bmp";
++const std::string FN_ITEM_KICK_ASS_ROCKET = "/usr/share/alienblaster/images/itemKickAssRocket.bmp";
++const std::string FN_ITEM_HELLFIRE = "/usr/share/alienblaster/images/itemHellfire.bmp";
++const std::string FN_ITEM_MACHINE_GUN = "/usr/share/alienblaster/images/itemMachineGun.bmp";
++const std::string FN_ITEM_HEALTH = "/usr/share/alienblaster/images/itemHealth.bmp";
++const std::string FN_ITEM_HEATSEEKER = "/usr/share/alienblaster/images/itemHeatseeker.bmp";
++const std::string FN_ITEM_NUKE = "/usr/share/alienblaster/images/itemNuke.bmp";
++const std::string FN_ITEM_DEFLECTOR = "/usr/share/alienblaster/images/itemDeflector.bmp";
++const std::string FN_ITEM_ENERGY_BEAM = "/usr/share/alienblaster/images/itemEnergyBeam.bmp";
++const std::string FN_ITEM_LASER = "/usr/share/alienblaster/images/itemLaser.bmp";
++
++const std::string FN_ALIENBLASTER_INTRO = "/usr/share/alienblaster/images/alienblasterintro.bmp";
++const std::string FN_ALIENBLASTER_ICON = "/usr/share/alienblaster/images/alienblastericon.bmp";
++const std::string FN_BACKGROUND = "/usr/share/alienblaster/images/background.bmp";
++const std::string FN_PAUSED = "/usr/share/alienblaster/images/paused.bmp";
++const std::string FN_YOU_LOSE = "/usr/share/alienblaster/images/youLose.bmp";
++const std::string FN_YOU_WIN = "/usr/share/alienblaster/images/youWin.bmp";
++const std::string FN_GAME_OVER = "/usr/share/alienblaster/images/gameOver.bmp";
++const std::string FN_ARCADE_LOGO = "/usr/share/alienblaster/images/arcadeLogo.bmp";
+ 
+ // numbers of images (animation-frames) per racer
+ const int RACER_IMAGE_CNT = 9;
+ 
+-const std::string FN_LIGHT_FIGHTER_1 = "./images/lightFighter1.bmp";
+-const std::string FN_LIGHT_FIGHTER_2 = "./images/lightFighter2.bmp";
+-const std::string FN_LIGHT_FIGHTER_SHADOW = "./images/lightFighterShadow.bmp";
+-const std::string FN_LIGHT_FIGHTER_SHIELD_DAMAGED = "./images/lightFighterShieldDamaged.bmp";
+-const std::string FN_LIGHT_FIGHTER_1_ICON = "./images/lightFighter1Icon.bmp";
+-const std::string FN_LIGHT_FIGHTER_2_ICON = "./images/lightFighter2Icon.bmp";
+-const std::string FN_LIGHT_FIGHTER_1_SMALL = "./images/lightFighter1Small.bmp";
+-const std::string FN_LIGHT_FIGHTER_2_SMALL = "./images/lightFighter2Small.bmp";
+-
+-const std::string FN_HEAVY_FIGHTER_1 = "./images/heavyFighter1.bmp";
+-const std::string FN_HEAVY_FIGHTER_2 = "./images/heavyFighter2.bmp";
+-const std::string FN_HEAVY_FIGHTER_SHADOW = "./images/heavyFighterShadow.bmp";
+-const std::string FN_HEAVY_FIGHTER_SHIELD_DAMAGED = "./images/heavyFighterShieldDamaged.bmp";
+-const std::string FN_HEAVY_FIGHTER_DEFLECTOR = "./images/heavyFighterDeflector.bmp";
+-const std::string FN_HEAVY_FIGHTER_1_ICON = "./images/heavyFighter1Icon.bmp";
+-const std::string FN_HEAVY_FIGHTER_2_ICON = "./images/heavyFighter2Icon.bmp";
+-const std::string FN_HEAVY_FIGHTER_1_SMALL = "./images/heavyFighter1Small.bmp";
+-const std::string FN_HEAVY_FIGHTER_2_SMALL = "./images/heavyFighter2Small.bmp";
++const std::string FN_LIGHT_FIGHTER_1 = "/usr/share/alienblaster/images/lightFighter1.bmp";
++const std::string FN_LIGHT_FIGHTER_2 = "/usr/share/alienblaster/images/lightFighter2.bmp";
++const std::string FN_LIGHT_FIGHTER_SHADOW = "/usr/share/alienblaster/images/lightFighterShadow.bmp";
++const std::string FN_LIGHT_FIGHTER_SHIELD_DAMAGED = "/usr/share/alienblaster/images/lightFighterShieldDamaged.bmp";
++const std::string FN_LIGHT_FIGHTER_1_ICON = "/usr/share/alienblaster/images/lightFighter1Icon.bmp";
++const std::string FN_LIGHT_FIGHTER_2_ICON = "/usr/share/alienblaster/images/lightFighter2Icon.bmp";
++const std::string FN_LIGHT_FIGHTER_1_SMALL = "/usr/share/alienblaster/images/lightFighter1Small.bmp";
++const std::string FN_LIGHT_FIGHTER_2_SMALL = "/usr/share/alienblaster/images/lightFighter2Small.bmp";
++
++const std::string FN_HEAVY_FIGHTER_1 = "/usr/share/alienblaster/images/heavyFighter1.bmp";
++const std::string FN_HEAVY_FIGHTER_2 = "/usr/share/alienblaster/images/heavyFighter2.bmp";
++const std::string FN_HEAVY_FIGHTER_SHADOW = "/usr/share/alienblaster/images/heavyFighterShadow.bmp";
++const std::string FN_HEAVY_FIGHTER_SHIELD_DAMAGED = "/usr/share/alienblaster/images/heavyFighterShieldDamaged.bmp";
++const std::string FN_HEAVY_FIGHTER_DEFLECTOR = "/usr/share/alienblaster/images/heavyFighterDeflector.bmp";
++const std::string FN_HEAVY_FIGHTER_1_ICON = "/usr/share/alienblaster/images/heavyFighter1Icon.bmp";
++const std::string FN_HEAVY_FIGHTER_2_ICON = "/usr/share/alienblaster/images/heavyFighter2Icon.bmp";
++const std::string FN_HEAVY_FIGHTER_1_SMALL = "/usr/share/alienblaster/images/heavyFighter1Small.bmp";
++const std::string FN_HEAVY_FIGHTER_2_SMALL = "/usr/share/alienblaster/images/heavyFighter2Small.bmp";
+ 
+-const std::string FN_ICONS_SPECIALS = "./images/iconsSpecials.bmp";
+-const std::string FN_ICONS_SECONDARY_WEAPONS = "./images/iconsSecondaryWeapons.bmp";
++const std::string FN_ICONS_SPECIALS = "/usr/share/alienblaster/images/iconsSpecials.bmp";
++const std::string FN_ICONS_SECONDARY_WEAPONS = "/usr/share/alienblaster/images/iconsSecondaryWeapons.bmp";
+ 
+-const std::string FN_HITPOINTS_STAT = "./images/hpStat.bmp";
++const std::string FN_HITPOINTS_STAT = "/usr/share/alienblaster/images/hpStat.bmp";
+ 
+-const std::string FN_INTRO_SHOW_CHOICE      = "./images/menuIcon.bmp";
++const std::string FN_INTRO_SHOW_CHOICE      = "/usr/share/alienblaster/images/menuIcon.bmp";
+ 
+-const std::string FN_FONT_PATH = "./images/";
++const std::string FN_FONT_PATH = "/usr/share/alienblaster/images/";
+ const std::string FN_FONT_SUFFIX_SURFACE = ".bmp";
+-const std::string FN_FONT_INTRO = "./images/font-20white.bmp";
+-const std::string FN_FONT_INTRO_HIGHLIGHTED = "./images/font-20lightblue.bmp";
+-const std::string FN_FONT_NUMBERS_TIME = "./images/font-20red.bmp";
+-const std::string FN_FONT_NUMBERS_LEFT = "./images/font-20red.bmp";
+-const std::string FN_FONT_NUMBERS_RIGHT = "./images/font-20blue.bmp";
+-const std::string FN_FONT_SETTINGS = "./images/font-20white.bmp";
+-const std::string FN_FONT_SETTINGS_HIGHLIGHTED = "./images/font-20lightblue.bmp";
+-const std::string FN_FONT_SETTINGS_SMALL = "./images/font-14white.bmp";
+-const std::string FN_FONT_SETTINGS_SMALL_BLUE = "./images/font-14lightblue.bmp";
+-const std::string FN_FONT_SETTINGS_SMALL_HIGHLIGHTED = "./images/font-14red.bmp";
+-
+-const std::string FN_SETTINGS_BLUE = "./images/bluePlain.bmp";
+-const std::string FN_SETTINGS_WHITE = "./images/whitePlain.bmp";
++const std::string FN_FONT_INTRO = "/usr/share/alienblaster/images/font-20white.bmp";
++const std::string FN_FONT_INTRO_HIGHLIGHTED = "/usr/share/alienblaster/images/font-20lightblue.bmp";
++const std::string FN_FONT_NUMBERS_TIME = "/usr/share/alienblaster/images/font-20red.bmp";
++const std::string FN_FONT_NUMBERS_LEFT = "/usr/share/alienblaster/images/font-20red.bmp";
++const std::string FN_FONT_NUMBERS_RIGHT = "/usr/share/alienblaster/images/font-20blue.bmp";
++const std::string FN_FONT_SETTINGS = "/usr/share/alienblaster/images/font-20white.bmp";
++const std::string FN_FONT_SETTINGS_HIGHLIGHTED = "/usr/share/alienblaster/images/font-20lightblue.bmp";
++const std::string FN_FONT_SETTINGS_SMALL = "/usr/share/alienblaster/images/font-14white.bmp";
++const std::string FN_FONT_SETTINGS_SMALL_BLUE = "/usr/share/alienblaster/images/font-14lightblue.bmp";
++const std::string FN_FONT_SETTINGS_SMALL_HIGHLIGHTED = "/usr/share/alienblaster/images/font-14red.bmp";
++
++const std::string FN_SETTINGS_BLUE = "/usr/share/alienblaster/images/bluePlain.bmp";
++const std::string FN_SETTINGS_WHITE = "/usr/share/alienblaster/images/whitePlain.bmp";
+ 
+-const std::string FN_EXPLOSION_NORMAL = "./images/explosion.bmp";
+-const std::string FN_EXPLOSION_ENEMY = "./images/explosionEnemy.bmp";
++const std::string FN_EXPLOSION_NORMAL = "/usr/share/alienblaster/images/explosion.bmp";
++const std::string FN_EXPLOSION_ENEMY = "/usr/share/alienblaster/images/explosionEnemy.bmp";
+ 
+-const std::string FN_LOADING = "./images/loading.bmp";
++const std::string FN_LOADING = "/usr/share/alienblaster/images/loading.bmp";
+ 
+-const std::string FN_SETTINGS = "./cfg/alienBlaster.cfg";
++const std::string FN_SETTINGS = "/usr/share/alienblaster/cfg/alienBlaster.cfg";
+ 
+-const std::string FN_DIFFICULTY_CONFIG = "./cfg/alienBlasterDifficulty";
++const std::string FN_DIFFICULTY_CONFIG = "/usr/share/alienblaster/cfg/alienBlasterDifficulty";
+ const std::string FN_DIFFICULTY_CONFIG_SUFFIX = ".cfg";
+ 
+-const std::string FN_HIGHSCORE = "./cfg/highscore.dat";
++const std::string FN_HIGHSCORE = "/usr/share/alienblaster/cfg/highscore.dat";
+ 
+ enum MusicTracks { MUSIC_INTRO=0, MUSIC_PLAYON, MUSIC_BOSS1, MUSIC_NONE };
+ const int NR_MUSIC_TRACKS = 3;
+-const std::string FN_MUSIC[] = { "./sound/intro.wav",
+-				 "./sound/playon.wav",
+-				 "./sound/intro.wav" };
+-
+-const std::string FN_LEVEL_ONE_PLAYER = "./cfg/level1.cfg";
+-const std::string FN_LEVEL_TWO_PLAYER = "./cfg/level2.cfg";
+-const std::string FN_LEVEL_ARCADEMODE = "./cfg/levelArcade.cfg";
++const std::string FN_MUSIC[] = { "/usr/share/alienblaster/sound/intro.wav",
++				 "/usr/share/alienblaster/sound/playon.wav",
++				 "/usr/share/alienblaster/sound/intro.wav" };
++
++const std::string FN_LEVEL_ONE_PLAYER = "/usr/share/alienblaster/cfg/level1.cfg";
++const std::string FN_LEVEL_TWO_PLAYER = "/usr/share/alienblaster/cfg/level2.cfg";
++const std::string FN_LEVEL_ARCADEMODE = "/usr/share/alienblaster/cfg/levelArcade.cfg";
+ 
+ const std::string FN_SCREENSHOT0 =  "./intro/HellShot0.bmp";
+ const std::string FN_SCREENSHOT1 =  "./intro/HellShot1.bmp";

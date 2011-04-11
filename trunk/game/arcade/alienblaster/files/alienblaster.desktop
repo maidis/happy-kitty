@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Alien Blaster
+GenericName=Alien Blaster
+GenericName[tr]=Uzaylı Patlatman
+Comment=Action-loaded 2D arcade shooter game
+Comment[tr]=Aksiyoun yüklü 2B ateri tarzı vuruş oyunu
+Icon=alienblaster
+Exec=cd /usr/share/alienblaster && alienBlaster
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;
