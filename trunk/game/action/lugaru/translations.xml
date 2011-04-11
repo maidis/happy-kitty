@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>lugaru</Name>
+        <Summary xml:lang="tr">Bir aksiyon ve dövüş oyunu</Summary>
+        <Description xml:lang="tr">Lugaru, üçüncü tekil şahış açısı görünümünden oynanan gelişmiş yakın dövüş sanatı sistemi içeren üç boyutlu bir aksiyon, dövüş, platform oyunudur.</Description>
+    </Source>
+</PISI>
