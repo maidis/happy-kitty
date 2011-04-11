@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd"><PISI>
+    <Source>
+        <Name>gish</Name>
+        <Homepage>http://github.com/FrozenCow/gish</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <License>CCPL-Attribution-ShareAlike-3.0</License>
+        <Icon>gish</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A physics platform game</Summary>
+        <Description>Gish isn't your average hero, in fact he's not your average anything... see Gish is a ball of tar.</Description>
+        <Archive type="targz" sha1sum="4e0e9e7a79264c6267bd479625ec2a0606ac1d0d">http://dl.dropbox.com/u/1836567/Paketler/FrozenCow-gish-v1.53-156-g14a41db.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libvorbis-devel</Dependency>
+            <Dependency>openal-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>gish</Name>
+        <RuntimeDependencies>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>openal</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-image</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/opt/gish/gish</Path>
+            <Path fileType="data">/opt/gish/*</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/gish.desktop">gish.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/gish.png">gish.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-10-31</Date>
+            <Version>1.53</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

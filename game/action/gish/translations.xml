@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>gish</Name>
+        <Summary xml:lang="tr">Bir fizik platform oyunu</Summary>
+        <Description xml:lang="tr">Gish, bildiğiniz sıradan kahramanlardan biri değil, daha önceden bildiğiniz şeylere de benzemiyor, o Gish, bir zift topu.</Description>
+    </Source>
+</PISI>
