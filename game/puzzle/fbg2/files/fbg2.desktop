@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Falling Block Game
+GenericName=Tetris Game
+GenericName[tr]=Tetris Oyunu
+Comment=An open source block stacking
+Comment[tr]=Özgür bir kutu yığma oyunu
+Icon=fbg2
+Exec=fbg2
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;BlocksGame;
