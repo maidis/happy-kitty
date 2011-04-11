@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>radius-engine</Name>
+        <Homepage>http://radius-engine.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>A 2D game engine built on top of SDL, OpenGL, and Lua</Summary>
+        <Description>The Radius Engine is a free 2D game engine built on top of SDL, OpenGL, and Lua that currently works on both Windows and Linux.</Description>
+        <Archive sha1sum="1a37de00e978dd62ede79627723d7176ec790a50" type="targz">mirrors://sourceforge/radius-engine/radius-engine-0.6.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-sound-devel</Dependency>
+            <Dependency>physfs-devel</Dependency>
+            <Dependency>lua-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>radius-engine</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-sound</Dependency>
+            <Dependency>physfs</Dependency>
+            <Dependency>lua</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/*.a</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-12-10</Date>
+            <Version>0.6</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
