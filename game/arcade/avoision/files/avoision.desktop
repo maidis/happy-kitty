@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Avoision
+GenericName=Box Hunting
+GenericName[tr]=Kutu Avlama
+Comment=A box hunting game
+Comment[tr]=Bir kutu avlama oyunu
+Icon=avoision
+Exec=avoision
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;

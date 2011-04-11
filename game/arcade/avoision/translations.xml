@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>avoision</Name>
+        <Summary xml:lang="tr">Kutu avlama oyunu</Summary>
+        <Description xml:lang="tr">Avoision, basit olduğu kadar çekici de olan ve strateji, dakiklik, sabır gibi anahtar ifadeleri bir potada eriten bir oyundur. Oyundaki ana amacınız kırmızı kutuları toplayıp, acımasız beyaz kutulardan kaçmak.</Description>
+    </Source>
+</PISI>

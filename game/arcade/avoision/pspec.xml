@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>avoision</Name>
+        <Homepage>http://avsn.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>avoision</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A box hunting game</Summary>
+        <Description>Avoision is a straightforward, yet captivating distillation of vintage arcade entertainment requiring strategy, precision, and perseverance with a singular objective: capture the red square while evading innumerable cruel, spiteful white squares.</Description>
+        <Archive sha1sum="77b0e74ef1ff9f03636cd3a9d2d2777932d0bd9e" type="targz">mirrors://sourceforge/avsn/avoision-0.6.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>radius-engine</Dependency>
+            <Dependency>lua-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>avoision</Name>
+        <RuntimeDependencies>
+            <Dependency>radius-engine</Dependency>
+            <Dependency>lua</Dependency>
+            <Dependency>libsdl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/avoision</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/avoision.desktop">avoision.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/avoision.png">avoision.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-12-14</Date>
+            <Version>0.6</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
