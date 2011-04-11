@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>violetland</Name>
+        <Summary xml:lang="tr">Crimsonland benzeri bir oyun</Summary>
+        <Description xml:lang="tr">Violetland, Violet isimli bir kızın çeşitli yaratıklarla mücadele ettiği bir oyundur.</Description>
+    </Source>
+</PISI>
