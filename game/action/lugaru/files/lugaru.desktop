@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Lugaru
+GenericName=Third-persion Action Game
+GenericName[tr]=Aksiyonlu Dövüş Oyunu
+Comment=A third-persion action game featuring a unique close-range combat system
+Comment[tr]=Üçüncü tekil şahış açısı görünümünden oynanan gelişmiş yakın dövüş sanatı sistemi içeren üç boyutlu bir aksiyon, dövüş, platform oyunu
+Icon=lugaru
+Exec=lugaru
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ActionGame;

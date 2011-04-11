@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>lugaru</Name>
+        <Homepage>http://code.google.com/p/lugaru</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>CCPL-Attribution-NonCommercial-NoDerivs-3.0</License>
+        <Icon>lugaru</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A third-persion action game</Summary>
+        <Description>Lugaru is a third-persion action game featuring a unique close-range combat system.</Description>
+        <Archive sha1sum="3788915dd3a792be45250c819a9411bf3d98d0c1" type="tarbz2">http://lugaru.googlecode.com/files/lugaru-rev269-src.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>openal-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>libvorbis-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>jpeg-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>lugaru</Name>
+        <RuntimeDependencies>
+            <Dependency>openal</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>jpeg</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/opt/lugaru/lugaru</Path>
+            <Path fileType="data">/opt/lugaru/Data</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/lugaru.desktop">lugaru.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/lugaru.png">lugaru.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/lugaru">lugaru</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-10-31</Date>
+            <Version>0.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
