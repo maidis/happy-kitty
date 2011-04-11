@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>fbg2</Name>
+        <Summary xml:lang="tr">Bir başka Teris oyunu</Summary>
+        <Description xml:lang="tr">Falling Block Game, özgür bir Tetris oyunudur. Gelen şekilleri evirip çevirerek, puntuna getirerek, doğru zamanda doğru kararları vererek, çubuk beklemek gibi boş hayallere kapılmayarak, her parçaya eşit davranmayı aslı göz ardı etmeyerek tam sıralar oluşturmak oyundaki amacınızdır. Bir seferde ne kadar çok sıra temizlerseniz o kadar çok puan alırsınız.</Description>
+    </Source>
+</PISI>

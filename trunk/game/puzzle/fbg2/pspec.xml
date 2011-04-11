@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>fbg2</Name>
+        <Homepage>http://fbg.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>fbg2</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Falling Block Game</Summary>
+        <Description>Falling Block Game is a free, open source block stacking game available for Windows and Linux. The object of the game is to move and rotate pieces in order to fill in complete rows. The more rows you clear at once, the more points you score!</Description>
+        <Archive sha1sum="1b9ca86ff0da9f5242f745453d0218bfc6aa960e" type="targz">mirrors://sourceforge/fbg/fbg2-0.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>radius-engine</Dependency>
+            <Dependency>lua-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>physfs-devel</Dependency>
+            <Dependency>sdl-sound-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>fbg2</Name>
+        <RuntimeDependencies>
+            <Dependency>radius-engine</Dependency>
+            <Dependency>lua</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>physfs</Dependency>
+            <Dependency>sdl-sound</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/fbg2</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/fbg2.desktop">fbg2.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/fbg2.png">fbg2.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-12-14</Date>
+            <Version>0.6</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
