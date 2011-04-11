@@ -1,0 +1,13 @@
+--- tuxpuck-0.8.2.orig/tuxpuck.c
++++ tuxpuck-0.8.2/tuxpuck.c
+@@ -250,7 +250,9 @@
+   _settings->mouse_speed = 5;
+ #ifndef windows
+   homeDir = getenv("HOME");
+-  sprintf(_settings_file, "%s/.tuxpuckrc", homeDir);
++  /* Buffer overflow fixed!
++   * sprintf(_settings_file, "%s/.tuxpuckrc", homeDir); */
++  snprintf(_settings_file, sizeof(_settings_file)-1, "%s/.tuxpuckrc", homeDir);
+ #endif
+   _read_settings();
+   audio_set_mute(!_settings->sound);

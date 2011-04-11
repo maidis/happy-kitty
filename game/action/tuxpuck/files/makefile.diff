@@ -1,0 +1,14 @@
+--- tuxpuck-0.8.2.orig/Makefile
++++ tuxpuck-0.8.2/Makefile
+@@ -52,7 +52,7 @@
+ 	rm -Rf $(NAME)-$(VERSION)
+ 
+ install : $(NAME)
+-	install -d $(DESTDIR)/usr/bin
+-	install -d $(DESTDIR)/usr/man/man6
+-	install -m755 $(NAME) $(DESTDIR)/usr/bin
+-	install -m644 man/$(NAME).6.gz $(DESTDIR)/usr/man/man6
++	install -d $(DESTDIR)/usr/bin
++	install -d $(DESTDIR)/usr/share/man/man6
++	install -m755 $(NAME) $(DESTDIR)/usr/bin
++	install -m644 man/$(NAME).6.gz $(DESTDIR)/usr/share/man/man6
