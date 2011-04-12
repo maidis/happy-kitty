@@ -77,7 +77,7 @@
             <Description xml:lang="en">HappyFrog is a funny, Angry Birds similar game which is based on Qt and Box2D.</Description>
             <Description xml:lang="tr">HappyFrog, Angry Birds benzeri, Qt ve Box2D temelli eğlenceli bir oyundur.</Description>
             <Icon>HappyFrog</Icon>
-            <Archive type="tarbz2" sha1sum="552ad891680dfcf2ecb632311fef871c63344655">http://happyfrog.googlecode.com/files/happyfrog-src-0.0.2.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="7094ebaa375bd1c2791b56bb293f7d0b53df2be9">http://happyfrog.googlecode.com/files/happyfrog-Src-0.0.2.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>box2d</Dependency>
                 <Dependency>qt-mobility</Dependency>
