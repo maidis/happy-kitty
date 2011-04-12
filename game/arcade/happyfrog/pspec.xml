@@ -40,6 +40,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2011-04-12</Date>
+            <Version>0.0.2</Version>
+            <Comment>Added zoom in / out support</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2011-04-10</Date>
             <Version>0.0.2</Version>
