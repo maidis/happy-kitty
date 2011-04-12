@@ -121,6 +121,54 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>atanks</Name>
+            <Homepage>http://atanks.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A Worms and Scorched Earth-like game</Summary>
+            <Summary xml:lang="tr">Worms ve Scorched Earth benzeri oyun</Summary>
+            <Description xml:lang="en">Atomic Tanks is a game in which you control an overly-powerful tank and attempt to blow up other highly powerful tanks.</Description>
+            <Description xml:lang="tr">Atomic Tanks, güçlü bir tankı kontrol ettiğiniz ve diğer güçlü tankları vurmaya çalıştığınız bir oyundur.</Description>
+            <Icon>atanks</Icon>
+            <Archive type="targz" sha1sum="bcb731c2c84d16efa1930fde8756b62c28993b24">mirrors://sourceforge/atanks/atanks/atanks-4.7/atanks-4.7.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>allegro-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">atanks-4.7-build.patch</Patch>
+            </Patches>
+            <SourceURI>game/arcade/atanks/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>atanks</Name>
+            <RuntimeDependencies>
+                <Dependency>allegro</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/atanks</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-11-29</Date>
+                <Version>4.7</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>apricots</Name>
             <Homepage>http://www.fishies.org.uk/apricots.html</Homepage>
             <Packager>
@@ -351,6 +399,59 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>avoision</Name>
+            <Homepage>http://avsn.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A box hunting game</Summary>
+            <Summary xml:lang="tr">Kutu avlama oyunu</Summary>
+            <Description xml:lang="en">Avoision is a straightforward, yet captivating distillation of vintage arcade entertainment requiring strategy, precision, and perseverance with a singular objective: capture the red square while evading innumerable cruel, spiteful white squares.</Description>
+            <Description xml:lang="tr">Avoision, basit olduğu kadar çekici de olan ve strateji, dakiklik, sabır gibi anahtar ifadeleri bir potada eriten bir oyundur. Oyundaki ana amacınız kırmızı kutuları toplayıp, acımasız beyaz kutulardan kaçmak.</Description>
+            <Icon>avoision</Icon>
+            <Archive type="targz" sha1sum="77b0e74ef1ff9f03636cd3a9d2d2777932d0bd9e">mirrors://sourceforge/avsn/avoision-0.6.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>radius-engine</Dependency>
+                <Dependency>lua-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/arcade/avoision/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>avoision</Name>
+            <RuntimeDependencies>
+                <Dependency>radius-engine</Dependency>
+                <Dependency>lua</Dependency>
+                <Dependency>libsdl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/avoision</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/avoision.desktop" permission="0644" owner="root">avoision.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/avoision.png" permission="0644" owner="root">avoision.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-12-14</Date>
+                <Version>0.6</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>pongix</Name>
             <Homepage>http://www.losersjuegos.com.ar/juegos/pongix</Homepage>
             <Packager>
@@ -467,6 +568,177 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>alienblaster</Name>
+            <Homepage>http://www.schwardtnet.de/alienblaster/</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">Alien Blaster</Summary>
+            <Summary xml:lang="tr">Alien Blaster</Summary>
+            <Description xml:lang="en">Alien Blaster is an action-loaded 2D arcade shooter game and your mission is simple: stop the invasion of the aliens and blast them!</Description>
+            <Description xml:lang="tr">Alien Blaster, aksiyon yüklü bir 2B düşmanları vur oyunudur.</Description>
+            <Icon>alienblaster</Icon>
+            <Archive type="targz" sha1sum="1f3c30cc29a0578c7008227020d30ebb1610bb55">http://www.schwardtnet.de/alienblaster/archives/alienblaster-1.1.0.tgz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>yollarda-yamalarim.seni</Patch>
+                <Patch level="1">alienblaster-1.1.0-64bit.patch</Patch>
+                <Patch level="1">alienblaster-1.1.0-fullscreen.patch</Patch>
+            </Patches>
+            <SourceURI>game/arcade/alienblaster/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>alienblaster</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/alienblaster</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/alienblaster.desktop" permission="0644" owner="root">alienblaster.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/alienblaster.png" permission="0644" owner="root">alienblaster.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-11-28</Date>
+                <Version>1.1.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>viruskiller</Name>
+            <Homepage>http://www.parallelrealities.co.uk/projects/virusKiller.php</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A shoot &apos;em up</Summary>
+            <Summary xml:lang="tr">Bir hepsini vur oyunu</Summary>
+            <Description xml:lang="en">Virus Killer is an arcade game that relies on quick reflexes, luck and your file system.</Description>
+            <Description xml:lang="tr">Virus Killer, hız, refleks ve dosya sisteminize dayanan bir deli oyundur.</Description>
+            <Icon>viruskiller</Icon>
+            <Archive type="targz" sha1sum="d17d3e07879d03688e3c1425da506216334eedca">http://www.parallelrealities.co.uk/download/viruskiller/viruskiller-1.03-1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-net-devel</Dependency>
+                <Dependency>sdl-ttf-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>make.patch</Patch>
+                <Patch>desktop.patch</Patch>
+            </Patches>
+            <SourceURI>game/arcade/viruskiller/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>viruskiller</Name>
+            <RuntimeDependencies>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>sdl-net</Dependency>
+                <Dependency>sdl-ttf</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/viruskiller</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-09-03</Date>
+                <Version>1.03</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>tuxpuck</Name>
+            <Homepage>http://wiredupandfiredup.co.uk/tux/tuxpuck.html</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.action</PartOf>
+            <Summary xml:lang="en">An Air Hockey Game</Summary>
+            <Summary xml:lang="tr">Bir hava hokeyi oyunu</Summary>
+            <Description xml:lang="en">TuxPuck is an air hockey simulator. You will lots of fun trying to beat Tux.</Description>
+            <Description xml:lang="tr">TuxPuck, bir hava okeyi simülatörüdür. Tux&apos;u yenmeye çalışırken çok eğleneceksiniz.</Description>
+            <Icon>tuxpuck</Icon>
+            <Archive type="targz" sha1sum="47e86114dfa38d0189e00e0cf9fc67dd4085fccc">http://ftp.de.debian.org/debian/pool/main/t/tuxpuck/tuxpuck_0.8.2.orig.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>libvorbis-devel</Dependency>
+                <Dependency>jpeg-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>tuxpuck-0.8.2-ldflags.patch</Patch>
+                <Patch level="1">makefile.diff</Patch>
+                <Patch level="1">tuxpuck.c.diff</Patch>
+                <Patch>hata-vermiyoruz-tamam-mi.diffffff</Patch>
+            </Patches>
+            <SourceURI>game/action/tuxpuck/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>tuxpuck</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>libvorbis</Dependency>
+                <Dependency>jpeg</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/tuxpuck.desktop" permission="0644" owner="root">tuxpuck.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/tuxpuck.png" permission="0644" owner="root">tuxpuck.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-10-31</Date>
+                <Version>0.8.2</Version>
+                <Comment>First release for Pardus.</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>tuxfootball</Name>
             <Homepage>http://tuxfootball.sourceforge.net</Homepage>
             <Packager>
@@ -521,6 +793,133 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>violetland</Name>
+            <Homepage>http://code.google.com/p/violetland</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <License>CCPL-Attribution-ShareAlike-3.0</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.action</PartOf>
+            <Summary xml:lang="en">A game similar to Crimsonland</Summary>
+            <Summary xml:lang="tr">Crimsonland benzeri bir oyun</Summary>
+            <Description xml:lang="en">violetland is a game where a girl, Violet, struggles with hordes of monsters.</Description>
+            <Description xml:lang="tr">Violetland, Violet isimli bir kızın çeşitli yaratıklarla mücadele ettiği bir oyundur.</Description>
+            <Icon>violetland</Icon>
+            <Archive type="zip" sha1sum="8e094f78765708aa76443d8a8330d6dbf234caaa">http://violetland.googlecode.com/files/violetland-v0.3.2-src.zip</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-ttf-devel</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>libSM-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/action/violetland/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>violetland</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>sdl-ttf</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libSM</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/violetland</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/violetland.desktop" permission="0644" owner="root">violetland.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-04-11</Date>
+                <Version>0.3.2</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>pinball</Name>
+            <Homepage>http://pinball.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.action</PartOf>
+            <Summary xml:lang="en">An pinball simulator</Summary>
+            <Summary xml:lang="tr">Bir tilt simülatörü</Summary>
+            <Description xml:lang="en">The Emilia Pinball project is an open source pinball simulator.</Description>
+            <Description xml:lang="tr">Emilia Pinball, özgür bir tilt simülatörüdür.</Description>
+            <Icon>pinball</Icon>
+            <Archive type="targz" sha1sum="121ed9e05d0f51dbe53d0b1d290b33b7512dd4b6">http://dl.dropbox.com/u/1836567/Paketler/pinball-0.3.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>libSM-devel</Dependency>
+                <Dependency>libICE-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">ftbfs.diff</Patch>
+                <Patch level="1">dnl-ne-la.diff</Patch>
+            </Patches>
+            <SourceURI>game/action/pinball/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>pinball</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libICE</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/var</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/pinball</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/pinball.desktop" permission="0644" owner="root">pinball.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/pinball.png" permission="0644" owner="root">pinball.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2009-05-27</Date>
+                <Version>0.3.1</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>barrage</Name>
             <Homepage>http://lgames.sourceforge.net/index.php?project=Barrage</Homepage>
             <Packager>
@@ -565,6 +964,229 @@
             <Update release="1">
                 <Date>2011-03-27</Date>
                 <Version>1.0.3</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>lugaru</Name>
+            <Homepage>http://code.google.com/p/lugaru</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <License>CCPL-Attribution-NonCommercial-NoDerivs-3.0</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.action</PartOf>
+            <Summary xml:lang="en">A third-persion action game</Summary>
+            <Summary xml:lang="tr">Bir aksiyon ve dövüş oyunu</Summary>
+            <Description xml:lang="en">Lugaru is a third-persion action game featuring a unique close-range combat system.</Description>
+            <Description xml:lang="tr">Lugaru, üçüncü tekil şahış açısı görünümünden oynanan gelişmiş yakın dövüş sanatı sistemi içeren üç boyutlu bir aksiyon, dövüş, platform oyunudur.</Description>
+            <Icon>lugaru</Icon>
+            <Archive type="tarbz2" sha1sum="3788915dd3a792be45250c819a9411bf3d98d0c1">http://lugaru.googlecode.com/files/lugaru-rev269-src.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>openal-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>libvorbis-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>jpeg-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/action/lugaru/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lugaru</Name>
+            <RuntimeDependencies>
+                <Dependency>openal</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>libvorbis</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>jpeg</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="executable">/opt/lugaru/lugaru</Path>
+                <Path fileType="data">/opt/lugaru/Data</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/lugaru.desktop" permission="0644" owner="root">lugaru.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/lugaru.png" permission="0644" owner="root">lugaru.png</AdditionalFile>
+                <AdditionalFile target="/usr/bin/lugaru" permission="0755" owner="root">lugaru</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-10-31</Date>
+                <Version>0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gish</Name>
+            <Homepage>http://github.com/FrozenCow/gish</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <License>CCPL-Attribution-ShareAlike-3.0</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.action</PartOf>
+            <Summary xml:lang="en">A physics platform game</Summary>
+            <Summary xml:lang="tr">Bir fizik platform oyunu</Summary>
+            <Description xml:lang="en">Gish isn&apos;t your average hero, in fact he&apos;s not your average anything... see Gish is a ball of tar.</Description>
+            <Description xml:lang="tr">Gish, bildiğiniz sıradan kahramanlardan biri değil, daha önceden bildiğiniz şeylere de benzemiyor, o Gish, bir zift topu.</Description>
+            <Icon>gish</Icon>
+            <Archive type="targz" sha1sum="4e0e9e7a79264c6267bd479625ec2a0606ac1d0d">http://dl.dropbox.com/u/1836567/Paketler/FrozenCow-gish-v1.53-156-g14a41db.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libvorbis-devel</Dependency>
+                <Dependency>openal-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/action/gish/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gish</Name>
+            <RuntimeDependencies>
+                <Dependency>libvorbis</Dependency>
+                <Dependency>openal</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-image</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/opt/gish/gish</Path>
+                <Path fileType="data">/opt/gish/*</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/gish.desktop" permission="0644" owner="root">gish.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/gish.png" permission="0644" owner="root">gish.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-10-31</Date>
+                <Version>1.53</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>thebutterflyeffect</Name>
+            <Homepage>http://the-butterfly-effect.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>BSD</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A logic game in the style of The Incredible Machine</Summary>
+            <Summary xml:lang="tr">The Incredible Machine tarzı bir mantık oyunu</Summary>
+            <Description xml:lang="en">The Butterfly Effect is a physics game about cause and effect. You build complex systems to accomplish simple tasks like hitting a bowling pin.</Description>
+            <Description xml:lang="tr">The Butterfly Effect, nedenler ve sonuçlar üzerine kurulu bir fizik oyunudur. Basit görevleri yerine getirmek için karmaşık sistemler inşa ederken çok eğleneceksiniz.</Description>
+            <Icon>thebutterflyeffect</Icon>
+            <Archive type="targz" sha1sum="eea9fc072f03eebf5f29557736289d622e9172f8">mirrors://sourceforge/tbe/Milestone%208.2/TheButterflyEffect-m8.2.src.tgz</Archive>
+            <BuildDependencies>
+                <Dependency>qt-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/puzzle/thebutterflyeffect/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>thebutterflyeffect</Name>
+            <RuntimeDependencies>
+                <Dependency>qt</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/opt/thebutterflyeffect/tbe</Path>
+                <Path fileType="data">/opt/thebutterflyeffect/images</Path>
+                <Path fileType="data">/opt/thebutterflyeffect/levels</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/thebutterflyeffect.desktop" permission="0644" owner="root">thebutterflyeffect.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/thebutterflyeffect.png" permission="0644" owner="root">thebutterflyeffect.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-01-14</Date>
+                <Version>8.2</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>fbg2</Name>
+            <Homepage>http://fbg.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">Falling Block Game</Summary>
+            <Summary xml:lang="tr">Bir başka Teris oyunu</Summary>
+            <Description xml:lang="en">Falling Block Game is a free, open source block stacking game available for Windows and Linux. The object of the game is to move and rotate pieces in order to fill in complete rows. The more rows you clear at once, the more points you score!</Description>
+            <Description xml:lang="tr">Falling Block Game, özgür bir Tetris oyunudur. Gelen şekilleri evirip çevirerek, puntuna getirerek, doğru zamanda doğru kararları vererek, çubuk beklemek gibi boş hayallere kapılmayarak, her parçaya eşit davranmayı aslı göz ardı etmeyerek tam sıralar oluşturmak oyundaki amacınızdır. Bir seferde ne kadar çok sıra temizlerseniz o kadar çok puan alırsınız.</Description>
+            <Icon>fbg2</Icon>
+            <Archive type="targz" sha1sum="1b9ca86ff0da9f5242f745453d0218bfc6aa960e">mirrors://sourceforge/fbg/fbg2-0.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>radius-engine</Dependency>
+                <Dependency>lua-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>physfs-devel</Dependency>
+                <Dependency>sdl-sound-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/puzzle/fbg2/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>fbg2</Name>
+            <RuntimeDependencies>
+                <Dependency>radius-engine</Dependency>
+                <Dependency>lua</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>physfs</Dependency>
+                <Dependency>sdl-sound</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/fbg2</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/fbg2.desktop" permission="0644" owner="root">fbg2.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/fbg2.png" permission="0644" owner="root">fbg2.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-12-14</Date>
+                <Version>0.6</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -726,6 +1348,55 @@
             <Update release="1">
                 <Date>2011-03-26</Date>
                 <Version>1.1.1</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>radius-engine</Name>
+            <Homepage>http://radius-engine.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>MIT</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">A 2D game engine built on top of SDL, OpenGL, and Lua</Summary>
+            <Summary xml:lang="tr">SDL, OpenGL ve Lua üzerine kurulu bir 2B oyun motoru</Summary>
+            <Description xml:lang="en">The Radius Engine is a free 2D game engine built on top of SDL, OpenGL, and Lua that currently works on both Windows and Linux.</Description>
+            <Description xml:lang="tr">Radius Engine; SDL, OpenGL ve Lua üzerine kurulu bir 2B oyun motorudur. Şu an GNU/Linux dışında yalnızca Windows üzerinde çalışmaktadır.</Description>
+            <Archive type="targz" sha1sum="1a37de00e978dd62ede79627723d7176ec790a50">mirrors://sourceforge/radius-engine/radius-engine-0.6.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-sound-devel</Dependency>
+                <Dependency>physfs-devel</Dependency>
+                <Dependency>lua-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>library/radius-engine/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>radius-engine</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-sound</Dependency>
+                <Dependency>physfs</Dependency>
+                <Dependency>lua</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib/*.a</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-12-10</Date>
+                <Version>0.6</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
