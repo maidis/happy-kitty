@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>caelum</Name>
+        <Homepage>http://www.ogre3d.org/tikiwiki/Caelum</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <License>LGPLv3</License>
+        <IsA>library</IsA>
+        <Summary>A library for Ogre targeted to help creating photorealistic atmospheric effects</Summary>
+        <Description>Caelum is a plug-in / library for Ogre targeted to help creating nice-looking (photorealistic if possible) atmospheric effects such as sky colour, clouds and weather phenomena such as rain or snow.</Description>
+        <Archive sha1sum="9f6547b9451fd04e1c6dc5b6f40b5358074108b4" type="zip">mirrors://sourceforge/caelum/caelum/0.5/Caelum-0.5.0.zip</Archive>
+        <BuildDependencies>
+            <Dependency>ois-devel</Dependency>
+            <Dependency>ogre-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">caelum-0.5.0.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>caelum</Name>
+        <RuntimeDependencies>
+            <Dependency>ois</Dependency>
+            <Dependency>ogre</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-04-09</Date>
+            <Version>0.5.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
