@@ -1,0 +1,11 @@
+diff -Naur src.orig/mo.cpp src/mo.cpp
+--- src.orig/mo.cpp	2009-01-17 01:45:33.000000000 +0200
++++ src/mo.cpp	2011-04-09 04:59:31.832000046 +0300
+@@ -32,6 +32,7 @@
+  */
+ #include "../include/moFileReader.h"
+ #include <iostream>
++#include <cstdlib>
+ 
+ #if defined(_MSC_VER) && defined(_DEBUG)
+ #   include <crtdbg.h>   
