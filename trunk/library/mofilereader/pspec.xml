@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mofilereader</Name>
+        <Homepage>http://code.google.com/p/mofilereader</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>A library for use .mo-files in C++ without gettext</Summary>
+        <Description>mofilereader lets you read .mo-Files and use their content just as you would do with GNUs gettext. It is implemented in C++ and allowing the programmer to use it in modern programs, without the need of linking against gettext and libiconv.</Description>
+        <Archive sha1sum="8369773bdae639c5cfffce9b0997736d20376fe3" type="zip">http://mofilereader.googlecode.com/files/moFileReader.0.1.2.zip</Archive>
+        <Patches>
+            <Patch>MoFR.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>mofilereader</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-04-09</Date>
+            <Version>0.1.2</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

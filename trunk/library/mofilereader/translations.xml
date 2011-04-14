@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>mofilereader</Name>
+        <Summary xml:lang="tr">C++ içinde .mo dosyalarını gettext kullanmadan okumak için bir kütüphane</Summary>
+        <Description xml:lang="tr">mofilereader, GNU'nun gettext'indeki gibi mo dosyalarını okumak ve içeriklerini kullanmak için geliştirilmiş bir kütüphanedir. C++ ile yazılmıştır ve programcılara gettext ve libiconv'a bağlama yapmadan geliştirme yapmalarını yardımcı olur.</Description>
+    </Source>
+</PISI>
