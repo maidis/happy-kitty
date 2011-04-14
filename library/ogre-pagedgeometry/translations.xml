@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>ogre-pagedgeometry</Name>
+        <Summary xml:lang="tr">OGRE için Paged geometry</Summary>
+        <Description xml:lang="tr">PagedGeometry, OGRE için çok miktarda küçük ağların taranmasında yüksek en iyilemeli fonksiyonlar sunan bir motordur. Bu özellikle ormanlar, açık alanlar, çalılar, çimler, kayalar için uygundur.</Description>
+    </Source>
+</PISI>
