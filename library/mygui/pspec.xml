@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mygui</Name>
+        <Homepage>http://mygui.info</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>LGPLv3</License>
+        <IsA>library</IsA>
+        <Summary>Fast and simple OGRE GUI</Summary>
+        <Description>MyGUI is a library for creating Graphical User Interfaces for games and 3D applications. The main goals of mygui are: speed, flexibility and ease of use.</Description>
+        <Archive sha1sum="5fb93e066dccef330439b55fc5da69d186b838ac" type="tarbz2">http://dl.dropbox.com/u/1836567/Paketler/my-gui.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>freetype-devel</Dependency>
+            <Dependency>ogre-devel</Dependency>
+            <Dependency>ois-devel</Dependency>
+            <Dependency>doxygen</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mygui</Name>
+        <RuntimeDependencies>
+            <Dependency>freetype</Dependency>
+            <Dependency>ogre</Dependency>
+            <Dependency>ois</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-04-04</Date>
+            <Version>3.2.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
