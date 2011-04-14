@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>angelscript</Name>
+        <Homepage>http://www.angelcode.com/angelscript</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>ZLIB</License>
+        <IsA>library</IsA>
+        <Summary>A flexible, cross platform scripting library</Summary>
+        <Description>AngelScript is an extremely flexible cross platform scripting library designed to allow applications to extend their functionality through external scripts. It has been designed from the beginning to be an easy to use component, both for the application programmer and the script writer.</Description>
+        <Archive sha1sum="5d66cf2a495bf677302497e673adb7c2930322e9" type="zip">http://www.angelcode.com/angelscript/sdk/files/angelscript_2.20.2.zip</Archive>
+        <Patches>
+            <Patch>angelscript_2.20.2-makefile.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>angelscript</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-04-09</Date>
+            <Version>2.20.2</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

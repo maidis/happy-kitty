@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>angelscript</Name>
+        <Summary xml:lang="tr">Esnek ve çok platformlu bir betik kütüphanesi</Summary>
+        <Description xml:lang="tr">AngelScript, uygulamaların fonksiyonelliğini harici betiklerle geliştirmek için tasarlanmış yüksek esnekliğe sahip çok platformlu bir betik kütüphanesidir. Hem uygulamanın programcısı hem de betik yazarı için kolay kullanımlı bir bileşen olması hedeflenmiştir.</Description>
+    </Source>
+</PISI>
