@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>ogre-hydrax</Name>
+        <Summary xml:lang="tr">OGRE su eklenti kütüphanesi</Summary>
+        <Description xml:lang="tr">Hydrax, hoş su manzaraları taramak için geliştirilmiş bir OGRE eklenti kütüphanesidir.</Description>
+    </Source>
+</PISI>
