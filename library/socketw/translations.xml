@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>socketw</Name>
+        <Summary xml:lang="tr">Çok platformlu C++ soket akış kütüphanesi</Summary>
+        <Description xml:lang="tr">SocketW, kolayca kullanılması için tasarlanmış, çok platformlu bir C++ soket akış kütüphanesidir. Unix soketleri, seçime bağlı SSL/TLS (OpenSSL) ile TCP/IP soketleri desteklenmektedir. SocketW, düşük seviye sistem fonksiyonlarını öğrenmenize ve OpenSSL rehberlerini okumanıza gerek kalmadan, portatif ve güvenli ağ uygulamaları geliştirmenizi sağlar.</Description>
+    </Source>
+</PISI>

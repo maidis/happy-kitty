@@ -1,0 +1,38 @@
+diff -Naur SocketW031026.orig/Makefile.conf SocketW031026/Makefile.conf
+--- SocketW031026.orig/Makefile.conf	2003-10-26 18:26:48.000000000 +0200
++++ SocketW031026/Makefile.conf	2011-04-04 14:55:51.343000012 +0300
+@@ -4,10 +4,10 @@
+ CXX=g++
+ 
+ # Where should SocketW be installed?
+-PREFIX =/usr/local
++PREFIX =/usr
+ 
+ # Where should the headerfiles be installed?
+-PREFIX_H =$(PREFIX)/include
++PREFIX_H =$(PREFIX)/include
+ 
+ # Compile flags passed to the compiler
+ CFLAGS =-Wall -O3 -ffast-math
+diff -Naur SocketW031026.orig/src/Makefile SocketW031026/src/Makefile
+--- SocketW031026.orig/src/Makefile	2003-10-26 18:18:16.000000000 +0200
++++ SocketW031026/src/Makefile	2011-04-04 14:57:28.379000013 +0300
+@@ -34,12 +34,12 @@
+ 	@strip SocketW.dll
+ 
+ install:	shared
+-	@mkdir -p $(PREFIX_H)
+-	install -c -m 644 *.h $(PREFIX_H)
+-	@mkdir -p $(PREFIX)/lib
+-	install -c -m 644 libSocketW.a $(PREFIX)/lib
+-	install -c libSocketW.so.$(API_VER).$(SW_VER) $(PREFIX)/lib
+-	@cd $(PREFIX)/lib;\
++	@mkdir -p $(DESTDIR)/$(PREFIX_H)
++	install -c -m 644 *.h $(DESTDIR)/$(PREFIX_H)
++	@mkdir -p $(DESTDIR)/$(PREFIX)/lib
++	install -c -m 644 libSocketW.a $(DESTDIR)/$(PREFIX)/lib
++	install -c libSocketW.so.$(API_VER).$(SW_VER) $(DESTDIR)/$(PREFIX)/lib
++	@cd $(DESTDIR)/$(PREFIX)/lib;\
+ 	ln -sf libSocketW.so.$(API_VER).$(SW_VER) libSocketW.so.$(API_VER);\
+ 	ln -sf libSocketW.so.$(API_VER) libSocketW.so
+ 	@echo "** Headerfiles installed in $(PREFIX_H)"

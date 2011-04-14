@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>socketw</Name>
+        <Homepage>http://www.digitalfanatics.org/cal/socketw</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>A cross platform streaming socket C++ library</Summary>
+        <Description>SocketW is a cross platform streaming socket C++ library designed to be easy to use. It supports Unix sockets and TCP/IP sockets with optional SSL/TLS (OpenSSL) support. SocketW allows you to write portable and secure network applications quickly without needing to spend time learning low-level system functions or reading OpenSSL manuals.</Description>
+        <Archive sha1sum="4023e21515d0ff9be7b3c2faddfa6ec949405fc5" type="targz">http://www.digitalfanatics.org/cal/socketw/files/SocketW031026.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>openssl-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>socketw.patch</Patch>
+            <Patch level="1">socketw-make.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>socketw</Name>
+        <RuntimeDependencies>
+            <Dependency>openssl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-04-04</Date>
+            <Version>031026</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
