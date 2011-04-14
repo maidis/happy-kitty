@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>caelum</Name>
+        <Summary xml:lang="tr">Ogre için fotogerçekçi atmosforik efekt kütüphanesi</Summary>
+        <Description xml:lang="tr">Caelum, Ogre için geliştirilmiş, hoş görünümlü gökyüzü, bulut, yağmur ve kar oluşturmaya yardımcı bir fotogerçekçi atmosforik efekt kütüphanesidir.</Description>
+    </Source>
+</PISI>
