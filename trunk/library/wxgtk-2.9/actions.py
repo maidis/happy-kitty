@@ -23,7 +23,7 @@ def setup():
                          --enable-intl \
                          --enable-geometry \
                          --enable-timer \
-                         --disable-unicode \
+                         --enable-unicode \
                          --enable-sound \
                          --enable-mediactrl \
                          --enable-xrc \
@@ -65,8 +65,8 @@ def install():
     pisitools.remove("/usr/bin/wx-config")
     pisitools.remove("/usr/bin/wxrc")
     # it seems there is no need to disable unicode but i try first with ansi
-    #pisitools.dosym("/usr/lib/wx/config/gtk2-unicode-2.9", "/usr/bin/wx-config-2.9")
-    pisitools.dosym("/usr/lib/wx/config/gtk2-ansi-2.9", "/usr/bin/wx-config-2.9")
+    pisitools.dosym("/usr/lib/wx/config/gtk2-unicode-2.9", "/usr/bin/wx-config-2.9")
+    #pisitools.dosym("/usr/lib/wx/config/gtk2-ansi-2.9", "/usr/bin/wx-config-2.9")
     pisitools.rename("/usr/share/aclocal/wxwin.m4", "wxwin-2.9.m4")
 
     pisitools.dodoc("docs/*.txt", "docs/*.htm")
