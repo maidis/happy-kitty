@@ -4,13 +4,17 @@
 # Licensed under the GNU General Public License, version 3.
 # See the file http://www.gnu.org/copyleft/gpl.txt
 
+from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
-from pisi.actionsapi import scons
+from pisi.actionsapi import get
+
+def setup():
+    cmaketools.configure()
 
 def build():
-    scons.make()
+    cmaketools.make()
 
 def install():
-    pisitools.dolib_a("libCaelum.a")
-    pisitools.insinto("/usr/include/Caelum/", "main/include/*")
-    pisitools.dohtml("doc/html/*")
+    cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
+
+    pisitools.dodoc("Contributors.txt", "gpl.txt", "lgpl.txt", "ReadMe.txt")
