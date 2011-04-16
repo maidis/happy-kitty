@@ -13,13 +13,13 @@
         <IsA>library</IsA>
         <Summary>A library for Ogre targeted to help creating photorealistic atmospheric effects</Summary>
         <Description>Caelum is a plug-in / library for Ogre targeted to help creating nice-looking (photorealistic if possible) atmospheric effects such as sky colour, clouds and weather phenomena such as rain or snow.</Description>
-        <Archive sha1sum="9f6547b9451fd04e1c6dc5b6f40b5358074108b4" type="zip">mirrors://sourceforge/caelum/caelum/0.5/Caelum-0.5.0.zip</Archive>
+        <Archive sha1sum="c101e110371853b3bd3bef971ef646b851a8b8f5" type="tarbz2">http://dl.dropbox.com/u/1836567/Paketler/caelum-0.5.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>ois-devel</Dependency>
             <Dependency>ogre-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">caelum-0.5.0.diff</Patch>
+            <Patch>no-doc-for-now.diff</Patch>
         </Patches>
     </Source>
 
