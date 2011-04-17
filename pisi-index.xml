@@ -1253,6 +1253,208 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>wxgtk-2.9</Name>
+            <Homepage>http://www.wxwidgets.org/</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>wxWinLL-3</License>
+            <License>GPLv2</License>
+            <License>LGPLv2</License>
+            <License>wxWinFDL-3</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">GTK+ version of wxWindows, a cross-platform C++ GUI toolkit</Summary>
+            <Summary xml:lang="tr">Birçok platform için ortak C++ arayüz araç takımı olan wxWindows&apos;un GTK+ sürümü</Summary>
+            <Description xml:lang="fr">wxWidgets/GTK2 est le port GTK2 de la librairie graphique multi-plateforme wxWidgets, offrant des classes pour les contrôles IHM communs ainsi qu&apos;un ensemble complet de classes d&apos;aides pour les tâches applicatives habituelles, allant du réseau à l&apos;affichage HTML en passant par la manipulation d&apos;images.</Description>
+            <Description xml:lang="en">wxWidgets/GTK2 is the GTK2 port of the C++ cross-platform wxWidgets GUI library, offering classes for all common GUI controls as well as a comprehensive set of helper classes for most common application tasks, ranging from networking to HTML display and image manipulation.</Description>
+            <Description xml:lang="tr">wxWidgets/GTK2 birçok platform için ortak bir C++ arayüz kitaplığı olan wxWidgets&apos;ın GTK2 sürümüdür. Ağ araçları, HTML gösterimi ve resim işleme gibi en yaygın kullanılan uygulama görevleri için kapsamlı bir sınıf kümesinin yanında tüm genel GUI denetimlerini içerir.</Description>
+            <Description xml:lang="es">wxWidgets/GTK2 es la versión portada a GTK2 de la librería GUI wxWidgets cross-plataforma en C++, con clases para todos los controles GUI comunes y tambien un conjunto de clases con ayudantes para la mayoría de las tareas comunes de aplicaciones, desde networking a visualización HTML y manipulación de imagenes.</Description>
+            <Archive type="tarbz2" sha1sum="3ffe0614acce46448f5c14942176fb2daa6efd00">mirrors://sourceforge/wxwindows/2.9.1/wxWidgets-2.9.1.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>gst-plugins-base-devel</Dependency>
+                <Dependency>gstreamer-devel</Dependency>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>jpeg-devel</Dependency>
+                <Dependency>libSM-devel</Dependency>
+                <Dependency>libXinerama-devel</Dependency>
+                <Dependency>libXxf86vm-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>tiff-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">wxWidgets-2.9.1.diff</Patch>
+            </Patches>
+            <SourceURI>library/wxgtk-2.9/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>wxgtk-2.9</Name>
+            <RuntimeDependencies>
+                <Dependency>gst-plugins-base</Dependency>
+                <Dependency>gstreamer</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>jpeg</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libXinerama</Dependency>
+                <Dependency>libXxf86vm</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>tiff</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>wxgtk-2.9-devel</Name>
+            <Summary xml:lang="en">Development files for wxGTK toolkit</Summary>
+            <Summary xml:lang="tr">wxGTK araç seti için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency release="17">wxgtk-2.9</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/wx</Path>
+                <Path fileType="data">/usr/share/aclocal</Path>
+                <Path fileType="data">/usr/share/bakefile</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="17">
+                <Date>2011-04-09</Date>
+                <Version>2.9.1</Version>
+                <Comment>Bump to 2.9 series as a new package</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+            <Update release="16">
+                <Date>2010-10-12</Date>
+                <Version>2.8.11</Version>
+                <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
+                <Name>Fatih Aşıcı</Name>
+                <Email>fatih@pardus.org.tr</Email>
+            </Update>
+            <Update release="15">
+                <Date>2010-08-31</Date>
+                <Version>2.8.11</Version>
+                <Comment>New stable release</Comment>
+                <Name>Fatih Aşıcı</Name>
+                <Email>fatih@pardus.org.tr</Email>
+            </Update>
+            <Update release="14">
+                <Date>2009-09-12</Date>
+                <Version>2.8.10</Version>
+                <Comment>Disable ODBC
+                Fix X11 underlinking
+                Make sure GSocket does not conflict with glib</Comment>
+                <Name>Onur Küçük</Name>
+                <Email>onur@pardus.org.tr</Email>
+            </Update>
+            <Update release="13" type="security">
+                <Date>2009-07-17</Date>
+                <Version>2.8.10</Version>
+                <Comment>Fix integer overflow, #10477</Comment>
+                <Name>Fatih Aşıcı</Name>
+                <Email>fatih@pardus.org.tr</Email>
+            </Update>
+            <Update release="12">
+                <Date>2009-07-05</Date>
+                <Version>2.8.10</Version>
+                <Comment>Add missing gstreamer and gst-plugins-base dependencies</Comment>
+                <Name>Fatih Aşıcı</Name>
+                <Email>fatih@pardus.org.tr</Email>
+            </Update>
+            <Update release="11">
+                <Date>2009-05-01</Date>
+                <Version>2.8.10</Version>
+                <Comment>* Bump to new stable release
+                * Remove -pthread flag
+                * Add missing deps
+                * Split package</Comment>
+                <Name>Fatih Aşıcı</Name>
+                <Email>fatih@pardus.org.tr</Email>
+            </Update>
+            <Update release="10">
+                <Date>2008-09-24</Date>
+                <Version>2.8.9</Version>
+                <Comment>Stable update</Comment>
+                <Name>Fatih Aşıcı</Name>
+                <Email>fatih@pardus.org.tr</Email>
+            </Update>
+            <Update release="9">
+                <Date>2008-06-27</Date>
+                <Version>2.8.8</Version>
+                <Comment>Stable update</Comment>
+                <Name>Fatih Aşıcı</Name>
+                <Email>fatih@pardus.org.tr</Email>
+            </Update>
+            <Update release="8">
+                <Date>2008-06-06</Date>
+                <Version>2.8.7</Version>
+                <Comment>Drop wxGTK-ansi package</Comment>
+                <Name>Fatih Aşıcı</Name>
+                <Email>fatih@pardus.org.tr</Email>
+            </Update>
+            <Update release="7">
+                <Date>2008-04-27</Date>
+                <Version>2.8.7</Version>
+                <Comment>Fix wx-config linking</Comment>
+                <Name>Murat Şenel</Name>
+                <Email>muratasenel@gmail.com</Email>
+            </Update>
+            <Update release="6">
+                <Date>2008-04-25</Date>
+                <Version>2.8.7</Version>
+                <Comment>Version bump</Comment>
+                <Name>Onur Küçük</Name>
+                <Email>onur@pardus.org.tr</Email>
+            </Update>
+            <Update release="5">
+                <Date>2007-11-07</Date>
+                <Version>2.6.4</Version>
+                <Comment>Use correct _free functions</Comment>
+                <Name>İsmail Dönmez</Name>
+                <Email>ismail@pardus.org.tr</Email>
+            </Update>
+            <Update release="4">
+                <Date>2007-05-19</Date>
+                <Version>2.6.4</Version>
+                <Comment>Version bump</Comment>
+                <Name>Fatih Aşıcı</Name>
+                <Email>fatih.asici@gmail.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2006-11-28</Date>
+                <Version>2.6.3.0</Version>
+                <Comment>Remove pyc&apos;s</Comment>
+                <Name>S.Çağlar Onur</Name>
+                <Email>caglar@pardus.org.tr</Email>
+            </Update>
+            <Update release="2">
+                <Date>2006-03-31</Date>
+                <Version>2.6.3.0</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Fatih Aşıcı</Name>
+                <Email>fatih.asici@gmail.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2006-02-12</Date>
+                <Version>2.6.2.1</Version>
+                <Comment>First release.</Comment>
+                <Name>Fatih Aşıcı</Name>
+                <Email>fatih.asici@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>box2d</Name>
             <Homepage>http://www.box2d.org</Homepage>
             <Packager>
@@ -1363,6 +1565,54 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>caelum</Name>
+            <Homepage>http://www.ogre3d.org/tikiwiki/Caelum</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <License>LGPLv3</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">A library for Ogre targeted to help creating photorealistic atmospheric effects</Summary>
+            <Summary xml:lang="tr">Ogre için fotogerçekçi atmosforik efekt kütüphanesi</Summary>
+            <Description xml:lang="en">Caelum is a plug-in / library for Ogre targeted to help creating nice-looking (photorealistic if possible) atmospheric effects such as sky colour, clouds and weather phenomena such as rain or snow.</Description>
+            <Description xml:lang="tr">Caelum, Ogre için geliştirilmiş, hoş görünümlü gökyüzü, bulut, yağmur ve kar oluşturmaya yardımcı bir fotogerçekçi atmosforik efekt kütüphanesidir.</Description>
+            <Archive type="tarbz2" sha1sum="c101e110371853b3bd3bef971ef646b851a8b8f5">http://dl.dropbox.com/u/1836567/Paketler/caelum-0.5.0.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>ois-devel</Dependency>
+                <Dependency>ogre-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>no-doc-for-now.diff</Patch>
+            </Patches>
+            <SourceURI>library/caelum/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>caelum</Name>
+            <RuntimeDependencies>
+                <Dependency>ois</Dependency>
+                <Dependency>ogre</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-04-09</Date>
+                <Version>0.5.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>radius-engine</Name>
             <Homepage>http://radius-engine.sourceforge.net</Homepage>
             <Packager>
@@ -1404,6 +1654,220 @@
             <Update release="1">
                 <Date>2010-12-10</Date>
                 <Version>0.6</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mofilereader</Name>
+            <Homepage>http://code.google.com/p/mofilereader</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>MIT</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">A library for use .mo-files in C++ without gettext</Summary>
+            <Summary xml:lang="tr">C++ içinde .mo dosyalarını gettext kullanmadan okumak için bir kütüphane</Summary>
+            <Description xml:lang="en">mofilereader lets you read .mo-Files and use their content just as you would do with GNUs gettext. It is implemented in C++ and allowing the programmer to use it in modern programs, without the need of linking against gettext and libiconv.</Description>
+            <Description xml:lang="tr">mofilereader, GNU&apos;nun gettext&apos;indeki gibi mo dosyalarını okumak ve içeriklerini kullanmak için geliştirilmiş bir kütüphanedir. C++ ile yazılmıştır ve programcılara gettext ve libiconv&apos;a bağlama yapmadan geliştirme yapmalarını yardımcı olur.</Description>
+            <Archive type="zip" sha1sum="8369773bdae639c5cfffce9b0997736d20376fe3">http://mofilereader.googlecode.com/files/moFileReader.0.1.2.zip</Archive>
+            <Patches>
+                <Patch>MoFR.patch</Patch>
+            </Patches>
+            <SourceURI>library/mofilereader/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mofilereader</Name>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-04-09</Date>
+                <Version>0.1.2</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>angelscript</Name>
+            <Homepage>http://www.angelcode.com/angelscript</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>ZLIB</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">A flexible, cross platform scripting library</Summary>
+            <Summary xml:lang="tr">Esnek ve çok platformlu bir betik kütüphanesi</Summary>
+            <Description xml:lang="en">AngelScript is an extremely flexible cross platform scripting library designed to allow applications to extend their functionality through external scripts. It has been designed from the beginning to be an easy to use component, both for the application programmer and the script writer.</Description>
+            <Description xml:lang="tr">AngelScript, uygulamaların fonksiyonelliğini harici betiklerle geliştirmek için tasarlanmış yüksek esnekliğe sahip çok platformlu bir betik kütüphanesidir. Hem uygulamanın programcısı hem de betik yazarı için kolay kullanımlı bir bileşen olması hedeflenmiştir.</Description>
+            <Archive type="zip" sha1sum="5d66cf2a495bf677302497e673adb7c2930322e9">http://www.angelcode.com/angelscript/sdk/files/angelscript_2.20.2.zip</Archive>
+            <Patches>
+                <Patch>angelscript_2.20.2-makefile.diff</Patch>
+            </Patches>
+            <SourceURI>library/angelscript/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>angelscript</Name>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-04-09</Date>
+                <Version>2.20.2</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>ogre-pagedgeometry</Name>
+            <Homepage>http://www.ogre3d.org/tikiwiki/PagedGeometry+Engine</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>MIT</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">Paged geometry for Ogre3D</Summary>
+            <Summary xml:lang="tr">OGRE için Paged geometry</Summary>
+            <Description xml:lang="en">PagedGeometry engine is an add-on to Ogre which provides highly optimized methods for rendering massive amounts of small meshes, covering a possibly infinite area. This is especially well suited for dense forests and outdoor scenes, with millions of trees, bushes, grass, rocks, etc.</Description>
+            <Description xml:lang="tr">PagedGeometry, OGRE için çok miktarda küçük ağların taranmasında yüksek en iyilemeli fonksiyonlar sunan bir motordur. Bu özellikle ormanlar, açık alanlar, çalılar, çimler, kayalar için uygundur.</Description>
+            <Archive type="tarbz2" sha1sum="375b02b50f4e923383c30d5c7ff4d63fc41b06ed">http://dl.dropbox.com/u/1836567/Paketler/ogre-pagedgeometry.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>ogre-devel</Dependency>
+                <Dependency>ois-devel</Dependency>
+                <Dependency>boost-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>library/ogre-pagedgeometry/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>ogre-pagedgeometry</Name>
+            <RuntimeDependencies>
+                <Dependency>ogre</Dependency>
+                <Dependency>ois</Dependency>
+                <Dependency>boost</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-04-10</Date>
+                <Version>1.1.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>ogre-hydrax</Name>
+            <Homepage>http://www.ogre3d.org/tikiwiki/Hydrax</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">OGRE water add on library</Summary>
+            <Summary xml:lang="tr">OGRE su eklenti kütüphanesi</Summary>
+            <Description xml:lang="en">Hydrax is an add-on for OGRE which aim is to provide an easy-use library in order to render pretty water scenes.</Description>
+            <Description xml:lang="tr">Hydrax, hoş su manzaraları taramak için geliştirilmiş bir OGRE eklenti kütüphanesidir.</Description>
+            <Archive type="tarbz2" sha1sum="332bb4c1d440b08df5ce4e1eb31a97b633ec2c73">http://modclub.rigsofrods.com/xavi/hydrax-0.5.2-ogre-17-patched.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>ogre-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>library/ogre-hydrax/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>ogre-hydrax</Name>
+            <RuntimeDependencies>
+                <Dependency>ogre</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/share/Hydrax</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-04-10</Date>
+                <Version>0.5.2</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>socketw</Name>
+            <Homepage>http://www.digitalfanatics.org/cal/socketw</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>LGPLv2.1</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">A cross platform streaming socket C++ library</Summary>
+            <Summary xml:lang="tr">Çok platformlu C++ soket akış kütüphanesi</Summary>
+            <Description xml:lang="en">SocketW is a cross platform streaming socket C++ library designed to be easy to use. It supports Unix sockets and TCP/IP sockets with optional SSL/TLS (OpenSSL) support. SocketW allows you to write portable and secure network applications quickly without needing to spend time learning low-level system functions or reading OpenSSL manuals.</Description>
+            <Description xml:lang="tr">SocketW, kolayca kullanılması için tasarlanmış, çok platformlu bir C++ soket akış kütüphanesidir. Unix soketleri, seçime bağlı SSL/TLS (OpenSSL) ile TCP/IP soketleri desteklenmektedir. SocketW, düşük seviye sistem fonksiyonlarını öğrenmenize ve OpenSSL rehberlerini okumanıza gerek kalmadan, portatif ve güvenli ağ uygulamaları geliştirmenizi sağlar.</Description>
+            <Archive type="targz" sha1sum="4023e21515d0ff9be7b3c2faddfa6ec949405fc5">http://www.digitalfanatics.org/cal/socketw/files/SocketW031026.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>openssl-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>socketw.patch</Patch>
+                <Patch level="1">socketw-make.diff</Patch>
+            </Patches>
+            <SourceURI>library/socketw/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>socketw</Name>
+            <RuntimeDependencies>
+                <Dependency>openssl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-04-04</Date>
+                <Version>031026</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -1474,6 +1938,54 @@
             <Update release="1">
                 <Date>2010-05-11</Date>
                 <Version>0.1.4</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mygui</Name>
+            <Homepage>http://mygui.info</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>LGPLv3</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">Fast and simple OGRE GUI</Summary>
+            <Summary xml:lang="tr">Hızlı ve basit OGRE GKA</Summary>
+            <Description xml:lang="en">MyGUI is a library for creating Graphical User Interfaces for games and 3D applications. The main goals of mygui are: speed, flexibility and ease of use.</Description>
+            <Description xml:lang="tr">MyGUI, oyunlar ve 3B uygulamalar için Grafik Kullanıcı Arayüzleri oluşturmak için bir kütüphanedir. MyGUI&apos;nin ana hedefi hız, esneklik ve kullanım kolaylığıdır.</Description>
+            <Archive type="tarbz2" sha1sum="5fb93e066dccef330439b55fc5da69d186b838ac">http://dl.dropbox.com/u/1836567/Paketler/my-gui.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>freetype-devel</Dependency>
+                <Dependency>ogre-devel</Dependency>
+                <Dependency>ois-devel</Dependency>
+                <Dependency>doxygen</Dependency>
+            </BuildDependencies>
+            <SourceURI>library/mygui/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mygui</Name>
+            <RuntimeDependencies>
+                <Dependency>freetype</Dependency>
+                <Dependency>ogre</Dependency>
+                <Dependency>ois</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-04-04</Date>
+                <Version>3.2.0</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
