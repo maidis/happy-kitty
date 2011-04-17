@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>guichan</Name>
+        <Homepage>http://code.google.com/p/guichan</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>library</IsA>
+        <Summary>A C++ GUI library</Summary>
+        <Description>Guichan is a portable C++ GUI library designed for games using Allegro, SDL and/or OpenGL.</Description>
+        <Archive sha1sum="50cac146154740d604c752c87dbba00a2793892b" type="targz">http://guichan.googlecode.com/files/guichan-0.8.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>allegro-devel</Dependency>
+            <Dependency>freeglut-devel</Dependency>
+            <Dependency>libglade-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>guichan-0.8.2-as-needed.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>guichan</Name>
+        <RuntimeDependencies>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>allegro</Dependency>
+            <Dependency>freeglut</Dependency>
+            <Dependency>libglade</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-05-30</Date>
+            <Version>0.8.2</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
