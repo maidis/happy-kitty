@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>guichan</Name>
+        <Summary xml:lang="tr">Bir C++ grafik kullanıcı arayüzü kütüphanesi</Summary>
+        <Description xml:lang="tr">Guichan; Aleggro, SDL veya OpenGL ile yazılmış oyunlar için tasarlanmış portatif bir grafik kullanıcı arayüzü kütüphanesidir.</Description>
+    </Source>
+</PISI>
