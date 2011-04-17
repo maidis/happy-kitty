@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>jvgs</Name>
+        <Homepage>http://jvgs.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>public-domain</License>
+        <!-- must be 3.0-->
+        <License>CCPL-Attribution-ShareAlike-NonCommercial-2.5</License>
+        <Icon>jvgs</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Minimalistic platform game</Summary>
+        <Description>JVGS takes place in a world much like ours, which has started fading away. At a point where nearly everything has gone, a poet finds himself, alone in a strange world of danger. He starts a journey along the broken stream of thoughts that's left.</Description>
+        <Archive sha1sum="b0439da607f4476530b2db185c2b16e07078061c" type="targz">mirrors://sourceforge/jvgs/jvgs-0.5/jvgs-0.5-src.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>swig</Dependency>
+            <Dependency>lua-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>jvgs</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>swig</Dependency>
+            <Dependency>lua</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/opt/jvgs/jvgs</Path>
+            <Path fileType="config">/opt/jvgs/data.xml</Path>
+            <Path fileType="data">/opt/jvgs/main.lua</Path>
+            <Path fileType="data">/opt/jvgs/poems</Path>
+            <Path fileType="data">/opt/jvgs/resources</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="doc">/opt/jvgs/AUTHORS</Path>
+            <Path fileType="doc">/opt/jvgs/README*</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/jvgs.desktop">jvgs.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/jvgs.png">jvgs.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-06-26</Date>
+            <Version>0.5</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
