@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=bitefusion
+GenericName=Snake Game
+GenericName[tr]=Yılan Oyunu
+Comment=A snake game
+Comment[tr]=Bir yılan oyunu
+Icon=bitefusion
+Exec=bitefusion
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;
