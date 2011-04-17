@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>balloonchase</Name>
+        <Homepage>http://koti.mbnet.fi/makegho/c/bchase</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>balloonchase</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A hot air balloon game</Summary>
+        <Description>Balloon Chase is a game where you fly a hot air balloon and try to blow the other player out of the screen.</Description>
+        <Archive sha1sum="af929d96be6cfb7a65fecf489c3df9f9703b4e1d" type="tarbz2">http://koti.mbnet.fi/makegho/c/bchase/balloonchase-0.9.6.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>0.9.6-gentoo.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>balloonchase</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/balloonchase</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/balloonchase.desktop">balloonchase.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/balloonchase.png">balloonchase.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-12-01</Date>
+            <Version>0.9.6</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

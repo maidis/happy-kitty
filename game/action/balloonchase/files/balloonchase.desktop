@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Balloon Chase
+GenericName=Hot Air Balloon
+GenericName[tr]=Sıcak Hava Balonu
+Comment=A hot air balloon game
+Comment[tr]=Bir sıcak hava balonu oyunu
+Icon=balloonchase
+Exec=balloonchase c
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ActionGame;
