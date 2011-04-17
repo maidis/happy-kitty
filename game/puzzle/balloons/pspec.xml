@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>balloons</Name>
+        <Homepage>http://sourceforge.net/projects/balloons-ng</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>balloons</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Tile based platform puzzle game</Summary>
+        <Description>BALLOONS is a tile based platform puzzle game. Collect all necessary items that are almost hidden in balloons. Then go and find the exit. Each of the 99 levels can be quite tricky, dangerous and time limited, too!</Description>
+        <Archive sha1sum="2ae251fff53d93576fba49d554e4c287f4b28034" type="targz">mirrors://sourceforge/balloons-ng/balloons-0.1.8-3-src.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-ttf-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>scoreList.diff</Patch>
+            <Patch>paths.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>balloons</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-ttf-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/balloons</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/balloons.desktop">balloons.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/balloons.png">balloons.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-12-01</Date>
+            <Version>0.1.8.3</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

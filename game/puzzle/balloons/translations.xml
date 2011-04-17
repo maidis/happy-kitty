@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>balloons</Name>
+        <Summary xml:lang="tr">Bir platform bulmaca oyunu</Summary>
+        <Description xml:lang="tr">BALLOONS, balonların içinde gizli nesneleri toplamaya ve sonraki bölüme geçmeye çalıştığınız bir platform bulmaca oyunudur. 99 bölümün tümü de şaşırtmacalı, tehlikeli ve zaman sınırlamalıdır.</Description>
+    </Source>
+</PISI>
