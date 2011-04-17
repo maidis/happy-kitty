@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>bitefusion</Name>
+        <Summary xml:lang="tr">Bir yılan oyunu</Summary>
+        <Description xml:lang="tr">bitefusion, 8 bölümlü bir yılan oyunudur.</Description>
+    </Source>
+</PISI>
