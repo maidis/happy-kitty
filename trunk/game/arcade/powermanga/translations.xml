@@ -2,7 +2,7 @@
 <PISI>
     <Source>
         <Name>powermanga</Name>
-        <Summary xml:lang="tr">An arcade 2D shoot-em-up game</Summary>
-        <Description xml:lang="tr">Powermanga is an arcade 2D shoot-em-up game with 41 levels and more than 200 sprites.</Description>
+        <Summary xml:lang="tr">2B hepsini vur oyunu</Summary>
+        <Description xml:lang="tr">Powermanga, 41 bölüm ve 200'den fazla hareketli görüntü içeren bir 2B hepsini vur oyunudur.</Description>
     </Source>
 </PISI>
