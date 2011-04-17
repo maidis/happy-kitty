@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=JVGS
+GenericName=Minimalistic Platformer
+GenericName[tr]=Minimalistik Platform Oyunu
+Icon=jvgs
+Path=/opt/jvgs
+Exec=/opt/jvgs/jvgs
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ActionGame;

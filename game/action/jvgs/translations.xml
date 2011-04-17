@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>jvgs</Name>
+        <Summary xml:lang="tr">Minimalistik platform oyunu</Summary>
+        <Description xml:lang="tr">JVGS, bizimkine çok benzeyen bir dünyada yer alıyor. Her şeyin kaybolmaya başladığı bu yerde, neredeyse geriye tek bir şeyin kalmadığı bir anda bir şair kendini tehlikenin kol gezdiği bu yalnızlıkta buluyor ve geride kalmış düşüncülerin kırılmış akışlarında bir yolculuğa başlıyor.</Description>
+    </Source>
+</PISI>
