@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ballz</Name>
+        <Homepage>http://code.google.com/p/db-tins07</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <Icon>ballz</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Platform game with some puzzle elements</Summary>
+        <Description>B.A.L.L.Z. is a platform game with some puzzle element.</Description>
+        <Archive sha1sum="d559959614bc4f8553b0f4e7c813334086c1d750" type="targz">http://db-tins07.googlecode.com/files/ballz-1.0.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>allegro-devel</Dependency>
+            <Dependency>guichan</Dependency>
+            <Dependency>dumb</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ballz</Name>
+        <RuntimeDependencies>
+            <Dependency>allegro</Dependency>
+            <Dependency>guichan</Dependency>
+            <Dependency>dumb</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/ballz</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-12-15</Date>
+            <Version>1.0.1</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
