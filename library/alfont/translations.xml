@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>alfont</Name>
+        <Summary xml:lang="tr">FreeType2 için bir Allegro sarma paketi</Summary>
+        <Description xml:lang="tr">AllegroFont, FreeType2 için bir Allegro sarma paketidir. Allegro'nun pek çok yazı tipi biçimini yüklemesini ve taramasını sağlar.</Description>
+    </Source>
+</PISI>
