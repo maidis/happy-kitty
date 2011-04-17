@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>alfont</Name>
+        <Homepage>http://opensnc.sourceforge.net/alfont</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>FTL</License>
+        <IsA>library</IsA>
+        <Summary>An Allegro wrapper for FreeType2</Summary>
+        <Description>AllegroFont is an Allegro wrapper for the wonderful FreeType2 library that makes Allegro (amongst other things) able to load and render TTF and many other famous font formats.</Description>
+        <Archive sha1sum="1860161be00ae971dce8b540dd04b94921a2df3b" type="targz">http://opensnc.sourceforge.net/alfont/alfont.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>allegro-devel</Dependency>
+            <Dependency>freetype-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>alfont</Name>
+        <RuntimeDependencies>
+            <Dependency>allegro</Dependency>
+            <Dependency>freetype</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-04-17</Date>
+            <Version>2.0.9</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
