@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>balloonchase</Name>
+        <Summary xml:lang="tr">Bir sıcak hava balonu oyunu</Summary>
+        <Description xml:lang="tr">Balloon Chase, bir sıcak hava balonunu uçurarak rakibinizin balonunu patlatmaya çalıştığınız bir oyundur.</Description>
+    </Source>
+</PISI>
