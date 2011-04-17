@@ -1,0 +1,14 @@
+--- src/main.h.orig	2007-08-06 21:42:47.000000000 +0300
++++ src/main.h	2010-12-01 14:19:40.164000017 +0200
+@@ -27,9 +27,9 @@
+ #include <iostream>
+ #include <fstream>
+ 
+-#define DATA_PREFIX "data/"
++#define DATA_PREFIX "/usr/share/balloons/"
+ 
+-#define LEVELS DATA_PREFIX "levels/%d.DAT"
++#define LEVELS DATA_PREFIX "/usr/share/balloons/%d.DAT"
+ 
+ 
+ // Tiles
