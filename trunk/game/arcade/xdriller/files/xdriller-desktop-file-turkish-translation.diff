@@ -1,0 +1,19 @@
+--- xdriller.desktop.orig	2010-02-17 18:14:35.000000000 +0200
++++ xdriller.desktop	2011-01-27 02:40:56.592000023 +0200
+@@ -1,11 +1,14 @@
+ [Desktop Entry]
++Type=Application
+ Version=0.1
+ Encoding=UTF-8
+ Name=Xdriller
+-Type=Application
++GenericName=3d Mr Driller Clone
++GenericName[tr]=3b Mr Driller Klonu
+ Comment=A Mr Driller clone by Fixi Studios
++Comment[en_GB]=A Mr Driller clone by Fixi Studios
++Comment[tr]=Fixi Studios'tan bir Mr Driller klonu
+ Exec=xdriller
+ TryExec=xdriller
+ Icon=xdriller
+ Categories=Game;ActionGame;
+-Comment[en_GB]=A Mr Driller clone by Fixi Studios

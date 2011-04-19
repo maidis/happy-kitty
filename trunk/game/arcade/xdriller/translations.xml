@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>xdriller</Name>
+        <Summary xml:lang="tr">Bir 3b Mr. Driller klonu</Summary>
+        <Description xml:lang="tr">Xdriller, tetris benzeri bir ekranda kutuları delip, güç nesnelerini toplayarak puanlarınıza puan katarken yukarıdan düşen kutulardan kaçmaya çalıştığınız Mr. Driller serisini temel alan zevkli bir oyundur.</Description>
+    </Source>
+</PISI>
