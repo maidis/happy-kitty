@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>xdriller</Name>
+        <Homepage>http://xdriller.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>xdriller</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A 3d Mr. Driller clone</Summary>
+        <Description>Xdriller is based on the gameplay of the Mr. Driller series, where you have to drill through Tetris-like screens of blocks and collect power-ups while avoiding being squashed by falling blocks.</Description>
+        <Archive sha1sum="a42e53eaf286d3ae2269b528751d697530d3c73c" type="targz">mirrors://sourceforge/xdriller/xdriller/0.8/xdriller-0.8.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>ogre-devel</Dependency>
+            <Dependency>ois-devel</Dependency>
+            <Dependency>libogg-devel</Dependency>
+            <Dependency>libvorbis-devel</Dependency>
+            <Dependency>gettext</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>xdriller-desktop-file-turkish-translation.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>xdriller</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>ogre</Dependency>
+            <Dependency>ois</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>libvorbis</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/xdriller</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-01-27</Date>
+            <Version>0.8.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
