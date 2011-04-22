@@ -233,6 +233,54 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>bitefusion</Name>
+            <Homepage>http://www.junoplay.com</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A snake game</Summary>
+            <Summary xml:lang="tr">Bir yılan oyunu</Summary>
+            <Description xml:lang="en">bitefusion is a snake game with 8 levels.</Description>
+            <Description xml:lang="tr">bitefusion, 8 bölümlü bir yılan oyunudur.</Description>
+            <Icon>bitefusion</Icon>
+            <Archive type="targz" sha1sum="366abc1b1ec5aec0f8443412edd187395faeda51">http://dl.dropbox.com/u/1836567/Paketler/bitefusion-1.0.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/arcade/bitefusion/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>bitefusion</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/bitefusion.desktop" permission="0644" owner="root">bitefusion.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/bitefusion.png" permission="0644" owner="root">bitefusion.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-11-03</Date>
+                <Version>1.0.1</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>airstrike</Name>
             <Homepage>http://icculus.org/airstrike</Homepage>
             <Packager>
@@ -522,9 +570,9 @@
             <IsA>app:gui</IsA>
             <PartOf>game.arcade</PartOf>
             <Summary xml:lang="en">An arcade 2D shoot-em-up game</Summary>
-            <Summary xml:lang="tr">An arcade 2D shoot-em-up game</Summary>
+            <Summary xml:lang="tr">2B hepsini vur oyunu</Summary>
             <Description xml:lang="en">Powermanga is an arcade 2D shoot-em-up game with 41 levels and more than 200 sprites.</Description>
-            <Description xml:lang="tr">Powermanga is an arcade 2D shoot-em-up game with 41 levels and more than 200 sprites.</Description>
+            <Description xml:lang="tr">Powermanga, 41 bölüm ve 200&apos;den fazla hareketli görüntü içeren bir 2B hepsini vur oyunudur.</Description>
             <Icon>powermanga</Icon>
             <Archive type="targz" sha1sum="50ca2844f8d3fa53af89e94aeb6dd10d7b320cc8">http://linux.tlk.fr/games/Powermanga/download/powermanga-0.90.tgz</Archive>
             <BuildDependencies>
@@ -623,6 +671,115 @@
             <Update release="1">
                 <Date>2010-11-28</Date>
                 <Version>1.1.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>xdriller</Name>
+            <Homepage>http://xdriller.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A 3d Mr. Driller clone</Summary>
+            <Summary xml:lang="tr">Bir 3b Mr. Driller klonu</Summary>
+            <Description xml:lang="en">Xdriller is based on the gameplay of the Mr. Driller series, where you have to drill through Tetris-like screens of blocks and collect power-ups while avoiding being squashed by falling blocks.</Description>
+            <Description xml:lang="tr">Xdriller, tetris benzeri bir ekranda kutuları delip, güç nesnelerini toplayarak puanlarınıza puan katarken yukarıdan düşen kutulardan kaçmaya çalıştığınız Mr. Driller serisini temel alan zevkli bir oyundur.</Description>
+            <Icon>xdriller</Icon>
+            <Archive type="targz" sha1sum="a42e53eaf286d3ae2269b528751d697530d3c73c">mirrors://sourceforge/xdriller/xdriller/0.8/xdriller-0.8.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>ogre-devel</Dependency>
+                <Dependency>ois-devel</Dependency>
+                <Dependency>libogg-devel</Dependency>
+                <Dependency>libvorbis-devel</Dependency>
+                <Dependency>gettext</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>xdriller-desktop-file-turkish-translation.diff</Patch>
+            </Patches>
+            <SourceURI>game/arcade/xdriller/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>xdriller</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>ogre</Dependency>
+                <Dependency>ois</Dependency>
+                <Dependency>libogg</Dependency>
+                <Dependency>libvorbis</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/xdriller</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-01-27</Date>
+                <Version>0.8.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>ballz</Name>
+            <Homepage>http://code.google.com/p/db-tins07</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>BSD</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">Platform game with some puzzle elements</Summary>
+            <Summary xml:lang="tr">Bulmaca öğeleri içeren bir bulmaca oyunu</Summary>
+            <Description xml:lang="en">B.A.L.L.Z. is a platform game with some puzzle element.</Description>
+            <Description xml:lang="tr">B.A.L.L.Z., bulmaca öğeleri içeren bir bulmaca oyunudur.</Description>
+            <Icon>ballz</Icon>
+            <Archive type="targz" sha1sum="d559959614bc4f8553b0f4e7c813334086c1d750">http://db-tins07.googlecode.com/files/ballz-1.0.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>allegro-devel</Dependency>
+                <Dependency>guichan</Dependency>
+                <Dependency>dumb</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/arcade/ballz/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>ballz</Name>
+            <RuntimeDependencies>
+                <Dependency>allegro</Dependency>
+                <Dependency>guichan</Dependency>
+                <Dependency>dumb</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/ballz</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-12-15</Date>
+                <Version>1.0.1</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -792,6 +949,67 @@
             <Update release="1">
                 <Date>2011-04-02</Date>
                 <Version>0.3.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>jvgs</Name>
+            <Homepage>http://jvgs.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <License>public-domain</License>
+            <License>CCPL-Attribution-ShareAlike-NonCommercial-2.5</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.action</PartOf>
+            <Summary xml:lang="en">Minimalistic platform game</Summary>
+            <Summary xml:lang="tr">Minimalistik platform oyunu</Summary>
+            <Description xml:lang="en">JVGS takes place in a world much like ours, which has started fading away. At a point where nearly everything has gone, a poet finds himself, alone in a strange world of danger. He starts a journey along the broken stream of thoughts that&apos;s left.</Description>
+            <Description xml:lang="tr">JVGS, bizimkine çok benzeyen bir dünyada yer alıyor. Her şeyin kaybolmaya başladığı bu yerde, neredeyse geriye tek bir şeyin kalmadığı bir anda bir şair kendini tehlikenin kol gezdiği bu yalnızlıkta buluyor ve geride kalmış düşüncülerin kırılmış akışlarında bir yolculuğa başlıyor.</Description>
+            <Icon>jvgs</Icon>
+            <Archive type="targz" sha1sum="b0439da607f4476530b2db185c2b16e07078061c">mirrors://sourceforge/jvgs/jvgs-0.5/jvgs-0.5-src.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>swig</Dependency>
+                <Dependency>lua-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/action/jvgs/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>jvgs</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>swig</Dependency>
+                <Dependency>lua</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/opt/jvgs/jvgs</Path>
+                <Path fileType="config">/opt/jvgs/data.xml</Path>
+                <Path fileType="data">/opt/jvgs/main.lua</Path>
+                <Path fileType="data">/opt/jvgs/poems</Path>
+                <Path fileType="data">/opt/jvgs/resources</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="doc">/opt/jvgs/AUTHORS</Path>
+                <Path fileType="doc">/opt/jvgs/README*</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/jvgs.desktop" permission="0644" owner="root">jvgs.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/jvgs.png" permission="0644" owner="root">jvgs.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-06-26</Date>
+                <Version>0.5</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -1039,6 +1257,113 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>balloonchase</Name>
+            <Homepage>http://koti.mbnet.fi/makegho/c/bchase</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.action</PartOf>
+            <Summary xml:lang="en">A hot air balloon game</Summary>
+            <Summary xml:lang="tr">Bir sıcak hava balonu oyunu</Summary>
+            <Description xml:lang="en">Balloon Chase is a game where you fly a hot air balloon and try to blow the other player out of the screen.</Description>
+            <Description xml:lang="tr">Balloon Chase, bir sıcak hava balonunu uçurarak rakibinizin balonunu patlatmaya çalıştığınız bir oyundur.</Description>
+            <Icon>balloonchase</Icon>
+            <Archive type="tarbz2" sha1sum="af929d96be6cfb7a65fecf489c3df9f9703b4e1d">http://koti.mbnet.fi/makegho/c/bchase/balloonchase-0.9.6.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>0.9.6-gentoo.patch</Patch>
+            </Patches>
+            <SourceURI>game/action/balloonchase/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>balloonchase</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/balloonchase</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/balloonchase.desktop" permission="0644" owner="root">balloonchase.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/balloonchase.png" permission="0644" owner="root">balloonchase.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-12-01</Date>
+                <Version>0.9.6</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>bitfighter</Name>
+            <Homepage>http://bitfighter.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.action</PartOf>
+            <Summary xml:lang="en">A multi-player 2D space combat game</Summary>
+            <Summary xml:lang="tr">Çokoyunculu bir 2B uzay savaşı oyunu</Summary>
+            <Description xml:lang="en">Bitfighter is a free multi-player 2D space combat game with Robotron-like controls. It&apos;s a team based strategy game featuring retro vector graphics and customizable ships. It&apos;s fast, fun, and frenetic.</Description>
+            <Description xml:lang="tr">Bitfighter, Robotron benzeri kontrollere sahip çokoyunculu bir 2B uzay savaşı oyunudur. Eski vektör grafikler ve özelleştirilebilir gemiler içeren takım tabanlı bir strateji oyunu olan Bitfighter, hızlı, eğlenceli ve çılgın bir yapıya sahiptir.</Description>
+            <Icon>bitfighter</Icon>
+            <Archive type="targz" sha1sum="b8345aa249c9fe1a9890a2379453aeb8eaecf9b9">http://bitfighter.googlecode.com/files/bitfighter-015a.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>freealut-devel</Dependency>
+                <Dependency>freeglut-devel</Dependency>
+                <Dependency>openal-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/action/bitfighter/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>bitfighter</Name>
+            <RuntimeDependencies>
+                <Dependency>freealut</Dependency>
+                <Dependency>freeglut</Dependency>
+                <Dependency>openal</Dependency>
+                <Dependency>mesa</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/opt/bitfighter/bitfighter</Path>
+                <Path fileType="data">/opt/bitfighter</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/bitfighter.desktop" permission="0644" owner="root">bitfighter.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/bitfighter.png" permission="0644" owner="root">bitfighter.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-04-22</Date>
+                <Version>015a</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>gish</Name>
             <Homepage>http://github.com/FrozenCow/gish</Homepage>
             <Packager>
@@ -1135,6 +1460,65 @@
             <Update release="1">
                 <Date>2011-01-14</Date>
                 <Version>8.2</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>balloons</Name>
+            <Homepage>http://sourceforge.net/projects/balloons-ng</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">Tile based platform puzzle game</Summary>
+            <Summary xml:lang="tr">Bir platform bulmaca oyunu</Summary>
+            <Description xml:lang="en">BALLOONS is a tile based platform puzzle game. Collect all necessary items that are almost hidden in balloons. Then go and find the exit. Each of the 99 levels can be quite tricky, dangerous and time limited, too!</Description>
+            <Description xml:lang="tr">BALLOONS, balonların içinde gizli nesneleri toplamaya ve sonraki bölüme geçmeye çalıştığınız bir platform bulmaca oyunudur. 99 bölümün tümü de şaşırtmacalı, tehlikeli ve zaman sınırlamalıdır.</Description>
+            <Icon>balloons</Icon>
+            <Archive type="targz" sha1sum="2ae251fff53d93576fba49d554e4c287f4b28034">mirrors://sourceforge/balloons-ng/balloons-0.1.8-3-src.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-ttf-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>scoreList.diff</Patch>
+                <Patch>paths.patch</Patch>
+            </Patches>
+            <SourceURI>game/puzzle/balloons/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>balloons</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-ttf-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/balloons</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/balloons.desktop" permission="0644" owner="root">balloons.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/balloons.png" permission="0644" owner="root">balloons.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-12-01</Date>
+                <Version>0.1.8.3</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -1662,6 +2046,102 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>alfont</Name>
+            <Homepage>http://opensnc.sourceforge.net/alfont</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>FTL</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">An Allegro wrapper for FreeType2</Summary>
+            <Summary xml:lang="tr">FreeType2 için bir Allegro sarma paketi</Summary>
+            <Description xml:lang="en">AllegroFont is an Allegro wrapper for the wonderful FreeType2 library that makes Allegro (amongst other things) able to load and render TTF and many other famous font formats.</Description>
+            <Description xml:lang="tr">AllegroFont, FreeType2 için bir Allegro sarma paketidir. Allegro&apos;nun pek çok yazı tipi biçimini yüklemesini ve taramasını sağlar.</Description>
+            <Archive type="targz" sha1sum="1860161be00ae971dce8b540dd04b94921a2df3b">http://opensnc.sourceforge.net/alfont/alfont.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>allegro-devel</Dependency>
+                <Dependency>freetype-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>library/alfont/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>alfont</Name>
+            <RuntimeDependencies>
+                <Dependency>allegro</Dependency>
+                <Dependency>freetype</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-04-17</Date>
+                <Version>2.0.9</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>guichan</Name>
+            <Homepage>http://code.google.com/p/guichan</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>BSD</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">A C++ GUI library</Summary>
+            <Summary xml:lang="tr">Bir C++ grafik kullanıcı arayüzü kütüphanesi</Summary>
+            <Description xml:lang="en">Guichan is a portable C++ GUI library designed for games using Allegro, SDL and/or OpenGL.</Description>
+            <Description xml:lang="tr">Guichan; Aleggro, SDL veya OpenGL ile yazılmış oyunlar için tasarlanmış portatif bir grafik kullanıcı arayüzü kütüphanesidir.</Description>
+            <Archive type="targz" sha1sum="50cac146154740d604c752c87dbba00a2793892b">http://guichan.googlecode.com/files/guichan-0.8.2.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>allegro-devel</Dependency>
+                <Dependency>freeglut-devel</Dependency>
+                <Dependency>libglade-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>guichan-0.8.2-as-needed.patch</Patch>
+            </Patches>
+            <SourceURI>library/guichan/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>guichan</Name>
+            <RuntimeDependencies>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>allegro</Dependency>
+                <Dependency>freeglut</Dependency>
+                <Dependency>libglade</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-05-30</Date>
+                <Version>0.8.2</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>mofilereader</Name>
             <Homepage>http://code.google.com/p/mofilereader</Homepage>
             <Packager>
@@ -1732,6 +2212,52 @@
             <Update release="1">
                 <Date>2011-04-09</Date>
                 <Version>2.20.2</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>dumb</Name>
+            <Homepage>http://dumb.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">Dynamic Universal Music Bibliotheque</Summary>
+            <Summary xml:lang="tr">Dynamic Universal Music Bibliotheque</Summary>
+            <Description xml:lang="en">DUMB is an IT, XM, S3M and MOD player library.</Description>
+            <Description xml:lang="tr">DUMB, bir IT, XM, S3M ve MOD oynatıcı kütüphanedir.</Description>
+            <Archive type="tarbz2" sha1sum="dfbecaf553edb7edc5b18b03b19e9d3048c442e7">http://dl.dropbox.com/u/1836567/Paketler/dumb-0.9.3.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>allegro-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">dumb-0.9.3_CVE-2006-3668.patch</Patch>
+            </Patches>
+            <SourceURI>library/dumb/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>dumb</Name>
+            <RuntimeDependencies>
+                <Dependency>allegro</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-05-30</Date>
+                <Version>0.9.3</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -1959,7 +2485,7 @@
             <Summary xml:lang="tr">Hızlı ve basit OGRE GKA</Summary>
             <Description xml:lang="en">MyGUI is a library for creating Graphical User Interfaces for games and 3D applications. The main goals of mygui are: speed, flexibility and ease of use.</Description>
             <Description xml:lang="tr">MyGUI, oyunlar ve 3B uygulamalar için Grafik Kullanıcı Arayüzleri oluşturmak için bir kütüphanedir. MyGUI&apos;nin ana hedefi hız, esneklik ve kullanım kolaylığıdır.</Description>
-            <Archive type="tarbz2" sha1sum="5fb93e066dccef330439b55fc5da69d186b838ac">http://dl.dropbox.com/u/1836567/Paketler/my-gui.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="e6f85609e6ca1608502234e48ac19e4fc6bc1215">http://dl.dropbox.com/u/1836567/Paketler/my-gui-4290.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>freetype-devel</Dependency>
                 <Dependency>ogre-devel</Dependency>
@@ -1984,7 +2510,7 @@
         </Package>
         <History>
             <Update release="1">
-                <Date>2011-04-04</Date>
+                <Date>2011-04-22</Date>
                 <Version>3.2.0</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
