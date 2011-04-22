@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>bitfighter</Name>
+        <Summary xml:lang="tr">Çokoyunculu bir 2B uzay savaşı oyunu</Summary>
+        <Description xml:lang="tr">Bitfighter, Robotron benzeri kontrollere sahip çokoyunculu bir 2B uzay savaşı oyunudur. Eski vektör grafikler ve özelleştirilebilir gemiler içeren takım tabanlı bir strateji oyunu olan Bitfighter, hızlı, eğlenceli ve çılgın bir yapıya sahiptir.</Description>
+    </Source>
+</PISI>

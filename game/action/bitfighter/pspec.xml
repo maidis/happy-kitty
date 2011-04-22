@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>bitfighter</Name>
+        <Homepage>http://bitfighter.org</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>bitfighter</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A multi-player 2D space combat game</Summary>
+        <Description>Bitfighter is a free multi-player 2D space combat game with Robotron-like controls. It's a team based strategy game featuring retro vector graphics and customizable ships. It's fast, fun, and frenetic.</Description>
+        <Archive sha1sum="b8345aa249c9fe1a9890a2379453aeb8eaecf9b9" type="targz">http://bitfighter.googlecode.com/files/bitfighter-015a.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>freealut-devel</Dependency>
+            <Dependency>freeglut-devel</Dependency>
+            <Dependency>openal-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>bitfighter</Name>
+        <RuntimeDependencies>
+            <Dependency>freealut</Dependency>
+            <Dependency>freeglut</Dependency>
+            <Dependency>openal</Dependency>
+            <Dependency>mesa</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/opt/bitfighter/bitfighter</Path>
+            <Path fileType="data">/opt/bitfighter</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/bitfighter.desktop">bitfighter.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/bitfighter.png">bitfighter.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-04-22</Date>
+            <Version>015a</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
