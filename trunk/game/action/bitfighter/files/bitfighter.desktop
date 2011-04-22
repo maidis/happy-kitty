@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Bitfighter
+GenericName=2D Space Combat
+GenericName[tr]=2B Uzay Savaşı
+Comment=A multi-player 2D space combat game
+Comment[tr]=Çokoyunculu bir 2B uzay savaşı oyunu
+Icon=bitfighter
+Exec=cd /opt/bitfighter && ./bitfighter
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ActionGame;
