@@ -8,7 +8,7 @@ from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "my-gui-4141"
+WorkDir = "my-gui-4290"
 
 def setup():
     cmaketools.configure("-DCMAKE_BUILD_TYPE=release \
