@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>powder-toy</Name>
+        <Summary xml:lang="tr">Bir düşem kumlar fizik oyun alanı</Summary>
+        <Description xml:lang="tr">Powder Toy, klasikler arasındaki düşen kumlar fizik oyununun masaüstü sürümüdür. Oyun; hava basıncını, hızı ve sıcaklığı simüle etmektedir.</Description>
+    </Source>
+</PISI>
