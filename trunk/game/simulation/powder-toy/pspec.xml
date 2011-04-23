@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>powder-toy</Name>
+        <Homepage>http://powdertoy.co.uk</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>powder-toy</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A falling sand physics sandbox</Summary>
+        <Description>Powder Toy is a desktop version of the classic falling sand physics sandbox, it simulates air pressure and velocity as well as heat.</Description>
+        <Archive sha1sum="648a69e6054b71ad43d6b60c7458de1620b0936e" type="zip">http://dl.dropbox.com/u/1836567/Paketler/FacialTurd-The-Powder-Toy-47.4-0-g5c8a6f3.zip</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>powder-toy</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/powder-toy.desktop">powder-toy.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/powder-toy.png">powder-toy.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-04-23</Date>
+            <Version>47.4</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

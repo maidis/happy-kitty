@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Powder Toy
+GenericName=Falling Sand
+GenericName[tr]=Düşen Kumlar
+Comment=A falling sand physics sandbox
+Comment[tr]=Bir düşen kumlar fizik oyun alanı
+Icon=powder-toy
+Exec=powder
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;Simulation;
