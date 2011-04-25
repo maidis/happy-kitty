@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>jamp</Name>
+        <Summary xml:lang="tr">Sincaplı bir fizik oyunu</Summary>
+        <Description xml:lang="tr">Jamp, klavye ile bir sincabı kontrol ettiğiniz, fare ile ise bölümde topladığınız nesneleri kullandığınız ve fiziki bir dünyada ile etkileştiğiniz eğlenceli bir oyundur.</Description>
+    </Source>
+</PISI>

@@ -1,0 +1,24 @@
+--- jamp.desktop.orig	2009-01-15 17:45:20.000000000 +0200
++++ jamp.desktop	2011-04-25 18:10:06.709000011 +0300
+@@ -1,17 +1,16 @@
+ [Desktop Entry]
+ Version=1.0
+ Encoding=UTF-8
+-Name=JAMP
+ Type=Application
+-Name[en]=JAMP
++Name=JAMP
+ GenericName=Physics Game
+-GenericName[en]=Physics Game
++GenericNametr]=Fizik Oyunu
+ GenericName[fr]=Jeu de physique
+ Comment=Play a physics game
+ Comment[en]=Play a physics game
+ Comment[fr]= Jouer à un jeu utilisant un moteur physique
+-Icon=jamp.png
++Icon=jamp
+ Exec=jamp
+ Terminal=false
+ StartupNotify=false
+-Categories=Game;
++Categories=Game;ActionGame;
