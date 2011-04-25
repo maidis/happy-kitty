@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=TTT
+GenericName=Tic Tac Toe
+GenericName[tr]=Tic Tac Toe
+Comment=Tic Tac Toe
+Comment[tr]=Tic Tac Toe
+Icon=ttt
+Exec=ttt
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;BoardGame;
