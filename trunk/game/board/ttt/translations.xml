@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>ttt</Name>
+        <Summary xml:lang="tr">Tic Tac Toe</Summary>
+        <Description xml:lang="tr">ttt, bilgisayara karşı ya da iki kişi oynayabileceğiniz bir Tic Tac Toe oyunudur.</Description>
+    </Source>
+</PISI>
