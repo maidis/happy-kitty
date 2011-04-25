@@ -1,0 +1,23 @@
+diff -Naur jamp-1.0.2.orig/globals.h jamp-1.0.2/globals.h
+--- jamp-1.0.2.orig/globals.h	2009-01-16 01:23:54.000000000 +0200
++++ jamp-1.0.2/globals.h	2011-04-25 17:55:58.814000009 +0300
+@@ -41,6 +41,6 @@
+ 
+ #include "Singleton.h"
+ 
+-const std::string path("/usr/share/games/jamp/");
++const std::string path("/usr/share/jamp/");
+ 
+ #endif
+diff -Naur jamp-1.0.2.orig/Makefile jamp-1.0.2/Makefile
+--- jamp-1.0.2.orig/Makefile	2009-01-16 01:30:39.000000000 +0200
++++ jamp-1.0.2/Makefile	2011-04-25 17:56:48.347000012 +0300
+@@ -1,6 +1,6 @@
+-BINDIR = /usr/games
++BINDIR = /usr/bin
+ SHAREDIR = /usr/share
+-DATADIR = /usr/share/games
++DATADIR = /usr/share
+ 
+ PROJECT= ./box2d
+ CXXFLAGS= -g -O2 -I$(PROJECT)/Include

@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>jamp</Name>
+        <Homepage>http://perre.noud.ch/jamp</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>jamp</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A physics game with a squirrel</Summary>
+        <Description>Jamp is a funny physics game that you control a squirrel with the keyboard and, if you win an object, you can then add it with the mouse.</Description>
+        <Archive sha1sum="da622561e0d12d8e5028e6e7d98c08bd1de2e515" type="targz">http://dl.dropbox.com/u/1836567/Paketler/jamp-1.0.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>freeglut-devel</Dependency>
+            <Dependency>box2d</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">jamp-1.0.2-paths.diff</Patch>
+            <Patch>jamp.desktop.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>jamp</Name>
+        <RuntimeDependencies>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>freeglut</Dependency>
+            <Dependency>box2d</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/jamp</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-05-11</Date>
+            <Version>1.0.2</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
