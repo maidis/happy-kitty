@@ -12,6 +12,7 @@
   * [http://linuxgamingnews.org/ Linux Gaming News]
   * [http://www.linux-gamers.net/ linuX-gamers.net]
   * [http://www.linuxgamingworld.com/ Linux Gaming World]
+  * [http://www.linuxgames.com/ LinuxGames]
   * [http://linuxemu.retrofaction.com/ LinuxEmu]
   * [http://planet.freegamedev.net/ FreeGameDev Planet - Games]
   * [http://planetdev.freegamedev.net/ FreeGameDev Planet - Development]
