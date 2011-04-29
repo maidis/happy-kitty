@@ -4,6 +4,7 @@
 = Help =
 
   * [UsingSourceRepository]
+  * [LinuxGamingSites]
 
 ----
 
