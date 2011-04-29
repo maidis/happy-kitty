@@ -1,5 +1,6 @@
 #summary GNU/Linux game sites
 
+  * [http://packages.debian.org/unstable/games/ Debian games]
   * [http://freegamer.blogspot.com/ Free Gamer]
   * [http://www.games4linux.eu/en/ Games4Linux]
   * [http://games.linux.sk/ Games for Linux]
@@ -17,6 +18,7 @@
   * [http://linux.strangegamer.com/ Linux Gamer Guide]
   * [http://www.mobygames.com/browse/games/linux/ Linux games at MobyGames]
   * [http://db.tigsource.com/browse?platform=linux Linux games at TIGdb]
+  * [http://en.wikipedia.org/wiki/List_of_open_source_games List of open source games at Wikipedia]
   * [http://penguenlerdeoynar.blogspot.com/ Penguenler de Oynar (Turkish)]
   * [http://www.penguspy.com/ Penguspy]
   * [http://sourceforge.net/search/?fq%5B%5D=trove%3A80 SourceForge.net hosted games]
