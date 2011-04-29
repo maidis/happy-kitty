@@ -21,7 +21,7 @@
 
 == Games ==
 
-[airstrike], [apricots], [ballway], [barrage], [briquolo], [happyfrog, [pongix], [powermanga], [tuxfootball]
+[airstrike], [apricots], [ballway], [barrage], [briquolo], [happyfrog], [pongix], [powermanga], [tuxfootball]
 
 == Tools ==
 
