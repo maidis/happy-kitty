@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>xinvaders3d</Name>
+        <Summary xml:lang="tr">Uzaylı İstilacılar</Summary>
+        <Description xml:lang="tr">XInvaders 3D, vektör grafikli bir Space Invaders klonudur.</Description>
+    </Source>
+</PISI>
