@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>classic-invaders</Name>
+        <Summary xml:lang="tr">Uzaylı İstilacılar</Summary>
+        <Description xml:lang="tr">Classic Invaders, klasik bir uzaylı vurma oyunudur.</Description>
+    </Source>
+</PISI>
