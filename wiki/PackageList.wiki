@@ -21,12 +21,14 @@
 
 == Games ==
 
-[airstrike], [apricots], [ballway], [barrage], [briquolo], [happyfrog], [pongix], [powermanga], [tuxfootball]
+[airstrike], [alienblaster], [apricots], [atanks], [avoision], [balloonchase], [balloons], [ballway], [ballz], [barrage], [bitefusion], [bitfighter], [briquolo], [csmash], [dfight], [fbg2], [gish], [happyfrog], [jamp], [jvgs], [lugaru], [pinball], [pongix], [powder-toy], [powermanga], [redeclipse], [thebutterflyeffect], [ttt], [tuxfootball], [tuxpuck], [violetland], [viruskiller], [xdriller]
+
 
 == Tools ==
 
 [glc]
 
+
 == Libraries ==
 
-[box2d], [qt-mobility], [elfhacks], [packetstream]
+[alfont], [angelscript], [box2d], [caelum], [clutter], [dumb], [elfhacks], [guichan], [mofilereader], [mygui], [ogre-hydrax], [ogre-pagedgeometry], [packetstream], [qt-mobility], [radius-engine], [socketw], [wxgtk-2.9]
