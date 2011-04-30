@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>xix</Name>
+        <Homepage>http://compgroups.net/comp.os.linux.misc/New-game-XIX-for-linux-Version-of-1980s-game-QIX</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>as-is</License>
+        <Icon>xix</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A QIX remake</Summary>
+        <Description>XIX is a heavily modified version of the 1980s arcade game QIX.</Description>
+        <Archive sha1sum="a5734f8d3b4a1601811c683babcd87142a0d7257" type="targz">http://dl.dropbox.com/u/1836567/Paketler/xix100.tgz</Archive>
+        <BuildDependencies>
+            <Dependency>libXext-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>xix</Name>
+        <RuntimeDependencies>
+            <Dependency>libXext</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/xix.desktop">xix.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/xix.png">xix.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-02-17</Date>
+            <Version>1.0.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
