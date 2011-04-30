@@ -1,4 +1,3 @@
 #labels sdl,tuxpuck
-|| TuxPuck is a shufflepuck game written in C using SDL. The player moves a pad around a board and tries to shoot down the puck through the opponents defense.
- || <wiki:video url="http://www.youtube.com/watch?v=LlGBoXmcru0"/> ||
+|| TuxPuck is a shufflepuck game written in C using SDL. The player moves a pad around a board and tries to shoot down the puck through the opponents defense. || <wiki:video url="http://www.youtube.com/watch?v=LlGBoXmcru0"/> ||
 || [http://code.google.com/p/tuxpuck/ TuxPuck Home Page] || Packager: [ozbekanil] ||
