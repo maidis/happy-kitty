@@ -2,7 +2,7 @@
 <PISI>
     <Source>
         <Name>ballz</Name>
-        <Summary xml:lang="tr">Bulmaca öğeleri içeren bir bulmaca oyunu</Summary>
-        <Description xml:lang="tr">B.A.L.L.Z., bulmaca öğeleri içeren bir bulmaca oyunudur.</Description>
+        <Summary xml:lang="tr">Bulmaca öğeleri içeren bir platform oyunu</Summary>
+        <Description xml:lang="tr">B.A.L.L.Z., bulmaca öğeleri içeren bir platform oyunudur.</Description>
     </Source>
 </PISI>
