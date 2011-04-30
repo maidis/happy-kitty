@@ -14,6 +14,7 @@
   * [http://www.linuxgamingworld.com/ Linux Gaming World]
   * [http://www.linuxgames.com/ LinuxGames]
   * [http://linuxemu.retrofaction.com/ LinuxEmu]
+  * [http://lin-app.com/category/games LinApp - Games]
   * [http://planet.freegamedev.net/ FreeGameDev Planet - Games]
   * [http://planetdev.freegamedev.net/ FreeGameDev Planet - Development]
   * [http://www.lgdb.org/ Linux Game Database]
