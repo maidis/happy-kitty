@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>xix</Name>
+        <Summary xml:lang="tr">Bir QIX yenidenyapımı</Summary>
+        <Description xml:lang="tr">XIX, 80'lerin meşhur oyunu QIX'in C++'da yazılmış bir klonudur.</Description>
+    </Source>
+</PISI>
