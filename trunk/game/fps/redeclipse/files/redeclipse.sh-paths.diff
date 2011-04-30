@@ -1,0 +1,33 @@
+--- redeclipse.sh.orig	2011-02-27 22:30:20.000000000 +0200
++++ redeclipse.sh	2011-04-30 19:06:02.793000080 +0300
+@@ -2,10 +2,10 @@
+ # RE_DATA should refer to the directory in which Red Eclipse data files are placed.
+ #RE_DATA=~/redeclipse
+ #RE_DATA=/usr/local/redeclipse
+-RE_DATA=.
++RE_DATA=/usr/share/redeclipse
+ 
+ # RE_BIN should refer to the directory in which Red Eclipse executable files are placed.
+-RE_BIN=${RE_DATA}/bin
++RE_BIN=/usr/bin
+ 
+ # RE_OPTIONS contains any command line options you would like to start Red Eclipse with.
+ RE_OPTIONS="-r"
+@@ -55,10 +55,10 @@
+     MACHINE_SUFFIX=""
+ fi
+ 
+-if [ -x ${RE_BIN}/reclient${SYSTEM_SUFFIX}${MACHINE_SUFFIX} ]
++if [ -x ${RE_BIN}/reclient ]
+ then
+     cd ${RE_DATA}
+-    exec ${RE_BIN}/reclient${SYSTEM_SUFFIX}${MACHINE_SUFFIX} ${RE_OPTIONS} "$@"
++    exec ${RE_BIN}/reclient ${RE_OPTIONS} "$@"
+ else
+     echo "Your platform does not have a pre-compiled Red Eclipse client."
+     echo -n "Would you like to build one now? [Yn] "
+@@ -75,4 +75,3 @@
+         exit 1
+     fi
+ fi
+-
