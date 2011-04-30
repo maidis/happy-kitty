@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>classic-invaders</Name>
+        <Homepage>http://www.noquarterarcade.com</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <Icon>classic-invaders</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Space Invaders</Summary>
+        <Description>A classic alien space shooter.</Description>
+        <Archive sha1sum="1ba3f6bcfbf6c9c79e7a5f2d1b6eaa18f84fa1b2" type="zip">http://www.noquarterarcade.com/system/files/Source.zip</Archive>
+        <BuildDependencies>
+            <Dependency>boost-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>sdl-ttf-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>classic-invaders</Name>
+        <RuntimeDependencies>
+            <Dependency>boost-devel</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>sdl-ttf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/classic_invaders</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/classic-invaders.desktop">classic-invaders.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/classic-invaders.png">classic-invaders.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-08-07</Date>
+            <Version>1.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
