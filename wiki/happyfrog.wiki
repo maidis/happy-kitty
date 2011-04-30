@@ -2,4 +2,4 @@
 #labels qt,arcade,box2d
 
 || HappyFrog is a funny, Angry Birds similar game which is based on Qt and Box2D. You can find in the game is that you can customize the level and edit your own fixture world. And of course, you can save the fixture world and load the fixture info during play. || <wiki:video url="http://www.youtube.com/watch?v=eXrtvT9CD2I"/> ||
-||[http://code.google.com/p/happyfrog/ HappyFrog Home Page]||Packager name?||
+||[http://code.google.com/p/happyfrog/ HappyFrog Home Page]|| Packager: [ozbekanil] ||
