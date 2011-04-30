@@ -812,9 +812,9 @@
             <IsA>app:gui</IsA>
             <PartOf>game.arcade</PartOf>
             <Summary xml:lang="en">Platform game with some puzzle elements</Summary>
-            <Summary xml:lang="tr">Bulmaca öğeleri içeren bir bulmaca oyunu</Summary>
+            <Summary xml:lang="tr">Bulmaca öğeleri içeren bir platform oyunu</Summary>
             <Description xml:lang="en">B.A.L.L.Z. is a platform game with some puzzle element.</Description>
-            <Description xml:lang="tr">B.A.L.L.Z., bulmaca öğeleri içeren bir bulmaca oyunudur.</Description>
+            <Description xml:lang="tr">B.A.L.L.Z., bulmaca öğeleri içeren bir platform oyunudur.</Description>
             <Icon>ballz</Icon>
             <Archive type="targz" sha1sum="d559959614bc4f8553b0f4e7c813334086c1d750">http://db-tins07.googlecode.com/files/ballz-1.0.1.tar.gz</Archive>
             <BuildDependencies>
@@ -1706,6 +1706,63 @@
             <Update release="1">
                 <Date>2010-12-14</Date>
                 <Version>0.6</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>redeclipse</Name>
+            <Homepage>http://www.redeclipse.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>ZLIB</License>
+            <License>as-is</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.fps</PartOf>
+            <Summary xml:lang="en">A first person ego shooter game</Summary>
+            <Summary xml:lang="tr">Birinci tekil şahış nişan oyunu</Summary>
+            <Description xml:lang="en">Red Eclipse is a single player and multi player first person ego shooter, built as a total conversion of Cube Engine 2, which lends itself toward a balanced gameplay, with a general theme of agility in a variety of environments.</Description>
+            <Description xml:lang="tr">Red Eclipse, tek ve çok kullanıcılı bir birinci tekil şahış nişan oyunudur.</Description>
+            <Icon>redeclipse</Icon>
+            <Archive type="tarbz2" sha1sum="7e0722a58645177dcd9694a1a06c2fadf04666b9">mirrors://sourceforge/redeclipse/redeclipse_1.0/redeclipse_1.0_linux.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>redeclipse.sh-paths.diff</Patch>
+            </Patches>
+            <SourceURI>game/fps/redeclipse/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>redeclipse</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/redeclipse</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/redeclipse.desktop" permission="0644" owner="root">redeclipse.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/redeclipse.png" permission="0644" owner="root">redeclipse.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-04-30</Date>
+                <Version>1.0</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -2729,15 +2786,17 @@
                 <Dependency>ois</Dependency>
             </RuntimeDependencies>
             <Files>
+                <Path fileType="executable">/usr/bin</Path>
                 <Path fileType="library">/usr/lib</Path>
                 <Path fileType="header">/usr/include</Path>
                 <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="data">/usr/share/MYGUI</Path>
                 <Path fileType="doc">/usr/share/doc</Path>
             </Files>
         </Package>
         <History>
             <Update release="1">
-                <Date>2011-04-22</Date>
+                <Date>2011-04-28</Date>
                 <Version>3.2.0</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
