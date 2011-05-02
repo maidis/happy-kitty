@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>fann</Name>
+        <Homepage>http://leenissen.dk/fann</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>Fast Artificial Neural Network Library</Summary>
+        <Description>Fast Artificial Neural Network Library (FANN) is a free open source neural network library, which implements multilayer artificial neural networks in C with support for both fully connected and sparsely connected networks.</Description>
+        <Archive type="zip" sha1sum="ee86afbb9787cd41a42e07db2a9bc10699b555f6">mirrors://sourceforge/project/fann/fann/2.1.0beta/fann-2.1.0beta.zip</Archive>
+    </Source>
+
+    <Package>
+        <Name>fann</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-05-02</Date>
+            <Version>2.1.0</Version>
+            <Comment>Thanks Aşkın Yollu for his previous work</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

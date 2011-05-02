@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>fann</Name>
+        <Summary xml:lang="tr">Hızlı yapay sinir ağı kütüphanesi</Summary>
+        <Description xml:lang="tr">FANN (Fast Artificial Neural Network Library), C'de çok katmanlı sinir ağları gerçekleştirmeye yarayan, hem tam hem de seyrek bağlı ağları destekli, özgür ve hızlı bir yapay sinir ağı kütüphanesidir.</Description>
+    </Source>
+</PISI>
