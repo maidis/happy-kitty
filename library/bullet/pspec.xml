@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>bullet</Name>
+        <Homepage>http://bulletphysics.org</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>ZLIB</License>
+        <Icon>bullet</Icon>
+        <IsA>library</IsA>
+        <Summary>A professional free 3D game multiphysics library</Summary>
+        <Description>Bullet is a 3D collision detection and rigid body dynamics library for games and animations.</Description>
+        <Archive sha1sum="6a3554900a6a60b964dc0040537b57d09b3bde58" type="targz">http://bullet.googlecode.com/files/bullet-2.78-r2387.tgz</Archive>
+        <BuildDependencies>
+            <Dependency>freeglut-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">bullet-2.78-soversion.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>bullet</Name>
+        <RuntimeDependencies>
+            <Dependency>freeglut</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/lib*</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/bullet.png">bullet.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <Package>
+        <Name>bullet-devel</Name>
+        <IsA>data</IsA>
+        <Summary>Development files for Bullet</Summary>
+        <Description>Bullet devel package provides development files for Bullet.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">bullet</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>bullet-docs</Name>
+        <IsA>data</IsA>
+        <Summary>Documentation files for Bullet</Summary>
+        <Description>Bullet docs package provides documentation files for Bullet.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">bullet-devel</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share/bullet</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-05-02</Date>
+            <Version>2.78</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

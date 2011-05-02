@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>bullet</Name>
+        <Summary xml:lang="tr">Profesyonel 3B oyun multifizik kütüphanesi</Summary>
+        <Description xml:lang="tr">Bullet, oyunlar ve animasyonlar için 3B çarpışma algılama ve katı cisim simülasyon kütüphanesidir.</Description>
+    </Source>
+
+    <Package>
+        <Name>bullet-devel</Name>
+        <Summary xml:lang="tr">Bullet için kütüphaneler</Summary>
+        <Description xml:lang="tr">Bullet geliştirme paketi, Bullet için geliştirme dosyaları sunar.</Description>
+    </Package>
+
+    <Package>
+        <Name>bullet-docs</Name>
+        <Summary xml:lang="tr">Bullet için geliştirme belgeleri</Summary>
+        <Description xml:lang="tr">Bullet belge paketi, Bullet için geliştirme belgeleri sunar.</Description>
+    </Package>
+</PISI>
