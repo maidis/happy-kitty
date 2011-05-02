@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>chickennix</Name>
+        <Summary xml:lang="tr">Bir 2b hepsini vur oyunu</Summary>
+        <Description xml:lang="tr">Chickennix, klasik bir hepsini vur oyunudur. Oyuncuların oyundaki amacı ekranda gördükleri her şeyi vurmak ve yüksekskorlara imza atmaktır.</Description>
+    </Source>
+</PISI>
