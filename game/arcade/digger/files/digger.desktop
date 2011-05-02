@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Digger
+GenericName=Digger Remastered
+GenericName[tr]=Digger Remastered
+Comment=A Digger clone
+Comment[tr]=Bir Digger yeniden yapımı
+Icon=digger
+Exec=digger
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;

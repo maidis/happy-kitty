@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>digger</Name>
+        <Summary xml:lang="tr">Bir Digger yeniden yapımı</Summary>
+        <Description xml:lang="tr">Digger Remastered, çeşitli ek özelliklerle zenginleştirilmiş bir Digger yeniden yapımıdır.</Description>
+    </Source>
+</PISI>
