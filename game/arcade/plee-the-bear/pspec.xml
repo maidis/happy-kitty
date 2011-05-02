@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>plee-the-bear</Name>
+        <Homepage>http://plee-the-bear.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>CCPL-Attribution-ShareAlike-3.0</License>
+        <Icon>ptb</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A classic 2d platform game</Summary>
+        <Description>Plee the Bear will be a 2d platform game like those we found on consoles in the beginning of the 90's.</Description>
+        <Archive sha1sum="55f793b8bc775b90cc5df776a27769222ac6f9e9" type="targz">mirrors://sourceforge/plee-the-bear/Plee%20the%20Bear/0.5/plee-the-bear-0.5.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libclaw</Dependency>
+            <Dependency>boost-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>plee-the-bear</Name>
+        <RuntimeDependencies>
+            <Dependency>libclaw</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>mesa</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/bear-factory</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/plee-the-bear</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-05-02</Date>
+            <Version>0.5.1</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

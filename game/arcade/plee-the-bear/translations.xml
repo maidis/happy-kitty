@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>plee-the-bear</Name>
+        <Summary xml:lang="tr">Bir klasik 2b platform oyunu</Summary>
+        <Description xml:lang="tr">Plee the Bear, 90'ların başında oyun konsollarında oynadığımız 2b platform oyunlarının bir benzeri olacak bir oyun projesidir.</Description>
+    </Source>
+</PISI>
