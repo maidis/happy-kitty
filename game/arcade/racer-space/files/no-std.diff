@@ -1,0 +1,45 @@
+diff -Naur racer-0.0.320.orig/libtrack/document/MoveNodeDelta.h racer-0.0.320/libtrack/document/MoveNodeDelta.h
+--- racer-0.0.320.orig/libtrack/document/MoveNodeDelta.h	2010-01-01 18:50:06.000000000 +0200
++++ racer-0.0.320/libtrack/document/MoveNodeDelta.h	2011-05-02 22:26:36.498000060 +0300
+@@ -27,7 +27,7 @@
+     /** Create, associating with a vertex.
+      * @param node_id The name of the vertex to associate with.
+      */
+-    NodePositionFinder(std::size_t node_id);
++    NodePositionFinder(size_t node_id);
+     /** Get the location of the associated vertex.
+      * @param track The Track the associated vertex is in.
+      * @param position Variable to set to the current position.
+@@ -40,7 +40,7 @@
+     virtual void write(Track::Track & track, const btVector3 & new_position);
+ protected:
+     /// The name of the vertex.
+-    std::size_t node_id;
++    size_t node_id;
+ };
+ 
+ /** Command for moving control points along the path.
+diff -Naur racer-0.0.320.orig/libtrack/document/MoveTrackAttachmentDelta.h racer-0.0.320/libtrack/document/MoveTrackAttachmentDelta.h
+--- racer-0.0.320.orig/libtrack/document/MoveTrackAttachmentDelta.h	2010-06-18 07:32:29.000000000 +0300
++++ racer-0.0.320/libtrack/document/MoveTrackAttachmentDelta.h	2011-05-02 22:18:37.000000000 +0300
+@@ -29,7 +29,7 @@
+          * @param edge_name The name of the edge with the attachment on it.
+          * @param attachment_nmae The name of the attachment.
+          */
+-        TrackAttachmentPositionFinder(std::size_t edge_name, std::size_t attachment_name);
++        TrackAttachmentPositionFinder(size_t edge_name, size_t attachment_name);
+         
+         /** Get the location of the associated track attachment.
+          * @param track The Track the associated vertex is in.
+@@ -47,9 +47,9 @@
+         virtual void write(Track::Track & track, const btVector3 & new_position);
+     protected:
+         /// The name of the edge.
+-        std::size_t m_edge_name;
++        size_t m_edge_name;
+         /// The name of the attachment
+-        std::size_t m_attachment_name;
++        size_t m_attachment_name;
+ };
+ 
+ /** Command for moving control points along the path.

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>racer-space</Name>
+        <Summary xml:lang="tr">Bir uzay gemisi yarışı</Summary>
+        <Description xml:lang="tr">Racer, F-Zero serisinden ilham almış bir uzay gemisi yarışıdır.</Description>
+    </Source>
+</PISI>
