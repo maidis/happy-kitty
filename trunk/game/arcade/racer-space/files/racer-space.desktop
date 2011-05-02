@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=racer-space
+Name[tr]=racer-space
+GenericName=racer-space
+GenericName[tr]=racer-space
+Comment=A spaceship racing game
+Comment[tr]=A spaceship racing game
+Icon=racer-space
+Exec=racer-space
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;

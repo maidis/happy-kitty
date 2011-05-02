@@ -1,0 +1,73 @@
+c<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>racer-space</Name>
+        <Homepage>http://racer.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <License>CCPL-Attribution-ShareAlike-3.0</License>
+        <Icon>racer</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A spaceship racing game</Summary>
+        <Description>Racer is a spaceship racing game, inspired by the F-Zero series.</Description>
+        <Archive sha1sum="a8ad7409889187b4e3ca8c3c13c6ef98f744c326" type="targz">mirrors://sourceforge/racer/Source%20code/racer-0.0.320.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>ftgl-devel</Dependency>
+            <Dependency>glew-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>gtkmm-devel</Dependency>
+            <Dependency>boost-devel</Dependency>
+            <Dependency>bullet-devel</Dependency>
+            <Dependency>glibmm-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>libsigc++-devel</Dependency>
+            <Dependency>gtkglextmm</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">no-std.diff</Patch>
+            <Patch level="1">desktop-fixes.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>racer-space</Name>
+        <RuntimeDependencies>
+            <Dependency>ftgl</Dependency>
+            <Dependency>glew</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>gtkmm</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>bullet</Dependency>
+            <Dependency>glibmm</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>libsigc++</Dependency>
+            <Dependency>gtkglextmm</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/racer</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/racer.png">racer.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-05-02</Date>
+            <Version>0.0.320</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

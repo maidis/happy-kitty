@@ -1,0 +1,31 @@
+diff -Naur racer-0.0.320.orig/racer/data/racer.desktop racer-0.0.320/racer/data/racer.desktop
+--- racer-0.0.320.orig/racer/data/racer.desktop	2010-01-30 01:42:07.000000000 +0200
++++ racer-0.0.320/racer/data/racer.desktop	2011-05-02 22:38:16.748000059 +0300
+@@ -3,9 +3,9 @@
+ Version=1.0
+ Name=Racer
+ GenericName=Racing Game
++GenericName[tr]=Yarış Oyunu
+ Comment=Sci-fi racing
+-Icon=/usr/local/share/racer/data/icons/r64.png
++Icon=racer
+ Exec=racer
+-Path=/usr/local/share/racer
+ Categories=Game;ActionGame;
+ StartupNotify=false
+diff -Naur racer-0.0.320.orig/racer/data/racer_editor.desktop racer-0.0.320/racer/data/racer_editor.desktop
+--- racer-0.0.320.orig/racer/data/racer_editor.desktop	2010-01-30 01:42:07.000000000 +0200
++++ racer-0.0.320/racer/data/racer_editor.desktop	2011-05-02 22:39:58.550000060 +0300
+@@ -3,9 +3,10 @@
+ Version=1.0
+ Name=Racer Editor
+ GenericName=Track Editor
++GenericName[tr]=Yol Düzenleyici
+ Comment=Edit tracks for the Sci-fi racing game Racer.
+-Icon=/usr/local/share/racer/data/icons/r64.png
++Comment[tr]= Bilim kurgu yarış oyunu Racer için yollar hazırlayın.
++Icon=racer
+ Exec=racer_editor
+-Path=/usr/local/share/racer
+ Categories=Development;3DGraphics;GTK;
+ StartupNotify=false
