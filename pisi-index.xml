@@ -240,6 +240,79 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>racer-space</Name>
+            <Homepage>http://racer.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <License>CCPL-Attribution-ShareAlike-3.0</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A spaceship racing game</Summary>
+            <Summary xml:lang="tr">Bir uzay gemisi yarışı</Summary>
+            <Description xml:lang="en">Racer is a spaceship racing game, inspired by the F-Zero series.</Description>
+            <Description xml:lang="tr">Racer, F-Zero serisinden ilham almış bir uzay gemisi yarışıdır.</Description>
+            <Icon>racer</Icon>
+            <Archive type="targz" sha1sum="a8ad7409889187b4e3ca8c3c13c6ef98f744c326">mirrors://sourceforge/racer/Source%20code/racer-0.0.320.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>ftgl-devel</Dependency>
+                <Dependency>glew-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>gtkmm-devel</Dependency>
+                <Dependency>boost-devel</Dependency>
+                <Dependency>bullet-devel</Dependency>
+                <Dependency>glibmm-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>libsigc++-devel</Dependency>
+                <Dependency>gtkglextmm</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">no-std.diff</Patch>
+                <Patch level="1">desktop-fixes.diff</Patch>
+            </Patches>
+            <SourceURI>game/arcade/racer-space/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>racer-space</Name>
+            <RuntimeDependencies>
+                <Dependency>ftgl</Dependency>
+                <Dependency>glew</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>gtkmm</Dependency>
+                <Dependency>boost</Dependency>
+                <Dependency>bullet</Dependency>
+                <Dependency>glibmm</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>libsigc++</Dependency>
+                <Dependency>gtkglextmm</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/racer</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/pixmaps/racer.png" permission="0644" owner="root">racer.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-02</Date>
+                <Version>0.0.320</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>atanks</Name>
             <Homepage>http://atanks.sourceforge.net</Homepage>
             <Packager>
@@ -832,6 +905,58 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>digger</Name>
+            <Homepage>http://www.digger.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>as-is</License>
+            <License>BEER-WARE</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A Digger clone</Summary>
+            <Summary xml:lang="tr">Bir Digger yeniden yapımı</Summary>
+            <Description xml:lang="en">Digger Remastered is a Digger clone that remastered with additional features.</Description>
+            <Description xml:lang="tr">Digger Remastered, çeşitli ek özelliklerle zenginleştirilmiş bir Digger yeniden yapımıdır.</Description>
+            <Icon>digger</Icon>
+            <Archive type="targz" sha1sum="a79262ec23e770b2bf78e86170392a790ebd2166">http://www.digger.org/digger-20020314.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>digger-20020314-ldflags.patch</Patch>
+            </Patches>
+            <SourceURI>game/arcade/digger/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>digger</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/digger.desktop" permission="0644" owner="root">digger.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/digger.png" permission="0644" owner="root">digger.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-02</Date>
+                <Version>20020314</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>alienblaster</Name>
             <Homepage>http://www.schwardtnet.de/alienblaster/</Homepage>
             <Packager>
@@ -1044,6 +1169,62 @@
             <Update release="1">
                 <Date>2010-09-03</Date>
                 <Version>1.03</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>plee-the-bear</Name>
+            <Homepage>http://plee-the-bear.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <License>CCPL-Attribution-ShareAlike-3.0</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A classic 2d platform game</Summary>
+            <Summary xml:lang="tr">Bir klasik 2b platform oyunu</Summary>
+            <Description xml:lang="en">Plee the Bear will be a 2d platform game like those we found on consoles in the beginning of the 90&apos;s.</Description>
+            <Description xml:lang="tr">Plee the Bear, 90&apos;ların başında oyun konsollarında oynadığımız 2b platform oyunlarının bir benzeri olacak bir oyun projesidir.</Description>
+            <Icon>ptb</Icon>
+            <Archive type="targz" sha1sum="55f793b8bc775b90cc5df776a27769222ac6f9e9">mirrors://sourceforge/plee-the-bear/Plee%20the%20Bear/0.5/plee-the-bear-0.5.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libclaw</Dependency>
+                <Dependency>boost-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/arcade/plee-the-bear/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>plee-the-bear</Name>
+            <RuntimeDependencies>
+                <Dependency>libclaw</Dependency>
+                <Dependency>boost</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>mesa</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/bear-factory</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/plee-the-bear</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-02</Date>
+                <Version>0.5.1</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -2066,6 +2247,43 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>fann</Name>
+            <Homepage>http://leenissen.dk/fann</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>LGPLv2.1</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">Fast Artificial Neural Network Library</Summary>
+            <Summary xml:lang="tr">Hızlı yapay sinir ağı kütüphanesi</Summary>
+            <Description xml:lang="en">Fast Artificial Neural Network Library (FANN) is a free open source neural network library, which implements multilayer artificial neural networks in C with support for both fully connected and sparsely connected networks.</Description>
+            <Description xml:lang="tr">FANN (Fast Artificial Neural Network Library), C&apos;de çok katmanlı sinir ağları gerçekleştirmeye yarayan, hem tam hem de seyrek bağlı ağları destekli, özgür ve hızlı bir yapay sinir ağı kütüphanesidir.</Description>
+            <Archive type="zip" sha1sum="ee86afbb9787cd41a42e07db2a9bc10699b555f6">mirrors://sourceforge/project/fann/fann/2.1.0beta/fann-2.1.0beta.zip</Archive>
+            <SourceURI>library/fann/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>fann</Name>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-02</Date>
+                <Version>2.1.0</Version>
+                <Comment>Thanks Aşkın Yollu for his previous work</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>wxgtk-2.9</Name>
             <Homepage>http://www.wxwidgets.org/</Homepage>
             <Packager>
@@ -2610,6 +2828,62 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>gtkglextmm</Name>
+            <Homepage>http://gtkglext.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">C++ bindings for GtkGLExt</Summary>
+            <Summary xml:lang="tr">GtkGLExt için C++ bağlayıcıları</Summary>
+            <Description xml:lang="en">gtkglextmm is a C++ bindings for GtkGLExt.</Description>
+            <Description xml:lang="tr">gtkglextmm, GtkGLExt için C++ bağlayıcılarıdır.</Description>
+            <Archive type="tarbz2" sha1sum="45bcc7a4dac30cf0f9e5012a74b471d60782cd0b">mirrors://sourceforge/gtkglext/gtkglextmm-1.2.0.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>gtkglext-devel</Dependency>
+                <Dependency>libsigc++-devel</Dependency>
+                <Dependency>glibmm-devel</Dependency>
+                <Dependency>gtkmm-devel</Dependency>
+                <Dependency>doxygen</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">remove-disable-deprecated.diff</Patch>
+                <Patch>gtkglext_gtkmm_gl-widget.cc.diff</Patch>
+            </Patches>
+            <SourceURI>library/gtkglextmm/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gtkglextmm</Name>
+            <RuntimeDependencies>
+                <Dependency>gtkglext</Dependency>
+                <Dependency>libsigc++</Dependency>
+                <Dependency>glibmm</Dependency>
+                <Dependency>gtkmm</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/gtkglextmm-1.2</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="data">/usr/share/aclocal</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-02</Date>
+                <Version>1.2.0</Version>
+                <Comment>Thanks Murat Şenel and Onur Güzel for the previous work.</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>angelscript</Name>
             <Homepage>http://www.angelcode.com/angelscript</Homepage>
             <Packager>
@@ -2943,6 +3217,129 @@
             <Update release="1">
                 <Date>2011-04-28</Date>
                 <Version>3.2.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>bullet</Name>
+            <Homepage>http://bulletphysics.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>ZLIB</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">A professional free 3D game multiphysics library</Summary>
+            <Summary xml:lang="tr">Profesyonel 3B oyun multifizik kütüphanesi</Summary>
+            <Description xml:lang="en">Bullet is a 3D collision detection and rigid body dynamics library for games and animations.</Description>
+            <Description xml:lang="tr">Bullet, oyunlar ve animasyonlar için 3B çarpışma algılama ve katı cisim simülasyon kütüphanesidir.</Description>
+            <Icon>bullet</Icon>
+            <Archive type="targz" sha1sum="6a3554900a6a60b964dc0040537b57d09b3bde58">http://bullet.googlecode.com/files/bullet-2.78-r2387.tgz</Archive>
+            <BuildDependencies>
+                <Dependency>freeglut-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">bullet-2.78-soversion.patch</Patch>
+            </Patches>
+            <SourceURI>library/bullet/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>bullet</Name>
+            <RuntimeDependencies>
+                <Dependency>freeglut</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib/lib*</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/pixmaps/bullet.png" permission="0644" owner="root">bullet.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <Package>
+            <Name>bullet-devel</Name>
+            <Summary xml:lang="en">Development files for Bullet</Summary>
+            <Summary xml:lang="tr">Bullet için kütüphaneler</Summary>
+            <Description xml:lang="en">Bullet devel package provides development files for Bullet.</Description>
+            <Description xml:lang="tr">Bullet geliştirme paketi, Bullet için geliştirme dosyaları sunar.</Description>
+            <IsA>data</IsA>
+            <RuntimeDependencies>
+                <Dependency release="1">bullet</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>bullet-docs</Name>
+            <Summary xml:lang="en">Documentation files for Bullet</Summary>
+            <Summary xml:lang="tr">Bullet için geliştirme belgeleri</Summary>
+            <Description xml:lang="en">Bullet docs package provides documentation files for Bullet.</Description>
+            <Description xml:lang="tr">Bullet belge paketi, Bullet için geliştirme belgeleri sunar.</Description>
+            <IsA>data</IsA>
+            <RuntimeDependencies>
+                <Dependency release="1">bullet-devel</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share/bullet</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-02</Date>
+                <Version>2.78</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libclaw</Name>
+            <Homepage>http://libclaw.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>LGPLv2.1</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">C++ Library Absolutely Wonderful</Summary>
+            <Summary xml:lang="tr">C++ Library Absolutely Wonderful</Summary>
+            <Description xml:lang="en">Claw is a C++ Library Absolutely Wonderful. Claw groups some small tools for game programming.</Description>
+            <Description xml:lang="tr">Claw, oyun programlaması için çeşitli küçük araçları bir araya getiren kesinlikle harika bir C++ kütüphanesidir.</Description>
+            <Archive type="targz" sha1sum="a57dcd0a7c74eb49270a375f7f52c0ebfcc1970f">mirrors://sourceforge/libclaw/libclaw/1.6.1/libclaw-1.6.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>jpeg-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>library/libclaw/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libclaw</Name>
+            <RuntimeDependencies>
+                <Dependency>jpeg</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/share/cmake</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-02</Date>
+                <Version>1.6.1</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
