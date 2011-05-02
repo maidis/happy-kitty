@@ -1,0 +1,13 @@
+--- racer/Engine/GameScene.cpp.orig	2011-05-02 23:24:06.000000000 +0300
++++ racer/Engine/GameScene.cpp	2011-05-02 23:24:32.424000059 +0300
+@@ -356,10 +356,6 @@
+             Track::global_quality = min_quality;
+         }
+     }
+-    if (m_total_frames % 64 == 0) ///@todo remove- debug
+-    {
+-        DEBUG_MESSAGE("Quality level is " << Track::global_quality);
+-    }
+     if (paused)
+     {
+         if (m_pause_menu.want_to_quit())
