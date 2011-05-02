@@ -127,6 +127,54 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>xix</Name>
+            <Homepage>http://compgroups.net/comp.os.linux.misc/New-game-XIX-for-linux-Version-of-1980s-game-QIX</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>as-is</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A QIX remake</Summary>
+            <Summary xml:lang="tr">Bir QIX yenidenyapımı</Summary>
+            <Description xml:lang="en">XIX is a heavily modified version of the 1980s arcade game QIX.</Description>
+            <Description xml:lang="tr">XIX, 80&apos;lerin meşhur oyunu QIX&apos;in C++&apos;da yazılmış bir klonudur.</Description>
+            <Icon>xix</Icon>
+            <Archive type="targz" sha1sum="a5734f8d3b4a1601811c683babcd87142a0d7257">http://dl.dropbox.com/u/1836567/Paketler/xix100.tgz</Archive>
+            <BuildDependencies>
+                <Dependency>libXext-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/arcade/xix/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>xix</Name>
+            <RuntimeDependencies>
+                <Dependency>libXext</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/xix.desktop" permission="0644" owner="root">xix.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/xix.png" permission="0644" owner="root">xix.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-02-17</Date>
+                <Version>1.0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>happyfrog</Name>
             <Homepage>http://code.google.com/p/happyfrog</Homepage>
             <Packager>
@@ -289,6 +337,61 @@
             <Update release="1">
                 <Date>2011-03-27</Date>
                 <Version>0.2.6</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>classic-invaders</Name>
+            <Homepage>http://www.noquarterarcade.com</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>BSD</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">Space Invaders</Summary>
+            <Summary xml:lang="tr">Uzaylı İstilacılar</Summary>
+            <Description xml:lang="en">A classic alien space shooter.</Description>
+            <Description xml:lang="tr">Classic Invaders, klasik bir uzaylı vurma oyunudur.</Description>
+            <Icon>classic-invaders</Icon>
+            <Archive type="zip" sha1sum="1ba3f6bcfbf6c9c79e7a5f2d1b6eaa18f84fa1b2">http://www.noquarterarcade.com/system/files/Source.zip</Archive>
+            <BuildDependencies>
+                <Dependency>boost-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-ttf-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/arcade/classic-invaders/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>classic-invaders</Name>
+            <RuntimeDependencies>
+                <Dependency>boost-devel</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>sdl-ttf</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/classic_invaders</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/classic-invaders.desktop" permission="0644" owner="root">classic-invaders.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/classic-invaders.png" permission="0644" owner="root">classic-invaders.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-08-07</Date>
+                <Version>1.0</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -510,6 +613,48 @@
             <Update release="1">
                 <Date>2011-03-26</Date>
                 <Version>1.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>xinvaders3d</Name>
+            <Homepage>http://xinvaders3d.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">Space Invaders</Summary>
+            <Summary xml:lang="tr">Uzaylı İstilacılar</Summary>
+            <Description xml:lang="en">XInvaders 3D is a vector-graphics Space Invaders clone.</Description>
+            <Description xml:lang="tr">XInvaders 3D, vektör grafikli bir Space Invaders klonudur.</Description>
+            <Icon>xinvaders3d</Icon>
+            <Archive type="targz" sha1sum="680c81416f25548e373fdaefa1a8eb71112e049d">mirrors://sourceforge/xinvaders3d/xinvaders3d-1.3.6.src.tar.gz</Archive>
+            <SourceURI>game/arcade/xinvaders3d/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>xinvaders3d</Name>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/xinvaders3d.desktop" permission="0644" owner="root">xinvaders3d.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/xinvaders3d.png" permission="0644" owner="root">xinvaders3d.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-08-07</Date>
+                <Version>1.3.6</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
