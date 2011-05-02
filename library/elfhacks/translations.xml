@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <PISI>
     <Source>
-        <Name>packetstream</Name>
+        <Name>elfhacks</Name>
         <Summary xml:lang="tr">Çeşitli ELF çalışma zamanı hackleri</Summary>
         <Description xml:lang="tr">elfhacks, ELF ile sihirli şeyler yapmak için bir kütüphanedir. elfhacks, glc projesinin bir parçasıdır.</Description>
     </Source>
