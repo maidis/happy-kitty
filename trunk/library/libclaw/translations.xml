@@ -2,7 +2,7 @@
 <PISI>
     <Source>
         <Name>libclaw</Name>
-        <Summary xml:lang="tr">C++ Library Absolutely Wonderful</Summary>
+        <Summary xml:lang="tr">Kesinlikle harika bir C++ kütüphanesi</Summary>
         <Description xml:lang="tr">Claw, oyun programlaması için çeşitli küçük araçları bir araya getiren kesinlikle harika bir C++ kütüphanesidir.</Description>
     </Source>
 </PISI>
