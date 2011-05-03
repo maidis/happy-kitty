@@ -1,0 +1,27 @@
+diff -Naur chains-0.1.1-src.orig/Game.pro chains-0.1.1-src/Game.pro
+--- chains-0.1.1-src.orig/Game.pro	2010-01-09 18:11:18.000000000 +0200
++++ chains-0.1.1-src/Game.pro	2011-01-15 19:36:33.956000045 +0200
+@@ -5,9 +5,9 @@
+     opengl
+ unix: {
+     TARGET = ./bin/chains
+-    target.path = /usr/local/bin/
++    target.path = /usr/bin/
+     INSTALLS += target
+-    datas.path = /usr/local/games/chains
++    datas.path = /usr/share/chains
+     datas.files = data
+     INSTALLS += datas
+     LIBS += -lXrandr
+diff -Naur chains-0.1.1-src.orig/main.cpp chains-0.1.1-src/main.cpp
+--- chains-0.1.1-src.orig/main.cpp	2010-01-09 20:23:48.000000000 +0200
++++ chains-0.1.1-src/main.cpp	2011-01-15 19:38:04.394000045 +0200
+@@ -31,7 +31,7 @@
+     // on X11, we'll check if data directory exists locally first
+   #ifdef Q_WS_X11
+     if (!QDir(resourcePath).exists())
+-      resourcePath = "/usr/local/games/chains/data/";
++      resourcePath = "/usr/share/chains/data/";
+   #endif
+ 
+     if (!QDir(resourcePath).exists()) {
