@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>bombattack</Name>
+        <Summary xml:lang="tr">Bir Bomberman oyunu</Summary>
+        <Description xml:lang="tr">Bomb attack, uzun soluklu Bomberman'ı temel alan ateri tarzı bir oyundur.</Description>
+    </Source>
+</PISI>

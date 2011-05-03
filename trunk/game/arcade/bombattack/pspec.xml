@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>bombattack</Name>
+        <Homepage>http://linux.softpedia.com/get/GAMES-ENTERTAINMENT/Arcade/Bomb-Attack-31572.shtml</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>bombattack</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A Bomberman game</Summary>
+        <Description>Bomb attack is an arcade game based on the long-running Bomberman franchise.</Description>
+        <Archive sha1sum="d202a53cb359cf162c89cd7dea6424ccb3b78647" type="targz">http://dl.dropbox.com/u/1836567/Paketler/bombattack-1.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>bombattack</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>mesa</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/bombattack</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/bombattack.desktop">bombattack.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/bombattack.png">bombattack.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-11-08</Date>
+            <Version>1.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

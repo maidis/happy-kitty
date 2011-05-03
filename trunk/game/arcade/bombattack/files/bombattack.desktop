@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Bomb Attack
+GenericName=Bomberman
+GenericName[tr]=Bomberman
+Comment=A Bomberman game
+Comment[tr]=Bir Bomberman oyunu
+Icon=bombattack
+Exec=bombattack
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;
