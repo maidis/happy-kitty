@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>opensurge</Name>
+        <Summary xml:lang="tr">Sonic the Hedgehog dünyasını temel alan bir oyun</Summary>
+        <Description xml:lang="tr">Open Surge, Sonic the Hedgehog dünyasını temel alan özgür bir oyundur. Sunduğu ortak oynama tarzıyla üç karakteri eşzamanlı olarak kontrol edebilirsiniz. Çoğu benzer oyunun aksine Open Surge, oyuncu ile bölümler arasında daha fazla etkileşim sunar. Oynadıkça görebileceğiniz üzere Open Surge, sıradan bir hoplama zıplama oyunundan daha öte stratejilerde geliştirmeniz gereken bir oyundur.</Description>
+    </Source>
+</PISI>
