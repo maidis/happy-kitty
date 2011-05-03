@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Brain Party
+GenericName=Puzzle Games
+GenericName[tr]=Bulmaca Oyunları
+Icon=brainparty
+#Path=/opt/brainparty
+Exec=cd /opt/brainparty && /opt/brainparty/brainparty
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;
