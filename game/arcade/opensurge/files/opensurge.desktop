@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Open Surge
+GenericName=Open Source Sonic
+GenericName[tr]=Özgür Sonic
+Comment=A game based on the Sonic the Hedgehog universe
+Comment[tr]=Sonic the Hedgehog dünyasını temel alan bir oyun
+Icon=opensurge
+Exec=opensurge
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;

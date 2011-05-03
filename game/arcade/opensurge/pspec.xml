@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>opensurge</Name>
+        <Homepage>http://opensnc.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>opensurge</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A game based on the Sonic the Hedgehog universe</Summary>
+        <Description>Open Sonic is an open-source game based on the Sonic the Hedgehog universe. It introduces a different style of gameplay called cooperative play, in which it's possible to control 3 characters simultaneously. Unlike most similar games, Open Sonic provides a greater level of interaction between the player and the levels. It's more than just a jump'n'run; the user must come up with some strategy in order to get through the levels.</Description>
+        <Archive sha1sum="b324fad1d89bad70b6c0a074b00d87d49c65827f" type="targz">http://dl.dropbox.com/u/1836567/Paketler/opensurge-src-build563.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>allegro-devel</Dependency>
+            <Dependency>dumb</Dependency>
+            <Dependency>libpng-devel</Dependency>
+            <Dependency>alfont</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>opensurge-paths.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>opensurge</Name>
+        <RuntimeDependencies>
+            <Dependency>allegro</Dependency>
+            <Dependency>dumb</Dependency>
+            <Dependency>alfont</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="header">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/opensurge</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/opensurge.desktop">opensurge.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/opensurge.png">opensurge.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-05-03</Date>
+            <Version>0.2.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
