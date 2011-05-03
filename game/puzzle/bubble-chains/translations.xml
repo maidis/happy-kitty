@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>bubble-chains</Name>
+        <Summary xml:lang="tr">Bir 2b ateri bulmaca oyunu</Summary>
+        <Description xml:lang="tr">Bubble Chains, bir 2b ateri bulmaca oyunudur. Oyuncuların oyundaki amacı aynı renkli baloncuk zincirlerini toplamak ve hedefleri yok etmektir.</Description>
+    </Source>
+</PISI>

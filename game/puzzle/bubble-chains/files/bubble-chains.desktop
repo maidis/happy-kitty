@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Bubble Chains
+GenericName=Arcade Puzzle Game
+GenericName[tr]=Baloncuk Zincirleri
+Comment=A 2d arcade puzzle game
+Comment[tr]=Bir 2b ateri bulmaca oyunu
+Icon=bubble-chains
+Exec=chains
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;
