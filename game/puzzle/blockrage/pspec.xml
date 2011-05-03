@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>blockrage</Name>
+        <Homepage>http://blockrage.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>blockrage</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A falling-blocks arcade game</Summary>
+        <Description>Block Rage is falling blocks game with a 2-player hoseat mode, detailed graphics and animated plasmatic backgrounds. It is a remake of the awesome DOS classic Xixit.</Description>
+        <Archive sha1sum="79ff4710d9d4ccbdd3495468e498d18f4d71bc9e" type="targz">mirrors://sourceforge/blockrage/blockrage/0.2.3/blockrage-0.2.3.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>blockrage-0.2.3-config.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>blockrage</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/blockrage</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/blockrage.desktop">blockrage.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/blockrage.png">blockrage.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-11-29</Date>
+            <Version>0.2.3</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
