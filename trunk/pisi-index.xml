@@ -21,7 +21,9 @@
             <IsA>app:console</IsA>
             <PartOf>multimedia.video</PartOf>
             <Summary xml:lang="en">A capture tool</Summary>
+            <Summary xml:lang="tr">Bir ekran yakalama aracı</Summary>
             <Description xml:lang="en">glc is an ALSA and OpenGL capture tool. glc should be able to capture any application that uses ALSA for sound and OpenGL for drawing. It is still a relatively new project but already has a long list of features.</Description>
+            <Description xml:lang="tr">glc, ALSA ve OpenGL temelli bir ekran yakalama aracıdır. glc, çizim için OpenGL ve ses için ALSA kullanan tüm uygulamaları yakalayabilir. Epey yeni bir proje olmasına rağmen bir dolu özelliğe sahiptir.</Description>
             <Archive type="targz" sha1sum="012812ad68be4ffcdcbd064023b1e4e1c2157261">http://nullkey.ath.cx/glc/archive/glc-0.5.8.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>elfhacks</Dependency>
@@ -1599,6 +1601,56 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>chickennix</Name>
+            <Homepage>http://chickennix.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.action</PartOf>
+            <Summary xml:lang="en">A 2d shoot em up game</Summary>
+            <Summary xml:lang="tr">Bir 2b hepsini vur oyunu</Summary>
+            <Description xml:lang="en">Chickennix is a classic Shoot em up game. The plot of this game is to shoot everything appearing on the screen down and climp up the highscore.</Description>
+            <Description xml:lang="tr">Chickennix, klasik bir hepsini vur oyunudur. Oyuncuların oyundaki amacı ekranda gördükleri her şeyi vurmak ve yüksekskorlara imza atmaktır.</Description>
+            <Icon>chickennix</Icon>
+            <Archive type="targz" sha1sum="589bcc5e5cfa68714b9ea9268fb8ccbc3ff3e6f0">http://dl.dropbox.com/u/1836567/Paketler/chickennix-0.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/action/chickennix/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>chickennix</Name>
+            <RuntimeDependencies>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>libsdl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/chickennix</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-03</Date>
+                <Version>0.1</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>barrage</Name>
             <Homepage>http://lgames.sourceforge.net/index.php?project=Barrage</Homepage>
             <Packager>
@@ -3115,7 +3167,9 @@
             <IsA>library</IsA>
             <PartOf>library</PartOf>
             <Summary xml:lang="en">Various ELF run-time hacks</Summary>
+            <Summary xml:lang="tr">Çeşitli ELF çalışma zamanı hackleri</Summary>
             <Description xml:lang="en">elfhacks is a library for doing magic with ELF. It is a part of glc project.</Description>
+            <Description xml:lang="tr">elfhacks, ELF ile sihirli şeyler yapmak için bir kütüphanedir. elfhacks, glc projesinin bir parçasıdır.</Description>
             <Archive type="targz" sha1sum="471ee23a9030edefe193f162a0cb8bb492231109">http://nullkey.ath.cx/elfhacks/archive/elfhacks-0.4.1.tar.gz</Archive>
             <SourceURI>library/elfhacks/pspec.xml</SourceURI>
         </Source>
@@ -3313,7 +3367,7 @@
             <IsA>library</IsA>
             <PartOf>library</PartOf>
             <Summary xml:lang="en">C++ Library Absolutely Wonderful</Summary>
-            <Summary xml:lang="tr">C++ Library Absolutely Wonderful</Summary>
+            <Summary xml:lang="tr">Kesinlikle harika bir C++ kütüphanesi</Summary>
             <Description xml:lang="en">Claw is a C++ Library Absolutely Wonderful. Claw groups some small tools for game programming.</Description>
             <Description xml:lang="tr">Claw, oyun programlaması için çeşitli küçük araçları bir araya getiren kesinlikle harika bir C++ kütüphanesidir.</Description>
             <Archive type="targz" sha1sum="a57dcd0a7c74eb49270a375f7f52c0ebfcc1970f">mirrors://sourceforge/libclaw/libclaw/1.6.1/libclaw-1.6.1.tar.gz</Archive>
