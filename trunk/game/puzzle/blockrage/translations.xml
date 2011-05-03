@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>blockrage</Name>
+        <Summary xml:lang="tr">Bir tetris benzeri oyun</Summary>
+        <Description xml:lang="tr">Block Rage, detaylı grafikleri, hareketli plasmatik arkaplanıyla harika bir DOS oyunu olan Xixit'in yeniden yapımıdır.</Description>
+    </Source>
+</PISI>

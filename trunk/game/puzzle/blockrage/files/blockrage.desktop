@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Block Rage
+GenericName=Block Rage
+GenericName[tr]=Düşen Gazap
+Comment=A falling-blocks arcade game
+Comment[tr]=Bir tetris benzeri oyun
+Icon=blockrage
+Exec=blockrage
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;BlocksGame;
