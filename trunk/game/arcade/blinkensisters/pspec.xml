@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>blinkensisters</Name>
+        <Homepage>http://www.blinkensisters.org</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>blinkensisters</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A Jump'n'Run game</Summary>
+        <Description>Blinkensisters - Hunt for The Lost Pixels is an open source game in 80s retro style, free to download, fully playable and easy to handle.</Description>
+        <Archive sha1sum="dd7c9c474836103bdc161abff0d9fe0976a3b06e" type="targz">mirrors://sourceforge/blinkensisters/Blinkensisters%20-%20Lost%20Pixels/LostPixels%200.5.3/LostPixels-0.5.3-source.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-net-devel</Dependency>
+            <Dependency>sdl-ttf-devel</Dependency>
+            <Dependency>libogg-devel</Dependency>
+            <Dependency>libvorbis-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>blinkensisters</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-net</Dependency>
+            <Dependency>sdl-ttf</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>libvorbis</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/blinkensisters</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/blinkensisters.desktop">blinkensisters.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/blinkensisters.png">blinkensisters.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-05-03</Date>
+            <Version>0.5.3</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
