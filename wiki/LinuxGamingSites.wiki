@@ -20,6 +20,7 @@
   * [http://www.lgdb.org/ Linux Game Database]
   * [http://linux.strangegamer.com/ Linux Gamer Guide]
   * [http://www.mobygames.com/browse/games/linux/ Linux games at MobyGames]
+  * [http://www.onlylinuxgames.com/ Only Linux Games]
   * [http://db.tigsource.com/browse?platform=linux Linux games at TIGdb]
   * [http://en.wikipedia.org/wiki/List_of_open_source_games List of open source games at Wikipedia]
   * [http://penguenlerdeoynar.blogspot.com/ Penguenler de Oynar (Turkish)]
