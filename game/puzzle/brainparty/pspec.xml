@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>brainparty</Name>
+        <Homepage>http://www.tuxradar.com/brainparty</Homepage>
+        <!--<Homepage>https://launchpad.net/brainparty</Homepage>-->
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>brainparty</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A puzzle games set</Summary>
+        <Description>Brain Party is a puzzle game made up of 36 minigames designed to push your brain to its limits by testing memory, logic, mathematics, reaction time and more.</Description>
+        <Archive sha1sum="6c0a6a099c2188f417dd15b23857976b71c1f454" type="targz">http://launchpadlibrarian.net/44950715/brainparty0.61.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>sdl-gfx-devel</Dependency>
+            <Dependency>sdl-ttf-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>brainparty</Name>
+        <RuntimeDependencies>
+            <Dependency>sdl-gfx</Dependency>
+            <Dependency>sdl-ttf</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>mesa</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/opt/brainparty/brainparty</Path>
+            <Path fileType="data">/opt/brainparty/Content</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/brainparty.desktop">brainparty.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/brainparty.png">brainparty.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-05-13</Date>
+            <Version>0.61</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

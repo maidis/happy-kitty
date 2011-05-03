@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>brainparty</Name>
+        <Summary xml:lang="tr">Bir bulmaca oyun takımı</Summary>
+        <Description xml:lang="tr">Brain Party, hafıza, mantık, matematik, tepki süresi gibi alanları kapsayan 36 küçük oyunun bir araya getirildiği ve sizi beyninizin sınırlarını zorlamaya şevk edecek bir oyun takımıdır.</Description>
+    </Source>
+</PISI>
