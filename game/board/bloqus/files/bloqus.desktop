@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Bloqus
+GenericName=Blokus Game
+GenericName[tr]=Kutu Oyunu
+Comment=A Blokus inspired game
+Comment[tr]=Blokus benzeri bir oyun
+Icon=bloqus
+Exec=bloqus
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;BoardGame;

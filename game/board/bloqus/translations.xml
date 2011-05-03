@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>bloqus</Name>
+        <Summary xml:lang="tr">Blokus benzeri bir oyun</Summary>
+        <Description xml:lang="tr">Bloqus, Blokus'tan ilham almış ve oyuncuların çeşitli şekillerdeki parçaları oyun tahtasına dizmeye çalıştığı bir oyundur.</Description>
+    </Source>
+</PISI>
