@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>blinkensisters</Name>
+        <Summary xml:lang="tr">Bir zıplama ve koşma oyunu</Summary>
+        <Description xml:lang="tr">Blinkensisters - Hunt for The Lost Pixels (Kaıp Pikseller için Av), 80'lerin retro havasında özgür bir platform oyunudur.</Description>
+    </Source>
+</PISI>

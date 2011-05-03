@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=BlinkenSisters
+GenericName=Hunt for The Lost Pixels
+GenericName[tr]=Kayıp Pikseller için Avla
+Comment=A Jump'n'Run game
+Comment[tr]=Bir zıplama koşma oyunu
+Icon=blinkensisters
+Exec=LostPixels
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;
