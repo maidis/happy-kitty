@@ -13,11 +13,13 @@ http://happy-kitty-repo.blogspot.com
 
 
 = Happy Kitty Wiki =
+You are here right now :) We need to document every game shortly. Also we must write documents about Happy Kitty processes and tools that we use. This is where users can help the most.
 
 http://code.google.com/p/happy-kitty/wiki
 
 
 = Happy Kitty Issues =
+Bug reports for existing games, package requests for new ones, packet review requests...
 
 http://code.google.com/p/happy-kitty/issues
 
