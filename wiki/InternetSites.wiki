@@ -16,6 +16,11 @@ http://happy-kitty-repo.blogspot.com
 http://code.google.com/p/happy-kitty/wiki
 
 
+= Happy Kitty Issues =
+
+http://code.google.com/p/happy-kitty/issues
+
+
 = Happy Kitty SVN =
 
 https://happy-kitty.googlecode.com/svn/trunk
