@@ -26,6 +26,11 @@ http://code.google.com/p/happy-kitty/issues
 https://happy-kitty.googlecode.com/svn/trunk
 
 
+= Happy Kitty Downloads =
+
+http://code.google.com/p/happy-kitty/downloads
+
+
 = Happy Kitty Brainstorm =
 
 http://www.google.com/moderator/#16/e=697d6
