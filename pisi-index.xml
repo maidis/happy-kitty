@@ -177,6 +177,63 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>opensurge</Name>
+            <Homepage>http://opensnc.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A game based on the Sonic the Hedgehog universe</Summary>
+            <Summary xml:lang="tr">Sonic the Hedgehog dünyasını temel alan bir oyun</Summary>
+            <Description xml:lang="en">Open Sonic is an open-source game based on the Sonic the Hedgehog universe. It introduces a different style of gameplay called cooperative play, in which it&apos;s possible to control 3 characters simultaneously. Unlike most similar games, Open Sonic provides a greater level of interaction between the player and the levels. It&apos;s more than just a jump&apos;n&apos;run; the user must come up with some strategy in order to get through the levels.</Description>
+            <Description xml:lang="tr">Open Surge, Sonic the Hedgehog dünyasını temel alan özgür bir oyundur. Sunduğu ortak oynama tarzıyla üç karakteri eşzamanlı olarak kontrol edebilirsiniz. Çoğu benzer oyunun aksine Open Surge, oyuncu ile bölümler arasında daha fazla etkileşim sunar. Oynadıkça görebileceğiniz üzere Open Surge, sıradan bir hoplama zıplama oyunundan daha öte stratejilerde geliştirmeniz gereken bir oyundur.</Description>
+            <Icon>opensurge</Icon>
+            <Archive type="targz" sha1sum="b324fad1d89bad70b6c0a074b00d87d49c65827f">http://dl.dropbox.com/u/1836567/Paketler/opensurge-src-build563.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>allegro-devel</Dependency>
+                <Dependency>dumb</Dependency>
+                <Dependency>libpng-devel</Dependency>
+                <Dependency>alfont</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>opensurge-paths.diff</Patch>
+            </Patches>
+            <SourceURI>game/arcade/opensurge/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>opensurge</Name>
+            <RuntimeDependencies>
+                <Dependency>allegro</Dependency>
+                <Dependency>dumb</Dependency>
+                <Dependency>alfont</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="header">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/opensurge</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/opensurge.desktop" permission="0644" owner="root">opensurge.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/opensurge.png" permission="0644" owner="root">opensurge.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-03</Date>
+                <Version>0.2.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>happyfrog</Name>
             <Homepage>http://code.google.com/p/happyfrog</Homepage>
             <Packager>
@@ -1015,6 +1072,67 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>blinkensisters</Name>
+            <Homepage>http://www.blinkensisters.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A Jump&apos;n&apos;Run game</Summary>
+            <Summary xml:lang="tr">Bir zıplama ve koşma oyunu</Summary>
+            <Description xml:lang="en">Blinkensisters - Hunt for The Lost Pixels is an open source game in 80s retro style, free to download, fully playable and easy to handle.</Description>
+            <Description xml:lang="tr">Blinkensisters - Hunt for The Lost Pixels (Kaıp Pikseller için Av), 80&apos;lerin retro havasında özgür bir platform oyunudur.</Description>
+            <Icon>blinkensisters</Icon>
+            <Archive type="targz" sha1sum="dd7c9c474836103bdc161abff0d9fe0976a3b06e">mirrors://sourceforge/blinkensisters/Blinkensisters%20-%20Lost%20Pixels/LostPixels%200.5.3/LostPixels-0.5.3-source.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-net-devel</Dependency>
+                <Dependency>sdl-ttf-devel</Dependency>
+                <Dependency>libogg-devel</Dependency>
+                <Dependency>libvorbis-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/arcade/blinkensisters/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>blinkensisters</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-net</Dependency>
+                <Dependency>sdl-ttf</Dependency>
+                <Dependency>libogg</Dependency>
+                <Dependency>libvorbis</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/blinkensisters</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/blinkensisters.desktop" permission="0644" owner="root">blinkensisters.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/blinkensisters.png" permission="0644" owner="root">blinkensisters.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-03</Date>
+                <Version>0.5.3</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>xdriller</Name>
             <Homepage>http://xdriller.sourceforge.net</Homepage>
             <Packager>
@@ -1116,6 +1234,61 @@
             <Update release="1">
                 <Date>2010-12-15</Date>
                 <Version>1.0.1</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>bombattack</Name>
+            <Homepage>http://linux.softpedia.com/get/GAMES-ENTERTAINMENT/Arcade/Bomb-Attack-31572.shtml</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A Bomberman game</Summary>
+            <Summary xml:lang="tr">Bir Bomberman oyunu</Summary>
+            <Description xml:lang="en">Bomb attack is an arcade game based on the long-running Bomberman franchise.</Description>
+            <Description xml:lang="tr">Bomb attack, uzun soluklu Bomberman&apos;ı temel alan ateri tarzı bir oyundur.</Description>
+            <Icon>bombattack</Icon>
+            <Archive type="targz" sha1sum="d202a53cb359cf162c89cd7dea6424ccb3b78647">http://dl.dropbox.com/u/1836567/Paketler/bombattack-1.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/arcade/bombattack/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>bombattack</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>mesa</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/bombattack</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/bombattack.desktop" permission="0644" owner="root">bombattack.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/bombattack.png" permission="0644" owner="root">bombattack.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-11-08</Date>
+                <Version>1.0</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -1244,7 +1417,7 @@
             <License>GPLv2</License>
             <IsA>app:gui</IsA>
             <PartOf>game.action</PartOf>
-            <Summary xml:lang="en">An Air Hockey Game</Summary>
+            <Summary xml:lang="en">An air hockey game</Summary>
             <Summary xml:lang="tr">Bir hava hokeyi oyunu</Summary>
             <Description xml:lang="en">TuxPuck is an air hockey simulator. You will lots of fun trying to beat Tux.</Description>
             <Description xml:lang="tr">TuxPuck, bir hava okeyi simülatörüdür. Tux&apos;u yenmeye çalışırken çok eğleneceksiniz.</Description>
@@ -1925,6 +2098,65 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>brainparty</Name>
+            <Homepage>http://www.tuxradar.com/brainparty</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A puzzle games set</Summary>
+            <Summary xml:lang="tr">Bir bulmaca oyun takımı</Summary>
+            <Description xml:lang="en">Brain Party is a puzzle game made up of 36 minigames designed to push your brain to its limits by testing memory, logic, mathematics, reaction time and more.</Description>
+            <Description xml:lang="tr">Brain Party, hafıza, mantık, matematik, tepki süresi gibi alanları kapsayan 36 küçük oyunun bir araya getirildiği ve sizi beyninizin sınırlarını zorlamaya şevk edecek bir oyun takımıdır.</Description>
+            <Icon>brainparty</Icon>
+            <Archive type="targz" sha1sum="6c0a6a099c2188f417dd15b23857976b71c1f454">http://launchpadlibrarian.net/44950715/brainparty0.61.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>sdl-gfx-devel</Dependency>
+                <Dependency>sdl-ttf-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/puzzle/brainparty/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>brainparty</Name>
+            <RuntimeDependencies>
+                <Dependency>sdl-gfx</Dependency>
+                <Dependency>sdl-ttf</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>mesa</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/opt/brainparty/brainparty</Path>
+                <Path fileType="data">/opt/brainparty/Content</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/brainparty.desktop" permission="0644" owner="root">brainparty.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/brainparty.png" permission="0644" owner="root">brainparty.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-05-13</Date>
+                <Version>0.61</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>thebutterflyeffect</Name>
             <Homepage>http://the-butterfly-effect.org</Homepage>
             <Packager>
@@ -2092,6 +2324,117 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>blockrage</Name>
+            <Homepage>http://blockrage.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A falling-blocks arcade game</Summary>
+            <Summary xml:lang="tr">Bir tetris benzeri oyun</Summary>
+            <Description xml:lang="en">Block Rage is falling blocks game with a 2-player hoseat mode, detailed graphics and animated plasmatic backgrounds. It is a remake of the awesome DOS classic Xixit.</Description>
+            <Description xml:lang="tr">Block Rage, detaylı grafikleri, hareketli plasmatik arkaplanıyla harika bir DOS oyunu olan Xixit&apos;in yeniden yapımıdır.</Description>
+            <Icon>blockrage</Icon>
+            <Archive type="targz" sha1sum="79ff4710d9d4ccbdd3495468e498d18f4d71bc9e">mirrors://sourceforge/blockrage/blockrage/0.2.3/blockrage-0.2.3.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>blockrage-0.2.3-config.patch</Patch>
+            </Patches>
+            <SourceURI>game/puzzle/blockrage/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>blockrage</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/blockrage</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/blockrage.desktop" permission="0644" owner="root">blockrage.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/blockrage.png" permission="0644" owner="root">blockrage.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-11-29</Date>
+                <Version>0.2.3</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>bubble-chains</Name>
+            <Homepage>http://bubble-chains.sintegrial.com</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A 2d arcade puzzle game</Summary>
+            <Summary xml:lang="tr">Bir 2b ateri bulmaca oyunu</Summary>
+            <Description xml:lang="en">Bubble Chains is a 2d arcade puzzle game. The aim is to collect chains of same-color bubbles, and to destroy all the target items.</Description>
+            <Description xml:lang="tr">Bubble Chains, bir 2b ateri bulmaca oyunudur. Oyuncuların oyundaki amacı aynı renkli baloncuk zincirlerini toplamak ve hedefleri yok etmektir.</Description>
+            <Icon>bubble-chains</Icon>
+            <Archive type="tarbz2" sha1sum="a2ae12f41a783f9f6efaae141dca0232b5a59e27">http://dl.dropbox.com/u/1836567/Paketler/chains-0.1.1-src.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>qt-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>libXrandr-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">chains-paths.diff</Patch>
+            </Patches>
+            <SourceURI>game/puzzle/bubble-chains/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>bubble-chains</Name>
+            <RuntimeDependencies>
+                <Dependency>qt</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>libXrandr</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/chains</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/bubble-chains.desktop" permission="0644" owner="root">bubble-chains.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-01-15</Date>
+                <Version>0.1.1</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>redeclipse</Name>
             <Homepage>http://www.redeclipse.net</Homepage>
             <Packager>
@@ -2192,6 +2535,53 @@
             <Update release="1">
                 <Date>2011-04-11</Date>
                 <Version>0.2</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>bloqus</Name>
+            <Homepage>http://bloqus.tuxfamily.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>CeCILL-2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.board</PartOf>
+            <Summary xml:lang="en">A Blokus inspired game</Summary>
+            <Summary xml:lang="tr">Blokus benzeri bir oyun</Summary>
+            <Description xml:lang="en">Bloqus is a Blokus inspired game, you have to place polyominos on a board.</Description>
+            <Description xml:lang="tr">Bloqus, Blokus&apos;tan ilham almış ve oyuncuların çeşitli şekillerdeki parçaları oyun tahtasına dizmeye çalıştığı bir oyundur.</Description>
+            <Icon>bloqus</Icon>
+            <Archive type="tarbz2" sha1sum="7238cf0837528e3baca6a181cd0bc4cffa8f72dd">http://download.tuxfamily.org/bloqus/bloqus-1.0.0-src.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>qt-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/board/bloqus/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>bloqus</Name>
+            <RuntimeDependencies>
+                <Dependency>qt</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/bloqus.desktop" permission="0644" owner="root">bloqus.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-01-15</Date>
+                <Version>1.0.0</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
