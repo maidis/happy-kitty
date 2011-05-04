@@ -23,6 +23,7 @@ http://code.google.com/p/happy-kitty/issues
 
 
 = Happy Kitty SVN =
+First, this is not a playground. If you want a playground you can open a new project at [http://code.google.com/p/support/ Google Code]. Happy Kitty is a source package repository. Everything must work in the repository. All packages must be placed to the right place. Games must be in games directory, libraries in libraries directory :) I do not know a good document about SVN. But I'm sure you can find one by [http://www.google.com.tr/search?q=svn+howto searching on Google].
 
 https://happy-kitty.googlecode.com/svn/trunk
 
