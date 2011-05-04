@@ -2,7 +2,7 @@
 #labels devel,howto
 
 = identi.ca - happykitty =
-Hppy Kitty developers, packagers, documentations team members, and publicity team members could use this account to report the latest developments in Happy Kitty. And every Happy Kitty user can learn about the latest news instantly by following us at identi.ca.
+Hppy Kitty developers, packagers, documentation team members, and publicity team members could use this account to report the latest developments in Happy Kitty. And every Happy Kitty user can learn about the latest news instantly by following us at identi.ca.
 
 http://identi.ca/happykitty
 
