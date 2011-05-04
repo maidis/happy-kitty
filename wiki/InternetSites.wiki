@@ -1,0 +1,31 @@
+#summary happy kitty related sites, and their purposes
+#labels devel,howto
+
+= identi.ca - happykitty =
+
+http://identi.ca/happykitty
+
+
+= Happy Kitty Blog =
+
+http://happy-kitty-repo.blogspot.com
+
+
+= Happy Kitty Wiki =
+
+http://code.google.com/p/happy-kitty/wiki
+
+
+= Happy Kitty SVN =
+
+https://happy-kitty.googlecode.com/svn/trunk
+
+
+= Happy Kitty Brainstorm =
+
+http://www.google.com/moderator/#16/e=697d6
+
+
+= Happy Kitty Discuss =
+
+http://groups.google.com/group/happy-kitty
