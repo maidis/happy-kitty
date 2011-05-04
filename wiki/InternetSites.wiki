@@ -19,7 +19,7 @@ http://code.google.com/p/happy-kitty/wiki
 
 
 = Happy Kitty Issues =
-Bug reports for existing games, package requests for new ones, packet review requests...
+Bug reports for existing games, package requests for new ones, packet review requests....
 
 http://code.google.com/p/happy-kitty/issues
 
