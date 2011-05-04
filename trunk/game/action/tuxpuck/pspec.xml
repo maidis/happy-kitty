@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Icon>tuxpuck</Icon>
         <IsA>app:gui</IsA>
-        <Summary>An Air Hockey Game</Summary>
+        <Summary>An air hockey game</Summary>
         <Description>TuxPuck is an air hockey simulator. You will lots of fun trying to beat Tux.</Description>
         <Archive type="tarbz2" sha1sum="998b6a989d44cfdf03fc88c14ee2aeabbe9e501d">http://dl.dropbox.com/u/1836567/Paketler/tuxpuck-0.9.0.tar.bz2</Archive>
         <BuildDependencies>
