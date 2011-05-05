@@ -1,0 +1,19 @@
+--- src/burgerspace.desktop.in.orig	2010-05-13 05:58:06.000000000 +0300
++++ src/burgerspace.desktop.in	2011-05-05 23:19:33.085000050 +0300
+@@ -1,9 +1,13 @@
+ [Desktop Entry]
++Type=Application
++Version=1.0
++Encoding=UTF-8
+ Name=@PACKAGE_FULL_NAME@
+-Categories=X-Red-Hat-Base;Application;Game;ArcadeGame;
++GenericName=BurgerSpace
+ Comment=@PACKAGE_SUMMARY_EN@
+ Comment[fr]=@PACKAGE_SUMMARY_FR@
+ Exec=@PACKAGE@
+-Icon=@PACKAGE@.png
+-Terminal=0
++Icon=@PACKAGE@
++Terminal=false
+ Type=Application
++Categories=Application;Game;ArcadeGame;

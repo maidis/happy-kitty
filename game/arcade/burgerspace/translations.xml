@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>burgerspace</Name>
+        <Summary xml:lang="tr">Bir hamburger yapım oyunu</Summary>
+        <Description xml:lang="tr">BurgerSpace, 1982 tarihinde Data East tarafından yayımlanan BurgerTime'nin bir yeniden yapımıdır.</Description>
+    </Source>
+</PISI>
