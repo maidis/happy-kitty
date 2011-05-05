@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=ColorCode
+GenericName=MasterMind Clone
+GenericName[tr]=MasterMind Klonu
+Comment=Advanced MasterMind game and solver
+Comment[tr]=Gelişmiş MasterMind oyunu ve çözücüsü
+Icon=colorcode
+Exec=colorcode
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;

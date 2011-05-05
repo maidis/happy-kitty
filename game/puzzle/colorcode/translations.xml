@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>colorcode</Name>
+        <Summary xml:lang="tr">Gelişmiş MasterMind oyunu ve çözücüsü</Summary>
+        <Description xml:lang="tr">ColorCode, çok kolay sayılabileceklerden gerçekten sizi zorlayacaklara kadar pek çok varyasyon içeren gelişmiş bir MasterMind klonudur.</Description>
+    </Source>
+</PISI>
