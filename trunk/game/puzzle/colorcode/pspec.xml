@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>colorcode</Name>
+        <Homepage>http://colorcode.laebisch.com</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>colorcode</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Advanced MasterMind game and solver</Summary>
+        <Description>ColorCode is an advanced MasterMind clone with lots of different game variants, from the very easy up to really challenging ones. You can combine any color count from 2-10 with any column count from 2-5 and allow or not pegs of the same color. Or you may select one of the 5 predefined levels of difficulty. ColorCode has also a rather intelligent ;-) built in MasterMind solver - so you can let the computer guess for you (nope, he's not cheating - really).</Description>
+        <Archive sha1sum="d9ecd49d04c41ac680ae4d2cb217215440c1a27d" type="targz">http://colorcode.laebisch.com/download/ColorCode-0.7.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>qt-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>colorcode</Name>
+        <RuntimeDependencies>
+            <Dependency>qt</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/colorcode.desktop">colorcode.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-05-06</Date>
+            <Version>0.7.2</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
