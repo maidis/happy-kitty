@@ -7,4 +7,5 @@
   * *2011.03.23* - I started *Happy Kitty* project and opened [http://happy-kitty-repo.blogspot.com/ Happy Kitty Blog].
   * *2011.03.26* - I have added [http://code.google.com/p/happy-kitty/source/detail?r=2 the first game package], *Airstrike* to SVN repository. I chose [http://happy-kitty-repo.blogspot.com/2011/03/we-need-logo.html a logo] for Happy Kitty Repository.
   * *2011.04.23* - I chose [http://happy-kitty-repo.blogspot.com/2011/04/new-logo-for-happy-kitty.html a new logo] for the repository.
-  * *2011.05.04* - I open an [http://identi.ca/happykitty identi.ca] account for Happy Kitty.
+  * *2011.05.04* - I opened an [http://identi.ca/happykitty identi.ca] account for Happy Kitty.
+  * *2011.05.05* - I started to writing history of Happy Kitty.
