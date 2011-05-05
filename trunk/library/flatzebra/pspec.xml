@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>flatzebra</Name>
+        <Homepage>http://perso.b2b2c.ca/sarrazip/dev/burgerspace.html</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>A generic game engine</Summary>
+        <Description>flatzebra is a generic game engine for 2D double-buffering animation.</Description>
+        <Archive sha1sum="0629a8a5b5be0bf818cd216af4396a91689cf17d" type="targz">http://perso.b2b2c.ca/sarrazip/dev/flatzebra-0.1.5.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>flatzebra</Name>
+        <Summary>Development files for flatzebra</Summary>
+        <Description>flatzebra is a generic game engine for 2D double-buffering animation.</Description>
+        <RuntimeDependencies>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>libsdl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>flatzebra-devel</Name>
+        <RuntimeDependencies>
+            <Dependency release="current">flatzebra</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-06-12</Date>
+            <Version>0.1.5</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

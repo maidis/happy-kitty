@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>flatzebra</Name>
+        <Summary xml:lang="tr">Genel amaçlı bir oyun motoru</Summary>
+        <Description xml:lang="tr">flatzebra, 2B çift tamponlamalı animasyon için genel amaçlı bir oyun motorudur.</Description>
+    </Source>
+
+    <Package>
+        <Name>flatzebra-devel</Name>
+        <Summary xml:lang="tr">flatzebra için geliştirme dosyaları</Summary>
+        <Description xml:lang="tr">flatzebra, 2B çift tamponlamalı animasyon için genel amaçlı bir oyun motorudur.</Description>
+    </Package>
+</PISI>
