@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>burgerspace</Name>
+        <Homepage>http://perso.b2b2c.ca/sarrazip/dev/burgerspace.html</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>A hamburger-smashing video game</Summary>
+        <Description>BurgerSpace is a clone of the 1982 BurgerTime video game by Data East.</Description>
+        <Archive sha1sum="84689691d6e827e417035fde2c73ba438b3d4339" type="targz">http://perso.b2b2c.ca/sarrazip/dev/burgerspace-1.9.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>flatzebra-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">paths-fix.patch</Patch>
+            <Patch>burgerspace.destop.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>burgerspace</Name>
+        <RuntimeDependencies>
+            <Dependency>flatzebra</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-image</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/burgerspace</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-06-12</Date>
+            <Version>1.9.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
