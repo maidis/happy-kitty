@@ -5,6 +5,8 @@
 
   * [UsingSourceRepository]
   * [LinuxGamingSites]
+  * [Missions]
+  * [History]
 
 ----
 
