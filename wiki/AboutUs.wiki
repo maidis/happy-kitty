@@ -1,0 +1,23 @@
+#summary what is Happy Kitty?
+#labels about,Featured
+
+== About Happy Kitty ==
+
+Happy Kitty is an unofficial project with the mission to provide open source and redistributable freeware games for the latest Pardus Linux release.
+
+The Happy Kitty repository extends the official repositories by providing new games.
+
+There is a short and limited testing phase instead of a full testing cycle to ensure packaging quality, however it is less strict than Pardus's official requirements. You may also be interested on [http://code.google.com/p/happy-kitty/wiki/PackageRepositories#Pardus other unofficial Pardus repositories].
+
+There is no company behind this project. It is managed, maintained, developed and supported by a volunteer group and by the users themselves.
+
+Your help is needed and appreciated.
+
+
+== Similar Projects ==
+  * [http://www.playdeb.net/ PlayDeb]
+  * [http://www.dotdeb.com/ DotDeb]
+  * [https://help.ubuntu.com/community/Games Games on Ubuntu]
+  * [https://github.com/Arch-Games The Arch Linux Gaming Repository Project]
+  * [https://fedoraproject.org/wiki/SIGs/Games The Fedora Special Interest Groups - Games]
+  * [http://www.gentoo.org/proj/en/desktop/games/ Gentoo Games Project]
