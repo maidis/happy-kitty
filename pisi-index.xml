@@ -129,6 +129,64 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>cave9</Name>
+            <Homepage>http://code.google.com/p/cave9</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>LGPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A clone of classic sfcave</Summary>
+            <Summary xml:lang="tr">Bir sfcave klonu</Summary>
+            <Description xml:lang="en">cave9 is a gravity cave-exploration game. Use only two buttons to activate the thrust jets of your ship in this first-person 3D version of the classic SF-Cave game.</Description>
+            <Description xml:lang="tr">cave9, klasik SF-Cave&apos;nin 3B&apos;lu yeniden yapımı olan bir yer çekimi oyunudur. Peşinizdeki düşman uçaklarından kaçmaya çalışırken, umutsuzca önünüzdeki dağdaki mağara girişine dalış yapmaya karar verirsiniz ve olaylar gelişir.</Description>
+            <Icon>cave9</Icon>
+            <Archive type="targz" sha1sum="02c728c913ed17cbc809e9625ccc68074b1a7a08">http://cave9.googlecode.com/files/cave9_src-0.4.tgz</Archive>
+            <Archive type="targz" sha1sum="8066b06cc1cec881f5647d063bf29e7787f9cee0">http://cave9.googlecode.com/files/cave9_data-4.tgz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-ttf-devel</Dependency>
+                <Dependency>sdl-net-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/arcade/cave9/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>cave9</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-ttf</Dependency>
+                <Dependency>sdl-net</Dependency>
+                <Dependency>mesa</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/cave9</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/cave9.desktop" permission="0644" owner="root">cave9.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/cave9.png" permission="0644" owner="root">cave9.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-08-07</Date>
+                <Version>0.4</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>xix</Name>
             <Homepage>http://compgroups.net/comp.os.linux.misc/New-game-XIX-for-linux-Version-of-1980s-game-QIX</Homepage>
             <Packager>
@@ -1192,6 +1250,56 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>capitan-sevilla</Name>
+            <Homepage>http://computeremuzone.com/ficha.php?id=754</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">Capitan Sevilla</Summary>
+            <Summary xml:lang="tr">Capitan Sevilla</Summary>
+            <Description xml:lang="en">capitan-sevilla is a remake of the spanish game Capitan Sevilla.</Description>
+            <Description xml:lang="tr">capitan-sevilla, bir İspanyol oyunu olan Capitan Sevilla&apos;nın yeniden yapımıdır.</Description>
+            <Icon>capitan-sevilla</Icon>
+            <Archive type="tarbz2" sha1sum="f111eba1336bf97d5cd6d80302c7a4ed78907cf2">http://computeremuzone.com/cezgs/remakes/Capitan.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>libpng-devel</Dependency>
+                <Dependency>allegro-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">paths.patch</Patch>
+            </Patches>
+            <SourceURI>game/arcade/capitan-sevilla/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>capitan-sevilla</Name>
+            <RuntimeDependencies>
+                <Dependency>libpng</Dependency>
+                <Dependency>allegro</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/capitan</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-11-07</Date>
+                <Version>1.0.3</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>ballz</Name>
             <Homepage>http://code.google.com/p/db-tins07</Homepage>
             <Packager>
@@ -1289,6 +1397,59 @@
             <Update release="1">
                 <Date>2010-11-08</Date>
                 <Version>1.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>burgerspace</Name>
+            <Homepage>http://perso.b2b2c.ca/sarrazip/dev/burgerspace.html</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A hamburger-smashing video game</Summary>
+            <Summary xml:lang="tr">Bir hamburger yapım oyunu</Summary>
+            <Description xml:lang="en">BurgerSpace is a clone of the 1982 BurgerTime video game by Data East.</Description>
+            <Description xml:lang="tr">BurgerSpace, 1982 tarihinde Data East tarafından yayımlanan BurgerTime&apos;nin bir yeniden yapımıdır.</Description>
+            <Archive type="targz" sha1sum="84689691d6e827e417035fde2c73ba438b3d4339">http://perso.b2b2c.ca/sarrazip/dev/burgerspace-1.9.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>flatzebra-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">paths-fix.patch</Patch>
+                <Patch>burgerspace.destop.diff</Patch>
+            </Patches>
+            <SourceURI>game/arcade/burgerspace/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>burgerspace</Name>
+            <RuntimeDependencies>
+                <Dependency>flatzebra</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-image</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/burgerspace</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-06-12</Date>
+                <Version>1.9.0</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -1876,6 +2037,60 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>cgmadness</Name>
+            <Homepage>http://cgmadness.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.action</PartOf>
+            <Summary xml:lang="en">A 3d marble game</Summary>
+            <Summary xml:lang="tr">Bir 3b bilye oyunu</Summary>
+            <Description xml:lang="en">CG Madness is a clone of the classic game Marble Madness.</Description>
+            <Description xml:lang="tr">CG Madness, Marble Madness benzeri zevkli bir bilye yuvarlama oyunudur.</Description>
+            <Icon>cgmadness</Icon>
+            <Archive type="tarbz2" sha1sum="0b3c837eb5cfb54d4232bae7404faa7aed16772f">mirrors://sourceforge/cgmadness/cgmadness-1.2.2_Xmas-src.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>freeglut-devel</Dependency>
+                <Dependency>glew-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/action/cgmadness/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>cgmadness</Name>
+            <RuntimeDependencies>
+                <Dependency>freeglut</Dependency>
+                <Dependency>glew</Dependency>
+                <Dependency>mesa</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/cgmadness.desktop" permission="0644" owner="root">cgmadness.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/cgmadness.png" permission="0644" owner="root">cgmadness.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-10-31</Date>
+                <Version>1.2.2</Version>
+                <Comment>First release.</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>lugaru</Name>
             <Homepage>http://code.google.com/p/lugaru</Homepage>
             <Packager>
@@ -2098,6 +2313,52 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>colorcode</Name>
+            <Homepage>http://colorcode.laebisch.com</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">Advanced MasterMind game and solver</Summary>
+            <Summary xml:lang="tr">Gelişmiş MasterMind oyunu ve çözücüsü</Summary>
+            <Description xml:lang="en">ColorCode is an advanced MasterMind clone with lots of different game variants, from the very easy up to really challenging ones. You can combine any color count from 2-10 with any column count from 2-5 and allow or not pegs of the same color. Or you may select one of the 5 predefined levels of difficulty. ColorCode has also a rather intelligent ;-) built in MasterMind solver - so you can let the computer guess for you (nope, he&apos;s not cheating - really).</Description>
+            <Description xml:lang="tr">ColorCode, çok kolay sayılabileceklerden gerçekten sizi zorlayacaklara kadar pek çok varyasyon içeren gelişmiş bir MasterMind klonudur.</Description>
+            <Icon>colorcode</Icon>
+            <Archive type="targz" sha1sum="d9ecd49d04c41ac680ae4d2cb217215440c1a27d">http://colorcode.laebisch.com/download/ColorCode-0.7.2.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>qt-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/puzzle/colorcode/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>colorcode</Name>
+            <RuntimeDependencies>
+                <Dependency>qt</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/colorcode.desktop" permission="0644" owner="root">colorcode.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-06</Date>
+                <Version>0.7.2</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>brainparty</Name>
             <Homepage>http://www.tuxradar.com/brainparty</Homepage>
             <Packager>
@@ -2257,6 +2518,58 @@
             <Update release="1">
                 <Date>2010-12-01</Date>
                 <Version>0.1.8.3</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>color-lines</Name>
+            <Homepage>http://code.google.com/p/color-lines</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">Color Lines classic game written with SDL</Summary>
+            <Summary xml:lang="tr">SDL ile yazılmış klasik Color Lines oyunu</Summary>
+            <Description xml:lang="en">color-lines is a Color Lines game written with SDL with bonus features.</Description>
+            <Description xml:lang="tr">color-lines, çeşitli ekstra özellikler içeren SDL ile yazılmış klasik bir Color Lines oyunudur.</Description>
+            <Icon>color-lines</Icon>
+            <Archive type="targz" sha1sum="7dda99d79e9c5955654f9671e17a45aab46f7ad7">http://color-lines.googlecode.com/files/lines_0.6.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>makefile.patch</Patch>
+            </Patches>
+            <SourceURI>game/puzzle/color-lines/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>color-lines</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/color-lines</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-06</Date>
+                <Version>0.6</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -3880,6 +4193,65 @@
                 <Comment>First release</Comment>
                 <Name>Onur Küçük</Name>
                 <Email>onur@pardus.org.tr</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>flatzebra</Name>
+            <Homepage>http://perso.b2b2c.ca/sarrazip/dev/burgerspace.html</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">A generic game engine</Summary>
+            <Summary xml:lang="tr">Genel amaçlı bir oyun motoru</Summary>
+            <Description xml:lang="en">flatzebra is a generic game engine for 2D double-buffering animation.</Description>
+            <Description xml:lang="tr">flatzebra, 2B çift tamponlamalı animasyon için genel amaçlı bir oyun motorudur.</Description>
+            <Archive type="targz" sha1sum="0629a8a5b5be0bf818cd216af4396a91689cf17d">http://perso.b2b2c.ca/sarrazip/dev/flatzebra-0.1.5.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>library/flatzebra/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>flatzebra</Name>
+            <Summary xml:lang="en">Development files for flatzebra</Summary>
+            <Description xml:lang="en">flatzebra is a generic game engine for 2D double-buffering animation.</Description>
+            <RuntimeDependencies>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>libsdl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>flatzebra-devel</Name>
+            <Summary xml:lang="tr">flatzebra için geliştirme dosyaları</Summary>
+            <Description xml:lang="tr">flatzebra, 2B çift tamponlamalı animasyon için genel amaçlı bir oyun motorudur.</Description>
+            <RuntimeDependencies>
+                <Dependency release="1">flatzebra</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-06-12</Date>
+                <Version>0.1.5</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
             </Update>
         </History>
     </SpecFile>
