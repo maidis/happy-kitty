@@ -1,0 +1,16 @@
+--- Makefile.unix.orig	2010-05-17 19:34:56.000000000 +0300
++++ Makefile.unix	2010-12-27 21:10:48.706000050 +0200
+@@ -11,10 +11,10 @@
+ OBJ     := $(patsubst %.c, %.o, $(SRC))
+ 
+ all: color-lines
+-PREFIX:=/usr/local
++PREFIX:=/usr
+ 
+-BINDIR:=$(DESTDIR)/$(PREFIX)/games/
+-GAMEDATADIR:=$(DESTDIR)/$(PREFIX)/share/games/color-lines/
++BINDIR:=$(DESTDIR)/$(PREFIX)/bin/
++GAMEDATADIR:=$(DESTDIR)/$(PREFIX)/share/color-lines/
+ 
+ svnclean:
+ 	svn st | grep "^?" | awk '{ print $$2 }' | while read l; do $(RM) -rf $$l; done

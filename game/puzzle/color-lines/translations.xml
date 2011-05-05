@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>color-lines</Name>
+        <Summary xml:lang="tr">SDL ile yazılmış klasik Color Lines oyunu</Summary>
+        <Description xml:lang="tr">color-lines, çeşitli ekstra özellikler içeren SDL ile yazılmış klasik bir Color Lines oyunudur.</Description>
+    </Source>
+</PISI>
