@@ -3,9 +3,10 @@
 
 = Help =
 
+  * [AboutUs]
+  * [Missions]
   * [UsingSourceRepository]
   * [LinuxGamingSites]
-  * [Missions]
   * [History]
 
 ----
