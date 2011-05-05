@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>cgmadness</Name>
+        <Summary xml:lang="tr">Bir 3b bilye oyunu</Summary>
+        <Description xml:lang="tr">CG Madness, Marble Madness benzeri zevkli bir bilye yuvarlama oyunudur.</Description>
+    </Source>
+</PISI>

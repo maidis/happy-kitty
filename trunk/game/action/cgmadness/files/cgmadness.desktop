@@ -1,0 +1,14 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Version=1.0
+Name=CG Madness
+GenericName=3D Marble Game
+GenericName[tr]=3B Bilye Oyunu
+Comment=Classic marble game
+Comment[tr]=Klasik bilye yuvarlama oyunu
+Exec=cd /usr/share/cgmadness && cgmadness
+Icon=cgmadness
+StartupNotify=false
+Terminal=false
+Categories=Application;Game;ActionGame;
