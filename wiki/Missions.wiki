@@ -1,5 +1,5 @@
 #summary Reasons for Happy Kitty's presence in life
-#labels missions
+#labels missions,Featured
 
 Happy Kitty's goal is make Pardus the best free software and open source gaming platform there is for both developers and users.
 
