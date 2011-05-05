@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>cave9</Name>
+        <Summary xml:lang="tr">Bir sfcave klonu</Summary>
+        <Description xml:lang="tr">cave9, klasik SF-Cave'nin 3B'lu yeniden yapımı olan bir yer çekimi oyunudur. Peşinizdeki düşman uçaklarından kaçmaya çalışırken, umutsuzca önünüzdeki dağdaki mağara girişine dalış yapmaya karar verirsiniz ve olaylar gelişir.</Description>
+    </Source>
+</PISI>

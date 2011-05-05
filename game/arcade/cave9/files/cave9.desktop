@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=cave9
+GenericName=SF-Cave Clone
+GenericName[tr]=SF-Cave Klonu
+Comment=a gravity cave exploration game
+Comment[tr]=Yerçekimi temelli bir mağara keşif oyunu
+Icon=cave9
+Exec=cave9
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;
