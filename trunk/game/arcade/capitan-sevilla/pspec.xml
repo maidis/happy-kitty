@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>capitan-sevilla</Name>
+        <Homepage>http://computeremuzone.com/ficha.php?id=754</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>capitan-sevilla</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Capitan Sevilla</Summary>
+        <Description>capitan-sevilla is a remake of the spanish game Capitan Sevilla.</Description>
+        <Archive sha1sum="f111eba1336bf97d5cd6d80302c7a4ed78907cf2" type="tarbz2">http://computeremuzone.com/cezgs/remakes/Capitan.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>libpng-devel</Dependency>
+            <Dependency>allegro-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">paths.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>capitan-sevilla</Name>
+        <RuntimeDependencies>
+            <Dependency>libpng</Dependency>
+            <Dependency>allegro</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/capitan</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-11-07</Date>
+            <Version>1.0.3</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

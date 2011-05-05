@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>capitan-sevilla</Name>
+        <Summary xml:lang="tr">Capitan Sevilla</Summary>
+        <Description xml:lang="tr">capitan-sevilla, bir İspanyol oyunu olan Capitan Sevilla'nın yeniden yapımıdır.</Description>
+    </Source>
+</PISI>
