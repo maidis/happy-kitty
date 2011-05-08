@@ -292,6 +292,58 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>usf</Name>
+            <Homepage>http://usf.tuxfamily.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A 2d arcade fight game</Summary>
+            <Summary xml:lang="tr">Bir 2b ateri tarzı dövüş oyunu</Summary>
+            <Description xml:lang="en">Ultimate Smash Friends is a 2d arcade fight game, inspired by the Super Smash Bros Nintendo series. It&apos;s written in Python with pygame.</Description>
+            <Description xml:lang="tr">Ultimate Smash Friends, Super Smash Bros&apos;tan esinlenmiş ve Python, pygame kullanılarak yazılmış 2b ateri tarzı dövüş oyunudur.</Description>
+            <Icon>usf</Icon>
+            <Archive type="tarbz2" sha1sum="c4fbdfa6a88c07810192bf9cabd7e6908f1706c7">http://dl.dropbox.com/u/1836567/Paketler/usf-0.1.6.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>pygame</Dependency>
+                <Dependency>python-numeric</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>ultimate-smash-friends.desktop.diff</Patch>
+            </Patches>
+            <SourceURI>game/arcade/usf/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>usf</Name>
+            <RuntimeDependencies>
+                <Dependency>pygame</Dependency>
+                <Dependency>python-numeric</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/ultimate-smash-friends</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-09</Date>
+                <Version>0.1.6</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>happyfrog</Name>
             <Homepage>http://code.google.com/p/happyfrog</Homepage>
             <Packager>
@@ -1066,6 +1118,60 @@
             <Update release="1">
                 <Date>2011-05-02</Date>
                 <Version>20020314</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>smashbattle</Name>
+            <Homepage>http://smashbattle.condor.tv</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A fast, old skool, 2D, platform, shoot ‘m up action game</Summary>
+            <Summary xml:lang="tr">Hızlı, eski tarz, 2B, platform, vuruş, aksiyon oyunu</Summary>
+            <Description xml:lang="en">Smash Battle is an 8-bit style game where two, three or four player face off against each other. The game was inspired by the Mario battle from Super Mario Bros 3 on the good old NES. The game is simple yet very addictive. Fight your way through several missions to unlock secret characters. Battle with one, two or even three friends in the multiplayer mode to show of your old and dusty game skillz.</Description>
+            <Description xml:lang="tr">Smash Battle; iki, üç bilemedin dört kişiyle oynanabilen 8-bit tarzı herkes herkese karşı oyunudur. Oyun, eski güzel NES&apos;in klasiklerinden Super Mario Bros 3&apos;deki Mario battle&apos;dan ilham almıştır.  Oyun basit ama çekicidir. Görevleri tamamlayarak yeni karakterleri açabilir, arkadaşlarınızla çok oyuncu kipinde oynayarak eski yeteneklerinizi gösterebilirsiniz.</Description>
+            <Icon>smashbattle</Icon>
+            <Archive type="zip" sha1sum="47e466326e85264630c88c3c02ea90a897d5f28c">mirrors://sourceforge/smashbattle/smashbattle/beta-110224/smashbattle-110224-src.zip</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>smashbattle-desktop.diff</Patch>
+                <Patch>smashbattle-fix-paths.diff</Patch>
+            </Patches>
+            <SourceURI>game/arcade/smashbattle/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>smashbattle</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/opt/smashbattle/battle</Path>
+                <Path fileType="data">/opt/smashbattle/gfx</Path>
+                <Path fileType="data">/opt/smashbattle/music</Path>
+                <Path fileType="data">/opt/smashbattle/sfx</Path>
+                <Path fileType="data">/opt/smashbattle/stage</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-08</Date>
+                <Version>110224</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
