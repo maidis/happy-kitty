@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>smashbattle</Name>
+        <Summary xml:lang="tr">Hızlı, eski tarz, 2B, platform, vuruş, aksiyon oyunu</Summary>
+        <Description xml:lang="tr">Smash Battle; iki, üç bilemedin dört kişiyle oynanabilen 8-bit tarzı herkes herkese karşı oyunudur. Oyun, eski güzel NES'in klasiklerinden Super Mario Bros 3'deki Mario battle'dan ilham almıştır.  Oyun basit ama çekicidir. Görevleri tamamlayarak yeni karakterleri açabilir, arkadaşlarınızla çok oyuncu kipinde oynayarak eski yeteneklerinizi gösterebilirsiniz.</Description>
+    </Source>
+</PISI>

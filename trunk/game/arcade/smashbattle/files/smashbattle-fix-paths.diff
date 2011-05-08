@@ -1,0 +1,28 @@
+--- Makefile.orig	2010-04-20 15:46:12.000000000 +0300
++++ Makefile	2011-05-08 22:49:33.169000059 +0300
+@@ -55,14 +55,14 @@
+ 	-rm -rf *.o battle
+ 
+ install:
+-	mkdir -p /usr/share/games/smashbattle
+-	cp $(EXECUTABLE) /usr/share/games/smashbattle
+-	mkdir -p /usr/share/games/smashbattle/gfx
+-	mkdir -p /usr/share/games/smashbattle/sfx
+-	mkdir -p /usr/share/games/smashbattle/music
+-	mkdir -p /usr/share/games/smashbattle/stage
+-	cp -R gfx/* /usr/share/games/smashbattle/gfx/
+-	cp -R sfx/* /usr/share/games/smashbattle/sfx/
+-	cp -R music/* /usr/share/games/smashbattle/music/
+-	cp -R stage/* /usr/share/games/smashbattle/stage/
+-	cp smashbattle /usr/local/bin/
++	mkdir -p $(DESTDIR)/opt/smashbattle
++	cp $(EXECUTABLE) $(DESTDIR)/opt/smashbattle
++	mkdir -p $(DESTDIR)/opt/smashbattle/gfx
++	mkdir -p $(DESTDIR)/opt/smashbattle/sfx
++	mkdir -p $(DESTDIR)/opt/smashbattle/music
++	mkdir -p $(DESTDIR)/opt/smashbattle/stage
++	cp -R gfx/* $(DESTDIR)/opt/smashbattle/gfx/
++	cp -R sfx/* $(DESTDIR)/opt/smashbattle/sfx/
++	cp -R music/* $(DESTDIR)/opt/smashbattle/music/
++	cp -R stage/* $(DESTDIR)/opt/smashbattle/stage/
++	#cp linux/smashbattle $(DESTDIR)/usr/bin/

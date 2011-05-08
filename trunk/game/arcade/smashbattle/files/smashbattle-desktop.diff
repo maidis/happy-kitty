@@ -1,0 +1,32 @@
+diff -Naur linux.orig/smashbattle linux/smashbattle
+--- linux.orig/smashbattle	2009-08-07 10:39:32.000000000 +0300
++++ linux/smashbattle	2011-05-08 22:47:03.855000059 +0300
+@@ -1,4 +1,4 @@
+ #!/bin/bash
+ 
+-cd /usr/share/games/smashbattle
++cd /opt/smashbattle
+ ./battle $@
+diff -Naur linux.orig/smashbattle.desktop linux/smashbattle.desktop
+--- linux.orig/smashbattle.desktop	2009-08-07 10:39:32.000000000 +0300
++++ linux/smashbattle.desktop	2011-05-08 23:07:50.537000058 +0300
+@@ -1,9 +1,14 @@
+ [Desktop Entry]
+ Type=Application
+ Version=1.0
++Encoding=UTF-8
+ Name=Smash Battle
+-GenericName=Arcade mutliplayer shooter
+-Icon=/usr/share/games/smashbattle/gfx/SB.png
+-Exec=/usr/local/bin/smashbattle
+-Categories=Game;ArcadeGame;
+-
++GenericName=Arcade Shooter
++GenericName[tr]=Ateri Tarzı Dövüş
++Comment=A fast, old skool, 2D, platform, shoot ‘m up action game
++Comment[tr]=Hızlı, eski tarz, 2B, platform, dövüş aksiyon oyunu
++Icon=smashbattle
++Exec=cd /opt/smashbattle && ./battle -f
++Terminal=false
++StartupNotify=false
++Categories=Application;Game;ArcadeGame;
