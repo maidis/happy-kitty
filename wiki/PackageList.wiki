@@ -4,7 +4,6 @@
 = Help =
 
   * [AboutUs]
-  * [Missions]
   * [UsingSourceRepository]
   * [LinuxGamingSites]
   * [History]
