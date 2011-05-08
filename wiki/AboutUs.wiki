@@ -44,3 +44,4 @@ We aim to accomplish this goal through a variety of activities:
   * [https://github.com/Arch-Games The Arch Linux Gaming Repository Project]
   * [https://fedoraproject.org/wiki/SIGs/Games The Fedora Special Interest Groups - Games]
   * [http://www.gentoo.org/proj/en/desktop/games/ Gentoo Games Project]
+  * [http://gamestore.gk2.sk/ openSUSE Game Store]
