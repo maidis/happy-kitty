@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>usf</Name>
+        <Homepage>http://usf.tuxfamily.org</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>usf</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A 2d arcade fight game</Summary>
+        <Description>Ultimate Smash Friends is a 2d arcade fight game, inspired by the Super Smash Bros Nintendo series. It's written in Python with pygame.</Description>
+        <Archive sha1sum="c4fbdfa6a88c07810192bf9cabd7e6908f1706c7" type="tarbz2">http://dl.dropbox.com/u/1836567/Paketler/usf-0.1.6.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>pygame</Dependency>
+            <Dependency>python-numeric</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>ultimate-smash-friends.desktop.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>usf</Name>
+        <RuntimeDependencies>
+            <Dependency>pygame</Dependency>
+            <Dependency>python-numeric</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/ultimate-smash-friends</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-05-09</Date>
+            <Version>0.1.6</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,25 @@
+--- ultimate-smash-friends.desktop.orig	2011-05-09 00:19:57.000000000 +0300
++++ ultimate-smash-friends.desktop	2011-05-09 00:48:43.437000058 +0300
+@@ -1,15 +1,12 @@
+-#!/usr/bin/env xdg-open
+ [Desktop Entry]
+-Version=0.1.4
++Type=Application
++Version=1.0
+ Encoding=UTF-8
+ Name=Ultimate Smash Friends
+-GenericName=usf   
+-Comment="An arcade fightr game in the spirit of the nintedo smash bros series!"
+-Comment[fr_FR]="Un jeu de baston arcade dans l'esprit des jeux de la série smash bros, de nintendo"
++GenericName=USF
++Comment=An arcade fight game in the spirit of the nintedo smash bros series
++Comment[fr_FR]=Un jeu de baston arcade dans l'esprit des jeux de la série smash bros, de nintendo
+ Exec=ultimate-smash-friends
+-Icon=/usr/share/ultimate-smash-friends/data/gui/icon.png
++Icon=usf
+ Terminal=false
+-Type=Application
+-Categories=Application;Game;
+-Name[fr_FR]="Ultimate Smash Friends"
+-
++Categories=Application;Game;ArcadeGame;
