@@ -12,6 +12,8 @@
 The Linux Game Tome contains 2689 games and game related stuffs. Some of them are very old, not supported and not possible make packages for them :( But still hundreds of game waiting us. Our mission is making packages for these games :)
 
 = Details =
-  * List games [http://www.happypenguin.org/list?sort=title by name] at The Linux Game Tome
+  * List games [http://www.happypenguin.org/list?sort=title by name] at The Linux Game Tome.
+  * Choose a game.
   * [http://www.google.com/cse/home?cx=012154530105083769409:hxcclz8xyfc Check Pardus repository] to learn whether game is in the repository.
-  * 
+  * [http://code.google.com/p/happy-kitty/issues/list Check Happy Kitty's issue tracker] to learn whether game is already requested.
+  * If there isn't any sign about the game, please [http://code.google.com/p/happy-kitty/issues/entry request a new package] from Happy Kitty packagers :)
