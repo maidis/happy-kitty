@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>smashbattle</Name>
+        <Homepage>http://smashbattle.condor.tv</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>smashbattle</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A fast, old skool, 2D, platform, shoot ‘m up action game</Summary>
+        <Description>Smash Battle is an 8-bit style game where two, three or four player face off against each other. The game was inspired by the Mario battle from Super Mario Bros 3 on the good old NES. The game is simple yet very addictive. Fight your way through several missions to unlock secret characters. Battle with one, two or even three friends in the multiplayer mode to show of your old and dusty game skillz.</Description>
+        <Archive sha1sum="47e466326e85264630c88c3c02ea90a897d5f28c" type="zip">mirrors://sourceforge/smashbattle/smashbattle/beta-110224/smashbattle-110224-src.zip</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>smashbattle-desktop.diff</Patch>
+            <Patch>smashbattle-fix-paths.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>smashbattle</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/opt/smashbattle/battle</Path>
+            <Path fileType="data">/opt/smashbattle/gfx</Path>
+            <Path fileType="data">/opt/smashbattle/music</Path>
+            <Path fileType="data">/opt/smashbattle/sfx</Path>
+            <Path fileType="data">/opt/smashbattle/stage</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-05-08</Date>
+            <Version>110224</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
