@@ -1,0 +1,515 @@
+#summary One-sentence summary of this page.
+#labels devel
+
+== barrage-1.0.3-paths.diff ==
+
+{{{
+diff -Naur barrage-1.0.3.orig/configure.in barrage-1.0.3/configure.in
+--- barrage-1.0.3.orig/configure.in	2010-12-24 13:01:38.000000000 +0200
++++ barrage-1.0.3/configure.in	2011-03-27 14:25:05.450000015 +0200
+@@ -33,7 +33,7 @@
+ AC_SUBST(audio_flag)
+ AC_SUBST(audio_lib)
+ 
+-src_dir="$datadir/games/barrage"
++src_dir="$datadir/barrage" 
+}}}
+
+
+== chains-paths.diff ==
+
+{{{
+diff -Naur chains-0.1.1-src.orig/Game.pro chains-0.1.1-src/Game.pro
+--- chains-0.1.1-src.orig/Game.pro	2010-01-09 18:11:18.000000000 +0200
++++ chains-0.1.1-src/Game.pro	2011-01-15 19:36:33.956000045 +0200
+@@ -5,9 +5,9 @@
+     opengl
+ unix: {
+     TARGET = ./bin/chains
+-    target.path = /usr/local/bin/
++    target.path = /usr/bin/
+     INSTALLS += target
+-    datas.path = /usr/local/games/chains
++    datas.path = /usr/share/chains
+     datas.files = data
+     INSTALLS += datas
+     LIBS += -lXrandr
+diff -Naur chains-0.1.1-src.orig/main.cpp chains-0.1.1-src/main.cpp
+--- chains-0.1.1-src.orig/main.cpp	2010-01-09 20:23:48.000000000 +0200
++++ chains-0.1.1-src/main.cpp	2011-01-15 19:38:04.394000045 +0200
+@@ -31,7 +31,7 @@
+     // on X11, we'll check if data directory exists locally first
+   #ifdef Q_WS_X11
+     if (!QDir(resourcePath).exists())
+-      resourcePath = "/usr/local/games/chains/data/";
++      resourcePath = "/usr/share/chains/data/";
+   #endif
+ 
+     if (!QDir(resourcePath).exists()) {
+}}}
+
+
+== fix_paths.diff ==
+
+{{{
+--- airstrike-0.99+1.0pre6a.orig/src/config.h
++++ airstrike-0.99+1.0pre6a/src/config.h
+@@ -6,7 +6,7 @@
+ /* absolute path to main config file (for now it's airstrikerc in the
+    current dir)*/
+ #ifndef ROOT_CONFIG_FILE
+-#define ROOT_CONFIG_FILE "airstrikerc"
++#define ROOT_CONFIG_FILE "/etc/airstrikerc"
+ #endif
+ /* path to file in users $HOME */
+ #ifndef USER_CONFIG_FILE
+--- airstrike-0.99+1.0pre6a.orig/src/airstrike.c
++++ airstrike-0.99+1.0pre6a/src/airstrike.c
+@@ -74,7 +74,7 @@
+   console_set_pos(9,254);
+   console_load_bg(path_to_data("console-bg.png"));
+   sprite_types_setup();
+-  sprite_background_load("data/bg.png","data/bgmask.png");
++  sprite_background_load("/usr/share/airstrike/bg.png","/usr/share/airstrike/bgmask.png");
+ 
+   level_setup();
+   winds_setup();
+--- airstrike-0.99+1.0pre6a.orig/Makefile
++++ airstrike-0.99+1.0pre6a/Makefile
+@@ -29,3 +29,15 @@
+ # packages new files listed in new-files.txt
+ new:
+ 	tar -zcvf new.tgz -T new-files.txt
++
++install:
++	install -d $(DESTDIR)/usr/bin
++	install airstrike $(DESTDIR)/usr/bin/airstrike
++	install -d $(DESTDIR)/usr/share/airstrike
++	install -d $(DESTDIR)/usr/share/airstrike/sound
++	install -m 644 data/*.png $(DESTDIR)/usr/share/airstrike
++	install -m 644 data/*.txt $(DESTDIR)/usr/share/airstrike
++#	install -m 644 data/sound/*.wav $(DESTDIR)/usr/share/airstrike/sound
++	install -d $(DESTDIR)/etc
++	install -m 644 airstrikerc $(DESTDIR)/etc/airstrikerc
++
+}}}
+
+
+== jamp-1.0.2-paths.diff ==
+
+{{{
+diff -Naur jamp-1.0.2.orig/globals.h jamp-1.0.2/globals.h
+--- jamp-1.0.2.orig/globals.h	2009-01-16 01:23:54.000000000 +0200
++++ jamp-1.0.2/globals.h	2011-04-25 17:55:58.814000009 +0300
+@@ -41,6 +41,6 @@
+ 
+ #include "Singleton.h"
+ 
+-const std::string path("/usr/share/games/jamp/");
++const std::string path("/usr/share/jamp/");
+ 
+ #endif
+diff -Naur jamp-1.0.2.orig/Makefile jamp-1.0.2/Makefile
+--- jamp-1.0.2.orig/Makefile	2009-01-16 01:30:39.000000000 +0200
++++ jamp-1.0.2/Makefile	2011-04-25 17:56:48.347000012 +0300
+@@ -1,6 +1,6 @@
+-BINDIR = /usr/games
++BINDIR = /usr/bin
+ SHAREDIR = /usr/share
+-DATADIR = /usr/share/games
++DATADIR = /usr/share
+ 
+ PROJECT= ./box2d
+ CXXFLAGS= -g -O2 -I$(PROJECT)/Include
+}}}
+
+
+== opensurge-paths.diff ==
+
+{{{
+--- CMakeLists.txt.orig	2011-05-03 11:00:40.000000000 +0300
++++ CMakeLists.txt	2011-05-03 21:29:35.888000075 +0300
+@@ -476,16 +476,12 @@
+ 
+ # Installing on *nix
+ IF(UNIX)
+-  SET(GAME_INSTALL_DIR "/usr/share/${GAME_UNIXNAME}")
+-  SET(GAME_FINAL_DIR "/usr/bin")
++  SET(GAME_INSTALL_DIR "${DESTDIR}/usr/share/${GAME_UNIXNAME}")
++  SET(GAME_FINAL_DIR "${DESTDIR}/usr/bin")
+ 
+   INSTALL(CODE "MESSAGE(\"Installing ${GAME_NAME} ${GAME_VERSION}... Make sure you have root privileges.\")")
+   INSTALL(TARGETS ${GAME_UNIXNAME} RUNTIME DESTINATION ${GAME_INSTALL_DIR})
+   INSTALL(FILES license.txt readme.html DESTINATION ${GAME_INSTALL_DIR})
+   INSTALL(DIRECTORY objects sprites config images levels licenses musics quests samples screenshots themes languages fonts ttf DESTINATION ${GAME_INSTALL_DIR} PATTERN ".svn" EXCLUDE)
+ 
+-  INSTALL(CODE "MESSAGE(\"Creating files at ${GAME_FINAL_DIR}...\")")
+-  INSTALL(CODE "EXECUTE_PROCESS(COMMAND \"cmake\" \"-E\" \"copy\" \"${GAME_INSTALL_DIR}/${GAME_UNIXNAME}\" \"${GAME_FINAL_DIR}/${GAME_UNIXNAME}\")")
+-
+-  INSTALL(CODE "MESSAGE(\"Done! Please run ${GAME_UNIXNAME} to start ${GAME_NAME}.\")")
+ ENDIF(UNIX)
+}}}
+
+
+== paths-fix.patch ==
+
+{{{
+diff -Naur burgerspace-1.9.0.orig/src/Makefile.am burgerspace-1.9.0/src/Makefile.am
+--- burgerspace-1.9.0.orig/src/Makefile.am	2010-05-10 05:50:11.000000000 +0300
++++ burgerspace-1.9.0/src/Makefile.am	2010-06-12 15:00:20.738561404 +0300
+@@ -81,10 +81,10 @@
+ 	PKGSOUNDDIR=$(srcdir)/sounds ./$(PACKAGE)
+ 
+ 
+-desktopentrydir = $(datadir)/applications
++desktopentrydir =/usr/share/applications
+ desktopentry_DATA = $(PACKAGE).desktop
+ 
+-pixmapdir = $(datadir)/pixmaps
++pixmapdir =/usr/share/pixmaps
+ pixmap_DATA = images/$(PACKAGE).png
+ 
+ 
+@@ -200,7 +200,7 @@
+ 	images/digit8.xpm \
+ 	images/digit9.xpm
+ 
+-pkgsounddir = $(datadir)/sounds/$(PACKAGE)
++pkgsounddir = $(datadir)/burgerspace/sounds
+ pkgsound_DATA = \
+ 	sounds/ingredient-bounces.wav \
+ 	sounds/ingredient-in-plate.wav \
+}}}
+
+
+== paths.patch ==
+
+{{{
+diff -Naur capitan-1.0.3.orig/src/hardware.cpp capitan-1.0.3/src/hardware.cpp
+--- capitan-1.0.3.orig/src/hardware.cpp	2009-04-10 14:11:28.000000000 +0300
++++ capitan-1.0.3/src/hardware.cpp	2010-11-07 21:04:44.267000034 +0200
+@@ -262,7 +262,7 @@
+        return ContLang - 1;
+ 
+     LogWrite ("Cargando fondo de Selección de lenguaje...");
+-    Objeto = load_datafile_object ("./data/bitmaps1.dat", "DFBM_BMLANG");
++    Objeto = load_datafile_object ("/usr/share/capitan/data/bitmaps1.dat", "DFBM_BMLANG");
+     if (Objeto) {
+        draw_sprite (screen, (BITMAP*)Objeto->dat, (screen->w - 640) / 2, (screen->h - 480) / 2);
+        unload_datafile_object (Objeto);
+@@ -314,7 +314,7 @@
+ int Hardware::LoadDF1()
+ {
+     LogWrite ("Cargando archivo de datos LOADING.DAT: ");
+-    DataP = load_datafile ("./data/loading.dat");
++    DataP = load_datafile ("/usr/share/capitan/data/loading.dat");
+     if (!DataP) {
+        allegro_message ("                   ERROR DE E/S\n\n No se encuentra el archivo LOADING.DAT");
+        set_gfx_mode(GFX_TEXT,0,0,0,0);
+@@ -324,7 +324,7 @@
+     LogWrite ("OK.\n");
+ 
+     LogWrite ("Cargando archivo de datos SPRITES.DAT: ");
+-    SpritesBM = load_datafile("./data/sprites.dat");
++    SpritesBM = load_datafile("/usr/share/capitan/data/sprites.dat");
+     if (!SpritesBM) {
+       allegro_message ("                   ERROR DE E/S\n\n No se encuentra el archivo SPRITES.DAT");
+       set_gfx_mode(GFX_TEXT,0,0,0,0);
+@@ -345,7 +345,7 @@
+     VuelcaBuffer();
+ 
+     LogWrite ("Cargando archivo de datos SCREENS.DAT: ");
+-    ScreensBM = load_datafile_callback ("./data/screens.dat", IndicadorCarga);
++    ScreensBM = load_datafile_callback ("/usr/share/capitan/data/screens.dat", IndicadorCarga);
+     if (!ScreensBM) {
+        allegro_message ("                   ERROR DE E/S\n\n No se encuentra el archivo SCREENS.DAT");
+        set_gfx_mode(GFX_TEXT,0,0,0,0);
+@@ -355,7 +355,7 @@
+     LogWrite ("OK.\n");
+ 
+     LogWrite ("Cargando archivo de datos BITMAPS0.DAT: ");
+-    BitMapsBM = load_datafile_callback ("./data/bitmaps0.dat", IndicadorCarga);
++    BitMapsBM = load_datafile_callback ("/usr/share/capitan/data/bitmaps0.dat", IndicadorCarga);
+     if (!BitMapsBM) {
+        allegro_message ("                   ERROR DE E/S\n\n No se encuentra el archivo BITMAPS0.DAT");
+        set_gfx_mode(GFX_TEXT,0,0,0,0);
+@@ -365,7 +365,7 @@
+     LogWrite ("OK.\n");
+ 
+     LogWrite ("Cargando archivo de datos SFX.DAT: ");
+-    SFx = load_datafile_callback ("./data/sfx.dat", IndicadorCarga);
++    SFx = load_datafile_callback ("/usr/share/capitan/data/sfx.dat", IndicadorCarga);
+     if (!BitMapsBM) {
+        allegro_message ("                   ERROR DE E/S\n\n No se encuentra el archivo SFX.DAT");
+        set_gfx_mode(GFX_TEXT,0,0,0,0);
+@@ -380,7 +380,7 @@
+ int Hardware::LoadDF3 ()
+ {
+     LogWrite ("Cargando archivo de datos SCREENS.DAT: ");
+-    ScreensBM = load_datafile ("./data/screens.dat");
++    ScreensBM = load_datafile ("/usr/share/capitan/data/screens.dat");
+     if (!ScreensBM) {
+        allegro_message ("                   ERROR DE E/S\n\n No se encuentra el archivo SCREENS.DAT");
+        set_gfx_mode(GFX_TEXT,0,0,0,0);
+@@ -390,7 +390,7 @@
+     LogWrite ("OK.\n");
+ 
+     LogWrite ("Cargando archivo de datos BITMAPS0.DAT: ");
+-    BitMapsBM = load_datafile ("./data/bitmaps0.dat");
++    BitMapsBM = load_datafile ("/usr/share/capitan/data/bitmaps0.dat");
+     if (!BitMapsBM) {
+        allegro_message ("                   ERROR DE E/S\n\n No se encuentra el archivo BITMAPS0.DAT");
+        set_gfx_mode(GFX_TEXT,0,0,0,0);
+@@ -572,7 +572,7 @@
+ 
+      DelFont_af();
+      LogWrite ("Cargando fuente TTF (%s)..", s1);
+-     PreFuente = load_datafile_object ("./data/fonts.dat", s1);
++     PreFuente = load_datafile_object ("/usr/share/capitan/data/fonts.dat", s1);
+      LogWrite (".");
+ 
+      for (int n = 0; n < 20; n++) {
+@@ -612,7 +612,7 @@
+      PALETTE pal;
+      DelFont();
+      char *names[] = {(char*) s1,(char*) s2};
+-     MyFont = load_dat_font("./data/fonts.dat", pal, names);
++     MyFont = load_dat_font("/usr/share/capitan/data/fonts.dat", pal, names);
+      set_palette (pal);
+      font = MyFont;
+ }
+@@ -770,7 +770,7 @@
+      LogWrite ("Cargando %s en %s...", Obj, File);
+      DATAFILE *Objeto;
+      char Fichero[255];
+-     sprintf (Fichero, "./data/%s.dat", File);
++     sprintf (Fichero, "/usr/share/capitan/data/%s.dat", File);
+      Objeto = load_datafile_object (Fichero, Obj);
+      if (Objeto) {
+         Dibuja (x, y, (void*)Objeto->dat, BitMap);
+@@ -784,7 +784,7 @@
+      LogWrite ("Cargando %s en %s...", Obj, File);
+      DATAFILE *Objeto;
+      char Fichero[255];
+-     sprintf (Fichero, "./data/%s.dat", File);
++     sprintf (Fichero, "/usr/share/capitan/data/%s.dat", File);
+      Objeto = load_datafile_object (Fichero, Obj);
+      if (Objeto) {
+         Dibuja2x (x, y, (void*)Objeto->dat);
+@@ -798,7 +798,7 @@
+      LogWrite ("Cargando %s en %s...", Obj, File);
+      DATAFILE *Objeto;
+      char Fichero[255];
+-     sprintf (Fichero, "./data/%s.dat", File);
++     sprintf (Fichero, "/usr/share/capitan/data/%s.dat", File);
+      Objeto = load_datafile_object (Fichero, Obj);
+      if (Objeto) {
+         DibujaCentr ((void*)Objeto->dat,x,y);
+@@ -812,7 +812,7 @@
+      LogWrite ("Cargando %s en %s...", Obj, File);
+      DATAFILE *Objeto;
+      char Fichero[255];
+-     sprintf (Fichero, "./data/%s.dat", File);
++     sprintf (Fichero, "/usr/share/capitan/data/%s.dat", File);
+      Objeto = load_datafile_object (Fichero, Obj);
+      if (Objeto) {
+         DibujaNegro (x - w, y, (void*)Objeto->dat);
+@@ -865,7 +865,7 @@
+ {
+      DATAFILE *Objeto;
+      char Fichero[255];
+-     sprintf (Fichero, "./data/%s.dat", File);
++     sprintf (Fichero, "/usr/share/capitan/data/%s.dat", File);
+      Objeto = load_datafile_object (Fichero, Obj);
+      if (Objeto) {
+         Dibuja_Trans (x, y, (void*)Objeto->dat, Trans, Force);
+@@ -904,7 +904,7 @@
+ {
+      DATAFILE *Objeto;
+      char Fichero[255];
+-     sprintf (Fichero, "./data/%s.dat", File);
++     sprintf (Fichero, "/usr/share/capitan/data/%s.dat", File);
+      Objeto = load_datafile_object (Fichero, Obj);
+      if (Objeto) {
+         Dibuja_TransAdd (x, y, (void*)Objeto->dat, Trans, Force);
+@@ -1704,7 +1704,7 @@
+ 
+ int Hardware::MapLoadInit()
+ {
+-    MapaDat = load_datafile("./data/map.dat");
++    MapaDat = load_datafile("/usr/share/capitan/data/map.dat");
+     if (!MapaDat) {
+        allegro_message ("                   ERROR DE E/S\n\n No se encuentra el archivo MAP.DAT");
+        set_gfx_mode(GFX_TEXT,0,0,0,0);
+diff -Naur capitan-1.0.3.orig/src/messages.cpp capitan-1.0.3/src/messages.cpp
+--- capitan-1.0.3.orig/src/messages.cpp	2009-04-10 13:57:23.000000000 +0300
++++ capitan-1.0.3/src/messages.cpp	2010-11-07 21:04:44.269000034 +0200
+@@ -21,7 +21,7 @@
+     if (!MaxMens)
+ 	   return 0;
+ 
+-    sprintf (FileName, "./lang/lang%i.txt", Lang);
++    sprintf (FileName, "/usr/share/capitan/lang/lang%i.txt", Lang);
+     LogWrite ("Intentando cargar mensajes de %s...", FileName);
+     Source.open (FileName);
+     if (Source.fail()) {
+diff -Naur capitan-1.0.3.orig/src/presentacion.cpp capitan-1.0.3/src/presentacion.cpp
+--- capitan-1.0.3.orig/src/presentacion.cpp	2009-04-10 13:57:23.000000000 +0300
++++ capitan-1.0.3/src/presentacion.cpp	2010-11-07 21:04:44.274000034 +0200
+@@ -40,17 +40,17 @@
+            strcat (Temp, "0");
+         sprintf (Titulo, "%s%i", Temp, n);
+         LogWrite ("Cargando %s...", Titulo);
+-        FrameLogo[n] = load_datafile_object ("./data/bitmaps1.dat",Titulo);
++        FrameLogo[n] = load_datafile_object ("/usr/share/capitan/data/bitmaps1.dat",Titulo);
+         LogWrite ("OK.\n");
+         if (!FrameLogo[n])
+            return 1;
+         }
+     LogWrite ("Cargando DFBM_CEZT_CS...");
+-    CuboSolo = load_datafile_object ("./data/bitmaps1.dat","DFBM_CEZT_CS");
++    CuboSolo = load_datafile_object ("/usr/share/capitan/data/bitmaps1.dat","DFBM_CEZT_CS");
+     LogWrite ("OK.\nCargando DFBM_CEZT_HC...");
+-    HaloCubo = load_datafile_object ("./data/bitmaps1.dat","DFBM_CEZT_HC");
++    HaloCubo = load_datafile_object ("/usr/share/capitan/data/bitmaps1.dat","DFBM_CEZT_HC");
+     LogWrite ("OK.\nCargando DFBM_CEZT_TUB...");
+-    Tuberia = load_datafile_object ("./data/bitmaps1.dat","DFBM_CEZT_TUB");
++    Tuberia = load_datafile_object ("/usr/share/capitan/data/bitmaps1.dat","DFBM_CEZT_TUB");
+     LogWrite ("OK.\n");
+ 
+     if (!HaloCubo || !CuboSolo)
+@@ -145,7 +145,7 @@
+   DATAFILE *Logo;
+ 
+   LogWrite ("Cargando DFBM_CEZRD...");
+-  Logo = load_datafile_object ("./data/bitmaps1.dat","DFBM_CEZRD");
++  Logo = load_datafile_object ("/usr/share/capitan/data/bitmaps1.dat","DFBM_CEZRD");
+   LogWrite ("OK.\n");
+ 
+   Velar = 255;
+@@ -263,7 +263,7 @@
+       if (n < 10)
+         sprintf (Titulo, "DFBM_INTRO_00%i", n);
+       LogWrite ("Cargando %s...", Titulo);
+-      Logo = load_datafile_object ("./data/bitmaps1.dat",Titulo);
++      Logo = load_datafile_object ("/usr/share/capitan/data/bitmaps1.dat",Titulo);
+       if (Logo)
+         LogWrite ("OK.\n");
+       else
+@@ -289,7 +289,7 @@
+             case 4:
+ /*                if (!Suena[DF_SEXPL]) {
+                     LogWrite ("Sample explosión.\n");
+-                    Logo = load_datafile_object ("./data/sfx.dat", "DF_SEXPL");
++                    Logo = load_datafile_object ("/usr/share/capitan/data/sfx.dat", "DF_SEXPL");
+                     play_sample ((SAMPLE*)Logo->dat, Config->VerVolMus(), 127, 1000, 0);
+                     }
+                 Suena[DF_SEXPL] = true;*/
+@@ -432,7 +432,7 @@
+       sprintf (Titulo, "DFBM_ENDCOMIC_00%i", n);
+ 
+       LogWrite ("Cargando %s...", Titulo);
+-      Logo = load_datafile_object ("./data/bitmaps1.dat",Titulo);
++      Logo = load_datafile_object ("/usr/share/capitan/data/bitmaps1.dat",Titulo);
+       LogWrite ("OK.\n");
+ 
+       Ciclos = 0;
+@@ -544,7 +544,7 @@
+     H->cls (0);
+     H->CopyFondo();
+ 
+-    Logo = load_datafile_object ("./data/bitmaps1.dat", "DFBM_PERIODICO");
++    Logo = load_datafile_object ("/usr/share/capitan/data/bitmaps1.dat", "DFBM_PERIODICO");
+ 
+     y = 50;
+ 
+@@ -569,7 +569,7 @@
+ 
+     GiraPeriodico (Logo->dat);
+ 
+-    Text = load_datafile_object ("./data/bitmaps1.dat", "DFBM_PERTXT");
++    Text = load_datafile_object ("/usr/share/capitan/data/bitmaps1.dat", "DFBM_PERTXT");
+ 
+     for (int n = 0; n < 9; n ++) {
+ 
+@@ -581,7 +581,7 @@
+ 
+         unload_datafile_object (Logo);
+         sprintf (Titulo, "DFBM_PERIOD_00%i", (int) (rand() % 3));
+-        Logo = load_datafile_object ("./data/bitmaps1.dat", Titulo);
++        Logo = load_datafile_object ("/usr/share/capitan/data/bitmaps1.dat", Titulo);
+         y = 50;
+ 
+         switch (n) {
+diff -Naur capitan-1.0.3.orig/src/sonido.cpp capitan-1.0.3/src/sonido.cpp
+--- capitan-1.0.3.orig/src/sonido.cpp	2009-04-10 13:57:23.000000000 +0300
++++ capitan-1.0.3/src/sonido.cpp	2010-11-07 21:04:44.274000034 +0200
+@@ -72,7 +72,7 @@
+        alogg_destroy_ogg (ActFx);
+        }
+ 
+-    dfMusic = load_datafile_object("./data/music.dat", Nombre);
++    dfMusic = load_datafile_object("/usr/share/capitan/data/music.dat", Nombre);
+ 
+     if (!dfMusic) {
+        LogWrite ("ERROR: No se ha podido cargar fichero de música: %s\n", Nombre);
+}}}
+
+
+== paths.patch ==
+
+{{{
+--- src/main.h.orig	2007-08-06 21:42:47.000000000 +0300
++++ src/main.h	2010-12-01 14:19:40.164000017 +0200
+@@ -27,9 +27,9 @@
+ #include <iostream>
+ #include <fstream>
+ 
+-#define DATA_PREFIX "data/"
++#define DATA_PREFIX "/usr/share/balloons/"
+ 
+-#define LEVELS DATA_PREFIX "levels/%d.DAT"
++#define LEVELS DATA_PREFIX "/usr/share/balloons/%d.DAT"
+ 
+ 
+ // Tiles
+}}}
+
+
+== redeclipse.sh-paths.diff ==
+
+{{{
+--- redeclipse.sh.orig	2011-02-27 22:30:20.000000000 +0200
++++ redeclipse.sh	2011-04-30 19:06:02.793000080 +0300
+@@ -2,10 +2,10 @@
+ # RE_DATA should refer to the directory in which Red Eclipse data files are placed.
+ #RE_DATA=~/redeclipse
+ #RE_DATA=/usr/local/redeclipse
+-RE_DATA=.
++RE_DATA=/usr/share/redeclipse
+ 
+ # RE_BIN should refer to the directory in which Red Eclipse executable files are placed.
+-RE_BIN=${RE_DATA}/bin
++RE_BIN=/usr/bin
+ 
+ # RE_OPTIONS contains any command line options you would like to start Red Eclipse with.
+ RE_OPTIONS="-r"
+@@ -55,10 +55,10 @@
+     MACHINE_SUFFIX=""
+ fi
+ 
+-if [ -x ${RE_BIN}/reclient${SYSTEM_SUFFIX}${MACHINE_SUFFIX} ]
++if [ -x ${RE_BIN}/reclient ]
+ then
+     cd ${RE_DATA}
+-    exec ${RE_BIN}/reclient${SYSTEM_SUFFIX}${MACHINE_SUFFIX} ${RE_OPTIONS} "$@"
++    exec ${RE_BIN}/reclient ${RE_OPTIONS} "$@"
+ else
+     echo "Your platform does not have a pre-compiled Red Eclipse client."
+     echo -n "Would you like to build one now? [Yn] "
+@@ -75,4 +75,3 @@
+         exit 1
+     fi
+ fi
+-
+}}}
