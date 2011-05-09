@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Construo
+GenericName=Bridge Builder
+GenericName[tr]=Köprü Yapma
+Comment=2D construction program
+Comment[tr]=2D inşa uygulaması
+Icon=construo
+Exec=construo.glut
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;Simulation;

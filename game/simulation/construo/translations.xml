@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>construo</Name>
+        <Summary xml:lang="tr">2B inşaat oyunu</Summary>
+        <Description xml:lang="tr">Construo, yaylar, bağlantı parçaları ve onlara uygulayabileceğiniz fiziksel kuvvetlerden oluşan basit bir 2B inşaat programıdır (henüz tam bir oyun sayılmaz). Binalar, köprüler, kuleler, uzay mekikleri vb. inşa edebilir, yıkılmalarına izin verebilir ve nasıl düşüp parçalandıklarını görebilirsiniz.</Description>
+    </Source>
+</PISI>
