@@ -1,0 +1,94 @@
+diff -Naur construo-0.2.2.orig/configure.ac construo-0.2.2/configure.ac
+--- construo-0.2.2.orig/configure.ac	2003-07-29 00:13:59.000000000 +0300
++++ construo-0.2.2/configure.ac	2010-12-11 06:23:50.292000087 +0200
+@@ -69,9 +69,9 @@
+                 CXXFLAGS="$CXXFLAGS -Icompatlib/"])
+ 
+ dnl Checking for the install prefix and then use it to define PINGUS_DATADIR
+-dnl PINGUS_EXPAND_DIR(pingus_datadir, "$datadir/games/$PACKAGE")
++dnl PINGUS_EXPAND_DIR(pingus_datadir, "$datadir/$PACKAGE")
+ dnl AC_DEFINE_UNQUOTED(PINGUS_DATADIR, "$pingus_datadir", [Location of Pingus data files])
+-dnl AC_DEFINE(CONSTRUO_DATADIR, $datadir/games/$PACKAGE, [Location of Construo datafiles])
++dnl AC_DEFINE(CONSTRUO_DATADIR, $datadir/$PACKAGE, [Location of Construo datafiles])
+ AC_DEFINE_DIR(DATADIR, datadir, [Location of datafiles])
+ 
+ AC_CHECK_LIB(z, gzopen)
+diff -Naur construo-0.2.2.orig/construo.hxx construo-0.2.2/construo.hxx
+--- construo-0.2.2.orig/construo.hxx	2003-07-26 21:47:47.000000000 +0300
++++ construo-0.2.2/construo.hxx	2010-12-11 06:25:19.529000088 +0200
+@@ -22,7 +22,7 @@
+ 
+ #include <config.h>
+ 
+-#define CONSTRUO_DATADIR DATADIR"/games/"PACKAGE
++#define CONSTRUO_DATADIR DATADIR"/"PACKAGE
+ 
+ class SystemContext;
+ class InputContext;
+diff -Naur construo-0.2.2.orig/examples/Makefile.am construo-0.2.2/examples/Makefile.am
+--- construo-0.2.2.orig/examples/Makefile.am	2003-07-26 21:47:49.000000000 +0300
++++ construo-0.2.2/examples/Makefile.am	2010-12-11 06:24:09.324000088 +0200
+@@ -15,7 +15,7 @@
+ ##  along with this program; if not, write to the Free Software
+ ##  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+ 
+-pkgdatadir = $(datadir)/games/@PACKAGE@/examples
++pkgdatadir = $(datadir)/@PACKAGE@/examples
+ 
+ nobase_dist_pkgdata_DATA = *.construo choh/*.construo choh2/*.construo
+ 
+diff -Naur construo-0.2.2.orig/examples/Makefile.in construo-0.2.2/examples/Makefile.in
+--- construo-0.2.2.orig/examples/Makefile.in	2003-07-29 00:55:21.000000000 +0300
++++ construo-0.2.2/examples/Makefile.in	2010-12-11 06:24:27.069000086 +0200
+@@ -35,7 +35,7 @@
+ PRE_UNINSTALL = :
+ POST_UNINSTALL = :
+ 
+-pkgdatadir = $(datadir)/games/@PACKAGE@/examples
++pkgdatadir = $(datadir)/@PACKAGE@/examples
+ ACLOCAL = @ACLOCAL@
+ AMDEP_FALSE = @AMDEP_FALSE@
+ AMDEP_TRUE = @AMDEP_TRUE@
+diff -Naur construo-0.2.2.orig/Makefile.am construo-0.2.2/Makefile.am
+--- construo-0.2.2.orig/Makefile.am	2003-07-28 13:41:13.000000000 +0300
++++ construo-0.2.2/Makefile.am	2010-12-11 06:26:24.050000087 +0200
+@@ -17,7 +17,7 @@
+ 
+ SUBDIRS = examples
+ 
+-bindir=$(prefix)/games
++bindir=$(prefix)/bin
+ 
+ bin_PROGRAMS = @ConstruoTargets@
+ 
+@@ -159,7 +159,7 @@
+ construo_freeglut_LDADD   = libconstruo.a @freeglut_LIBS@
+ construo_freeglut_CXXFLAGS = -DUSE_GLUT_DISPLAY -DHAVE_FREEGLUT
+ 
+-# pkgdatadir = $(datadir)/games/@PACKAGE@
++# pkgdatadir = $(datadir)/@PACKAGE@
+ EXTRA_DIST = TODO  INSTALL.configure xml2sexpr.sh compatlib/sstream
+ 
+ # EOF #
+\ Dosya sonunda yenisatır yok.
+diff -Naur construo-0.2.2.orig/Makefile.in construo-0.2.2/Makefile.in
+--- construo-0.2.2.orig/Makefile.in	2003-07-29 00:54:51.000000000 +0300
++++ construo-0.2.2/Makefile.in	2010-12-11 06:26:44.805000087 +0200
+@@ -99,7 +99,7 @@
+ am__leading_dot = @am__leading_dot@
+ am__quote = @am__quote@
+ 
+-bindir = $(prefix)/games
++bindir = $(prefix)/bin
+ build_alias = @build_alias@
+ datadir = @datadir@
+ exec_prefix = @exec_prefix@
+@@ -266,7 +266,7 @@
+ construo_freeglut_LDADD = libconstruo.a @freeglut_LIBS@
+ construo_freeglut_CXXFLAGS = -DUSE_GLUT_DISPLAY -DHAVE_FREEGLUT
+ 
+-# pkgdatadir = $(datadir)/games/@PACKAGE@
++# pkgdatadir = $(datadir)/@PACKAGE@
+ EXTRA_DIST = TODO  INSTALL.configure xml2sexpr.sh compatlib/sstream
+ subdir = .
+ ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
