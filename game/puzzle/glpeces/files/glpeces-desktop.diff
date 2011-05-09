@@ -1,0 +1,28 @@
+--- menu/glpeces.desktop.orig	2009-11-20 19:29:12.000000000 +0200
++++ menu/glpeces.desktop	2011-05-10 01:12:34.502000084 +0300
+@@ -1,18 +1,13 @@
+ [Desktop Entry]
++Type=Application
++Version=1.0
++Encoding=UTF-8
++Name=GLPeces
++GenericName=GLPeces
+ Comment=Play with 33 tangram and more 4600 figures
+ Comment[ca]=Jugau amb 33 tangrams i més de 4600 figures
+-Exec='/usr/games/glpeces'
+-GenericName=GLPeces
+-GenericName[ca]=GLPeces
+-Icon=/usr/share/pixmaps/glpeces.xpm
+-MimeType=
+-Name=GLPeces
+-Name[ca]=GLPeces
+-Path=
++Exec=glpeces
++Icon=glpeces
+ StartupNotify=true
+ Terminal=false
+-Type=Application
+-X-DCOP-ServiceType=
+-X-KDE-SubstituteUID=false
+-X-KDE-Username=
+ Categories=Game;LogicGame;
