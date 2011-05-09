@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=dangen
+GenericName=Shoot 'Em Up Game
+GenericName[tr]=Hepsini Vur Oyunu
+Comment=A shoot 'em up game
+Comment[tr]=Bir hepsini vur oyunu
+Icon=dangen
+Exec=dangen
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;

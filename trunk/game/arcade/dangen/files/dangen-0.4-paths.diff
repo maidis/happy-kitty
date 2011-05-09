@@ -1,0 +1,75 @@
+diff -Naur dangen-0.4.orig/INSTALL dangen-0.4/INSTALL
+--- dangen-0.4.orig/INSTALL	2005-08-11 20:07:42.000000000 +0300
++++ dangen-0.4/INSTALL	2011-05-10 00:04:05.802000084 +0300
+@@ -52,14 +52,14 @@
+ 
+ --datadir
+ The image files (spqr/image/*.png) will be installed in its
+-subdirectory games/dangen/ .
++subdirectory dangen/ .
+ 
+ --mandir
+ The manpage will be installed in its subdirectory man6/ .
+ 
+ 
+ The FHS way will be something like:
+-./configure --prefix=/usr --bindir=/usr/games \
++./configure --prefix=/usr --bindir=/usr \
+   --mandir=/usr/share/man
+ 
+ If you have no root privilege and want to install dangen under
+diff -Naur dangen-0.4.orig/spqr/image/Makefile.am dangen-0.4/spqr/image/Makefile.am
+--- dangen-0.4.orig/spqr/image/Makefile.am	2005-08-14 04:52:49.000000000 +0300
++++ dangen-0.4/spqr/image/Makefile.am	2011-05-10 00:03:39.278000085 +0300
+@@ -7,11 +7,11 @@
+   font-terminus.png
+ 
+ install-data-local:
+-	$(mkinstalldirs) $(DESTDIR)$(datadir)/games/dangen/image/
++	$(mkinstalldirs) $(DESTDIR)$(datadir)/dangen/image/
+ 	$(INSTALL_DATA) $(top_srcdir)/spqr/image/font.png \
+-  $(DESTDIR)$(datadir)/games/dangen/image/
++  $(DESTDIR)$(datadir)/dangen/image/
+ 
+ uninstall-local:
+-	-rm -f $(DESTDIR)$(datadir)/games/dangen/image/font.png
+-	-rmdir $(DESTDIR)$(datadir)/games/dangen/image/
+-	-rmdir $(DESTDIR)$(datadir)/games/dangen/
++	-rm -f $(DESTDIR)$(datadir)/dangen/image/font.png
++	-rmdir $(DESTDIR)$(datadir)/dangen/image/
++	-rmdir $(DESTDIR)$(datadir)/dangen/
+diff -Naur dangen-0.4.orig/spqr/image/Makefile.in dangen-0.4/spqr/image/Makefile.in
+--- dangen-0.4.orig/spqr/image/Makefile.in	2009-11-10 20:11:23.000000000 +0200
++++ dangen-0.4/spqr/image/Makefile.in	2011-05-10 00:02:56.004000084 +0300
+@@ -264,14 +264,14 @@
+ 
+ 
+ install-data-local:
+-	$(mkinstalldirs) $(DESTDIR)$(datadir)/games/dangen/image/
++	$(mkinstalldirs) $(DESTDIR)$(datadir)/dangen/image/
+ 	$(INSTALL_DATA) $(top_srcdir)/spqr/image/font.png \
+-  $(DESTDIR)$(datadir)/games/dangen/image/
++  $(DESTDIR)$(datadir)/dangen/image/
+ 
+ uninstall-local:
+-	-rm -f $(DESTDIR)$(datadir)/games/dangen/image/font.png
+-	-rmdir $(DESTDIR)$(datadir)/games/dangen/image/
+-	-rmdir $(DESTDIR)$(datadir)/games/dangen/
++	-rm -f $(DESTDIR)$(datadir)/dangen/image/font.png
++	-rmdir $(DESTDIR)$(datadir)/dangen/image/
++	-rmdir $(DESTDIR)$(datadir)/dangen/
+ # Tell versions [3.59,3.63) of GNU make to not export all variables.
+ # Otherwise a system limit (for SysV at least) may be exceeded.
+ .NOEXPORT:
+diff -Naur dangen-0.4.orig/util.c dangen-0.4/util.c
+--- dangen-0.4.orig/util.c	2005-08-11 20:07:46.000000000 +0300
++++ dangen-0.4/util.c	2011-05-10 00:02:14.521000085 +0300
+@@ -27,7 +27,7 @@
+ #ifdef NOT_HAVE_POSIX
+ #define FONTDIR "spqr/image/"
+ #else /* not NOT_HAVE_POSIX */
+-#define FONTDIR DATADIR "/games/dangen/image/"
++#define FONTDIR DATADIR "/dangen/image/"
+ #endif
+ 
+ static tenm_image *font = NULL;
