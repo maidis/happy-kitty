@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>glpeces</Name>
+        <Summary xml:lang="tr">Bir tangram oyunu</Summary>
+        <Description xml:lang="tr">Peces, Çin kökenli Tangram oyununun özgür bir sürümüdür. Oyundaki temel amaç üçgen, kare, dikdörtgen gibi şekilleri bir araya getirerek farklı figürler elde etmektir. Basit ama iddialı oyun, 33 oyun kipi ve 4 farklı zorluk seviyesi sunmaktadır.</Description>
+    </Source>
+</PISI>

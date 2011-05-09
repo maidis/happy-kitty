@@ -1,0 +1,112 @@
+diff -Naur glpeces-4.1.orig/comuns/constants.h glpeces-4.1/comuns/constants.h
+--- glpeces-4.1.orig/comuns/constants.h	2011-03-20 20:36:02.000000000 +0200
++++ glpeces-4.1/comuns/constants.h	2011-05-10 00:57:40.733000084 +0300
+@@ -437,9 +437,9 @@
+ /*
+   Directoris
+  */
+-const QString DIRECTORIS_LINUX="/usr/share/games/glpeces";
+-const QString DIRECTORIS_LINUX_PROGRAMA="/games";
+-const QString DIRECTORIS_LINUX_AUXILIARS="/share/games/glpeces";
++const QString DIRECTORIS_LINUX="/usr/share/glpeces";
++const QString DIRECTORIS_LINUX_PROGRAMA="/bin";
++const QString DIRECTORIS_LINUX_AUXILIARS="/share/glpeces";
+ 
+ const QString DIR_HELP="help";
+ 
+diff -Naur glpeces-4.1.orig/glpeces.pro glpeces-4.1/glpeces.pro
+--- glpeces-4.1.orig/glpeces.pro	2011-03-21 16:49:23.000000000 +0200
++++ glpeces-4.1/glpeces.pro	2011-05-10 00:59:09.281000085 +0300
+@@ -43,52 +43,52 @@
+ RESOURCES += resources.qrc
+ unix:!macx { 
+     isEmpty(PREFIX):PREFIX = /usr
+-    target.path = $$PREFIX/games/
++    target.path = $$PREFIX/bin/
+     man.path = $$PREFIX/share/man/man6/
+     man.files = menu/glpeces.6.gz
+     
+     # això només que garantir que s'eliminen els directoris amb uninstall
+-    help.path = $$PREFIX/share/games/glpeces/help/
++    help.path = $$PREFIX/share/glpeces/help/
+     help.files = help
+     
+-    icons.path= $$PREFIX/share/games/glpeces/images
++    icons.path= $$PREFIX/share/glpeces/images
+     icons.files=images/*
+ 
+     # mandir.path=$$PREFIX/share/man/
+     # mandir.files=build/*
+-    help_img.path = $$PREFIX/share/games/glpeces/help/imatges/
++    help_img.path = $$PREFIX/share/glpeces/help/imatges/
+     help_img.files = help/imatges/*
+-    help_ca.path = $$PREFIX/share/games/glpeces/help/ca/html/
++    help_ca.path = $$PREFIX/share/glpeces/help/ca/html/
+     help_ca.files = help/ca/html/*
+-    help_ca_index.path = $$PREFIX/share/games/glpeces/help/ca/
++    help_ca_index.path = $$PREFIX/share/glpeces/help/ca/
+     help_ca_index.files = help/ca/index.html
+-    help_es_index.path = $$PREFIX/share/games/glpeces/help/es/
++    help_es_index.path = $$PREFIX/share/glpeces/help/es/
+     help_es_index.files = help/es/index.html
+-    help_es.path = $$PREFIX/share/games/glpeces/help/es/html/
++    help_es.path = $$PREFIX/share/glpeces/help/es/html/
+     help_es.files = help/es/html/*
+-    help_it_index.path = $$PREFIX/share/games/glpeces/help/it/
++    help_it_index.path = $$PREFIX/share/glpeces/help/it/
+     help_it_index.files = help/it/index.html
+-    help_it.path = $$PREFIX/share/games/glpeces/help/it/html/
++    help_it.path = $$PREFIX/share/glpeces/help/it/html/
+     help_it.files = help/it/html/*
+-    help_fr_index.path = $$PREFIX/share/games/glpeces/help/fr/
++    help_fr_index.path = $$PREFIX/share/glpeces/help/fr/
+     help_fr_index.files = help/fr/index.html
+-    help_fr.path = $$PREFIX/share/games/glpeces/help/fr/html/
++    help_fr.path = $$PREFIX/share/glpeces/help/fr/html/
+     help_fr.files = help/fr/html/*
+-    help_en_index.path = $$PREFIX/share/games/glpeces/help/en/
++    help_en_index.path = $$PREFIX/share/glpeces/help/en/
+     help_en_index.files = help/en/index.html
+-    help_en.path = $$PREFIX/share/games/glpeces/help/en/html/
++    help_en.path = $$PREFIX/share/glpeces/help/en/html/
+     help_en.files = help/en/html/*
+-    help_pt_index.path = $$PREFIX/share/games/glpeces/help/pt/
++    help_pt_index.path = $$PREFIX/share/glpeces/help/pt/
+     help_pt_index.files = help/pt/index.html
+-    help_pt.path = $$PREFIX/share/games/glpeces/help/pt/html/
++    help_pt.path = $$PREFIX/share/glpeces/help/pt/html/
+     help_pt.files = help/pt/html/*
+-    help_gl_index.path = $$PREFIX/share/games/glpeces/help/gl/
++    help_gl_index.path = $$PREFIX/share/glpeces/help/gl/
+     help_gl_index.files = help/gl/index.html
+-    help_gl.path = $$PREFIX/share/games/glpeces/help/gl/html/
++    help_gl.path = $$PREFIX/share/glpeces/help/gl/html/
+     help_gl.files = help/gl/html/*
+-    figures.path = $$PREFIX/share/games/glpeces/figures/
++    figures.path = $$PREFIX/share/glpeces/figures/
+     figures.files = figures/*
+-    locales.path = $$PREFIX/share/games/glpeces/locales/
++    locales.path = $$PREFIX/share/glpeces/locales/
+     locales.files = locales/*
+     
+     # menu.path = $$PREFIX/share/menu/
+@@ -98,7 +98,7 @@
+     pixmaps.path = $$PREFIX/share/pixmaps/
+     pixmaps.files = ./glpeces.xpm
+     
+-    # icon.path = $$PREFIX/share/games/glpeces/
++    # icon.path = $$PREFIX/share/glpeces/
+     # icon.files = ./glpeces.xpm
+     INSTALLS += help_ca \
+         help_ca_index \
+diff -Naur glpeces-4.1.orig/menu/glpeces glpeces-4.1/menu/glpeces
+--- glpeces-4.1.orig/menu/glpeces	2009-10-22 20:29:42.000000000 +0300
++++ glpeces-4.1/menu/glpeces	2011-05-10 00:57:19.521000085 +0300
+@@ -4,6 +4,6 @@
+    title="Peces" \
+    longtitle="Peces (Tangram game)" \
+    description="Play with 33 varieties of tangram and more than 4600 figures" \
+-   command="/usr/games/glpeces" \
++   command="/usr/glpeces" \
+    icon="/usr/share/pixmaps/glpeces.xpm"
+ 

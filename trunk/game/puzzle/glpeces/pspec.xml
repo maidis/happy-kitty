@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>glpeces</Name>
+        <Homepage>http://kde-apps.org/content/show.php/Peces+(Tangram+game)?content=123490</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>glpeces</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A tangram game</Summary>
+        <Description>Peces is an open source game based on the Chinese game called Tangram. The main objective of the game is to create different figures by putting together pieces like squares, triangles, rectangles, and others. This simple yet challenging game has at least 33 gaming modes and 4 different difficulty levels.</Description>
+        <Archive sha1sum="be2b05b2f44ad8a7c2302db3d0c7d3a7a07762dc" type="targz">mirrors://sourceforge/pecesjocdetangr/version%204.1%20%28April%2C%202011%29/glpeces-4.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>qt-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">glpeces-4.1-paths.diff</Patch>
+            <Patch>glpeces-desktop.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>glpeces</Name>
+        <RuntimeDependencies>
+            <Dependency>qt</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/glpeces</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-01-21</Date>
+            <Version>4.1</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
