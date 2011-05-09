@@ -530,6 +530,62 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>dangen</Name>
+            <Homepage>http://www.interq.or.jp/libra/oohara/dangen</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <License>Artistic-2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A shoot &apos;em up game</Summary>
+            <Summary xml:lang="tr">Bir hepsini vur oyunu</Summary>
+            <Description xml:lang="en">dangen is a shoot &apos;em up game that attach importance to accuracy of shooting. With the combination of the cursor key and the shot button, you can shoot at your side or even at your back. Get the bonus point by hitting the enemy without a miss.</Description>
+            <Description xml:lang="tr">dangen, nişan hassasiyetinin önemli olduğu bir hepsini vur oyunudur. Yön tuşları ve atış tuşunun kombinasyonuyla, kendi tarafınızdan gelen düşmanları vurabileceğiniz gibi arkanızdaki düşmanları da vurabilirsiniz. Tek bir düşmanı bile ıskalamayarak bonus kazanabilirsiniz.</Description>
+            <Icon>dangen</Icon>
+            <Archive type="targz" sha1sum="1a79b6b3682c40b9c803efc9f6b91887a726181e">http://www.interq.or.jp/libra/oohara/dangen/dangen-0.4.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">dangen-0.4-paths.diff</Patch>
+            </Patches>
+            <SourceURI>game/arcade/dangen/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>dangen</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-image</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/dangen</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/dangen.desktop" permission="0644" owner="root">dangen.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/dangen.png" permission="0644" owner="root">dangen.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-11-28</Date>
+                <Version>0.4</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>apricots</Name>
             <Homepage>http://www.fishies.org.uk/apricots.html</Homepage>
             <Packager>
@@ -2573,6 +2629,57 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>glpeces</Name>
+            <Homepage>http://kde-apps.org/content/show.php/Peces+(Tangram+game)?content=123490</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A tangram game</Summary>
+            <Summary xml:lang="tr">Bir tangram oyunu</Summary>
+            <Description xml:lang="en">Peces is an open source game based on the Chinese game called Tangram. The main objective of the game is to create different figures by putting together pieces like squares, triangles, rectangles, and others. This simple yet challenging game has at least 33 gaming modes and 4 different difficulty levels.</Description>
+            <Description xml:lang="tr">Peces, Çin kökenli Tangram oyununun özgür bir sürümüdür. Oyundaki temel amaç üçgen, kare, dikdörtgen gibi şekilleri bir araya getirerek farklı figürler elde etmektir. Basit ama iddialı oyun, 33 oyun kipi ve 4 farklı zorluk seviyesi sunmaktadır.</Description>
+            <Icon>glpeces</Icon>
+            <Archive type="targz" sha1sum="be2b05b2f44ad8a7c2302db3d0c7d3a7a07762dc">mirrors://sourceforge/pecesjocdetangr/version%204.1%20%28April%2C%202011%29/glpeces-4.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>qt-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">glpeces-4.1-paths.diff</Patch>
+                <Patch>glpeces-desktop.diff</Patch>
+            </Patches>
+            <SourceURI>game/puzzle/glpeces/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>glpeces</Name>
+            <RuntimeDependencies>
+                <Dependency>qt</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/glpeces</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-01-21</Date>
+                <Version>4.1</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>balloons</Name>
             <Homepage>http://sourceforge.net/projects/balloons-ng</Homepage>
             <Packager>
@@ -3052,6 +3159,64 @@
             <Update release="1">
                 <Date>2010-12-01</Date>
                 <Version>2003.03.14</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>construo</Name>
+            <Homepage>http://www.nongnu.org/construo</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.simulation</PartOf>
+            <Summary xml:lang="en">2D construction game</Summary>
+            <Summary xml:lang="tr">2B inşaat oyunu</Summary>
+            <Description xml:lang="en">Construo is a simple 2D construction programm (it is currently not a real game) for objects which consist of rods and springs and let them react on physical forces. You can currently construct buildings and objects like bridges, towers, spaceshuttles, etc. and you let them fall to ground and see seem smash and break.</Description>
+            <Description xml:lang="tr">Construo, yaylar, bağlantı parçaları ve onlara uygulayabileceğiniz fiziksel kuvvetlerden oluşan basit bir 2B inşaat programıdır (henüz tam bir oyun sayılmaz). Binalar, köprüler, kuleler, uzay mekikleri vb. inşa edebilir, yıkılmalarına izin verebilir ve nasıl düşüp parçalandıklarını görebilirsiniz.</Description>
+            <Icon>construo</Icon>
+            <Archive type="targz" sha1sum="b0a3c1ae2a25530a70d7a405a1c48bd386a1999a">http://savannah.nongnu.org/download/construo/construo-0.2.2.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>freeglut-devel</Dependency>
+                <Dependency>libXxf86vm-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">construo-0.2.2-yollari-tastan.patch</Patch>
+                <Patch>construo-0.2.2-gcc43.patch</Patch>
+                <Patch>construo-0.2.2-lGLU.patch</Patch>
+            </Patches>
+            <SourceURI>game/simulation/construo/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>construo</Name>
+            <RuntimeDependencies>
+                <Dependency>freeglut</Dependency>
+                <Dependency>libXxf86vm</Dependency>
+                <Dependency>mesa</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/construo</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/construo.desktop" permission="0644" owner="root">construo.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/construo.png" permission="0644" owner="root">construo.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-12-11</Date>
+                <Version>0.2.2</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
