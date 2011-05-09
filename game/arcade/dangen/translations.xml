@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>dangen</Name>
+        <Summary xml:lang="tr">Bir hepsini vur oyunu</Summary>
+        <Description xml:lang="tr">dangen, nişan hassasiyetinin önemli olduğu bir hepsini vur oyunudur. Yön tuşları ve atış tuşunun kombinasyonuyla, kendi tarafınızdan gelen düşmanları vurabileceğiniz gibi arkanızdaki düşmanları da vurabilirsiniz. Tek bir düşmanı bile ıskalamayarak bonus kazanabilirsiniz.</Description>
+    </Source>
+</PISI>

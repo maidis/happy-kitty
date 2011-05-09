@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>dangen</Name>
+        <Homepage>http://www.interq.or.jp/libra/oohara/dangen</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>Artistic-2</License>
+        <Icon>dangen</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A shoot 'em up game</Summary>
+        <Description>dangen is a shoot 'em up game that attach importance to accuracy of shooting. With the combination of the cursor key and the shot button, you can shoot at your side or even at your back. Get the bonus point by hitting the enemy without a miss.</Description>
+        <Archive sha1sum="1a79b6b3682c40b9c803efc9f6b91887a726181e" type="targz">http://www.interq.or.jp/libra/oohara/dangen/dangen-0.4.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">dangen-0.4-paths.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>dangen</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-image</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/dangen</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/dangen.desktop">dangen.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/dangen.png">dangen.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-11-28</Date>
+            <Version>0.4</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
