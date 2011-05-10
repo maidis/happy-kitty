@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gorillas</Name>
+        <Homepage>http://inventwithpython.com/blog/2010/06/25/gorilla-py-a-remake-of-gorilla-bas</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>as-is</License>
+        <Icon>gorillas</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Python remake of Gorilla.BAS</Summary>
+        <Description>Gorillas is a Python remake of Gorilla.BAS game that came with Qbasic, where gorillas on top of buildings threw exploding bananas at each other, using the Pygame game engine, and is fairly heavily commented so you can explore the source.</Description>
+        <Archive sha1sum="b51996bb06ace7ab581229ae7ce8202659c5a3df" type="binary">http://inventwithpython.com/gorilla.py</Archive>
+    </Source>
+
+    <Package>
+        <Name>gorillas</Name>
+        <RuntimeDependencies>
+            <Dependency>pygame</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/gorillas.desktop">gorillas.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/gorillas.png">gorillas.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-12-28</Date>
+            <Version>0.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

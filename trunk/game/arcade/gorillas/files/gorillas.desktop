@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Gorillas
+GenericName=Python Gorillas
+GenericName[tr]=Python Gorillas
+Comment=Python remake of Gorilla.BAS
+Comment[tr]=Gorilla.BAS'ın Python yenidenyapımı
+Icon=gorillas
+Exec=python /usr/bin/gorilla.py
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;
