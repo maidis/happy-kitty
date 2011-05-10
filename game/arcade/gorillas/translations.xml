@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>gorillas</Name>
+        <Summary xml:lang="tr">Gorilla.BAS'ın Python yenidenyapımı</Summary>
+        <Description xml:lang="tr">Gorillas, gorillerin binaların tepesinden birbirlerine muz fırlattığı, Qbasic oyunu Gorilla.BAS'ın Python ve Pygame ile yazılmış ve kaynak koda pek çok açıklama eklenerek programlamayı öğrenmek isteyenlerin de yararlanabileceği bir yenidenyapımdır.</Description>
+    </Source>
+</PISI>
