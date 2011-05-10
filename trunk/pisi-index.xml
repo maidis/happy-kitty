@@ -871,6 +871,50 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>gorillas</Name>
+            <Homepage>http://inventwithpython.com/blog/2010/06/25/gorilla-py-a-remake-of-gorilla-bas</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>as-is</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">Python remake of Gorilla.BAS</Summary>
+            <Summary xml:lang="tr">Gorilla.BAS&apos;ın Python yenidenyapımı</Summary>
+            <Description xml:lang="en">Gorillas is a Python remake of Gorilla.BAS game that came with Qbasic, where gorillas on top of buildings threw exploding bananas at each other, using the Pygame game engine, and is fairly heavily commented so you can explore the source.</Description>
+            <Description xml:lang="tr">Gorillas, gorillerin binaların tepesinden birbirlerine muz fırlattığı, Qbasic oyunu Gorilla.BAS&apos;ın Python ve Pygame ile yazılmış ve kaynak koda pek çok açıklama eklenerek programlamayı öğrenmek isteyenlerin de yararlanabileceği bir yenidenyapımdır.</Description>
+            <Icon>gorillas</Icon>
+            <Archive type="binary" sha1sum="b51996bb06ace7ab581229ae7ce8202659c5a3df">http://inventwithpython.com/gorilla.py</Archive>
+            <SourceURI>game/arcade/gorillas/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gorillas</Name>
+            <RuntimeDependencies>
+                <Dependency>pygame</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/gorillas.desktop" permission="0644" owner="root">gorillas.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/gorillas.png" permission="0644" owner="root">gorillas.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-12-28</Date>
+                <Version>0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>ballway</Name>
             <Homepage>http://qt-apps.org/content/show.php/Ballway?content=133040</Homepage>
             <Packager>
@@ -2475,6 +2519,109 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>madbomber</Name>
+            <Homepage>http://www.newbreedsoftware.com/madbomber</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.action</PartOf>
+            <Summary xml:lang="en">A clone of the classic Atari 2600 game Kaboom</Summary>
+            <Summary xml:lang="tr">Klasik Atari 2600 oyunu Kaboom&apos;un bir klonu</Summary>
+            <Description xml:lang="en">The Mad Bomber is loose in the city and he&apos;s dropping bombs everywhere! It&apos;s your job to catch them before they hit the ground and explode. Luckily, you have a set of trusty buckets to extinguish them with.</Description>
+            <Description xml:lang="tr">Mad Bomber, şehirde sırra kıdem bastı ve her yere bomba atıyor. Kabul ederseniz göreviniz, bombaları yere düşüp patlamadan yakalamak. Şanslısınız ki, Bombacı Mülayim ile deneyiminiz ve bombaları etkisiz hale getirecek birkaç kovanız var.</Description>
+            <Icon>madbomber</Icon>
+            <Archive type="targz" sha1sum="9cee75f89923f6954a95ff2b622b4461353da2a8">ftp://ftp.tuxpaint.org/unix/x/madbomber/src/madbomber-0.2.5.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>bombaci-mulayim.patch</Patch>
+            </Patches>
+            <SourceURI>game/action/madbomber/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>madbomber</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/madbomber</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/madbomber.desktop" permission="0644" owner="root">madbomber.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/madbomber.png" permission="0644" owner="root">madbomber.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-12-01</Date>
+                <Version>0.2.5</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>hexglass</Name>
+            <Homepage>http://code.google.com/p/hexglass</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">Tetris-like puzzle game</Summary>
+            <Summary xml:lang="tr">Tetris benzeri bulmaca oyunu</Summary>
+            <Description xml:lang="en">The HexGlass is a Tetris-like puzzle game. Ten different types of blocks continuously fall from above and you must arrange them to make horizontal rows of hexagonal bricks. Completing any row causes those hexagonal blocks to disappear and the rest above move downwards. The blocks above gradually fall faster and the game is over when the screen fills up and blocks can no longer fall from the top.</Description>
+            <Description xml:lang="tr">HexGlass, Tetris benzeri bir bulmaca oyunudur. 10 farklı blok türü devamlı olarak yukarıdan düşerken sizin yapmanız gereken de onları yatay sıralar haline getirmek. Bir yatay sırayı tamamlamak bu sıranın kaybolmasını ve geri kalanların aşağı inmesini sağlar. Bunlar olurken de yukarıdan gelen bloklar git gide daha hızlı gelmeye başlar, tüm ekran yeni bir blok düşemeyecek kadar dolduğundaysa oyun biter.</Description>
+            <Icon>hexglass</Icon>
+            <Archive type="targz" sha1sum="8ba0ba906ccd8b69931813f21cac28bfa2af2749">http://hexglass.googlecode.com/files/hexglass-1.2.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>qt-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/puzzle/hexglass/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>hexglass</Name>
+            <RuntimeDependencies>
+                <Dependency>qt</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/hexglass.desktop" permission="0644" owner="root">hexglass.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-01-15</Date>
+                <Version>1.2.1</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>colorcode</Name>
             <Homepage>http://colorcode.laebisch.com</Homepage>
             <Packager>
@@ -2680,6 +2827,53 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>klikit</Name>
+            <Homepage>http://qt-apps.org/content/show.php/Klikit?content=102867</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">Classical brain twister 15 puzzle</Summary>
+            <Summary xml:lang="tr">Klasik zor sorun 15 bulmacası</Summary>
+            <Description xml:lang="en">Klikit is a classical brain twister 15 puzzle.</Description>
+            <Description xml:lang="tr">Klikit, bir klasik zor sorun 15 bulmacası oyunudur.</Description>
+            <Icon>klikit</Icon>
+            <Archive type="targz" sha1sum="38695168cb3bccd3fafd8b3c32dd61d234abca65">http://simpleqtgames.googlecode.com/files/Klikit-1.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>qt-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/puzzle/klikit/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>klikit</Name>
+            <RuntimeDependencies>
+                <Dependency>qt</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/klikit.desktop" permission="0644" owner="root">klikit.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-01-15</Date>
+                <Version>1.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>balloons</Name>
             <Homepage>http://sourceforge.net/projects/balloons-ng</Homepage>
             <Packager>
@@ -2731,6 +2925,64 @@
             <Update release="1">
                 <Date>2010-12-01</Date>
                 <Version>0.1.8.3</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gnurobbo</Name>
+            <Homepage>http://gnurobbo.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A port of logic game, Robbo</Summary>
+            <Summary xml:lang="tr">Mantık oyunu Robbo&apos;nun bir portu</Summary>
+            <Description xml:lang="en">GNU Robbo is a reimplementation of Janusz Pelc&apos;s Robbo  for the Atari XE/XL which was distributed by LK Avalon in 1989.</Description>
+            <Description xml:lang="tr">GNU Robbo, Janusz Pelc&apos;in Atari XE/XL için geliştirdiği ve 1989&apos;da LK Avalon tarafından dağıtılan Robbo&apos;nun bir uyarlamasıdır.</Description>
+            <Icon>gnurobbo</Icon>
+            <Archive type="targz" sha1sum="a4dafc97814d9093867dc18f879d3189faa8d13b">mirrors://sourceforge/gnurobbo/gnurobbo/gnurobbo%200.66/gnurobbo-0.66-source.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-ttf-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">somegamesneed.patch</Patch>
+            </Patches>
+            <SourceURI>game/puzzle/gnurobbo/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnurobbo</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>sdl-ttf</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/gnurobbo</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/gnurobbo.desktop" permission="0644" owner="root">gnurobbo.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/gnurobbo.png" permission="0644" owner="root">gnurobbo.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-11-17</Date>
+                <Version>0.66</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
