@@ -21,7 +21,7 @@ def install():
 
     pisitools.dobin("Klikit")
 
-    pisitools.insinto("/usr/share/pixmaps", "images/board.png", "klikit.png")
+    pisitools.insinto("/usr/share/pixmaps", "images/main.png", "klikit.png")
 
     pisitools.dodoc("*.txt")
     pisitools.dohtml("doc/*")
