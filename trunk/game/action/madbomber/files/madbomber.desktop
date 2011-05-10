@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Mad Bomber
+GenericName=Mad Bomber
+GenericName[tr]=Çılgın Bombacı
+Comment=A clone of the classic Atari 2600 game Kaboom
+Comment[tr]=Klasik Atari 2600 oyunu Kaboom'un bir klonu
+Icon=madbomber
+Exec=madbomber
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ActionGame;
