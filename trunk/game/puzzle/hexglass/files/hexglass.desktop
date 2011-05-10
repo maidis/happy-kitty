@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=HexGlass
+GenericName=Hexagonal Grid Tetris
+GenericName[tr]=Altıgen Izgara Tetris
+Comment=Tetris-like puzzle game
+Comment[tr]=Tetris benzeri bulmaca oyunu
+Icon=hexglass
+Exec=hexglass
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;BlocksGame;

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>hexglass</Name>
+        <Summary xml:lang="tr">Tetris benzeri bulmaca oyunu</Summary>
+        <Description xml:lang="tr">HexGlass, Tetris benzeri bir bulmaca oyunudur. 10 farklı blok türü devamlı olarak yukarıdan düşerken sizin yapmanız gereken de onları yatay sıralar haline getirmek. Bir yatay sırayı tamamlamak bu sıranın kaybolmasını ve geri kalanların aşağı inmesini sağlar. Bunlar olurken de yukarıdan gelen bloklar git gide daha hızlı gelmeye başlar, tüm ekran yeni bir blok düşemeyecek kadar dolduğundaysa oyun biter.</Description>
+    </Source>
+</PISI>
