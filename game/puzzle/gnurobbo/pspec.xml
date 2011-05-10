@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gnurobbo</Name>
+        <Homepage>http://gnurobbo.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>gnurobbo</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A port of logic game, Robbo</Summary>
+        <Description>GNU Robbo is a reimplementation of Janusz Pelc's Robbo  for the Atari XE/XL which was distributed by LK Avalon in 1989.</Description>
+        <Archive sha1sum="a4dafc97814d9093867dc18f879d3189faa8d13b" type="targz">mirrors://sourceforge/gnurobbo/gnurobbo/gnurobbo%200.66/gnurobbo-0.66-source.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>sdl-ttf-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">somegamesneed.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>gnurobbo</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>sdl-ttf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/gnurobbo</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/gnurobbo.desktop">gnurobbo.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/gnurobbo.png">gnurobbo.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-11-17</Date>
+            <Version>0.66</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=GNU Robbo
+GenericName=Logic Game
+GenericName[tr]=Mantık Oyunu
+Comment=A port of logic game, Robbo
+Comment[tr]=Mantık oyunu Robbo'nun bir portu
+Icon=gnurobbo
+Exec=gnurobbo
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;

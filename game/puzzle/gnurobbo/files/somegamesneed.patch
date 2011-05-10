@@ -1,0 +1,11 @@
+diff -Naur gnurobbo-0.66.orig/Makefile gnurobbo-0.66/Makefile
+--- gnurobbo-0.66.orig/Makefile	2010-08-23 23:41:09.000000000 +0300
++++ gnurobbo-0.66/Makefile	2010-11-24 16:46:35.394000007 +0200
+@@ -39,7 +39,6 @@
+ CFLAGS?=-O3 -pipe
+ CFLAGS+=-Wall `$(SDL_CONFIG) --cflags` -DPLATFORM_PC -DVERSION=\"$(VERSION)\" \
+ 	-DPACKAGE_DATA_DIR=\"$(PACKAGE_DATA_DIR)\" $(FONT_USE_PIXMAP) $(MUSIC) $(DESIGNER)
+-LDFLAGS=
+ # Use these instead for debugging and/or profiling (mainly intended for GNU Robbo developers)
+ #CFLAGS?=-O0 -pipe -g -pg
+ #CFLAGS+=-Wall `$(SDL_CONFIG) --cflags` -DPLATFORM_PC -DVERSION=\"$(VERSION)\" \
