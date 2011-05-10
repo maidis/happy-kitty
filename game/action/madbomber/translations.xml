@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>madbomber</Name>
+        <Summary xml:lang="tr">Klasik Atari 2600 oyunu Kaboom'un bir klonu</Summary>
+        <Description xml:lang="tr">Mad Bomber, şehirde sırra kıdem bastı ve her yere bomba atıyor. Kabul ederseniz göreviniz, bombaları yere düşüp patlamadan yakalamak. Şanslısınız ki, Bombacı Mülayim ile deneyiminiz ve bombaları etkisiz hale getirecek birkaç kovanız var.</Description>
+    </Source>
+</PISI>

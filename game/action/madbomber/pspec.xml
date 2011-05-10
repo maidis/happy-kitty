@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>madbomber</Name>
+        <Homepage>http://www.newbreedsoftware.com/madbomber</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>madbomber</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A clone of the classic Atari 2600 game Kaboom</Summary>
+        <Description>The Mad Bomber is loose in the city and he's dropping bombs everywhere! It's your job to catch them before they hit the ground and explode. Luckily, you have a set of trusty buckets to extinguish them with.</Description>
+        <Archive sha1sum="9cee75f89923f6954a95ff2b622b4461353da2a8" type="targz">ftp://ftp.tuxpaint.org/unix/x/madbomber/src/madbomber-0.2.5.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>bombaci-mulayim.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>madbomber</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/madbomber</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/madbomber.desktop">madbomber.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/madbomber.png">madbomber.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-12-01</Date>
+            <Version>0.2.5</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
