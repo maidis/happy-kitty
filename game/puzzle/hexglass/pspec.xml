@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>hexglass</Name>
+        <Homepage>http://code.google.com/p/hexglass</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>hexglass</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Tetris-like puzzle game</Summary>
+        <Description>The HexGlass is a Tetris-like puzzle game. Ten different types of blocks continuously fall from above and you must arrange them to make horizontal rows of hexagonal bricks. Completing any row causes those hexagonal blocks to disappear and the rest above move downwards. The blocks above gradually fall faster and the game is over when the screen fills up and blocks can no longer fall from the top.</Description>
+        <Archive sha1sum="8ba0ba906ccd8b69931813f21cac28bfa2af2749" type="targz">http://hexglass.googlecode.com/files/hexglass-1.2.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>qt-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>hexglass</Name>
+        <RuntimeDependencies>
+            <Dependency>qt</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/hexglass.desktop">hexglass.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-01-15</Date>
+            <Version>1.2.1</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
