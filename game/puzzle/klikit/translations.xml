@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>klikit</Name>
+        <Summary xml:lang="tr">Klasik zor sorun 15 bulmacası</Summary>
+        <Description xml:lang="tr">Klikit, bir klasik zor sorun 15 bulmacası oyunudur.</Description>
+    </Source>
+</PISI>
