@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>gnurobbo</Name>
+        <Summary xml:lang="tr">Mantık oyunu Robbo'nun bir portu</Summary>
+        <Description xml:lang="tr">GNU Robbo, Janusz Pelc'in Atari XE/XL için geliştirdiği ve 1989'da LK Avalon tarafından dağıtılan Robbo'nun bir uyarlamasıdır.</Description>
+    </Source>
+</PISI>
