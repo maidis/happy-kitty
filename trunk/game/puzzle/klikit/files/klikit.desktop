@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Klikit
+GenericName=Brain Twister 15
+GenericName[tr]=Zor Sorun 15
+Comment=Classical brain twister 15 puzzle
+Comment[tr]=Klasik zor sorun 15 bulmacası
+Icon=klikit
+Exec=Klikit
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;
