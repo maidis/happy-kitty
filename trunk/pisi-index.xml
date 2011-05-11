@@ -3213,6 +3213,108 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>megaglest-data</Name>
+            <Homepage>http://www.megaglest.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>glest-data</License>
+            <IsA>data</IsA>
+            <PartOf>game.strategy</PartOf>
+            <Summary xml:lang="en">Data files for MegaGlest</Summary>
+            <Summary xml:lang="tr">MegaGlest için veri dosyaları</Summary>
+            <Description xml:lang="en">megaglest-data package contains the data files needed by the MegaGlest game.</Description>
+            <Description xml:lang="tr">megaglest-data paketi, MegaGlest oyununun veri dosyalarını içerir.</Description>
+            <Icon>megaglest</Icon>
+            <Archive type="tarxz" sha1sum="4ea0b0851caadbfdb56a65203abf0a27fac3b4ac">mirrors://sourceforge/megaglest/current_release/megaglest-data-3.5.1.tar.xz</Archive>
+            <SourceURI>game/strategy/megaglest-data/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>megaglest-data</Name>
+            <Files>
+                <Path fileType="data">/usr/share/megaglest</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-11</Date>
+                <Version>3.5.1</Version>
+                <Comment>Thanks Onur Küçük for his previous work on Glest package.</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>megaglest</Name>
+            <Homepage>http://www.megaglest.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.strategy</PartOf>
+            <Summary xml:lang="en">A 3D realtime strategy game in a fantastic world</Summary>
+            <Summary xml:lang="tr">Fantastik bir dünyada geçen 3B gerçek zamanlı strateji oyunu</Summary>
+            <Description xml:lang="en">MegaGlest is a 3D realtime strategy game, where you control the armies of one of seven different factions: Tech, Magic, Egyptians, Indians, Norsemen, Persian or Romans. This project is a fork of the original RTS, Glest. It aims to improve the game and its content with a particular focus on network play.</Description>
+            <Description xml:lang="tr">MegaGlest; Ustalar, Sihirbazlar, Mısırlılar, Hintliler, Norveçliler, Farisiler ya da Romalılar olmak üzere yedi farklı gruptan birindeki ordularınızı kontrol etmenizi sağlayan 3B gerçek zamanlı strateji oyunudur. Proje, Glest&apos;in bir çatallamasıdır, Glest&apos;in içeriğini geliştirmeyi ve ağ üzerinde oynama desteğini iyileştirmeyi hedefler.</Description>
+            <Icon>megaglest</Icon>
+            <Archive type="tarxz" sha1sum="63bef93f6839fe04417768159b988e71a0b15abc">mirrors://sourceforge/megaglest/current_release/megaglest-source-3.5.1.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>libogg-devel</Dependency>
+                <Dependency>libvorbis-devel</Dependency>
+                <Dependency>openal-devel</Dependency>
+                <Dependency>xerces-c-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>lua-devel</Dependency>
+                <Dependency>libX11-devel</Dependency>
+                <Dependency>jpeg-devel</Dependency>
+                <Dependency>wxGTK-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>megaglest-3.5.1-desktop.diff</Patch>
+            </Patches>
+            <SourceURI>game/strategy/megaglest/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>megaglest</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>libogg</Dependency>
+                <Dependency>libvorbis</Dependency>
+                <Dependency>openal</Dependency>
+                <Dependency>xerces-c</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>lua</Dependency>
+                <Dependency>jpeg</Dependency>
+                <Dependency>wxGTK</Dependency>
+                <Dependency versionFrom="3.5.0">megaglest-data</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/megaglest</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-11</Date>
+                <Version>3.5.1</Version>
+                <Comment>Thanks Onur Küçük for his previous work on Glest package.</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>redeclipse</Name>
             <Homepage>http://www.redeclipse.net</Homepage>
             <Packager>
