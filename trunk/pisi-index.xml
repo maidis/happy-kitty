@@ -3293,7 +3293,7 @@
                 <Dependency>lua</Dependency>
                 <Dependency>jpeg</Dependency>
                 <Dependency>wxGTK</Dependency>
-                <Dependency versionFrom="3.5.0">megaglest-data</Dependency>
+                <Dependency versionFrom="3.5.1">megaglest-data</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
