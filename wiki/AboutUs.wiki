@@ -40,6 +40,7 @@ We aim to accomplish this goal through a variety of activities:
 == Similar Projects ==
   * [http://www.playdeb.net/ PlayDeb]
   * [http://www.dotdeb.com/ DotDeb]
+  * [http://ubuntugames.org/ Ubuntu Games]
   * [https://help.ubuntu.com/community/Games Games on Ubuntu]
   * [https://github.com/Arch-Games The Arch Linux Gaming Repository Project]
   * [https://fedoraproject.org/wiki/SIGs/Games The Fedora Special Interest Groups - Games]
