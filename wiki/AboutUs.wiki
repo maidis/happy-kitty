@@ -37,6 +37,10 @@ We aim to accomplish this goal through a variety of activities:
   * Improve the quality of the games in the official Pardus repository (bug reports, new version requests, Turkish game translations, articles).
 
 
+== Happy Kitty Staff ==
+You can visit [http://code.google.com/p/happy-kitty/people/list People] page to see who manage, maintain, develop Happy Kitty.
+
+
 == Similar Projects ==
   * [http://www.playdeb.net/ PlayDeb]
   * [http://www.dotdeb.com/ DotDeb]
