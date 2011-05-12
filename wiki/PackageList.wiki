@@ -24,7 +24,7 @@
 
 == Games ==
 
-[airstrike], [alienblaster], [apricots], [atanks], [avoision], [balloonchase], [balloons], [ballway], [ballz], [barrage], [bitefusion], [bitfighter], [briquolo], [csmash], [dfight], [fbg2], [gish], [happyfrog], [jamp], [jvgs], [lugaru], [pinball], [pongix], [powder-toy], [powermanga], [redeclipse], [thebutterflyeffect], [ttt], [tuxfootball], [tuxpuck], [violetland], [viruskiller], [xdriller]
+[airstrike], [alienblaster], [apricots], [atanks], [avoision], [balloonchase], [balloons], [ballway], [ballz], [barrage], [bitefusion], [bitfighter], [blinkensisters], [blockrage], [bloqus], [bombattack], [brainparty], [briquolo], [bubble-chains], [burgerspace], [capitan-sevilla], [cave9], [cgmadness], [chickennix], [classic-invaders], [color-lines], [colorcode], [construo], [csmash], [dangen], [dfight], [digger], [fbg2], [gish], [glpeces], [gnurobbo], [gorillas], [happyfrog], [hexglass], [jamp], [jvgs], [klikit], [lugaru], [madbomber], [megaglest], [opensurge], [pinball], [plee-the-bear], [pongix], [powder-toy], [powermanga], [racer-space], [redeclipse], [smashbattle], [thebutterflyeffect], [ttt], [tuxfootball], [tuxpuck], [usf], [violetland], [viruskiller], [xdriller], [xinvaders3d], [xix]
 
 
 == Tools ==
@@ -34,4 +34,4 @@
 
 == Libraries ==
 
-[alfont], [angelscript], [box2d], [caelum], [clutter], [dumb], [elfhacks], [guichan], [mofilereader], [mygui], [ogre-hydrax], [ogre-pagedgeometry], [packetstream], [qt-mobility], [radius-engine], [socketw], [wxgtk-2.9]
+[alfont], [angelscript], [box2d], [bullet], [caelum], [clutter], [dumb], [elfhacks], [fann], [flatzebra], [gtkglextmm], [guichan], [libclaw], [mofilereader], [mygui], [ogre-hydrax], [ogre-pagedgeometry], [packetstream], [qt-mobility], [radius-engine], [socketw], [wxgtk-2.9]
