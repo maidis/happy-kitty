@@ -21,7 +21,7 @@ Happy Kitty's goal is make Pardus the best free software and open source gaming 
 We aim to accomplish this goal through a variety of activities:
 
   * Package all GNU/Linux games for Pardus:
-    * Package all playable (not dead, free or open source, funny) games from [http://www.happypenguin.org/ Happy Penguin].
+    * Package all playable (not dead, free or open source, funny) games from [http://www.happypenguin.org/ Happy Penguin] (see [HappyPenguinMission] for details).
     * Package all games from [http://www.playdeb.net/ PlayDeb].
     * Package all games from [http://aur.archlinux.org/packages.php?O=0&K=game&do_Search=Git&PP=25&SB=v&SO=d AUR].
     * Package all games from [http://qt-apps.org/ Qt-Apps.org].
