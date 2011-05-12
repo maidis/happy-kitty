@@ -7,7 +7,7 @@ Happy Kitty is an unofficial project with the mission to provide open source and
 
 The Happy Kitty repository extends the official repositories by providing new games.
 
-There is a short and limited testing phase instead of a full testing cycle to ensure packaging quality, however it is less strict than Pardus's official requirements. You may also be interested on [http://code.google.com/p/happy-kitty/wiki/PackageRepositories#Pardus other unofficial Pardus repositories].
+There is a short and limited testing phase instead of a full testing cycle to ensure packaging quality, however it is less strict than Pardus's official requirements. You may also be interested on [PackageRepositories#Pardus other unofficial Pardus repositories].
 
 There is no company behind this project. It is managed, maintained, developed and supported by a volunteer group and by the users themselves.
 
