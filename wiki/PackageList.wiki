@@ -12,12 +12,14 @@
 
 = Contribute =
 
+  * [JoiningHappyKitty]
   * [InternetSites]
   * [BecomingSponsor]
   * [BuildingSourceRepository]
   * [HappyPenguinMission]
   * [PackageRepositories]
   * [DesktopFiles]
+  * [PathsPatches]
 
 ----
 
