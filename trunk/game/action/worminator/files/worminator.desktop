@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=worminator
+GenericName=Worminator
+GenericName[tr]=Solucan Savaşçı
+Comment=A sidescrolling action game
+Comment[tr]=Yandan görünüşlü 2b aksiyon oyunu
+Icon=worminator
+Exec=worminator
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ActionGame;

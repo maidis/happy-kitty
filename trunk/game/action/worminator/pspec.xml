@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>worminator</Name>
+        <Homepage>http://sourceforge.net/projects/worminator</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>worminator</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A sidescrolling action game</Summary>
+        <Description>Worminator is a sidescrolling action game. You play as The Worminator and fight your way through many levels of madness and mayhem. Worminator features nine unique weapons, visible character damage, full screen scrolling, sound and music, and much more!</Description>
+        <Archive sha1sum="a09594c1c027687562a718e42306197f10c1bf8c" type="targz">mirrors://sourceforge/worminator/worminator/3.0R2.1/worminator-3.0R2.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>allegro-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">worminator-3.0R2.1-speed.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>worminator</Name>
+        <RuntimeDependencies>
+            <Dependency>allegro</Dependency>
+            <Dependency>worminator-data</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/worminator.desktop">worminator.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/worminator.png">worminator.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-11-30</Date>
+            <Version>3.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
