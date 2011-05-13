@@ -42,11 +42,20 @@ You can visit [http://code.google.com/p/happy-kitty/people/list People] page to 
 
 
 == Similar Projects ==
+=== For Arch ===
+  * [https://github.com/Arch-Games The Arch Linux Gaming Repository Project]
+
+=== For Fedora ===
+  * [https://fedoraproject.org/wiki/SIGs/Games The Fedora Special Interest Groups - Games]
+
+=== For Gentoo ===
+  * [http://www.gentoo.org/proj/en/desktop/games/ Gentoo Games Project]
+
+=== For openSUSE ===
+  * [http://gamestore.gk2.sk/ openSUSE Game Store]
+
+=== For Ubuntu ===
   * [http://www.playdeb.net/ PlayDeb]
   * [http://www.dotdeb.com/ DotDeb]
   * [http://ubuntugames.org/ Ubuntu Games]
   * [https://help.ubuntu.com/community/Games Games on Ubuntu]
-  * [https://github.com/Arch-Games The Arch Linux Gaming Repository Project]
-  * [https://fedoraproject.org/wiki/SIGs/Games The Fedora Special Interest Groups - Games]
-  * [http://www.gentoo.org/proj/en/desktop/games/ Gentoo Games Project]
-  * [http://gamestore.gk2.sk/ openSUSE Game Store]
