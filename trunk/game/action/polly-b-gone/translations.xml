@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>polly-b-gone</Name>
+        <Summary xml:lang="tr">3B fizik platform oyunu</Summary>
+        <Description xml:lang="tr">POLLY-B-GONE, bizlere Dr. Nurbs tarafından bir laboratuvarda hapsedilmiş cesur tekerlekli robot Polly'nin hikayesini anlatan 3B fizik platform oyunudur. Polly kaçmak ve tekrar özgürlüğüne kavuşmak için git gide karmaşıklaşan bir dizi engeli aşmak zorundadır.</Description>
+    </Source>
+</PISI>

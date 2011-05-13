@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Polly-B-Gone
+GenericName=Platform Game
+GenericName[tr]=Platform Oyunu
+Comment=3D physics platform game
+Comment[tr]=3B fizik platform oyunu
+Icon=polly-b-gone
+Exec=polly-b-gone
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ActionGame;

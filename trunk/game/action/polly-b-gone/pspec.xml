@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>polly-b-gone</Name>
+        <Homepage>http://cs.stanford.edu/people/mbostock/polly</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>LGPLv3</License>
+        <Icon>polly-b-gone</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>3D physics platform game</Summary>
+        <Description>POLLY-B-GONE is a 3D physics platform game that tells the story of a plucky wheeled robot named Polly, who has been imprisoned by the nefarious Dr. Nurbs in his laboratory. Polly must overcome a series of increasingly-elaborate obstacles to escape and regain her freedom.</Description>
+        <Archive sha1sum="92c2b59f8dc47e0128827a175faf231d8157b457" type="zip">http://graphics.stanford.edu/~mbostock/polly-src.zip</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>glew-devel</Dependency>
+            <Dependency>tinyxml-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>freeglut-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">polly-b-gone-01-libs.patch</Patch>
+            <Patch level="1">polly-b-gone-02-Makefile.patch</Patch>
+            <Patch>polly-b-gone-03-Makefile-install.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>polly-b-gone</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>glew</Dependency>
+            <Dependency>tinyxml</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>freeglut</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/polly-b-gone</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/polly-b-gone.desktop">polly-b-gone.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/polly-b-gone.png">polly-b-gone.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-12-01</Date>
+            <Version>1.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
