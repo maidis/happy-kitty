@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>primateplunge</Name>
+        <Summary xml:lang="tr">Başrolünde bir maymunun olduğu çekici bir platform oyunu</Summary>
+        <Description xml:lang="tr">Primate Plunge, zavallı bir maymuna balta girmemiş ormanlarda, Coyotte'nin düşmediği kanyonlarda, hırçınca su sıçratan şelalerde, alevleri yakıcı volkanlarda yolunu bulmasında yardımcı olmaya çalıştığınız bir oyundur.</Description>
+    </Source>
+</PISI>

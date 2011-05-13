@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Primate Plunge
+GenericName=Platform Game with Monkey
+GenericName[tr]=Maymunlu Platform Oyunu
+Comment=An addictive platform game starring a monkey
+Comment[tr]=Başrolünde bir maymunun olduğu çekici bir platform oyunu
+Icon=primateplunge
+Exec=primateplunge
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;
