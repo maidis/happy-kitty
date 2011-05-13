@@ -4,21 +4,21 @@
 = Help =
 
   * [AboutUs]
-  * [UsingSourceRepository]
-  * [LinuxGamingSites]
   * [History]
+  * [LinuxGamingSites]
+  * [UsingSourceRepository]
 
 ----
 
 = Contribute =
 
-  * [JoiningHappyKitty]
-  * [InternetSites]
   * [BecomingSponsor]
   * [BuildingSourceRepository]
-  * [HappyPenguinMission]
-  * [PackageRepositories]
   * [DesktopFiles]
+  * [HappyPenguinMission]
+  * [InternetSites]
+  * [JoiningHappyKitty]
+  * [PackageRepositories]
   * [PathsPatches]
 
 ----
