@@ -187,6 +187,62 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>oki</Name>
+            <Homepage>http://free.of.pl/s/szatkus/oki</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A small platform game</Summary>
+            <Summary xml:lang="tr">Küçük bir platform oyunu</Summary>
+            <Description xml:lang="en">Oki is a small platform game with monochrome graphic.</Description>
+            <Description xml:lang="tr">Oki, tek renkli grafiklere sahip, küçük bir oyundur.</Description>
+            <Icon>oki</Icon>
+            <Archive type="targz" sha1sum="39162e7f21e1d88708df4a3209e08c9a472d5267">http://free.of.pl/s/szatkus/soft/gry/oki-0.1.6.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">oki.patch</Patch>
+                <Patch>oki-default-conf.patch</Patch>
+                <Patch>oki.desktop.diff</Patch>
+            </Patches>
+            <SourceURI>game/arcade/oki/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>oki</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>mesa</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/oki</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-12-12</Date>
+                <Version>0.1.6</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>xix</Name>
             <Homepage>http://compgroups.net/comp.os.linux.misc/New-game-XIX-for-linux-Version-of-1980s-game-QIX</Homepage>
             <Packager>
@@ -804,6 +860,57 @@
             <Update release="1">
                 <Date>2011-01-23</Date>
                 <Version>0.99</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>primateplunge</Name>
+            <Homepage>http://www.aelius.com/primateplunge</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>as-is</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">An addictive platform game starring a monkey</Summary>
+            <Summary xml:lang="tr">Başrolünde bir maymunun olduğu çekici bir platform oyunu</Summary>
+            <Description xml:lang="en">Primate Plunge is a game that you help poor Monkey navigate his way down through trecherous jungles, canyons, towering waterfalls, into the heart of a volcano and through the driving rain of a cold industrial city.</Description>
+            <Description xml:lang="tr">Primate Plunge, zavallı bir maymuna balta girmemiş ormanlarda, Coyotte&apos;nin düşmediği kanyonlarda, hırçınca su sıçratan şelalerde, alevleri yakıcı volkanlarda yolunu bulmasında yardımcı olmaya çalıştığınız bir oyundur.</Description>
+            <Icon>primateplunge</Icon>
+            <Archive type="targz" sha1sum="c2b342b5fd9b5aa9e4aab4e75f1b9d9d0b0f8806">http://www.aelius.com/primateplunge/primateplunge-1.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/arcade/primateplunge/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>primateplunge</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/primateplunge</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/primateplunge.desktop" permission="0644" owner="root">primateplunge.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/primateplunge.png" permission="0644" owner="root">primateplunge.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-11-28</Date>
+                <Version>1.1</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -1957,6 +2064,107 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>polly-b-gone</Name>
+            <Homepage>http://cs.stanford.edu/people/mbostock/polly</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>LGPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.action</PartOf>
+            <Summary xml:lang="en">3D physics platform game</Summary>
+            <Summary xml:lang="tr">3B fizik platform oyunu</Summary>
+            <Description xml:lang="en">POLLY-B-GONE is a 3D physics platform game that tells the story of a plucky wheeled robot named Polly, who has been imprisoned by the nefarious Dr. Nurbs in his laboratory. Polly must overcome a series of increasingly-elaborate obstacles to escape and regain her freedom.</Description>
+            <Description xml:lang="tr">POLLY-B-GONE, bizlere Dr. Nurbs tarafından bir laboratuvarda hapsedilmiş cesur tekerlekli robot Polly&apos;nin hikayesini anlatan 3B fizik platform oyunudur. Polly kaçmak ve tekrar özgürlüğüne kavuşmak için git gide karmaşıklaşan bir dizi engeli aşmak zorundadır.</Description>
+            <Icon>polly-b-gone</Icon>
+            <Archive type="zip" sha1sum="92c2b59f8dc47e0128827a175faf231d8157b457">http://graphics.stanford.edu/~mbostock/polly-src.zip</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>glew-devel</Dependency>
+                <Dependency>tinyxml-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>freeglut-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">polly-b-gone-01-libs.patch</Patch>
+                <Patch level="1">polly-b-gone-02-Makefile.patch</Patch>
+                <Patch>polly-b-gone-03-Makefile-install.patch</Patch>
+            </Patches>
+            <SourceURI>game/action/polly-b-gone/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>polly-b-gone</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>glew</Dependency>
+                <Dependency>tinyxml</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>freeglut</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/polly-b-gone</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/polly-b-gone.desktop" permission="0644" owner="root">polly-b-gone.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/polly-b-gone.png" permission="0644" owner="root">polly-b-gone.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-12-01</Date>
+                <Version>1.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>worminator-data</Name>
+            <Homepage>http://sourceforge.net/projects/worminator</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>data</IsA>
+            <PartOf>game.action</PartOf>
+            <Summary xml:lang="en">Data files for Worminator</Summary>
+            <Summary xml:lang="tr">Worminator için veri dosyaları</Summary>
+            <Description xml:lang="en">worminator-data provides some additional files for Worminator.</Description>
+            <Description xml:lang="tr">worminator-data, Worminator oyununun veri dosyalarını içerir.</Description>
+            <Icon>worminator</Icon>
+            <Archive type="targz" sha1sum="062891336468cb62b5e993f8c083a6ae4c10258c">mirrors://sourceforge/worminator/worminator-data/3.0R2.1/worminator-data-3.0R2.1.tar.gz</Archive>
+            <SourceURI>game/action/worminator-data/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>worminator-data</Name>
+            <Files>
+                <Path fileType="data">/usr/share/worminator</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-11-30</Date>
+                <Version>3.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>violetland</Name>
             <Homepage>http://code.google.com/p/violetland</Homepage>
             <Packager>
@@ -2401,6 +2609,114 @@
             <Update release="1">
                 <Date>2010-12-01</Date>
                 <Version>0.9.6</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>toomanytroopers</Name>
+            <Homepage>http://tinyurl.com/too-many-troopers</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.action</PartOf>
+            <Summary xml:lang="en">A Jedi game</Summary>
+            <Summary xml:lang="tr">Bir Jedi oyunu</Summary>
+            <Description xml:lang="en">Too Many Troopers is a Jedi game.</Description>
+            <Description xml:lang="tr">Too Many Troopers, bir Jedi oyunudur.</Description>
+            <Icon>toomanytroopers</Icon>
+            <Archive type="zip" sha1sum="29ab9846a4328719271b9e12e88435f5c80bff86">http://download.jason.o12.pl/TooManyTroopers_lin_src.zip</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>paths.patch</Patch>
+            </Patches>
+            <SourceURI>game/action/toomanytroopers/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>toomanytroopers</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>mesa</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/toomanytroopers</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/toomanytroopers.desktop" permission="0644" owner="root">toomanytroopers.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/toomanytroopers.png" permission="0644" owner="root">toomanytroopers.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-11-08</Date>
+                <Version>0.4</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>worminator</Name>
+            <Homepage>http://sourceforge.net/projects/worminator</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.action</PartOf>
+            <Summary xml:lang="en">A sidescrolling action game</Summary>
+            <Summary xml:lang="tr">Yandan görünüşlü bir 2b aksiyon oyunu</Summary>
+            <Description xml:lang="en">Worminator is a sidescrolling action game. You play as The Worminator and fight your way through many levels of madness and mayhem. Worminator features nine unique weapons, visible character damage, full screen scrolling, sound and music, and much more!</Description>
+            <Description xml:lang="tr">Worminator, delilik ve kargaşanın kol gezdiği bölümlerde savaştığınız yandan görünüşlü bir 2b aksiyon oyunudur. is a sidescrolling action game. Oyun dokuz farklı silah, karakter hasarları, ses efektleri, müzik ve çok daha fazlasını oyuncularla buluşturuyor.</Description>
+            <Icon>worminator</Icon>
+            <Archive type="targz" sha1sum="a09594c1c027687562a718e42306197f10c1bf8c">mirrors://sourceforge/worminator/worminator/3.0R2.1/worminator-3.0R2.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>allegro-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">worminator-3.0R2.1-speed.patch</Patch>
+            </Patches>
+            <SourceURI>game/action/worminator/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>worminator</Name>
+            <RuntimeDependencies>
+                <Dependency>allegro</Dependency>
+                <Dependency>worminator-data</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/worminator.desktop" permission="0644" owner="root">worminator.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/worminator.png" permission="0644" owner="root">worminator.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-11-30</Date>
+                <Version>3.0</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
