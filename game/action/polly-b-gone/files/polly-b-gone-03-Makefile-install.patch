@@ -1,0 +1,96 @@
+#
+# Author: Vinecnt Petry <PVince81@yahoo.fr>
+# 
+# This patch adds the following:
+# - install target
+# - change to resource.cpp to accept a different resource path
+#
+diff -Naur polly-b-gone-1.0-old//Makefile polly-b-gone-1.0/Makefile
+--- Makefile	2009-04-12 10:36:00.000000000 +0800
++++ Makefile	2009-04-12 11:06:24.000000000 +0800
+@@ -1,3 +1,15 @@
++ifndef $(PREFIX)
++	PREFIX = /usr
++endif
++
++ifndef $(BINDIR)
++	BINDIR = $(PREFIX)/bin
++endif
++
++ifndef $(DATADIR)
++	DATADIR = $(PREFIX)/share/polly-b-gone
++endif
++
+ MACHINE= $(shell uname -s)
+ 
+ ifeq ($(MACHINE),Darwin)
+@@ -19,16 +31,11 @@
+ 	-framework SDL_mixer \
+ 	-framework TinyXML
+ 
+-RESOURCES = \
+-	resources/Polly.icns \
+-	resources/*.frag \
+-	resources/*.jpg \
+-	resources/*.ogg \
+-	resources/*.png \
+-	resources/*.vert \
+-	resources/world.xml
+-
+ else
++CXXFLAGS = \
++	-O2 \
++	-DRESOURCEDIR=\"$(DATADIR)/\" \
++	#$(CXXFLAGS)
+ LIBS = \
+ 	`sdl-config --cflags` \
+ 	-I/usr/include \
+@@ -43,6 +50,15 @@
+ 
+ endif
+ 
++RESOURCES = \
++        resources/Polly.icns \
++        resources/*.frag \
++        resources/*.jpg \
++        resources/*.ogg \
++        resources/*.png \
++        resources/*.vert \
++        resources/world.xml
++
+ ifeq ($(MACHINE),Darwin)
+ all : obj/Polly-B-Gone.app
+ else
+@@ -182,5 +198,11 @@
+ 
+ .PRECIOUS : obj/%.o obj/physics/%.o
+ 
++install:
++	install -D -d -m 755 $(DESTDIR)/$(BINDIR)
++	install -D -s -m 755 polly-b-gone $(DESTDIR)/$(BINDIR)
++	install -D -d -m 755 $(DESTDIR)/$(DATADIR)
++	install -D -m 644 $(RESOURCES) $(DESTDIR)/$(DATADIR)
++
+ clean:
+ 	rm -rf obj
+diff -Naur polly-b-gone-1.0-old//resource.cpp polly-b-gone-1.0/resource.cpp
+--- resource.cpp	2009-04-12 10:36:00.000000000 +0800
++++ resource.cpp	2009-04-12 10:36:54.000000000 +0800
+@@ -9,10 +9,14 @@
+ using namespace mbostock;
+ 
+ const char* Resources::path() {
+-#ifdef __APPLE__
+-  return "Contents/Resources/";
++#ifdef RESOURCEDIR
++  return RESOURCEDIR;
+ #else
+-  return "resources/";
++	#ifdef __APPLE__
++	  return "Contents/Resources/";
++	#else
++	  return "resources/";
++	#endif
+ #endif
+ }
+ 
