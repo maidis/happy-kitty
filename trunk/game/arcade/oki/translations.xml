@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>oki</Name>
+        <Summary xml:lang="tr">Küçük bir platform oyunu</Summary>
+        <Description xml:lang="tr">Oki, tek renkli grafiklere sahip, küçük bir oyundur.</Description>
+    </Source>
+</PISI>

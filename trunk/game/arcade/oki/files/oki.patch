@@ -1,0 +1,50 @@
+diff -Naur oki-0.1.6.orig/autopackage/default.apspec oki-0.1.6/autopackage/default.apspec
+--- oki-0.1.6.orig/autopackage/default.apspec	2006-05-13 18:40:49.000000000 +0300
++++ oki-0.1.6/autopackage/default.apspec	2011-01-10 23:59:52.253000057 +0200
+@@ -32,7 +32,7 @@
+ [Install]
+ # Put your installation script here
+ installExe bin/oki
+-installData games/oki
++installData share/oki
+ installIcon share/pixmaps/oki.png
+ installDesktop "Application/Games" share/applications/oki.desktop
+ 
+diff -Naur oki-0.1.6.orig/configure oki-0.1.6/configure
+--- oki-0.1.6.orig/configure	2006-05-14 13:52:09.000000000 +0300
++++ oki-0.1.6/configure	2011-01-10 23:59:20.730000057 +0200
+@@ -89,14 +89,14 @@
+ fi;
+ echo "OPENGL=-DOPENGL" >> $MAKE
+ echo "CFLAGS=-O2 \$(SDLFLAGS) \$(OS) \$(DEVEL) \$(SOUND) \$(OPENGL)" >> $MAKE
+-echo "WORKDIR=\$(PREFIX)/games/oki" >> $MAKE
++echo "WORKDIR=\$(PREFIX)/share/oki" >> $MAKE
+ echo "CLIBS=$CLIBS" >> $MAKE
+ echo "Creating Makefile.global"
+ mv $MAKE Makefile.global
+ echo "Creating Makefile"
+ mv Makefile.in Makefile &> /dev/null
+ echo "Creating oki"
+-echo -e "#!/bin/bash\ncd $PREFIX/games/oki\n./oki \044*" > extra/oki_bash
++echo -e "#!/bin/bash\ncd $PREFIX/share/oki\n./oki \044*" > extra/oki_bash
+ chmod a=rx extra/oki_bash
+ echo
+ echo "type \"make\""
+diff -Naur oki-0.1.6.orig/extra/oki_bash oki-0.1.6/extra/oki_bash
+--- oki-0.1.6.orig/extra/oki_bash	2006-05-14 13:52:15.000000000 +0300
++++ oki-0.1.6/extra/oki_bash	2011-01-11 00:02:10.586000056 +0200
+@@ -1,3 +1,3 @@
+ #!/bin/bash
+-cd /root/usr/games/oki
++cd /root/usr/oki
+ ./oki $*
+diff -Naur oki-0.1.6.orig/Makefile.global oki-0.1.6/Makefile.global
+--- oki-0.1.6.orig/Makefile.global	2006-05-14 13:52:15.000000000 +0300
++++ oki-0.1.6/Makefile.global	2011-01-10 23:57:57.542000058 +0200
+@@ -9,5 +9,5 @@
+ SOUND=-DSOUND
+ OPENGL=-DOPENGL
+ CFLAGS=-O2 $(SDLFLAGS) $(OS) $(DEVEL) $(SOUND) $(OPENGL)
+-WORKDIR=$(PREFIX)/games/oki
++WORKDIR=$(PREFIX)/share/oki
+ CLIBS=-lSDL -lpthread -lSDL_image -lSDL_mixer -lGL
