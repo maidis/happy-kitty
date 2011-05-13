@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>worminator</Name>
+        <Summary xml:lang="tr">Yandan görünüşlü bir 2b aksiyon oyunu</Summary>
+        <Description xml:lang="tr">Worminator, delilik ve kargaşanın kol gezdiği bölümlerde savaştığınız yandan görünüşlü bir 2b aksiyon oyunudur. is a sidescrolling action game. Oyun dokuz farklı silah, karakter hasarları, ses efektleri, müzik ve çok daha fazlasını oyuncularla buluşturuyor.</Description>
+    </Source>
+</PISI>
