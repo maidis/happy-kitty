@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>toomanytroopers</Name>
+        <Summary xml:lang="tr">Bir Jedi oyunu</Summary>
+        <Description xml:lang="tr">Too Many Troopers, bir Jedi oyunudur.</Description>
+    </Source>
+</PISI>

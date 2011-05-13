@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Too Many Troopers
+GenericName=Jedi Game
+GenericName[tr]=Jedi Oyunu
+Comment=A Jedi game
+Comment[tr]=Bir Jedi oyunu
+Icon=toomanytroopers
+Exec=toomanytroopers
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ActionGame;

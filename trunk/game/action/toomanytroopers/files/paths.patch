@@ -1,0 +1,74 @@
+diff -Naur blaster.cpp blaster.cpp
+--- blaster.cpp	2009-05-31 09:17:22.000000000 +0300
++++ blaster.cpp	2010-11-08 17:26:25.637000024 +0200
+@@ -54,7 +54,7 @@
+         glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
+         glTexParameteri(GL_TEXTURE_1D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);
+         glTexParameteri(GL_TEXTURE_1D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
+-        clashtex.LoadBMP("data/textures/clash.bmp",true);
++        clashtex.LoadBMP("/usr/share/toomanytroopers/textures/clash.bmp",true);
+     }
+     Reset(angle,x,y);
+     bullet_time=false;
+diff -Naur blaster_manager.cpp blaster_manager.cpp
+--- blaster_manager.cpp	2009-05-27 00:23:19.000000000 +0300
++++ blaster_manager.cpp	2010-11-08 17:25:04.338000023 +0200
+@@ -20,8 +20,8 @@
+ {
+     if (!isMute)
+     {
+-        phaser = Mix_LoadWAV("data/sounds/pistol-1.wav");
+-        clashed = Mix_LoadWAV("data/sounds/bcfire01.wav");
++        phaser = Mix_LoadWAV("/usr/share/toomanytroopers/sounds/pistol-1.wav");
++        clashed = Mix_LoadWAV("/usr/share/toomanytroopers/data/sounds/bcfire01.wav");
+     }
+     Jedi=J;
+     mute = isMute;
+diff -Naur jedi.cpp jedi.cpp
+--- jedi.cpp	2009-05-31 09:17:16.000000000 +0300
++++ jedi.cpp	2010-11-08 17:26:57.668000025 +0200
+@@ -19,12 +19,12 @@
+ {
+     Lightsaber=new lightsaber;
+     redLightsaber=new lightsaber(true);
+-    lu.LoadBMP("data/textures/lu.bmp",true);
+-    l.LoadBMP("data/textures/l.bmp",true);
+-    ld.LoadBMP("data/textures/ld.bmp",true);
+-    ru.LoadBMP("data/textures/ru.bmp",true);
+-    r.LoadBMP("data/textures/r.bmp",true);
+-    rd.LoadBMP("data/textures/rd.bmp",true);
++    lu.LoadBMP("/usr/share/toomanytroopers/textures/lu.bmp",true);
++    l.LoadBMP("/usr/share/toomanytroopers/textures/l.bmp",true);
++    ld.LoadBMP("/usr/share/toomanytroopers/textures/ld.bmp",true);
++    ru.LoadBMP("/usr/share/toomanytroopers/textures/ru.bmp",true);
++    r.LoadBMP("/usr/share/toomanytroopers/textures/r.bmp",true);
++    rd.LoadBMP("/usr/share/toomanytroopers/textures/rd.bmp",true);
+     state=LEFT;
+     darkside=false;
+ }
+diff -Naur main.cpp main.cpp
+--- main.cpp	2009-06-16 17:57:25.000000000 +0300
++++ main.cpp	2010-11-08 17:25:30.185000025 +0200
+@@ -477,8 +477,8 @@
+         exit(1);
+         }
+ 
+-        saber = Mix_LoadWAV("data/sounds/ltsaberlp01.wav");
+-        btime = Mix_LoadWAV("data/sounds/Matrix Agent Dodge.wav");
++        saber = Mix_LoadWAV("/usr/share/toomanytroopers/sounds/ltsaberlp01.wav");
++        btime = Mix_LoadWAV("/usr/share/toomanytroopers/sounds/Matrix Agent Dodge.wav");
+         phaserChannel=Mix_PlayChannel(-1, saber, -1);
+     }
+     int flags = 0;
+diff -Naur main.h main.h
+--- main.h	2009-05-27 23:24:08.000000000 +0300
++++ main.h	2010-11-08 17:28:46.973000023 +0200
+@@ -37,7 +37,7 @@
+ #include "blaster_manager.h"
+ #undef main
+ 
+-const string TEXDIR="data/textures/";
++const string TEXDIR="/usr/share/toomanytroopers/textures/";
+ class CMain
+ {
+ ////// zmienne ************************************************************

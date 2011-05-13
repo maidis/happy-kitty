@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>toomanytroopers</Name>
+        <Homepage>http://tinyurl.com/too-many-troopers</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>toomanytroopers</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A Jedi game</Summary>
+        <Description>Too Many Troopers is a Jedi game.</Description>
+        <Archive sha1sum="29ab9846a4328719271b9e12e88435f5c80bff86" type="zip">http://download.jason.o12.pl/TooManyTroopers_lin_src.zip</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>paths.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>toomanytroopers</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>mesa</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/toomanytroopers</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/toomanytroopers.desktop">toomanytroopers.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/toomanytroopers.png">toomanytroopers.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-11-08</Date>
+            <Version>0.4</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
