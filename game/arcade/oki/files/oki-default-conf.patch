@@ -1,0 +1,19 @@
+--- src/conf.c.orig	2006-05-12 03:44:36.000000000 +0300
++++ src/conf.c	2011-05-13 15:48:32.261000023 +0300
+@@ -59,14 +59,14 @@
+ #ifdef WIN32
+     cfg = fopen("oki.cfg", "a+b");
+ #endif
+-    fs = read_cfg(0);
++    fs = read_cfg(1);
+     left = read_cfg2(SDLK_LEFT);
+     up = read_cfg2(SDLK_UP);
+     right = read_cfg2(SDLK_RIGHT);
+     down = read_cfg2(SDLK_DOWN);
+     A = read_cfg2(SDLK_z);
+     B = read_cfg2(SDLK_x);
+-    mapset = read_cfg(0);
++    mapset = read_cfg(1);
+     fclose(cfg);
+ }
+ 

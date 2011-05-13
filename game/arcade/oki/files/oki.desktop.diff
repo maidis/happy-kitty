@@ -1,0 +1,22 @@
+--- extra/oki.desktop.orig	2006-05-12 03:44:36.000000000 +0300
++++ extra/oki.desktop	2011-05-13 16:08:32.496000025 +0300
+@@ -1,8 +1,14 @@
+ [Desktop Entry]
+-Encoding=UTF-8
+-Name=oki
+-Exec=oki
+-Icon=oki40.png
+ Type=Application
+-Terminal=False
++Version=1.0
++Encoding=UTF-8
++Name=Oki
++GenericName=Platform Game
++GenericName[tr]=Platform Oyunu
++Comment=A small platform game with monochrome graphics
++Comment[tr]=Tek renkli grafiklere sahip platform oyunu
++Icon=oki
++Exec=cd /usr/share/oki && oki
++Terminal=false
++StartupNotify=false
+ Categories=Application;Game;ArcadeGame;
