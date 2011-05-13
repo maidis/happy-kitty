@@ -1,7 +1,7 @@
 #summary A not very short history of Happy Kitty
 #labels history,Featured
 
-  * *2010.00.00* - I tried to clean up by listing useless packages and revive *Pardus Contrib Repository*. The problem is not end just deleting useless packages, this work didn't help too much.
+  * *2010.00.00* - I tried to clean up and revive *Pardus Contrib Repository* by listing useless and unmaintained packages. The problem is not end just deleting useless and unmaintained packages, therefore this work didn't help too much.
   * *2010.00.00* - [http://packages.pardus.org.tr/info/contrib/2009/devel/ Pardus Contrib Repository] did not continue in *Pardus 2011* release.
   * *2010.00.00* - Me and a few others said *one repository* will not be enough for Pardus. I created a draft for [http://liste.pardus.org.tr/gelistirici/2011-January/054976.html a new repository] (pisi üzeri pisi, pisi^pisi). In short, the idea of ​​a new repository didn't receive enough support.
   * *2011.03.23* - I started *Happy Kitty* project and opened [http://happy-kitty-repo.blogspot.com/ Happy Kitty Blog].
