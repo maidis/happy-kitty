@@ -1,0 +1,4338 @@
+diff -Naur NeoDraughts-0.3.orig/data/Makefile NeoDraughts-0.3/data/Makefile
+--- NeoDraughts-0.3.orig/data/Makefile	2006-10-11 22:27:56.000000000 +0300
++++ NeoDraughts-0.3/data/Makefile	2011-01-11 17:28:30.519000032 +0200
+@@ -195,7 +195,6 @@
+ 	weapon.pcx\
+ 	credits\
+ 	chessheight.bmp\
+-	ray.xml\
+ 	ray1581.xml\
+ 	bolt2030.xml\
+ 	bolt0.xml\
+@@ -204,42 +203,22 @@
+ 	ray796.xml\
+ 	ray0.xml\
+ 	ray571.xml\
+-	ray571.xml\
+-	ray459.xml\
+ 	ray459.xml\
+ 	ray347.xml\
+ 	ray.xml\
+ 	ray247.xml\
+ 	ray347-3.xml\
+-	ray347-3.xml\
+ 	bolt.xml\
+ 	bolt2.xml\
+-	bolt2.xml\
+-	bolt2.xml\
+-	bolt2.xml\
+ 	bolt3041.xml\
+-	bolt2.xml\
+-	bolt2.xml\
+-	bolt2.xml\
+-	bolt3.xml\
+ 	bolt3.xml\
+-	bolt3.xml\
+-	bolt3.xml\
+-	bolt3.xml\
+-	bolt3.xml\
+-	bolt3.xml\
+-	bolt3.xml\
+-	blood.xml\
+ 	blood.xml\
+ 	burned.xml\
+-	burned.xml\
+-	burned.xml\
+ 	burned2.xml\
+ 	title.xml\
+ 	title2.xml\
+ 	title3.xml\
+ 	title4.xml\
+-	title4.xml\
+ 	neodico.png
+ 
+ EXTRA_DIST = $(neodraughts_data_DATA)
+diff -Naur NeoDraughts-0.3.orig/data/Makefile.am NeoDraughts-0.3/data/Makefile.am
+--- NeoDraughts-0.3.orig/data/Makefile.am	2006-09-23 20:44:04.000000000 +0300
++++ NeoDraughts-0.3/data/Makefile.am	2011-01-11 17:28:47.251000032 +0200
+@@ -33,7 +33,6 @@
+ 	weapon.pcx\
+ 	credits\
+ 	chessheight.bmp\
+-	ray.xml\
+ 	ray1581.xml\
+ 	bolt2030.xml\
+ 	bolt0.xml\
+@@ -42,42 +41,22 @@
+ 	ray796.xml\
+ 	ray0.xml\
+ 	ray571.xml\
+-	ray571.xml\
+-	ray459.xml\
+ 	ray459.xml\
+ 	ray347.xml\
+ 	ray.xml\
+ 	ray247.xml\
+ 	ray347-3.xml\
+-	ray347-3.xml\
+ 	bolt.xml\
+ 	bolt2.xml\
+-	bolt2.xml\
+-	bolt2.xml\
+-	bolt2.xml\
+ 	bolt3041.xml\
+-	bolt2.xml\
+-	bolt2.xml\
+-	bolt2.xml\
+-	bolt3.xml\
+ 	bolt3.xml\
+-	bolt3.xml\
+-	bolt3.xml\
+-	bolt3.xml\
+-	bolt3.xml\
+-	bolt3.xml\
+-	bolt3.xml\
+-	blood.xml\
+ 	blood.xml\
+ 	burned.xml\
+-	burned.xml\
+-	burned.xml\
+ 	burned2.xml\
+ 	title.xml\
+ 	title2.xml\
+ 	title3.xml\
+ 	title4.xml\
+-	title4.xml\
+ 	neodico.png
+ 
+ EXTRA_DIST = $(neodraughts_data_DATA)
+diff -Naur NeoDraughts-0.3.orig/data/Makefile.in NeoDraughts-0.3/data/Makefile.in
+--- NeoDraughts-0.3.orig/data/Makefile.in	2006-09-23 20:44:05.000000000 +0300
++++ NeoDraughts-0.3/data/Makefile.in	2011-01-11 17:29:04.141000031 +0200
+@@ -195,7 +195,6 @@
+ 	weapon.pcx\
+ 	credits\
+ 	chessheight.bmp\
+-	ray.xml\
+ 	ray1581.xml\
+ 	bolt2030.xml\
+ 	bolt0.xml\
+@@ -204,8 +203,6 @@
+ 	ray796.xml\
+ 	ray0.xml\
+ 	ray571.xml\
+-	ray571.xml\
+-	ray459.xml\
+ 	ray459.xml\
+ 	ray347.xml\
+ 	ray.xml\
+@@ -214,32 +211,16 @@
+ 	ray347-3.xml\
+ 	bolt.xml\
+ 	bolt2.xml\
+-	bolt2.xml\
+-	bolt2.xml\
+-	bolt2.xml\
+ 	bolt3041.xml\
+-	bolt2.xml\
+-	bolt2.xml\
+-	bolt2.xml\
+-	bolt3.xml\
+-	bolt3.xml\
+-	bolt3.xml\
+-	bolt3.xml\
+-	bolt3.xml\
+-	bolt3.xml\
+-	bolt3.xml\
+ 	bolt3.xml\
+ 	blood.xml\
+ 	blood.xml\
+ 	burned.xml\
+-	burned.xml\
+-	burned.xml\
+ 	burned2.xml\
+ 	title.xml\
+ 	title2.xml\
+ 	title3.xml\
+ 	title4.xml\
+-	title4.xml\
+ 	neodico.png
+ 
+ EXTRA_DIST = $(neodraughts_data_DATA)
+diff -Naur NeoDraughts-0.3.orig/src/camera.cpp NeoDraughts-0.3/src/camera.cpp
+--- NeoDraughts-0.3.orig/src/camera.cpp	2006-10-01 22:47:37.000000000 +0300
++++ NeoDraughts-0.3/src/camera.cpp	2011-01-11 18:08:36.717000049 +0200
+@@ -1,713 +1,713 @@
+-#include "include/main.h"
+-#include "include/camera.h"
+-#include "include/manager.h"
+-#include "include/figure.h"
+-#include "math.h"
+-#include "include/Game.h"
+-#include <cstring>
++#include "include/main.h"
++#include "include/camera.h"
++#include "include/manager.h"
++#include "include/figure.h"
++#include "math.h"
++#include "include/Game.h"
++#include <cstring>
+ #include "include/particles.h"
+-
+-
+-extern Game *gra;
+-
+-Camera::Camera(int screen_width,int screen_height,float vl,float vr,float vb,float vt,float dn,float df)
+-{
+-	glViewport(0,0,screen_width,screen_height);	
+-	glMatrixMode(GL_PROJECTION);
+-	glLoadIdentity();
+-	glFrustum(vl,vr,vb,vt,dn,df);	
+-	screenw=screen_width;
+-	screenh=screen_height;
+-	viewl=vl;
+-	viewr=vr;
+-	viewb=vb;
+-	viewt=vt;
+-	distn=dn;
+-	distf=df;
+-	
+-	posx=0;
+-	posy=0;
+-	posz=0;
+-	destx=0;
+-	desty=0;
+-	destz=0;
+-	nrmlx=0;
+-	nrmly=0;
+-	nrmlz=0;
+-	
+-	dimx=800;	
+-	dimy=600;
+-	
+-	SetCameraState(AWAITING);
+-	
+-	flag=1;	// This flag indicate weather to calcualte new coords of billboard or not
+-	
+-	cmpath=NULL;
+-	ltpath=NULL;
+-        glMatrixMode(GL_MODELVIEW);
+-}
+-
+-void Camera::Change(float px,float py,float pz,float dx,float dy,float dz,float nx,float ny,float nz)
+-{
+-	posx=px;
+-	posy=py;
+-	posz=pz;
+-	destx=dx;
+-	desty=dy;
+-	destz=dz;
+-	nrmlx=nx;
+-	nrmly=ny;
+-	nrmlz=nz;
+-	flag=1;		// Mark that camra coords has changed	
+-}
+-
+-// Convert camra position into required buffer
+-// Required Buffer should have 100 bytes length
+-void Camera::PrintCoords(char (*bufor)[100])
+-{
+-	memset(*bufor,0,100);	
+-	sprintf(*bufor,"camra: px=%f py=%f pz=%f, dx=%f dy=%f dz=%f,nx=%f ny=%f nz=%f",posx,posy,posz,destx,desty,destz,nrmlx,nrmly,nrmlz);
+-}
+-
+-// Wraper for setting Camra
+-void Camera::Put()
+-{
+-	if( GetCameraState() == MOVING )
+-		DisplaceCamera();
+-
+-	Set();		
+-	// Tutaj gdzies obrot
+-	if(flag==1) {
+-		Calculate();
+-		flag=0;		
+-	} 
+-}
+-
+-// Some camra modificators
+-void Camera::Translate(float x,float y,float z)
+-{
+-	posx+=x;
+-	posy+=y;
+-	posz+=z;
+-	destx+=x;
+-	desty+=y;
+-	destz+=z;
+-	flag=1;	
+-}
+-
+-void Camera::Move(float x)
+-{
+-	float length;
+-	float vec1[3];
+-	
+-	// Iloczyn skalarny
+-	// liczony wzgledem wektora 0,0,-1 -> 0,-1 
+-	
+-	vec1[0]=destx-posx;
+-	vec1[1]=desty-posy;
+-	vec1[2]=destz-posz;
+-	length=(float)sqrt(vec1[0]*vec1[0]+vec1[1]*vec1[1]+vec1[2]*vec1[2]);
+-	
+-	// First get angle in Y plane
+-	// 
+-	if(length!=0) {
+-		vec1[0]/=length;
+-		vec1[1]/=length;
+-		vec1[2]/=length;
+-		
+-	} 
+-	
+-	posx+=x*vec1[0];
+-	posy+=x*vec1[1];
+-	posz+=x*vec1[2];
+-	destx+=x*vec1[0];
+-	desty+=x*vec1[1];
+-	destz+=x*vec1[2];
+-	flag=1;	
+-}
+-
+-
+-void Camera::RotateX(float katx)
+-{
+-	float rads;
+-	float yn,zn;
+-	
+-	rads=PIK*katx;
+-	yn=(float)(posy+(desty-posy)*cos(rads)+(destz-posz)*sin(rads));
+-	zn=(float)(posz+(destz-posz)*cos(rads)-(desty-posy)*sin(rads));
+-	desty=yn;
+-	destz=zn;	
+-	flag=1;	
+-}
+-	
+-void Camera::RotateY(float katy)
+-{
+-	float rads;
+-	float xn,zn;
+-	
+-	rads=PIK*katy;
+-	xn=(float)(posx+(destx-posx)*cos(rads)-(destz-posz)*sin(rads));
+-	zn=(float)(posz+(destz-posz)*cos(rads)+(destx-posx)*sin(rads));
+-	destx=xn;
+-	destz=zn;	
+-	flag=1;	
+-}
+-
+-void Camera::RotateZ(float katz)
+-{
+-	float rads;
+-	float xn,yn;
+-	
+-	rads=PIK*katz;
+-	xn=(float)(posx+(destx-posx)*cos(rads)+(desty-posy)*sin(rads));
+-	yn=(float)(posy+(desty-posy)*cos(rads)-(destx-posx)*sin(rads));
+-	destx=xn;
+-	desty=yn;	
+-	flag=1;	
+-}
+-
+-// Rotation along the lookat point
+-
+-void Camera::IRotateX(float katx)
+-{
+-	float rads;
+-	float yn,zn;
+-	
+-	rads=PIK*katx;
+-	yn=(float)(desty+(-desty+posy)*cos(rads)+(-destz+posz)*sin(rads));
+-	zn=(float)(destz+(-destz+posz)*cos(rads)-(-desty+posy)*sin(rads));
+-	posy=yn;
+-	posz=zn;	
+-	flag=1;	
+-	
+-}
+-
+-void Camera::IRotateY(float katy)
+-{
+-	float rads;
+-	float xn,zn;
+-	
+-	rads=PIK*katy;
+-	xn=(float)(destx+(-destx+posx)*cos(rads)-(-destz+posz)*sin(rads));
+-	zn=(float)(destz+(-destz+posz)*cos(rads)+(-destx+posx)*sin(rads));
+-	posx=xn;
+-	posz=zn;	
+-	flag=1;	
+-}
+-
+-void Camera::IRotateZ(float katz)
+-{
+-	float rads;
+-	float xn,yn;
+-	
+-	rads=PIK*katz;
+-	xn=(float)(destx+(-destx+posx)*cos(rads)+(-desty+posy)*sin(rads));
+-	yn=(float)(desty+(-desty+posy)*cos(rads)-(-destx+posx)*sin(rads));
+-	posx=xn;
+-	posy=yn;	
+-	flag=1;		// This flag means that View has changed so it require to be precalculeted
+-}
+-
+-void Camera::getAspectPointCoords(float *ppx,float *ppy,float *ppz)
+-{
+-    int px,py,pz;
+-    cvector ltv;
+-
+-    px = (int)((float)screenw*(*ppx));
+-    py = (int)((float)screenh*(*ppy));
+-    pz = *ppz;
+-
+-    *ppx = startx + (float)px*stepwx + (float)py*stephx;
+-    *ppy = starty + (float)px*stepwy + (float)py*stephy;
+-    *ppz = startz + (float)px*stepwz + (float)py*stephz;
+-    
+-    GetLookAtVector(&ltv);
+-    //printf("x=%f y=%f z=%f\n",ltv.x,ltv.y,ltv.z);
+-    
+-    // Normalize vector
+-    if(normalize(&ltv)==false)
+-        printf("Error during normalization of camra lookat vector\n");
+- 
+-    // Distance is calculated by multiply normalized lookat with requested distance value
+-   // printf("clt x=%f y=%f z=%f\n",ltv.x,ltv.y,ltv.z);     
+-
+-    *ppx += (pz)*ltv.x;
+-    *ppy += (pz)*ltv.y; 
+-    *ppz += (pz)*ltv.z;   
+-            
+-//     printf("px=%f py=%f pz=%f cx=%f cy=%f cz=%f\n",*ppx,*ppy,*ppz,cx,cy,cz);
+-}
+-
+-bool Camera::normalize(cvector *ltv)
+-{
+-    float ldist;
+-    
+-    ldist = sqrt(ltv->x*ltv->x + ltv->y*ltv->y + ltv->z*ltv->z);
+-    if(ldist!=0) {
+-        ltv->x/=ldist;
+-        ltv->y/=ldist;
+-        ltv->z/=ldist;
+-        return true;
+-    } else {
+-        return false;
+-    }
+-}
+-
+-// This Function can't Be called during working console mode
+-// Because MODELVIEW Matrix is changed
+-void Camera::Calculate(void)
+-{
+-	vector vx,vy;
+-	vector ru,ld;
+-	float mat[16];	
+-
+-	GetMid();	//Get middle of frustum front face coords
+-	glGetFloatv(GL_MODELVIEW_MATRIX,mat);
+-
+-	vx.x=mat[0];
+-	vx.y=mat[4];
+-	vx.z=mat[8];
+-
+-	vy.x=mat[1];
+-	vy.y=mat[5];
+-	vy.z=mat[9];
+-
+-	startx=cx-vx.x*viewr+vy.x*viewt;
+-	starty=cy-vx.y*viewr+vy.y*viewt;
+-	startz=cz-vx.z*viewr+vy.z*viewt;
+-
+-	ru.x=cx+vx.x*viewr+vy.x*viewt;
+-	ru.y=cy+vx.y*viewr+vy.y*viewt;
+-	ru.z=cz+vx.z*viewr+vy.z*viewt;
+-
+-	rux=ru.x;
+-	ruy=ru.y;
+-	ruz=ru.z;
+-
+-	ld.x=cx-vx.x*viewr-vy.x*viewt;
+-	ld.y=cy-vx.y*viewr-vy.y*viewt;
+-	ld.z=cz-vx.z*viewr-vy.z*viewt;
+-
+-	ldx=ld.x;
+-	ldy=ld.y;
+-	ldz=ld.z;
+-
+-	rdx=cx+vx.x*viewr-vy.x*viewt;
+-	rdy=cy+vx.y*viewr-vy.y*viewt;
+-	rdz=cz+vx.z*viewr-vy.z*viewt;
+-
+-	// Increase in width
+-	stepwx=(ru.x-startx)/(float)dimx;
+-	stepwy=(ru.y-starty)/(float)dimx;
+-	stepwz=(ru.z-startz)/(float)dimx;
+-	
+-	// Increase in height
+-	stephx=(ld.x-startx)/(float)dimy;
+-	stephy=(ld.y-starty)/(float)dimy;
+-	stephz=(ld.z-startz)/(float)dimy;
+-	
+-
+-}
+-
+-// Buggy one routine
+-void Camera::Set(void)
+-{
+-	gluLookAt(posx,posy,posz,destx,desty,destz,nrmlx,nrmly,nrmlz);
+-}
+-
+-void Camera::MousePick(int x,int y)
+-{
+-	float dx,dy;
+-	float tmpx,tmpz;
+-
+-	// If there was hit in some widget then do not calculate intersecion 
+-	//with background , also in choice mode there is no background intersection
+-	if((gra->gui->Intersects(x,y)==FALSE)&&(gra->stan.tryb!=CHOICEMODE)) {
+-		// Get aspect 
+-		dx=(float)(((float)x)/((float)screenw*SIZE2D));
+-		dy=(float)((y-(1-SIZE2D)*screenh)/((float)screenh*SIZE2D));
+-	
+-		if((dx>=0)&&(dx<1)&&(dy>=0)&&(dy<1)) {
+-			gra->mapka->CalculatePosition(&tmpx,&tmpz,dx,dy);
+-			destx=(destx-posx)+tmpx;
+-			destz=(destz-posz)+tmpz;
+-			posx=tmpx;
+-			posz=tmpz;
+-			flag=1;
+-		} else {
+-			gra->stan.lewy=2;
+-			gra->stan.mx=x;
+-			gra->stan.my=y;
+-		}
+-	}
+-}
+-
+-// Return Camra postion
+-cvector Camera::getPos(void)
+-{
+-	cvector campos;
+-	campos.x=posx;
+-	campos.y=posy;
+-	campos.z=posz;
+-	return campos;
+-}
+-
+-cvector Camera::GetDest(void)
+-{
+-	cvector destcoords;
+-	destcoords.x=destx;
+-	destcoords.y=desty;
+-	destcoords.z=destz;
+-	return destcoords;
+-}
+-
+-cvector Camera::GetMid(void)
+-{
+-	float lvx,lvy,lvz;
+-	float length;
+-	cvector wektor;
+-	
+-	lvx=destx-posx;
+-	lvy=desty-posy;
+-	lvz=destz-posz;
+-	
+-	length=sqrt(lvx*lvx+lvy*lvy+lvz*lvz);
+-	if(length!=0) {
+-		lvx/=length;
+-		lvy/=length;
+-		lvz/=length;
+-	}
+-
+-	font_offset=(distf-distn)/(float)100000;
+-		
+-	cx=lvx*(distn+font_offset)+posx;
+-	cy=lvy*(distn+font_offset)+posy;
+-	cz=lvz*(distn+font_offset)+posz;
+-	
+-	wektor.x=cx;
+-	wektor.y=cy;
+-	wektor.z=cz;
+-	wektor.w=0.0;
+-	
+-	return wektor;
+-}
+-
+-// Return Vector Along which one we are looking at scene
+-void Camera::GetLookAtVector(cvector *plt)
+-{
+-	plt->x=destx-posx;
+-	plt->y=desty-posy;
+-	plt->z=destz-posz;
+-	plt->w=0;
+-}
+-
+-Camera::~Camera()
+-{
+-	if( cmpath != NULL)
+-		delete cmpath;
+-	
+-	if( ltpath != NULL)
+-		delete ltpath;
+-}
+-
+-// Taking a photo routine .. grabing screenshot
+-//TODO: Rewrite this screen taking routine to work with qt
+-int Camera::GrabScreen(const char* name)
+-{
+- 	unsigned char *pixels;	
+-    SDL_Surface *tmp;
+-	int i;
+-	FILE *fp;
+-	char pbufor[300];
+-	char fullname[200];
+-
+-	// Linux excluded!
+-	// If directory does not exist will be created with current user acces rights
+-	//CreateDirec../share/NeoDraughts/data("screens\0",NULL);
+-	mkdir("../share/NeoDraughts/screens",0777);
+-	memset(fullname,0,200);
+-	sprintf(fullname,"../share/NeoDraughts/screens/%s",name);	
+-	fp=fopen(fullname,"rb");
+-	if(fp!=NULL) {
+-		memset(pbufor,0,300);
+-		sprintf(pbufor,"Error: Required Name file: %s exists",fullname);
+-		gra->konsolka->AddRegistry(pbufor,0);
+-		fclose(fp);	
+-		return(0);
+-	} else {	
+-		fp=fopen(fullname,"wb");
+-		if(fp==NULL) {
+-			memset(pbufor,0,300);
+-			sprintf(pbufor,"Error: Required Name file: %s coludn't have been created",fullname);
+-			gra->konsolka->AddRegistry(pbufor,0);
+-			return(0);
+-		}
+-		fclose(fp);	
+-	
+-		// Function that I'm calling below is proper for BIg and Low Endina
+-		// Big Endian and low endian got difrent(shifted) masks for RGB
+-		tmp=SDL_CreateRGBSurface(0,screenw,screenh,24,
+-	#if SDL_BYTEORDER == SDL_LIL_ENDIAN
+-			0x000000FF, 0x0000FF00, 0x00FF0000, 0);
+-	#else
+-			0x00FF0000, 0x0000FF00, 0x000000FF, 0);
+-	#endif	
+-		
+-		if(tmp==NULL) {
+-			if(gra->konsolka!=NULL)
+-				gra->konsolka->AddRegistry("Error: Nie mozna bylo utworzyc powierzchni potrzebnej do zrzucenia screena",0);
+-			return(0);
+-		}
+-		
+-		try {
+-			pixels=new unsigned char[3*screenw*screenh];
+-		}
+-		catch(...) {
+-			if(gra->konsolka!=NULL)
+-				gra->konsolka->AddRegistry("Error: blad alokacji bufora do zrzucenia screena",0);
+-			return(0);
+-		}
+-	
+-		glReadPixels(0,0,screenw,screenh,GL_RGB,GL_UNSIGNED_BYTE,pixels);
+-	
+-		// Copy pixel data form pixels buffer to temporary Surface
+-		// Note that scanline could be longer than amount of pixels that it contains!!
+-		// backword coping for BMP
+-		for (i=0; i<screenh; i++) {
+-			memcpy(((unsigned char *)tmp->pixels) + tmp->pitch * i, 
+-			pixels + 3*screenw * (screenh-i-1),screenw*3);	
+-		}
+-		
+-		SDL_SaveBMP(tmp,fullname);
+-		
+-		memset(pbufor,0,300);
+-		sprintf(pbufor,"Grabbed Scrrenshot: %s",fullname);
+-		gra->konsolka->AddRegistry(pbufor,0);
+-		
+-		// Get rid of temporary stuff
+-		SDL_FreeSurface(tmp);
+-		delete [] pixels;
+-		
+-		return 1;
+-	}
+-}
+-
+-
+-//! Returns state of camera.
+-Camera_State Camera::GetCameraState(void)
+-{
+-	return state;	
+-}
+-
+-//! Set Camer State 
+-void Camera::SetCameraState(Camera_State desired_state)
+-{
+-	state=desired_state;
+-}
+-
+-//! Initialization of movment, filling the route of camera etc..
+-void Camera::InitCameraMovment(pvector* scm_point,pvector* ecm_point,
+-				pvector *slt_point,pvector *elt_point,unsigned int timescope,
+-				float t1,float t2,Primitive way_of_move,Primitive way_of_look)
+-{
+-	// Calculate start and finish time of movment
+-	
+-	// Allocate object implementing requested method of movment
+-	//If we are during the movment then change Course
+-	
+-	if( cmpath != NULL ) 
+-		delete cmpath;
+-	if( ltpath != NULL )
+-		delete ltpath;
+-	
+-	// We will initialize movment in displace routine
+-	cmparams.scmtime = 0;
+-	cmparams.fcmtime = timescope;	
+-	SetCameraState(MOVING);
+-	// Let's fill movment attributes structure in
+-	cmparams.t1 = t1;
+-	cmparams.t2 = t2;
+-	cmparams.v  = 2.0/(float)( 1.0 + t2 - t1 );	// calculate Velocity
+-	cmparams.a  = cmparams.v/(float)t1;			// compute acceleration
+-	cmparams.s1 = t1*t1*cmparams.a/(float)2.0;	// Precalculate first section's distance
+-
+-	//Assign desired methods of moving to given objects
+-	AssignPath(&cmpath,scm_point,ecm_point,timescope,way_of_move);
+-	AssignPath(&ltpath,slt_point,elt_point,timescope,way_of_look);
+-		
+-}
+-
+-void Camera::AssignPath(IPath** objecttomove,pvector* spoint,pvector* epoint,
+-			unsigned int duration,Primitive way_of_move)
+-{
+-	pvector cpoint[4];
+-	
+-	switch(way_of_move)
+-	{
+-		case DOT:
+-		{
+-			*objecttomove = new Point(spoint);
+-			break;
+-		}
+-		
+-		case LINE:
+-		{
+-			*objecttomove = new StraightLine(spoint,epoint);
+-			break;
+-		}
+-		
+-		case BEZIER4:
+-		{
+-			cpoint[0].x=spoint->x;
+-			cpoint[0].y=spoint->y;
+-			cpoint[0].z=spoint->z;
+-			
+-			cpoint[3].x=epoint->x;
+-			cpoint[3].y=epoint->y;
+-			cpoint[3].z=epoint->z;
+-			
+-			cpoint[1].x=spoint->x - 40.0;
+-			cpoint[1].y=spoint->y + 40.0;
+-			cpoint[1].z=spoint->z + 11.0;
+-			
+-			cpoint[2].x=spoint->x - 60.0;
+-			cpoint[2].y=spoint->y + 40.0;
+-			cpoint[2].z=spoint->z + 66.0;
+-			
+-			*objecttomove = new Bezier4(&cpoint);			
+-			
+-			break;
+-		}
+-	}
+-	
+-	
+-}
+-
+-//! Update Camera position along the initialized route 
+-void Camera::DisplaceCamera(void)
+-{
+-	unsigned int currtime;
+-	float ratio;
+-	float s;
+-	pvector campos;
+-	pvector ltpos;
+-	// Summon apropirate routine and new point calculated among the current circumstances
+-	// will be given to you...
+-
+-	if( cmparams.scmtime == 0 ) {
+-                //TODO: Exchange it for qtimer or somthing similar
+-		cmparams.scmtime = SDL_GetTicks();
+-		cmparams.fcmtime += SDL_GetTicks(); 
+-	}
+-	currtime=SDL_GetTicks();	
+-        
+-	// If given life time(for movment) was exceed then.. turn our objects into dust..
+-	if(currtime > cmparams.fcmtime ) {
+-		//char buforek[100];
+-		//memset(buforek,0,100);
+-		//PrintCoords(&buforek);
+-		//gra->konsolka->AddRegistry(buforek,0);
+-		delete cmpath;
+-		delete ltpath;
+-		cmpath=NULL;
+-		ltpath=NULL;
+-		SetCameraState(AWAITING);
+-		if((gra->getPhase()!=4)&&(gra->getPhase()!=5)&&(gra->gui->getAmount()!=0))
+-			gra->saveTitleId(gra->zarzadca->AddSystem(new Figure(gra->getRequestedPrim(4),gra->getRequestedStream(4))));
+-	} else {
+-		
+-		// Modify ratio to have speed ups and slow downs
+-		
+-		ratio = (float)((currtime - cmparams.scmtime) / (float)(cmparams.fcmtime - cmparams.scmtime));
+-		if( ratio < cmparams.t1 ) {
+-			s = ratio*ratio*cmparams.a/(float)2.0;
+-		} else {
+-			if( ratio < cmparams.t2 ) {
+-				s = cmparams.v*ratio - cmparams.t1*cmparams.t1*cmparams.a/2.0;		
+-			} else {
+-				s = 1.0 - ( 1.0 - ratio )*( 1.0 - ratio )*cmparams.a/(float)2.0;				
+-			}
+-		}
+-		
+-		cmpath->getPosition(&campos,s);
+-		ltpath->getPosition(&ltpos,s);
+-	
+-		// Move Camra into position that was calculated above	
+-		Change(campos.x,campos.y,campos.z,ltpos.x,ltpos.y,ltpos.z,0.0,1.0,0.0);
+-		Change(campos.x,campos.y,campos.z,ltpos.x,ltpos.y,ltpos.z,0.0,1.0,0.0);
+-		
+-		flag=1;	//every update has its consequences
+-	}
+-}
+-
+-/* ShiftCamera in desired time from current location to the one that
+-   distinguish with dx,dy,dz from the one that it is situated currently
+-*/
+-void Camera::ShiftCamera(float cdx,float cdy,float cdz,float ldx,float ldy,float ldz,unsigned int duration,Primitive way_of_move,Primitive way_of_look)
+-{
+-	pvector scm;
+-	pvector ecm;
+-	pvector slt;
+-	pvector elt;
+-	
+-	cvector cpos;
+-	cvector ltpos;
+-	
+-	cpos=getPos();
+-	ltpos=GetDest();
+-	
+-	scm.x=cpos.x;
+-	scm.y=cpos.y;
+-	scm.z=cpos.z;
+-	
+-	ecm.x=cpos.x + cdx;
+-	ecm.y=cpos.y + cdy;
+-	ecm.z=cpos.z + cdz;
+-	
+-	slt.x=ltpos.x;
+-	slt.y=ltpos.y;
+-	slt.z=ltpos.z;
+-	
+-	elt.x=ltpos.x + ldx;
+-	elt.y=ltpos.y + ldy;
+-	elt.z=ltpos.z + ldz;
+-	
+-	// Init movement Camera
+-	InitCameraMovment(&scm,&ecm,&slt,&elt,duration,0.4,0.6,way_of_move,way_of_look);	
+-}
+-
+-/*! Move camera into intermediate position on curve that lies among
+-	start and final point. according to final point that is given a
+-*/
+-void Camera::SituateCamera(float ncx,float ncy,float ncz,float nlx,float nly,float nlz,unsigned int duration,Primitive way_of_move,Primitive way_of_look)
+-{
+-	pvector scm;
+-	pvector ecm;
+-	pvector slt;
+-	pvector elt;
+-	
+-	cvector cpos;
+-	cvector ltpos;
+-	
+-	cpos=getPos();
+-	ltpos=GetDest();
+-	
+-	scm.x=cpos.x;
+-	scm.y=cpos.y;
+-	scm.z=cpos.z;
+-	
+-	ecm.x=ncx;
+-	ecm.y=ncy;
+-	ecm.z=ncz;
+-	
+-	slt.x=ltpos.x;
+-	slt.y=ltpos.y;
+-	slt.z=ltpos.z;
+-	
+-	elt.x=nlx;
+-	elt.y=nly;
+-	elt.z=nlz;
+-
+-	// Init movement Camera
+-	InitCameraMovment(&scm,&ecm,&slt,&elt,duration,0.4,0.6,way_of_move,way_of_look);	
+-}
++
++
++extern Game *gra;
++
++Camera::Camera(int screen_width,int screen_height,float vl,float vr,float vb,float vt,float dn,float df)
++{
++	glViewport(0,0,screen_width,screen_height);	
++	glMatrixMode(GL_PROJECTION);
++	glLoadIdentity();
++	glFrustum(vl,vr,vb,vt,dn,df);	
++	screenw=screen_width;
++	screenh=screen_height;
++	viewl=vl;
++	viewr=vr;
++	viewb=vb;
++	viewt=vt;
++	distn=dn;
++	distf=df;
++	
++	posx=0;
++	posy=0;
++	posz=0;
++	destx=0;
++	desty=0;
++	destz=0;
++	nrmlx=0;
++	nrmly=0;
++	nrmlz=0;
++	
++	dimx=800;	
++	dimy=600;
++	
++	SetCameraState(AWAITING);
++	
++	flag=1;	// This flag indicate weather to calcualte new coords of billboard or not
++	
++	cmpath=NULL;
++	ltpath=NULL;
++        glMatrixMode(GL_MODELVIEW);
++}
++
++void Camera::Change(float px,float py,float pz,float dx,float dy,float dz,float nx,float ny,float nz)
++{
++	posx=px;
++	posy=py;
++	posz=pz;
++	destx=dx;
++	desty=dy;
++	destz=dz;
++	nrmlx=nx;
++	nrmly=ny;
++	nrmlz=nz;
++	flag=1;		// Mark that camra coords has changed	
++}
++
++// Convert camra position into required buffer
++// Required Buffer should have 100 bytes length
++void Camera::PrintCoords(char (*bufor)[100])
++{
++	memset(*bufor,0,100);	
++	sprintf(*bufor,"camra: px=%f py=%f pz=%f, dx=%f dy=%f dz=%f,nx=%f ny=%f nz=%f",posx,posy,posz,destx,desty,destz,nrmlx,nrmly,nrmlz);
++}
++
++// Wraper for setting Camra
++void Camera::Put()
++{
++	if( GetCameraState() == MOVING )
++		DisplaceCamera();
++
++	Set();		
++	// Tutaj gdzies obrot
++	if(flag==1) {
++		Calculate();
++		flag=0;		
++	} 
++}
++
++// Some camra modificators
++void Camera::Translate(float x,float y,float z)
++{
++	posx+=x;
++	posy+=y;
++	posz+=z;
++	destx+=x;
++	desty+=y;
++	destz+=z;
++	flag=1;	
++}
++
++void Camera::Move(float x)
++{
++	float length;
++	float vec1[3];
++	
++	// Iloczyn skalarny
++	// liczony wzgledem wektora 0,0,-1 -> 0,-1 
++	
++	vec1[0]=destx-posx;
++	vec1[1]=desty-posy;
++	vec1[2]=destz-posz;
++	length=(float)sqrt(vec1[0]*vec1[0]+vec1[1]*vec1[1]+vec1[2]*vec1[2]);
++	
++	// First get angle in Y plane
++	// 
++	if(length!=0) {
++		vec1[0]/=length;
++		vec1[1]/=length;
++		vec1[2]/=length;
++		
++	} 
++	
++	posx+=x*vec1[0];
++	posy+=x*vec1[1];
++	posz+=x*vec1[2];
++	destx+=x*vec1[0];
++	desty+=x*vec1[1];
++	destz+=x*vec1[2];
++	flag=1;	
++}
++
++
++void Camera::RotateX(float katx)
++{
++	float rads;
++	float yn,zn;
++	
++	rads=PIK*katx;
++	yn=(float)(posy+(desty-posy)*cos(rads)+(destz-posz)*sin(rads));
++	zn=(float)(posz+(destz-posz)*cos(rads)-(desty-posy)*sin(rads));
++	desty=yn;
++	destz=zn;	
++	flag=1;	
++}
++	
++void Camera::RotateY(float katy)
++{
++	float rads;
++	float xn,zn;
++	
++	rads=PIK*katy;
++	xn=(float)(posx+(destx-posx)*cos(rads)-(destz-posz)*sin(rads));
++	zn=(float)(posz+(destz-posz)*cos(rads)+(destx-posx)*sin(rads));
++	destx=xn;
++	destz=zn;	
++	flag=1;	
++}
++
++void Camera::RotateZ(float katz)
++{
++	float rads;
++	float xn,yn;
++	
++	rads=PIK*katz;
++	xn=(float)(posx+(destx-posx)*cos(rads)+(desty-posy)*sin(rads));
++	yn=(float)(posy+(desty-posy)*cos(rads)-(destx-posx)*sin(rads));
++	destx=xn;
++	desty=yn;	
++	flag=1;	
++}
++
++// Rotation along the lookat point
++
++void Camera::IRotateX(float katx)
++{
++	float rads;
++	float yn,zn;
++	
++	rads=PIK*katx;
++	yn=(float)(desty+(-desty+posy)*cos(rads)+(-destz+posz)*sin(rads));
++	zn=(float)(destz+(-destz+posz)*cos(rads)-(-desty+posy)*sin(rads));
++	posy=yn;
++	posz=zn;	
++	flag=1;	
++	
++}
++
++void Camera::IRotateY(float katy)
++{
++	float rads;
++	float xn,zn;
++	
++	rads=PIK*katy;
++	xn=(float)(destx+(-destx+posx)*cos(rads)-(-destz+posz)*sin(rads));
++	zn=(float)(destz+(-destz+posz)*cos(rads)+(-destx+posx)*sin(rads));
++	posx=xn;
++	posz=zn;	
++	flag=1;	
++}
++
++void Camera::IRotateZ(float katz)
++{
++	float rads;
++	float xn,yn;
++	
++	rads=PIK*katz;
++	xn=(float)(destx+(-destx+posx)*cos(rads)+(-desty+posy)*sin(rads));
++	yn=(float)(desty+(-desty+posy)*cos(rads)-(-destx+posx)*sin(rads));
++	posx=xn;
++	posy=yn;	
++	flag=1;		// This flag means that View has changed so it require to be precalculeted
++}
++
++void Camera::getAspectPointCoords(float *ppx,float *ppy,float *ppz)
++{
++    int px,py,pz;
++    cvector ltv;
++
++    px = (int)((float)screenw*(*ppx));
++    py = (int)((float)screenh*(*ppy));
++    pz = *ppz;
++
++    *ppx = startx + (float)px*stepwx + (float)py*stephx;
++    *ppy = starty + (float)px*stepwy + (float)py*stephy;
++    *ppz = startz + (float)px*stepwz + (float)py*stephz;
++    
++    GetLookAtVector(&ltv);
++    //printf("x=%f y=%f z=%f\n",ltv.x,ltv.y,ltv.z);
++    
++    // Normalize vector
++    if(normalize(&ltv)==false)
++        printf("Error during normalization of camra lookat vector\n");
++ 
++    // Distance is calculated by multiply normalized lookat with requested distance value
++   // printf("clt x=%f y=%f z=%f\n",ltv.x,ltv.y,ltv.z);     
++
++    *ppx += (pz)*ltv.x;
++    *ppy += (pz)*ltv.y; 
++    *ppz += (pz)*ltv.z;   
++            
++//     printf("px=%f py=%f pz=%f cx=%f cy=%f cz=%f\n",*ppx,*ppy,*ppz,cx,cy,cz);
++}
++
++bool Camera::normalize(cvector *ltv)
++{
++    float ldist;
++    
++    ldist = sqrt(ltv->x*ltv->x + ltv->y*ltv->y + ltv->z*ltv->z);
++    if(ldist!=0) {
++        ltv->x/=ldist;
++        ltv->y/=ldist;
++        ltv->z/=ldist;
++        return true;
++    } else {
++        return false;
++    }
++}
++
++// This Function can't Be called during working console mode
++// Because MODELVIEW Matrix is changed
++void Camera::Calculate(void)
++{
++	vector vx,vy;
++	vector ru,ld;
++	float mat[16];	
++
++	GetMid();	//Get middle of frustum front face coords
++	glGetFloatv(GL_MODELVIEW_MATRIX,mat);
++
++	vx.x=mat[0];
++	vx.y=mat[4];
++	vx.z=mat[8];
++
++	vy.x=mat[1];
++	vy.y=mat[5];
++	vy.z=mat[9];
++
++	startx=cx-vx.x*viewr+vy.x*viewt;
++	starty=cy-vx.y*viewr+vy.y*viewt;
++	startz=cz-vx.z*viewr+vy.z*viewt;
++
++	ru.x=cx+vx.x*viewr+vy.x*viewt;
++	ru.y=cy+vx.y*viewr+vy.y*viewt;
++	ru.z=cz+vx.z*viewr+vy.z*viewt;
++
++	rux=ru.x;
++	ruy=ru.y;
++	ruz=ru.z;
++
++	ld.x=cx-vx.x*viewr-vy.x*viewt;
++	ld.y=cy-vx.y*viewr-vy.y*viewt;
++	ld.z=cz-vx.z*viewr-vy.z*viewt;
++
++	ldx=ld.x;
++	ldy=ld.y;
++	ldz=ld.z;
++
++	rdx=cx+vx.x*viewr-vy.x*viewt;
++	rdy=cy+vx.y*viewr-vy.y*viewt;
++	rdz=cz+vx.z*viewr-vy.z*viewt;
++
++	// Increase in width
++	stepwx=(ru.x-startx)/(float)dimx;
++	stepwy=(ru.y-starty)/(float)dimx;
++	stepwz=(ru.z-startz)/(float)dimx;
++	
++	// Increase in height
++	stephx=(ld.x-startx)/(float)dimy;
++	stephy=(ld.y-starty)/(float)dimy;
++	stephz=(ld.z-startz)/(float)dimy;
++	
++
++}
++
++// Buggy one routine
++void Camera::Set(void)
++{
++	gluLookAt(posx,posy,posz,destx,desty,destz,nrmlx,nrmly,nrmlz);
++}
++
++void Camera::MousePick(int x,int y)
++{
++	float dx,dy;
++	float tmpx,tmpz;
++
++	// If there was hit in some widget then do not calculate intersecion 
++	//with background , also in choice mode there is no background intersection
++	if((gra->gui->Intersects(x,y)==FALSE)&&(gra->stan.tryb!=CHOICEMODE)) {
++		// Get aspect 
++		dx=(float)(((float)x)/((float)screenw*SIZE2D));
++		dy=(float)((y-(1-SIZE2D)*screenh)/((float)screenh*SIZE2D));
++	
++		if((dx>=0)&&(dx<1)&&(dy>=0)&&(dy<1)) {
++			gra->mapka->CalculatePosition(&tmpx,&tmpz,dx,dy);
++			destx=(destx-posx)+tmpx;
++			destz=(destz-posz)+tmpz;
++			posx=tmpx;
++			posz=tmpz;
++			flag=1;
++		} else {
++			gra->stan.lewy=2;
++			gra->stan.mx=x;
++			gra->stan.my=y;
++		}
++	}
++}
++
++// Return Camra postion
++cvector Camera::getPos(void)
++{
++	cvector campos;
++	campos.x=posx;
++	campos.y=posy;
++	campos.z=posz;
++	return campos;
++}
++
++cvector Camera::GetDest(void)
++{
++	cvector destcoords;
++	destcoords.x=destx;
++	destcoords.y=desty;
++	destcoords.z=destz;
++	return destcoords;
++}
++
++cvector Camera::GetMid(void)
++{
++	float lvx,lvy,lvz;
++	float length;
++	cvector wektor;
++	
++	lvx=destx-posx;
++	lvy=desty-posy;
++	lvz=destz-posz;
++	
++	length=sqrt(lvx*lvx+lvy*lvy+lvz*lvz);
++	if(length!=0) {
++		lvx/=length;
++		lvy/=length;
++		lvz/=length;
++	}
++
++	font_offset=(distf-distn)/(float)100000;
++		
++	cx=lvx*(distn+font_offset)+posx;
++	cy=lvy*(distn+font_offset)+posy;
++	cz=lvz*(distn+font_offset)+posz;
++	
++	wektor.x=cx;
++	wektor.y=cy;
++	wektor.z=cz;
++	wektor.w=0.0;
++	
++	return wektor;
++}
++
++// Return Vector Along which one we are looking at scene
++void Camera::GetLookAtVector(cvector *plt)
++{
++	plt->x=destx-posx;
++	plt->y=desty-posy;
++	plt->z=destz-posz;
++	plt->w=0;
++}
++
++Camera::~Camera()
++{
++	if( cmpath != NULL)
++		delete cmpath;
++	
++	if( ltpath != NULL)
++		delete ltpath;
++}
++
++// Taking a photo routine .. grabing screenshot
++//TODO: Rewrite this screen taking routine to work with qt
++int Camera::GrabScreen(const char* name)
++{
++ 	unsigned char *pixels;	
++    SDL_Surface *tmp;
++	int i;
++	FILE *fp;
++	char pbufor[300];
++	char fullname[200];
++
++	// Linux excluded!
++	// If directory does not exist will be created with current user acces rights
++	//CreateDirec/usr/share/NeoDraughts/data("screens\0",NULL);
++	mkdir("/usr/share/NeoDraughts/screens",0777);
++	memset(fullname,0,200);
++	sprintf(fullname,"/usr/share/NeoDraughts/screens/%s",name);	
++	fp=fopen(fullname,"rb");
++	if(fp!=NULL) {
++		memset(pbufor,0,300);
++		sprintf(pbufor,"Error: Required Name file: %s exists",fullname);
++		gra->konsolka->AddRegistry(pbufor,0);
++		fclose(fp);	
++		return(0);
++	} else {	
++		fp=fopen(fullname,"wb");
++		if(fp==NULL) {
++			memset(pbufor,0,300);
++			sprintf(pbufor,"Error: Required Name file: %s coludn't have been created",fullname);
++			gra->konsolka->AddRegistry(pbufor,0);
++			return(0);
++		}
++		fclose(fp);	
++	
++		// Function that I'm calling below is proper for BIg and Low Endina
++		// Big Endian and low endian got difrent(shifted) masks for RGB
++		tmp=SDL_CreateRGBSurface(0,screenw,screenh,24,
++	#if SDL_BYTEORDER == SDL_LIL_ENDIAN
++			0x000000FF, 0x0000FF00, 0x00FF0000, 0);
++	#else
++			0x00FF0000, 0x0000FF00, 0x000000FF, 0);
++	#endif	
++		
++		if(tmp==NULL) {
++			if(gra->konsolka!=NULL)
++				gra->konsolka->AddRegistry("Error: Nie mozna bylo utworzyc powierzchni potrzebnej do zrzucenia screena",0);
++			return(0);
++		}
++		
++		try {
++			pixels=new unsigned char[3*screenw*screenh];
++		}
++		catch(...) {
++			if(gra->konsolka!=NULL)
++				gra->konsolka->AddRegistry("Error: blad alokacji bufora do zrzucenia screena",0);
++			return(0);
++		}
++	
++		glReadPixels(0,0,screenw,screenh,GL_RGB,GL_UNSIGNED_BYTE,pixels);
++	
++		// Copy pixel data form pixels buffer to temporary Surface
++		// Note that scanline could be longer than amount of pixels that it contains!!
++		// backword coping for BMP
++		for (i=0; i<screenh; i++) {
++			memcpy(((unsigned char *)tmp->pixels) + tmp->pitch * i, 
++			pixels + 3*screenw * (screenh-i-1),screenw*3);	
++		}
++		
++		SDL_SaveBMP(tmp,fullname);
++		
++		memset(pbufor,0,300);
++		sprintf(pbufor,"Grabbed Scrrenshot: %s",fullname);
++		gra->konsolka->AddRegistry(pbufor,0);
++		
++		// Get rid of temporary stuff
++		SDL_FreeSurface(tmp);
++		delete [] pixels;
++		
++		return 1;
++	}
++}
++
++
++//! Returns state of camera.
++Camera_State Camera::GetCameraState(void)
++{
++	return state;	
++}
++
++//! Set Camer State 
++void Camera::SetCameraState(Camera_State desired_state)
++{
++	state=desired_state;
++}
++
++//! Initialization of movment, filling the route of camera etc..
++void Camera::InitCameraMovment(pvector* scm_point,pvector* ecm_point,
++				pvector *slt_point,pvector *elt_point,unsigned int timescope,
++				float t1,float t2,Primitive way_of_move,Primitive way_of_look)
++{
++	// Calculate start and finish time of movment
++	
++	// Allocate object implementing requested method of movment
++	//If we are during the movment then change Course
++	
++	if( cmpath != NULL ) 
++		delete cmpath;
++	if( ltpath != NULL )
++		delete ltpath;
++	
++	// We will initialize movment in displace routine
++	cmparams.scmtime = 0;
++	cmparams.fcmtime = timescope;	
++	SetCameraState(MOVING);
++	// Let's fill movment attributes structure in
++	cmparams.t1 = t1;
++	cmparams.t2 = t2;
++	cmparams.v  = 2.0/(float)( 1.0 + t2 - t1 );	// calculate Velocity
++	cmparams.a  = cmparams.v/(float)t1;			// compute acceleration
++	cmparams.s1 = t1*t1*cmparams.a/(float)2.0;	// Precalculate first section's distance
++
++	//Assign desired methods of moving to given objects
++	AssignPath(&cmpath,scm_point,ecm_point,timescope,way_of_move);
++	AssignPath(&ltpath,slt_point,elt_point,timescope,way_of_look);
++		
++}
++
++void Camera::AssignPath(IPath** objecttomove,pvector* spoint,pvector* epoint,
++			unsigned int duration,Primitive way_of_move)
++{
++	pvector cpoint[4];
++	
++	switch(way_of_move)
++	{
++		case DOT:
++		{
++			*objecttomove = new Point(spoint);
++			break;
++		}
++		
++		case LINE:
++		{
++			*objecttomove = new StraightLine(spoint,epoint);
++			break;
++		}
++		
++		case BEZIER4:
++		{
++			cpoint[0].x=spoint->x;
++			cpoint[0].y=spoint->y;
++			cpoint[0].z=spoint->z;
++			
++			cpoint[3].x=epoint->x;
++			cpoint[3].y=epoint->y;
++			cpoint[3].z=epoint->z;
++			
++			cpoint[1].x=spoint->x - 40.0;
++			cpoint[1].y=spoint->y + 40.0;
++			cpoint[1].z=spoint->z + 11.0;
++			
++			cpoint[2].x=spoint->x - 60.0;
++			cpoint[2].y=spoint->y + 40.0;
++			cpoint[2].z=spoint->z + 66.0;
++			
++			*objecttomove = new Bezier4(&cpoint);			
++			
++			break;
++		}
++	}
++	
++	
++}
++
++//! Update Camera position along the initialized route 
++void Camera::DisplaceCamera(void)
++{
++	unsigned int currtime;
++	float ratio;
++	float s;
++	pvector campos;
++	pvector ltpos;
++	// Summon apropirate routine and new point calculated among the current circumstances
++	// will be given to you...
++
++	if( cmparams.scmtime == 0 ) {
++                //TODO: Exchange it for qtimer or somthing similar
++		cmparams.scmtime = SDL_GetTicks();
++		cmparams.fcmtime += SDL_GetTicks(); 
++	}
++	currtime=SDL_GetTicks();	
++        
++	// If given life time(for movment) was exceed then.. turn our objects into dust..
++	if(currtime > cmparams.fcmtime ) {
++		//char buforek[100];
++		//memset(buforek,0,100);
++		//PrintCoords(&buforek);
++		//gra->konsolka->AddRegistry(buforek,0);
++		delete cmpath;
++		delete ltpath;
++		cmpath=NULL;
++		ltpath=NULL;
++		SetCameraState(AWAITING);
++		if((gra->getPhase()!=4)&&(gra->getPhase()!=5)&&(gra->gui->getAmount()!=0))
++			gra->saveTitleId(gra->zarzadca->AddSystem(new Figure(gra->getRequestedPrim(4),gra->getRequestedStream(4))));
++	} else {
++		
++		// Modify ratio to have speed ups and slow downs
++		
++		ratio = (float)((currtime - cmparams.scmtime) / (float)(cmparams.fcmtime - cmparams.scmtime));
++		if( ratio < cmparams.t1 ) {
++			s = ratio*ratio*cmparams.a/(float)2.0;
++		} else {
++			if( ratio < cmparams.t2 ) {
++				s = cmparams.v*ratio - cmparams.t1*cmparams.t1*cmparams.a/2.0;		
++			} else {
++				s = 1.0 - ( 1.0 - ratio )*( 1.0 - ratio )*cmparams.a/(float)2.0;				
++			}
++		}
++		
++		cmpath->getPosition(&campos,s);
++		ltpath->getPosition(&ltpos,s);
++	
++		// Move Camra into position that was calculated above	
++		Change(campos.x,campos.y,campos.z,ltpos.x,ltpos.y,ltpos.z,0.0,1.0,0.0);
++		Change(campos.x,campos.y,campos.z,ltpos.x,ltpos.y,ltpos.z,0.0,1.0,0.0);
++		
++		flag=1;	//every update has its consequences
++	}
++}
++
++/* ShiftCamera in desired time from current location to the one that
++   distinguish with dx,dy,dz from the one that it is situated currently
++*/
++void Camera::ShiftCamera(float cdx,float cdy,float cdz,float ldx,float ldy,float ldz,unsigned int duration,Primitive way_of_move,Primitive way_of_look)
++{
++	pvector scm;
++	pvector ecm;
++	pvector slt;
++	pvector elt;
++	
++	cvector cpos;
++	cvector ltpos;
++	
++	cpos=getPos();
++	ltpos=GetDest();
++	
++	scm.x=cpos.x;
++	scm.y=cpos.y;
++	scm.z=cpos.z;
++	
++	ecm.x=cpos.x + cdx;
++	ecm.y=cpos.y + cdy;
++	ecm.z=cpos.z + cdz;
++	
++	slt.x=ltpos.x;
++	slt.y=ltpos.y;
++	slt.z=ltpos.z;
++	
++	elt.x=ltpos.x + ldx;
++	elt.y=ltpos.y + ldy;
++	elt.z=ltpos.z + ldz;
++	
++	// Init movement Camera
++	InitCameraMovment(&scm,&ecm,&slt,&elt,duration,0.4,0.6,way_of_move,way_of_look);	
++}
++
++/*! Move camera into intermediate position on curve that lies among
++	start and final point. according to final point that is given a
++*/
++void Camera::SituateCamera(float ncx,float ncy,float ncz,float nlx,float nly,float nlz,unsigned int duration,Primitive way_of_move,Primitive way_of_look)
++{
++	pvector scm;
++	pvector ecm;
++	pvector slt;
++	pvector elt;
++	
++	cvector cpos;
++	cvector ltpos;
++	
++	cpos=getPos();
++	ltpos=GetDest();
++	
++	scm.x=cpos.x;
++	scm.y=cpos.y;
++	scm.z=cpos.z;
++	
++	ecm.x=ncx;
++	ecm.y=ncy;
++	ecm.z=ncz;
++	
++	slt.x=ltpos.x;
++	slt.y=ltpos.y;
++	slt.z=ltpos.z;
++	
++	elt.x=nlx;
++	elt.y=nly;
++	elt.z=nlz;
++
++	// Init movement Camera
++	InitCameraMovment(&scm,&ecm,&slt,&elt,duration,0.4,0.6,way_of_move,way_of_look);	
++}
+diff -Naur NeoDraughts-0.3.orig/src/commands.cpp NeoDraughts-0.3/src/commands.cpp
+--- NeoDraughts-0.3.orig/src/commands.cpp	2006-10-11 22:25:33.000000000 +0300
++++ NeoDraughts-0.3/src/commands.cpp	2011-01-11 18:08:58.408000049 +0200
+@@ -1,414 +1,414 @@
+-#include "include/commands.h"
+-#include "include/Game.h"
+-#include "include/camera.h"
+-#include "include/mynet.h"
+-#include "cstring"
+-//#include "math.h"
+-#include "cstdlib"
+-extern Game *gra;
+-
+-/*
+-Translate::Translate()
+-{
+-	memset(name,0,BUFFOR_NAME_LENGTH);
+-	strcpy(name,"translate");
+-}
+-
+-Translate::~Translate()
+-{
+-	
+-}
+-
+-// Procedure which service the Translate command
+-// Translate means relative movment
+-void Translate::ServiceRoutine(char **commandline)
+-{
+-	float val[3];
+-	char *wskaznik;
+-	char *wskaznik2;
+-	char *wskaznik3;
+-	char pbufor[100];
+-	
+-	if(commandline[3]!=NULL) {
+-		val[0]=strtof(commandline[1],&wskaznik);
+-		val[1]=strtof(commandline[2],&wskaznik2);
+-		val[2]=strtof(commandline[3],&wskaznik3);
+-		if((wskaznik!=commandline[1])&&(wskaznik2!=commandline[2])&&(wskaznik3!=commandline[3])) {
+-				memset(pbufor,0,100);
+-				sprintf(pbufor,"translate x=%f y=%f z=%f",val[0],val[1],val[2]);
+-				gra->konsolka->AddRegistry(pbufor,0);
+-				bauul->Translate(val[0],val[1],val[2]);
+-		} else {
+-			gra->konsolka->AddRegistry("Error: \"translate\" invalid arguments",0);
+-		}
+-	} else {
+-		gra->konsolka->AddRegistry("Error: \"translate\" invalid arguments",0);
+-	}
+-}
+-
+-// Rotation
+-Rotate::Rotate()
+-{
+-	memset(name,0,BUFFOR_NAME_LENGTH);
+-	strcpy(name,"rotate");
+-}
+-
+-Rotate::~Rotate()
+-{
+-	
+-}
+-
+-// Procedure which service the Rotate command
+-// Rotate means relative movment
+-void Rotate::ServiceRoutine(char **commandline)
+-{
+-	float val[3];
+-	char *wskaznik;
+-	char *wskaznik2;
+-	char *wskaznik3;
+-	char pbufor[100];
+-	
+-	if(commandline[3]!=NULL) {
+-		val[0]=strtof(commandline[1],&wskaznik);
+-		val[1]=strtof(commandline[2],&wskaznik2);
+-		val[2]=strtof(commandline[3],&wskaznik3);
+-		if((wskaznik!=commandline[1])&&(wskaznik2!=commandline[2])&&(wskaznik3!=commandline[3])) {
+-				memset(pbufor,0,100);
+-				sprintf(pbufor,"rotate x=%f y=%f z=%f",val[0],val[1],val[2]);
+-				gra->konsolka->AddRegistry(pbufor,0);
+-				bauul->Rotate(val[0],val[1],val[2]);
+-		} else {
+-			gra->konsolka->AddRegistry("Error: \"rotate\" invalid arguments",0);
+-		}
+-	} else {
+-		gra->konsolka->AddRegistry("Error: \"rotate\" invalid arguments",0);
+-	}
+-}
+-
+-// Offset command routines
+-Offset::Offset()
+-{
+-	memset(name,0,BUFFOR_NAME_LENGTH);
+-	strcpy(name,"offset");
+-}
+-
+-Offset::~Offset()
+-{
+-	
+-}
+-
+-// Procedure which service the Translate command
+-// Translate means relative movment
+-void Offset::ServiceRoutine(char **commandline)
+-{
+-	float val[3];
+-	char *wskaznik;
+-	char *wskaznik2;
+-	char *wskaznik3;
+-	char pbufor[100];
+-	
+-	if(commandline[3]!=NULL) {
+-		val[0]=strtof(commandline[1],&wskaznik);
+-		val[1]=strtof(commandline[2],&wskaznik2);
+-		val[2]=strtof(commandline[3],&wskaznik3);
+-		if((wskaznik!=commandline[1])&&(wskaznik2!=commandline[2])&&(wskaznik3!=commandline[3])) {
+-				memset(pbufor,0,100);
+-				sprintf(pbufor,"offset x=%f y=%f z=%f",val[0],val[1],val[2]);
+-				gra->konsolka->AddRegistry(pbufor,0);
+-				bauul->Offset(val[0],val[1],val[2]);
+-		} else {
+-			gra->konsolka->AddRegistry("Error: \"offset\" invalid arguments",0);
+-		}
+-	} else {
+-		gra->konsolka->AddRegistry("Error: \"offset\" invalid arguments",0);
+-	}
+-}
+-
+-// Normalization = scale to required size
+-Normalize::Normalize()
+-{
+-	memset(name,0,BUFFOR_NAME_LENGTH);
+-	strcpy(name,"normalize");
+-}
+-
+-Normalize::~Normalize()
+-{
+-	
+-}
+-
+-// Procedure which service the Translate command
+-// Translate means relative movment
+-void Normalize::ServiceRoutine(char **commandline)
+-{
+-	float val;
+-	char axe;
+-	char *wskaznik;
+-	char pbufor[100];
+-	
+-	if(commandline[2]!=NULL) {
+-		val=strtof(commandline[1],&wskaznik);
+-		axe=*(commandline[2]);
+-		if((wskaznik!=commandline[1])) {
+-				memset(pbufor,0,100);
+-				sprintf(pbufor,"normalize size=%f axis=%c ",val,axe);
+-				gra->konsolka->AddRegistry(pbufor,0);
+-				bauul->Normalize(val,axe);
+-		} else {
+-			gra->konsolka->AddRegistry("Error: \"normalize\" invalid arguments",0);
+-		}
+-	} else {
+-		gra->konsolka->AddRegistry("Error: semantics: \"Normalize\" [required value] [base Axe for normalization]",0);
+-	}
+-}
+-// Scale Routines
+-// Scale command routines
+-Scale::Scale()
+-{
+-	memset(name,0,BUFFOR_NAME_LENGTH);
+-	strcpy(name,"scale");
+-}
+-
+-Scale::~Scale()
+-{
+-	
+-}
+-
+-// Change Scale factors
+-void Scale::ServiceRoutine(char **commandline)
+-{
+-	float val[3];
+-	char *wskaznik;
+-	char *wskaznik2;
+-	char *wskaznik3;
+-	char pbufor[100];
+-	
+-	if(commandline[3]!=NULL) {
+-		val[0]=strtof(commandline[1],&wskaznik);
+-		val[1]=strtof(commandline[2],&wskaznik2);
+-		val[2]=strtof(commandline[3],&wskaznik3);
+-		if((wskaznik!=commandline[1])&&(wskaznik2!=commandline[2])&&(wskaznik3!=commandline[3])) {
+-				memset(pbufor,0,100);
+-				sprintf(pbufor,"scale x=%f y=%f z=%f",val[0],val[1],val[2]);
+-				gra->konsolka->AddRegistry(pbufor,0);
+-				bauul->Scale(val[0],val[1],val[2]);
+-		} else {
+-			gra->konsolka->AddRegistry("Error: \"scale\" invalid arguments",0);
+-		}
+-	} else {
+-		gra->konsolka->AddRegistry("Error: \"scale\" invalid arguments",0);
+-	}
+-}
+-*/	
+-// Exit Routines
+-// Exit command routines
+-CExit::CExit()
+-{
+-	memset(name,0,BUFFOR_NAME_LENGTH);
+-	strcpy(name,"exit");
+-}
+-
+-CExit::~CExit()
+-{
+-	
+-}
+-
+-void CExit::ServiceRoutine(char **commandline)
+-{
+-		gra->konsolka->AddRegistry("System is going down...",0);
+-		gra->stan.koniec=1;
+-}	
+-
+-// Toggle Screen Routines
+-ToggleScreen::ToggleScreen()
+-{
+-	memset(name,0,BUFFOR_NAME_LENGTH);
+-	strcpy(name,"togglescreen");
+-}
+-
+-ToggleScreen::~ToggleScreen()
+-{
+-	
+-}
+-
+-void ToggleScreen::ServiceRoutine(char **commandline)
+-{
+-	SDL_WM_ToggleFullScreen(gra->screen);
+-	gra->konsolka->AddRegistry("OK",0);
+-}
+-
+-// Help command routines
+-Help::Help()
+-{
+-	memset(name,0,BUFFOR_NAME_LENGTH);
+-	strcpy(name,"?");
+-}
+-
+-Help::~Help()
+-{
+-	
+-}
+-
+-void Help::ServiceRoutine(char **commandline)
+-{
+-	gra->konsolka->ShowCommands();
+-}
+-
+-// Set Camra Routines
+-SetCamra::SetCamra()
+-{
+-	memset(name,0,BUFFOR_NAME_LENGTH);
+-	strcpy(name,"setcamra");
+-}
+-
+-SetCamra::~SetCamra()
+-{
+-	
+-}
+-
+-// Procedure which service the Translate command
+-// Translate means relative movment
+-void SetCamra::ServiceRoutine(char **commandline)
+-{
+-	float val[9];
+-	char *wskaznik[9];
+-	char pbufor[100];
+-	int i;
+-	
+-	if(commandline[9]!=NULL) {
+-		for(i=0;i<9;++i) {
+-			val[i]=strtod(commandline[i+1],&wskaznik[i]);
+-		}
+-		if((wskaznik[0]!=commandline[1])&&(wskaznik[1]!=commandline[2])&&(wskaznik[2]!=commandline[3])&&
+-		(wskaznik[3]!=commandline[4])&&(wskaznik[4]!=commandline[5])&&(wskaznik[5]!=commandline[6])&&			
+-		(wskaznik[6]!=commandline[7])&&(wskaznik[7]!=commandline[8])&&(wskaznik[8]!=commandline[9])) {
+-				memset(pbufor,0,100);
+-				sprintf(pbufor,"camra: px=%f py=%f pz=%f, dx=%f dy=%f dz=%f,nx=%f ny=%f nz=%f",val[0],val[1],val[2],
+-				val[3],val[4],val[5],val[6],val[7],val[8]);
+-				gra->konsolka->AddRegistry(pbufor,0);
+-				gra->kamera->Change(val[0],val[1],val[2],val[3],val[4],val[5],val[6],val[7],val[8]);
+-		} else {
+-			gra->konsolka->AddRegistry("Error: \"setcamra\" invalid arguments",0);
+-		}
+-	} else {
+-		if(commandline[1]==NULL) {
+-			gra->kamera->PrintCoords(&pbufor);
+-			gra->konsolka->AddRegistry(pbufor,0);
+-		} else {
+-			gra->konsolka->AddRegistry("Error: \"setcamra\" invalid arguments",0);
+-		}
+-	}
+-}
+-
+-// Loading Map
+-LoadMap::LoadMap()
+-{
+-	memset(name,0,BUFFOR_NAME_LENGTH);
+-	strcpy(name,"loadmap");
+-}
+-
+-LoadMap::~LoadMap()
+-{
+-	
+-}
+-
+-void LoadMap::ServiceRoutine(char **commandline)
+-{
+-/*	float val[3];
+-	char *wskaznik[9];
+-	char pbufor[100];
+-	int i;
+-	FILE *fph;
+-	
+-	if(commandline[4]!=NULL) {
+-		// Open them and close just to make sure that both are able to be read
+-		memset(pbufor,0,100);
+-		sprintf(pbufor,"./maps/%s",commandline[1]);
+-		fph=fopen(pbufor,"r");
+-		if(fph!=NULL) {
+-			fclose(fph);
+-			// Two floats arguemts
+-			for(i=0;i<2;++i) {
+-				val[i]=strtod(commandline[i+2],&wskaznik[i]);
+-			}
+-			// One integer
+-			val[2]=strtol(commandline[4],&wskaznik[2],10);
+-			if((wskaznik[0]!=commandline[2])&&(wskaznik[1]!=commandline[3])&&(wskaznik[2]!=commandline[4])) {
+-				if(val[2]>=2) {
+-//				if(1) {
+-					if(gra->mapka!=NULL) 
+-						delete gra->mapka;
+-					gra->mapka=new Map("./data/grydirt1.png","./maps/plansza8x8.pcx",pbufor,val[0],val[1],(int)val[2]);				
+-					gra->konsolka->AddRegistry("Map properly loaded",0);
+-				} else {
+-					gra->konsolka->AddRegistry("Sampling must be equal or greater than 2",0);
+-				}
+-			} else {
+-				gra->konsolka->AddRegistry("Error: \"loadmap\" invalid arguments",0);
+-			}
+-		} else {
+-			gra->konsolka->AddRegistry("Error: \"loadmap\" Map file can't be opened",0);
+-			gra->konsolka->AddRegistry("bmp file must be in  maps directory!",0);			
+-		}
+-	} else {
+-		if(commandline[1]==NULL) {
+-				gra->konsolka->AddRegistry("loadmap [bmp file to visualization] [unit] [height] [sampling]",0);
+-				gra->konsolka->AddRegistry("bmp file must be in  maps directory!",0);
+-		} else {
+-			gra->konsolka->AddRegistry("Error: \"loadmap\" invalid arguments",0);
+-		}
+-	}*/
+-}
+-
+-
+-// Get Screen Routines
+-GrabScreen::GrabScreen()
+-{
+-	memset(name,0,BUFFOR_NAME_LENGTH);
+-	strcpy(name,"grabscreen");
+-}
+-
+-GrabScreen::~GrabScreen()
+-{
+-	
+-}
+-
+-// Procedure which service the GetScrren
+-void GrabScreen::ServiceRoutine(char **commandline)
+-{
+-	if(commandline[1]!=NULL) 
+-		gra->kamera->GrabScreen(commandline[1]);		
+-	 else 
+-		gra->konsolka->AddRegistry("Error: semantics: \"grabscreen\" [required name of file to write screen]",0);
+-}
+-
+-// Credits routine
+-Credits::Credits()
+-{
+-	memset(name,0,BUFFOR_NAME_LENGTH);
+-	strcpy(name,"credits");
+-}
+-
+-Credits::~Credits()
+-{
+-	
+-}
+-
+-void Credits::ServiceRoutine(char **commandline)
+-{
+-	char buforek[200];
+-	FILE *fpc;	
+-	// Display credits from the text/credis file.
+-	
+-	fpc=fopen("../share/NeoDraughts/credits","rb");
+-	if(fpc!=NULL) {
+-		memset(buforek,0,200);
+-		while(fgets(buforek,200,fpc)!=NULL) {
+-			gra->konsolka->AddRegistry(buforek,0);
+-			memset(buforek,0,200);
+-		}
+-	} else {
+-		gra->konsolka->AddRegistry("Error: Unable to open credits file",0);
+-	}
++#include "include/commands.h"
++#include "include/Game.h"
++#include "include/camera.h"
++#include "include/mynet.h"
++#include "cstring"
++//#include "math.h"
++#include "cstdlib"
++extern Game *gra;
++
++/*
++Translate::Translate()
++{
++	memset(name,0,BUFFOR_NAME_LENGTH);
++	strcpy(name,"translate");
++}
++
++Translate::~Translate()
++{
++	
++}
++
++// Procedure which service the Translate command
++// Translate means relative movment
++void Translate::ServiceRoutine(char **commandline)
++{
++	float val[3];
++	char *wskaznik;
++	char *wskaznik2;
++	char *wskaznik3;
++	char pbufor[100];
++	
++	if(commandline[3]!=NULL) {
++		val[0]=strtof(commandline[1],&wskaznik);
++		val[1]=strtof(commandline[2],&wskaznik2);
++		val[2]=strtof(commandline[3],&wskaznik3);
++		if((wskaznik!=commandline[1])&&(wskaznik2!=commandline[2])&&(wskaznik3!=commandline[3])) {
++				memset(pbufor,0,100);
++				sprintf(pbufor,"translate x=%f y=%f z=%f",val[0],val[1],val[2]);
++				gra->konsolka->AddRegistry(pbufor,0);
++				bauul->Translate(val[0],val[1],val[2]);
++		} else {
++			gra->konsolka->AddRegistry("Error: \"translate\" invalid arguments",0);
++		}
++	} else {
++		gra->konsolka->AddRegistry("Error: \"translate\" invalid arguments",0);
++	}
++}
++
++// Rotation
++Rotate::Rotate()
++{
++	memset(name,0,BUFFOR_NAME_LENGTH);
++	strcpy(name,"rotate");
++}
++
++Rotate::~Rotate()
++{
++	
++}
++
++// Procedure which service the Rotate command
++// Rotate means relative movment
++void Rotate::ServiceRoutine(char **commandline)
++{
++	float val[3];
++	char *wskaznik;
++	char *wskaznik2;
++	char *wskaznik3;
++	char pbufor[100];
++	
++	if(commandline[3]!=NULL) {
++		val[0]=strtof(commandline[1],&wskaznik);
++		val[1]=strtof(commandline[2],&wskaznik2);
++		val[2]=strtof(commandline[3],&wskaznik3);
++		if((wskaznik!=commandline[1])&&(wskaznik2!=commandline[2])&&(wskaznik3!=commandline[3])) {
++				memset(pbufor,0,100);
++				sprintf(pbufor,"rotate x=%f y=%f z=%f",val[0],val[1],val[2]);
++				gra->konsolka->AddRegistry(pbufor,0);
++				bauul->Rotate(val[0],val[1],val[2]);
++		} else {
++			gra->konsolka->AddRegistry("Error: \"rotate\" invalid arguments",0);
++		}
++	} else {
++		gra->konsolka->AddRegistry("Error: \"rotate\" invalid arguments",0);
++	}
++}
++
++// Offset command routines
++Offset::Offset()
++{
++	memset(name,0,BUFFOR_NAME_LENGTH);
++	strcpy(name,"offset");
++}
++
++Offset::~Offset()
++{
++	
++}
++
++// Procedure which service the Translate command
++// Translate means relative movment
++void Offset::ServiceRoutine(char **commandline)
++{
++	float val[3];
++	char *wskaznik;
++	char *wskaznik2;
++	char *wskaznik3;
++	char pbufor[100];
++	
++	if(commandline[3]!=NULL) {
++		val[0]=strtof(commandline[1],&wskaznik);
++		val[1]=strtof(commandline[2],&wskaznik2);
++		val[2]=strtof(commandline[3],&wskaznik3);
++		if((wskaznik!=commandline[1])&&(wskaznik2!=commandline[2])&&(wskaznik3!=commandline[3])) {
++				memset(pbufor,0,100);
++				sprintf(pbufor,"offset x=%f y=%f z=%f",val[0],val[1],val[2]);
++				gra->konsolka->AddRegistry(pbufor,0);
++				bauul->Offset(val[0],val[1],val[2]);
++		} else {
++			gra->konsolka->AddRegistry("Error: \"offset\" invalid arguments",0);
++		}
++	} else {
++		gra->konsolka->AddRegistry("Error: \"offset\" invalid arguments",0);
++	}
++}
++
++// Normalization = scale to required size
++Normalize::Normalize()
++{
++	memset(name,0,BUFFOR_NAME_LENGTH);
++	strcpy(name,"normalize");
++}
++
++Normalize::~Normalize()
++{
++	
++}
++
++// Procedure which service the Translate command
++// Translate means relative movment
++void Normalize::ServiceRoutine(char **commandline)
++{
++	float val;
++	char axe;
++	char *wskaznik;
++	char pbufor[100];
++	
++	if(commandline[2]!=NULL) {
++		val=strtof(commandline[1],&wskaznik);
++		axe=*(commandline[2]);
++		if((wskaznik!=commandline[1])) {
++				memset(pbufor,0,100);
++				sprintf(pbufor,"normalize size=%f axis=%c ",val,axe);
++				gra->konsolka->AddRegistry(pbufor,0);
++				bauul->Normalize(val,axe);
++		} else {
++			gra->konsolka->AddRegistry("Error: \"normalize\" invalid arguments",0);
++		}
++	} else {
++		gra->konsolka->AddRegistry("Error: semantics: \"Normalize\" [required value] [base Axe for normalization]",0);
++	}
++}
++// Scale Routines
++// Scale command routines
++Scale::Scale()
++{
++	memset(name,0,BUFFOR_NAME_LENGTH);
++	strcpy(name,"scale");
++}
++
++Scale::~Scale()
++{
++	
++}
++
++// Change Scale factors
++void Scale::ServiceRoutine(char **commandline)
++{
++	float val[3];
++	char *wskaznik;
++	char *wskaznik2;
++	char *wskaznik3;
++	char pbufor[100];
++	
++	if(commandline[3]!=NULL) {
++		val[0]=strtof(commandline[1],&wskaznik);
++		val[1]=strtof(commandline[2],&wskaznik2);
++		val[2]=strtof(commandline[3],&wskaznik3);
++		if((wskaznik!=commandline[1])&&(wskaznik2!=commandline[2])&&(wskaznik3!=commandline[3])) {
++				memset(pbufor,0,100);
++				sprintf(pbufor,"scale x=%f y=%f z=%f",val[0],val[1],val[2]);
++				gra->konsolka->AddRegistry(pbufor,0);
++				bauul->Scale(val[0],val[1],val[2]);
++		} else {
++			gra->konsolka->AddRegistry("Error: \"scale\" invalid arguments",0);
++		}
++	} else {
++		gra->konsolka->AddRegistry("Error: \"scale\" invalid arguments",0);
++	}
++}
++*/	
++// Exit Routines
++// Exit command routines
++CExit::CExit()
++{
++	memset(name,0,BUFFOR_NAME_LENGTH);
++	strcpy(name,"exit");
++}
++
++CExit::~CExit()
++{
++	
++}
++
++void CExit::ServiceRoutine(char **commandline)
++{
++		gra->konsolka->AddRegistry("System is going down...",0);
++		gra->stan.koniec=1;
++}	
++
++// Toggle Screen Routines
++ToggleScreen::ToggleScreen()
++{
++	memset(name,0,BUFFOR_NAME_LENGTH);
++	strcpy(name,"togglescreen");
++}
++
++ToggleScreen::~ToggleScreen()
++{
++	
++}
++
++void ToggleScreen::ServiceRoutine(char **commandline)
++{
++	SDL_WM_ToggleFullScreen(gra->screen);
++	gra->konsolka->AddRegistry("OK",0);
++}
++
++// Help command routines
++Help::Help()
++{
++	memset(name,0,BUFFOR_NAME_LENGTH);
++	strcpy(name,"?");
++}
++
++Help::~Help()
++{
++	
++}
++
++void Help::ServiceRoutine(char **commandline)
++{
++	gra->konsolka->ShowCommands();
++}
++
++// Set Camra Routines
++SetCamra::SetCamra()
++{
++	memset(name,0,BUFFOR_NAME_LENGTH);
++	strcpy(name,"setcamra");
++}
++
++SetCamra::~SetCamra()
++{
++	
++}
++
++// Procedure which service the Translate command
++// Translate means relative movment
++void SetCamra::ServiceRoutine(char **commandline)
++{
++	float val[9];
++	char *wskaznik[9];
++	char pbufor[100];
++	int i;
++	
++	if(commandline[9]!=NULL) {
++		for(i=0;i<9;++i) {
++			val[i]=strtod(commandline[i+1],&wskaznik[i]);
++		}
++		if((wskaznik[0]!=commandline[1])&&(wskaznik[1]!=commandline[2])&&(wskaznik[2]!=commandline[3])&&
++		(wskaznik[3]!=commandline[4])&&(wskaznik[4]!=commandline[5])&&(wskaznik[5]!=commandline[6])&&			
++		(wskaznik[6]!=commandline[7])&&(wskaznik[7]!=commandline[8])&&(wskaznik[8]!=commandline[9])) {
++				memset(pbufor,0,100);
++				sprintf(pbufor,"camra: px=%f py=%f pz=%f, dx=%f dy=%f dz=%f,nx=%f ny=%f nz=%f",val[0],val[1],val[2],
++				val[3],val[4],val[5],val[6],val[7],val[8]);
++				gra->konsolka->AddRegistry(pbufor,0);
++				gra->kamera->Change(val[0],val[1],val[2],val[3],val[4],val[5],val[6],val[7],val[8]);
++		} else {
++			gra->konsolka->AddRegistry("Error: \"setcamra\" invalid arguments",0);
++		}
++	} else {
++		if(commandline[1]==NULL) {
++			gra->kamera->PrintCoords(&pbufor);
++			gra->konsolka->AddRegistry(pbufor,0);
++		} else {
++			gra->konsolka->AddRegistry("Error: \"setcamra\" invalid arguments",0);
++		}
++	}
++}
++
++// Loading Map
++LoadMap::LoadMap()
++{
++	memset(name,0,BUFFOR_NAME_LENGTH);
++	strcpy(name,"loadmap");
++}
++
++LoadMap::~LoadMap()
++{
++	
++}
++
++void LoadMap::ServiceRoutine(char **commandline)
++{
++/*	float val[3];
++	char *wskaznik[9];
++	char pbufor[100];
++	int i;
++	FILE *fph;
++	
++	if(commandline[4]!=NULL) {
++		// Open them and close just to make sure that both are able to be read
++		memset(pbufor,0,100);
++		sprintf(pbufor,"./maps/%s",commandline[1]);
++		fph=fopen(pbufor,"r");
++		if(fph!=NULL) {
++			fclose(fph);
++			// Two floats arguemts
++			for(i=0;i<2;++i) {
++				val[i]=strtod(commandline[i+2],&wskaznik[i]);
++			}
++			// One integer
++			val[2]=strtol(commandline[4],&wskaznik[2],10);
++			if((wskaznik[0]!=commandline[2])&&(wskaznik[1]!=commandline[3])&&(wskaznik[2]!=commandline[4])) {
++				if(val[2]>=2) {
++//				if(1) {
++					if(gra->mapka!=NULL) 
++						delete gra->mapka;
++					gra->mapka=new Map("./data/grydirt1.png","./maps/plansza8x8.pcx",pbufor,val[0],val[1],(int)val[2]);				
++					gra->konsolka->AddRegistry("Map properly loaded",0);
++				} else {
++					gra->konsolka->AddRegistry("Sampling must be equal or greater than 2",0);
++				}
++			} else {
++				gra->konsolka->AddRegistry("Error: \"loadmap\" invalid arguments",0);
++			}
++		} else {
++			gra->konsolka->AddRegistry("Error: \"loadmap\" Map file can't be opened",0);
++			gra->konsolka->AddRegistry("bmp file must be in  maps directory!",0);			
++		}
++	} else {
++		if(commandline[1]==NULL) {
++				gra->konsolka->AddRegistry("loadmap [bmp file to visualization] [unit] [height] [sampling]",0);
++				gra->konsolka->AddRegistry("bmp file must be in  maps directory!",0);
++		} else {
++			gra->konsolka->AddRegistry("Error: \"loadmap\" invalid arguments",0);
++		}
++	}*/
++}
++
++
++// Get Screen Routines
++GrabScreen::GrabScreen()
++{
++	memset(name,0,BUFFOR_NAME_LENGTH);
++	strcpy(name,"grabscreen");
++}
++
++GrabScreen::~GrabScreen()
++{
++	
++}
++
++// Procedure which service the GetScrren
++void GrabScreen::ServiceRoutine(char **commandline)
++{
++	if(commandline[1]!=NULL) 
++		gra->kamera->GrabScreen(commandline[1]);		
++	 else 
++		gra->konsolka->AddRegistry("Error: semantics: \"grabscreen\" [required name of file to write screen]",0);
++}
++
++// Credits routine
++Credits::Credits()
++{
++	memset(name,0,BUFFOR_NAME_LENGTH);
++	strcpy(name,"credits");
++}
++
++Credits::~Credits()
++{
++	
++}
++
++void Credits::ServiceRoutine(char **commandline)
++{
++	char buforek[200];
++	FILE *fpc;	
++	// Display credits from the text/credis file.
++	
++	fpc=fopen("/usr/share/NeoDraughts/credits","rb");
++	if(fpc!=NULL) {
++		memset(buforek,0,200);
++		while(fgets(buforek,200,fpc)!=NULL) {
++			gra->konsolka->AddRegistry(buforek,0);
++			memset(buforek,0,200);
++		}
++	} else {
++		gra->konsolka->AddRegistry("Error: Unable to open credits file",0);
++	}
+ }
+ 
+ ////////////////////////////////////////////////////////////
+@@ -432,10 +432,10 @@
+ 	} else {
+ 		gra->konsolka->AddRegistry("Error: semantics: \"single\" ",0);
+ 	}
+-}
++}
+ 
+ ///////////////////////////////////////////////////////////////////////////////////
+-
++
+ Connect::Connect()
+ {
+ 	memset(name,0,BUFFOR_NAME_LENGTH);
+@@ -477,5 +477,5 @@
+ 	} else {
+ 		gra->konsolka->AddRegistry("Error: semantics: \"connect\" [IP Address or hostname] [port number]",0);
+ 	}
+-}
+-
++}
++
+diff -Naur NeoDraughts-0.3.orig/src/Game.cpp NeoDraughts-0.3/src/Game.cpp
+--- NeoDraughts-0.3.orig/src/Game.cpp	2006-10-11 22:26:31.000000000 +0300
++++ NeoDraughts-0.3/src/Game.cpp	2011-01-11 18:07:50.929000049 +0200
+@@ -1,7 +1,7 @@
+ #include <iostream>
+ #include <math.h>
+ #include <time.h>
+-#include "include/Game.h"
++#include "include/Game.h"
+ #include "include/foil.h"
+ #include "SDL.h"
+ #include "SDL_image.h"
+@@ -13,19 +13,19 @@
+ #include "include/neobutton.h"
+ #include "include/neoroutines.h"
+ #include "include/mynet.h"
+-#include "include/figure.h"
+-// Main Initialization Code
+-Game::Game()
+-{
++#include "include/figure.h"
++// Main Initialization Code
++Game::Game()
++{
+ 	int i;
+ 	skyparams params;
+ 	
+-	strcpy(params.frontwall_name,"../share/NeoDraughts/Front.png");
+-	strcpy(params.backwall_name,"../share/NeoDraughts/Back.png");
+-	strcpy(params.leftwall_name,"../share/NeoDraughts/Left.png");
+-	strcpy(params.rightwall_name,"../share/NeoDraughts/Right.png");
+-	strcpy(params.bottomwall_name,"../share/NeoDraughts/Bottom.png");
+-	strcpy(params.topwall_name,"../share/NeoDraughts/Top.png");
++	strcpy(params.frontwall_name,"/usr/share/NeoDraughts/Front.png");
++	strcpy(params.backwall_name,"/usr/share/NeoDraughts/Back.png");
++	strcpy(params.leftwall_name,"/usr/share/NeoDraughts/Left.png");
++	strcpy(params.rightwall_name,"/usr/share/NeoDraughts/Right.png");
++	strcpy(params.bottomwall_name,"/usr/share/NeoDraughts/Bottom.png");
++	strcpy(params.topwall_name,"/usr/share/NeoDraughts/Top.png");
+ 
+ 	params.x = 0;
+ 	params.y = 0;
+@@ -33,40 +33,40 @@
+ 	params.skywidth = 400;
+ 	params.skyheight = 200;
+ 	params.skylength = 400;
+-
+-	if (SDL_Init(SDL_INIT_VIDEO|SDL_INIT_TIMER)<0) {
+-		std::cout << "Couldn't Init VIDEO and TIMER " << SDL_GetError();
+-		exit(1);
+-	} 
+-			
+-	atexit(SDL_Quit);	
+-	SDL_GL_SetAttribute(SDL_GL_RED_SIZE,8);
+-	SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE,8);
+-	SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE,8);
+-	SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE,16);
+-	SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER,1);
+-	
+-	screen=SDL_SetVideoMode(width,height,24,SDL_OPENGL);
+-	if(screen==NULL) {
+-		std::cout << "Couldn't Set Video Mode" << SDL_GetError();
+-		exit(1);
+-	}			
+-	// Your cursor is unwanted here
+-	SDL_ShowCursor(SDL_ENABLE);
+-	SDL_EnableUNICODE(1);
+-
+-	srand(time(NULL));
+-
+-	//Font inicjalization
+-	test=new Font("../share/NeoDraughts/courbd.bdf");
+-	
+-	// Initializaion of OpenGL..	
+-	InitGL(width,height);	
+-	
+-	// Konsole should come first
+-	efpesy=new Fps;
+-	konsolka=new Console("../share/NeoDraughts/testconsole.jpg");
+-	konsolka->AddRegistry("Welcome to NeoDraughts Console",0);	
++
++	if (SDL_Init(SDL_INIT_VIDEO|SDL_INIT_TIMER)<0) {
++		std::cout << "Couldn't Init VIDEO and TIMER " << SDL_GetError();
++		exit(1);
++	} 
++			
++	atexit(SDL_Quit);	
++	SDL_GL_SetAttribute(SDL_GL_RED_SIZE,8);
++	SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE,8);
++	SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE,8);
++	SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE,16);
++	SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER,1);
++	
++	screen=SDL_SetVideoMode(width,height,24,SDL_OPENGL);
++	if(screen==NULL) {
++		std::cout << "Couldn't Set Video Mode" << SDL_GetError();
++		exit(1);
++	}			
++	// Your cursor is unwanted here
++	SDL_ShowCursor(SDL_ENABLE);
++	SDL_EnableUNICODE(1);
++
++	srand(time(NULL));
++
++	//Font inicjalization
++	test=new Font("/usr/share/NeoDraughts/courbd.bdf");
++	
++	// Initializaion of OpenGL..	
++	InitGL(width,height);	
++	
++	// Konsole should come first
++	efpesy=new Fps;
++	konsolka=new Console("/usr/share/NeoDraughts/testconsole.jpg");
++	konsolka->AddRegistry("Welcome to NeoDraughts Console",0);	
+ 	konsolka->AddRegistry("",0);	
+ 	konsolka->AddRegistry("In order to play the Duel mode Game please type ",0);
+ 	konsolka->AddRegistry("remote address in, using below defined command:",0);	
+@@ -86,36 +86,36 @@
+ 	prsdt[2].strm = new Stream;
+ 	prsdt[3].strm = new Stream;
+ 	prsdt[4].strm = new Stream;
+-	Particles::ParseStream(prsdt[0].strm,&prsdt[0].prms,"../share/NeoDraughts/ray347-3.xml");
+-	Particles::ParseStream(prsdt[1].strm,&prsdt[1].prms,"../share/NeoDraughts/bolt3.xml");
+-	Particles::ParseStream(prsdt[2].strm,&prsdt[2].prms,"../share/NeoDraughts/blood.xml");
+-	Particles::ParseStream(prsdt[3].strm,&prsdt[3].prms,"../share/NeoDraughts/burned2.xml");
+-	Particles::ParseStream(prsdt[4].strm,&prsdt[4].prms,"../share/NeoDraughts/title4.xml");
+-	
+-	//Particles Manager Inicjalization
+-	zarzadca=new Manager("../share/NeoDraughts/partic.png");	
+-	
+-	// Init OBJ
+-	OBJ::InitTextures();
+-
+-	// Init Md2
+-	Md2::InitTextures();
+-	
+-	// Precalculate trygonometrics functions
+-	CalculateTrygs();
+-	
+-	// Assign NULL to every model pointer what
+-	// will make realising procedure correct when there are no models
+-
+-	mapka=NULL;
++	Particles::ParseStream(prsdt[0].strm,&prsdt[0].prms,"/usr/share/NeoDraughts/ray347-3.xml");
++	Particles::ParseStream(prsdt[1].strm,&prsdt[1].prms,"/usr/share/NeoDraughts/bolt3.xml");
++	Particles::ParseStream(prsdt[2].strm,&prsdt[2].prms,"/usr/share/NeoDraughts/blood.xml");
++	Particles::ParseStream(prsdt[3].strm,&prsdt[3].prms,"/usr/share/NeoDraughts/burned2.xml");
++	Particles::ParseStream(prsdt[4].strm,&prsdt[4].prms,"/usr/share/NeoDraughts/title4.xml");
++	
++	//Particles Manager Inicjalization
++	zarzadca=new Manager("/usr/share/NeoDraughts/partic.png");	
++	
++	// Init OBJ
++	OBJ::InitTextures();
++
++	// Init Md2
++	Md2::InitTextures();
++	
++	// Precalculate trygonometrics functions
++	CalculateTrygs();
++	
++	// Assign NULL to every model pointer what
++	// will make realising procedure correct when there are no models
++
++	mapka=NULL;
+ 
+ 	siec=NULL;
+-
+-	for(i=0;i<DRAFTSMEN_QUANTITY;++i) {		
+-		black[i].model=NULL;
+-		black[i].weapon=NULL;
+-		white[i].model=NULL;
+-		white[i].weapon=NULL;
++
++	for(i=0;i<DRAFTSMEN_QUANTITY;++i) {		
++		black[i].model=NULL;
++		black[i].weapon=NULL;
++		white[i].model=NULL;
++		white[i].weapon=NULL;
+ 	}
+ 
+ 	// Set pointer to Final String equal to NULL
+@@ -139,52 +139,52 @@
+ 	gui=new NeoForm(10);
+ 
+ 	//*gui << new NeoButton(600,100,192,48,"widgets/set2/single.png",new SingleNeoRoutine);
+-	*gui << new NeoButton(600,100,192,48,"../share/NeoDraughts/single.png",new SingleNeoRoutine);	
++	*gui << new NeoButton(600,100,192,48,"/usr/share/NeoDraughts/single.png",new SingleNeoRoutine);	
+ //	*gui << new NeoButton(600,200,192,48,"data/duel.png",new DuelNeoRoutine);
+ //	*gui << new NeoButton(600,300,192,48,"data/credits.png",new SingleNeoRoutine);
+-	*gui << new NeoButton(600,160,192,48,"../share/NeoDraughts/exit.png",new ExitNeoRoutine);
+-}
+-
+-// Deinitialization routines are gathered here
+-Game::~Game()
+-{
+-	int i;
+-	// Get Rid of models here
+-	for(i=0;i<DRAFTSMEN_QUANTITY;++i) {
+-		if(black[i].model!=NULL)
+-			delete black[i].model;
+-		if(black[i].weapon!=NULL)
+-			delete black[i].weapon;
+-		if(white[i].model!=NULL)
+-			delete white[i].model;
+-		if(white[i].weapon!=NULL)
+-			delete white[i].weapon;
+-	}
++	*gui << new NeoButton(600,160,192,48,"/usr/share/NeoDraughts/exit.png",new ExitNeoRoutine);
++}
++
++// Deinitialization routines are gathered here
++Game::~Game()
++{
++	int i;
++	// Get Rid of models here
++	for(i=0;i<DRAFTSMEN_QUANTITY;++i) {
++		if(black[i].model!=NULL)
++			delete black[i].model;
++		if(black[i].weapon!=NULL)
++			delete black[i].weapon;
++		if(white[i].model!=NULL)
++			delete white[i].model;
++		if(white[i].weapon!=NULL)
++			delete white[i].weapon;
++	}
+ 	
+ 
+ 	// Release our 'Game Over' string
+ 	if(Ogameover!=NULL)	
+ 		delete Ogameover;
+-
+-	Md2::DeleteTextures();
+-
+-	OBJ::DeleteTextures();
+-
+-	if(mapka!=NULL) {
+-		delete mapka;
+-	}
++
++	Md2::DeleteTextures();
++
++	OBJ::DeleteTextures();
++
++	if(mapka!=NULL) {
++		delete mapka;
++	}
+ 	
+ 	if(siec!=NULL) {
+ 		delete siec;
+ 	}
+-
+-	delete zarzadca;	
+-	delete kamera;
+-	delete test;
+-	delete efpesy;
++
++	delete zarzadca;	
++	delete kamera;
++	delete test;
++	delete efpesy;
+ 	delete konsolka;
+ 	if(foil)
+-		delete foil;
++		delete foil;
+ 
+ 	if(gui)
+ 		delete gui;
+@@ -199,149 +199,149 @@
+ 		delete prsdt;
+ 	
+ //	fclose(fpr);
+-
+-}
+-
+-void Game::InitGL(int screen_width,int screen_height)
+-{
+-	GLfloat light0_pos[4]={-0.0,0.0,1.0,0.0};
+-	GLfloat ldiff[4]={1.0,1.0,1.0,1.0};
+-	GLfloat lamb[4]={0.8,0.8,0.8,1.0};
+-	
+-	glClearColor(0.0,0.0,0.0,0.0);
+-	glDepthFunc(GL_LESS);	
+-	glEnable(GL_DEPTH_TEST);
+-	
+-	glFrontFace(GL_CW);
+-	glEnable(GL_CULL_FACE);
+-	
+-	glShadeModel(GL_SMOOTH);
+-
+-	glPixelStorei(GL_UNPACK_ALIGNMENT,1);	
+-	glTexEnvf(GL_TEXTURE_ENV,GL_TEXTURE_ENV_MODE,GL_MODULATE);
+-	glEnable(GL_TEXTURE_2D);
+-	
+-	//kamera=new Camera(screen_width,screen_height,VIEW_LEFT,VIEW_RIGHT,
+-	//VIEW_BOTTOM,VIEW_TOP,DISTANCE_NEAR,DISTANCE_FAR);	
++
++}
++
++void Game::InitGL(int screen_width,int screen_height)
++{
++	GLfloat light0_pos[4]={-0.0,0.0,1.0,0.0};
++	GLfloat ldiff[4]={1.0,1.0,1.0,1.0};
++	GLfloat lamb[4]={0.8,0.8,0.8,1.0};
++	
++	glClearColor(0.0,0.0,0.0,0.0);
++	glDepthFunc(GL_LESS);	
++	glEnable(GL_DEPTH_TEST);
++	
++	glFrontFace(GL_CW);
++	glEnable(GL_CULL_FACE);
++	
++	glShadeModel(GL_SMOOTH);
++
++	glPixelStorei(GL_UNPACK_ALIGNMENT,1);	
++	glTexEnvf(GL_TEXTURE_ENV,GL_TEXTURE_ENV_MODE,GL_MODULATE);
++	glEnable(GL_TEXTURE_2D);
++	
++	//kamera=new Camera(screen_width,screen_height,VIEW_LEFT,VIEW_RIGHT,
++	//VIEW_BOTTOM,VIEW_TOP,DISTANCE_NEAR,DISTANCE_FAR);	
+ 	
+ 	kamera=new Camera(screen_width,screen_height,VIEW_LEFT,VIEW_RIGHT,
+ 	VIEW_BOTTOM,VIEW_TOP,DISTANCE_NEAR,DISTANCE_FAR);	
+-	
+-	glMatrixMode(GL_MODELVIEW);
+-	glLoadIdentity();
+-	glLightfv(GL_LIGHT0,GL_POSITION,light0_pos);
+-	glLightfv(GL_LIGHT0,GL_DIFFUSE,ldiff);
+-	glLightfv(GL_LIGHT0,GL_AMBIENT,lamb);
+-	
+-	glEnable(GL_LIGHT0);
++	
++	glMatrixMode(GL_MODELVIEW);
++	glLoadIdentity();
++	glLightfv(GL_LIGHT0,GL_POSITION,light0_pos);
++	glLightfv(GL_LIGHT0,GL_DIFFUSE,ldiff);
++	glLightfv(GL_LIGHT0,GL_AMBIENT,lamb);
++	
++	glEnable(GL_LIGHT0);
+ 	glEnable(GL_LIGHTING);
+ 
+ 	glDisable(GL_BLEND);
+-}
+-
+-
+-void Game::SetGame(void) 
+-{
+-	int i;
+-	int v1,v2,v3;
+-	float tmpsize;
++}
++
++
++void Game::SetGame(void) 
++{
++	int i;
++	int v1,v2,v3;
++	float tmpsize;
+ 
+ 	InitGL(width,height);
+ 
+-	mapka=new Map("../share/NeoDraughts/plansza.pcx","../share/NeoDraughts/plansza8x8.pcx",
+-	"../share/NeoDraughts/chessheight.bmp",0.2,0.005,31);		
+-
+-	mapka->MakeChessboard();
+-
+-	// Load Models
+-	
+-	Md2::CreateTexture("../share/NeoDraughts/Reese.pcx",0);
+-	Md2::CreateTexture("../share/NeoDraughts/weapon.pcx",1);
++	mapka=new Map("/usr/share/NeoDraughts/plansza.pcx","/usr/share/NeoDraughts/plansza8x8.pcx",
++	"/usr/share/NeoDraughts/chessheight.bmp",0.2,0.005,31);		
++
++	mapka->MakeChessboard();
++
++	// Load Models
++	
++	Md2::CreateTexture("/usr/share/NeoDraughts/Reese.pcx",0);
++	Md2::CreateTexture("/usr/share/NeoDraughts/weapon.pcx",1);
+ 		
+-	// First Army
++	// First Army
+ 	for(i=0;i<DRAFTSMEN_QUANTITY;++i) {
+-		black[i].model=new Md2("../share/NeoDraughts/tris.md2",0);
+-		black[i].weapon=new Md2("../share/NeoDraughts/weapon.md2",1);
+-
+-		tmpsize=black[i].model->GetMx();
+-		black[i].model->Normalize((float)REQSIZE,'X');		
+-		tmpsize/=(float)(black[i].weapon->GetMx());				
+-		black[i].weapon->Normalize((float)REQSIZE/tmpsize,'X');				
+-		black[i].model->Rotate(0,0,-90);		
+-		black[i].weapon->Rotate(0,0,-90);		
+-	}
+-
+-
+-	
+-	Md2::CreateTexture("../share/NeoDraughts/USMC.pcx",2);
+-	Md2::CreateTexture("../share/NeoDraughts/weapon.pcx",3);
+-	
+-	// Secend Army
+-	for(i=0;i<DRAFTSMEN_QUANTITY;++i) {
+-		white[i].model=new Md2("../share/NeoDraughts/tris.md2",2);
+-		white[i].weapon=new Md2("../share/NeoDraughts/weapon.md2",3);
+-		tmpsize=white[i].model->GetMx();
+-		white[i].model->Normalize(REQSIZE,'X');		
+-		tmpsize/=(float)(white[i].weapon->GetMx());				
+-		white[i].weapon->Normalize(REQSIZE/tmpsize,'X');				
+-		white[i].model->Rotate(0,0,90);		
+-		white[i].weapon->Rotate(0,0,90);		
+-	}
++		black[i].model=new Md2("/usr/share/NeoDraughts/tris.md2",0);
++		black[i].weapon=new Md2("/usr/share/NeoDraughts/weapon.md2",1);
++
++		tmpsize=black[i].model->GetMx();
++		black[i].model->Normalize((float)REQSIZE,'X');		
++		tmpsize/=(float)(black[i].weapon->GetMx());				
++		black[i].weapon->Normalize((float)REQSIZE/tmpsize,'X');				
++		black[i].model->Rotate(0,0,-90);		
++		black[i].weapon->Rotate(0,0,-90);		
++	}
++
++
++	
++	Md2::CreateTexture("/usr/share/NeoDraughts/USMC.pcx",2);
++	Md2::CreateTexture("/usr/share/NeoDraughts/weapon.pcx",3);
++	
++	// Secend Army
++	for(i=0;i<DRAFTSMEN_QUANTITY;++i) {
++		white[i].model=new Md2("/usr/share/NeoDraughts/tris.md2",2);
++		white[i].weapon=new Md2("/usr/share/NeoDraughts/weapon.md2",3);
++		tmpsize=white[i].model->GetMx();
++		white[i].model->Normalize(REQSIZE,'X');		
++		tmpsize/=(float)(white[i].weapon->GetMx());				
++		white[i].weapon->Normalize(REQSIZE/tmpsize,'X');				
++		white[i].model->Rotate(0,0,90);		
++		white[i].weapon->Rotate(0,0,90);		
++	}
+ 
+ 	
+ 	// We can Load Our "Game Over" String now and of texture for it ofcourse
+-	OBJ::CreateTexture("../share/NeoDraughts/fire13.jpg",0);
+-	Ogameover=new OBJ("../share/NeoDraughts/gameover.obj",0);
++	OBJ::CreateTexture("/usr/share/NeoDraughts/fire13.jpg",0);
++	Ogameover=new OBJ("/usr/share/NeoDraughts/gameover.obj",0);
+ 	//Assign apriopirate coords to It
+ 	Ogameover->Normalize(REQGMSIZE,'Z');
+ 	Ogameover->Translate(0,2,0);
+-	Ogameover->Rotate(-90,0,0);
+-	
+-	// Tutaj moze byc blad.. zwroc uwage pozniej
+-    for(i=0;i<FIELDS_AMOUNT;++i)
+-	{
+-			mapstate[i].state=FREE;
+-			v1=mapka->Sectors[i].vertexIndices[0];
+-			v2=mapka->Sectors[i].vertexIndices[1];
+-			v3=mapka->Sectors[i].vertexIndices[2];
+-
+-			// Find the center of sector and store it in mapstate
+-
+-			mapstate[i].positionx=mapka->points[v1].x+(mapka->points[v2].x-mapka->points[v1].x)/(float)2;
++	Ogameover->Rotate(-90,0,0);
++	
++	// Tutaj moze byc blad.. zwroc uwage pozniej
++    for(i=0;i<FIELDS_AMOUNT;++i)
++	{
++			mapstate[i].state=FREE;
++			v1=mapka->Sectors[i].vertexIndices[0];
++			v2=mapka->Sectors[i].vertexIndices[1];
++			v3=mapka->Sectors[i].vertexIndices[2];
++
++			// Find the center of sector and store it in mapstate
++
++			mapstate[i].positionx=mapka->points[v1].x+(mapka->points[v2].x-mapka->points[v1].x)/(float)2;
+ 			mapstate[i].positiony=mapka->points[v1].y+(mapka->points[v3].y-mapka->points[v1].y)/(float)2;
+ 			mapstate[i].positionz=mapka->points[v1].z+(mapka->points[v3].z-mapka->points[v1].z)/(float)2;
+-
+-			mapstate[i].state=FREE;
+-	}	
+-	
+-	// Distance between two neighbour sectors
+-	
++
++			mapstate[i].state=FREE;
++	}	
++	
++	// Distance between two neighbour sectors
++	
+     hlengthx=(float)(mapstate[1].positionx-mapstate[0].positionx);
+     hlengthz=(float)(mapstate[1].positionz-mapstate[0].positionz);
+     vlengthx=(float)(mapstate[8].positionx-mapstate[0].positionx);
+     vlengthz=(float)(mapstate[8].positionz-mapstate[0].positionz);
+ 
+ 	for(i=0;i<MAX_CMDS;++i) 
+-		stan.ActionList[i]=DULL;
+-	
+-	MakeModelsAlly();
+-	MakeModelsFoe();	
+-	
+-	InitState();
+-	
+-	// Set Starting params for stucture of selection
+-	Select.x=0;
+-    Select.y=0;
+-    Select.Selected=-1;     //No one is the chosen one at the beginning
++		stan.ActionList[i]=DULL;
++	
++	MakeModelsAlly();
++	MakeModelsFoe();	
++	
++	InitState();
++	
++	// Set Starting params for stucture of selection
++	Select.x=0;
++    Select.y=0;
++    Select.Selected=-1;     //No one is the chosen one at the beginning
+ 	
+ 	numblack=DRAFTSMEN_QUANTITY;
+ 	numwhite=DRAFTSMEN_QUANTITY;
+-
+-	lastrevive=SDL_GetTicks();
+-	
+-	// Set Camera - I know that name is selfcommenting but... Hard to look 
+-	kamera->Change(0.0,3.0,-5.0, 0.0,0.0,-4.9, 0.0,1.0,0.0);
+-	//kamera->PrintCoords(&buforek);
++
++	lastrevive=SDL_GetTicks();
++	
++	// Set Camera - I know that name is selfcommenting but... Hard to look 
++	kamera->Change(0.0,3.0,-5.0, 0.0,0.0,-4.9, 0.0,1.0,0.0);
++	//kamera->PrintCoords(&buforek);
+ 	//konsolka->AddRegistry(buforek,0);	
+ 
+ 	// Correct the phase according to mode for Multiplay we could be set to wait activity
+@@ -354,22 +354,22 @@
+ 	kamera->ShiftCamera(0.0,40.0,60.0,0.0,0.0,8.9,6000,BEZIER4,LINE);
+ 	//saveTitleId(zarzadca->AddSystem(new Figure(getRequestedPrim(4),getRequestedStream(4))));
+ 	stan.tryb=CHOICEMODE;
+-}
+-
+-void Game::InitState(void)
+-{
+-		cvector campos;
+-        stan.up=0;
+-        stan.down=0;
+-        stan.left=0;
+-        stan.right=0;
+-        stan.rotatez=0;
+-
+-        stan.enter=0;
+-        stan.camsel=CROTATE;
+-        stan.dfault=0;
+-        stan.prawy=0;
+-        stan.lewy=0;
++}
++
++void Game::InitState(void)
++{
++		cvector campos;
++        stan.up=0;
++        stan.down=0;
++        stan.left=0;
++        stan.right=0;
++        stan.rotatez=0;
++
++        stan.enter=0;
++        stan.camsel=CROTATE;
++        stan.dfault=0;
++        stan.prawy=0;
++        stan.lewy=0;
+ 
+ 		stan.cup=0;
+ 		stan.cdown=0;
+@@ -377,115 +377,115 @@
+ 		stan.cleft=0;
+ 		stan.cdescent=0;
+ 		stan.cascent=0;
+-
++
+ 		//This was changed
+-		campos = kamera->getPos();
+-        stan.bx=campos.x;
+-        stan.by=campos.y;
+-        stan.bz=campos.z;
+-
+-        stan.px=0;
+-        stan.py=0;
+-        stan.pz=0;
+-        stan.dx=0;
+-        stan.dy=0;
+-        stan.dz=0;
+-
+-        stan.tx=0;
+-        stan.ty=0;
+-        stan.tz=0;
+-
+-        stan.CamraRotate=0;
+-
+-        stan.phase=0;	//This indicates the phase we are doing now
+-        stan.koniec=0;
++		campos = kamera->getPos();
++        stan.bx=campos.x;
++        stan.by=campos.y;
++        stan.bz=campos.z;
++
++        stan.px=0;
++        stan.py=0;
++        stan.pz=0;
++        stan.dx=0;
++        stan.dy=0;
++        stan.dz=0;
++
++        stan.tx=0;
++        stan.ty=0;
++        stan.tz=0;
++
++        stan.CamraRotate=0;
++
++        stan.phase=0;	//This indicates the phase we are doing now
++        stan.koniec=0;
+         stan.attack=0;
+ 
+ 		stan.action=MISS;	
+-		stan.mouserel=0;
+-}
+-
+-void Game::Play()
+-{
+-	cvector cpos;		//Camra position
+-	float vx,vy,vz;	// Vector that goes from middle point to the ground
+-	float hitx,hity,hitz;	// Hit point
+-	float trsx,trsy,trsz;	// Point on camra plane that was picked up 
++		stan.mouserel=0;
++}
++
++void Game::Play()
++{
++	cvector cpos;		//Camra position
++	float vx,vy,vz;	// Vector that goes from middle point to the ground
++	float hitx,hity,hitz;	// Hit point
++	float trsx,trsy,trsz;	// Point on camra plane that was picked up 
+ 	float sx,sy,sz;			// Small division from Camra pos to trs points
+-
+-	
++
++	
+ 	currrevive=SDL_GetTicks();
+ 	
+-    if(stan.lewy==2)
+-	{
+-		cpos=kamera->getPos();
+-
+-		// Find the real 3d coords of mapped point on the camra plane that was selected		
+-		trsx=kamera->startx+((float)(stan.mx))*kamera->stepwx+((float)(stan.my))*kamera->stephx;
+-		trsy=kamera->starty+((float)(stan.mx))*kamera->stepwy+((float)(stan.my))*kamera->stephy;
+-		trsz=kamera->startz+((float)(stan.mx))*kamera->stepwz+((float)(stan.my))*kamera->stephz;
+-		
+-		sx=trsx-cpos.x;
+-		sy=trsy-cpos.y;
+-		sz=trsz-cpos.z;
+-		
+-		if(sy!=0) {
+-			// for simplicity let say that background 
+-			//is just a plane with all y coord equal to 0		
+-			hity=0;
+-			
+-			// find the vector that connect ground with middle point
+-			// using proportion equations
+-			vy=hity-cpos.y;
+-			vx=(vy/(float)sy)*sx;		
+-			vz=(vy/(float)sy)*sz;		
+-			
+-			hitx=cpos.x+vx;
++    if(stan.lewy==2)
++	{
++		cpos=kamera->getPos();
++
++		// Find the real 3d coords of mapped point on the camra plane that was selected		
++		trsx=kamera->startx+((float)(stan.mx))*kamera->stepwx+((float)(stan.my))*kamera->stephx;
++		trsy=kamera->starty+((float)(stan.mx))*kamera->stepwy+((float)(stan.my))*kamera->stephy;
++		trsz=kamera->startz+((float)(stan.mx))*kamera->stepwz+((float)(stan.my))*kamera->stephz;
++		
++		sx=trsx-cpos.x;
++		sy=trsy-cpos.y;
++		sz=trsz-cpos.z;
++		
++		if(sy!=0) {
++			// for simplicity let say that background 
++			//is just a plane with all y coord equal to 0		
++			hity=0;
++			
++			// find the vector that connect ground with middle point
++			// using proportion equations
++			vy=hity-cpos.y;
++			vx=(vy/(float)sy)*sx;		
++			vz=(vy/(float)sy)*sz;		
++			
++			hitx=cpos.x+vx;
+ 			hitz=cpos.z+vz;
+ 			// If we chose some field than run the state machine
+ 			if((UpdateSelectionByMouse(hitx,hity,hitz)==HIT)) {
+ 				stan.phase=1;
+ 				stan.action=HIT;
+ 			}
+-		} else {
+-			konsolka->AddRegistry("LookAt parallel vector",0);
+-		}
+-
+-		//		stan.enter=1;
+-			stan.lewy=0;
+-	}
+-	else
+-	{
+-		UpdateSelection();
+-	}	
+-	
+-	// Camera Movment inquires
++		} else {
++			konsolka->AddRegistry("LookAt parallel vector",0);
++		}
++
++		//		stan.enter=1;
++			stan.lewy=0;
++	}
++	else
++	{
++		UpdateSelection();
++	}	
++	
++	// Camera Movment inquires
+ 	// If camra is in avaiting state than it awaits orders depending on
+ 	//	key/mouse event
+-	if(kamera->GetCameraState()==AWAITING) {	
+-		if(stan.cup==1) {
+-			kamera->Move((CAMRA_MOVMENT_OFFSET)/(float)efpesy->lastfps);			
+-		} else {
+-			if(stan.cdown==1) {
+-				kamera->Move(-(CAMRA_MOVMENT_OFFSET)/(float)efpesy->lastfps);			
+-			} else {
+-				if(stan.cleft==1) {
+-					kamera->RotateY((CAMRA_ROTATE_OFFSET)/(float)efpesy->lastfps);			
+-				} else {
+-					if(stan.cright==1) {
+-						kamera->RotateY(-(CAMRA_ROTATE_OFFSET)/(float)efpesy->lastfps);			
+-					} else {
+-					if(stan.cascent==1) {
+-						kamera->Translate(0,(CAMRA_MOVMENT_OFFSET)/(float)efpesy->lastfps,0);
+-					} else {
+-						if(stan.cdescent==1)
+-							kamera->Translate(0,-(CAMRA_MOVMENT_OFFSET)/(float)efpesy->lastfps,0);
+-					}
+-					
+-					}
+-				}				
+-			}
+-		}
++	if(kamera->GetCameraState()==AWAITING) {	
++		if(stan.cup==1) {
++			kamera->Move((CAMRA_MOVMENT_OFFSET)/(float)efpesy->lastfps);			
++		} else {
++			if(stan.cdown==1) {
++				kamera->Move(-(CAMRA_MOVMENT_OFFSET)/(float)efpesy->lastfps);			
++			} else {
++				if(stan.cleft==1) {
++					kamera->RotateY((CAMRA_ROTATE_OFFSET)/(float)efpesy->lastfps);			
++				} else {
++					if(stan.cright==1) {
++						kamera->RotateY(-(CAMRA_ROTATE_OFFSET)/(float)efpesy->lastfps);			
++					} else {
++					if(stan.cascent==1) {
++						kamera->Translate(0,(CAMRA_MOVMENT_OFFSET)/(float)efpesy->lastfps,0);
++					} else {
++						if(stan.cdescent==1)
++							kamera->Translate(0,-(CAMRA_MOVMENT_OFFSET)/(float)efpesy->lastfps,0);
++					}
++					
++					}
++				}				
++			}
++		}
+ 	} else {
+ 		// Here is movment Camra part:)
+ 	}
+@@ -498,125 +498,125 @@
+ 	
+ 	UpdateGameState();
+ 	stan.action=MISS;
+-
+-}
+-
+-// Make basic parameters for draughts on map and their weapons ,depending on the map
+-// Ally routine comes first
+-
+-void Game::MakeModelsAlly(void)
+-{
+-        int i;
+-        int x;
+-        int z;
+-        Md2* model;
+-        Md2 *weapon;
+-
+-        x=0;
+-        z=0;
+-
+-        srand(10);
+-
+-        for(i=0;i<DRAFTSMEN_QUANTITY;i++)
+-        {
+-                model=white[i].model;
+-                weapon=white[i].weapon;
+-
+-                model->currentframe=(int)((model->endframe-1)*((rand()/((float)RAND_MAX))));
+-                model->nextframe=model->currentframe+1;
+-
+-                model->translatex=(float)(mapka->startx+x*mapka->glensec*mapka->gunit+(mapka->glensec*mapka->gunit)/(float)2);
+-				// Z Axe is inverted relativly to X AXE
+-                model->translatez=(float)(mapka->startz-z*mapka->glensec*mapka->gunit-(mapka->glensec*mapka->gunit)/(float)2);
+-			
+-                model->anglez=0;          //Make them keep watching in the depth
+-                model->angle=0;
+-                model->offsetx=0;
+-                model->offsety=0;
+-                model->offsetz=0;
+-			
+-
+-                weapon->currentframe=model->currentframe;
+-                weapon->nextframe=model->nextframe;
+-
+-                weapon->translatex=model->translatex;
+-                weapon->translatez=model->translatez;
+-                weapon->anglez=0;          //Make them keep watching in the depth
+-                weapon->angle=0;
+-                weapon->offsetx=0;
+-                weapon->offsety=0;
+-                weapon->offsetz=0;
+-
+-                // Every secend field is busy in every row , in next row we change the busy fields
+-
+-                mapstate[(int)(((z)<<3)+x)].state=ALLY;
+-                mapstate[(int)(((z)<<3)+x)].index=i;     //index of soldier of this
+-
+-                x+=2;
+-                if(x>=8)
+-                {
+-                        x-=8;
+-                        x=1-x;
+-                        ++z;
+-                }
+-        }
+-}
+-
+-// Enemy routine comes first
+-
+-void Game::MakeModelsFoe(void)
+-{
+-        int i;
+-        int x;
+-        int z;
+-        Md2* model;
+-        Md2* weapon;
+-
+-        x=1;
+-        z=5;
+-
+-        for(i=0;i<DRAFTSMEN_QUANTITY;i++)
+-        {
+-                model=black[i].model;
+-                weapon=black[i].weapon;
+-
+-                model->currentframe=(int)( (model->endframe-1)*((rand()/((float)RAND_MAX))));
+-                model->nextframe=model->currentframe+1;
+-
+-                model->translatex=(float)(mapka->startx+x*mapka->glensec*mapka->gunit+(mapka->glensec*mapka->gunit)/(float)2);
+-                model->translatez=(float)(mapka->startz-z*mapka->glensec*mapka->gunit-(mapka->glensec*mapka->gunit)/(float)2);
+-                model->anglez=0;          //Make them keep watching in the depth
+-                model->angle=0;
+-                model->offsetx=0;
+-                model->offsety=0;
+-                model->offsetz=0;
+-
+-                weapon->currentframe=model->currentframe;
+-                weapon->nextframe=model->nextframe;
+-
+-                weapon->translatex=model->translatex;
+-                weapon->translatez=model->translatez;
+-                weapon->anglez=0;          //Make them keep watching in the depth
+-                weapon->angle=0;          //Make them keep watching in the depth
+-                weapon->offsetx=0;
+-                weapon->offsety=0;
+-                weapon->offsetz=0;
+-
+-                mapstate[(int)(((z)<<3)+x)].state=ENEMY;     //2 - Foe army soldier
+-                mapstate[(int)(((z)<<3)+x)].index=i;     //index of soldier of this
+-
+-                x+=2;
+-                if(x>=8)
+-                {
+-                        x-=8;
+-                        x=1-x;
+-                        ++z;
+-                }
+-        }
+-}
+-
+-
+-
++
++}
++
++// Make basic parameters for draughts on map and their weapons ,depending on the map
++// Ally routine comes first
++
++void Game::MakeModelsAlly(void)
++{
++        int i;
++        int x;
++        int z;
++        Md2* model;
++        Md2 *weapon;
++
++        x=0;
++        z=0;
++
++        srand(10);
++
++        for(i=0;i<DRAFTSMEN_QUANTITY;i++)
++        {
++                model=white[i].model;
++                weapon=white[i].weapon;
++
++                model->currentframe=(int)((model->endframe-1)*((rand()/((float)RAND_MAX))));
++                model->nextframe=model->currentframe+1;
++
++                model->translatex=(float)(mapka->startx+x*mapka->glensec*mapka->gunit+(mapka->glensec*mapka->gunit)/(float)2);
++				// Z Axe is inverted relativly to X AXE
++                model->translatez=(float)(mapka->startz-z*mapka->glensec*mapka->gunit-(mapka->glensec*mapka->gunit)/(float)2);
++			
++                model->anglez=0;          //Make them keep watching in the depth
++                model->angle=0;
++                model->offsetx=0;
++                model->offsety=0;
++                model->offsetz=0;
++			
++
++                weapon->currentframe=model->currentframe;
++                weapon->nextframe=model->nextframe;
++
++                weapon->translatex=model->translatex;
++                weapon->translatez=model->translatez;
++                weapon->anglez=0;          //Make them keep watching in the depth
++                weapon->angle=0;
++                weapon->offsetx=0;
++                weapon->offsety=0;
++                weapon->offsetz=0;
++
++                // Every secend field is busy in every row , in next row we change the busy fields
++
++                mapstate[(int)(((z)<<3)+x)].state=ALLY;
++                mapstate[(int)(((z)<<3)+x)].index=i;     //index of soldier of this
++
++                x+=2;
++                if(x>=8)
++                {
++                        x-=8;
++                        x=1-x;
++                        ++z;
++                }
++        }
++}
++
++// Enemy routine comes first
++
++void Game::MakeModelsFoe(void)
++{
++        int i;
++        int x;
++        int z;
++        Md2* model;
++        Md2* weapon;
++
++        x=1;
++        z=5;
++
++        for(i=0;i<DRAFTSMEN_QUANTITY;i++)
++        {
++                model=black[i].model;
++                weapon=black[i].weapon;
++
++                model->currentframe=(int)( (model->endframe-1)*((rand()/((float)RAND_MAX))));
++                model->nextframe=model->currentframe+1;
++
++                model->translatex=(float)(mapka->startx+x*mapka->glensec*mapka->gunit+(mapka->glensec*mapka->gunit)/(float)2);
++                model->translatez=(float)(mapka->startz-z*mapka->glensec*mapka->gunit-(mapka->glensec*mapka->gunit)/(float)2);
++                model->anglez=0;          //Make them keep watching in the depth
++                model->angle=0;
++                model->offsetx=0;
++                model->offsety=0;
++                model->offsetz=0;
++
++                weapon->currentframe=model->currentframe;
++                weapon->nextframe=model->nextframe;
++
++                weapon->translatex=model->translatex;
++                weapon->translatez=model->translatez;
++                weapon->anglez=0;          //Make them keep watching in the depth
++                weapon->angle=0;          //Make them keep watching in the depth
++                weapon->offsetx=0;
++                weapon->offsety=0;
++                weapon->offsetz=0;
++
++                mapstate[(int)(((z)<<3)+x)].state=ENEMY;     //2 - Foe army soldier
++                mapstate[(int)(((z)<<3)+x)].index=i;     //index of soldier of this
++
++                x+=2;
++                if(x>=8)
++                {
++                        x-=8;
++                        x=1-x;
++                        ++z;
++                }
++        }
++}
++
++
++
+ void Game::SetLoadingScreen(const char *name)
+ {
+ 	GLuint tla[1];
+@@ -685,29 +685,29 @@
+    glDeleteTextures(1,tla);
+    SDL_FreeSurface(obrazek);
+ }
+-
+-void Game::Render()
+-{
+-		GLfloat PointerColor[3]={0.25,0.25,1.0};
++
++void Game::Render()
++{
++		GLfloat PointerColor[3]={0.25,0.25,1.0};
+ 		GLfloat ChooseColor[3]={1.0,0.25,0.25};
+ 		int index;
+-
+-		glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
+-		glPushMatrix();
++
++		glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
++		glPushMatrix();
+ 		glLoadIdentity();
+ 
+ 		// TODO: If we want to disply campra pos here then we have Segmentation Fault
+ 		
+-		kamera->Put();		
++		kamera->Put();		
+ 
+-		glPushMatrix();	
++		glPushMatrix();	
+ 
+ 		foil->Warp();
+ 		foil->Render();
+ 
+ 		glTexEnvf(GL_TEXTURE_ENV,GL_TEXTURE_ENV_MODE,GL_MODULATE);		
+-		
+-		RenderModels();	
++		
++		RenderModels();	
+ 		mapka->Render();
+ 		// Draw Pointer of the Choosen one
+ 
+@@ -718,7 +718,7 @@
+ 				index=(Select.Sely<<3)+Select.Selx;
+ 				DrawSector(index,ChooseColor);		
+ 			} 
+-			if(index!=Select.SecNum) 
++			if(index!=Select.SecNum) 
+ 				DrawSector(Select.SecNum,PointerColor);		
+ 		} else {
+ 			if(stan.phase==5) 
+@@ -727,293 +727,293 @@
+ 		}
+ 
+ 		zarzadca->RenderSystems();		
+-		mapka->Render2D();
++		mapka->Render2D();
+ 		gui->Show();
+-		glPopMatrix();
++		glPopMatrix();
+ 
+ 		// Show avarge Fps from every secend
+ 		efpesy->GetFpsf();
+ 		efpesy->GetAvgFpsd(1000);
+ 
+-		konsolka->Show(kamera);
+-		glPopMatrix();
+-		SDL_GL_SwapBuffers();
+-}
+-
+-
+-void Game::RenderModels(void)
+-{
+-        int LastTexNum;
+-        int i;
+-        Md2 *model;
+-        Md2 *weapon;
+-
+-
+-        // Let's display it in queue , first one army and thne its weapons , then secend and map at least
+-
+-        //-------------------------------------------------------------------------------
+-        // This is first army models
+-
+-        LastTexNum=-1;
+-
+-        for(i=0;i<DRAFTSMEN_QUANTITY;++i)
+-        {
+-                if(black[i].model!=NULL)
+-                {
+-                        glPushMatrix();
+-
+-                        if(black[i].model->texindex!=LastTexNum)
+-                        {
+-                                LastTexNum=black[i].model->texindex;
+-                                glBindTexture(GL_TEXTURE_2D,Md2::texname[LastTexNum]);
+-                        }
+-
+-                        model=black[i].model;
+-
+-                        model->Animate();
+-                        SetOnMap(model,model->wt);
+-                        model->Render();
+-
+-                        glPopMatrix();
+-                }
+-        }
+-
+-        // And their guns
+-
+-        LastTexNum=-1;
+-
+-        for(i=0;i<DRAFTSMEN_QUANTITY;++i)
+-        {
+-                if(black[i].weapon!=NULL)
+-                {
+-                        glPushMatrix();
+-
+-                        if(black[i].model->texindex!=LastTexNum)
+-                        {
+-                                LastTexNum=black[i].model->texindex;
+-                                glBindTexture(GL_TEXTURE_2D,Md2::texname[LastTexNum]);
+-                        }
+-
+-                        weapon=black[i].weapon;
+-                        model=black[i].model;
+-
+-                        weapon->Animate();
+-						weapon->standy=model->standy;
+-						weapon->translatey=model->translatey;
+-                        weapon->Render();
+-
+-                        glPopMatrix();
+-
+-                }
+-        }
+-
+-
+-        //-----------------------------------------------------------------------------
+-        // Secend Army Models
+-        LastTexNum=-1;
+-
+-        for(i=0;i<DRAFTSMEN_QUANTITY;++i)
+-        {
+-                if(white[i].model!=NULL)
+-                {
+-                        glPushMatrix();
+-
+-                        if(white[i].model->texindex!=LastTexNum)
+-                        {
+-                                LastTexNum=white[i].model->texindex;
+-                                glBindTexture(GL_TEXTURE_2D,Md2::texname[LastTexNum]);
+-                        }
+-
+-                        model=white[i].model;
+-
+-                        model->Animate();
+-                        SetOnMap(model,model->wt);
+-                        model->Render();
+-
+-                        glPopMatrix();
+-                }
+-        }
+-
+-
+-
+-        // And their guns
+-
+-        LastTexNum=-1;
+-
+-        for(i=0;i<DRAFTSMEN_QUANTITY;++i)
+-        {
+-                if(white[i].weapon!=NULL)
+-                {
+-                        glPushMatrix();
+-
+-                        if(white[i].model->texindex!=LastTexNum)
+-                        {
+-                                LastTexNum=white[i].model->texindex;
+-                                glBindTexture(GL_TEXTURE_2D,Md2::texname[LastTexNum]);
+-                        }
+-
+-                        weapon=white[i].weapon;
+-                        model=white[i].model;
+-
+-                        weapon->Animate();
+-						weapon->standy=model->standy;
+-						weapon->translatey=model->translatey;
+-						
+-                        weapon->Render();
+-
+-                        glPopMatrix();
+-
+-                }
+-        }
+-
+-
+-
+-        // PRESENTATION COMPLETED
+-        //------------------------------------------------------------------
+-
+-        // Make it happen
+-
+-}
+-
+-void Game::SetOnMap(Md2 *model,float wt)
+-{
+-        int dx,dz;
+-        int number;
+-        int index1,index,index0;
+-        int c,n;
+-        float zmin;
+-        float x,y,z;
+-        float A,B,C,D;          // The Modyficators of my plane get them from normal
+-        float translatex,translatez;
+-		int dd;
+-
+-        // Find The Sector where model want to be put
+-
+-	
+-        translatex=model->translatex+model->offsetx;
+-        translatez=model->translatez+model->offsetz;
+-
+-        dx=(int)(((translatex-mapka->startx)/((int)(mapka->gunit*mapka->glensec))));
+-        dz=(int)((-translatez+mapka->startz)/((int)(mapka->gunit*mapka->glensec)));
+-
+-		dd=0;
+-	
+-        // (Y * numbersecinrow + x ) *2
+-
+-		number=((dz*mapka->SecNumX)+dx);
+-
+-
+-		// In any case when model is outside of battlefied
+-        if(number>63)
+-        {
+-                number-=8;
+-        }
+-        else
+-        {
+-                if(number<0)
+-                {
+-                        number+=8;
+-                }
+-        }
+-
+-        // Get index of vertices to my map
+-
+-        //   |---|
+-        //   | / |
+-        //  x|---|      x is my point in my sector
+-        // Let's note that x is in two sectors on the same positions
+-
+-        index1=mapka->Sectors[(int)(number)].vertexIndices[2];
+-        index=mapka->Sectors[(int)(number)].vertexIndices[0];
+-        index0=mapka->Sectors[(int)(number)].vertexIndices[1];
+-
+-        // Left top corner used triangle selection from the chosen sector
+-
+-        x=translatex-mapka->points[index1].x;
+-        z=translatez-mapka->points[index1].z;
+-		
+-        // Estimate which triangle of two from our sector we are more
+-        // y and x should be positive
+-
+-        if(z<x)
+-        {
+-                dd=1;
+-        }
+-
+-        // I Need one point to find D constans the last parameter of this plane equation
+-
+-        A=(mapka->Sectors[(int)(number)].normals[dd]).x;
+-        B=mapka->Sectors[(number)].normals[dd].y;
+-        C=mapka->Sectors[(number)].normals[dd].z;
+-		D=mapka->Sectors[(number)].normals[dd].w;
+-		
+-        // Get the z coord for the model and then translate model with addictive
+-        // zmin value ... develop later
+-
+-        if(B!=0)
+-        {
+-      		//y=(A*(mapka->points[index1].x-translatex)+C*(mapka->points[index1].z-translatez) -mapka->Sectors[number].normals[dd].w)/((float)B);
+-			
+-			y=( -A*translatex-C*translatez -mapka->Sectors[number].normals[dd].w)/((float)B);
+-        }
+-        else
+-        {
+-                // This routine is(should be) correct to the 90 correct
+-                // for 90 get 0 - some random value
+-                y=0;
+-        }
+-		
+-        c=model->currentframe;
+-        n=model->nextframe;
+-
+-        zmin=model->frames[c].zmin+wt*(model->frames[n].zmin-model->frames[c].zmin);
+-		
+-        model->standy=y-zmin;    //Save it for future use
+-		model->translatey=y-zmin;
+-
+-}
+-
+-void Game::UpdateSelection(void)
+-{
+-        Select.x+=stan.right-stan.left;
+-        Select.y+=stan.down-stan.up;
+-
+-        if(Select.x<0)
+-        {
+-                Select.x+=8;
+-        }
+-        else
+-        {
+-                if(Select.x>7)
+-                {
+-                        Select.x-=8;
+-                }
+-        }
+-
+-        if(Select.y<0)
+-        {
+-                Select.y+=8;
+-        }
+-        else
+-        {
+-                if(Select.y>7)
+-                {
+-                        Select.y-=8;
+-                }
+-        }
+-
+-        stan.up=0;
+-        stan.down=0;
+-        stan.right=0;
+-        stan.left=0;
+-
+-        Select.SecNum=(Select.y<<3)+Select.x;
+-
+-}
+-
+-void Game::DrawSector(int SecNum,GLfloat *color)
+-{
+-        int v0,v1,v2,v3;
++		konsolka->Show(kamera);
++		glPopMatrix();
++		SDL_GL_SwapBuffers();
++}
++
++
++void Game::RenderModels(void)
++{
++        int LastTexNum;
++        int i;
++        Md2 *model;
++        Md2 *weapon;
++
++
++        // Let's display it in queue , first one army and thne its weapons , then secend and map at least
++
++        //-------------------------------------------------------------------------------
++        // This is first army models
++
++        LastTexNum=-1;
++
++        for(i=0;i<DRAFTSMEN_QUANTITY;++i)
++        {
++                if(black[i].model!=NULL)
++                {
++                        glPushMatrix();
++
++                        if(black[i].model->texindex!=LastTexNum)
++                        {
++                                LastTexNum=black[i].model->texindex;
++                                glBindTexture(GL_TEXTURE_2D,Md2::texname[LastTexNum]);
++                        }
++
++                        model=black[i].model;
++
++                        model->Animate();
++                        SetOnMap(model,model->wt);
++                        model->Render();
++
++                        glPopMatrix();
++                }
++        }
++
++        // And their guns
++
++        LastTexNum=-1;
++
++        for(i=0;i<DRAFTSMEN_QUANTITY;++i)
++        {
++                if(black[i].weapon!=NULL)
++                {
++                        glPushMatrix();
++
++                        if(black[i].model->texindex!=LastTexNum)
++                        {
++                                LastTexNum=black[i].model->texindex;
++                                glBindTexture(GL_TEXTURE_2D,Md2::texname[LastTexNum]);
++                        }
++
++                        weapon=black[i].weapon;
++                        model=black[i].model;
++
++                        weapon->Animate();
++						weapon->standy=model->standy;
++						weapon->translatey=model->translatey;
++                        weapon->Render();
++
++                        glPopMatrix();
++
++                }
++        }
++
++
++        //-----------------------------------------------------------------------------
++        // Secend Army Models
++        LastTexNum=-1;
++
++        for(i=0;i<DRAFTSMEN_QUANTITY;++i)
++        {
++                if(white[i].model!=NULL)
++                {
++                        glPushMatrix();
++
++                        if(white[i].model->texindex!=LastTexNum)
++                        {
++                                LastTexNum=white[i].model->texindex;
++                                glBindTexture(GL_TEXTURE_2D,Md2::texname[LastTexNum]);
++                        }
++
++                        model=white[i].model;
++
++                        model->Animate();
++                        SetOnMap(model,model->wt);
++                        model->Render();
++
++                        glPopMatrix();
++                }
++        }
++
++
++
++        // And their guns
++
++        LastTexNum=-1;
++
++        for(i=0;i<DRAFTSMEN_QUANTITY;++i)
++        {
++                if(white[i].weapon!=NULL)
++                {
++                        glPushMatrix();
++
++                        if(white[i].model->texindex!=LastTexNum)
++                        {
++                                LastTexNum=white[i].model->texindex;
++                                glBindTexture(GL_TEXTURE_2D,Md2::texname[LastTexNum]);
++                        }
++
++                        weapon=white[i].weapon;
++                        model=white[i].model;
++
++                        weapon->Animate();
++						weapon->standy=model->standy;
++						weapon->translatey=model->translatey;
++						
++                        weapon->Render();
++
++                        glPopMatrix();
++
++                }
++        }
++
++
++
++        // PRESENTATION COMPLETED
++        //------------------------------------------------------------------
++
++        // Make it happen
++
++}
++
++void Game::SetOnMap(Md2 *model,float wt)
++{
++        int dx,dz;
++        int number;
++        int index1,index,index0;
++        int c,n;
++        float zmin;
++        float x,y,z;
++        float A,B,C,D;          // The Modyficators of my plane get them from normal
++        float translatex,translatez;
++		int dd;
++
++        // Find The Sector where model want to be put
++
++	
++        translatex=model->translatex+model->offsetx;
++        translatez=model->translatez+model->offsetz;
++
++        dx=(int)(((translatex-mapka->startx)/((int)(mapka->gunit*mapka->glensec))));
++        dz=(int)((-translatez+mapka->startz)/((int)(mapka->gunit*mapka->glensec)));
++
++		dd=0;
++	
++        // (Y * numbersecinrow + x ) *2
++
++		number=((dz*mapka->SecNumX)+dx);
++
++
++		// In any case when model is outside of battlefied
++        if(number>63)
++        {
++                number-=8;
++        }
++        else
++        {
++                if(number<0)
++                {
++                        number+=8;
++                }
++        }
++
++        // Get index of vertices to my map
++
++        //   |---|
++        //   | / |
++        //  x|---|      x is my point in my sector
++        // Let's note that x is in two sectors on the same positions
++
++        index1=mapka->Sectors[(int)(number)].vertexIndices[2];
++        index=mapka->Sectors[(int)(number)].vertexIndices[0];
++        index0=mapka->Sectors[(int)(number)].vertexIndices[1];
++
++        // Left top corner used triangle selection from the chosen sector
++
++        x=translatex-mapka->points[index1].x;
++        z=translatez-mapka->points[index1].z;
++		
++        // Estimate which triangle of two from our sector we are more
++        // y and x should be positive
++
++        if(z<x)
++        {
++                dd=1;
++        }
++
++        // I Need one point to find D constans the last parameter of this plane equation
++
++        A=(mapka->Sectors[(int)(number)].normals[dd]).x;
++        B=mapka->Sectors[(number)].normals[dd].y;
++        C=mapka->Sectors[(number)].normals[dd].z;
++		D=mapka->Sectors[(number)].normals[dd].w;
++		
++        // Get the z coord for the model and then translate model with addictive
++        // zmin value ... develop later
++
++        if(B!=0)
++        {
++      		//y=(A*(mapka->points[index1].x-translatex)+C*(mapka->points[index1].z-translatez) -mapka->Sectors[number].normals[dd].w)/((float)B);
++			
++			y=( -A*translatex-C*translatez -mapka->Sectors[number].normals[dd].w)/((float)B);
++        }
++        else
++        {
++                // This routine is(should be) correct to the 90 correct
++                // for 90 get 0 - some random value
++                y=0;
++        }
++		
++        c=model->currentframe;
++        n=model->nextframe;
++
++        zmin=model->frames[c].zmin+wt*(model->frames[n].zmin-model->frames[c].zmin);
++		
++        model->standy=y-zmin;    //Save it for future use
++		model->translatey=y-zmin;
++
++}
++
++void Game::UpdateSelection(void)
++{
++        Select.x+=stan.right-stan.left;
++        Select.y+=stan.down-stan.up;
++
++        if(Select.x<0)
++        {
++                Select.x+=8;
++        }
++        else
++        {
++                if(Select.x>7)
++                {
++                        Select.x-=8;
++                }
++        }
++
++        if(Select.y<0)
++        {
++                Select.y+=8;
++        }
++        else
++        {
++                if(Select.y>7)
++                {
++                        Select.y-=8;
++                }
++        }
++
++        stan.up=0;
++        stan.down=0;
++        stan.right=0;
++        stan.left=0;
++
++        Select.SecNum=(Select.y<<3)+Select.x;
++
++}
++
++void Game::DrawSector(int SecNum,GLfloat *color)
++{
++        int v0,v1,v2,v3;
+ 		char zstate;
+ 		
+ 		zstate=glIsEnabled(GL_DEPTH_TEST);
+@@ -1021,76 +1021,76 @@
+ 			glDepthMask(FALSE);			
+ 	
+ 		glDisable(GL_BLEND);
+-
+-        // Enable texture with blending
+-		glBindTexture(GL_TEXTURE_2D,mapka->background_textures[0]);
+-        glTexEnvfv(GL_TEXTURE_ENV,GL_TEXTURE_ENV_COLOR,color);
++
++        // Enable texture with blending
++		glBindTexture(GL_TEXTURE_2D,mapka->background_textures[0]);
++        glTexEnvfv(GL_TEXTURE_ENV,GL_TEXTURE_ENV_COLOR,color);
+         glTexEnvf(GL_TEXTURE_ENV,GL_TEXTURE_ENV_MODE,GL_BLEND);
+ 
+-		glFrontFace(GL_CCW);
+-		glEnable(GL_CULL_FACE);
+-
+-        glBegin(GL_TRIANGLES);
+-	
+-		v0=mapka->Sectors[SecNum].vertexIndices[0];
+-		v1=mapka->Sectors[SecNum].vertexIndices[1];
+-		v2=mapka->Sectors[SecNum].vertexIndices[2];
+-		v3=mapka->Sectors[SecNum].vertexIndices[3];
+-
+-		// v0
+-		glNormal3f(mapka->points[v0].nx,mapka->points[v0].ny,mapka->points[v0].nz);
+-	    glTexCoord2f(mapka->Sectors[SecNum].textureIndices[0].tx,mapka->Sectors[SecNum].textureIndices[0].ty);
+-		glVertex3f(mapka->points[v0].x,mapka->points[v0].y+0.01,mapka->points[v0].z);
+-		
+-		// v1
+-		glNormal3f(mapka->points[v1].nx,mapka->points[v1].ny,mapka->points[v1].nz);
+-		glTexCoord2f(mapka->Sectors[SecNum].textureIndices[1].tx,mapka->Sectors[SecNum].textureIndices[1].ty);
+-		glVertex3f(mapka->points[v1].x,mapka->points[v1].y+0.01,mapka->points[v1].z);
+-
+-		// v2
+-		glNormal3f(mapka->points[v2].nx,mapka->points[v2].ny,mapka->points[v2].nz);
+-		glTexCoord2f(mapka->Sectors[SecNum].textureIndices[2].tx,mapka->Sectors[SecNum].textureIndices[2].ty);
+-		glVertex3f(mapka->points[v2].x,mapka->points[v2].y+0.01,mapka->points[v2].z);
+-
+-
+-
+-		// v2
+-		glNormal3f(mapka->points[v2].nx,mapka->points[v2].ny,mapka->points[v2].nz);
+-		glTexCoord2f(mapka->Sectors[SecNum].textureIndices[2].tx,mapka->Sectors[SecNum].textureIndices[2].ty);
+-		glVertex3f(mapka->points[v2].x,mapka->points[v2].y+0.01,mapka->points[v2].z);
+-
+-		// v1
+-		glNormal3f(mapka->points[v1].nx,mapka->points[v1].ny,mapka->points[v1].nz);
+-		glTexCoord2f(mapka->Sectors[SecNum].textureIndices[1].tx,mapka->Sectors[SecNum].textureIndices[1].ty);
+-		glVertex3f(mapka->points[v1].x,mapka->points[v1].y+0.01,mapka->points[v1].z);
+-
+-		// v3
+-		glNormal3f(mapka->points[v3].nx,mapka->points[v3].ny,mapka->points[v3].nz);
+-		glTexCoord2f(mapka->Sectors[SecNum].textureIndices[3].tx,mapka->Sectors[SecNum].textureIndices[3].ty);
+-		glVertex3f(mapka->points[v3].x,mapka->points[v3].y+0.01,mapka->points[v3].z);
+-
+-        glEnd();
+-		
+- 		glTexEnvf(GL_TEXTURE_ENV,GL_TEXTURE_ENV_MODE,GL_MODULATE);		
+-		glFrontFace(GL_CW);
++		glFrontFace(GL_CCW);
++		glEnable(GL_CULL_FACE);
++
++        glBegin(GL_TRIANGLES);
++	
++		v0=mapka->Sectors[SecNum].vertexIndices[0];
++		v1=mapka->Sectors[SecNum].vertexIndices[1];
++		v2=mapka->Sectors[SecNum].vertexIndices[2];
++		v3=mapka->Sectors[SecNum].vertexIndices[3];
++
++		// v0
++		glNormal3f(mapka->points[v0].nx,mapka->points[v0].ny,mapka->points[v0].nz);
++	    glTexCoord2f(mapka->Sectors[SecNum].textureIndices[0].tx,mapka->Sectors[SecNum].textureIndices[0].ty);
++		glVertex3f(mapka->points[v0].x,mapka->points[v0].y+0.01,mapka->points[v0].z);
++		
++		// v1
++		glNormal3f(mapka->points[v1].nx,mapka->points[v1].ny,mapka->points[v1].nz);
++		glTexCoord2f(mapka->Sectors[SecNum].textureIndices[1].tx,mapka->Sectors[SecNum].textureIndices[1].ty);
++		glVertex3f(mapka->points[v1].x,mapka->points[v1].y+0.01,mapka->points[v1].z);
++
++		// v2
++		glNormal3f(mapka->points[v2].nx,mapka->points[v2].ny,mapka->points[v2].nz);
++		glTexCoord2f(mapka->Sectors[SecNum].textureIndices[2].tx,mapka->Sectors[SecNum].textureIndices[2].ty);
++		glVertex3f(mapka->points[v2].x,mapka->points[v2].y+0.01,mapka->points[v2].z);
++
++
++
++		// v2
++		glNormal3f(mapka->points[v2].nx,mapka->points[v2].ny,mapka->points[v2].nz);
++		glTexCoord2f(mapka->Sectors[SecNum].textureIndices[2].tx,mapka->Sectors[SecNum].textureIndices[2].ty);
++		glVertex3f(mapka->points[v2].x,mapka->points[v2].y+0.01,mapka->points[v2].z);
++
++		// v1
++		glNormal3f(mapka->points[v1].nx,mapka->points[v1].ny,mapka->points[v1].nz);
++		glTexCoord2f(mapka->Sectors[SecNum].textureIndices[1].tx,mapka->Sectors[SecNum].textureIndices[1].ty);
++		glVertex3f(mapka->points[v1].x,mapka->points[v1].y+0.01,mapka->points[v1].z);
++
++		// v3
++		glNormal3f(mapka->points[v3].nx,mapka->points[v3].ny,mapka->points[v3].nz);
++		glTexCoord2f(mapka->Sectors[SecNum].textureIndices[3].tx,mapka->Sectors[SecNum].textureIndices[3].ty);
++		glVertex3f(mapka->points[v3].x,mapka->points[v3].y+0.01,mapka->points[v3].z);
++
++        glEnd();
++		
++ 		glTexEnvf(GL_TEXTURE_ENV,GL_TEXTURE_ENV_MODE,GL_MODULATE);		
++		glFrontFace(GL_CW);
+ 		
+ 		
+ 		if(zstate==TRUE) 
+-			glDepthMask(TRUE);
+-}
+-
+-// This Routine PreCalculate Trygonometric Functions
+-void Game::CalculateTrygs(void)
+-{
+-	float anglez=0;
+-
+-	while(anglez<360)
+-	{
+-		sinus[(int)(anglez*(1/(float)cSTEP))]=(float)sin(anglez*(float)PIK);
+-		cosinus[(int)(anglez*(1/(float)cSTEP))]=(float)cos(anglez*(float)PIK);
+-		anglez+=0.1;
+-	}
+-}
++			glDepthMask(TRUE);
++}
++
++// This Routine PreCalculate Trygonometric Functions
++void Game::CalculateTrygs(void)
++{
++	float anglez=0;
++
++	while(anglez<360)
++	{
++		sinus[(int)(anglez*(1/(float)cSTEP))]=(float)sin(anglez*(float)PIK);
++		cosinus[(int)(anglez*(1/(float)cSTEP))]=(float)cos(anglez*(float)PIK);
++		anglez+=0.1;
++	}
++}
+ 
+ void Game::UpdateGameState(void)
+ {
+@@ -1359,7 +1359,7 @@
+ 			//kamera->Change(15.0,20.0,15.0, 0.0,0.0,0.0, 0.0,1.0,0.0);
+ 			kamera->SituateCamera(0.0,10.0,25.0,0.0,0.0,-10.0,9000,BEZIER4,BEZIER4);
+ 			stan.phase=5;
+-			*gui << new NeoButton(400,450,192,48,"../share/NeoDraughts/exit.png",new ExitNeoRoutine);
++			*gui << new NeoButton(400,450,192,48,"/usr/share/NeoDraughts/exit.png",new ExitNeoRoutine);
+ 			stan.tryb=CHOICEMODE;
+ 			break;
+ 		}
+@@ -1389,7 +1389,7 @@
+ 					konsolka->AddRegistry(buforek,0);
+ 					++i;
+ 				}
+-				
++				
+ 			
+ 				// Reverse recived data becouse every client human army
+ 				// is white but we seen them as black 
+@@ -1419,7 +1419,8 @@
+ 
+ 			}
+ 			// If ok than change phase and go to 3 , also reverse action list
+-		
++
++		
+ 			break;
+ 		}
+ 
+@@ -1776,7 +1777,7 @@
+ Stream* Game::getRequestedStream(int pindex)
+ {
+ 	return prsdt[pindex].strm;
+-}
++}
+ 
+ PrimsHolder* Game::getRequestedPrim(int pindex)
+ {
+@@ -1796,4 +1797,4 @@
+ int Game::getPhase(void)
+ {
+ 	return stan.phase;
+-}
++}
+diff -Naur NeoDraughts-0.3.orig/src/main.cpp NeoDraughts-0.3/src/main.cpp
+--- NeoDraughts-0.3.orig/src/main.cpp	2006-10-01 22:50:14.000000000 +0300
++++ NeoDraughts-0.3/src/main.cpp	2011-01-11 18:09:25.116000048 +0200
+@@ -16,26 +16,26 @@
+ 
+ 	SDL_ShowCursor(SDL_DISABLE);
+ 	// Loading Screen
+-	gra->SetLoadingScreen("../share/NeoDraughts/load1.jpg");
++	gra->SetLoadingScreen("/usr/share/NeoDraughts/load1.jpg");
+ 	SDL_ShowCursor(SDL_ENABLE);
+ 
+ 	// Prepare checkers Match.. put draftsmen etc.
+ 	gra->SetGame();
+ 
+-	// Event Loop
+-	while(gra->stan.koniec==0) {
+-		while(SDL_PollEvent(&event)==1) {
+-			switch(event.type) {
+-				case SDL_KEYDOWN:
++	// Event Loop
++	while(gra->stan.koniec==0) {
++		while(SDL_PollEvent(&event)==1) {
++			switch(event.type) {
++				case SDL_KEYDOWN:
+ 				{
+ 					SwitchKeyPressed(&event);
+ 					break;
+ 				}
+-
+-				case SDL_KEYUP:
++
++				case SDL_KEYUP:
+ 				{
+ 					SwitchKeyReleased(&event);
+-					break;
++					break;
+ 				}
+ 				
+ 				case SDL_MOUSEBUTTONUP:
+@@ -106,15 +106,15 @@
+ 						gra->UpdateMouseState(&event);
+ 					break;
+ 				}
+-				
+-			}
++				
++			}
+ 		}
+ 		
+ 		gra->Play();
+-		gra->Render();
+-	}
++		gra->Render();
++	}
+ 
+ 	delete gra;
+ 	
+-	return (0);
+-};
++	return (0);
++};

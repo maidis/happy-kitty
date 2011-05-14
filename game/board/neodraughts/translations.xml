@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>neodraughts</Name>
+        <Summary xml:lang="tr">Bir 3B dama</Summary>
+        <Description xml:lang="tr">NeoDraugts, dama oyununun kurallarını alıp üç boyutky bir ortama koyan bir oyundur. Oyun yapay zekaya karşı oynanabildiği gibi iki kişi de oynanabilir.</Description>
+    </Source>
+</PISI>
