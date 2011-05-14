@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>komi</Name>
+        <Homepage>http://komi.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>komi</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>2D arcade game</Summary>
+        <Description>Komi is a 2D arcade style game, it was written by Allan Crossman. The basic aim is to collect all the money by extending Komi the Space Frog's tongue, while avoiding the bad guys.</Description>
+        <Archive sha1sum="7128b454b9b6ab87574486aab62638f6c8dd86a7" type="targz">mirrors://sourceforge/komi/komi-source/1.04/komi-1.04.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>1.04-DESTDIR.patch</Patch>
+            <Patch>flags.patch</Patch>
+            <Patch>Makefile.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>komi</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/komidata</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/komi.desktop">komi.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/komi.png">komi.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-11-09</Date>
+            <Version>1.04</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
