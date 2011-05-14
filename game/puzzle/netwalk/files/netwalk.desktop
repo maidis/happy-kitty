@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=netwalk
+GenericName=SDL NetWalk
+GenericName[tr]=SDL NetWalk
+Comment=An SDL NetWalk clone
+Comment[tr]=Bir SDL NetWalk klonu
+Icon=netwalk
+Exec=netwalk
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;
