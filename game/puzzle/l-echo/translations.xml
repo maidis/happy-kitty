@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>l-echo</Name>
+        <Summary xml:lang="tr">Özgür Echochrome klonu</Summary>
+        <Description xml:lang="tr">L-Echo, ücretsiz ve özgür bir Echochrome klonudur.</Description>
+    </Source>
+</PISI>

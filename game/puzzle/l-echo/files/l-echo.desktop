@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=L-Echo
+GenericName=Echochrome Clone
+GenericName[tr]=Echochrome Klonu
+Comment=A perspective puzzle game
+Comment[tr]=Bir perspektif bulmaca oyunu
+Icon=l-echo
+Exec=/opt/l-echo/l-echo
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;
