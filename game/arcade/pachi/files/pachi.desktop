@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Pachi
+GenericName=Pachi el Marciano
+GenericName[tr]=Marslı Pachi
+Comment=A cool 2D platform game
+Comment[tr]=Güzel bir 2B platform oyunu
+Icon=pachi
+Exec=pachi
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;

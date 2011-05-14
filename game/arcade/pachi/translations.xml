@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>pachi</Name>
+        <Summary xml:lang="tr">Güzel bir 2B platform oyunu</Summary>
+        <Description xml:lang="tr">Pachi El Marciano; Manic Miner, Jet Set Willy ve 80'lerdeki daha pek çok şeyden ilham almış güzel bir 2B platform oyunudur.</Description>
+    </Source>
+</PISI>

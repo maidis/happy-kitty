@@ -1,0 +1,35 @@
+diff -u -r ../Pachi.orig/data/Makefile.in ./data/Makefile.in
+--- ../Pachi.orig/data/Makefile.in	2003-05-02 02:06:56.000000000 +0200
++++ ./data/Makefile.in	2003-05-02 02:07:11.000000000 +0200
+@@ -229,8 +229,8 @@
+ 
+ install-data-local:
+ 	for file in $(score_DATA); do\
+-	    chgrp $(group) $(scoredir)/$$file; \
+-	    chmod $(perms) $(scoredir)/$$file; \
++	    chgrp $(group) $(DESTDIR)$(scoredir)/$$file; \
++	    chmod $(perms) $(DESTDIR)$(scoredir)/$$file; \
+ 	done					    
+ 
+ # Tell versions [3.59,3.63) of GNU make to not export all variables.
+diff -u -r ../Pachi.orig/src/file.c ./src/file.c
+--- ../Pachi.orig/src/file.c	2003-05-02 02:06:55.000000000 +0200
++++ ./src/file.c	2003-05-02 02:10:27.000000000 +0200
+@@ -95,7 +95,7 @@
+     LoadT(&scorefont,DATADIR"/fonts/font16b.T");
+     LoadT(&scorefont1,DATADIR"/fonts/font16d.T");
+ 
+-    FILE *file = fopen(SCOREDIR"/data/scores.dat","rb");
++    FILE *file = fopen("/var/games/pachi.scores","rb");
+     for(int a=0; a < 10; a++)
+     {
+ 	for(int b=0; b < 10; b++)
+@@ -123,7 +123,7 @@
+ }
+ void save_hiscoredata()
+ {
+-    FILE *file = fopen(SCOREDIR"/data/scores.dat","rb+");
++    FILE *file = fopen("/var/games/pachi.scores","rb+");
+ 
+     for(int a=0;a<10;a++)
+     {    
