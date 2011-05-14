@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=neodraughts
+GenericName=Checkers Game
+GenericName[tr]=Dama Oyunu
+Comment=A 3D checkers
+Comment[tr]=Bir 3B dama
+Icon=neodraughts
+Exec=neodraughts
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;BoardGame;

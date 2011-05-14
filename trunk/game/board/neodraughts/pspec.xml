@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>neodraughts</Name>
+        <Homepage>http://ndraughts.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>neodraughts</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A 3D checkers</Summary>
+        <Description>NeoDraugts is a game that implements checkers rules and puts it into 3D environment. Game itself can be played against the AI player as well as Human opponent.</Description>
+        <Archive sha1sum="4dfea1a5d5984dc181906b1e05104e1865a2bde2" type="tarbz2">http://ndraughts.sourceforge.net/data/files/NeoDraughts-0.3.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-net-devel</Dependency>
+            <Dependency>libxml2-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">ya-neyse-bir-sey-demiyorum.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>neodraughts</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-net</Dependency>
+            <Dependency>mesa</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/NeoDraughts</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/neodraughts.desktop">neodraughts.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/neodraughts.png">neodraughts.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-12-02</Date>
+            <Version>0.3</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
