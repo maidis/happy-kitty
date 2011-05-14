@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Pacman Arena
+GenericName=Pacman Clone
+GenericName[tr]=Pacman Klonu
+Comment=Pacman clone in full 3D
+Comment[tr]=3B Pacman klonu
+Icon=pacman-arena
+Exec=pacman-arena
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;

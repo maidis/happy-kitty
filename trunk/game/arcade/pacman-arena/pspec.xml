@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>pacman-arena</Name>
+        <Homepage>http://pacmanarena.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>pacman-arena</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Pacman clone in full 3D</Summary>
+        <Description>Pacman Arena is a Pacman clone in full 3D with a few surprises. Rockets, bombs and explosions abound.</Description>
+        <Archive sha1sum="3c960bbce7ba70135a0af452939f78698166ec19" type="tarbz2">http://happy-kitty.googlecode.com/files/pacman-arena-0.15.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-net-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">pacman-arena-Makefile.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>pacman-arena</Name>
+        <RuntimeDependencies>
+            <Dependency>mesa</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-net</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/pacman-arena</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/pacman-arena.desktop">pacman-arena.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/pacman-arena.png">pacman-arena.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-05-14</Date>
+            <Version>0.15</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

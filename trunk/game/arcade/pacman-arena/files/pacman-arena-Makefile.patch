@@ -1,0 +1,37 @@
+diff -Naur pacman-arena-0.15-old//Makefile.in pacman-arena-0.15/Makefile.in
+--- pacman-arena-0.15-old//Makefile.in	2009-10-07 19:19:52.000000000 +0800
++++ pacman-arena-0.15/Makefile.in	2009-10-07 20:59:10.000000000 +0800
+@@ -2,7 +2,7 @@
+ 
+ prefix?=@prefix@
+ 
+-CFLAGS=@CFLAGS@ -I@top_srcdir@/include -DDATADIR="\"@datadir@/pacman\""
++CFLAGS=@CFLAGS@ -I@top_srcdir@/include -DDATADIR="\"@datadir@/pacman-arena\""
+ LDFLAGS=@LDFLAGS@
+ OBJS=file.o bomb.o particle.o shot.o audio.o map.o object.o math.o gfx.o game.o player.o ghost.o menu.o input.o screen.o render.o render_bomb.o render_player.o render_ghost.o render_map.o render_particle.o render_shot.o net.o
+ 
+@@ -15,7 +15,7 @@
+ all: pacman
+ 
+ pacman: $(OBJS) main.c
+-	$(CC) $(CFLAGS) -o pacman main.c $(OBJS) $(LDFLAGS)
++	$(CC) $(CFLAGS) -o pacman-arena main.c $(OBJS) $(LDFLAGS)
+ 
+ 3dsconv: 3dsconv.c tds.o object-3ds.o
+ 	$(CC) $(CFLAGS) -o 3dsconv 3dsconv.c tds.o object-3ds.o $(LDFLAGS) -l3ds
+@@ -28,11 +28,11 @@
+ 
+ install: pacman
+ 	cd @top_srcdir@
+-	install -d @datadir@/pacman/sfx @datadir@/pacman/gfx
++	install -d ${DESTDIR}@datadir@/pacman-arena/sfx ${DESTDIR}@datadir@/pacman-arena/gfx ${DESTDIR}${prefix}/bin
+ 	# XXX - @bindir@ ends up in /bin, what to do here ?
+-	install -c pacman ${prefix}/bin
+-	install -c $(DATA_SFX) @datadir@/pacman/sfx
+-	install -c $(DATA_GFX) @datadir@/pacman/gfx
++	install -c -s pacman-arena ${DESTDIR}${prefix}/bin
++	install -c $(DATA_SFX) ${DESTDIR}@datadir@/pacman-arena/sfx
++	install -c $(DATA_GFX) ${DESTDIR}@datadir@/pacman-arena/gfx
+ 
+ clean:
+ 	rm -f pacman $(OBJS) main.o 3dsconv 3dsconv.o tds.o object-3ds.o
