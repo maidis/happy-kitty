@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=OpenMortal
+GenericName=Fighting Game
+GenericName[tr]=Dövüş Oyunu
+Comment=A networked clone of the fighting game Mortal Kombat
+Comment[tr]=Mortal Kombat'ın ağ destekli bir klonu
+Icon=openmortal
+Exec=openmortal
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ActionGame;

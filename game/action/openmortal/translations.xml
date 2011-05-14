@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>openmortal</Name>
+        <Summary xml:lang="tr">Ağ destekli bir Mortal Kombat klonu</Summary>
+        <Description xml:lang="tr">OpenMortal, popüler Mortal Kombat dövüş oyununun bir parodisidir. OpenMortal'ın en eğlenceli yanısıysa dövüşte kendiniz olarak dövüşebilmenizdir.</Description>
+    </Source>
+</PISI>
