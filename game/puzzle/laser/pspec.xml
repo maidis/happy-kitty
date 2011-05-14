@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>laser</Name>
+        <Homepage>http://bookeldor.livejournal.com</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>laser</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A laser game</Summary>
+        <Description>Laser is an arcade style logic game which you try to reach targets with a light ray using little optical elements.</Description>
+        <Archive sha1sum="9cf564930a53a267a55c0ee8d258359a82ecea13" type="targz">http://klakplok.net/laser/laser_0.2.4.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>cairo-devel</Dependency>
+            <Dependency>libgnomeui-devel</Dependency>
+            <Dependency>librsvg-devel</Dependency>
+            <Dependency>gnome-doc-utils</Dependency>
+            <Dependency>docbook-utils</Dependency>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>gconf-devel</Dependency>
+            <Dependency>libgnome-devel</Dependency>
+            <Dependency>libglade-devel</Dependency>
+            <Dependency>gnome-vfs-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>laser</Name>
+        <RuntimeDependencies>
+            <Dependency>cairo</Dependency>
+            <Dependency>libgnomeui</Dependency>
+            <Dependency>librsvg</Dependency>
+            <Dependency>icon-theme-hicolor</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>libgnome</Dependency>
+            <Dependency>libglade</Dependency>
+            <Dependency>gnome-vfs</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/gnome</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/laser</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-01-15</Date>
+            <Version>0.2.4</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
