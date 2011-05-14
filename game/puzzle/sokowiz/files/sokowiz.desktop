@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=sokowiz
+GenericName=Sokoban Game
+GenericName[tr]=Sokoban Oyunu
+Comment=An implementation of the famous Sokoban puzzle game
+Comment[tr]=Bir Sokoban uyarlaması
+Icon=sokowiz
+Exec=sokowiz
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;
