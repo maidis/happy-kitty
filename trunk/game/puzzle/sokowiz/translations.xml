@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>sokowiz</Name>
+        <Summary xml:lang="tr">Bir Sokoban uyarlaması</Summary>
+        <Description xml:lang="tr">Sokowiz, ünlü bulmaca oyunu Sokoban'ın bir uyarlamasıdır. Sokoban, Japonca'da depo bekçisi anlamına gelir. Oyunun orijinal sürümü 1980'de Hiroyuki Imabayashi tarafından yazılmış ve 1982'de Thinking Rabbit tarafından yayınlanmıştır. Oyundaki amaç depo bekçisine kutuları doğru yerlere yerleştirmesinde yardımcı olmaktır. Kutular çok ağır olduğundan her seferinden yalnızca bir tanesini itebilirsiniz. Kutuları çekmeye çalışmak da boşuna olacaktır çünkü kutuları çekemezsiniz. Oyun size hala kolay geliyorsa deneyin ve görün.</Description>
+    </Source>
+</PISI>
