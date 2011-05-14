@@ -1,13 +1,12 @@
 #!/usr/bin/python
-# -*- coding: utf-8 -*-·
+# -*- coding: utf-8 -*-
 #
-# Copyright 2009 TUBITAK/UEKAE
-# Licensed under the GNU General Public License, version 2.
-# See the file http://www.gnu.org/copyleft/gpl.txt.
+# Licensed under the GNU General Public License, version 3.
+# See the file http://www.gnu.org/copyleft/gpl.txt
 
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
-from pisi.actionsapi import shelltools
 
 def setup():
     pisitools.dosed("Makefile", "# RO_GAME_DIR = /usr/games", "RO_GAME_DIR = /usr/share/mirrormagic")
