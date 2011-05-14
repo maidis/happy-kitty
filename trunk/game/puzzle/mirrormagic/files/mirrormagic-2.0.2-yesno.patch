@@ -1,0 +1,22 @@
+diff -ur mirrormagic-2.0.2.orig/src/tools.c mirrormagic-2.0.2/src/tools.c
+--- mirrormagic-2.0.2.orig/src/tools.c	2002-03-19 03:53:26.000000000 +0100
++++ mirrormagic-2.0.2/src/tools.c	2006-09-29 14:01:07.000000000 +0200
+@@ -1310,6 +1310,18 @@
+ 	    case KSYM_Escape:
+ 	      result = 0;
+ 	      break;
++            
++            case KSYM_y:
++            case KSYM_Y:
++              if (req_state & REQ_ASK)
++                result = TRUE;
++              break;
++
++            case KSYM_n:
++            case KSYM_N:
++              if (req_state & REQ_ASK)
++                result = FALSE;
++              break;
+ 
+ 	    default:
+ 	      break;

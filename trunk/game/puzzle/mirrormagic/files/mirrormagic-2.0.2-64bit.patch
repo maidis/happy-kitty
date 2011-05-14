@@ -1,0 +1,16 @@
+--- mirrormagic-2.0.2/src/libgame/gadgets.c~	2006-09-30 03:21:56.000000000 +0200
++++ mirrormagic-2.0.2/src/libgame/gadgets.c	2006-09-30 03:21:56.000000000 +0200
+@@ -301,11 +301,11 @@
+ 	break;
+ 
+       case GDI_TYPE:
+-	gi->type = va_arg(ap, unsigned long);
++	gi->type = va_arg(ap, int);
+ 	break;
+ 
+       case GDI_STATE:
+-	gi->state = va_arg(ap, unsigned long);
++	gi->state = va_arg(ap, int);
+ 	break;
+ 
+       case GDI_CHECKED:

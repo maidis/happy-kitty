@@ -1,0 +1,32 @@
+diff -ur mirrormagic-2.0.2.orig/src/editor.c mirrormagic-2.0.2/src/editor.c
+--- mirrormagic-2.0.2.orig/src/editor.c	2001-01-14 17:14:33.000000000 +0100
++++ mirrormagic-2.0.2/src/editor.c	2006-09-29 12:14:21.000000000 +0200
+@@ -2751,7 +2751,7 @@
+ 	break;
+       }
+ 
+-      if (!LevelContainsPlayer)
++      if (!LevelContainsPlayer())
+ 	Request("No Level without Gregor Mc Duffin please !", REQ_CONFIRM);
+       else
+       {
+@@ -2766,7 +2766,7 @@
+       break;
+ 
+     case GADGET_ID_TEST:
+-      if (!LevelContainsPlayer)
++      if (!LevelContainsPlayer())
+ 	Request("No Level without Gregor Mc Duffin please !", REQ_CONFIRM);
+       else
+       {
+diff -ur mirrormagic-2.0.2.orig/src/main.h mirrormagic-2.0.2/src/main.h
+--- mirrormagic-2.0.2.orig/src/main.h	2003-06-07 18:04:37.000000000 +0200
++++ mirrormagic-2.0.2/src/main.h	2006-09-29 11:36:39.000000000 +0200
+@@ -459,7 +459,6 @@
+ #endif
+ extern struct HiScore		highscore[];
+ extern struct TapeInfo		tape;
+-extern struct JoystickInfo	joystick[];
+ extern struct SetupInfo		setup;
+ extern struct GameInfo		game;
+ extern struct LaserInfo		laser;
