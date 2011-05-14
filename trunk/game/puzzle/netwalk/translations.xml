@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>netwalk</Name>
+        <Summary xml:lang="tr">Bir SDL NetWalk klonu</Summary>
+        <Description xml:lang="tr">NetWalk, her terminali ana sunucuya bağlamaya çalıştığınız bir bulmaca oyunudur.</Description>
+    </Source>
+</PISI>
