@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>pachi</Name>
+        <Homepage>http://www.dragontech.net/index.php/games-en</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>pachi</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A cool 2D platform game</Summary>
+        <Description>Pachi El Marciano is a cool 2D platform game inspired by the likes of Manic Miner, Jet Set Willy, and more from the '80.</Description>
+        <Archive sha1sum="ea5f59593bb3a14d9e101eead1ada17d9551d9d2" type="targz">mirrors://sourceforge/dragontech/Pachi%20el%20marciano/Pachi%20el%20marciano%201.0/pachi_source.tgz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>pachi_source.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>pachi</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="config">/var</Path>
+            <Path fileType="data">/usr/share/pachi</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/pachi.desktop">pachi.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/pachi.png">pachi.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-05-14</Date>
+            <Version>1.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
