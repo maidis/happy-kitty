@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>mirrormagic</Name>
+        <Summary xml:lang="tr">Deflektor benzeri bir mantık oyunu</Summary>
+        <Description xml:lang="tr">Mirror Magic, sihirli bir ışın ve çok çok fazla aynanın bulunduğu Atari oyunları tarzı bir mantık oyunudur.</Description>
+    </Source>
+</PISI>

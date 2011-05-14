@@ -1,0 +1,14 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Version=1.0
+Name=Mirror Magic
+GenericName=Logic Game Like Deflektor
+GenericName[tr]=Deflektor Benzeri Mantık Oyunu
+Comment=Arcade style logic game
+Comment[tr]=Atari oyunları tarzı mantık oyunu
+Exec=mirrormagic
+Icon=mirrormagic
+StartupNotify=false
+Terminal=false
+Categories=Application;Game;LogicGame;

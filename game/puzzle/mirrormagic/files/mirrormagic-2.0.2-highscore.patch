@@ -1,0 +1,15 @@
+diff -ur mirrormagic-2.0.2.orig/src/files.c mirrormagic-2.0.2/src/files.c
+--- mirrormagic-2.0.2.orig/src/files.c	2002-03-18 04:09:16.000000000 +0100
++++ mirrormagic-2.0.2/src/files.c	2006-09-29 12:09:17.000000000 +0200
+@@ -183,7 +183,11 @@
+ static char *getScoreDir(char *level_subdir)
+ {
+   static char *score_dir = NULL;
++#ifdef USE_USERDATADIR_FOR_COMMONDATA
++  char *data_dir = getUserDataDir();
++#else
+   char *data_dir = options.rw_base_directory;
++#endif
+   char *score_subdir = SCORES_DIRECTORY;
+ 
+   if (score_dir)

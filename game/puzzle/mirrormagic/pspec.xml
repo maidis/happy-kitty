@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mirrormagic</Name>
+        <Homepage>http://www.artsoft.org/mirrormagic</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>mirrormagic</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A logic game like Deflektor</Summary>
+        <Description>Mirror Magic is an arcade style logic game with a magic ray and many, many mirrors.</Description>
+        <Archive type="targz" sha1sum="bce7fbf163d5177f59ba4f516b06a3ebb7cc3927">http://www.artsoft.org/RELEASES/unix/mirrormagic/mirrormagic-2.0.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">mirrormagic-2.0.2-64bit.patch</Patch>
+            <Patch level="1">mirrormagic-2.0.2-fixes.patch</Patch>
+            <Patch level="1">mirrormagic-2.0.2-fs-toggle.patch</Patch>
+            <Patch level="1">mirrormagic-2.0.2-highscore.patch</Patch>
+            <Patch level="1">mirrormagic-2.0.2-yesno.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>mirrormagic</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/mirrormagic</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/mirrormagic.desktop">mirrormagic.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/mirrormagic.png">mirrormagic.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-10-31</Date>
+            <Version>2.0.2</Version>
+            <Comment>First release.</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
