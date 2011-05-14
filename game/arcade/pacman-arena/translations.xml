@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>pacman-arena</Name>
+        <Summary xml:lang="tr">3B Pacman klonu</Summary>
+        <Description xml:lang="tr">Pacman Arena, fazladan birkaç sürpriz içeren 3B Pacman klonudur.</Description>
+    </Source>
+</PISI>
