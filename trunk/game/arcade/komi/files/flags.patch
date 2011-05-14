@@ -1,0 +1,11 @@
+--- Makefile.orig	2004-07-15 00:48:52.000000000 +0300
++++ Makefile	2010-11-09 13:22:31.509000025 +0200
+@@ -11,7 +11,7 @@
+ MANPATH=/usr/local/man/man6/
+ 
+ MIXER=-lSDL_mixer
+-SDL_LIB=$(shell sdl-config --static-libs) $(MIXER)
++SDL_LIB=$(shell sdl-config --libs) $(MIXER) $(LDFLAGS)
+ 
+ CFLAGS=-Wall -pedantic -std=c99 -O2 \
+ 	$(shell sdl-config --cflags) \

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>komi</Name>
+        <Summary xml:lang="tr">2B ateri oyunu</Summary>
+        <Description xml:lang="tr">Komi, Allan Crossman tarafından yazılmış 2B ateri tarzı bir oyundur. Oyundaki amacınız tüm parayı uzay kurbağası Komi'nin dili vasıtasıyla toplamak ve etraftaki kötü adamlardan kaçmak.</Description>
+    </Source>
+</PISI>

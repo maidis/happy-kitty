@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Komi
+GenericName=Komi the Space Frog
+GenericName[tr]=Uzay Kurbağası Komi
+Comment=2D arcade game
+Comment[tr]=2B ateri oyunu
+Icon=komi
+Exec=komi
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;
