@@ -45,6 +45,9 @@ You can visit [http://code.google.com/p/happy-kitty/people/list People] page to 
 === For Arch ===
   * [https://github.com/Arch-Games The Arch Linux Gaming Repository Project]
 
+=== For Debian ===
+* [http://wiki.debian.org/Games/ Debian Games Team]
+
 === For Fedora ===
   * [https://fedoraproject.org/wiki/SIGs/Games The Fedora Special Interest Groups - Games]
 
