@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>laser</Name>
+        <Summary xml:lang="tr">Bir lazer oyunu</Summary>
+        <Description xml:lang="tr">Laser, optik elemanlar kullanarak ışık demetini hedefine ulaştırmaya çalıştığınız ateri tarzı bir mantık oyunudur.</Description>
+    </Source>
+</PISI>

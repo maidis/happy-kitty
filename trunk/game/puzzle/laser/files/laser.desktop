@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Laser
+GenericName=Laser Game
+GenericName[tr]=Lazer Oyunu
+Comment=A laser game
+Comment[tr]=Bir lazer oyunu
+Icon=laser
+Exec=laser
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;
