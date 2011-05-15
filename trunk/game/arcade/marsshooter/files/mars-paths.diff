@@ -1,0 +1,29 @@
+--- src/CMakeLists.txt.orig	2011-03-22 12:13:50.000000000 +0200
++++ src/CMakeLists.txt	2011-05-15 19:09:22.178000058 +0300
+@@ -67,7 +67,7 @@
+ 		TARGETS 
+ 			mars
+ 		RUNTIME DESTINATION
+-			${CMAKE_INSTALL_PREFIX}/games
++			${CMAKE_INSTALL_PREFIX}/bin
+ 	)
+ 	install(
+ 		FILES
+@@ -81,7 +81,7 @@
+ 			${MARS_SOURCE_DIR}/data/botnames.txt
+ 			${MARS_SOURCE_DIR}/data/shipnames.txt
+ 		DESTINATION
+-			${CMAKE_INSTALL_PREFIX}/share/games/marsshooter
++			${CMAKE_INSTALL_PREFIX}/share/marsshooter
+ 	)
+ 	install(
+ 		DIRECTORY 
+@@ -91,7 +91,7 @@
+ 			${CMAKE_SOURCE_DIR}/data/shaders
+ 			${CMAKE_SOURCE_DIR}/data/tex
+ 		DESTINATION 
+-			${CMAKE_INSTALL_PREFIX}/share/games/marsshooter
++			${CMAKE_INSTALL_PREFIX}/share/marsshooter
+ 		PATTERN 
+ 			".svn" EXCLUDE
+ 	)

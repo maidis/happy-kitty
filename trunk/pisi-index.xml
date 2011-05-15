@@ -65,6 +65,95 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>sfml</Name>
+            <Homepage>http://sfml-dev.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>ZLIB</License>
+            <IsA>library</IsA>
+            <PartOf>multimedia.misc</PartOf>
+            <Summary xml:lang="en">Simple and Fast Multimedia Library</Summary>
+            <Summary xml:lang="tr">Simple and Fast Multimedia Library (Basit ve Hızlı Çokluortam Kütüphanesi)</Summary>
+            <Description xml:lang="en">SFML is a simple, fast, cross-platform, and object-oriented multimedia API.</Description>
+            <Description xml:lang="tr">SFML; basit, hızlı, çok platformlu ve nesne yönelimli bir çokluortam uygulama programlama arayüzüdür.</Description>
+            <Icon>sfml</Icon>
+            <Archive type="targz" sha1sum="dcf9e9bf2410cd8394f3884e2dca2be96dc5d069">http://dl.dropbox.com/u/1836567/Paketler/LaurentGomila-SFML-0e826d8.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>freetype-devel</Dependency>
+                <Dependency>glew-devel</Dependency>
+                <Dependency>jpeg-devel</Dependency>
+                <Dependency>libXrandr-devel</Dependency>
+                <Dependency>libXrender-devel</Dependency>
+                <Dependency>libpng-devel</Dependency>
+                <Dependency>libsndfile-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>openal-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>multimedia/misc/sfml/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>sfml</Name>
+            <RuntimeDependencies>
+                <Dependency>freetype</Dependency>
+                <Dependency>glew</Dependency>
+                <Dependency>jpeg</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libsndfile</Dependency>
+                <Dependency>openal</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/pixmaps/sfml.png" permission="0644" owner="root">sfml.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <Package>
+            <Name>sfml-devel</Name>
+            <Summary xml:lang="en">Development files for SFML</Summary>
+            <Summary xml:lang="tr">SFML için kütüphaneler</Summary>
+            <Description xml:lang="en">SFML devel package provides development files for SFML.</Description>
+            <Description xml:lang="tr">SFML geliştirme paketi, SFML için geliştirme dosyaları sunar.</Description>
+            <IsA>data</IsA>
+            <RuntimeDependencies>
+                <Dependency release="1">sfml</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/share/cmake/Modules</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>sfml-docs</Name>
+            <Summary xml:lang="en">Documentation files for SFML</Summary>
+            <Summary xml:lang="tr">SFML için geliştirme belgeleri</Summary>
+            <Description xml:lang="en">SFML docs package provides documentation files for SFML.</Description>
+            <Description xml:lang="tr">SFML belge paketi, SFML için geliştirme belgeleri sunar.</Description>
+            <IsA>data</IsA>
+            <RuntimeDependencies>
+                <Dependency release="1">sfml</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share/SFML</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-04-21</Date>
+                <Version>2.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>csmash</Name>
             <Homepage>http://cannonsmash.sourceforge.net</Homepage>
             <Packager>
@@ -1323,6 +1412,64 @@
             <Update release="1">
                 <Date>2011-04-02</Date>
                 <Version>0.4</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>marsshooter</Name>
+            <Homepage>http://mars-game.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A random shooter</Summary>
+            <Summary xml:lang="tr">Rastgele ateş oyunu</Summary>
+            <Description xml:lang="en">M.A.R.S. is a ridiculous space shooter with nice graphics.</Description>
+            <Description xml:lang="tr">M.A.R.S., hoş grafiklere sahip hoş bir uzay ateş oyunudur.</Description>
+            <Icon>marsshooter</Icon>
+            <Archive type="targz" sha1sum="f0890cff2349a2ac652ad07f1a88c859c537a685">http://garr.dl.sourceforge.net/project/mars-game/mars_source_0.7.2.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>sfml-devel</Dependency>
+                <Dependency>taglib-devel</Dependency>
+                <Dependency>fribidi-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>mars-paths.diff</Patch>
+            </Patches>
+            <SourceURI>game/arcade/marsshooter/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>marsshooter</Name>
+            <RuntimeDependencies>
+                <Dependency>sfml</Dependency>
+                <Dependency>taglib</Dependency>
+                <Dependency>fribidi</Dependency>
+                <Dependency>mesa</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/marsshooter</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/pixmaps/marsshooter.png" permission="0644" owner="root">marsshooter.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-15</Date>
+                <Version>0.7.2</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -6036,6 +6183,17 @@
     </Component>
     <Component>
         <Name>multimedia.video</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>multimedia</Group>
+        <Maintainer>
+            <Name>FIXME</Name>
+            <Email>FIXME</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>multimedia.misc</Name>
         <LocalName xml:lang="en">FIXME</LocalName>
         <Summary xml:lang="en">FIXME</Summary>
         <Description xml:lang="en">FIXME</Description>
