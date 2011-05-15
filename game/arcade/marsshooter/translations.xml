@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>marsshooter</Name>
+        <Summary xml:lang="tr">Rastgele ateş oyunu</Summary>
+        <Description xml:lang="tr">M.A.R.S., hoş grafiklere sahip hoş bir uzay ateş oyunudur.</Description>
+    </Source>
+</PISI>

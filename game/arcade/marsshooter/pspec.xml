@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>marsshooter</Name>
+        <Homepage>http://mars-game.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>marsshooter</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A random shooter</Summary>
+        <Description>M.A.R.S. is a ridiculous space shooter with nice graphics.</Description>
+        <Archive sha1sum="f0890cff2349a2ac652ad07f1a88c859c537a685" type="targz">http://garr.dl.sourceforge.net/project/mars-game/mars_source_0.7.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>sfml-devel</Dependency>
+            <Dependency>taglib-devel</Dependency>
+            <Dependency>fribidi-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>mars-paths.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>marsshooter</Name>
+        <RuntimeDependencies>
+            <Dependency>sfml</Dependency>
+            <Dependency>taglib</Dependency>
+            <Dependency>fribidi</Dependency>
+            <Dependency>mesa</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/marsshooter</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/marsshooter.png">marsshooter.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-05-15</Date>
+            <Version>0.7.2</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
