@@ -19,4 +19,4 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.dodoc("CC-BY3.0", "COPYING", "GPL-2", "README.TXT", "README.TXT")
+    pisitools.dodoc("CC-BY3.0", "COPYING", "GPL-2", "README.TXT", "yofrankie-DVD-license.txt")
