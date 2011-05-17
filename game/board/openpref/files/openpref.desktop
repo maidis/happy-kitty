@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=OpenPref
+GenericName=Russian Card Game
+GenericName[tr]=Rus Kart Oyunu
+Comment=A quite old European card game mostly popular in Russia
+Comment[tr]=Rusya'da epey popüler olan bir kart oyunu
+Icon=openpref
+Exec=openpref
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;CardGame;

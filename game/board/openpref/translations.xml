@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>openpref</Name>
+        <Summary xml:lang="tr">Rusya'da epey popüler olan bir kart oyunu</Summary>
+        <Description xml:lang="tr">OpenPref, kart oyunu Preferans'ın özgür bir uyarlamasıdır. Şu an sadece Sochi tarzı oynamaya izin vermektedir.</Description>
+    </Source>
+</PISI>
