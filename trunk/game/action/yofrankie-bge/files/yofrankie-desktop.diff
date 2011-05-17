@@ -1,0 +1,21 @@
+--- dist/yofrankie-bge.desktop.orig	2008-12-21 18:54:41.000000000 +0200
++++ dist/yofrankie-bge.desktop	2011-05-17 18:09:23.450000075 +0300
+@@ -1,10 +1,14 @@
+ [Desktop Entry]
++Type=Application
+ Version=1.0
++Encoding=UTF-8
+ Name=Yo Frankie!
+-GenericName=Yo Frankie!
++GenericName=3D Platformer
++GenericName[tr]=3B Platform Oyunu
+ Comment=A 3D platform game
+-Exec=yofrankie-bge
++Comment[tr]=Bir 3B platform oyunu
+ Icon=yofrankie-bge
++Exec=yofrankie-bge
+ Terminal=false
+-Type=Application
+-Categories=Game;ActionGame;
++StartupNotify=false
++Categories=Application;Game;ActionGame;
