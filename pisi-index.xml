@@ -2945,6 +2945,63 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>yofrankie-bge</Name>
+            <Homepage>http://www.yofrankie.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>CCPL-Attribution-3.0</License>
+            <License>freedist</License>
+            <License>GPLv2+</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.action</PartOf>
+            <Summary xml:lang="en">A 3D platform game based on the bully rodent in Big Buck Bunny</Summary>
+            <Summary xml:lang="tr">Big Buck Bunny&apos;deki zorba kemirgenin başrolde olduğu bir 3B platform oyunu</Summary>
+            <Description xml:lang="en">Yo Frankie! is based on the universe and characters of the open source film Big Buck Bunny. In the game, players assume the role of Frank, the sugar glider who was the antagonist of the film Big Buck Bunny.</Description>
+            <Description xml:lang="tr">Yo Frankie!, açık kaynak kodlu Big Buck Bunny adlı filmin dünyasını ve karakterlerini temel almış bir 3B platform oyunudur. Oyuncular, oyunda Big Buck Bunny&apos;deki uçan sincap Frank&apos;ı yönetmektedir.</Description>
+            <Icon>yofrankie-bge</Icon>
+            <Archive type="tarxz" sha1sum="5377b3271b96d030156cbade52aa4b74a4af8ceb">http://dl.dropbox.com/u/1836567/Paketler/yofrankie-1.1b.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>blender</Dependency>
+                <Dependency>imagemagick</Dependency>
+                <Dependency>desktop-file-utils</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>yofrankie-DVD-license.patch</Patch>
+                <Patch>yofrankie-desktop.diff</Patch>
+                <Patch>yofrankie-makefile.diff</Patch>
+                <Patch level="1">yofrankie-bge-1.1b-wrapper.patch</Patch>
+            </Patches>
+            <SourceURI>game/action/yofrankie-bge/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>yofrankie-bge</Name>
+            <RuntimeDependencies>
+                <Dependency>blender</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/yofrankie-bge</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/fonts</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-17</Date>
+                <Version>1.1</Version>
+                <Comment>Based on Murat Şenel&apos;s package. Thanks Murat for his previous work on Yo Frankie!.</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>balloonchase</Name>
             <Homepage>http://koti.mbnet.fi/makegho/c/bchase</Homepage>
             <Packager>
@@ -4565,6 +4622,53 @@
             <Update release="1">
                 <Date>2011-01-15</Date>
                 <Version>1.0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>openpref</Name>
+            <Homepage>http://openpref.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.board</PartOf>
+            <Summary xml:lang="en">A quite old European card game mostly popular in Russia</Summary>
+            <Summary xml:lang="tr">Rusya&apos;da epey popüler olan bir kart oyunu</Summary>
+            <Description xml:lang="en">OpenPref is an open source implementation of European trick taking game Preferans against two virtual players. Currently it allows to play Sochi version of Preferans, allowing to change some game conventions.</Description>
+            <Description xml:lang="tr">OpenPref, kart oyunu Preferans&apos;ın özgür bir uyarlamasıdır. Şu an sadece Sochi tarzı oynamaya izin vermektedir.</Description>
+            <Icon>openpref</Icon>
+            <Archive type="targz" sha1sum="4d69188eccd12abeea8a8de469327e06cfcede92">mirrors://sourceforge/openpref/OpenPref-Qt4/openpref-0.1.3/openpref-0.1.3.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>qt-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/board/openpref/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>openpref</Name>
+            <RuntimeDependencies>
+                <Dependency>qt</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/openpref.desktop" permission="0644" owner="root">openpref.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-01-15</Date>
+                <Version>0.1.3</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
