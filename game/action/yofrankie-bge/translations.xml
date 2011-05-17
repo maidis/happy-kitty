@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>yofrankie</Name>
+        <Summary xml:lang="tr">Big Buck Bunny'deki zorba kemirgenin başrolde olduğu bir 3B platform oyunu</Summary>
+        <Description xml:lang="tr">Yo Frankie!, açık kaynak kodlu Big Buck Bunny adlı filmin dünyasını ve karakterlerini temel almış bir 3B platform oyunudur. Oyuncular, oyunda Big Buck Bunny'deki uçan sincap Frank'ı yönetmektedir.</Description>
+    </Source>
+</PISI>

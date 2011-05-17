@@ -1,0 +1,33 @@
+--- Makefile.orig	2010-06-05 17:56:34.000000000 +0300
++++ Makefile	2011-05-17 19:44:12.490000074 +0300
+@@ -23,7 +23,7 @@
+ PYTHON = python
+ SVN = svn
+ PACKAGE_DIR = ./package
+-PREFIX ?= /usr/local
++PREFIX ?= /usr
+ 
+ dist_dirs = \
+ 	audio \
+@@ -60,10 +60,10 @@
+ 	
+ 	# Convert images, correct blendfile paths
+ 	# TODO - this is broken with 2.48a, because blend files saved have no G.curscreen
+-	$(PYTHON) dist/imagefile_compress.py $(BLENDER) $(PACKAGE_DIR)
++	#$(PYTHON) dist/imagefile_compress.py $(BLENDER) $(PACKAGE_DIR)
+ 	
+ 	# Compress all blendfiles
+-	$(PYTHON) dist/blendfile_gzip.py $(PACKAGE_DIR)
++	#$(PYTHON) dist/blendfile_gzip.py $(PACKAGE_DIR)
+ 
+ clean:
+ 	rm -rf $(PACKAGE_DIR)
+@@ -71,7 +71,7 @@
+ install:
+ 	install -d $(DESTDIR)$(PREFIX)/share/yofrankie-bge
+ 	cp -rT $(PACKAGE_DIR) $(DESTDIR)$(PREFIX)/share/yofrankie-bge
+-	install -D -m 755 dist/yofrankie-bge $(DESTDIR)$(PREFIX)/games/yofrankie-bge
++	install -D -m 755 dist/yofrankie-bge $(DESTDIR)$(PREFIX)/bin/yofrankie-bge
+ 	install -D -m 755 dist/yofrankie-bge.6 $(DESTDIR)$(PREFIX)/share/man/man6/yofrankie-bge.6
+ 	install -D -m 644 dist/yofrankie-bge.desktop $(DESTDIR)$(PREFIX)/share/applications/yofrankie-bge.desktop
+ 	install -D -m 644 dist/yofrankie.png $(DESTDIR)$(PREFIX)/share/icons/hicolor/128x128/apps/yofrankie-bge.png

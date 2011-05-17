@@ -1,0 +1,21 @@
+From 2adb3368d37f5ecce5a6e660d86a390a4e192ff2 Mon Sep 17 00:00:00 2001
+From: Lubomir Rintel <lkundrak@v3.sk>
+Date: Sat, 11 Dec 2010 22:20:33 +0100
+Subject: [PATCH] Pass parameters to the wrapper
+
+---
+ dist/yofrankie-bge |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/dist/yofrankie-bge b/dist/yofrankie-bge
+index 1c1a36d..f5a34df 100755
+--- a/dist/yofrankie-bge
++++ b/dist/yofrankie-bge
+@@ -1,3 +1,3 @@
+ #!/bin/sh
+-exec blenderplayer /usr/share/yofrankie-bge/levels/start_menu.blend
++exec blenderplayer "$@" /usr/share/yofrankie-bge/levels/start_menu.blend
+ 
+-- 
+1.7.3.3
+
