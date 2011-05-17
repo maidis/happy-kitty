@@ -38,15 +38,11 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/yofrankie-bge</Path>
             <Path fileType="data">/usr/share/applications</Path>
-            <Path fileType="data">/usr/share/pixmaps</Path>
             <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="data">/usr/share/fonts</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
-        <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/doc/yofrankie-bge/yofrankie-DVD-license.txt">yofrankie-DVD-license.txt</AdditionalFile>
-        </AdditionalFiles>
     </Package>
 
     <History>
