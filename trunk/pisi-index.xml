@@ -844,6 +844,121 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>pangzero</Name>
+            <Homepage>http://apocalypse.rulez.org/pangzero</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A fast-paced action game</Summary>
+            <Summary xml:lang="tr">Bol koşuşturmacalı aksiyon oyunu</Summary>
+            <Description xml:lang="en">Pang Zero is a fast-paced action game that involves popping balloons with a harpoon.</Description>
+            <Description xml:lang="tr">Pang Zero, düşen balonların bir zıpkınla patlatılmaya çalışıldığı bol koşuşturmacalı bir aksiyon oyunudur.</Description>
+            <Icon>pangzero</Icon>
+            <Archive type="targz" sha1sum="ccd8d64e36cbc48bb4c5d6c53a21d8f928a99297">mirrors://sourceforge/pangzero/pangzero-1.3.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>perl-SDL</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>remove-nag-and-fps-counter.diff</Patch>
+            </Patches>
+            <SourceURI>game/arcade/pangzero/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>pangzero</Name>
+            <RuntimeDependencies>
+                <Dependency>perl-SDL</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/pangzero</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/pangzero.desktop" permission="0644" owner="root">pangzero.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="2">
+                <Date>2011-01-30</Date>
+                <Version>1.3</Version>
+                <Comment>Make ready package for 2011</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2009-07-26</Date>
+                <Version>1.3</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>ceferino</Name>
+            <Homepage>http://www.losersjuegos.com.ar/juegos/ceferino</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">Action game similar to Super Pang</Summary>
+            <Summary xml:lang="tr">Super Pang tarzı bir oyun</Summary>
+            <Description xml:lang="en">Ceferino is a game that you are attacked by little green balls which are bouncing around and which you have to kill with your knife.</Description>
+            <Description xml:lang="tr">Ceferino, eğlenceli ve güzel grafiklere sahip Super Pang tarzı bir oyundur.</Description>
+            <Icon>ceferino</Icon>
+            <Archive type="targz" sha1sum="59d0a6d889bf916a6c546df05bb0d34a05e02f84">http://www.losersjuegos.com.ar/_media/juegos/ceferino/descargas/ceferino-0.97.8.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>ceferino-gcc44.patch</Patch>
+            </Patches>
+            <SourceURI>game/arcade/ceferino/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>ceferino</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>sdl-image</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/ceferino</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/ceferino.desktop" permission="0644" owner="root">ceferino.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/ceferino.png" permission="0644" owner="root">ceferino.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-19</Date>
+                <Version>0.97.8</Version>
+                <Comment>Thanks Ceyhun Asılkazancı for his previous work on ceferino</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>apricots</Name>
             <Homepage>http://www.fishies.org.uk/apricots.html</Homepage>
             <Packager>
@@ -1306,6 +1421,64 @@
             <Update release="1">
                 <Date>2010-08-07</Date>
                 <Version>1.3.6</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>snake3d</Name>
+            <Homepage>http://sourceforge.net/projects/worms3d</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A snake game</Summary>
+            <Summary xml:lang="tr">Bir yılan oyunu</Summary>
+            <Description xml:lang="en">snake3d is a variant of the snake game. You are a snake in a 3d world trying to eat as many icosahedrons as possible, which makes your tail longer. There are other snakes (network players) in the world which will try to fail you.</Description>
+            <Description xml:lang="tr">snake3d, bir yılan oyunu varyasyonudur. Üç boyutlu bir dünyada daha fazla büyümek için olabildiğince çok yirmiyüzlü yemeye çalışan bir yılansınız. Elbette yalnız değilsiniz, kaybetmeniz için çalışan diğer yılanlar da sizinle.</Description>
+            <Icon>snake3d</Icon>
+            <Archive type="targz" sha1sum="4d0e76bf4e987fab6a4172d95479986e81f01956">mirrors://sourceforge/worms3d/snake3d/snake3d-0.9/snake3d-0.9.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>sdl-net-devel</Dependency>
+                <Dependency>freeglut-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>snake3d-0.9-amd64.patch</Patch>
+                <Patch>snake3d-0.9-build.patch</Patch>
+            </Patches>
+            <SourceURI>game/arcade/snake3d/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>snake3d</Name>
+            <RuntimeDependencies>
+                <Dependency>sdl-net</Dependency>
+                <Dependency>freeglut</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>mesa</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/snake3d.desktop" permission="0644" owner="root">snake3d.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/snake3d.png" permission="0644" owner="root">snake3d.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-11-03</Date>
+                <Version>0.9</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -2315,6 +2488,67 @@
                 <Date>2010-10-31</Date>
                 <Version>0.8.2</Version>
                 <Comment>First release for Pardus.</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>xrick</Name>
+            <Homepage>http://www.bigorno.net/xrick</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <License>as-is</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.action</PartOf>
+            <Summary xml:lang="en">Linux version of the Rick Dangerous</Summary>
+            <Summary xml:lang="tr">Bir Rick Dangerous klonu</Summary>
+            <Description xml:lang="en">Xrick is the Linux version of Rick Dangerous which is hard and funny platform game</Description>
+            <Description xml:lang="tr">Sıradışı ve çok zor bir platform oyunu olan Xrick, eski Rick Dangerous oyunun bir GNU/Linux versiyonudur.</Description>
+            <Icon>xrick</Icon>
+            <Archive type="targz" sha1sum="1a84eac20a22ab86d2013cc1c8ff7e0097b4466a">http://www.bigorno.net/xrick/xrick-021212.tgz</Archive>
+            <BuildDependencies>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">xrick-021212-exit.patch</Patch>
+                <Patch level="1">xrick-021212-fullscreen.patch</Patch>
+                <Patch>xrick-datapath.diff</Patch>
+                <Patch>xrick-makefile.diff</Patch>
+            </Patches>
+            <SourceURI>game/action/xrick/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>xrick</Name>
+            <RuntimeDependencies>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>libsdl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/xrick</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/xrick.desktop" permission="0644" owner="root">xrick.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/xrick.png" permission="0644" owner="root">xrick.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-19</Date>
+                <Version>021212</Version>
+                <Comment>Thanks Ceyhun Asılkazancı for his work on xrick</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
             </Update>
@@ -3919,6 +4153,124 @@
             <Update release="1">
                 <Date>2011-01-21</Date>
                 <Version>4.1</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>pushover</Name>
+            <Homepage>http://pushover.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A clone of the puzzle game pushover</Summary>
+            <Summary xml:lang="tr">Klasik domino oyununu temel alan eğleceli bir zeka oyunu</Summary>
+            <Description xml:lang="en">Pushover is a fun puzzle game originally published by Ocean in 1992. In this game you control an ant that can walk along platforms that are connected with ladders. On those platforms are dominos that need to fall according to some rules.</Description>
+            <Description xml:lang="tr">Pushover, bir karıncanın domino taşlarıyla akıl dolu macerasını konu alan eğlenceli bir zeka oyunudur.</Description>
+            <Icon>pushover</Icon>
+            <Archive type="targz" sha1sum="18f718a7f9148ad650533928013e242b3a9e24b4">mirrors://sourceforge/pushover/Pushover/0.0.3/pushover-0.0.3.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-ttf-devel</Dependency>
+                <Dependency>libogg-devel</Dependency>
+                <Dependency>lua-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/puzzle/pushover/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>pushover</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>sdl-ttf</Dependency>
+                <Dependency>libogg</Dependency>
+                <Dependency>lua</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pushover</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/pushover.desktop" permission="0644" owner="root">pushover.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/pushover.png" permission="0644" owner="root">pushover.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="2">
+                <Date>2011-05-19</Date>
+                <Version>0.0.1</Version>
+                <Comment>Version bump</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2008-11-19</Date>
+                <Version>0.0.1</Version>
+                <Comment>First Release</Comment>
+                <Name>Ceyhun Asılkazancı</Name>
+                <Email>ceyhunasilkazanci@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>popstar</Name>
+            <Homepage>http://www.newbreedsoftware.com/popstar</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A simple puzzle game</Summary>
+            <Summary xml:lang="tr">Basit bir bulmaca oyunu</Summary>
+            <Description xml:lang="en">Pop Star is a simple puzzle game involving floating stars that you must connect to form polygons.</Description>
+            <Description xml:lang="tr">Pop Star, kayan yıldızları birleştirerek çokgenler oluşturmaya çalıştığınız bir oyundur.</Description>
+            <Icon>popstar</Icon>
+            <Archive type="targz" sha1sum="201387f2f8a75173063ab96c9da7d4c28bf6d1c1">ftp://ftp.tuxpaint.org/unix/x/popstar/popstar-0.0.2.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/puzzle/popstar/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>popstar</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>sdl-image</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/popstar</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/popstar.desktop" permission="0644" owner="root">popstar.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/popstar.png" permission="0644" owner="root">popstar.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-12-01</Date>
+                <Version>0.0.2</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -6087,6 +6439,60 @@
             </Update>
         </History>
     </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>bennugd</Name>
+            <Homepage>http://www.bennugd.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <IsA>app:console</IsA>
+            <PartOf>programming.language</PartOf>
+            <Summary xml:lang="en">Bennu Game Development</Summary>
+            <Summary xml:lang="tr">Bennu Oyun Geliştirme</Summary>
+            <Description xml:lang="en">Bennu is a high level open source game development suite which focuses on modularity and portability, making it a perfect choice for cross-platform game development.</Description>
+            <Description xml:lang="tr">Bennu, modülerliğe ve taşınabilirliğe odaklanmış ve platform bağımsız geliştirme için harika seçimlerden biri olan özgür bir oyun geliştirme takımıdır.</Description>
+            <Archive type="targz" sha1sum="9a4f6065a82a7f454e218be4ff2081fa4b93a0be">http://dl.dropbox.com/u/1836567/Paketler/bennugd.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>libpng-devel</Dependency>
+                <Dependency>smpeg-devel</Dependency>
+                <Dependency>libogg-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>this-is-not-a.patch</Patch>
+            </Patches>
+            <SourceURI>programming/language/bennugd/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>bennugd</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>smpeg</Dependency>
+                <Dependency>libogg</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-04-12</Date>
+                <Version>1.0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
     <Component>
         <Name>library</Name>
         <LocalName xml:lang="en">FIXME</LocalName>
@@ -6302,6 +6708,28 @@
         <Summary xml:lang="en">FIXME</Summary>
         <Description xml:lang="en">FIXME</Description>
         <Group>multimedia</Group>
+        <Maintainer>
+            <Name>FIXME</Name>
+            <Email>FIXME</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>programming.language</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>programming</Group>
+        <Maintainer>
+            <Name>FIXME</Name>
+            <Email>FIXME</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>programming</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">Programming tools and libraries</Summary>
+        <Description xml:lang="en">Programming libraries, tools, debuggers, profilers, etc.</Description>
+        <Group>programming</Group>
         <Maintainer>
             <Name>FIXME</Name>
             <Email>FIXME</Email>
