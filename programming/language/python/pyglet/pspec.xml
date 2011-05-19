@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>pyglet</Name>
+        <Homepage>http://www.pyglet.org</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>library</IsA>
+        <Summary>Cross platform windowing and multimedia library for Python</Summary>
+        <Description>pyglet provides an object-oriented programming interface for developing games and other visually rich applications for Windows, Mac OS X and Linux.</Description>
+        <Archive sha1sum="1c1fa4130b5e5b7aa9da2456b75742ae447d0315" type="targz">http://pyglet.googlecode.com/files/pyglet-1.1.4.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>pyglet</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/pyglet</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-03-17</Date>
+            <Version>1.1.4</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
