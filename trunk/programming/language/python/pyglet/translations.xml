@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>pyglet</Name>
+        <Summary xml:lang="tr">Çok platformlu bir Python pencereleme ve çokluortam kütüphanesi</Summary>
+        <Description xml:lang="tr">pyglet, oyun ve görsel açıdan zengin uygulamalar geliştirmek için nesne yönelimli programlama arayüzü sunar.</Description>
+    </Source>
+</PISI>
