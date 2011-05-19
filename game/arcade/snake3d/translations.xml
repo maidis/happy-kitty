@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>snake3d</Name>
+        <Summary xml:lang="tr">Bir yılan oyunu</Summary>
+        <Description xml:lang="tr">snake3d, bir yılan oyunu varyasyonudur. Üç boyutlu bir dünyada daha fazla büyümek için olabildiğince çok yirmiyüzlü yemeye çalışan bir yılansınız. Elbette yalnız değilsiniz, kaybetmeniz için çalışan diğer yılanlar da sizinle.</Description>
+    </Source>
+</PISI>
