@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=snake3d
+GenericName=3D Snake Game
+GenericName[tr]=3B Yılan Oyunu
+Comment=A snake game
+Comment[tr]=Bir yılan oyunu
+Icon=snake3d
+Exec=snake3d
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;
