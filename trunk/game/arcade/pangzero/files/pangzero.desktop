@@ -1,0 +1,14 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Version=1.0
+Name=Pang Zero
+GenericName=Popping Balloons
+GenericName[tr]=Balon Patlatmaca
+Comment=A fast-paced action game
+Comment[tr]=Hızlı bir aksiyon oyunu
+Exec=pangzero
+Icon=pangzero
+StartupNotify=false
+Terminal=false
+Categories=Application;Game;ArcadeGame;
