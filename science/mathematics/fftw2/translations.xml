@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>fftw2</Name>
+        <Summary xml:lang="tr">Ayrık Fourier dönüşümü hesaplamak için bir kütüphane</Summary>
+        <Description xml:lang="tr">fftw2, ayrık Fourier dönüşümü hesaplamak için kullanılabilecek bir C kütüphanesidir.</Description>
+    </Source>
+</PISI>

@@ -242,5 +242,27 @@
                 <Email>FIXME</Email>
             </Maintainer>
         </Component>
+        <Component>
+            <Name>science.mathematics</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>science</Group>
+            <Maintainer>
+                <Name>FIXME</Name>
+                <Email>FIXME</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+            <Name>science</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>science</Group>
+            <Maintainer>
+                <Name>FIXME</Name>
+                <Email>FIXME</Email>
+            </Maintainer>
+        </Component>
     </Components>
 </PISI>
