@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>bennugd</Name>
+        <Summary xml:lang="tr">Bennu Oyun Geliştirme</Summary>
+        <Description xml:lang="tr">Bennu, modülerliğe ve taşınabilirliğe odaklanmış ve platform bağımsız geliştirme için harika seçimlerden biri olan özgür bir oyun geliştirme takımıdır.</Description>
+    </Source>
+</PISI>

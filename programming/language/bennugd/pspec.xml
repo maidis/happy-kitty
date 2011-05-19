@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>bennugd</Name>
+        <Homepage>http://www.bennugd.org</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <!--License>ZLIB</License-->
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>Bennu Game Development</Summary>
+        <Description>Bennu is a high level open source game development suite which focuses on modularity and portability, making it a perfect choice for cross-platform game development.</Description>
+        <Archive sha1sum="9a4f6065a82a7f454e218be4ff2081fa4b93a0be" type="targz">http://dl.dropbox.com/u/1836567/Paketler/bennugd.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>libpng-devel</Dependency>
+            <Dependency>smpeg-devel</Dependency>
+            <Dependency>libogg-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>this-is-not-a.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>bennugd</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>smpeg</Dependency>
+            <Dependency>libogg</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-04-12</Date>
+            <Version>1.0.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
