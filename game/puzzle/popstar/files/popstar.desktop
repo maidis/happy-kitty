@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=PopStar
+GenericName=Puzzle Game
+GenericName[tr]=Bulmaca Oyunu
+Comment=A simple puzzle game
+Comment[tr]=Basit bir bulmaca oyunu
+Icon=popstar
+Exec=popstar
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;
