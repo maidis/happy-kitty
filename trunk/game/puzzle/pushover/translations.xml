@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>pushover</Name>
+        <Summary xml:lang="tr">Klasik domino oyununu temel alan eğleceli bir zeka oyunu</Summary>
+        <Description xml:lang="tr">Pushover, bir karıncanın domino taşlarıyla akıl dolu macerasını konu alan eğlenceli bir zeka oyunudur.</Description>
+    </Source>
+</PISI>

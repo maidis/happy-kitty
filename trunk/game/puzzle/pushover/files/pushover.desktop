@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Pushover
+GenericName=Dominos Game
+GenericName[tr]=Domino Oyunu
+Icon=pushover
+Exec=pushover
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;
