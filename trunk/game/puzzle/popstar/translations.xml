@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>popstar</Name>
+        <Summary xml:lang="tr">Basit bir bulmaca oyunu</Summary>
+        <Description xml:lang="tr">Pop Star, kayan yıldızları birleştirerek çokgenler oluşturmaya çalıştığınız bir oyundur.</Description>
+    </Source>
+</PISI>
