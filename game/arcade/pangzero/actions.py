@@ -1,9 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
-# Copyright 2009-2011 TUBITAK/UEKAE
-# Licensed under the GNU General Public License, version 2.
-# See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+# Licensed under the GNU General Public License, version 3.
+# See the file http://www.gnu.org/copyleft/gpl.txt
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
@@ -17,5 +16,7 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+
     pisitools.dosym("/usr/share/pangzero/icon.png", "/usr/share/pixmaps/pangzero.png")
+
     pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "NEWS", "README", "TODO")
