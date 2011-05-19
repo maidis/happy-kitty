@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>pangzero</Name>
+        <Summary xml:lang="tr">Bol koşuşturmacalı aksiyon oyunu</Summary>
+        <Description xml:lang="tr">Pang Zero, düşen balonların bir zıpkınla patlatılmaya çalışıldığı bol koşuşturmacalı bir aksiyon oyunudur.</Description>
+    </Source>
+</PISI>
