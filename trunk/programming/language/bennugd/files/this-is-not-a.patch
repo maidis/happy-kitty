@@ -1,0 +1,43 @@
+--- modules/mod_map/file_png.c.orig	2011-01-08 19:08:06.000000000 +0200
++++ modules/mod_map/file_png.c	2011-05-19 19:18:04.983000035 +0300
+@@ -261,9 +261,9 @@
+                 {
+                 	uint8_t * ptr8 = (uint8_t *)orig;
+         			if (
+-        			    ( ptr8[0] == info_ptr->trans_values.red   ) &&
+-        				( ptr8[1] == info_ptr->trans_values.green ) &&
+-        				( ptr8[2] == info_ptr->trans_values.blue  )
++        			    ( ptr8[0] == info_ptr->trans_color.red   ) &&
++        				( ptr8[1] == info_ptr->trans_color.green ) &&
++        				( ptr8[2] == info_ptr->trans_color.blue  )
+         			   )
+         				*ptr32 = 0;
+                 }
+@@ -305,9 +305,9 @@
+                 {
+                 	uint8_t * ptr8 = (uint8_t *)orig;
+         			if (
+-        			    ( ptr8[0] == info_ptr->trans_values.red   ) &&
+-        				( ptr8[1] == info_ptr->trans_values.green ) &&
+-        				( ptr8[2] == info_ptr->trans_values.blue  )
++        			    ( ptr8[0] == info_ptr->trans_color.red   ) &&
++        				( ptr8[1] == info_ptr->trans_color.green ) &&
++        				( ptr8[2] == info_ptr->trans_color.blue  )
+         			   )
+         				*ptr = 0;
+                 }
+@@ -425,14 +425,6 @@
+         /* DCelso */
+         uint8_t trans = 1;
+ 
+-        if (!( gr->info_flags & GI_NOCOLORKEY ))
+-        {
+-			info_ptr->num_trans = 1;
+-			info_ptr->trans = &trans;
+-			info_ptr->valid = info_ptr->valid | PNG_INFO_tRNS;
+-        }
+-        /* DCelso */
+-
+         pal = ( png_colorp ) png_malloc( png_ptr, 256 * sizeof( png_color ) ) ;
+         if ( !pal )
+         {
