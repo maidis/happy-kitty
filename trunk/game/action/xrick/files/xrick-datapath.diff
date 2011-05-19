@@ -1,0 +1,11 @@
+--- src/xrick.c.orig	2002-12-24 15:33:43.000000000 +0200
++++ src/xrick.c	2011-05-19 16:00:54.488000021 +0300
+@@ -26,7 +26,7 @@
+ 	if (sysarg_args_data)
+ 		data_setpath(sysarg_args_data);
+ 	else
+-		data_setpath("data.zip");
++		data_setpath("/usr/share/xrick/data.zip");
+ 	game_run();
+ 	data_closepath();
+ 	sys_shutdown();
