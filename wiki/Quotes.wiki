@@ -4,10 +4,10 @@
   * Gotta pack 'em all!™ 
 
   * - There is no community. 
-   - Yeah, aliens built Happy Kitty.
+- Yeah, aliens built Happy Kitty.
  
   * - How is the weather?
-   - Very flamy.
+- Very flamy.
  
   * With great games comes great dependencies. Heck yeah, a lot of dependencies.
 
