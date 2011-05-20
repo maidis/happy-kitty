@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=PUZSION
+GenericName=Logic Game
+GenericName[tr]=Mantık Oyunu
+Comment=A little bejeweled-like game
+Comment[tr]=Bejeweled benzeri küçük bir oyun
+Icon=puzsion
+Exec=cd /usr/share/puzsion && bgdi puzsion
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;
