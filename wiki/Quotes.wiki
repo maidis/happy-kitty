@@ -14,3 +14,5 @@
   * Who packaged this cannot be human.
 
   * I'm not familiar with the generation that does not understand packaging.
+
+  * I condemn you and I have prepared patches to you.
