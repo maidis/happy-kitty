@@ -1487,6 +1487,54 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>kof</Name>
+            <Homepage>http://projects.bennugd.org/?details=48</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>as-is</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A fan version of King of Fighters</Summary>
+            <Summary xml:lang="tr">King of Fighters&apos;ın bir hayran sürümü</Summary>
+            <Description xml:lang="en">KOF Flames of Courage is a fan version of the famous King of Fighters saga. 9 characters, 29 strikers and 3 games modes: Arcade, VS and Training included.</Description>
+            <Description xml:lang="tr">KOF Flames of Courage, meşhur King of Fighters&apos;ın bir hayran sürümüdür. Oyunda 9 karekter, 29 vurucu ve Ateri, KarşıKarşıya, Eğitim olmak üzere 3 oyun kipi bulunmaktadır.</Description>
+            <Icon>kof</Icon>
+            <Archive type="tarbz2" sha1sum="2a21dc1fd61d31150335463c5a2675bc6458ce87">http://happy-kitty.googlecode.com/files/kof-5.0.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>bennugd</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/arcade/kof/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>kof</Name>
+            <RuntimeDependencies>
+                <Dependency>bennugd</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/kof</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/kof.desktop" permission="0644" owner="root">kof.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-20</Date>
+                <Version>5.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>avoision</Name>
             <Homepage>http://avsn.sourceforge.net</Homepage>
             <Packager>
@@ -3719,6 +3767,57 @@
             <Update release="1">
                 <Date>2011-01-15</Date>
                 <Version>1.2.1</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>puzsion</Name>
+            <Homepage>http://dl.openhandhelds.org/cgi-bin/caanoo.cgi?0,0,0,0,25,483</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>as-is</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A little bejeweled-like game</Summary>
+            <Summary xml:lang="tr">Bejeweled benzeri küçük bir oyun</Summary>
+            <Description xml:lang="en">Puzsion is a puzzle game very similar to MagicMatch games. Your goal is to make chains of 3 or more jewels that are one beside the next one.</Description>
+            <Description xml:lang="tr">Puzsion, MagicMatch oyunlarına benzeyen bir bulmaca oyunudur. Oyundaki amacınız mücevherlerden üçlü veya daha uzun zincirler yapmak ve onları toplamak.</Description>
+            <Icon>puzsion</Icon>
+            <Archive type="tarbz2" sha1sum="bfe28ee0fe5b9e9b7a29e81e3af54fd343935d85">http://happy-kitty.googlecode.com/files/puzsion-1.0.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>bennugd</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>puzsion.diff</Patch>
+            </Patches>
+            <SourceURI>game/puzzle/puzsion/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>puzsion</Name>
+            <RuntimeDependencies>
+                <Dependency>bennugd</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/puzsion</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/puzsion.desktop" permission="0644" owner="root">puzsion.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-19</Date>
+                <Version>1.0</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -6441,6 +6540,43 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>pyglet</Name>
+            <Homepage>http://www.pyglet.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>BSD</License>
+            <IsA>library</IsA>
+            <PartOf>programming.language.python</PartOf>
+            <Summary xml:lang="en">Cross platform windowing and multimedia library for Python</Summary>
+            <Summary xml:lang="tr">Çok platformlu bir Python pencereleme ve çokluortam kütüphanesi</Summary>
+            <Description xml:lang="en">pyglet provides an object-oriented programming interface for developing games and other visually rich applications for Windows, Mac OS X and Linux.</Description>
+            <Description xml:lang="tr">pyglet, oyun ve görsel açıdan zengin uygulamalar geliştirmek için nesne yönelimli programlama arayüzü sunar.</Description>
+            <Archive type="targz" sha1sum="1c1fa4130b5e5b7aa9da2456b75742ae447d0315">http://pyglet.googlecode.com/files/pyglet-1.1.4.tar.gz</Archive>
+            <SourceURI>programming/language/python/pyglet/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>pyglet</Name>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/pyglet</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-03-17</Date>
+                <Version>1.1.4</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>bennugd</Name>
             <Homepage>http://www.bennugd.org</Homepage>
             <Packager>
@@ -6490,6 +6626,51 @@
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>fftw2</Name>
+            <Homepage>http://www.fftw.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>science.mathematics</PartOf>
+            <Summary xml:lang="en">A library for computing the discrete Fourier transform (DFT)</Summary>
+            <Summary xml:lang="tr">Ayrık Fourier dönüşümü hesaplamak için bir kütüphane</Summary>
+            <Description xml:lang="en">FFTW v2 is a C subroutine library for computing the discrete Fourier transform (DFT) in one or more dimensions, of arbitrary input size, and of both real and complex data (as well as of even/odd data, i.e. the discrete cosine/sine transforms or DCT/DST).</Description>
+            <Description xml:lang="tr">fftw2, ayrık Fourier dönüşümü hesaplamak için kullanılabilecek bir C kütüphanesidir.</Description>
+            <Archive type="targz" sha1sum="12020b58edc1b0490a83db4aa912fac5dfdfb26b">http://www.fftw.org/fftw-2.1.5.tar.gz</Archive>
+            <SourceURI>science/mathematics/fftw2/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>fftw2</Name>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="info">/usr/share/info</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="2">
+                <Date>2006-02-23</Date>
+                <Version>2.1.5</Version>
+                <Comment>Also package header files</Comment>
+                <Name>İsmail Dönmez</Name>
+                <Email>ismail@pardus.org.tr</Email>
+            </Update>
+            <Update release="1">
+                <Date>2005-10-26</Date>
+                <Version>2.1.5</Version>
+                <Comment>Initial import</Comment>
+                <Name>İsmail Dönmez</Name>
+                <Email>ismail@pardus.org.tr</Email>
             </Update>
         </History>
     </SpecFile>
@@ -6729,6 +6910,39 @@
         <LocalName xml:lang="en">FIXME</LocalName>
         <Summary xml:lang="en">Programming tools and libraries</Summary>
         <Description xml:lang="en">Programming libraries, tools, debuggers, profilers, etc.</Description>
+        <Group>programming</Group>
+        <Maintainer>
+            <Name>FIXME</Name>
+            <Email>FIXME</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>science.mathematics</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>science</Group>
+        <Maintainer>
+            <Name>FIXME</Name>
+            <Email>FIXME</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>science</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>science</Group>
+        <Maintainer>
+            <Name>FIXME</Name>
+            <Email>FIXME</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>programming.language.python</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
         <Group>programming</Group>
         <Maintainer>
             <Name>FIXME</Name>
