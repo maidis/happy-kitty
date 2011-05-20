@@ -3,3 +3,4 @@
 
 = kof =
   * License of graphics?
+  * Copyright of characters?
