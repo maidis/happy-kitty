@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=King Of Fighters - Flames Of Courage
+GenericName=Fighting Game
+GenericName[tr]=Dövüş Oyunu
+Comment=A fan version of King of Fighters
+Comment[tr]=King of Fighters'ın bir hayran sürümü
+Icon=kof
+Exec=cd /usr/share/kof && bgdi kofv5
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;

@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kof</Name>
+        <Homepage>http://projects.bennugd.org/?details=48</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>as-is</License>
+        <Icon>kof</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A fan version of King of Fighters</Summary>
+        <Description>KOF Flames of Courage is a fan version of the famous King of Fighters saga. 9 characters, 29 strikers and 3 games modes: Arcade, VS and Training included.</Description>
+        <Archive sha1sum="2a21dc1fd61d31150335463c5a2675bc6458ce87" type="tarbz2">http://happy-kitty.googlecode.com/files/kof-5.0.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>bennugd</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kof</Name>
+        <RuntimeDependencies>
+            <Dependency>bennugd</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/kof</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/kof.desktop">kof.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-05-20</Date>
+            <Version>5.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

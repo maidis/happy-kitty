@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>kof</Name>
+        <Summary xml:lang="tr">King of Fighters'ın bir hayran sürümü</Summary>
+        <Description xml:lang="tr">KOF Flames of Courage, meşhur King of Fighters'ın bir hayran sürümüdür. Oyunda 9 karekter, 29 vurucu ve Ateri, KarşıKarşıya, Eğitim olmak üzere 3 oyun kipi bulunmaktadır.</Description>
+    </Source>
+</PISI>
