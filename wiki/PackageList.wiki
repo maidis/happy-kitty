@@ -6,8 +6,8 @@
   * [AboutUs]
   * [History]
   * [LinuxGamingSites]
-  * [UsingSourceRepository]
   * [Quotes]
+  * [UsingSourceRepository]
 
 ----
 
