@@ -1,0 +1,5 @@
+#summary Some unclear situations about packages
+#labels devel
+
+= kof =
+  * License of graphics?
