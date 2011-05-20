@@ -7,6 +7,7 @@
   * [History]
   * [LinuxGamingSites]
   * [UsingSourceRepository]
+  * [Quotes]
 
 ----
 
