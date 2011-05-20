@@ -12,3 +12,5 @@
   * With great games comes great dependencies. Heck yeah, a lot of dependencies.
 
   * Who packaged this cannot be human.
+
+  * I'm not familiar with the generation that does not understand packaging.
