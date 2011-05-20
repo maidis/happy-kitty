@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>puzsion</Name>
+        <Summary xml:lang="tr">Bejeweled benzeri küçük bir oyun</Summary>
+        <Description xml:lang="tr">Puzsion, MagicMatch oyunlarına benzeyen bir bulmaca oyunudur. Oyundaki amacınız mücevherlerden üçlü veya daha uzun zincirler yapmak ve onları toplamak.</Description>
+    </Source>
+</PISI>

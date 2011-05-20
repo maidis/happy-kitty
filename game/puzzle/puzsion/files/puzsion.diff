@@ -1,0 +1,21 @@
+--- puzsion.gpe.orig	2010-01-05 07:01:00.000000000 +0200
++++ puzsion.gpe	2011-05-20 14:36:19.346000017 +0300
+@@ -1,15 +1,9 @@
+-
+ #!/bin/sh
+-LD_LIBRARY_PATH=$LD_LIBRARY_PATH:../bgd-runtime
+-PATH=$PATH:../bgd-runtime
+-
+-echo 2 > /proc/cpu/alignment
+ 
+ for prg in *.prg; do
+     name=`basename $prg .prg`
+-    bgdc $prg
+-    bgdi $name
++    bgdc -a -d $prg
++    #bgdi $name
+ done
+ 
+-cd /usr/gp2x
+-exec /usr/gp2x/gp2xmenu
++exit 0
