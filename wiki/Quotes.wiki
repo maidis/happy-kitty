@@ -16,3 +16,5 @@
   * I'm not familiar with the generation that does not understand packaging.
 
   * I condemn you and I have prepared patches to you.
+
+  * I'm not telling to you not to package, still do as a hobby.
