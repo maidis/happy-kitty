@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>somyeol2d</Name>
+        <Summary xml:lang="tr">Öylesine bir 2B oyun</Summary>
+        <Description xml:lang="tr">Somyeol2D, öylesine bir 2B oyundur. Somyeol'ler nesilleri tükenmek üzere olan bir uzaylı türüdür. Oyundaki göreviniz hepsini aynı anda kontrol etmeye çalışarak onların neslini kurtarmaktır.</Description>
+    </Source>
+</PISI>

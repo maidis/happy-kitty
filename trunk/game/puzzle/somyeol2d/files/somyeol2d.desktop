@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Somyeol2D
+GenericName=Save the Somyeols
+GenericName[tr]=Somyeol'leri Kurtarmak
+Comment=A 2D casual game
+Comment[tr]=2B öylesine bir oyun
+Comment[de]=Rette die Somyeols
+Icon=somyeol2d
+Exec=cd /usr/share/somyeol2d && python ./main.py
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;

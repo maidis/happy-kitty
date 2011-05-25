@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Somyeol2D Level Editor
+GenericName=Level Editor
+GenericName[tr]=Harita Düzenleyici
+Comment=Level editor for Somyeol2D
+Comment[tr]=Somyeol2D için harita düzenleyici
+Comment[de]=Level Editor für Somyeol2D
+Icon=somyeol2d-editor
+Exec=cd /usr/share/somyeol2d && python ./LevelEditor.py
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;
