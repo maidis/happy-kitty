@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Fast and simple OGRE GUI</Summary>
         <Description>MyGUI is a library for creating Graphical User Interfaces for games and 3D applications. The main goals of mygui are: speed, flexibility and ease of use.</Description>
-        <Archive sha1sum="e6f85609e6ca1608502234e48ac19e4fc6bc1215" type="tarbz2">http://dl.dropbox.com/u/1836567/Paketler/my-gui-4290.tar.bz2</Archive>
+        <Archive sha1sum="2cfcfecb68bb113449dab40500b05cc238d703e2" type="tarbz2">http://dl.dropbox.com/u/1836567/Paketler/my-gui-4296.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>freetype-devel</Dependency>
             <Dependency>ogre-devel</Dependency>
@@ -39,6 +39,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2011-05-25</Date>
+            <Version>3.2.0</Version>
+            <Comment>Sync with svn</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-04-28</Date>
             <Version>3.2.0</Version>
