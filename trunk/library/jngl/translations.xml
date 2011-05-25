@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>jngl</Name>
+        <Summary xml:lang="tr">C++ ve Python için 2B oyun kütüphanesi</Summary>
+        <Description xml:lang="tr">JNGL, C++ ve Python için en basit 2B oyun kütüphanesi olmayı amaçlayan bir projedir. Resimleri taramak için OpenGL, UTF-8 metinleri üretmek için FreeType ve ses dosyalarını oynatmak için OpenAL kullanır.</Description>
+    </Source>
+</PISI>
