@@ -1,0 +1,28 @@
+--- HighScore.py.orig	2011-02-23 20:42:26.000000000 +0200
++++ HighScore.py	2011-05-25 22:13:39.777000020 +0300
+@@ -78,7 +78,11 @@
+                 if not os.path.exists(lpackpath):
+                     os.makedirs(lpackpath)
+                 file = open(lpackpath+"highscore.hsc", "rb")
+-            else: file = open("data/maps/{0}highscore.hsc".format(levelpack), "rb")
++            else:
++                lpackpath = os.environ['HOME']+"/.somyeol2d/highscore/{0}".format(levelpack)
++                if not os.path.exists(lpackpath):
++                    os.makedirs(lpackpath)
++                file = open(lpackpath+"highscore.hsc", "rb")
+             data = cPickle.load(file)
+             self.scores = data
+         except EOFError:
+@@ -119,7 +123,11 @@
+             if not os.path.exists(lpackpath):
+                 os.makedirs(lpackpath)
+             file = open(lpackpath+"highscore.hsc", "wb")
+-        else: file = open("data/maps/{0}highscore.hsc".format(levelpack), "wb")
++        else:
++            lpackpath = os.environ['HOME']+"/.somyeol2d/highscore/{0}".format(levelpack)
++            if not os.path.exists(lpackpath):
++                os.makedirs(lpackpath)
++            file = open(lpackpath+"highscore.hsc", "wb")
+         data = self.scores
+         cPickle.dump(data, file)
+     

@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>somyeol2d</Name>
+        <Homepage>http://www.somyeol.com</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>CCPL-Attribution-3.0</License>
+        <Icon>somyeol2d</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A 2D casual game</Summary>
+        <Description>Somyeol2D is a casual game. Somyeols are an almost extinct alien species. In Somyeol2D you have to rescue them. You're controlling all of them at once. There are several different types of Somyeols which behave differently.</Description>
+        <Archive sha1sum="cb781cf5b411befd868ae7f7e1fddceab1b17859" type="targz">http://www.somyeol.com/downloads/Somyeol2d_110422_source.tar.gz</Archive>
+        <Patches>
+            <Patch>highscore-path.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>somyeol2d</Name>
+        <RuntimeDependencies>
+            <Dependency>jngl</Dependency>
+            <Dependency>openal</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/somyeol2d</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/somyeol2d.desktop">somyeol2d.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/somyeol2d-editor.desktop">somyeol2d-editor.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/somyeol2d.png">somyeol2d.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/somyeol2d-editor.png">somyeol2d-editor.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-05-25</Date>
+            <Version>110422</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
