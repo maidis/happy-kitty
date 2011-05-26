@@ -1,0 +1,5 @@
+#summary 3D physics platform game
+#labels sdl,glew,tinyxml,mesa,freeglut,action,pollybgone
+
+|| POLLY-B-GONE is a 3D physics platform game that tells the story of a plucky wheeled robot named Polly, who has been imprisoned by the nefarious Dr. Nurbs in his laboratory. Polly must overcome a series of increasingly-elaborate obstacles to escape and regain her freedom. || <wiki:video url="http://www.youtube.com/watch?v=uyW5XMpuMFo"/> ||
+||[http://cs.stanford.edu/people/mbostock/polly/ POLLY-B-GONE Home Page]|| Packager: [ozbekanil] ||
