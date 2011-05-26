@@ -1,0 +1,5 @@
+#summary A 2D casual game
+#labels puzzle,python,somyeol2d
+
+|| Somyeol2D is a casual game. Somyeols are an almost extinct alien species. In Somyeol2D you have to rescue them. You're controlling all of them at once. There are several different types of Somyeols which behave differently. || <wiki:video url="http://www.youtube.com/watch?v=2_ftaZ1SSa0"/> ||
+||[http://www.somyeol.com/ Somyeol2D Home Page]|| Packager: [ozbekanil] ||
