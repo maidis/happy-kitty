@@ -1,0 +1,7 @@
+#summary A 3D platform game based on the bully rodent in Big Buck Bunny
+#labels blender,action,yofrankie
+
+|| Yo Frankie! is based on the universe and characters of the open source film Big Buck Bunny. In the game, players assume the role of Frank, the sugar glider who was the antagonist of the film Big Buck Bunny. || <wiki:video url="http://www.youtube.com/watch?v=RrNgj5A0Sao"/> ||
+||[http://www.yofrankie.org/ Yo Frankie! Home Page]|| Packager: [ozbekanil] ||
+
+  * Please use yofrankie-bge as package name when installing game.
