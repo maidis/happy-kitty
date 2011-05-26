@@ -1,0 +1,5 @@
+#summary A first person ego shooter game
+#labels fps,sdl,redeclipse
+
+|| Red Eclipse is a single player and multi player first person ego shooter, built as a total conversion of Cube Engine 2, which lends itself toward a balanced gameplay, with a general theme of agility in a variety of environments. || <wiki:video url="http://www.youtube.com/watch?v=mjHVb3z72tM"/> ||
+||[http://www.redeclipse.net/ Red Eclipse Home Page]|| Packager: [ozbekanil] ||
