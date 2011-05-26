@@ -1,0 +1,5 @@
+#summary A Jedi game
+#labels sdl,mesa,toomanytroopers,action
+
+|| Too Many Troopers is a Jedi game. The game is inspired by "Too Many Ninjas". All you have to do is reflecting blasters aimed at you with your lightsaber, using arrows on your keyboard. You can help yourself with a shield (left ctrl) or bullet time (left alt).|| <wiki:video url="http://www.youtube.com/watch?v=XCRYJo8DLgk"/> ||
+||[http://www.happypenguin.org/show?Too%20Many%20Troopers Too Many Troopers @ Happy Penguin]|| Packager: [ozbekanil] ||
