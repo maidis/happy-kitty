@@ -1,27 +1,25 @@
 #summary Package list of Happy Kitty
 #labels Featured,Restrict-AddWikiComment-Commit
 
-= Help =
-
   * [AboutUs]
   * [History]
-  * [LinuxGamingSites]
-  * [Quotes]
-  * [UsingSourceRepository]
+  * Help
+    * [LinuxGamingSites]
+    * [Quotes]
+    * [UsingSourceRepository]
 
 ----
 
-= Contribute =
-
-  * [BecomingSponsor]
-  * [BuildingSourceRepository]
-  * [DesktopFiles]
-  * [HappyPenguinMission]
-  * [InternetSites]
-  * [JoiningHappyKitty]
-  * [PackageRepositories]
-  * [PathsPatches]
-  * [UnclearPackages]
+  * Contribute
+    * [BecomingSponsor]
+    * [BuildingSourceRepository]
+    * [DesktopFiles]
+    * [HappyPenguinMission]
+    * [InternetSites]
+    * [JoiningHappyKitty]
+    * [PackageRepositories]
+    * [PathsPatches]
+    * [UnclearPackages]
 
 ----
 
