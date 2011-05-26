@@ -1,6 +1,13 @@
 #summary This is really hardest part and a draft only for now.
 
 == As Happy Kitty User ==
+To become a Happy Kitty user does not need to do anything special. Just add Happy Kitty repository to your Pardus system and enjoy games. But if you want to do more:
+  * Make requests for new packages,
+  * Report errors in existing packages,
+  * Mention us,
+  * Be one of our sponsor
+  * Be Happy Kitty Wiki writer, packager, developer, or project owner
+  * ...
 
 
 == As Happy Kitty Wiki Writer ==
@@ -13,4 +20,3 @@
 
 
 == As Project Owner ==
-
