@@ -1,0 +1,5 @@
+#summary A logic game in the style of The Incredible Machine
+#labels qt,puzzle,thebutterflyeffect
+
+|| The Butterfly Effect is a physics game about cause and effect. You build complex systems to accomplish simple tasks like hitting a bowling pin. This is also known as a Rube Goldberg machine or a Heath Robinson contraption. Several videos portraying this type of machines have been made over the years. It also inspired computer games. This type of game was pioneered by the game series The Incredible Machine in the 1990s. Several attempts have been done to build open source versions of TIM over time - as far as we can tell all efforts were abandoned. || <wiki:video url="http://www.youtube.com/watch?v=yLysg1pyLK0"/> ||
+||[http://sourceforge.net/apps/trac/tbe/wiki The Butterfly Effect Home Page]|| Packager: [ozbekanil] ||
