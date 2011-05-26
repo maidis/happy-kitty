@@ -25,7 +25,7 @@ We aim to accomplish this goal through a variety of activities:
     * Package all games from [http://www.playdeb.net/ PlayDeb].
     * Package all games from [http://aur.archlinux.org/packages.php?O=0&K=game&do_Search=Git&PP=25&SB=v&SO=d AUR].
     * Package all games from [http://qt-apps.org/ Qt-Apps.org].
-    * Package all requested games at [http://tinyurl.com/from-pardus-bugzilla-with-love Pardus Bugzilla].
+    * Package all requested games at [http://tinyurl.com/3gh8bjc Pardus Bugzilla].
   * Create high quality packages of gaming-related libraries, and game development tools.
   * Document [http://code.google.com/p/happy-kitty/wiki/PackageList the available games].
   * Provide [http://groups.google.com/group/happy-kitty a list] where users and developers can discuss issues related to current games, and game packaging issues.
