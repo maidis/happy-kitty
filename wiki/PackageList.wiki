@@ -1,5 +1,5 @@
 #summary Package list of Happy Kitty
-#labels Featured
+#labels Featured,Restrict-AddWikiComment-Commit
 
 = Help =
 
