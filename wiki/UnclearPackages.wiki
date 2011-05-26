@@ -2,5 +2,11 @@
 #labels devel
 
 = kof =
+Status: packaged
   * License of graphics?
   * Copyright of characters?
+
+= Resources =
+  * [https://fedoraproject.org/wiki/SIGs/Games#List_of_games_we_will_NOT_package List of games we will NOT package]
+  * [http://wiki.debian.org/Games/Unsuitable Unsuitable Games]
+  * [https://help.ubuntu.com/community/Games/NotPackaged Games Not Packaged For Ubuntu]
