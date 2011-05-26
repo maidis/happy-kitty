@@ -1,0 +1,5 @@
+#summary An addictive platform game starring a monkey
+#labels sdl,arcade,primateplunge
+
+|| Primate Plunge is a game that you help poor Monkey navigate his way down through trecherous jungles, canyons, towering waterfalls, into the heart of a volcano and through the driving rain of a cold industrial city. || <wiki:video url="http://www.youtube.com/watch?v=Dpitjd5K5LE"/> ||
+||[http://www.aelius.com/primateplunge/ Primate Plunge Home Page]|| Packager: [ozbekanil] ||
