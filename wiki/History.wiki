@@ -1,5 +1,5 @@
 #summary A not very short history of Happy Kitty
-#labels history,Featured
+#labels history,Featured,Restrict-AddWikiComment-Commit
 
   * *2010.00.00* - I tried to clean up and revive *Pardus Contrib Repository* by listing useless and unmaintained packages. The problem is not end just deleting useless and unmaintained packages, therefore this work didn't help too much.
   * *2010.00.00* - [http://packages.pardus.org.tr/info/contrib/2009/devel/ Pardus Contrib Repository] did not continue in *Pardus 2011* release.
