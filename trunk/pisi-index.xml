@@ -3728,6 +3728,58 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>somyeol2d</Name>
+            <Homepage>http://www.somyeol.com</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>CCPL-Attribution-3.0</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A 2D casual game</Summary>
+            <Summary xml:lang="tr">Öylesine bir 2B oyun</Summary>
+            <Description xml:lang="en">Somyeol2D is a casual game. Somyeols are an almost extinct alien species. In Somyeol2D you have to rescue them. You&apos;re controlling all of them at once. There are several different types of Somyeols which behave differently.</Description>
+            <Description xml:lang="tr">Somyeol2D, öylesine bir 2B oyundur. Somyeol&apos;ler nesilleri tükenmek üzere olan bir uzaylı türüdür. Oyundaki göreviniz hepsini aynı anda kontrol etmeye çalışarak onların neslini kurtarmaktır.</Description>
+            <Icon>somyeol2d</Icon>
+            <Archive type="targz" sha1sum="cb781cf5b411befd868ae7f7e1fddceab1b17859">http://www.somyeol.com/downloads/Somyeol2d_110422_source.tar.gz</Archive>
+            <Patches>
+                <Patch>highscore-path.diff</Patch>
+            </Patches>
+            <SourceURI>game/puzzle/somyeol2d/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>somyeol2d</Name>
+            <RuntimeDependencies>
+                <Dependency>jngl</Dependency>
+                <Dependency>openal</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/somyeol2d</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/somyeol2d.desktop" permission="0644" owner="root">somyeol2d.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/somyeol2d-editor.desktop" permission="0644" owner="root">somyeol2d-editor.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/somyeol2d.png" permission="0644" owner="root">somyeol2d.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/somyeol2d-editor.png" permission="0644" owner="root">somyeol2d-editor.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-25</Date>
+                <Version>110422</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>hexglass</Name>
             <Homepage>http://code.google.com/p/hexglass</Homepage>
             <Packager>
@@ -6228,7 +6280,7 @@
             <Summary xml:lang="tr">Hızlı ve basit OGRE GKA</Summary>
             <Description xml:lang="en">MyGUI is a library for creating Graphical User Interfaces for games and 3D applications. The main goals of mygui are: speed, flexibility and ease of use.</Description>
             <Description xml:lang="tr">MyGUI, oyunlar ve 3B uygulamalar için Grafik Kullanıcı Arayüzleri oluşturmak için bir kütüphanedir. MyGUI&apos;nin ana hedefi hız, esneklik ve kullanım kolaylığıdır.</Description>
-            <Archive type="tarbz2" sha1sum="e6f85609e6ca1608502234e48ac19e4fc6bc1215">http://dl.dropbox.com/u/1836567/Paketler/my-gui-4290.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="2cfcfecb68bb113449dab40500b05cc238d703e2">http://dl.dropbox.com/u/1836567/Paketler/my-gui-4296.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>freetype-devel</Dependency>
                 <Dependency>ogre-devel</Dependency>
@@ -6254,6 +6306,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2011-05-25</Date>
+                <Version>3.2.0</Version>
+                <Comment>Sync with svn</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2011-04-28</Date>
                 <Version>3.2.0</Version>
@@ -6476,6 +6535,74 @@
                 <Comment>First release</Comment>
                 <Name>Onur Küçük</Name>
                 <Email>onur@pardus.org.tr</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>jngl</Name>
+            <Homepage>http://jngl.watteimdocht.de</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">A 2D game library for C++ and Python</Summary>
+            <Summary xml:lang="tr">C++ ve Python için 2B oyun kütüphanesi</Summary>
+            <Description xml:lang="en">JNGL aims to be one of the easiest 2D game library for C++ and Python. It uses OpenGL for rendering images, can output antialiasied UTF-8 text using FreeType, and play Ogg audio files via OpenAL.</Description>
+            <Description xml:lang="tr">JNGL, C++ ve Python için en basit 2B oyun kütüphanesi olmayı amaçlayan bir projedir. Resimleri taramak için OpenGL, UTF-8 metinleri üretmek için FreeType ve ses dosyalarını oynatmak için OpenAL kullanır.</Description>
+            <Icon>jngl</Icon>
+            <Archive type="tarbz2" sha1sum="f062cf187dfe6377c6955b38f883d5054d63e867">http://happy-kitty.googlecode.com/files/jngl-0.9.2.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>boost-devel</Dependency>
+                <Dependency>fontconfig-devel</Dependency>
+                <Dependency>freetype-devel</Dependency>
+                <Dependency>jpeg-devel</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>libXxf86vm-devel</Dependency>
+                <Dependency>libpng-devel</Dependency>
+                <Dependency>libogg-devel</Dependency>
+                <Dependency>libvorbis-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>openal-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>python27.patch</Patch>
+            </Patches>
+            <SourceURI>library/jngl/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>jngl</Name>
+            <RuntimeDependencies>
+                <Dependency>boost</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>jpeg</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXxf86vm</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>libogg</Dependency>
+                <Dependency>libvorbis</Dependency>
+                <Dependency>openal</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib/python2.7</Path>
+                <Path fileType="library">/usr/lib/libjngl.a</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-25</Date>
+                <Version>0.9.2</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
             </Update>
         </History>
     </SpecFile>
