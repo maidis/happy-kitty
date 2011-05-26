@@ -1,5 +1,10 @@
-#summary One-sentence summary of this page.
+#summary Fix the path, save the world
 #labels devel
+
+Dealing to fix paths is very common in the game packaging industry :) Here are some examples that everyone (both developers and packagers) can easily get an idea about path issues on GNU/Linux. Feel free to add new examples.
+
+ "Two roads diverged in the wood and I, I took the one less traveled by, and that has made all the difference."[http://en.wikipedia.org/wiki/The_Road_Not_Taken_(poem) *]
+
 
 == barrage-1.0.3-paths.diff ==
 
