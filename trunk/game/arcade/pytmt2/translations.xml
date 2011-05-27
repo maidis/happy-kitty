@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>pytmt2</Name>
+        <Summary xml:lang="tr">Too Many Troopers 2</Summary>
+        <Description xml:lang="tr">Too Many Troopers 2, bir Jedi oyunudur.</Description>
+    </Source>
+</PISI>

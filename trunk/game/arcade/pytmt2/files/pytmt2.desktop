@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Too Many Troopers 2
+GenericName=Jedi Game
+GenericName[tr]=Jedi Oyunu
+Comment=Too Many Troopers 2
+Comment[tr]=Too Many Troopers 2
+Icon=pytmt2
+Exec=pytmt2
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;

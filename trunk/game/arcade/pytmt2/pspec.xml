@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>pytmt2</Name>
+        <Homepage>http://www.jason.gd/str/pokaz/Too_Many_Troopers_2</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>pytmt2</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Too Many Troopers 2</Summary>
+        <Description>Too Many Troopers 2 is a Jedi game.</Description>
+        <Archive sha1sum="9aca4fcba397a12dace7ce3000ca188443ac3139" type="zip">http://download.jason.o12.pl/TooManyTroopers2.zip</Archive>
+    </Source>
+
+    <Package>
+        <Name>pytmt2</Name>
+        <RuntimeDependencies>
+            <Dependency>pygame</Dependency>
+            <Dependency>python-PyOpenGL</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/pytmt2</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/pytmt2.desktop">pytmt2.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/pytmt2.png">pytmt2.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/pytmt2">pytmt2</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-05-27</Date>
+            <Version>0.9</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
