@@ -20,6 +20,10 @@ def install():
     # Lets install a nice icon for desktop files
     pisitools.insinto("/usr/share/pixmaps", "megaglest.png")
 
+    # Remove Windows icon files, we don't need them
+    pisitools.remove("/usr/share/pixmaps/*.ico")
+    pisitools.remove("/usr/share/pixmaps/*.bmp")
+
     # And now we install desktop file
     pisitools.insinto("/usr/share/applications", "megaglest.desktop")
 
@@ -31,4 +35,4 @@ def install():
     pisitools.insinto("/usr/share/megaglest", "servers.ini")
 
     # Documentations
-    pisitools.dodoc("AUTHORS*", "CHANGELOG*", "COPYRIGHT*", "README*")
+    pisitools.dodoc("AUTHORS*", "CHANGELOG*", "COPYRIGHT*", "gnu_gpl_3.0.txt", "README*")
