@@ -4425,6 +4425,52 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>qtrex</Name>
+            <Homepage>http://qt-apps.org/content/show.php/QTrex?content=122899</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A circular Tetris</Summary>
+            <Summary xml:lang="tr">Dairesel bir Tetris</Summary>
+            <Description xml:lang="en">QTrex is a puzzle based on the popular Tetris video game. However, instead of a well shaped playing field the user has a circular one.</Description>
+            <Description xml:lang="tr">QTrex, her dönem popüler Tetris&apos;i temel alan bir bulmaca oyunudur. Bununla birlikte alışık olunan düz bir alan yerine dairesel bir alanda oynanır.</Description>
+            <Icon>qtrex</Icon>
+            <Archive type="zip" sha1sum="bbb6853f45bfeb42dcb04bda562838f4094cfae1">http://qt-apps.org/CONTENT/content-files/122899-QTrex.zip</Archive>
+            <BuildDependencies>
+                <Dependency>qt-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/puzzle/qtrex/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>qtrex</Name>
+            <RuntimeDependencies>
+                <Dependency>qt</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/qtrex.desktop" permission="0644" owner="root">qtrex.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-01-15</Date>
+                <Version>1.0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>popstar</Name>
             <Homepage>http://www.newbreedsoftware.com/popstar</Homepage>
             <Packager>
@@ -4576,6 +4622,58 @@
             <Update release="1">
                 <Date>2010-12-01</Date>
                 <Version>0.1.8.3</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>qnetwalk</Name>
+            <Homepage>http://qt.osdn.org.ua/qnetwalk.html</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A NetWalk game</Summary>
+            <Summary xml:lang="tr">Bir NetWalk oyunu</Summary>
+            <Description xml:lang="en">QNetWalk is a Qt version of the popular NetWalk game for system administrators.</Description>
+            <Description xml:lang="tr">QNetWalk, sistem yöneticileri için geliştirilmiş olan popüler NetWalk oyununun bir Qt sürümüdür.</Description>
+            <Icon>qnetwalk</Icon>
+            <Archive type="targz" sha1sum="5673fd18173cccc3c4d6693c8260ec10152d71e5">http://happy-kitty.googlecode.com/files/qnetwalk-1.3.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>qt-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>names-the-constructor-not-the-type.diff</Patch>
+                <Patch>qnetwalk-install.diff</Patch>
+                <Patch>qnetwalk-desktop.diff</Patch>
+            </Patches>
+            <SourceURI>game/puzzle/qnetwalk/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>qnetwalk</Name>
+            <RuntimeDependencies>
+                <Dependency>qt-devel</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/menu</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/qnetwalk</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-11-08</Date>
+                <Version>1.3</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
