@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>qnetwalk</Name>
+        <Summary xml:lang="tr">Bir NetWalk oyunu</Summary>
+        <Description xml:lang="tr">QNetWalk, sistem yöneticileri için geliştirilmiş olan popüler NetWalk oyununun bir Qt sürümüdür.</Description>
+    </Source>
+</PISI>

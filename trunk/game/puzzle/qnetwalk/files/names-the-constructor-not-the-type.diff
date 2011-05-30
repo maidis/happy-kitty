@@ -1,0 +1,20 @@
+--- cell.cpp.orig	2008-03-30 12:29:12.000000000 +0300
++++ cell.cpp	2011-05-30 14:42:27.900000010 +0300
+@@ -19,7 +19,7 @@
+ Cell::PixmapMap Cell::shadowpixmap;
+ Cell::PixmapMap Cell::connectedpixmap;
+ Cell::PixmapMap Cell::disconnectedpixmap;
+-Cell::Cell * Cell::focusedCell = 0;
++Cell * Cell::focusedCell = 0;
+ 
+ 
+ void Cell::setGameOver(bool b)
+@@ -28,7 +28,7 @@
+ }
+ 
+ 
+-Cell::Cell * Cell::focused()
++Cell * Cell::focused()
+ {
+     return focusedCell;
+ }
