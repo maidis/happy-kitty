@@ -1,8 +1,0 @@
-<?xml version="1.0" ?>
-<PISI>
-    <Source>
-        <Name>qtrex</Name>
-        <Summary xml:lang="tr">Dairesel bir Tetris</Summary>
-        <Description xml:lang="tr">QTrex, her dönem popüler Tetris'i temel alan bir bulmaca oyunudur. Bununla birlikte alışık olunan düz bir alan yerine dairesel bir alanda oynanır.</Description>
-    </Source>
-</PISI>
