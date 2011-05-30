@@ -1,0 +1,21 @@
+--- menu/qnetwalk.desktop.orig	2008-03-30 05:36:34.000000000 +0300
++++ menu/qnetwalk.desktop	2011-05-30 14:26:40.205000010 +0300
+@@ -1,8 +1,14 @@
+ [Desktop Entry]
+-Name=QNetWalk
+ Type=Application
+-Exec=qnetwalk
++Version=1.0
++Encoding=UTF-8
++Name=QNetWalk
++GenericName=NetWalk Game
++GenericName[tr]=NetWalk Oyunu
++Comment=A NetWalk game
++Comment[tr]=Bir NetWalk oyunu
+ Icon=qnetwalk
+-TryExec=qnetwalk
++Exec=qnetwalk
+ Terminal=false
+-Categories=Game;LogicGame
++StartupNotify=false
++Categories=Application;Game;LogicGame;

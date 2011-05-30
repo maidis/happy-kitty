@@ -1,0 +1,11 @@
+--- qnetwalk.pro.orig	2008-03-30 05:35:35.000000000 +0300
++++ qnetwalk.pro	2011-05-30 14:47:35.051000009 +0300
+@@ -23,7 +23,7 @@
+ 		  translations/qnetwalk_ua.ts
+ 
+ TARGET		= qnetwalk
+-target.path	= /usr/games
++target.path	= /usr/bin
+ INSTALLS       += target
+ 
+ man.path	= /usr/share/man/man6
