@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=QTrex
+GenericName=Circular Tetris
+GenericName[tr]=Dairesel Tetris
+Comment=A circular Tetris
+Comment[tr]=Bir dairesel Tetris
+Icon=qtrex
+Exec=QTrex
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;BlocksGame;
