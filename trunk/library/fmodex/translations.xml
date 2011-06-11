@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>fmodex</Name>
+        <Summary xml:lang="tr">Gelişmiş bir ses motoru</Summary>
+        <Description xml:lang="tr">The FMOD Ex ses sistemi; oyun geliştiricileri, çoklumedya geliştiricileri, ses tasarımcıları, müzisyenler ve ses mühendisleri için yenilikçi bir ses motorudur.</Description>
+    </Source>
+</PISI>
