@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>fmodex</Name>
+        <Homepage>http://www.fmod.org</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>fmod</License>
+        <IsA>library</IsA>
+        <Summary>An advanced audio engine</Summary>
+        <Description>The FMOD Ex sound system is a revolutionary new audio engine for game developers, multimedia developers, sound designers, musicians and audio engineers.</Description>
+        <Archive sha1sum="3e4e775fccb4e87d2729e31140ea0fac8ff83866" type="targz" target="i686">http://www.fmod.org/index.php/release/version/fmodapi43405linux.tar.gz</Archive>
+        <Archive sha1sum="b172d1d4b610fc0e7d0fe162e3c803889b6b9bea" type="targz" target="x86_64">http://www.fmod.org/index.php/release/version/fmodapi43405linux64.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>fmodex</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share/fmodex</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-02-14</Date>
+            <Version>4.34.05</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
