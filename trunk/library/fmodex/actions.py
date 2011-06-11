@@ -8,7 +8,8 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-bits = "64" if get.ARCH() == "x86_64" else "32"
+# bits = "64" if get.ARCH() == "x86_64" else "32"
+bits = "64" if get.ARCH() == "x86_64" else ""
 
 WorkDir = "%s/fmodapi%slinux%s" % (get.ARCH(), get.srcVERSION().replace('.', ''), bits)
 
