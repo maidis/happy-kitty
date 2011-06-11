@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>fife</Name>
+        <Homepage>http://www.fifengine.de</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>A cross platform game creation framework</Summary>
+        <Description>FIFE (Flexible Isometric Free Engine) is a multi-platform isometric game engine.</Description>
+        <Archive sha1sum="01a17401da1f8e88516dcbc4c0369bd00381c222" type="tarbz2">http://dl.dropbox.com/u/1836567/Paketler/fife-0.3.3.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>boost-devel</Dependency>
+            <Dependency>guichan</Dependency>
+            <Dependency>libogg-devel</Dependency>
+            <Dependency>libpng-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>libvorbis-devel</Dependency>
+            <Dependency>libXcursor-devel</Dependency>
+            <Dependency>libXext-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>openal-devel</Dependency>
+            <Dependency>python-PyYAML</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-ttf-devel</Dependency>
+            <Dependency>swig</Dependency>
+            <Dependency>zlib-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>fife</Name>
+        <RuntimeDependencies>
+            <Dependency>boost</Dependency>
+            <Dependency>guichan</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>openal</Dependency>
+            <Dependency>python-PyYAML</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-ttf</Dependency>
+            <Dependency>swig</Dependency>
+            <Dependency>zlib</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-06-12</Date>
+            <Version>0.3.3</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
