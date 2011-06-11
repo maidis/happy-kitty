@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>fife</Name>
+        <Summary xml:lang="tr">Çok platformlu bir oyun üretim çatısı</Summary>
+        <Description xml:lang="tr">FIFE (Flexible Isometric Free Engine), çok platformlu izometrik bir oyun motorudur.</Description>
+    </Source>
+</PISI>
