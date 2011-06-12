@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>minetest</Name>
+        <Homepage>http://celeron.55.lt/~celeron55/minetest</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>minetest</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A Minecraft clone</Summary>
+        <Description>Minetest is one of the first InfiniMiner / Minecraft inspired games with a goal of taking the survival multiplayer gameplay to a slightly different direction.</Description>
+        <Archive sha1sum="178ab6c1f483b18df3c919f34459a7f70b26e126" type="tarbz2">http://dl.dropbox.com/u/1836567/Paketler/minetest-0.0.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>irrlicht-devel</Dependency>
+            <Dependency>jpeg-devel</Dependency>
+            <Dependency>libpng-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>libX11-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>ambiguous-reference.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>minetest</Name>
+        <RuntimeDependencies>
+            <Dependency>irrlicht</Dependency>
+            <Dependency>jpeg</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>libX11</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/minetest</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/minetest.desktop">minetest.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/minetest.png">minetest.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-06-12</Date>
+            <Version>0.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
