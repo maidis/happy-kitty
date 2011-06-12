@@ -3835,6 +3835,66 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>minetest</Name>
+            <Homepage>http://celeron.55.lt/~celeron55/minetest</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A Minecraft clone</Summary>
+            <Summary xml:lang="tr">Bir Minecraft klonu</Summary>
+            <Description xml:lang="en">Minetest is one of the first InfiniMiner / Minecraft inspired games with a goal of taking the survival multiplayer gameplay to a slightly different direction.</Description>
+            <Description xml:lang="tr">Minetest, başlıca amacı çok oyunculu hayatta kalma oyun kipini biraz daha farklı bir yöne taşımak olan, InfiniMiner / Minecraft&apos;tan ilham almış ilk oyunlardan biridir.</Description>
+            <Icon>minetest</Icon>
+            <Archive type="tarbz2" sha1sum="178ab6c1f483b18df3c919f34459a7f70b26e126">http://dl.dropbox.com/u/1836567/Paketler/minetest-0.0.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>irrlicht-devel</Dependency>
+                <Dependency>jpeg-devel</Dependency>
+                <Dependency>libpng-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>libX11-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>ambiguous-reference.diff</Patch>
+            </Patches>
+            <SourceURI>game/puzzle/minetest/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>minetest</Name>
+            <RuntimeDependencies>
+                <Dependency>irrlicht</Dependency>
+                <Dependency>jpeg</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>libX11</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/minetest</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/minetest.desktop" permission="0644" owner="root">minetest.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/minetest.png" permission="0644" owner="root">minetest.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-06-12</Date>
+                <Version>0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>hexglass</Name>
             <Homepage>http://code.google.com/p/hexglass</Homepage>
             <Packager>
@@ -6132,6 +6192,45 @@
             <Update release="1">
                 <Date>2011-04-09</Date>
                 <Version>0.1.2</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>alpng</Name>
+            <Homepage>http://alpng.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">PNG library for Allegro</Summary>
+            <Summary xml:lang="tr">Allegro için PNG kütüphanesi</Summary>
+            <Description xml:lang="en">AllegroPNG (alpng) servers for displaying PNG images in programs using the Allegro multimedia library. It&apos;s completely standalone, it doesn&apos;t require libpng nor zlib.</Description>
+            <Description xml:lang="tr">AllegroPNG (alpng), Allegro çoklu ortam kütüphanesi kullanan programlarda PNG biçimli resimlerin görüntülenmesini sağlamaktadır. Tamamen tek başına çalışabilir olan AllegroPNG, libpng ve zlib&apos;e ihtiyaç duymaz.</Description>
+            <Archive type="zip" sha1sum="ebda7c833b132fc9ade304885aa050a75bbbba3a">mirrors://sourceforge/alpng/alpng/1.3/alpng13.zip</Archive>
+            <SourceURI>library/alpng/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>alpng</Name>
+            <RuntimeDependencies>
+                <Dependency>allegro</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-03-23</Date>
+                <Version>1.3</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
