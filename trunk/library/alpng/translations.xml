@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>alpng</Name>
+        <Summary xml:lang="tr">Allegro için PNG kütüphanesi</Summary>
+        <Description xml:lang="tr">AllegroPNG (alpng), Allegro çoklu ortam kütüphanesi kullanan programlarda PNG biçimli resimlerin görüntülenmesini sağlamaktadır. Tamamen tek başına çalışabilir olan AllegroPNG, libpng ve zlib'e ihtiyaç duymaz.</Description>
+    </Source>
+</PISI>
