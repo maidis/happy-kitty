@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>minetest</Name>
+        <Summary xml:lang="tr">Bir Minecraft klonu</Summary>
+        <Description xml:lang="tr">Minetest, başlıca amacı çok oyunculu hayatta kalma oyun kipini biraz daha farklı bir yöne taşımak olan, InfiniMiner / Minecraft'tan ilham almış ilk oyunlardan biridir.</Description>
+    </Source>
+</PISI>

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Minetest
+GenericName=Minecraft Clone
+GenericName[tr]=Minecraft Klonu
+Comment=A Minecraft clone
+Comment[tr]=Bir Minecraft klonu
+Icon=minetest
+Exec=minetest
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;
