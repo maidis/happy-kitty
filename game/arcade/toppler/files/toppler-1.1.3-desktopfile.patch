@@ -1,0 +1,18 @@
+--- toppler.desktop.in
++++ toppler.desktop.in
+@@ -1,12 +1,10 @@
+ [Desktop Entry]
+-Encoding=UTF-8
+-Categories=Application;Game;ArcadeGame;
+-X-Desktop-File-Install-Version=0.2
++Categories=Game;ArcadeGame;
+ Name=@FULLNAME@
+ Comment=A clone of the 'Nebulus' game on old 8 and 16 bit machines.
+ Comment[de]=Klon des alten Spiels 'Nebulus'
+ Comment[cs]=Klon hry 'Nebulus' z dob 8 a 16 bitovÃœch poÄÃ­taÄÅ¯.
+-Icon=@prefix@/pixmaps/@PACKAGE@.xpm
+-Exec=@prefix@/bin/toppler
++Icon=@PACKAGE@
++Exec=toppler
+ Terminal=0
+ Type=Application
