@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>qcheckers</Name>
+        <Summary xml:lang="tr">Qt dama oyunu</Summary>
+        <Description xml:lang="tr">QCheckers, Rus (8x8) ve uluslararası (10x10) dama oynayabileceğiniz bir oyundur.</Description>
+    </Source>
+</PISI>
