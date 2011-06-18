@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>supershooter</Name>
+        <Homepage>https://github.com/elcerdo/supershooter</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>supershooter</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A shoot them up game with a lot of bullets</Summary>
+        <Description>Supershooter is an awesome SHMUP game with lots of bullets. It is still very young but it is already playable and easily customisable.</Description>
+        <Archive sha1sum="dc84598f3603dbfa08690c956a0af25940acb71c" type="targz">http://happy-kitty.googlecode.com/files/elcerdo-supershooter-0.3.2-1-ge89c0e1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>boost-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>ode-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>supershooter</Name>
+        <RuntimeDependencies>
+            <Dependency>boost</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>ode</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/supershooter</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-02-13</Date>
+            <Version>0.3.2</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
