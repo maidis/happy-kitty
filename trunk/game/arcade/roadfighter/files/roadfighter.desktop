@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Road Fighter
+GenericName=Car Race
+GenericName[tr]=Araba Yarışı
+Comment=Konami's MSX1 classic roadfighter remake
+Comment[tr]=Konami'nin MSX1 klasiği roadfighter'ın yenidenyapımı
+Icon=roadfighter
+Exec=roadfighter
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;
