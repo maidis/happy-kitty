@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>tanglet</Name>
+        <Summary xml:lang="tr">Kelime bulma oyunu</Summary>
+        <Description xml:lang="tr">Tanglet, Boggle temelli, tek kişilik bir kelime bulma oyunudur. Oyunun ulvi amacı süre dolmadan önce olabildiğince çok kelime bulmaktır. Bulduğunuz her yeni kelime size daha çok süre olarak geri dönecektir.</Description>
+    </Source>
+</PISI>

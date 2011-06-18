@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>tanglet</Name>
+        <Homepage>http://gottcode.org/tanglet</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>tanglet</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Word finding game</Summary>
+        <Description>Tanglet is a single player word finding game based on Boggle. The object of the game is to list as many words as you can before the time runs out. Every time you find a new word, you are given more time.</Description>
+        <Archive sha1sum="ad2ab4e4cff348a9345294fcdcf6d60fc866fd24" type="tarbz2">http://gottcode.org/tanglet/tanglet-1.1.1-src.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>qt-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>desktop.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>tanglet</Name>
+        <RuntimeDependencies>
+            <Dependency>qt</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/tanglet</Path>
+            <Path fileType="doc">/usr/share/doc/tanglet</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-07-24</Date>
+            <Version>1.1.1</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
