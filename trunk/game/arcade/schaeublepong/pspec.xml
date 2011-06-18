@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>schaeublepong</Name>
+        <Homepage>http://ccchb.de/wiki/Sch%C3%A4uble-Pong</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>schaeublepong</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A SDL Pong game</Summary>
+        <Description>Schäuble-Pong is a pong game with Wolfgang Schäuble theme used on CCC Bremen party.</Description>
+        <Archive sha1sum="748d5070c48fc77fdc26fc0ec7b91d61f35400a1" type="targz">http://happy-kitty.googlecode.com/files/schaeuble-sdlpong-0.3.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>sdlpong-0.3-paths.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>schaeublepong</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-image</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/schaeublepong</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/schaeublepong.desktop">schaeublepong.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/schaeublepong.png">schaeublepong.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-11-09</Date>
+            <Version>0.3</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

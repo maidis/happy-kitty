@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>schaeublepong</Name>
+        <Summary xml:lang="tr">Bir SDL Pong oyunu</Summary>
+        <Description xml:lang="tr">Schäuble-Pong, CCC Bremen partisinden kullanılan Wolfgang Schäuble temasını da içeren basit Bir SDL Pong oyunudur.</Description>
+    </Source>
+</PISI>
