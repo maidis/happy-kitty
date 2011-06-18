@@ -1,0 +1,75 @@
+--- video.c.orig	2007-08-23 15:24:04.000000000 +0300
++++ video.c	2011-06-18 23:17:09.818000068 +0300
+@@ -3,13 +3,13 @@
+ int precache( )
+ {
+ 	SDL_Surface *temp;
+-	char string[50];	
++	char string[250];	
+ 	
+-	sprintf(string, "gfx/%s/background.png", theme);
++	sprintf(string, "/usr/share/schaeublepong/gfx/%s/background.png", theme);
+ 	temp = IMG_Load(string);
+ 	background = SDL_DisplayFormat(temp);
+ 	if( background == NULL ) {
+-		temp = IMG_Load("gfx/classic/background.png");
++		temp = IMG_Load("/usr/share/schaeublepong/gfx/classic/background.png");
+ 		background = SDL_DisplayFormat(temp);
+ 		if (background == NULL) {
+ 			printf("Unable to load background.\n");
+@@ -18,11 +18,11 @@
+ 	}
+ 	SDL_FreeSurface(temp);
+ 	
+-	sprintf(string, "gfx/%s/paddle.png", theme);
++	sprintf(string, "/usr/share/schaeublepong/gfx/%s/paddle.png", theme);
+ 	temp = IMG_Load(string);
+ 	paddle = SDL_DisplayFormat(temp);
+ 	if(paddle == NULL) {
+-		temp = IMG_Load("gfx/classic/paddle.png");
++		temp = IMG_Load("/usr/share/schaeublepong/gfx/classic/paddle.png");
+ 		paddle = SDL_DisplayFormat(temp);
+ 		if (paddle == NULL) {
+ 			printf("Unable to load background.\n");
+@@ -31,11 +31,11 @@
+ 	}
+ 	SDL_FreeSurface(temp);
+ 
+-	sprintf(string, "gfx/%s/ball.png", theme);
++	sprintf(string, "/usr/share/schaeublepong/gfx/%s/ball.png", theme);
+ 	temp = IMG_Load(string);
+ 	ball = SDL_DisplayFormatAlpha(temp);
+ 	if(ball == NULL ) {
+-		temp = IMG_Load("gfx/classic/ball.png");
++		temp = IMG_Load("/usr/share/schaeublepong/gfx/classic/ball.png");
+ 		ball = SDL_DisplayFormatAlpha(temp);
+ 		if (ball == NULL) {
+ 			printf("Unable to load background.\n");
+@@ -44,11 +44,11 @@
+ 	}
+ 	SDL_FreeSurface(temp);
+ 	
+-	sprintf(string, "gfx/%s/menu/title.png", theme);
++	sprintf(string, "/usr/share/schaeublepong/gfx/%s/menu/title.png", theme);
+ 	temp = IMG_Load(string);
+ 	title = SDL_DisplayFormatAlpha(temp);
+ 	if(title == NULL ) {
+-		temp = IMG_Load("gfx/classic/menu/title.png");
++		temp = IMG_Load("/usr/share/schaeublepong/gfx/classic/menu/title.png");
+ 		title = SDL_DisplayFormatAlpha(temp);
+ 		if (title == NULL) {
+ 			printf("Unable to load surface.\n");
+@@ -57,11 +57,11 @@
+ 	}
+ 	SDL_FreeSurface(temp);
+ 	
+-	sprintf(string, "gfx/%s/font.png", theme);
++	sprintf(string, "/usr/share/schaeublepong/gfx/%s/font.png", theme);
+ 	temp = IMG_Load(string);
+ 	font = SDL_DisplayFormatAlpha(temp);
+ 	if( font == NULL ) {
+-		temp = IMG_Load("gfx/classic/menu/font.png");
++		temp = IMG_Load("/usr/share/schaeublepong/gfx/classic/menu/font.png");
+ 		font = SDL_DisplayFormatAlpha(temp);
+ 		if( font == NULL) {
+ 			printf("Unable to load surface.\n");
