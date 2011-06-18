@@ -1,0 +1,2 @@
+#!/bin/bash
+cd /usr/share/stringrolled && python ./run_game.py 
