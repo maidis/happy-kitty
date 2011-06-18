@@ -1,0 +1,187 @@
+--- po/fr.po
++++ po/fr.po
+@@ -66,7 +66,7 @@
+ #: keyb.cc:161
+ #, c-format
+ msgid "Wheee!!\n"
+-msgstr "Woooaaaa !\n"
++msgstr "Woouaaa !\n"
+ 
+ #: leveledit.cc:103 menu.cc:971
+ msgid "Quit"
+@@ -90,11 +90,11 @@
+ 
+ #: leveledit.cc:104
+ msgid "Insert row"
+-msgstr "Insérer un échelon"
++msgstr "Insérer une rangée"
+ 
+ #: leveledit.cc:104
+ msgid "Delete row"
+-msgstr "Supprimer un échelon"
++msgstr "Supprimer une rangée"
+ 
+ #: leveledit.cc:104
+ msgid "Rotate 180"
+@@ -162,7 +162,7 @@
+ 
+ #: leveledit.cc:109
+ msgid "Put lift"
+-msgstr "Placer ascenceur"
++msgstr "Placer un ascenceur"
+ 
+ #: leveledit.cc:109
+ msgid "Lift middle stop"
+@@ -174,7 +174,7 @@
+ 
+ #: leveledit.cc:110
+ msgid "Put pillar"
+-msgstr "Placer colonne"
++msgstr "Placer une colonne"
+ 
+ #: leveledit.cc:110
+ msgid "Put box"
+@@ -210,11 +210,11 @@
+ 
+ #: leveledit.cc:112
+ msgid "Move page up"
+-msgstr "Aller page suivante"
++msgstr "Aller à la page suivante"
+ 
+ #: leveledit.cc:112
+ msgid "Move page down"
+-msgstr "Aller page précédente"
++msgstr "Aller à la page précédente"
+ 
+ #: leveledit.cc:113
+ msgid "Go to start"
+@@ -250,11 +250,11 @@
+ 
+ #: leveledit.cc:115
+ msgid "Cut row"
+-msgstr "Couper une rangé"
++msgstr "Couper une rangée"
+ 
+ #: leveledit.cc:115
+ msgid "Paste row"
+-msgstr "Coller une rangé"
++msgstr "Coller une rangée"
+ 
+ #: leveledit.cc:115
+ msgid "Change robot type"
+@@ -262,11 +262,11 @@
+ 
+ #: leveledit.cc:189
+ msgid "Tower changed, really quit"
+-msgstr "Tour modifiée, voulez-vous vraiment quitter ?"
++msgstr "Tour modifiée,\nvoulez-vous vraiment\nquitter"
+ 
+ #: leveledit.cc:199
+ msgid "Tower changed, really load"
+-msgstr "Tour modifiée, voulez-vous vraiment charger ?"
++msgstr "Tour modifiée,\nvoulez-vous vraiment\ncharger"
+ 
+ #: leveledit.cc:216
+ msgid "Red"
+@@ -482,7 +482,7 @@
+ 
+ #: menu.cc:154 menu.cc:155
+ msgid "Status on top"
+-msgstr "Statut au sommet"
++msgstr "État au sommet"
+ 
+ #: menu.cc:176
+ #, c-format
+@@ -520,7 +520,7 @@
+ 
+ #: menu.cc:316 menu.cc:317
+ msgid "Music"
+-msgstr ""
++msgstr "Musique"
+ 
+ #: menu.cc:351 menu.cc:352
+ msgid "Font alpha"
+@@ -597,8 +597,8 @@
+ "enter the highscore table!"
+ msgstr ""
+ "Félicitations ! Vous êtes\n"
+-"Probablement suffisament\n"
+-"bon pour entrer dans le\n"
++"probablement suffisament\n"
++"bon pour figurer dans le\n"
+ "tableau des scores !"
+ 
+ #: menu.cc:707
+@@ -727,7 +727,7 @@
+ #. Tower name, you can translate freely
+ #: levelnames.txt:21
+ msgid "Blink of the eye"
+-msgstr "Le clignement de l'½il"
++msgstr "Le clignement de l'œil"
+ 
+ #. Tower name, you can translate freely
+ #: levelnames.txt:23
+@@ -946,55 +946,45 @@
+ #. David is the name of the autor and should not be translated
+ #: levelnames.txt:113
+ msgid "David 1"
+-msgstr ""
++msgstr "David 1"
+ 
+ #. Tower name, you can translate freely
+ #: levelnames.txt:115
+ msgid "Difficult jumps!"
+-msgstr ""
++msgstr "Sauts difficiles!"
+ 
+ #. Tower name, you can translate freely
+ #: levelnames.txt:117
+ msgid "Washout"
+-msgstr ""
++msgstr "Lavage"
+ 
+ #. Tower name, you can translate freely
+ #: levelnames.txt:119
+ msgid "Climbing and tricks"
+-msgstr ""
++msgstr "Escalade et pièges"
+ 
+ #. Tower name, you can translate freely
+ #: levelnames.txt:121
+ msgid "Watch the robots"
+-msgstr ""
++msgstr "Regardez les robots"
+ 
+ #. Tower name, you can translate freely
+ #: levelnames.txt:123
+-#, fuzzy
+ msgid "Two Halves"
+-msgstr "Deux Voies"
++msgstr "Deux Moitiés"
+ 
+ #. Tower name, you can translate freely
+ #: levelnames.txt:125
+ msgid "Turning up the heat"
+-msgstr ""
++msgstr "Augmenter la température"
+ 
+ #. Tower name, you can translate freely
+ #: levelnames.txt:127
+ msgid "Confusing"
+-msgstr ""
++msgstr "Confus"
+ 
+ #. Tower name, you can translate freely
+ #: levelnames.txt:129
+-#, fuzzy
+ msgid "Short but dangerous"
+ msgstr "Court, mais mortel"
+ 
+-#~ msgid "Congratulations! You are"
+-#~ msgstr "Félicitations ! Vous êtes"
+-
+-#~ msgid "probably good enough to"
+-#~ msgstr "Probablement suffisament bon pour"
+-
+-#~ msgid "enter the highscore table!"
+-#~ msgstr "entrer dans le tableau des scores !"
