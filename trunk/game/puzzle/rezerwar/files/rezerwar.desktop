@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=rezerwar
+GenericName=Pipe Game
+GenericName[tr]=Boru Oyunu
+Comment=A pipe game
+Comment[tr]=Bir boru oyunu
+Icon=rezerwar
+Exec=rezerwar
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;
