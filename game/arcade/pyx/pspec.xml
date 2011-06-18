@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>pyx</Name>
+        <Homepage>http://www.happypenguin.org/show?pyx</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>as-is</License>
+        <Icon>pyx</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A Volfied clone</Summary>
+        <Description>The objective of Pyx is to fill 75% of the screen by blocking of certain sections of the screen. However, you are safe nowhere. At the walls, creatures hunt you, and in the screen, other creatures hunt you. Try to avoid them...Pyx is inspired by the old Qix game by Taito.</Description>
+        <Archive sha1sum="b8c2ad31d89346be9b69aa576f4ee9693b05449b" type="tarbz2">http://happy-kitty.googlecode.com/files/pyx-0.9.tar.bz2</Archive>
+    </Source>
+
+    <Package>
+        <Name>pyx</Name>
+        <RuntimeDependencies>
+            <Dependency>pygame</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>smpeg</Dependency>
+            <Dependency>python-numeric</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/opt/pyx/pyx.py</Path>
+            <Path fileType="config">/opt/pyx/scores</Path>
+            <Path fileType="data">/opt/pyx/sounds</Path>
+            <Path fileType="data">/opt/pyx/*.mid</Path>
+            <Path fileType="data">/opt/pyx/*.png</Path>
+            <Path fileType="data">/opt/pyx/*.wav</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/opt/pyx/changes</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/pyx.desktop">pyx.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/pyx.png">pyx.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-02-17</Date>
+            <Version>0.9</Version>
+            <Comment>First release.</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
