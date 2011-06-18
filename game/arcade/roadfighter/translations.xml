@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>roadfighter</Name>
+        <Summary xml:lang="tr">Konami'nin MSX1 klasiği roadfighter'ın yenidenyapımı</Summary>
+        <Description xml:lang="tr">Road Fighter, sizin ve bir grup çılgın sürücünün katıldığı ölümcül bir yarış oyunudur.</Description>
+    </Source>
+</PISI>

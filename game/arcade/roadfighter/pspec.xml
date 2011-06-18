@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>roadfighter</Name>
+        <Homepage>http://roadfighter.jorito.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>as-is</License>
+        <Icon>roadfighter</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Konami's MSX1 classic roadfighter remake</Summary>
+        <Description>Road Fighter is a death-race between you and a group of crazy drivers.</Description>
+        <Archive sha1sum="e6cacf74065fcd27838c66b4c57998f9fdbc2874" type="targz">http://happy-kitty.googlecode.com/files/roadfighter.src_1.0.1269.tgz</Archive>
+        <BuildDependencies>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>sdl-net-devel</Dependency>
+            <Dependency>sdl-ttf-devel</Dependency>
+            <Dependency>sdl-sound-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>1.0.1269-Makefile.patch</Patch>
+            <Patch>roadfighter-1.0.1269-dir.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>roadfighter</Name>
+        <RuntimeDependencies>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>sdl-net</Dependency>
+            <Dependency>sdl-ttf</Dependency>
+            <Dependency>sdl-sound</Dependency>
+            <Dependency>libsdl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/roadfighter</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/roadfighter.desktop">roadfighter.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-11-07</Date>
+            <Version>1.0.1269</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
