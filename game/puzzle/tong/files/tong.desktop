@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=TONG
+GenericName=Tetris Pong Mix
+GenericName[tr]=Tetris Pong Karışımı
+Comment=A Tetris and Pong mix
+Comment[tr]=Bir Tetris ve Pong karışımı
+Icon=tong
+Exec=tong
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;BlocksGame;
