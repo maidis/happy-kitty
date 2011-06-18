@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>stringrolled</Name>
+        <Summary xml:lang="tr">Bir platform oyunu</Summary>
+        <Description xml:lang="tr">Stringrolled, bir kedi ve bir prensesin (ve aslında bir topun) kaleden kaçması hakkında bir oyundur.</Description>
+    </Source>
+</PISI>

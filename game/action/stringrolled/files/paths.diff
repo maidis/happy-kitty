@@ -1,0 +1,41 @@
+--- gamelib/game.py.orig	2008-09-14 01:36:48.000000000 +0300
++++ gamelib/game.py	2011-06-18 13:27:23.091000024 +0300
+@@ -4,6 +4,8 @@
+ import pygame
+ import random
+ import math
++import os
++import shutil
+ 
+ class level_data:
+     width = 1
+@@ -176,7 +178,13 @@
+     return mygame
+     
+ def continue_game(mygame, level):
+-    f = data.load('game.sav')
++    # f = data.load('game.sav')
++    savefile = os.environ['HOME']+"/.stringrolled/game.sav"
++    try:
++        os.stat(savefile)
++    except:
++        shutil.copy2('/usr/share/stringrolled/data/game.sav', savefile)
++    f = data.load(savefile)
+     save = cPickle.load(f)
+     f.close()
+     mygame.cat.x = save.cat_x
+@@ -210,7 +218,13 @@
+     save.ball_x = x + 24
+     save.ball_y = y + 16
+     save.character = mygame.character
+-    f = data.load('game.sav', 'wb')
++    # f = data.load('game.sav', 'wb')
++    savefile = os.environ['HOME']+"/.stringrolled/game.sav"
++    try:
++        os.stat(savefile)
++    except:
++        shutil.copy2('/usr/share/stringrolled/data/game.sav', savefile)
++    f = data.load(savefile, 'wb')
+     cPickle.dump(save, f)
+     f.close()
+     

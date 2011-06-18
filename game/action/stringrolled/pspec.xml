@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>stringrolled</Name>
+        <Homepage>http://www.pyweek.org/e/Rambo</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>as-is</License>
+        <Icon>stringrolled</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>UPSILON CAT in STRINGROLLED</Summary>
+        <Description>Stringrolled is a game about a cat and a princess (actually, and a ball) are going to escape a castle.</Description>
+        <Archive sha1sum="6604746b04972de88708706f880b55189b16cfc2" type="zip">http://happy-kitty.googlecode.com/files/Stringrolled_4.zip</Archive>
+        <Patches>
+            <Patch>paths.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>stringrolled</Name>
+        <RuntimeDependencies>
+            <Dependency>pygame</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/share/stringrolled/gamelib</Path>
+            <Path fileType="library">/usr/share/stringrolled/*.py</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/stringrolled/data</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/stringrolled.desktop">stringrolled.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/stringrolled.png">stringrolled.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/stringrolled">stringrolled</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-06-18</Date>
+            <Version>4</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

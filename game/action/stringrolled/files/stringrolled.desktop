@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=stringrolled
+GenericName=Platform Game
+GenericName[tr]=Platform Oyunu
+Comment=UPSILON CAT in STRINGROLLED
+Comment[tr]=Bir platform oyunu
+Icon=stringrolled
+Exec=stringrolled
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ActionGame;
