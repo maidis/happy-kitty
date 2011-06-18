@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Symbol Machine
+GenericName=Fruit Machine
+GenericName[tr]=Slot Makinesi
+Comment=A Fruit Machine like casino game
+Comment[tr]=Bir slot makinesi oyunu
+Icon=symbolmachine
+Exec=symbolmachine
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;
