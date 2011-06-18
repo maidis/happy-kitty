@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=pyx
+Name[tr]=pyx
+GenericName=Volfied Clone
+GenericName[tr]=Volfied Klonu
+Comment=A Volfied clone
+Comment[tr]=Bir Volfied klonu
+Icon=pyx
+Path=/opt/pyx
+Exec=python /opt/pyx/pyx.py
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>pyx</Name>
+        <Summary xml:lang="tr">Bir Volfied klonu</Summary>
+        <Description xml:lang="tr">Pyx, ekranın %75'ini kaplamaya çalıştığınız Taito'nun Qix'i benzeri bir oyundur. Fakat bu sefer sadece alanları kaplamaya çalışırken değil duvarlardayken de güvende değilsiniz, her taraf sizi avlamaya çalışan yaratıklarla dolu, dikkatli olun.</Description>
+    </Source>
+</PISI>
