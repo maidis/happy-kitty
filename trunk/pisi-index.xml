@@ -3391,6 +3391,58 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>stringrolled</Name>
+            <Homepage>http://www.pyweek.org/e/Rambo</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>as-is</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.action</PartOf>
+            <Summary xml:lang="en">UPSILON CAT in STRINGROLLED</Summary>
+            <Summary xml:lang="tr">Bir platform oyunu</Summary>
+            <Description xml:lang="en">Stringrolled is a game about a cat and a princess (actually, and a ball) are going to escape a castle.</Description>
+            <Description xml:lang="tr">Stringrolled, bir kedi ve bir prensesin (ve aslında bir topun) kaleden kaçması hakkında bir oyundur.</Description>
+            <Icon>stringrolled</Icon>
+            <Archive type="zip" sha1sum="6604746b04972de88708706f880b55189b16cfc2">http://happy-kitty.googlecode.com/files/Stringrolled_4.zip</Archive>
+            <Patches>
+                <Patch>paths.diff</Patch>
+            </Patches>
+            <SourceURI>game/action/stringrolled/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>stringrolled</Name>
+            <RuntimeDependencies>
+                <Dependency>pygame</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/share/stringrolled/gamelib</Path>
+                <Path fileType="library">/usr/share/stringrolled/*.py</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/stringrolled/data</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/stringrolled.desktop" permission="0644" owner="root">stringrolled.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/stringrolled.png" permission="0644" owner="root">stringrolled.png</AdditionalFile>
+                <AdditionalFile target="/usr/bin/stringrolled" permission="0755" owner="root">stringrolled</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-06-18</Date>
+                <Version>4</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>toomanytroopers</Name>
             <Homepage>http://tinyurl.com/too-many-troopers</Homepage>
             <Packager>
