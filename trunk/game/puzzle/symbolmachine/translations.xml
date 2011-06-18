@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>symbolmachine</Name>
+        <Summary xml:lang="tr">Bir slot makinesi oyunu</Summary>
+        <Description xml:lang="tr">Symbol Machine, Fruit Machine benzeri basit bir slot makinesi oyunudur.</Description>
+    </Source>
+</PISI>
