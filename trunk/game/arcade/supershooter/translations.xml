@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>supershooter</Name>
+        <Summary xml:lang="tr">Kurşun yağmurlu bir hepsini vur oyunu</Summary>
+        <Description xml:lang="tr">Supershooter, kurşunların havada uçuştuğu bir uzay oyunudur. Epey yeni olan oyun, daha şimdiden güzel bir oynanabilirlik ve özelleştirme sunuyor.</Description>
+    </Source>
+</PISI>
