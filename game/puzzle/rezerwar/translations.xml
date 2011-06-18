@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>rezerwar</Name>
+        <Summary xml:lang="tr">Bir boru oyunu</Summary>
+        <Description xml:lang="tr">rezerwar, tetromino ve boru oyunlarının ilginç bir birleşiminden oluşmuş bulmaca oyunudur.</Description>
+    </Source>
+</PISI>

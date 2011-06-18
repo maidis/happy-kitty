@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>rezerwar</Name>
+        <Homepage>http://tamentis.com/projects/rezerwar</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <Icon>rezerwar</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A pipe game</Summary>
+        <Description>rezerwar is a puzzle game that could be described as the illegitimate child of a known tetromino game and the average pipe game.</Description>
+        <Archive sha1sum="00e5563175065efc9731584cc028a02c7c1ed8ea" type="targz">http://tamentis.com/projects/rezerwar/files/rezerwar-0.4.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">paths.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>rezerwar</Name>
+        <RuntimeDependencies>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>libsdl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/rezerwar</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/rezerwar.desktop">rezerwar.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/rezerwar.png">rezerwar.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-06-13</Date>
+            <Version>0.4.2</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
