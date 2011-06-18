@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>tong</Name>
+        <Summary xml:lang="tr">Bir Tetris ve Pong karışımı</Summary>
+        <Description xml:lang="tr">TONG, Tetris ve Pong oyunlarının bir araya getirilmesiyle ortaya çıkmış bir oyundur. Her iki oyunun başlıca özellikleri korunarak ve onlara yeni özellikler eklenerek ilginç bir oyun şöleni sunulmaktadır.</Description>
+    </Source>
+</PISI>

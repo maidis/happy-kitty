@@ -1,0 +1,285 @@
+diff -Naur media.cpp media.cpp
+--- media.cpp	2004-12-23 21:31:27.000000000 +0200
++++ media.cpp	2010-11-09 14:47:36.892000051 +0200
+@@ -251,43 +251,43 @@
+     }
+     Mix_AllocateChannels(3); //one sfx channels for tetris, one for pong,
+                              //one for "new rule" and other such noises
+-    rotate1=Mix_LoadWAV("media/swish1.ogg");
++    rotate1=Mix_LoadWAV("/usr/share/tong/swish1.ogg");
+     if(!rotate1) {
+       printf("couldn't load sfx swish1.\n");
+     }
+-    rotate2=Mix_LoadWAV("media/swish2.ogg");
++    rotate2=Mix_LoadWAV("/usr/share/tong/swish2.ogg");
+     if(!rotate2) {
+       printf("couldn't load sfx swish2.\n");
+     }
+-    plop=Mix_LoadWAV("media/plop1.ogg");
++    plop=Mix_LoadWAV("/usr/share/tong/plop1.ogg");
+     if(!plop) {
+       printf("couldn't load sfx plop.\n");
+     }
+-    bust=Mix_LoadWAV("media/wee1.ogg");
++    bust=Mix_LoadWAV("/usr/share/tong/wee1.ogg");
+     if(!bust) {
+       printf("couldn't load sfx bust.\n");
+     }
+-    tick=Mix_LoadWAV("media/tick.ogg");
++    tick=Mix_LoadWAV("/usr/share/tong/tick.ogg");
+     if(!tick) {
+       printf("couldn't load sfx tick.\n");
+     }
+-    bounce1=Mix_LoadWAV("media/bounce1.ogg");
++    bounce1=Mix_LoadWAV("/usr/share/tong/bounce1.ogg");
+     if(!bounce1) {
+       printf("couldn't load sfx bounce1.\n");
+     }
+-    bounce2=Mix_LoadWAV("media/bounce2.ogg");
++    bounce2=Mix_LoadWAV("/usr/share/tong/bounce2.ogg");
+     if(!bounce2) {
+       printf("couldn't load sfx bounce2.\n");
+     }
+-    toing=Mix_LoadWAV("media/toing.ogg");
++    toing=Mix_LoadWAV("/usr/share/tong/toing.ogg");
+     if(!toing) {
+       printf("couldn't load sfx toing.\n");
+     }
+-    newrule=Mix_LoadWAV("media/newrule.ogg");
++    newrule=Mix_LoadWAV("/usr/share/tong/newrule.ogg");
+     if(!newrule) {
+       printf("couldn't load sfx newrule.\n");
+     }
+-    twobits=Mix_LoadWAV("media/twobits.ogg");
++    twobits=Mix_LoadWAV("/usr/share/tong/twobits.ogg");
+     if(!twobits) {
+       printf("couldn't load sfx twobits.\n");
+     }
+@@ -379,33 +379,33 @@
+   if(icon) {
+     SDL_FreeSurface(icon);
+   }
+-  back=read_image("media/background.png");
+-  zone=read_image("media/playzone.png");
+-  title=read_image("media/tong.png");
+-  scorebg=read_image("media/score.png");
+-  timebg=read_image("media/time.png");
+-  timeup=read_image("media/timeup.png");
+-  rulebg=read_image("media/rulespark.png");
+-  ballbounce=read_image("media/ball-bounce.png");
+-  ballignore=read_image("media/ball-ignore.png");
+-  balljoin=read_image("media/ball-join.png");
+-  balldie=read_image("media/ball-die.png");
+-  tetradmove=read_image("media/tetrad-move.png");
+-  tetradignore=read_image("media/tetrad-ignore.png");
+-  tetradjoin=read_image("media/tetrad-join.png");
+-  tetradbreak=read_image("media/tetrad-break.png");
+-  tetraddie=read_image("media/tetrad-die.png");
+-  tetradrotate=read_image("media/tetrad-rotate.png");
+-  tetraddrop=read_image("media/tetrad-drop.png");
+-  stackbreak=read_image("media/stack-break.png");
+-  stackignore=read_image("media/stack-ignore.png");
+-  stackjoin=read_image("media/stack-join.png");
+-  stackdie=read_image("media/stack-die.png");
+-  stacklinebreak=read_image("media/stack-linebreak.png");
+-  nextbg=read_image("media/next.png");
+-  icon=read_image("media/icon.png");
+-  gameover=read_image("media/gameover.png");
+-  youlose=read_image("media/youlose.png");
++  back=read_image("/usr/share/tong/background.png");
++  zone=read_image("/usr/share/tong/playzone.png");
++  title=read_image("/usr/share/tong/tong.png");
++  scorebg=read_image("/usr/share/tong/score.png");
++  timebg=read_image("/usr/share/tong/time.png");
++  timeup=read_image("/usr/share/tong/timeup.png");
++  rulebg=read_image("/usr/share/tong/rulespark.png");
++  ballbounce=read_image("/usr/share/tong/ball-bounce.png");
++  ballignore=read_image("/usr/share/tong/ball-ignore.png");
++  balljoin=read_image("/usr/share/tong/ball-join.png");
++  balldie=read_image("/usr/share/tong/ball-die.png");
++  tetradmove=read_image("/usr/share/tong/tetrad-move.png");
++  tetradignore=read_image("/usr/share/tong/tetrad-ignore.png");
++  tetradjoin=read_image("/usr/share/tong/tetrad-join.png");
++  tetradbreak=read_image("/usr/share/tong/tetrad-break.png");
++  tetraddie=read_image("/usr/share/tong/tetrad-die.png");
++  tetradrotate=read_image("/usr/share/tong/tetrad-rotate.png");
++  tetraddrop=read_image("/usr/share/tong/tetrad-drop.png");
++  stackbreak=read_image("/usr/share/tong/stack-break.png");
++  stackignore=read_image("/usr/share/tong/stack-ignore.png");
++  stackjoin=read_image("/usr/share/tong/stack-join.png");
++  stackdie=read_image("/usr/share/tong/stack-die.png");
++  stacklinebreak=read_image("/usr/share/tong/stack-linebreak.png");
++  nextbg=read_image("/usr/share/tong/next.png");
++  icon=read_image("/usr/share/tong/icon.png");
++  gameover=read_image("/usr/share/tong/gameover.png");
++  youlose=read_image("/usr/share/tong/youlose.png");
+   return;
+ }
+ 
+diff -Naur option.cpp option.cpp
+--- option.cpp	2004-12-23 21:31:27.000000000 +0200
++++ option.cpp	2010-11-09 14:47:36.911000051 +0200
+@@ -1146,37 +1146,37 @@
+   }
+   switch(song) {
+   case MUSIC_I12:
+-    return "media/i12bpvd.ogg";
++    return "/usr/share/tong/i12bpvd.ogg";
+     break;
+   case MUSIC_STUCK:
+-    return "media/stuck-in-a-mailbox.ogg";
++    return "/usr/share/tong/stuck-in-a-mailbox.ogg";
+     break;
+   case MUSIC_DIPLOMAT:
+-    return "media/the-diplomat.ogg";
++    return "/usr/share/tong/the-diplomat.ogg";
+     break;
+   case MUSIC_GITTE:
+-    return "media/gittegitte.ogg";
++    return "/usr/share/tong/gittegitte.ogg";
+     break;
+   case MUSIC_FANFARE:
+-    return "media/fanfare.ogg";
++    return "/usr/share/tong/fanfare.ogg";
+     break;
+   case MUSIC_BEYOND:
+-    return "media/beyond2000.ogg";
++    return "/usr/share/tong/beyond2000.ogg";
+     break;
+   case MUSIC_DONKEY:
+-    return "media/donkeyrhubarb.ogg";
++    return "/usr/share/tong/donkeyrhubarb.ogg";
+     break;
+   case MUSIC_FLOCK:
+-    return "media/flock.ogg";
++    return "/usr/share/tong/flock.ogg";
+     break;
+   case MUSIC_ONELINER:
+-    return "media/one-liner.ogg";
++    return "/usr/share/tong/one-liner.ogg";
+     break;
+   case MUSIC_REACH:
+-    return "media/reachreach.ogg";
++    return "/usr/share/tong/reachreach.ogg";
+     break;
+   case MUSIC_SQUIB:
+-    return "media/squib.ogg";
++    return "/usr/share/tong/squib.ogg";
+     break;
+   case MUSIC_SHUFFLE:
+     printf("GetMusicFile: shouldn't ever get here...\n");
+diff -Naur option.h option.h
+--- option.h	2004-12-23 21:31:27.000000000 +0200
++++ option.h	2010-11-09 14:47:36.914000051 +0200
+@@ -41,7 +41,7 @@
+ #else
+ #define CONFIG_FILENAME ".tong-config"
+ #endif
+-#define MUSIC_PATH "media/music"
++#define MUSIC_PATH "/usr/share/tong/music"
+ 
+ #define NO_REACTION          0
+ 
+diff -Naur pong.cpp pong.cpp
+--- pong.cpp	2004-12-23 21:31:27.000000000 +0200
++++ pong.cpp	2010-11-09 14:47:36.920000051 +0200
+@@ -204,7 +204,7 @@
+ 
+ void Ball::LoadGraphics() {
+   SDL_Surface* temp;
+-  temp=IMG_Load("media/pieces.png");
++  temp=IMG_Load("/usr/share/tong/pieces.png");
+   if(!temp) {
+     printf("Failed to load ball graphics media/pieces.png\n");
+   }
+@@ -218,7 +218,7 @@
+ 
+ void Ball::Xmas() {
+   SDL_Surface *temp;
+-  temp=IMG_Load("media/pieces-xmas.png");
++  temp=IMG_Load("/usr/share/tong/pieces-xmas.png");
+   if(!temp) {
+     printf("Failed to load ball graphics media/pieces-xmas.png\n");
+   } else {
+@@ -470,7 +470,7 @@
+ 
+ void Paddle::LoadGraphics() {
+   SDL_Surface* temp;
+-  temp=IMG_Load("media/pieces.png");
++  temp=IMG_Load("/usr/share/tong/pieces.png");
+   if(!temp) {
+     printf("Failed to load paddle graphics media/pieces.png\n");
+   }
+@@ -484,7 +484,7 @@
+ 
+ void Paddle::Xmas() {
+   SDL_Surface *temp;
+-  temp=IMG_Load("media/pieces-xmas.png");
++  temp=IMG_Load("/usr/share/tong/pieces-xmas.png");
+   if(!temp) {
+     printf("Failed to load paddle graphics media/pieces-xmas.png\n");
+   } else {
+diff -Naur tetris.cpp tetris.cpp
+--- tetris.cpp	2004-12-23 21:31:27.000000000 +0200
++++ tetris.cpp	2010-11-09 14:47:36.926000051 +0200
+@@ -89,7 +89,7 @@
+ 
+ void Tetrad::Xmas() {
+   SDL_Surface *temp;
+-  temp=IMG_Load("media/pieces-xmas.png");
++  temp=IMG_Load("/usr/share/tong/pieces-xmas.png");
+   if(!temp) {
+     printf("Failed to load tetrad graphics media/pieces-xmas.png\n");
+   } else {
+@@ -105,7 +105,7 @@
+ 
+ void Tetrad::LoadGraphics() {
+   SDL_Surface* temp;
+-  temp=IMG_Load("media/pieces.png");
++  temp=IMG_Load("/usr/share/tong/pieces.png");
+   if(!temp) {
+     printf("Failed to load tetrad graphics media/pieces.png\n");
+   }
+@@ -410,7 +410,7 @@
+ 
+ void Bucket::LoadGraphics() {
+   SDL_Surface *temp;
+-  temp=IMG_Load("media/pieces.png");
++  temp=IMG_Load("/usr/share/tong/pieces.png");
+   if(!temp) {
+     printf("Failed to load bucket graphics media/pieces.png\n");
+   }
+@@ -424,7 +424,7 @@
+ 
+ void Bucket::Xmas() {
+   SDL_Surface *temp;
+-  temp=IMG_Load("media/pieces-xmas.png");
++  temp=IMG_Load("/usr/share/tong/pieces-xmas.png");
+   if(!temp) {
+     printf("Failed to load bucket graphics media/pieces-xmas.png\n");
+   } else {
+diff -Naur text.cpp text.cpp
+--- text.cpp	2004-12-23 21:31:27.000000000 +0200
++++ text.cpp	2010-11-09 14:47:36.930000051 +0200
+@@ -34,7 +34,7 @@
+ 
+ void Text::LoadGraphics() {
+   SDL_Surface* ttemp;
+-  ttemp=IMG_Load("media/text.png");
++  ttemp=IMG_Load("/usr/share/tong/text.png");
+   textbits=SDL_DisplayFormatAlpha(ttemp);
+   SDL_FreeSurface(ttemp);
+ }
+@@ -106,10 +106,10 @@
+ 
+ void Menu::LoadGraphics() {
+   SDL_Surface* ttemp;
+-  ttemp=IMG_Load("media/text.png");
++  ttemp=IMG_Load("/usr/share/tong/text.png");
+   textbits=SDL_DisplayFormatAlpha(ttemp);
+   SDL_FreeSurface(ttemp);
+-  ttemp=IMG_Load("media/textbox.png");
++  ttemp=IMG_Load("/usr/share/tong/textbox.png");
+   menubits=SDL_DisplayFormatAlpha(ttemp);
+   SDL_FreeSurface(ttemp);
+ }

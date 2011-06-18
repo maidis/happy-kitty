@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>tong</Name>
+        <Homepage>http://www.nongnu.org/tong</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>tong</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A Tetris and Pong mix</Summary>
+        <Description>TONG is the result of mixing Tetris and Pong, capitalizing on the essential qualities of each classic and adding new twists of its own to make an explosive chemical reaction out of it all.</Description>
+        <Archive sha1sum="a7b1a39f0bb2f81956e36c8240ce66724c97cb7f" type="targz">http://www.nongnu.org/tong/tong-1.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>tong-1.0-fps.patch</Patch>
+            <Patch>tong-1.0-makefile.patch</Patch>
+            <Patch>tong-1.0-paths.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>tong</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/tong</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/tong.desktop">tong.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/tong.png">tong.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-11-09</Date>
+            <Version>1.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
