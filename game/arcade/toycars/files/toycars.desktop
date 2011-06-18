@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=ToyCars
+GenericName=Car Race
+GenericName[tr]=Araba Yarışı
+Exec=toycars
+Icon=toycars
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame
