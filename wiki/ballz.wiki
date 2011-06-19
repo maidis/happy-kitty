@@ -1,0 +1,5 @@
+#summary Platform game with some puzzle elements
+#labels ballz,game,package,arcade,allegro,guichan,dumb
+
+|| B.A.L.L.Z. is a platform game with some puzzle element. You take control of a ball which is genetically modifed by the British secret service. Your mission is to rescue captured British soldiers from a prison in Iran. || <wiki:video url="http://www.youtube.com/watch?v=BGaLgr8z0LQ"/> ||
+||[http://www.allegro.cc/forums/thread/590831 B.A.L.L.Z. Release Page]|| Packager: [ozbekanil] ||
