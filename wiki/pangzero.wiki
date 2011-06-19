@@ -1,0 +1,5 @@
+#summary A fast-paced action game
+#labels pangzero,sdl,game,arcade
+
+|| Pang Zero is a fast-paced action game that involves popping balloons with a harpoon. || <wiki:video url="http://www.youtube.com/watch?v=j2fxFXIvXVM"/> ||
+||[http://apocalypse.rulez.org/pangzero Pang Zero Home Page]|| Packager: [ozbekanil] ||
