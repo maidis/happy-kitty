@@ -1,0 +1,5 @@
+#summary Capitan Sevilla
+#labels capitansevilla,allegro,game,arcade
+
+|| capitan-sevilla is a remake of the spanish game Capitan Sevilla. || <wiki:video url="http://www.youtube.com/watch?v=h76A3AEsp2g"/> ||
+||[http://computeremuzone.com/ficha.php?id=754 capitan-sevilla Home Page]|| Packager: [ozbekanil] ||
