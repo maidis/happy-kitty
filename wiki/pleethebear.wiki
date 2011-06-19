@@ -1,0 +1,5 @@
+#summary A classic 2d platform game
+#labels pleethebear,game,arcade,sdl
+
+|| Plee the Bear will be a 2d platform game like those we found on consoles in the beginning of the 90's. || <wiki:video url="http://www.youtube.com/watch?v=VWSZzPQa75o"/> ||
+||[http://plee-the-bear.sourceforge.net Plee the Bear Home Page]|| Packager: [ozbekanil] ||
