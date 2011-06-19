@@ -1,0 +1,28 @@
+diff -Naur FacialTurd-The-Powder-Toy-0fb9990.orig/includes/luaconsole.h FacialTurd-The-Powder-Toy-0fb9990/includes/luaconsole.h
+--- FacialTurd-The-Powder-Toy-0fb9990.orig/includes/luaconsole.h	2011-06-15 10:35:56.000000000 +0300
++++ FacialTurd-The-Powder-Toy-0fb9990/includes/luaconsole.h	2011-06-19 17:57:38.695000012 +0300
+@@ -5,9 +5,9 @@
+ #include <lauxlib.h>
+ #include <lualib.h>
+ #else
+-#include <lua5.1/lua.h>
+-#include <lua5.1/lauxlib.h>
+-#include <lua5.1/lualib.h>
++#include <lua.h>
++#include <lauxlib.h>
++#include <lualib.h>
+ #endif
+ #include <defines.h>
+ 
+diff -Naur FacialTurd-The-Powder-Toy-0fb9990.orig/Makefile FacialTurd-The-Powder-Toy-0fb9990/Makefile
+--- FacialTurd-The-Powder-Toy-0fb9990.orig/Makefile	2011-06-15 10:35:56.000000000 +0300
++++ FacialTurd-The-Powder-Toy-0fb9990/Makefile	2011-06-19 17:57:06.857000012 +0300
+@@ -9,7 +9,7 @@
+ 
+ CFLAGS := -w -std=c99 -D_POSIX_C_SOURCE=200112L -DLUACONSOLE -Iincludes/
+ OFLAGS := -O3 -ffast-math -ftree-vectorize -funsafe-math-optimizations
+-LFLAGS := -lpthread -lSDL -lm -lbz2 -llua5.1 #-lpython$(PY_VERSION) -L$(PY_LIBPATH) -I$(PY_INCPATH) $(PY_LDFLAGS)
++LFLAGS := -lpthread -lSDL -lm -lbz2 -llua #-lpython$(PY_VERSION) -L$(PY_LIBPATH) -I$(PY_INCPATH) $(PY_LDFLAGS)
+ LFLAGS_X := -lm -lbz2 -lSDLmain -I/Library/Frameworks/Python.framework/Versions/$(PY_VERSION)/include/python$(PY_VERSION)
+ MFLAGS_SSE3 := -march=native -DX86 -DX86_SSE3 -msse3
+ MFLAGS_SSE2 := -march=native -DX86 -DX86_SSE2 -msse2
