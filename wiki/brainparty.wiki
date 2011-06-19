@@ -1,0 +1,5 @@
+#summary A puzzle games set
+#labels brainparty,game,puzzle,sdl
+
+|| Brain Party is a puzzle game made up of 36 minigames designed to push your brain to its limits by testing memory, logic, mathematics, reaction time and more. || <wiki:video url="http://www.youtube.com/watch?v=WXCdQuqkZuc"/> ||
+||[http://www.tuxradar.com/brainparty Brain Party Home Page]|| Packager: [ozbekanil] ||
