@@ -1,0 +1,5 @@
+#summary A 3D tabletennis game
+#labels csmash,sdl,game,sports
+
+|| CannonSmash is a 3D tabletennis game which provides rendition of table tennis that allows the use of the various strategies available in the real game. || <wiki:video url="http://www.youtube.com/watch?v=Gf22XKHy8pY"/> ||
+||[http://cannonsmash.sourceforge.net CannonSmash Home Page]|| Packager: [ozbekanil] ||
