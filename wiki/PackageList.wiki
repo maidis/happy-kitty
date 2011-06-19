@@ -119,7 +119,7 @@
       * [ttt]
       * [tuxfootball]
       * [tuxpuck]
-      * [unknown-horizons]
+      * [unknownhorizons unknown-horizons]
       * [usf]
       * [violetland]
       * [viruskiller]
