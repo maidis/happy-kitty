@@ -24,7 +24,7 @@ We aim to accomplish this goal through a variety of activities:
     * Package all playable (not dead, free or open source, funny) games from [http://www.happypenguin.org/ Happy Penguin] (see [HappyPenguinMission] for details).
     * Package all games from [http://www.playdeb.net/ PlayDeb].
     * Package all games from [http://aur.archlinux.org/packages.php?O=0&K=game&do_Search=Git&PP=25&SB=v&SO=d AUR].
-    * Package all games from [http://qt-apps.org/ Qt-Apps.org].
+    * Package all games from [http://qt-apps.org/index.php?xcontentmode=4250x4251x4252x4253x4254 Qt-Apps.org].
     * Package all requested games at [http://tinyurl.com/3gh8bjc Pardus Bugzilla].
   * Create high quality packages of gaming-related libraries, and game development tools.
   * Document [http://code.google.com/p/happy-kitty/wiki/PackageList the available games].
