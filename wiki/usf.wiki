@@ -1,0 +1,5 @@
+#summary A 2d arcade fight game
+#labels usf,python,pygame,game,arcade
+
+|| Ultimate Smash Friends is a 2d arcade fight game, inspired by the Super Smash Bros Nintendo series. It's written in Python with pygame. || <wiki:video url="http://www.youtube.com/watch?v=yRbPC8tVkeY"/> ||
+||[http://usf.tuxfamily.org Ultimate Smash Friends Home Page]|| Packager: [ozbekanil] ||
