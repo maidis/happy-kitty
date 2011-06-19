@@ -1,0 +1,5 @@
+#summary A physics game with a squirrel
+#labels jamp,sdl,box2d,game,action
+
+|| Jamp is a funny physics game that you control a squirrel with the keyboard and, if you win an object, you can then add it with the mouse. || <wiki:video url="http://www.youtube.com/watch?v=CX1G5vGxo90"/> ||
+||[http://perre.noud.ch/jamp Jamp Home Page]|| Packager: [ozbekanil] ||
