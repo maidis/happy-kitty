@@ -437,6 +437,59 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>supershooter</Name>
+            <Homepage>https://github.com/elcerdo/supershooter</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A shoot them up game with a lot of bullets</Summary>
+            <Summary xml:lang="tr">Kurşun yağmurlu bir hepsini vur oyunu</Summary>
+            <Description xml:lang="en">Supershooter is an awesome SHMUP game with lots of bullets. It is still very young but it is already playable and easily customisable.</Description>
+            <Description xml:lang="tr">Supershooter, kurşunların havada uçuştuğu bir uzay oyunudur. Epey yeni olan oyun, daha şimdiden güzel bir oynanabilirlik ve özelleştirme sunuyor.</Description>
+            <Icon>supershooter</Icon>
+            <Archive type="targz" sha1sum="dc84598f3603dbfa08690c956a0af25940acb71c">http://happy-kitty.googlecode.com/files/elcerdo-supershooter-0.3.2-1-ge89c0e1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>boost-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>ode-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/arcade/supershooter/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>supershooter</Name>
+            <RuntimeDependencies>
+                <Dependency>boost</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>ode</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/supershooter</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-02-13</Date>
+                <Version>0.3.2</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>opensurge</Name>
             <Homepage>http://opensnc.sourceforge.net</Homepage>
             <Packager>
@@ -844,6 +897,153 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>toycars</Name>
+            <Homepage>http://toycars.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>BSD-3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">Top down physics based car racing game</Summary>
+            <Summary xml:lang="tr">Üstten görünümlü araba yarışı oyunu</Summary>
+            <Description xml:lang="en">Toycars is a physics based 2-D racer inspired by Micromachines.</Description>
+            <Description xml:lang="tr">Toycars, Micromachinesis&apos;ten ilham alınarak hazırlanmış ve fizik kurallarına uygun bir 2B araba yarışı oyunudur.</Description>
+            <Icon>toycars</Icon>
+            <Archive type="targz" sha1sum="594f7cd3b586fc68289ea36945464dd4125dfded">mirrors://sourceforge/toycars/toycars/0.3.10/toycars-0.3.10.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>freeglut-devel</Dependency>
+                <Dependency>fltk-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>fmodex</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>toycars-constchar.patch</Patch>
+                <Patch>toycars-list.patch</Patch>
+            </Patches>
+            <SourceURI>game/arcade/toycars/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>toycars</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>freeglut</Dependency>
+                <Dependency>fltk</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>fmodex</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/toycars.desktop" permission="0644" owner="root">toycars.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/toycars.png" permission="0644" owner="root">toycars.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="5">
+                <Date>2011-01-30</Date>
+                <Version>0.3.10</Version>
+                <Comment>Not version bump</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2010-05-05</Date>
+                <Version>0.3.10</Version>
+                <Comment>Version bump</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2008-02-21</Date>
+                <Version>0.3.5</Version>
+                <Comment>Version bump</Comment>
+                <Name>Kenan Pelit</Name>
+                <Email>kpelit@gmail.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2007-06-16</Date>
+                <Version>0.3.3</Version>
+                <Comment>Version bump</Comment>
+                <Name>Kenan Pelit</Name>
+                <Email>kpelit@gmail.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2007-04-03</Date>
+                <Version>0.3.2</Version>
+                <Comment>First release</Comment>
+                <Name>Kenan Pelit</Name>
+                <Email>kpelit@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>schaeublepong</Name>
+            <Homepage>http://ccchb.de/wiki/Sch%C3%A4uble-Pong</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A SDL Pong game</Summary>
+            <Summary xml:lang="tr">Bir SDL Pong oyunu</Summary>
+            <Description xml:lang="en">Schäuble-Pong is a pong game with Wolfgang Schäuble theme used on CCC Bremen party.</Description>
+            <Description xml:lang="tr">Schäuble-Pong, CCC Bremen partisinden kullanılan Wolfgang Schäuble temasını da içeren basit Bir SDL Pong oyunudur.</Description>
+            <Icon>schaeublepong</Icon>
+            <Archive type="targz" sha1sum="748d5070c48fc77fdc26fc0ec7b91d61f35400a1">http://happy-kitty.googlecode.com/files/schaeuble-sdlpong-0.3.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>sdlpong-0.3-paths.patch</Patch>
+            </Patches>
+            <SourceURI>game/arcade/schaeublepong/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>schaeublepong</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-image</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/schaeublepong</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/schaeublepong.desktop" permission="0644" owner="root">schaeublepong.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/schaeublepong.png" permission="0644" owner="root">schaeublepong.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-11-09</Date>
+                <Version>0.3</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>pangzero</Name>
             <Homepage>http://apocalypse.rulez.org/pangzero</Homepage>
             <Packager>
@@ -1236,6 +1436,68 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>roadfighter</Name>
+            <Homepage>http://roadfighter.jorito.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>as-is</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">Konami&apos;s MSX1 classic roadfighter remake</Summary>
+            <Summary xml:lang="tr">Konami&apos;nin MSX1 klasiği roadfighter&apos;ın yenidenyapımı</Summary>
+            <Description xml:lang="en">Road Fighter is a death-race between you and a group of crazy drivers.</Description>
+            <Description xml:lang="tr">Road Fighter, sizin ve bir grup çılgın sürücünün katıldığı ölümcül bir yarış oyunudur.</Description>
+            <Icon>roadfighter</Icon>
+            <Archive type="targz" sha1sum="e6cacf74065fcd27838c66b4c57998f9fdbc2874">http://happy-kitty.googlecode.com/files/roadfighter.src_1.0.1269.tgz</Archive>
+            <BuildDependencies>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-net-devel</Dependency>
+                <Dependency>sdl-ttf-devel</Dependency>
+                <Dependency>sdl-sound-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>1.0.1269-Makefile.patch</Patch>
+                <Patch>roadfighter-1.0.1269-dir.patch</Patch>
+            </Patches>
+            <SourceURI>game/arcade/roadfighter/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>roadfighter</Name>
+            <RuntimeDependencies>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>sdl-net</Dependency>
+                <Dependency>sdl-ttf</Dependency>
+                <Dependency>sdl-sound</Dependency>
+                <Dependency>libsdl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/roadfighter</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/roadfighter.desktop" permission="0644" owner="root">roadfighter.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-11-07</Date>
+                <Version>1.0.1269</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>briquolo</Name>
             <Homepage>http://briquolo.free.fr</Homepage>
             <Packager>
@@ -1479,6 +1741,63 @@
             <Update release="1">
                 <Date>2010-11-03</Date>
                 <Version>0.9</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>toppler</Name>
+            <Homepage>http://toppler.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A reimplementation of the classic jump and run game Nebulus</Summary>
+            <Summary xml:lang="tr">Klasik koş ve zıpla oyunu Nebulus&apos;un bir yeniden yapımı</Summary>
+            <Description xml:lang="en">Tower Toppler is a game that you have to help a cute little green animal switch off some kind of &quot;evil&quot; mechanism. The &quot;power off switch&quot; is hidden somewhere in high towers. On your way to the target you need to avoid a lot of strange robots that guard the tower.</Description>
+            <Description xml:lang="tr">Tower Toppler, küçük şirin yeşil bir hayvana, bir çeşit şeytani mekanizmayı devre dışı bırakması için yardımcı olduğunuz bir oyundur. Kapatma düğmesi, yüksek kulenin bir yerlerinde gizlidir. Hedefe ulaşmak için alacağınız yolda kuleyi koruyan pek çok garip robotu da atlatmanız gerekecek.</Description>
+            <Icon>toppler</Icon>
+            <Archive type="targz" sha1sum="563839ceec44626574fcb10f677d2ab8f82dba29">mirrors://sourceforge/toppler/toppler/1.1.3/toppler-1.1.3.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">toppler-1.1.3-gentoo.patch</Patch>
+                <Patch>toppler-1.1.3-buffer_overflow.patch</Patch>
+                <Patch>toppler-1.1.3-desktopfile.patch</Patch>
+                <Patch>toppler-1.1.3-french.patch</Patch>
+            </Patches>
+            <SourceURI>game/arcade/toppler/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>toppler</Name>
+            <RuntimeDependencies>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>libsdl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/var</Path>
+                <Path fileType="data">/usr/share/toppler</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-06-19</Date>
+                <Version>1.1.3</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -1917,6 +2236,61 @@
                 <Date>2010-11-28</Date>
                 <Version>1.1.0</Version>
                 <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>pyx</Name>
+            <Homepage>http://www.happypenguin.org/show?pyx</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>as-is</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A Volfied clone</Summary>
+            <Summary xml:lang="tr">Bir Volfied klonu</Summary>
+            <Description xml:lang="en">The objective of Pyx is to fill 75% of the screen by blocking of certain sections of the screen. However, you are safe nowhere. At the walls, creatures hunt you, and in the screen, other creatures hunt you. Try to avoid them...Pyx is inspired by the old Qix game by Taito.</Description>
+            <Description xml:lang="tr">Pyx, ekranın %75&apos;ini kaplamaya çalıştığınız Taito&apos;nun Qix&apos;i benzeri bir oyundur. Fakat bu sefer sadece alanları kaplamaya çalışırken değil duvarlardayken de güvende değilsiniz, her taraf sizi avlamaya çalışan yaratıklarla dolu, dikkatli olun.</Description>
+            <Icon>pyx</Icon>
+            <Archive type="tarbz2" sha1sum="b8c2ad31d89346be9b69aa576f4ee9693b05449b">http://happy-kitty.googlecode.com/files/pyx-0.9.tar.bz2</Archive>
+            <SourceURI>game/arcade/pyx/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>pyx</Name>
+            <RuntimeDependencies>
+                <Dependency>pygame</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>smpeg</Dependency>
+                <Dependency>python-numeric</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/opt/pyx/pyx.py</Path>
+                <Path fileType="config">/opt/pyx/scores</Path>
+                <Path fileType="data">/opt/pyx/sounds</Path>
+                <Path fileType="data">/opt/pyx/*.mid</Path>
+                <Path fileType="data">/opt/pyx/*.png</Path>
+                <Path fileType="data">/opt/pyx/*.wav</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/opt/pyx/changes</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/pyx.desktop" permission="0644" owner="root">pyx.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/pyx.png" permission="0644" owner="root">pyx.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-02-17</Date>
+                <Version>0.9</Version>
+                <Comment>First release.</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
             </Update>
@@ -4269,6 +4643,60 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>rezerwar</Name>
+            <Homepage>http://tamentis.com/projects/rezerwar</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>BSD</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A pipe game</Summary>
+            <Summary xml:lang="tr">Bir boru oyunu</Summary>
+            <Description xml:lang="en">rezerwar is a puzzle game that could be described as the illegitimate child of a known tetromino game and the average pipe game.</Description>
+            <Description xml:lang="tr">rezerwar, tetromino ve boru oyunlarının ilginç bir birleşiminden oluşmuş bulmaca oyunudur.</Description>
+            <Icon>rezerwar</Icon>
+            <Archive type="targz" sha1sum="00e5563175065efc9731584cc028a02c7c1ed8ea">http://tamentis.com/projects/rezerwar/files/rezerwar-0.4.2.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">paths.patch</Patch>
+            </Patches>
+            <SourceURI>game/puzzle/rezerwar/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>rezerwar</Name>
+            <RuntimeDependencies>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>libsdl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/rezerwar</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/rezerwar.desktop" permission="0644" owner="root">rezerwar.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/rezerwar.png" permission="0644" owner="root">rezerwar.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-06-13</Date>
+                <Version>0.4.2</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>thebutterflyeffect</Name>
             <Homepage>http://the-butterfly-effect.org</Homepage>
             <Packager>
@@ -4590,6 +5018,64 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>tong</Name>
+            <Homepage>http://www.nongnu.org/tong</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A Tetris and Pong mix</Summary>
+            <Summary xml:lang="tr">Bir Tetris ve Pong karışımı</Summary>
+            <Description xml:lang="en">TONG is the result of mixing Tetris and Pong, capitalizing on the essential qualities of each classic and adding new twists of its own to make an explosive chemical reaction out of it all.</Description>
+            <Description xml:lang="tr">TONG, Tetris ve Pong oyunlarının bir araya getirilmesiyle ortaya çıkmış bir oyundur. Her iki oyunun başlıca özellikleri korunarak ve onlara yeni özellikler eklenerek ilginç bir oyun şöleni sunulmaktadır.</Description>
+            <Icon>tong</Icon>
+            <Archive type="targz" sha1sum="a7b1a39f0bb2f81956e36c8240ce66724c97cb7f">http://www.nongnu.org/tong/tong-1.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>tong-1.0-fps.patch</Patch>
+                <Patch>tong-1.0-makefile.patch</Patch>
+                <Patch>tong-1.0-paths.patch</Patch>
+            </Patches>
+            <SourceURI>game/puzzle/tong/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>tong</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/tong</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/tong.desktop" permission="0644" owner="root">tong.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/tong.png" permission="0644" owner="root">tong.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-11-09</Date>
+                <Version>1.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>popstar</Name>
             <Homepage>http://www.newbreedsoftware.com/popstar</Homepage>
             <Packager>
@@ -4793,6 +5279,53 @@
             <Update release="1">
                 <Date>2010-11-08</Date>
                 <Version>1.3</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>symbolmachine</Name>
+            <Homepage>http://qt-apps.org/content/show.php/Symbol+Machine?content=137076</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A Fruit Machine like casino game</Summary>
+            <Summary xml:lang="tr">Bir slot makinesi oyunu</Summary>
+            <Description xml:lang="en">Symbol Machine is simple casino game like Fruit Machine.</Description>
+            <Description xml:lang="tr">Symbol Machine, Fruit Machine benzeri basit bir slot makinesi oyunudur.</Description>
+            <Icon>symbolmachine</Icon>
+            <Archive type="targz" sha1sum="8e5f016af920e64bba66abd9ce3e63033de69ac4">http://happy-kitty.googlecode.com/files/symbolmachine-1.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>qt-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/puzzle/symbolmachine/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>symbolmachine</Name>
+            <RuntimeDependencies>
+                <Dependency>qt</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/symbolmachine.desktop" permission="0644" owner="root">symbolmachine.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-01-14</Date>
+                <Version>1.0</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -5309,6 +5842,54 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>tanglet</Name>
+            <Homepage>http://gottcode.org/tanglet</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.board</PartOf>
+            <Summary xml:lang="en">Word finding game</Summary>
+            <Summary xml:lang="tr">Kelime bulma oyunu</Summary>
+            <Description xml:lang="en">Tanglet is a single player word finding game based on Boggle. The object of the game is to list as many words as you can before the time runs out. Every time you find a new word, you are given more time.</Description>
+            <Description xml:lang="tr">Tanglet, Boggle temelli, tek kişilik bir kelime bulma oyunudur. Oyunun ulvi amacı süre dolmadan önce olabildiğince çok kelime bulmaktır. Bulduğunuz her yeni kelime size daha çok süre olarak geri dönecektir.</Description>
+            <Icon>tanglet</Icon>
+            <Archive type="tarbz2" sha1sum="ad2ab4e4cff348a9345294fcdcf6d60fc866fd24">http://gottcode.org/tanglet/tanglet-1.1.1-src.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>qt-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>desktop.patch</Patch>
+            </Patches>
+            <SourceURI>game/board/tanglet/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>tanglet</Name>
+            <RuntimeDependencies>
+                <Dependency>qt</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/tanglet</Path>
+                <Path fileType="doc">/usr/share/doc/tanglet</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-07-24</Date>
+                <Version>1.1.1</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>dfight</Name>
             <Homepage>http://www.busydoingnothing.co.uk/dfight</Homepage>
             <Packager>
@@ -5459,6 +6040,107 @@
             <Update release="1">
                 <Date>2011-01-15</Date>
                 <Version>1.0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>qcheckers</Name>
+            <Homepage>http://qt-apps.org/content/show.php/QCheckers?content=117809</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.board</PartOf>
+            <Summary xml:lang="en">Qt checkers game</Summary>
+            <Summary xml:lang="tr">Qt dama oyunu</Summary>
+            <Description xml:lang="en">QCheckers provides Qt Russian (8x8) and International (10x10) checkers game.</Description>
+            <Description xml:lang="tr">QCheckers, Rus (8x8) ve uluslararası (10x10) dama oynayabileceğiniz bir oyundur.</Description>
+            <Icon>qcheckers</Icon>
+            <Archive type="targz" sha1sum="fb5b16b46bd8e9f51d1a81b4b9d85f7cc62263bb">http://qcheckers.googlecode.com/files/QCheckers-20091230.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>qt-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/board/qcheckers/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>qcheckers</Name>
+            <RuntimeDependencies>
+                <Dependency>qt</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/qcheckers.desktop" permission="0644" owner="root">qcheckers.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/qcheckers.png" permission="0644" owner="root">qcheckers.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-01-15</Date>
+                <Version>20091230</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>peg-e</Name>
+            <Homepage>http://gottcode.org/peg-e</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.board</PartOf>
+            <Summary xml:lang="en">Peg solitaire game</Summary>
+            <Summary xml:lang="tr">Bir solo test türevi</Summary>
+            <Description xml:lang="en">Peg-E is a peg solitaire game in which you jump over pieces in order to remove them from the board, ultimately trying to eliminate all but one.</Description>
+            <Description xml:lang="tr">Peg-E, parçaları birbirinin üstünden atlatarak sadece tek bir parça kalmasını sağlamaya çalıştığınız zevkli bir oyundur.</Description>
+            <Icon>peg-e</Icon>
+            <Archive type="tarbz2" sha1sum="75227efcbe0422858dfbaa78190e863fe2d21b98">http://gottcode.org/peg-e/peg-e-1.1.0-src.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>qt-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>desktop.patch</Patch>
+            </Patches>
+            <SourceURI>game/board/peg-e/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>peg-e</Name>
+            <RuntimeDependencies>
+                <Dependency>qt</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="2">
+                <Date>2011-01-30</Date>
+                <Version>1.1.0</Version>
+                <Comment>Make ready package for 2011</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2010-01-26</Date>
+                <Version>1.1.0</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
