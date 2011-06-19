@@ -1,0 +1,5 @@
+#summary An arcade 2D shoot-em-up game
+#labels powermanga,game,sdl,arcade
+
+|| Powermanga is an arcade 2D shoot-em-up game with 41 levels and more than 200 sprites. || <wiki:video url="http://www.youtube.com/watch?v=3DSeqvfmuOc"/> ||
+||[http://linux.tlk.fr/games/Powermanga Powermanga Home Page]|| Packager: [ozbekanil] ||
