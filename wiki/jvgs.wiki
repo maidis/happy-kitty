@@ -1,0 +1,5 @@
+#summary Minimalistic platform game
+#labels jvgs,game,sdl,lua,action
+
+|| JVGS takes place in a world much like ours, which has started fading away. At a point where nearly everything has gone, a poet finds himself, alone in a strange world of danger. He starts a journey along the broken stream of thoughts that's left. || <wiki:video url="http://www.youtube.com/watch?v=UauZgrnKp0c"/> ||
+||[http://jvgs.sourceforge.net JVGS Home Page]|| Packager: [ozbekanil] ||
