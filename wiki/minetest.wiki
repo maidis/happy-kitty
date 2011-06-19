@@ -1,0 +1,5 @@
+#summary A Minecraft clone
+#labels minetest,game,irrlicht,puzzle
+
+|| Minetest is one of the first InfiniMiner / Minecraft inspired games with a goal of taking the survival multiplayer gameplay to a slightly different direction. || <wiki:video url="http://www.youtube.com/watch?v=IJU-PDp9XbU"/> ||
+||[http://celeron.55.lt/~celeron55/minetest Minetest Home Page]|| Packager: [ozbekanil] ||
