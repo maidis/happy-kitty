@@ -1,0 +1,5 @@
+#summary A sidescrolling action game
+#labels worminator,game,action,allegro
+
+|| Worminator is a sidescrolling action game. You play as The Worminator and fight your way through many levels of madness and mayhem. Worminator features nine unique weapons, visible character damage, full screen scrolling, sound and music, and much more! || <wiki:video url="http://www.youtube.com/watch?v=N1ShmTPh5n4"/> ||
+||[http://sourceforge.net/projects/worminator Worminator Home Page]|| Packager: [ozbekanil] ||
