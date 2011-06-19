@@ -1,0 +1,5 @@
+#summary A Worms and Scorched Earth-like game
+#labels atanks,allegro,arcade,package
+
+|| Atomic Tanks is a game in which you control an overly-powerful tank and attempt to blow up other highly powerful tanks. || <wiki:video url="http://www.youtube.com/watch?v=nl6A87g2-mo"/> ||
+||[http://atanks.sourceforge.net/ Atomic Tanks Home Page]|| Packager: [ozbekanil] ||
