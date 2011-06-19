@@ -1,0 +1,5 @@
+#summary Open source Echochrome clone
+#labels lecho,game,puzzle
+
+|| L-Echo is a free and open source clone of the SCEJ game Echochrome. || <wiki:video url="http://www.youtube.com/watch?v=0eGOo36LY9Q"/> ||
+||[http://code.google.com/p/l-echo L-Echo Home Page]|| Packager: [ozbekanil] ||
