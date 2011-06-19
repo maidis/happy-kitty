@@ -1,0 +1,5 @@
+#summary An arcade game with ball
+#labels arcade,qt,package,game,ballway
+
+|| Ballway is an arcade game. Your target is to move the ball to the finish circle. But you can only accelerate the ball in the 4 directions up, down, left and right. || <wiki:video url="http://www.youtube.com/watch?v=dtKeZgiGVYo"/> ||
+||[http://qt-apps.org/content/show.php/Ballway?content=133040 Ballway Home Page]|| Packager: [ozbekanil] ||
