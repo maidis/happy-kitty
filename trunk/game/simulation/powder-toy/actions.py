@@ -8,7 +8,7 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "FacialTurd-The-Powder-Toy-194af75"
+WorkDir = "FacialTurd-The-Powder-Toy-0fb9990"
 
 def build():
     autotools.make("powder")
