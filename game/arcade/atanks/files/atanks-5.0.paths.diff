@@ -1,0 +1,11 @@
+--- Makefile.orig	2011-06-05 03:43:31.000000000 +0300
++++ Makefile	2011-06-19 14:02:02.404000009 +0300
+@@ -4,7 +4,7 @@
+ BINPREFIX = $(PREFIX)
+ 
+ BINDIR = ${BINPREFIX}bin/
+-INSTALLDIR = ${PREFIX}share/games/atanks
++INSTALLDIR = ${PREFIX}share/atanks
+ 
+ export VERSION
+ export PREFIX
