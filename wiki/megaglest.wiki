@@ -1,0 +1,5 @@
+#summary A 3D realtime strategy game in a fantastic world
+#labels megaglest,sdl,strategy,game,lua
+
+|| MegaGlest is a 3D realtime strategy game, where you control the armies of one of seven different factions: Tech, Magic, Egyptians, Indians, Norsemen, Persian or Romans. This project is a fork of the original RTS, Glest. It aims to improve the game and its content with a particular focus on network play. || <wiki:video url="http://www.youtube.com/watch?v=33Ez8mc_PUY"/> ||
+||[http://www.megaglest.org MegaGlest Home Page]|| Packager: [ozbekanil] ||
