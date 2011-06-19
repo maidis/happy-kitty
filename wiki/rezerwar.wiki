@@ -1,0 +1,5 @@
+#summary A pipe game
+#labels rezerwar,sdl,game,puzzle
+
+|| rezerwar is a puzzle game that could be described as the illegitimate child of a known tetromino game and the average pipe game. || <wiki:video url="http://www.youtube.com/watch?v=WMSA-b9lwa0"/> ||
+||[http://tamentis.com/projects/rezerwar rezerwar Home Page]|| Packager: [ozbekanil] ||
