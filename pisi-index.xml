@@ -218,6 +218,68 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>freetennis</Name>
+            <Homepage>http://freetennis.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.sports</PartOf>
+            <Summary xml:lang="en">A tennis simulator</Summary>
+            <Summary xml:lang="tr">Bir tenis simülatörü</Summary>
+            <Description xml:lang="en">Free Tennis is tennis simulator which has strong ai and nice 2d character graphics.</Description>
+            <Description xml:lang="tr">Free Tennis, güçlü yz&apos;ya ve hoş 2b grafiklere sahip bir tenis oyunudur.</Description>
+            <Icon>freetennis</Icon>
+            <Archive type="tarbz2" sha1sum="837df5f7dece0e45b2280b7ceeeb406923bf0759">mirrors://sourceforge/freetennis/freetennis/0.4.8/freetennis-0.4.8.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>ocaml</Dependency>
+                <Dependency>lablgl</Dependency>
+                <Dependency>lablgtk2</Dependency>
+                <Dependency>ocamlsdl</Dependency>
+                <Dependency>camlimages</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>makefile.diff</Patch>
+            </Patches>
+            <SourceURI>game/sports/freetennis/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>freetennis</Name>
+            <RuntimeDependencies>
+                <Dependency>ocaml</Dependency>
+                <Dependency>lablgl</Dependency>
+                <Dependency>lablgtk2</Dependency>
+                <Dependency>ocamlsdl</Dependency>
+                <Dependency>camlimages</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/opt/freetennis/freetennis</Path>
+                <Path fileType="data">/opt/freetennis/graphics</Path>
+                <Path fileType="data">/opt/freetennis/sfx</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/freetennis-1024.desktop" permission="0644" owner="root">freetennis-1024.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/freetennis-1280.desktop" permission="0644" owner="root">freetennis-1280.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/freetennis.png" permission="0644" owner="root">freetennis.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-06-20</Date>
+                <Version>0.4.8</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>slimevolley</Name>
             <Homepage>http://slime.tuxfamily.org</Homepage>
             <Packager>
@@ -7939,6 +8001,154 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>ocaml-autoconf</Name>
+            <Homepage>http://ocaml-autoconf.forge.ocamlcore.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>BSD</License>
+            <IsA>data</IsA>
+            <PartOf>programming.language.ocaml</PartOf>
+            <Summary xml:lang="en">OCaml configuration macros for building</Summary>
+            <Summary xml:lang="tr">İnşa için OCaml yapılandırma makroları</Summary>
+            <Description xml:lang="en">Autoconf macros to support configuration of OCaml programs and libraries.</Description>
+            <Description xml:lang="tr">OCaml programlarını ve kütüphanelerini yapılandırabilmek için Autoconf makroları.</Description>
+            <Archive type="targz" sha1sum="43241406dcea1377a8fc18be8c03d03dd0ff6d61">https://forge.ocamlcore.org/frs/download.php/282/ocaml-autoconf-1.1.tar.gz</Archive>
+            <SourceURI>programming/language/ocaml/ocaml-autoconf/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>ocaml-autoconf</Name>
+            <Files>
+                <Path fileType="data">/usr/share/aclocal</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-01-18</Date>
+                <Version>1.1</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>camlimages</Name>
+            <Homepage>http://gallium.inria.fr/camlimages</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>programming.language.ocaml</PartOf>
+            <Summary xml:lang="en">An image manipulation library for ocaml</Summary>
+            <Summary xml:lang="tr">Objective Caml için bir resim işleme kütüphanesi</Summary>
+            <Description xml:lang="en">CamlImages is an image processing library, which provides basic functions for image processing and loading/saving various image file formats.</Description>
+            <Description xml:lang="tr">CamlImages, Objective Caml için bir resim işleme kütüphanesidir. Resim işleme, çeşitli biçimlerde resim kaydetme ve açma için basit fonksiyonlar sunar.</Description>
+            <Archive type="tarbz2" sha1sum="0800c8f1204fe161a6115422cb701bf26dc273d5">http://dl.dropbox.com/u/1836567/Paketler/camlimages-4.0.0.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>freeglut-devel</Dependency>
+                <Dependency>ocaml</Dependency>
+                <Dependency>tcltk-devel</Dependency>
+                <Dependency>libXpm-devel</Dependency>
+                <Dependency>jpeg-devel</Dependency>
+                <Dependency>freetype-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">camlimages-3.0.2-annot.patch</Patch>
+                <Patch level="1">camlimages-3.0.2-libpng15.patch</Patch>
+                <Patch level="1">camlimages-3.0.2-noxpm.patch</Patch>
+                <Patch level="1">camlimages-3.0.2-ocaml-autoconf11.patch</Patch>
+                <Patch level="1">camlimages-4.0.0-paths.diff</Patch>
+            </Patches>
+            <SourceURI>programming/language/ocaml/camlimages/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>camlimages</Name>
+            <RuntimeDependencies>
+                <Dependency>freeglut</Dependency>
+                <Dependency>ocaml</Dependency>
+                <Dependency>tcltk</Dependency>
+                <Dependency>libXpm</Dependency>
+                <Dependency>jpeg</Dependency>
+                <Dependency>freetype</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib/ocaml</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-06-20</Date>
+                <Version>4.0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>ocamlsdl</Name>
+            <Homepage>http://ocamlsdl.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>LGPLv2.1</License>
+            <IsA>library</IsA>
+            <PartOf>programming.language.ocaml</PartOf>
+            <Summary xml:lang="en">OCaml interface to the SDL</Summary>
+            <Summary xml:lang="tr">SDL için OCaml arayüzü</Summary>
+            <Description xml:lang="en">OCamlSDL is a OCaml interface to the Simple DirectMedia Layer library.</Description>
+            <Description xml:lang="tr">OCamlSDL, Simple DirectMedia Layer için bir OCaml arayüzüdür.</Description>
+            <Archive type="targz" sha1sum="ebccd8c47d3c0ada8b97a7f6de5483197c885194">mirrors://sourceforge/ocamlsdl/OCamlSDL/ocamlsdl-0.8.0/ocamlsdl-0.8.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>ocaml</Dependency>
+                <Dependency>lablgl</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-gfx-devel</Dependency>
+                <Dependency>sdl-ttf-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>programming/language/ocaml/ocamlsdl/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>ocamlsdl</Name>
+            <RuntimeDependencies>
+                <Dependency>ocaml</Dependency>
+                <Dependency>lablgl</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-gfx</Dependency>
+                <Dependency>sdl-ttf</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>sdl-image</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-06-26</Date>
+                <Version>0.8.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>fftw2</Name>
             <Homepage>http://www.fftw.org</Homepage>
             <Packager>
@@ -8248,6 +8458,17 @@
     </Component>
     <Component>
         <Name>programming.language.python</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>programming</Group>
+        <Maintainer>
+            <Name>FIXME</Name>
+            <Email>FIXME</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>programming.language.ocaml</Name>
         <LocalName xml:lang="en">FIXME</LocalName>
         <Summary xml:lang="en">FIXME</Summary>
         <Description xml:lang="en">FIXME</Description>
