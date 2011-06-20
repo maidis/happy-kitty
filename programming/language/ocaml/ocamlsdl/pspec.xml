@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ocamlsdl</Name>
+        <Homepage>http://ocamlsdl.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>OCaml interface to the SDL</Summary>
+        <Description>OCamlSDL is a OCaml interface to the Simple DirectMedia Layer library.</Description>
+        <Archive sha1sum="ebccd8c47d3c0ada8b97a7f6de5483197c885194" type="targz">mirrors://sourceforge/ocamlsdl/OCamlSDL/ocamlsdl-0.8.0/ocamlsdl-0.8.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>ocaml</Dependency>
+            <Dependency>lablgl</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-gfx-devel</Dependency>
+            <Dependency>sdl-ttf-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ocamlsdl</Name>
+        <RuntimeDependencies>
+            <Dependency>ocaml</Dependency>
+            <Dependency>lablgl</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-gfx</Dependency>
+            <Dependency>sdl-ttf</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>sdl-image</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-06-26</Date>
+            <Version>0.8.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

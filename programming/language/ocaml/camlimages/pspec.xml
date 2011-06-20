@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>camlimages</Name>
+        <Homepage>http://gallium.inria.fr/camlimages</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <Summary>An image manipulation library for ocaml</Summary>
+        <Description>CamlImages is an image processing library, which provides basic functions for image processing and loading/saving various image file formats.</Description>
+        <Archive sha1sum="0800c8f1204fe161a6115422cb701bf26dc273d5" type="tarbz2">http://dl.dropbox.com/u/1836567/Paketler/camlimages-4.0.0.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>freeglut-devel</Dependency>
+            <Dependency>ocaml</Dependency>
+            <Dependency>tcltk-devel</Dependency>
+            <Dependency>libXpm-devel</Dependency>
+            <Dependency>jpeg-devel</Dependency>
+            <Dependency>freetype-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">camlimages-3.0.2-annot.patch</Patch>
+            <Patch level="1">camlimages-3.0.2-libpng15.patch</Patch>
+            <Patch level="1">camlimages-3.0.2-noxpm.patch</Patch>
+            <Patch level="1">camlimages-3.0.2-ocaml-autoconf11.patch</Patch>
+            <Patch level="1">camlimages-4.0.0-paths.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>camlimages</Name>
+        <RuntimeDependencies>
+            <Dependency>freeglut</Dependency>
+            <Dependency>ocaml</Dependency>
+            <Dependency>tcltk</Dependency>
+            <Dependency>libXpm</Dependency>
+            <Dependency>jpeg</Dependency>
+            <Dependency>freetype</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/ocaml</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-06-20</Date>
+            <Version>4.0.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
