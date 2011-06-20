@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>camlimages</Name>
+        <Summary xml:lang="tr">Objective Caml için bir resim işleme kütüphanesi</Summary>
+        <Description xml:lang="tr">CamlImages, Objective Caml için bir resim işleme kütüphanesidir. Resim işleme, çeşitli biçimlerde resim kaydetme ve açma için basit fonksiyonlar sunar.</Description>
+    </Source>
+</PISI>

@@ -1,0 +1,12 @@
+diff -Naur camlimages-4.0.0.orig/configure.ac camlimages-4.0.0/configure.ac
+--- camlimages-4.0.0.orig/configure.ac	2011-01-25 16:10:44.000000000 +0200
++++ camlimages-4.0.0/configure.ac	2011-06-20 16:18:15.583000042 +0300
+@@ -103,7 +103,7 @@
+ if test "$with_ocamlfind" = "no"; then
+   OCAMLSITELIBDIR=$OCAMLLIB/camlimages
+ else
+-  OCAMLSITELIBDIR=$OCAMLLIB/site-lib/camlimages
++  OCAMLSITELIBDIR=$OCAMLLIB/camlimages
+ fi
+ AC_SUBST(OCAMLSITELIBDIR)
+ 

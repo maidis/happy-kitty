@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>ocamlsdl</Name>
+        <Summary xml:lang="tr">SDL için OCaml arayüzü</Summary>
+        <Description xml:lang="tr">OCamlSDL, Simple DirectMedia Layer için bir OCaml arayüzüdür.</Description>
+    </Source>
+</PISI>

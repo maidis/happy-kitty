@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>ocaml-autoconf</Name>
+        <Summary xml:lang="tr">İnşa için OCaml yapılandırma makroları</Summary>
+        <Description xml:lang="tr">OCaml programlarını ve kütüphanelerini yapılandırabilmek için Autoconf makroları.</Description>
+    </Source>
+</PISI>

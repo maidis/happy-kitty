@@ -275,5 +275,16 @@
                 <Email>FIXME</Email>
             </Maintainer>
         </Component>
+        <Component>
+            <Name>programming.language.ocaml</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>programming</Group>
+            <Maintainer>
+                <Name>FIXME</Name>
+                <Email>FIXME</Email>
+            </Maintainer>
+        </Component>
     </Components>
 </PISI>

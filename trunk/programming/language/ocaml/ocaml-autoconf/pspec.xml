@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ocaml-autoconf</Name>
+        <Homepage>http://ocaml-autoconf.forge.ocamlcore.org</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>data</IsA>
+        <Summary>OCaml configuration macros for building</Summary>
+        <Description>Autoconf macros to support configuration of OCaml programs and libraries.</Description>
+        <Archive sha1sum="43241406dcea1377a8fc18be8c03d03dd0ff6d61" type="targz">https://forge.ocamlcore.org/frs/download.php/282/ocaml-autoconf-1.1.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>ocaml-autoconf</Name>
+        <Files>
+            <Path fileType="data">/usr/share/aclocal</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-01-18</Date>
+            <Version>1.1</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
