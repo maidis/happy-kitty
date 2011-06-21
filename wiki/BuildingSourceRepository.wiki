@@ -153,7 +153,7 @@ everything in a single index file.
 }}}
 
 = References =
-  * [http://tr.pardus-wiki.org/NASIL:Paket_deposu_haz%C4%B1rlamak Paket deposu hazırlamak (Turkish)]
+  * [http://tr.pardus-wiki.org/Pardus:Paket_deposu_haz%C4%B1rlamak Paket deposu hazırlamak (Turkish)]
   * [http://developer.pardus.org.tr/guides/releasing/repository_concepts/index.html Repository Concepts]
   * [https://svn.pardus.org.tr/pardus/2011/devel/ Pardus 2011/devel repository]
   * [http://paketler.pardus-linux.org/P2011/i686/ Pardus-Linux.org P2011/i686 repository]
