@@ -1355,7 +1355,7 @@
             <Description xml:lang="en">bitefusion is a snake game with 8 levels.</Description>
             <Description xml:lang="tr">bitefusion, 8 bölümlü bir yılan oyunudur.</Description>
             <Icon>bitefusion</Icon>
-            <Archive type="targz" sha1sum="366abc1b1ec5aec0f8443412edd187395faeda51">http://dl.dropbox.com/u/1836567/Paketler/bitefusion-1.0.1.tar.gz</Archive>
+            <Archive type="targz" sha1sum="366abc1b1ec5aec0f8443412edd187395faeda51">http://happy-kitty.googlecode.com/files/bitefusion-1.0.1.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>libsdl-devel</Dependency>
             </BuildDependencies>
@@ -1685,7 +1685,7 @@
             <Description xml:lang="en">Ballway is an arcade game. Your target is to move the ball to the finish circle. But you can only accelerate the ball in the 4 directions up, down, left and right.</Description>
             <Description xml:lang="tr">Ballway, bir ateri oyunudur. Oyundaki hedefiniz topu bitişteki çemberin içine taşımaktır. Fakat topu yalnızca yukarı, aşağı, sağa ve sola doğru hareket ettirebilirsiniz.</Description>
             <Icon>ballway</Icon>
-            <Archive type="tarbz2" sha1sum="a06cf51ced4f9ecde8642711e5b80d5f37e203fa">http://dl.dropbox.com/u/1836567/Paketler/ballway-1.0.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="a06cf51ced4f9ecde8642711e5b80d5f37e203fa">http://happy-kitty.googlecode.com/files/ballway-1.0.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>qt-devel</Dependency>
             </BuildDependencies>
@@ -2650,7 +2650,7 @@
             <Description xml:lang="en">Bomb attack is an arcade game based on the long-running Bomberman franchise.</Description>
             <Description xml:lang="tr">Bomb attack, uzun soluklu Bomberman&apos;ı temel alan ateri tarzı bir oyundur.</Description>
             <Icon>bombattack</Icon>
-            <Archive type="targz" sha1sum="d202a53cb359cf162c89cd7dea6424ccb3b78647">http://dl.dropbox.com/u/1836567/Paketler/bombattack-1.0.tar.gz</Archive>
+            <Archive type="targz" sha1sum="d202a53cb359cf162c89cd7dea6424ccb3b78647">http://happy-kitty.googlecode.com/files/bombattack-1.0.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>libsdl-devel</Dependency>
                 <Dependency>sdl-mixer-devel</Dependency>
@@ -3399,7 +3399,7 @@
             <Description xml:lang="en">Jamp is a funny physics game that you control a squirrel with the keyboard and, if you win an object, you can then add it with the mouse.</Description>
             <Description xml:lang="tr">Jamp, klavye ile bir sincabı kontrol ettiğiniz, fare ile ise bölümde topladığınız nesneleri kullandığınız ve fiziki bir dünyada ile etkileştiğiniz eğlenceli bir oyundur.</Description>
             <Icon>jamp</Icon>
-            <Archive type="targz" sha1sum="da622561e0d12d8e5028e6e7d98c08bd1de2e515">http://dl.dropbox.com/u/1836567/Paketler/jamp-1.0.2.tar.gz</Archive>
+            <Archive type="targz" sha1sum="da622561e0d12d8e5028e6e7d98c08bd1de2e515">http://happy-kitty.googlecode.com/files/jamp-1.0.2.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>sdl-image-devel</Dependency>
                 <Dependency>sdl-mixer-devel</Dependency>
@@ -6446,6 +6446,7 @@
             <Summary xml:lang="tr">Bir kurtarma helikopteri simülatörü</Summary>
             <Description xml:lang="en">Search and Rescue II is a rescue helicopter simulator for Linux. It features several missions in which the player pilots a helicopter in order to rescue people in distress. There are several scenarios and helicopter models.</Description>
             <Description xml:lang="tr">Search and Rescue II, GNU/Linux için bir kurtarma helikopteri simülatörüdür. Oyuncuların bir helikopteri kullanarak kaza geçirmiş insanları kurtarmaya çalıştığı çeşitli görevler sunuyor. Oyunda farklı senaryolar ve helikopter modelleri bulunuyor.</Description>
+            <Icon>sar2</Icon>
             <Archive type="tarbz2" sha1sum="c41e38cb725e9aae1f833c6908cbce1a2a9ced6b">mirrors://sourceforge/sar2/sar2-2.3.0.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>libX11-devel</Dependency>
@@ -8030,7 +8031,7 @@
             <Summary xml:lang="tr">Bennu Oyun Geliştirme</Summary>
             <Description xml:lang="en">Bennu is a high level open source game development suite which focuses on modularity and portability, making it a perfect choice for cross-platform game development.</Description>
             <Description xml:lang="tr">Bennu, modülerliğe ve taşınabilirliğe odaklanmış ve platform bağımsız geliştirme için harika seçimlerden biri olan özgür bir oyun geliştirme takımıdır.</Description>
-            <Archive type="targz" sha1sum="9a4f6065a82a7f454e218be4ff2081fa4b93a0be">http://dl.dropbox.com/u/1836567/Paketler/bennugd.tar.gz</Archive>
+            <Archive type="targz" sha1sum="9a4f6065a82a7f454e218be4ff2081fa4b93a0be">http://happy-kitty.googlecode.com/files/bennugd.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>libsdl-devel</Dependency>
                 <Dependency>sdl-mixer-devel</Dependency>
