@@ -9,7 +9,7 @@ from pisi.actionsapi import scons
 from pisi.actionsapi import get
 
 def build():
-    scons.make("SEARCHANDRESCUE2_DATA=/usr/share/sar2")
+    scons.make()
 
 def install():
     pisitools.dobin("bin/sar2")

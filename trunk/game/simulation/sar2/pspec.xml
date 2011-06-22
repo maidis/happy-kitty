@@ -10,6 +10,7 @@
         </Packager>
         <IsA>app:gui</IsA>
         <License>GPLv2</License>
+        <Icon>sar2</Icon>
         <Summary>A rescue helicopter simulator</Summary>
         <Description>Search and Rescue II is a rescue helicopter simulator for Linux. It features several missions in which the player pilots a helicopter in order to rescue people in distress. There are several scenarios and helicopter models.</Description>
         <Archive sha1sum="c41e38cb725e9aae1f833c6908cbce1a2a9ced6b" type="tarbz2">mirrors://sourceforge/sar2/sar2-2.3.0.tar.bz2</Archive>
