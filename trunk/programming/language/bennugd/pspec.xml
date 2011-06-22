@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>Bennu Game Development</Summary>
         <Description>Bennu is a high level open source game development suite which focuses on modularity and portability, making it a perfect choice for cross-platform game development.</Description>
-        <Archive sha1sum="9a4f6065a82a7f454e218be4ff2081fa4b93a0be" type="targz">http://dl.dropbox.com/u/1836567/Paketler/bennugd.tar.gz</Archive>
+        <Archive sha1sum="9a4f6065a82a7f454e218be4ff2081fa4b93a0be" type="targz">http://happy-kitty.googlecode.com/files/bennugd.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libsdl-devel</Dependency>
             <Dependency>sdl-mixer-devel</Dependency>

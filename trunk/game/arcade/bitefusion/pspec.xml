@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A snake game</Summary>
         <Description>bitefusion is a snake game with 8 levels.</Description>
-        <Archive sha1sum="366abc1b1ec5aec0f8443412edd187395faeda51" type="targz">http://dl.dropbox.com/u/1836567/Paketler/bitefusion-1.0.1.tar.gz</Archive>
+        <Archive sha1sum="366abc1b1ec5aec0f8443412edd187395faeda51" type="targz">http://happy-kitty.googlecode.com/files/bitefusion-1.0.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libsdl-devel</Dependency>
         </BuildDependencies>
