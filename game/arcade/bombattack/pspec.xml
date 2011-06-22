@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A Bomberman game</Summary>
         <Description>Bomb attack is an arcade game based on the long-running Bomberman franchise.</Description>
-        <Archive sha1sum="d202a53cb359cf162c89cd7dea6424ccb3b78647" type="targz">http://dl.dropbox.com/u/1836567/Paketler/bombattack-1.0.tar.gz</Archive>
+        <Archive sha1sum="d202a53cb359cf162c89cd7dea6424ccb3b78647" type="targz">http://happy-kitty.googlecode.com/files/bombattack-1.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libsdl-devel</Dependency>
             <Dependency>sdl-mixer-devel</Dependency>

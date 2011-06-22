@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>An arcade game with ball</Summary>
         <Description>Ballway is an arcade game. Your target is to move the ball to the finish circle. But you can only accelerate the ball in the 4 directions up, down, left and right.</Description>
-        <Archive sha1sum="a06cf51ced4f9ecde8642711e5b80d5f37e203fa" type="tarbz2">http://dl.dropbox.com/u/1836567/Paketler/ballway-1.0.tar.bz2</Archive>
+        <Archive sha1sum="a06cf51ced4f9ecde8642711e5b80d5f37e203fa" type="tarbz2">http://happy-kitty.googlecode.com/files/ballway-1.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
         </BuildDependencies>

@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A physics game with a squirrel</Summary>
         <Description>Jamp is a funny physics game that you control a squirrel with the keyboard and, if you win an object, you can then add it with the mouse.</Description>
-        <Archive sha1sum="da622561e0d12d8e5028e6e7d98c08bd1de2e515" type="targz">http://dl.dropbox.com/u/1836567/Paketler/jamp-1.0.2.tar.gz</Archive>
+        <Archive sha1sum="da622561e0d12d8e5028e6e7d98c08bd1de2e515" type="targz">http://happy-kitty.googlecode.com/files/jamp-1.0.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>sdl-image-devel</Dependency>
             <Dependency>sdl-mixer-devel</Dependency>
