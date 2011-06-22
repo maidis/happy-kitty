@@ -6433,6 +6433,75 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>sar2</Name>
+            <Homepage>http://sar2.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.simulation</PartOf>
+            <Summary xml:lang="en">A rescue helicopter simulator</Summary>
+            <Summary xml:lang="tr">Bir kurtarma helikopteri simülatörü</Summary>
+            <Description xml:lang="en">Search and Rescue II is a rescue helicopter simulator for Linux. It features several missions in which the player pilots a helicopter in order to rescue people in distress. There are several scenarios and helicopter models.</Description>
+            <Description xml:lang="tr">Search and Rescue II, GNU/Linux için bir kurtarma helikopteri simülatörüdür. Oyuncuların bir helikopteri kullanarak kaza geçirmiş insanları kurtarmaya çalıştığı çeşitli görevler sunuyor. Oyunda farklı senaryolar ve helikopter modelleri bulunuyor.</Description>
+            <Archive type="tarbz2" sha1sum="c41e38cb725e9aae1f833c6908cbce1a2a9ced6b">mirrors://sourceforge/sar2/sar2-2.3.0.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>libX11-devel</Dependency>
+                <Dependency>libSM-devel</Dependency>
+                <Dependency>libXmu-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>freealut-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>libICE-devel</Dependency>
+                <Dependency>libXpm-devel</Dependency>
+                <Dependency>openal-devel</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>libvorbis-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">sar2-2.3.0-paths.diff</Patch>
+            </Patches>
+            <SourceURI>game/simulation/sar2/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>sar2</Name>
+            <RuntimeDependencies>
+                <Dependency>libX11</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libXmu</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>freealut</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>libXpm</Dependency>
+                <Dependency>openal</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libvorbis</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/sar2</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-06-22</Date>
+                <Version>2.3.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>fann</Name>
             <Homepage>http://leenissen.dk/fann</Homepage>
             <Packager>
