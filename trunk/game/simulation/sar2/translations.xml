@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>sar2</Name>
+        <Summary xml:lang="tr">Bir kurtarma helikopteri simülatörü</Summary>
+        <Description xml:lang="tr">Search and Rescue II, GNU/Linux için bir kurtarma helikopteri simülatörüdür. Oyuncuların bir helikopteri kullanarak kaza geçirmiş insanları kurtarmaya çalıştığı çeşitli görevler sunuyor. Oyunda farklı senaryolar ve helikopter modelleri bulunuyor.</Description>
+    </Source>
+</PISI>

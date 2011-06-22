@@ -1,0 +1,36 @@
+diff -Naur sar2-2.3.0.orig/data/objects/hanger01.3d sar2-2.3.0/data/objects/hanger01.3d
+--- sar2-2.3.0.orig/data/objects/hanger01.3d	2011-06-13 01:56:27.000000000 +0300
++++ sar2-2.3.0/data/objects/hanger01.3d	2011-06-22 20:49:40.032000038 +0300
+@@ -15,7 +15,7 @@
+ #$light 7 0 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000/0.000000/0.000000/1.000000 0.000000/0.000000/0.000000/1.000000 0.000000/0.000000/0.000000/1.000000 0.000000 180.000000 1.000000 0.000000 0.000000
+ begin_header
+ author 
+-texture_base_directory /usr/share/games/SearchAndRescue
++texture_base_directory /usr/share/sar2
+ texture_load hanger01 textures/hanger01.tex 0.600000
+ texture_load hanger02 textures/hanger02.tex 0.800000
+ end_header
+diff -Naur sar2-2.3.0.orig/INSTALL sar2-2.3.0/INSTALL
+--- sar2-2.3.0.orig/INSTALL	2011-06-13 01:56:29.000000000 +0300
++++ sar2-2.3.0/INSTALL	2011-06-22 20:48:26.456000038 +0300
+@@ -64,7 +64,7 @@
+         These are some important files that will be installed:
+ 
+         '/usr/bin/sar2' for the binary executable.
+-        '/usr/share/games/sar2/' for the data files.
++        '/usr/share/sar2/' for the data files.
+         '/usr/man/man6/SearchAndRescue.6.bz2' for the manual.
+         '$HOME/.config/sar2' for the game configuration.
+ 
+diff -Naur sar2-2.3.0.orig/src/config.h sar2-2.3.0/src/config.h
+--- sar2-2.3.0.orig/src/config.h	2011-06-13 01:56:37.000000000 +0300
++++ sar2-2.3.0/src/config.h	2011-06-22 20:50:08.973000037 +0300
+@@ -509,7 +509,7 @@
+ #define SAR_DEF_LOCAL_DATA_DIR  ".config/sar2"
+ 
+ /* Game data dir */
+-#define SAR_DEF_GLOBAL_DATA_DIR "/usr/share/games/sar2"
++#define SAR_DEF_GLOBAL_DATA_DIR "/usr/share/sar2"
+ 
+ /* Subdirs, one of each in the local and global game dirs */
+ #define SAR_DEF_AIRCRAFTS_DIR		"aircrafts"
