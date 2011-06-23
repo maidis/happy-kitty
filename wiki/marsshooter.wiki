@@ -1,0 +1,5 @@
+#summary A random shooter
+#labels marsshooter,sfml,game,mesa,arcade
+
+|| M.A.R.S. is a ridiculous space shooter with nice graphics. It is a game for two players, flying with ships in a two-dimensional space setting, governed by the laws of gravity. || <wiki:video url="http://www.youtube.com/watch?v=o73TDDfZtjE"/> ||
+||[http://mars-game.sourceforge.net/ M.A.R.S. Home Page]|| Packager: [ozbekanil] ||
