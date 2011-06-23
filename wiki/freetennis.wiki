@@ -1,0 +1,5 @@
+#summary A tennis simulator
+#labels freetennis,ocaml,lablgl,lablgtk2,ocamlsdl,camlimages,gamesports
+
+|| Free Tennis is tennis simulator which has strong ai and nice 2d character graphics. || <wiki:video url="http://www.youtube.com/watch?v=qA7EXFStcA8"/> ||
+||[http://freetennis.sourceforge.net Free Tennis Home Page]|| Packager: [ozbekanil] ||
