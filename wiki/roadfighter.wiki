@@ -1,0 +1,5 @@
+#summary Konami's MSX1 classic roadfighter remake
+#labels roadfighter,arcade,sdl,game
+
+|| Road Fighter is a death-race between you and a group of crazy drivers. || <wiki:video url="http://www.youtube.com/watch?v=IulOBg9XYfc"/> ||
+||[http://roadfighter.jorito.net Road Fighter Home Page]|| Packager: [ozbekanil] ||
