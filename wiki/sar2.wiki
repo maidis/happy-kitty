@@ -1,0 +1,5 @@
+#summary A rescue helicopter simulator
+#labels sar2,sdl,openal,game,simulation
+
+|| Search and Rescue II is a rescue helicopter simulator for Linux. It features several missions in which the player pilots a helicopter in order to rescue people in distress. There are several scenarios and helicopter models. || <wiki:video url="http://www.youtube.com/watch?v=9NBfK_P5_ZY"/> ||
+||[http://sar2.sourceforge.net Search and Rescue II Home Page]|| Packager: [ozbekanil] ||
