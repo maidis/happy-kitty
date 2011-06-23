@@ -1,0 +1,5 @@
+#summary An addictive block game
+#labels briquolo,sdl,game,arcade
+
+|| BRIQUOLO is a breakout with 3D representation based on OpenGL. || <wiki:video url="http://www.youtube.com/watch?v=mZ30CGPgUNU"/> ||
+||[http://briquolo.free.fr BRIQUOLO Home Page]|| Packager: [ozbekanil] ||
