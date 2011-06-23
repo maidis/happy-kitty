@@ -1,0 +1,5 @@
+#summary A 3d marble game
+#labels cgmadness,freeglut,glew,mesa,game,action
+
+|| CG Madness is a clone of the classic game Marble Madness. It is running on OpenGL and uses current CG techniques like light maps, bump-mapping and reflection shader. It also has an editor where you can create your own levels. || <wiki:video url="http://www.youtube.com/watch?v=52ol4aU55QA"/> ||
+||[http://icculus.org/airstrike/ CG Madness Home Page]|| Packager: [ozbekanil] ||
