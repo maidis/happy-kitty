@@ -1,0 +1,5 @@
+#summary A 2d arcade puzzle game
+#labels bubblechains,qt,sdl,game,puzzle
+
+|| Bubble Chains is a 2d arcade puzzle game. The aim is to collect chains of same-color bubbles, and to destroy all the target items. || <wiki:video url="http://www.youtube.com/watch?v=IW_ADc8k3qw"/> ||
+||[http://bubble-chains.sintegrial.com/ Bubble Chains Home Page]|| Packager: [ozbekanil] ||
