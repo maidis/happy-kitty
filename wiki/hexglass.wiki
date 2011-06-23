@@ -1,0 +1,5 @@
+#summary Tetris-like puzzle game
+#labels hexglass,game,puzzle,qt
+
+|| The HexGlass is a Tetris-like puzzle game. Ten different types of blocks continuously fall from above and you must arrange them to make horizontal rows of hexagonal bricks. Completing any row causes those hexagonal blocks to disappear and the rest above move downwards. The blocks above gradually fall faster and the game is over when the screen fills up and blocks can no longer fall from the top. || <wiki:video url="http://www.youtube.com/watch?v=3OWWHIPjx2Y"/> ||
+||[http://code.google.com/p/hexglass HexGlass Home Page]|| Packager: [ozbekanil] ||
