@@ -1,0 +1,5 @@
+#summary A pinball simulator
+#labels pinball,game,sdl,mesa,action
+
+|| The Emilia Pinball project is an open source pinball simulator. || <wiki:video url="http://www.youtube.com/watch?v=OrAqe4rwZRE"/> ||
+||[http://pinball.sourceforge.net/ Emilia Pinball Home Page]|| Packager: [ozbekanil] ||
