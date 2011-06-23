@@ -1,0 +1,5 @@
+#summary A multi-player 2D space combat game
+#labels bitfighter,freealut,freeglut,openal,mesa,action,game
+
+|| Bitfighter is a free multi-player 2D space combat game with Robotron-like controls. It's a team based strategy game featuring retro vector graphics and customizable ships. It's fast, fun, and frenetic. || <wiki:video url="http://www.youtube.com/watch?v=USQVqL_BgEM"/> ||
+||[http://bitfighter.org Bitfighter Home Page]|| Packager: [ozbekanil] ||
