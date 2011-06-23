@@ -1,0 +1,5 @@
+#summary A networked clone of the fighting game Mortal Kombat
+#labels openmortal,sdl,action,game
+
+|| OpenMortal is a spoof of the original Mortal Kombat fighting game. The funny thing about OpenMortal is that you can play the game AS YOURSELF. || <wiki:video url="http://www.youtube.com/watch?v=sMoi-P39cgI"/> ||
+||[http://openmortal.sourceforge.net OpenMortal Home Page]|| Packager: [ozbekanil] ||
