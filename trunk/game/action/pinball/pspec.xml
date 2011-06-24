@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A pinball simulator</Summary>
         <Description>The Emilia Pinball project is an open source pinball simulator.</Description>
-        <Archive type="targz" sha1sum="121ed9e05d0f51dbe53d0b1d290b33b7512dd4b6">http://dl.dropbox.com/u/1836567/Paketler/pinball-0.3.1.tar.gz</Archive>
+        <Archive type="targz" sha1sum="121ed9e05d0f51dbe53d0b1d290b33b7512dd4b6">http://happy-kitty.googlecode.com/files/pinball-0.3.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libsdl-devel</Dependency>
             <Dependency>sdl-image-devel</Dependency>
