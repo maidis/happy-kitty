@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>A game similar to Crimsonland</Summary>
         <Description>violetland is a game where a girl, Violet, struggles with hordes of monsters.</Description>
-        <Archive sha1sum="70b736cba6fe13f6c1bcf60d1bd4be0a955eed59" type="zip">http://violetland.googlecode.com/files/violetland-v0.4.1-src.zip</Archive>
+        <Archive sha1sum="1f84510a8eb376da50da6262fadfe0ad88664644" type="zip">http://violetland.googlecode.com/files/violetland-v0.4.2-src.zip</Archive>
         <BuildDependencies>
             <Dependency>libsdl-devel</Dependency>
             <Dependency>sdl-image-devel</Dependency>
@@ -48,6 +48,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2011-06-24</Date>
+            <Version>0.4.2</Version>
+            <Comment>Version bump</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="3">
             <Date>2011-06-11</Date>
             <Version>0.4.1</Version>
