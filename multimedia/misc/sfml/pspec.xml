@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Simple and Fast Multimedia Library</Summary>
         <Description>SFML is a simple, fast, cross-platform, and object-oriented multimedia API.</Description>
-        <Archive sha1sum="dcf9e9bf2410cd8394f3884e2dca2be96dc5d069" type="targz">http://dl.dropbox.com/u/1836567/Paketler/LaurentGomila-SFML-0e826d8.tar.gz</Archive>
+        <Archive sha1sum="69b01a746575d9369cfdbbd78222bc4772ebb19d" type="targz">http://dl.dropbox.com/u/1836567/Paketler/LaurentGomila-SFML-f9435eb.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>freetype-devel</Dependency>
             <Dependency>glew-devel</Dependency>
@@ -24,6 +24,7 @@
             <Dependency>libsndfile-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
             <Dependency>openal-devel</Dependency>
+            <Dependency>doxygen</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -76,6 +77,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2011-06-27</Date>
+            <Version>2.0</Version>
+            <Comment>Sync with git version</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-04-21</Date>
             <Version>2.0</Version>
