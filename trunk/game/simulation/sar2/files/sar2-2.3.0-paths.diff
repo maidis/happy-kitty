@@ -22,15 +22,3 @@ diff -Naur sar2-2.3.0.orig/INSTALL sar2-2.3.0/INSTALL
          '/usr/man/man6/SearchAndRescue.6.bz2' for the manual.
          '$HOME/.config/sar2' for the game configuration.
  
-diff -Naur sar2-2.3.0.orig/src/config.h sar2-2.3.0/src/config.h
---- sar2-2.3.0.orig/src/config.h	2011-06-13 01:56:37.000000000 +0300
-+++ sar2-2.3.0/src/config.h	2011-06-22 20:50:08.973000037 +0300
-@@ -509,7 +509,7 @@
- #define SAR_DEF_LOCAL_DATA_DIR  ".config/sar2"
- 
- /* Game data dir */
--#define SAR_DEF_GLOBAL_DATA_DIR "/usr/share/games/sar2"
-+#define SAR_DEF_GLOBAL_DATA_DIR "/usr/share/sar2"
- 
- /* Subdirs, one of each in the local and global game dirs */
- #define SAR_DEF_AIRCRAFTS_DIR		"aircrafts"
