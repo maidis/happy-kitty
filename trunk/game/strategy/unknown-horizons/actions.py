@@ -7,6 +7,8 @@
 from pisi.actionsapi import pythonmodules
 from pisi.actionsapi import pisitools
 
+WorkDir = "unknown-horizons"
+
 def build():
     pythonmodules.compile()
 

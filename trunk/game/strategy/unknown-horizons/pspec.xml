@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A 2D realtime strategy simulation</Summary>
         <Description>Unknown Horizons is a 2D realtime strategy simulation with an emphasis on economy and city building. Expand your small settlement to a strong and wealthy colony, collect taxes and supply your inhabitants with valuable goods. Increase your power with a well balanced economy and with strategic trade and diplomacy.</Description>
-        <Archive sha1sum="e83e722a47e28ef38e29c4fc2963f52ab38c5ca9" type="tarbz2">http://dl.dropbox.com/u/1836567/Paketler/unknown-horizons-2011.06.tar.bz2</Archive>
+        <Archive sha1sum="bf382c12487106b2787b1d12d86417feb835f2a6" type="targz">mirrors://sourceforge/unknownhorizons/Unknown%20Horizons/2011.2/unknown-horizons-2011.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>fife</Dependency>
             <Dependency>python-PyYAML</Dependency>
@@ -41,6 +41,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2011-07-02</Date>
+            <Version>2011.02</Version>
+            <Comment>Version bump, this is weird but true</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-06-12</Date>
             <Version>2011.06</Version>
