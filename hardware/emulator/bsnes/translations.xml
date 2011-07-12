@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>bsnes</Name>
+        <Summary xml:lang="tr">Bir Super Nintendo Entertainment System emülatörü</Summary>
+        <Description xml:lang="tr">bsnes, doğruluğa, hata ayıklama işlevselliğine ve temiz koda odaklı bir Super Nintendo Entertainment System (SNES) emülatörüdür. bsnes'te doğruluğa engel olacak hıza ve tek bir oyuna yönelik özel kodlamalar bulunmaz. Bu yüzden emülatörün minimum sistem gereksinimleri çok yüksektir.</Description>
+    </Source>
+</PISI>
