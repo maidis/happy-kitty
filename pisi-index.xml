@@ -8300,6 +8300,81 @@
             </Update>
         </History>
     </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>bsnes</Name>
+            <Homepage>http://byuu.org/bsnes</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>hardware.emulator</PartOf>
+            <Summary xml:lang="en">A Super Nintendo Entertainment System emulator</Summary>
+            <Summary xml:lang="tr">Bir Super Nintendo Entertainment System emülatörü</Summary>
+            <Description xml:lang="en">bsnes is a Super Nintendo Entertainment System (SNES) emulator focused on accuracy, debugging functionality, and clean code. The emulator does not focus on things that would hinder accuracy. This includes speed and game-specific hacks for compatibility. As a result, the minimum system requirements for bsnes are very high.</Description>
+            <Description xml:lang="tr">bsnes, doğruluğa, hata ayıklama işlevselliğine ve temiz koda odaklı bir Super Nintendo Entertainment System (SNES) emülatörüdür. bsnes&apos;te doğruluğa engel olacak hıza ve tek bir oyuna yönelik özel kodlamalar bulunmaz. Bu yüzden emülatörün minimum sistem gereksinimleri çok yüksektir.</Description>
+            <Icon>bsnes</Icon>
+            <Archive type="tarbz2" sha1sum="111d9771a86aafaf4606b2540eea645dddcdf24e">http://bsnes.googlecode.com/files/bsnes_v080-source.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>alsa-lib-devel</Dependency>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>fontconfig-devel</Dependency>
+                <Dependency>freetype-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>libXv-devel</Dependency>
+                <Dependency>libao-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>openal-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>qt-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">bsnes_v080-source-arch-linux.diff</Patch>
+            </Patches>
+            <SourceURI>hardware/emulator/bsnes/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>bsnes</Name>
+            <RuntimeDependencies>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXv</Dependency>
+                <Dependency>libao</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>openal</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>qt</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-07-12</Date>
+                <Version>0.080</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
     <Component>
         <Name>library</Name>
         <LocalName xml:lang="en">FIXME</LocalName>
