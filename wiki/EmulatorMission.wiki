@@ -14,11 +14,16 @@ In this mission we are going to package all emulators for Pardus. it sounds fun 
   * [http://dolphin-emulator.com/ Dolphin]:
     * http://hata.pardus.org.tr/show_bug.cgi?id=12375
     * http://aur.archlinux.org/packages.php?ID=21990
+  * [http://rainemu.swishparty.co.uk/ RAINE]
+    * http://aur.archlinux.org/packages.php?ID=8033
+    * http://aur.archlinux.org/packages.php?ID=8087
+    * http://aur.archlinux.org/packages.php?ID=38905
+  * [http://www.trzy.org/Supermodel/index.html Supermodel]
+    * http://gpo.zugaina.org/games-emulation/Supermodel
   * [http://www.zsnes.com/ ZSNES]:
     * http://paketler.pardus.org.tr/info/2009/devel/source/zsnes.html
     * http://paketler.pardus.org.tr/info/playground/source/zsnes.html
     * http://hata.pardus.org.tr/show_bug.cgi?id=18191
-    *
 
 = Resources =
 
