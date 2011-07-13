@@ -11,6 +11,7 @@
     * [BecomingSponsor]
     * [BuildingSourceRepository]
     * [DesktopFiles]
+    * [EmulatorMission]
     * [HappyPenguinMission]
     * [InternetSites]
     * [JoiningHappyKitty]
