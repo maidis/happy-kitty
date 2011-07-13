@@ -1,0 +1,25 @@
+#summary lets package some video game system emulators
+#labels emulator
+
+= Introduction =
+
+A video game console emulator is a program that allows a computer or modern console to emulate a different video game console's behavior. Emulators are most often used to play older video games on personal computers and modern video game consoles.
+
+
+= Details =
+
+In this mission we are going to package all emulators for Pardus. it sounds fun :) Just pick one from list, inform others, start packaging and add package files to Happy Kitty repository.
+
+= Emulators =
+  * [http://dolphin-emulator.com/ Dolphin]:
+    * http://hata.pardus.org.tr/show_bug.cgi?id=12375
+    * http://aur.archlinux.org/packages.php?ID=21990
+  * [http://www.zsnes.com/ ZSNES]:
+    * http://paketler.pardus.org.tr/info/2009/devel/source/zsnes.html
+    * http://paketler.pardus.org.tr/info/playground/source/zsnes.html
+    * http://hata.pardus.org.tr/show_bug.cgi?id=18191
+
+= Resources =
+
+  * [http://en.wikipedia.org/wiki/Video_game_console_emulator Video game console emulator]
+  * [http://en.wikipedia.org/wiki/List_of_video_game_console_emulators List of video game console emulators]
