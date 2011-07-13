@@ -1,4 +1,4 @@
-#summary lets package some video game system emulators
+#summary let's package some video game system emulators
 #labels emulator
 
 = Introduction =
