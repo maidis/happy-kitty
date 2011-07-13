@@ -18,6 +18,7 @@ In this mission we are going to package all emulators for Pardus. it sounds fun 
     * http://paketler.pardus.org.tr/info/2009/devel/source/zsnes.html
     * http://paketler.pardus.org.tr/info/playground/source/zsnes.html
     * http://hata.pardus.org.tr/show_bug.cgi?id=18191
+    *
 
 = Resources =
 
