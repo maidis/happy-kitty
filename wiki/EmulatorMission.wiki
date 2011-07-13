@@ -11,15 +11,26 @@ A video game console emulator is a program that allows a computer or modern cons
 In this mission we are going to package all emulators for Pardus. it sounds fun :) Just pick one from list, inform others, start packaging and add package files to Happy Kitty repository.
 
 = Emulators =
+  * [http://atari800.sourceforge.net/ Atari800]
+    * http://aur.archlinux.org/packages.php?ID=19710
   * [http://dolphin-emulator.com/ Dolphin]:
     * http://hata.pardus.org.tr/show_bug.cgi?id=12375
     * http://aur.archlinux.org/packages.php?ID=21990
+  * [http://sdlemu.ngemu.com/handysdl.php Handy]
+    * http://gpo.zugaina.org/games-emulation/handy
   * [http://rainemu.swishparty.co.uk/ RAINE]
     * http://aur.archlinux.org/packages.php?ID=8033
     * http://aur.archlinux.org/packages.php?ID=8087
     * http://aur.archlinux.org/packages.php?ID=38905
+  * [http://stella.sourceforge.net/ Stella]
+    * http://aur.archlinux.org/packages.php?ID=19715
   * [http://www.trzy.org/Supermodel/index.html Supermodel]
     * http://gpo.zugaina.org/games-emulation/Supermodel
+  * [http://www.whimsey.com/z26/ z26]
+    * http://aur.archlinux.org/packages.php?ID=22796
+    * http://aur.archlinux.org/packages.php?ID=31119
+  * [http://icculus.org/virtualjaguar/Virtual Jaguar]
+    * http://gpo.zugaina.org/games-emulation/virtualjaguar
   * [http://www.zsnes.com/ ZSNES]:
     * http://paketler.pardus.org.tr/info/2009/devel/source/zsnes.html
     * http://paketler.pardus.org.tr/info/playground/source/zsnes.html
@@ -29,3 +40,6 @@ In this mission we are going to package all emulators for Pardus. it sounds fun 
 
   * [http://en.wikipedia.org/wiki/Video_game_console_emulator Video game console emulator]
   * [http://en.wikipedia.org/wiki/List_of_video_game_console_emulators List of video game console emulators]
+  * [http://gpo.zugaina.org/games-emulation Gentoo - games-emulation]
+  * [http://aur.archlinux.org/packages.php?O=0&K=emulator&do_Search=Go Aur - emulator]
+  * [http://www.archlinux.org/packages/?sort=&q=emulator&maintainer=&last_update=&flagged=&limit=50 Arch - emulator]
