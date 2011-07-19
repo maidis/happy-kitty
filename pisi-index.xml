@@ -733,6 +733,66 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>xblast</Name>
+            <Homepage>http://xblast.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A Bomberman clone</Summary>
+            <Summary xml:lang="tr">Bir Bomberman klonu</Summary>
+            <Description xml:lang="en">XBlast is a multi-player arcade game inspired by the video game Bomberman.</Description>
+            <Description xml:lang="tr">XBlast, Bomberman&apos;dan esinlenmiş, çok oyunculu bir video oyunudur.</Description>
+            <Icon>xblast</Icon>
+            <Archive type="targz" sha1sum="27ea96ac25a00f77dc962981970e92a90d78e8e4">mirrors://sourceforge/xblast/Sources/2.10.4/xblast-2.10.4.tar.gz</Archive>
+            <Archive type="targz" sha1sum="3fd597a68e96c325654a3772e07528a5b0edc802">mirrors://sourceforge/xblast/images-2005-01-06.tar.gz</Archive>
+            <Archive type="targz" sha1sum="d0b019218479a8f9617f858d7758f7e1b4bd866b">mirrors://sourceforge/xblast/levels-2005-01-06.tar.gz</Archive>
+            <Archive type="targz" sha1sum="8f421133009a480f9be05ac17762cab6691c1f42">mirrors://sourceforge/xblast/models-2005-01-06.tar.gz</Archive>
+            <Archive type="targz" sha1sum="519e4b40148772b72bb12375c5d1a05f3cb26fea">mirrors://sourceforge/xblast/musics-2005-01-06.tar.gz</Archive>
+            <Archive type="targz" sha1sum="8875628de0dda4d4f79ffe324f7e8e560c4e0471">mirrors://sourceforge/xblast/sounds.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libICE-devel</Dependency>
+                <Dependency>libX11-devel</Dependency>
+                <Dependency>libpng-devel</Dependency>
+                <Dependency>libXt-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/arcade/xblast/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>xblast</Name>
+            <RuntimeDependencies>
+                <Dependency>libICE</Dependency>
+                <Dependency>libXt</Dependency>
+                <Dependency>xorg-font-extra</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/xblast</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/xblast.desktop" permission="0644" owner="root">xblast.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/xblast.png" permission="0644" owner="root">xblast.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-11-30</Date>
+                <Version>2.10.4</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>usf</Name>
             <Homepage>http://usf.tuxfamily.org</Homepage>
             <Packager>
@@ -1623,6 +1683,62 @@
             <Update release="1">
                 <Date>2011-07-19</Date>
                 <Version>1.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>circuslinux</Name>
+            <Homepage>http://www.newbreedsoftware.com/circus-linux</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A clone of Circus Atari</Summary>
+            <Summary xml:lang="tr">Circus Atari oyununun bir klonu</Summary>
+            <Description xml:lang="en">Circus Linux! is a clone of the Atari 2600 game Circus Atari. The object is to move a teeter-totter back and forth across the screen to bounce clowns up into the air. When they reach the top, they pop rows of balloons and then fall back down.</Description>
+            <Description xml:lang="tr">Circus Linux!, Atari 2600 oyunu Circus Atari&apos;nin bir klonudur. Oyunda balonları patlatmaya uğraşan palyaçoların güvenli bir şekilde sıçramalarına yardımcı olmaya çalışıyorsunuz.</Description>
+            <Icon>circuslinux</Icon>
+            <Archive type="targz" sha1sum="88b7cc95f2b759cc1e46d22a51e0ff7714331fec">ftp://ftp.tuxpaint.org/unix/x/circus-linux/src/circuslinux-1.0.3.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>circuslinux-1.0.3.patch</Patch>
+                <Patch level="1">001_choppy_sound.diff</Patch>
+            </Patches>
+            <SourceURI>game/arcade/circuslinux/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>circuslinux</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/circuslinux</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/circuslinux.desktop" permission="0644" owner="root">circuslinux.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-05-10</Date>
+                <Version>1.0.3</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -6316,6 +6432,57 @@
             <Update release="1">
                 <Date>2011-01-15</Date>
                 <Version>1.0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>pentobi</Name>
+            <Homepage>http://pentobi.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.board</PartOf>
+            <Summary xml:lang="en">A Blokus game</Summary>
+            <Summary xml:lang="tr">Bir Blokus oyunu</Summary>
+            <Description xml:lang="en">Pentobi is a computer program that plays the board game Blokus.</Description>
+            <Description xml:lang="tr">Pentobi, Blokus oynamak için bir bilgisayar programıdır.</Description>
+            <Icon>pentobi</Icon>
+            <Archive type="targz" sha1sum="88fd5affa5d3a53737fc85ad489a7424478b2d77">mirrors://sourceforge/pentobi/0.1/pentobi-0.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>boost-devel</Dependency>
+                <Dependency>qt-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>pentobi-boost-version.diff</Patch>
+            </Patches>
+            <SourceURI>game/board/pentobi/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>pentobi</Name>
+            <RuntimeDependencies>
+                <Dependency>boost</Dependency>
+                <Dependency>qt</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="config">/usr/etc</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/mime</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-07-19</Date>
+                <Version>0.1</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
