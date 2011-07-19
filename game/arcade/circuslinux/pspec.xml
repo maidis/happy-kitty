@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>circuslinux</Name>
+        <Homepage>http://www.newbreedsoftware.com/circus-linux</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>circuslinux</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A clone of Circus Atari</Summary>
+        <Description>Circus Linux! is a clone of the Atari 2600 game Circus Atari. The object is to move a teeter-totter back and forth across the screen to bounce clowns up into the air. When they reach the top, they pop rows of balloons and then fall back down.</Description>
+        <Archive sha1sum="88b7cc95f2b759cc1e46d22a51e0ff7714331fec" type="targz">ftp://ftp.tuxpaint.org/unix/x/circus-linux/src/circuslinux-1.0.3.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>circuslinux-1.0.3.patch</Patch>
+            <Patch level="1">001_choppy_sound.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>circuslinux</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/circuslinux</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/circuslinux.desktop">circuslinux.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-05-10</Date>
+            <Version>1.0.3</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

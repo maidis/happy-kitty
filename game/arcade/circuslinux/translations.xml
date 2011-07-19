@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>circuslinux</Name>
+        <Summary xml:lang="tr">Circus Atari oyununun bir klonu</Summary>
+        <Description xml:lang="tr">Circus Linux!, Atari 2600 oyunu Circus Atari'nin bir klonudur. Oyunda balonları patlatmaya uğraşan palyaçoların güvenli bir şekilde sıçramalarına yardımcı olmaya çalışıyorsunuz.</Description>
+    </Source>
+</PISI>
