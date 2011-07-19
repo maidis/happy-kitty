@@ -459,6 +459,66 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>lander</Name>
+            <Homepage>http://www.doof.me.uk/lunar-lander</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A Lunar Lander clone</Summary>
+            <Summary xml:lang="tr">Bir Lunar Lander türevi</Summary>
+            <Description xml:lang="en">Lunar Lander is a Lunar Lander clone written in C++ and OpenGL. Use the arrow keys to move the ship and avoid crashing into obstacles. Collect all the spinning keys and then land the ship on one of the landing pads. The levels are randomly generated and become progressively harder.</Description>
+            <Description xml:lang="tr">Lunar Lander, C++ ve OpenGL ile yazılmış, sağ salim iniş yapmaya çalıştığınız Lunar Lander türevi oyunlardan biridir. Yön tuşlarını kullanarak hiçbir yere çarpmadan ilerleyin ve tüm anahtarları toplayarak iniş alanlarından birine inin. Otomatik olarak oluşturulan ve gittikçe zorlaşan bölümlerde başarılar.</Description>
+            <Icon>lander</Icon>
+            <Archive type="targz" sha1sum="f914c7a661e6bb6ba2e58df854aca06a3a7c0621">http://www.nickg.me.uk/files/lander-0.6.2.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>boost-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>freetype-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/arcade/lander/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lander</Name>
+            <RuntimeDependencies>
+                <Dependency>mesa</Dependency>
+                <Dependency>boost</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>sdl-image</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/lander</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/lander.desktop" permission="0644" owner="root">lander.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/lander.png" permission="0644" owner="root">lander.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-07-19</Date>
+                <Version>0.6.2</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>xix</Name>
             <Homepage>http://compgroups.net/comp.os.linux.misc/New-game-XIX-for-linux-Version-of-1980s-game-QIX</Homepage>
             <Packager>
@@ -1514,6 +1574,63 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>moon-lander</Name>
+            <Homepage>http://www.happypenguin.org/show?Moon%20Lander</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>BSD</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A SDL game based on the classic Lunar Lander</Summary>
+            <Summary xml:lang="tr">Lunar Lander&apos;ı temel alan bir SDL oyunu</Summary>
+            <Description xml:lang="en">Moon Lander is an addictive game of skill where you must land a space-ship on the moon at a perfect speed.</Description>
+            <Description xml:lang="tr">Moon Lander, hızınızı mükemmel derecede ayarlayarak aya iniş yapmaya çalıştığınız yeteneğe dayalı bağımlılık yapıcı bir oyundur.</Description>
+            <Icon>moon-lander</Icon>
+            <Archive type="targz" sha1sum="87a5d85fc841d7b13a0b65c7a858907b9d676843">http://happy-kitty.googlecode.com/files/moon-lander_1.0.orig.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">moon-lander_1.0-4.diff</Patch>
+                <Patch level="1">moon-lander-flags.diff</Patch>
+            </Patches>
+            <SourceURI>game/arcade/moon-lander/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>moon-lander</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/moon-lander</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/moon-lander.desktop" permission="0644" owner="root">moon-lander.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-07-19</Date>
+                <Version>1.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>roadfighter</Name>
             <Homepage>http://roadfighter.jorito.net</Homepage>
             <Packager>
@@ -1924,6 +2041,66 @@
             <Update release="1">
                 <Date>2011-05-20</Date>
                 <Version>5.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>osgg</Name>
+            <Homepage>http://sourceforge.net/projects/osgg</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">OldSkool Gravity Game</Summary>
+            <Summary xml:lang="tr">Eski tarz bir yer çekimi oyunu</Summary>
+            <Description xml:lang="en">OldSkool Gravity Game is lunar lander skillgame with twitch gameplay, it is designed to be hard, precise and unforgiving. All in glorious 70&apos;s style vector graphics.</Description>
+            <Description xml:lang="tr">OldSkool Gravity Game, bir Lunar Lander türevidir. Zor, hassas ve hata affetmez bir oynayış sunan oyun, 70&apos;lerin harika grafik tarzını da ekranlarınıza getirmektedir.</Description>
+            <Icon>osgg</Icon>
+            <Archive type="tarbz2" sha1sum="83907af7c4b7e68ef5f545ffb937abbbe24116ee">mirrors://sourceforge/osgg/osgg/0.99/osgg-0.99.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>qt-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-ttf-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">osgg-paths.diff</Patch>
+                <Patch>osgg-launcher-paths.diff</Patch>
+            </Patches>
+            <SourceURI>game/arcade/osgg/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>osgg</Name>
+            <RuntimeDependencies>
+                <Dependency>qt</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-ttf</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>sdl-image</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/osgg</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/osgg.desktop" permission="0644" owner="root">osgg.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-07-19</Date>
+                <Version>0.99</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
