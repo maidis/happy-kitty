@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>osgg</Name>
+        <Summary xml:lang="tr">Eski tarz bir yer çekimi oyunu</Summary>
+        <Description xml:lang="tr">OldSkool Gravity Game, bir Lunar Lander türevidir. Zor, hassas ve hata affetmez bir oynayış sunan oyun, 70'lerin harika grafik tarzını da ekranlarınıza getirmektedir.</Description>
+    </Source>
+</PISI>

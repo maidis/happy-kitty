@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=osgg
+GenericName=Gravity Game
+GenericName[tr]=Yer Çekimi Oyunu
+Comment=OldSkool Gravity Game
+Comment[tr]=Eski tarz bir yer çekimi oyunu
+Icon=osgg
+Exec=osgg-launcher
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;
