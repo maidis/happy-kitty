@@ -1,0 +1,12 @@
+diff -Naur moon-lander.orig/Makefile moon-lander/Makefile
+--- moon-lander.orig/Makefile	2001-08-15 02:28:49.000000000 +0300
++++ moon-lander/Makefile	2011-07-19 18:56:39.360000044 +0300
+@@ -11,7 +11,7 @@
+ all: game_lib
+ 
+ game_lib: $(OBJ_FILES)
+-	$(CC) $(CFLAGS) -o $(OUT_FILE) $(OBJ_FILES) -l$(LIBS) -lSDL_mixer
++	$(CC) $(CFLAGS) -o $(OUT_FILE) $(OBJ_FILES) -l$(LIBS) -lSDL_mixer $(LDFLAGS)
+ 
+ moon_lander.o: moon_lander.c
+ 	$(CC) $(CFLAGS) -c -o $@ $^

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Moon Lander
+GenericName=Moon Lander
+GenericName[tr]=Aya İniş
+Comment=A SDL game based on the classic moon lander
+Comment[tr]=Lunar Lander'ı temel alan bir SDL oyunu
+Icon=moon-lander
+Exec=moon-lander
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;
