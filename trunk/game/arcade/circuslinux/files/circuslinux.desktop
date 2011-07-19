@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Circus Linux
+GenericName=Circus Linux
+GenericName[tr]=Linux Sirki
+Comment=A clone of Circus Atari
+Comment[tr]=Bir Circus Atari klonu
+Icon=circuslinux
+Exec=circuslinux
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;
