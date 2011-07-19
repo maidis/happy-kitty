@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>osgg</Name>
+        <Homepage>http://sourceforge.net/projects/osgg</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>osgg</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>OldSkool Gravity Game</Summary>
+        <Description>OldSkool Gravity Game is lunar lander skillgame with twitch gameplay, it is designed to be hard, precise and unforgiving. All in glorious 70's style vector graphics.</Description>
+        <Archive sha1sum="83907af7c4b7e68ef5f545ffb937abbbe24116ee" type="tarbz2">mirrors://sourceforge/osgg/osgg/0.99/osgg-0.99.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-ttf-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">osgg-paths.diff</Patch>
+            <Patch>osgg-launcher-paths.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>osgg</Name>
+        <RuntimeDependencies>
+            <Dependency>qt</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-ttf</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>sdl-image</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/osgg</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/osgg.desktop">osgg.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-07-19</Date>
+            <Version>0.99</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

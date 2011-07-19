@@ -1,0 +1,9 @@
+diff -Naur osgg.orig/Makefile osgg/Makefile
+--- osgg.orig/Makefile	2009-01-03 07:57:33.000000000 +0200
++++ osgg/Makefile	2011-07-19 17:01:04.758000004 +0300
+@@ -1,4 +1,4 @@
+-DATADIR?=./
++DATADIR?=/usr/share/osgg/
+ 
+ CC=g++ -DDATADIR="\"$(DATADIR)\""
+ 

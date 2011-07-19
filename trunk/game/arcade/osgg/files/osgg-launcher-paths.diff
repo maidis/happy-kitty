@@ -1,0 +1,13 @@
+--- launcher/wtf.cpp.orig	2009-02-01 19:34:35.000000000 +0200
++++ launcher/wtf.cpp	2011-07-19 17:40:44.569000023 +0300
+@@ -169,8 +169,8 @@
+ 
+ void mW::loadSettings()
+ {
+-  osggDataDir="./";
+-  osggExecPath="./osgg";
++  osggDataDir="/usr/share/osgg/";
++  osggExecPath="/usr/bin/osgg";
+   osggUserDir=QDir::homePath();
+   osggUserDir.append("/.osgg");
+   
