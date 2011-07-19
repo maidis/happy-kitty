@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>pentobi</Name>
+        <Homepage>http://pentobi.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>pentobi</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A Blokus game</Summary>
+        <Description>Pentobi is a computer program that plays the board game Blokus.</Description>
+        <Archive sha1sum="88fd5affa5d3a53737fc85ad489a7424478b2d77" type="targz">mirrors://sourceforge/pentobi/0.1/pentobi-0.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>boost-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>pentobi-boost-version.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>pentobi</Name>
+        <RuntimeDependencies>
+            <Dependency>boost</Dependency>
+            <Dependency>qt</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="config">/usr/etc</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/mime</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-07-19</Date>
+            <Version>0.1</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

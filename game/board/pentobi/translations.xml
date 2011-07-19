@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>pentobi</Name>
+        <Summary xml:lang="tr">Bir Blokus oyunu</Summary>
+        <Description xml:lang="tr">Pentobi, Blokus oynamak için bir bilgisayar programıdır.</Description>
+    </Source>
+</PISI>
