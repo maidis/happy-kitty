@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>lander</Name>
+        <Summary xml:lang="tr">Bir Lunar Lander türevi</Summary>
+        <Description xml:lang="tr">Lunar Lander, C++ ve OpenGL ile yazılmış, sağ salim iniş yapmaya çalıştığınız Lunar Lander türevi oyunlardan biridir. Yön tuşlarını kullanarak hiçbir yere çarpmadan ilerleyin ve tüm anahtarları toplayarak iniş alanlarından birine inin. Otomatik olarak oluşturulan ve gittikçe zorlaşan bölümlerde başarılar.</Description>
+    </Source>
+</PISI>

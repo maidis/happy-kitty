@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Lander
+GenericName=Lunar Lander
+GenericName[tr]=Lunar Lander
+Comment=A Lunar Lander clone
+Comment[tr]=Bir Lunar Lander klonu
+Icon=lander
+Exec=lander
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;
