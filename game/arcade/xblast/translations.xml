@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>xblast</Name>
+        <Summary xml:lang="tr">Bir Bomberman klonu</Summary>
+        <Description xml:lang="tr">XBlast, Bomberman'dan esinlenmiş, çok oyunculu bir video oyunudur.</Description>
+    </Source>
+</PISI>
