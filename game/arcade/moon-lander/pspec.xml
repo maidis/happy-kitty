@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>moon-lander</Name>
+        <Homepage>http://www.happypenguin.org/show?Moon%20Lander</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <Icon>moon-lander</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A SDL game based on the classic Lunar Lander</Summary>
+        <Description>Moon Lander is an addictive game of skill where you must land a space-ship on the moon at a perfect speed.</Description>
+        <Archive sha1sum="87a5d85fc841d7b13a0b65c7a858907b9d676843" type="targz">http://happy-kitty.googlecode.com/files/moon-lander_1.0.orig.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">moon-lander_1.0-4.diff</Patch>
+            <Patch level="1">moon-lander-flags.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>moon-lander</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/moon-lander</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/moon-lander.desktop">moon-lander.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-07-19</Date>
+            <Version>1.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

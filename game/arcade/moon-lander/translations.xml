@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>moon-lander</Name>
+        <Summary xml:lang="tr">Lunar Lander'ı temel alan bir SDL oyunu</Summary>
+        <Description xml:lang="tr">Moon Lander, hızınızı mükemmel derecede ayarlayarak aya iniş yapmaya çalıştığınız yeteneğe dayalı bağımlılık yapıcı bir oyundur.</Description>
+    </Source>
+</PISI>

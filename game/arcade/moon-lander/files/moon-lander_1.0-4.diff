@@ -1,0 +1,556 @@
+--- moon-lander-1.0.orig/debian/moon-lander.install
++++ moon-lander-1.0/debian/moon-lander.install
+@@ -0,0 +1,2 @@
++moon-lander		usr/bin/
++debian/moon-lander.xpm	usr/share/pixmaps/
+--- moon-lander-1.0.orig/debian/moon-lander.6
++++ moon-lander-1.0/debian/moon-lander.6
+@@ -0,0 +1,42 @@
++.\"                                      Hey, EMACS: -*- nroff -*-
++.\" First parameter, NAME, should be all caps
++.\" Second parameter, SECTION, should be 1-8, maybe w/ subsection
++.\" other parameters are allowed: see man(7), man(1)
++.TH moon-lander 6 "July  8, 2001"
++.\" Please adjust this date whenever revising the manpage.
++.\"
++.\" Some roff macros, for reference:
++.\" .nh        disable hyphenation
++.\" .hy        enable hyphenation
++.\" .ad l      left justify
++.\" .ad b      justify to both left and right margins
++.\" .nf        disable filling
++.\" .fi        enable filling
++.\" .br        insert line break
++.\" .sp <n>    insert n+1 empty lines
++.\" for manpage-specific macros, see man(7)
++.SH NAME
++moon-lander \- Fun game based on the classic moon lander
++.SH SYNOPSIS
++.B moon-lander
++No command line options.
++.SH DESCRIPTION
++This manual page documents briefly the
++.B moon-lander
++command
++
++.PP
++.\" TeX users may be more comfortable with the \fB<whatever>\fP and
++.\" \fI<whatever>\fP escape sequences to invode bold face and italics, 
++.\" respectively.
++\fBmoonlander\fP is a program that recreates the classic moon lander
++game. The aim of the game is to land on one of the landing pads safely.
++You must use your thrusters to reduce your speed to land so you do not
++explode on touch down.
++.SH OPTIONS
++.br
++.B No command line options.
++
++.SH AUTHOR
++This manual page was written by Peter Joseph <kneecaps@debian.org>,
++for the Debian GNU/Linux system (but may be used by others).
+--- moon-lander-1.0.orig/debian/copyright
++++ moon-lander-1.0/debian/copyright
+@@ -0,0 +1,34 @@
++This package was originally debianized by Peter Joseph <kneecaps@debian.org> on
++Mon,  9 Jul 2001 23:33:18 +0100, and is currently maintained by Joseph Nahmias
++<joe@nahmias.net>.
++
++It was downloaded from http://magigames.org/moonlander.html
++
++Upstream Author: David J. Blood <geekd@yahoo.com>
++
++Copyright 1994-2001 David J. Blood, Inc. All rights reserved. 
++
++Redistribution and use in source and binary forms, with or without 
++modification, are permitted provided that the following conditions are met: 
++
++1.Redistributions of source code must retain the above copyright notice, this
++list of conditions and the following disclaimer. 
++
++2.Redistributions in binary form must reproduce the above copyright notice, 
++this list of conditions and the following disclaimer in the documentation 
++and/or other materials provided with the distribution. 
++
++THIS SOFTWARE IS PROVIDED BY THE AUTHORS ``AS IS'' AND ANY EXPRESS OR IMPLIED
++WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF 
++MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO 
++EVENT SHALL THE AUTHORS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, 
++INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT 
++LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, 
++OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
++LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
++NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, 
++EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
++
++On Debian systems, the complete text of the this License 
++can be found in /usr/share/common-licenses/BSD file.
++
+--- moon-lander-1.0.orig/debian/moon-lander.menu
++++ moon-lander-1.0/debian/moon-lander.menu
+@@ -0,0 +1,6 @@
++?package(moon-lander): \
++	needs="x11" \
++	section="Games/Action" \
++	title="Moon-Lander" \
++	command="/usr/bin/moon-lander" \
++	icon="/usr/share/pixmaps/moon-lander.xpm"
+--- moon-lander-1.0.orig/debian/moon-lander.xpm
++++ moon-lander-1.0/debian/moon-lander.xpm
+@@ -0,0 +1,51 @@
++/* XPM */
++static char *moon-lander[] = {
++/* columns rows colors chars-per-pixel */
++"32 29 16 1",
++"  c black",
++". c #191919",
++"X c gray20",
++"o c #00007f",
++"O c #007f7f",
++"+ c #7f007f",
++"@ c #4c4c4c",
++"# c #666667",
++"$ c gray50",
++"% c blue",
++"& c cyan",
++"* c gray60",
++"= c #b2b2b2",
++"- c gray80",
++"; c gray90",
++": c None",
++/* pixels */
++"::::::::::: :  @X    :::::::::::",
++":::::::::::  . ##  : :::::::::::",
++"::::::::::     ##     ::::::::::",
++"::::::::: : :  #@  : : :::::::::",
++"::::::::::     oX     ::::::::::",
++"::::::::      @###      ::::::::",
++"::::::::: :  @=-**@. : :::::::::",
++"::::::::     #--=$*.    ::::::::",
++":::::::     @=---*$$ .   :::::::",
++":::::::: :  o=-=-=#*. : ::::::::",
++":::::::    .O--===#=@  : :::::::",
++"::::::: :  X***---#*#    :::::::",
++":::::::    @*=%;-=O*#    :::::::",
++"::::::: :  @*=*-=*$$#  : :::::::",
++"::::::: :  @**&-=**O#  : :::::::",
++"::::::: :  @*==--**#@ .: :::::::",
++"::::::     @*=%=--$O@    :::::::",
++"::::: : :  @*--=-=*##    : :::::",
++":::: : : ..X*&----$##  :: : ::::",
++"::: : :   .o$*%===#$#      :::::",
++":::: :  .@#X#*&=-=#$$#X     ::::",
++":::     #-$X@*==-=O##*=.     :::",
++":::    .*=*O.*--=*+##**O. :  :::",
++"::  : .O**#..@===O$Xo***X    :::",
++"::    X#**o  X*=$@$  @=$@  : :::",
++":: :  X#*@.  .X@@#.  .O$#    :::",
++":: :  X##      .X. .  .$#    :::",
++"::    .##.            .$X  : :::",
++"::  :  X@  : ::  :: : .#.    :::"
++};
+--- moon-lander-1.0.orig/debian/docs
++++ moon-lander-1.0/debian/docs
+@@ -0,0 +1 @@
++README.txt
+--- moon-lander-1.0.orig/debian/control
++++ moon-lander-1.0/debian/control
+@@ -0,0 +1,30 @@
++Source: moon-lander
++Section: games
++Priority: optional
++Maintainer: Joe Nahmias <jello@debian.org>
++Build-Depends: debhelper (>> 4.0.0), libsdl1.2-dev (>= 1.2.2-3.1), libsdl-mixer1.2-dev, libsdl-image1.2-dev
++Standards-Version: 3.7.2.2
++
++Package: moon-lander
++Architecture: any
++Depends: ${shlibs:Depends}, ${misc:Depends}, moon-lander-data
++Description: An SDL game based on the classic moon lander
++ Moonlander is a fun and enjoyable modern graphical version (with
++ sound) of the classic moonlander game.  The objective is to land
++ your rocketship safely using a limited amount of fuel while
++ fighting gravity.
++
++
++Package: moon-lander-data
++Architecture: all
++Depends: ${misc:Depends}
++Recommends: moon-lander
++Description: Data files (sound, images) for moon-lander
++ Moonlander is a fun and enjoyable modern graphical version (with
++ sound) of the classic moonlander game.  The objective is to land
++ your rocketship safely using a limited amount of fuel while
++ fighting gravity.
++ .
++ This package contains only the data files.  Install the moon-lander
++ package if you want the game.
++
+--- moon-lander-1.0.orig/debian/moon-lander.manpages
++++ moon-lander-1.0/debian/moon-lander.manpages
+@@ -0,0 +1 @@
++debian/moon-lander.6
+--- moon-lander-1.0.orig/debian/rules
++++ moon-lander-1.0/debian/rules
+@@ -0,0 +1,74 @@
++#!/usr/bin/make -f
++
++#export DH_VERBOSE=1
++
++export DH_OPTIONS
++
++CFLAGS := -Wall -g
++ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
++	CFLAGS += -O0
++else
++	CFLAGS += -O2
++endif
++export CFLAGS
++
++build: build-stamp
++build-stamp:
++	dh_testdir
++	$(MAKE)
++	touch build-stamp
++
++clean:
++	dh_testdir
++	dh_testroot
++	$(MAKE) clean
++	rm -f build-stamp 
++	dh_clean
++
++install-arch install-indep:
++	dh_testdir
++	dh_testroot
++	dh_clean -k
++	dh_installdirs
++
++	# Add here commands to install the files to the proper place(s).
++	dh_install
++	[ ! -d $(CURDIR)/debian/moon-lander-data ] || \
++	  find $(CURDIR)/debian/moon-lander-data/ -type f -print0 | \
++	  xargs -0r chmod 644
++
++binary-indep: DH_OPTIONS=-i
++binary-indep: install-indep
++	dh_testdir
++	dh_testroot
++	dh_installdocs
++	dh_installchangelogs 
++	dh_link
++	dh_compress
++	dh_fixperms
++	dh_installdeb
++	dh_gencontrol
++	dh_md5sums
++	dh_builddeb
++
++binary-arch: DH_OPTIONS=-a
++binary-arch: build install-arch
++	dh_testdir
++	dh_testroot
++	dh_installdocs
++	dh_installmenu
++	dh_installman
++	dh_installchangelogs 
++	dh_link
++	dh_strip
++	dh_compress
++	dh_fixperms
++	dh_installdeb
++	dh_shlibdeps
++	dh_gencontrol
++	dh_md5sums
++	dh_builddeb
++
++binary: DH_OPTIONS=-A
++binary: binary-arch binary-indep
++.PHONY: build clean binary-indep binary-arch binary install 
+--- moon-lander-1.0.orig/debian/compat
++++ moon-lander-1.0/debian/compat
+@@ -0,0 +1 @@
++4
+--- moon-lander-1.0.orig/debian/changelog
++++ moon-lander-1.0/debian/changelog
+@@ -0,0 +1,105 @@
++moon-lander (1:1.0-4) unstable; urgency=low
++
++  * Add remaining fuel to score, closes: #347240.
++  * When choosing a background, skip anything other than a regular file,
++    closes: #418019.
++  * moon-lander-data: recommend moon-lander.
++  * moon-lander-data: remove obsolete conflict, it's not even available in
++    oldstable (sarge).
++  * Don't build moon-lander-data in binary-arch target, closes: #304115.
++  * Update menu section to comply with new policy: Arcade => Action.
++
++ -- Joe Nahmias <jello@debian.org>  Fri, 10 Aug 2007 00:49:35 -0400
++
++moon-lander (1:1.0-3) unstable; urgency=low
++
++  * Split game data into separate arch-indep pkg, closes: #233416.
++
++ -- Joe Nahmias <jello@debian.org>  Mon,  5 Jul 2004 22:58:14 -0400
++
++moon-lander (1:1.0-2) unstable; urgency=low
++
++  * XPM files are text -- No need to uu{en,de}code.  Thanks Roger Ward!
++      - debian/control: Build-deps -= sharutils.
++      - debian/rules: remove references to uudecode.
++  * debian/control(Std-Ver): 3.6.1.0
++  * debian/control: Updated maintainer address.
++
++ -- Joe Nahmias <joe@nahmias.net>  Sun, 28 Sep 2003 23:59:57 -0400
++
++moon-lander (1:1.0-1) unstable; urgency=low
++
++  * New upstream version.
++  * debian/control:
++      - New maintainer, closes: #182984.
++      - Standards-Version ==> 3.5.8.0.
++      - Build-deps: added sharutils for uudecode.
++  * debian/rules: added CFLAGS handling for std-ver compliance.
++  * New files:
++      - debian/compat: set to 4.
++      - debian/moon-lander.xpm.uue: icon for menu.
++      - Makefile.Debian: rewrite of upstream's borked makefile for Debian.
++
++ -- Joe Nahmias <joe@nahmias.net>  Mon, 10 Mar 2003 22:18:18 -0500
++
++moon-lander (1:0.9.0-6) unstable; urgency=low
++
++  * Rebuild to fix dynamically linked libXxf86dga (closes: #117309)
++
++ -- Peter Joseph <kneecaps@debian.org>  Tue, 30 Oct 2001 23:28:56 +0000
++
++moon-lander (1:0.9.0-5) unstable; urgency=low
++
++  * Rebuilt against new SDL packages (closes: #116462)
++  * Changed build-deps to reflect above needs
++
++ -- Peter Joseph <kneecaps@debian.org>  Thu, 25 Oct 2001 13:44:18 +0100
++
++moon-lander (1:0.9.0-4) unstable; urgency=low
++
++  * Added -f to rm moon-lander in debian/rules clean targets to ensure
++    build continues regardless of presence of moon-lander binary
++    (closes: #109986) 
++
++ -- Peter Joseph <kneecaps@debian.org>  Sat, 25 Aug 2001 11:48:46 +0100
++
++moon-lander (1:0.9.0-3) unstable; urgency=low
++
++  * Moon-lander graphics changed to be GPL and DFSG compliant
++    (closes: #105326)
++  
++ -- Peter Joseph <kneecaps@debian.org>  Thu, 23 Aug 2001 22:59:00 +0100
++
++moon-lander (1:0.9.0-2) unstable; urgency=low
++
++  * Fixed rules to clean moon-lander bin
++
++ -- Peter Joseph <kneecaps@debian.org>  Fri,  3 Aug 2001 13:37:58 +0100
++
++moon-lander (1:0.9.0-1) unstable; urgency=low
++
++  * New upstream version
++  * Upstream versioning changed
++  * Added profanity warning to description (closes: #104363)
++  * Used upstreams new DATAPATH variable to set data location
++  * Removed moonlander.bin from source tarball  
++
++ -- Peter Joseph <kneecaps@debian.org>  Wed,  1 Aug 2001 13:47:09 +0100
++
++moon-lander (0.020010709-2) unstable; urgency=low
++
++  * Fixed incorrect binary location
++
++ -- Peter Joseph <kneecaps@debian.org>  Fri, 13 Jul 2001 03:46:46 +0100
++
++moon-lander (0.020010709-1) unstable; urgency=low
++
++  * Initial release 				(closes: #103937) 
++  * Hardcoded datapaths into source to allow for sane data location
++  * Fixed perms and removed moon-lander bin from source tarball
++
++ -- Peter Joseph <kneecaps@debian.org>  Tue,  10 Jul 2001 23:33:18 +0100
++
++Local variables:
++mode: debian-changelog
++End:
+--- moon-lander-1.0.orig/debian/moon-lander-data.install
++++ moon-lander-1.0/debian/moon-lander-data.install
+@@ -0,0 +1,5 @@
++fonts/*			usr/share/moon-lander/fonts/
++images/*		usr/share/moon-lander/images/
++images/backgrounds/*	usr/share/moon-lander/images/backgrounds/
++images/kablam/*		usr/share/moon-lander/images/kablam/
++sounds/*		usr/share/moon-lander/sounds/
+--- moon-lander-1.0.orig/moon_lander.c
++++ moon-lander-1.0/moon_lander.c
+@@ -22,8 +22,10 @@
+ #include <stdlib.h>
+ #include <math.h>
+ #include <sys/types.h>
++#include <sys/stat.h>
+ #include <unistd.h>
+ #include <dirent.h>
++#include <time.h>
+ 
+ #ifndef WIN32_BUILD
+ #include <pwd.h>
+@@ -37,7 +39,7 @@
+ #define YSIZE 480
+ #define TERRAIN_YSIZE (YSIZE / 2)
+ #define FPS (1000 / 35)
+-#define DATAPATH ""
++#define DATAPATH "/usr/share/moon-lander/"
+ 
+ #define FRESHRUN   0
+ #define GAMEOVER   1
+@@ -172,12 +174,15 @@
+ /************************************************/
+ 
+ void get_new_background(Game *game) {
++#define MAXFILES 100
+ 
+   char filename[1024];
+   DIR *dir;
+-  struct dirent *files[100];
+-  int done = 0;
+-  int count = 0;
++  struct dirent *pfile;
++  struct stat sbuf;
++  static char files[MAXFILES][NAME_MAX + 1];
++  static int done = 0;
++  static int count = 0;
+   
+   /* read images/backgrounds dir and choose a random image from there.
+    *  put it's filename in image_file 
+@@ -185,7 +190,7 @@
+ 
+ 
+ 
+-    sprintf(filename, "%simages/backgrounds",  DATAPATH);
++    snprintf(filename, 1023, "%simages/backgrounds",  DATAPATH);
+ 
+     if ( !(dir = opendir(filename)) ){
+       /* error */
+@@ -194,18 +199,28 @@
+     }
+   
+     while (!done){
+-      if ( files[count] = readdir(dir) ){
+-      
+-	//printf("I see - %d %s\n", count, files[count]->d_name);
+-	count++;
++      if ( (pfile = readdir(dir)) ){
++
++        // Check if it's a regular file, otherwise skip
++	// fprintf(stderr, "Examining file '%s' ... ", pfile->d_name);
++	snprintf(filename, 1023, "%simages/backgrounds/%s", DATAPATH, pfile->d_name);
++        if ( (-1 == stat(filename, &sbuf)) || !(S_ISREG(sbuf.st_mode)) )
++	{
++	  // fprintf(stderr, "skipping, mode = '%o'.\n", sbuf.st_mode);
++          continue;
++	}
++	// fprintf(stderr, "we'll keep it.\n");
++
++        // Save the filename
++        strncpy(files[count], filename, NAME_MAX + 1);
++
++        if (count++ >= MAXFILES)
++	  done = 1;
+       }
+       else{
+ 	done = 1;
+       }
+     
+-      if (count > 99) {
+-	done = 1;
+-      }
+     }
+     
+     closedir(dir);
+@@ -219,17 +234,8 @@
+ 
+   
+ 
+-  game->back_no++;
++  game->back_no = ++game->back_no % count;
+   
+-  if (game->back_no < 2){
+-    game->back_no = 2;
+-  }
+-
+-  if (game->back_no >= count){
+-    game->back_no = 2;
+-  }
+-  
+-
+   if (game->background.image != NULL){
+     //printf("about to free background\n");
+     SDL_FreeSurface(game->background.image);
+@@ -238,14 +244,9 @@
+     //printf("background was NULL\n");
+   }
+ 
+-  //printf("about to get new background: %d\n", game->back_no );
+-
+-  sprintf(filename, "%simages/backgrounds/%s", DATAPATH, files[game->back_no]->d_name);
+-  
+-  // printf("got %s\n", filename);
+-
+-  new_sprite(&(game->background), filename, 0, 0, 0, 0);
+-  //  printf("got new background\n");
++  // fprintf(stderr, "about to get new background: %d...", game->back_no );
++  new_sprite(&(game->background), files[game->back_no], 0, 0, 0, 0);
++  // fprintf(stderr, "got '%s'\n", files[game->back_no]);
+ 
+ 
+ }
+@@ -342,7 +343,7 @@
+ 
+ void options (Game *game) {
+   int done = 0;
+-  int *selected;
++  int *selected = &(game->opt_fancy_terrain);
+   int position = 0;
+   char options[5][100];
+   char display_string[150];
+@@ -1205,7 +1206,7 @@
+ 
+ void win (Game *game, int bonus) {
+   
+-  game->score += game->current_level.landing_score[game->landing_pad];
++  game->score += game->current_level.landing_score[game->landing_pad] + game->fuel;
+ 
+ #ifndef NOSOUND
+   Mix_HaltChannel(1); 
+--- moon-lander-1.0.orig/Makefile
++++ moon-lander-1.0/Makefile
+@@ -1,12 +1,12 @@
+ # Makefile for test program for game_libs - lunar lander
+-CFLAGS=-Wall `sdl-config --libs --cflags` 
++CFLAGS+=-Wall `sdl-config --cflags` 
+ CC=gcc
+ 
+-LIBS=SDL_image
++LIBS=SDL_image `sdl-config --libs`
+ 
+ C_FILES=moon_lander.c game_lib.c DT_drawtext.c
+ OBJ_FILES=moon_lander.o game_lib.o DT_drawtext.o 
+-OUT_FILE=moon-lander.bin
++OUT_FILE=moon-lander
+ 
+ all: game_lib
+ 
+@@ -23,7 +23,7 @@
+ 	$(CC) $(CFLAGS) -c -o $@ $^
+ 
+ clean: 
+-	rm -f *.o core  
++	rm -f $(OUT_FILE) $(OBJ_FILES)
+ 
+ install: 
+ 	./install.sh
