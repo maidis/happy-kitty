@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=XBlast
+GenericName=Bomberman
+GenericName[tr]=Bomberman
+Comment=Bomberman meets Dynablaster
+Comment[tr]=Bomberman - Dynablaster karışımı
+Icon=xblast
+Exec=xblast
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;

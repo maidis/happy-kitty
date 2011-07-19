@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>xblast</Name>
+        <Homepage>http://xblast.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>xblast</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A Bomberman clone</Summary>
+        <Description>XBlast is a multi-player arcade game inspired by the video game Bomberman.</Description>
+        <Archive sha1sum="27ea96ac25a00f77dc962981970e92a90d78e8e4" type="targz">mirrors://sourceforge/xblast/Sources/2.10.4/xblast-2.10.4.tar.gz</Archive>
+        <Archive sha1sum="3fd597a68e96c325654a3772e07528a5b0edc802" type="targz">mirrors://sourceforge/xblast/images-2005-01-06.tar.gz</Archive>
+        <Archive sha1sum="d0b019218479a8f9617f858d7758f7e1b4bd866b" type="targz">mirrors://sourceforge/xblast/levels-2005-01-06.tar.gz</Archive>
+        <Archive sha1sum="8f421133009a480f9be05ac17762cab6691c1f42" type="targz">mirrors://sourceforge/xblast/models-2005-01-06.tar.gz</Archive>
+        <Archive sha1sum="519e4b40148772b72bb12375c5d1a05f3cb26fea" type="targz">mirrors://sourceforge/xblast/musics-2005-01-06.tar.gz</Archive>
+        <Archive sha1sum="8875628de0dda4d4f79ffe324f7e8e560c4e0471" type="targz">mirrors://sourceforge/xblast/sounds.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libICE-devel</Dependency>
+            <Dependency>libX11-devel</Dependency>
+            <Dependency>libpng-devel</Dependency>
+            <Dependency>libXt-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>xblast</Name>
+        <RuntimeDependencies>
+            <Dependency>libICE</Dependency>
+            <Dependency>libXt</Dependency>
+            <Dependency>xorg-font-extra</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/xblast</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/xblast.desktop">xblast.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/xblast.png">xblast.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-11-30</Date>
+            <Version>2.10.4</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
