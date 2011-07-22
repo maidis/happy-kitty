@@ -8646,6 +8646,58 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>visualboyadvance</Name>
+            <Homepage>http://vba.ngemu.com</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:console</IsA>
+            <PartOf>hardware.emulator</PartOf>
+            <Summary xml:lang="en">A Game Boy, Game Boy Color, and Game Boy Advance emulator</Summary>
+            <Summary xml:lang="tr">Bir Game Boy, Game Boy Color ve Game Boy Advance emülatörü</Summary>
+            <Description xml:lang="en">VisualBoyAdvance is an emulator for Game Boy and Game Boy Advance systems.</Description>
+            <Description xml:lang="tr">VisualBoyAdvance; Game Boy ve türevi sistemler için bir emülatördür.</Description>
+            <Archive type="targz" sha1sum="04d82406079563fd17cda07f72488185e9152f51">mirrors://sourceforge/vba/VisualBoyAdvance-src-1.7.2.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>libglademm-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>1.7.2-homedir.patch</Patch>
+                <Patch>1.7.2-gcc34.patch</Patch>
+                <Patch>1.7.2-gcc41.patch</Patch>
+                <Patch>1.7.2-deprecatedsigc++.patch</Patch>
+                <Patch>1.7.2-uninit.patch</Patch>
+                <Patch>1.7.2-glibc.patch</Patch>
+            </Patches>
+            <SourceURI>hardware/emulator/visualboyadvance/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>visualboyadvance</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>libglademm</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2006-09-21</Date>
+                <Version>1.7.2</Version>
+                <Comment>First release.</Comment>
+                <Name>Uğur Çetin</Name>
+                <Email>jnmbk@users.sourceforge.net</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>bsnes</Name>
             <Homepage>http://byuu.org/bsnes</Homepage>
             <Packager>
@@ -8714,6 +8766,57 @@
                 <Date>2011-07-12</Date>
                 <Version>0.080</Version>
                 <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>vbam</Name>
+            <Homepage>http://vba-m.ngemu.com</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:console</IsA>
+            <PartOf>hardware.emulator</PartOf>
+            <Summary xml:lang="en">A Game Boy, Game Boy Color, and Game Boy Advance emulator</Summary>
+            <Summary xml:lang="tr">Bir Game Boy, Game Boy Color ve Game Boy Advance emülatörü</Summary>
+            <Description xml:lang="en">VBA-M is an emulator for Game Boy and Game Boy Advance systems forked from VisualBoyAdvance.</Description>
+            <Description xml:lang="tr">VBA-M; Game Boy ve türevi sistemler için VisualBoyAdvance&apos;dan çatallanmış bir emülatördür.</Description>
+            <Archive type="targz" sha1sum="71027b29e5abd73a4dae5310d3b169eeefcde23b">http://dl.dropbox.com/u/1836567/Paketler/vbam-1.8.0.1009.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>libglademm-devel</Dependency>
+                <Dependency>gtkglextmm</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">vbam-1.8.0.1009-desktop.patch</Patch>
+                <Patch level="1">vbam-1.8.0.1009-no-nls.patch</Patch>
+                <Patch>03vs02.diff</Patch>
+            </Patches>
+            <SourceURI>hardware/emulator/vbam/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>vbam</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>libglademm</Dependency>
+                <Dependency>gtkglextmm</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-07-23</Date>
+                <Version>1.8.0.1009</Version>
+                <Comment>First release.</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
             </Update>
