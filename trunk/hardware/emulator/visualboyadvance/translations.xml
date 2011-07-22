@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>visualboyadvance</Name>
+        <Summary xml:lang="tr">Bir Game Boy, Game Boy Color ve Game Boy Advance emülatörü</Summary>
+        <Description xml:lang="tr">VisualBoyAdvance; Game Boy ve türevi sistemler için bir emülatördür.</Description>
+    </Source>
+</PISI>

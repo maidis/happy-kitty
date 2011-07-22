@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>visualboyadvance</Name>
+        <Homepage>http://vba.ngemu.com</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>A Game Boy, Game Boy Color, and Game Boy Advance emulator</Summary>
+        <Description>VisualBoyAdvance is an emulator for Game Boy and Game Boy Advance systems.</Description>
+        <Archive type="targz" sha1sum="04d82406079563fd17cda07f72488185e9152f51">mirrors://sourceforge/vba/VisualBoyAdvance-src-1.7.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>libglademm-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>1.7.2-homedir.patch</Patch>
+            <Patch>1.7.2-gcc34.patch</Patch>
+            <Patch>1.7.2-gcc41.patch</Patch>
+            <Patch>1.7.2-deprecatedsigc++.patch</Patch>
+            <Patch>1.7.2-uninit.patch</Patch>
+            <Patch>1.7.2-glibc.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>visualboyadvance</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>libglademm</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+   </Package>
+
+   <History>
+        <Update release="1">
+            <Date>2006-09-21</Date>
+            <Version>1.7.2</Version>
+            <Comment>First release.</Comment>
+            <Name>Uğur Çetin</Name>
+            <Email>jnmbk@users.sourceforge.net</Email>
+        </Update>
+    </History>
+</PISI>
