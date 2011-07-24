@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mfe</Name>
+        <Homepage>http://mednafenfe.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <Icon>mfe</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A simple frontend for mednafen</Summary>
+        <Description>mfe (mednafen front end) is a simple, GTK+ frontend / launcher for mednafen, written in Python.</Description>
+        <Archive sha1sum="68a951c2f1f84b78f8c5ef09717ab37e7cfe5992" type="targz">mirrors://sourceforge/mednafenfe/mfe-0.1.6.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>python-gtk-devel</Dependency>
+            <Dependency>gnome-python-extras</Dependency>
+            <Dependency>python-configobj</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mfe</Name>
+        <RuntimeDependencies>
+            <Dependency>python-gtk</Dependency>
+            <Dependency>gnome-python-extras</Dependency>
+            <Dependency>python-configobj</Dependency>
+            <Dependency>mednafen</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/mfe</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-07-24</Date>
+            <Version>0.1.6</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
