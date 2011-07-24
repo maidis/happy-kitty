@@ -8822,6 +8822,107 @@
             </Update>
         </History>
     </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mfe</Name>
+            <Homepage>http://mednafenfe.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>MIT</License>
+            <IsA>app:gui</IsA>
+            <PartOf>hardware.emulator</PartOf>
+            <Summary xml:lang="en">A simple frontend for mednafen</Summary>
+            <Summary xml:lang="tr">mednafen için basit bir önyüz</Summary>
+            <Description xml:lang="en">mfe (mednafen front end) is a simple, GTK+ frontend / launcher for mednafen, written in Python.</Description>
+            <Description xml:lang="tr">mfe (mednafen front end), GTK+ ve Python ile yazılmış basit bir mednafen önyüzüdür.</Description>
+            <Icon>mfe</Icon>
+            <Archive type="targz" sha1sum="68a951c2f1f84b78f8c5ef09717ab37e7cfe5992">mirrors://sourceforge/mednafenfe/mfe-0.1.6.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>python-gtk-devel</Dependency>
+                <Dependency>gnome-python-extras</Dependency>
+                <Dependency>python-configobj</Dependency>
+            </BuildDependencies>
+            <SourceURI>hardware/emulator/mfe/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mfe</Name>
+            <RuntimeDependencies>
+                <Dependency>python-gtk</Dependency>
+                <Dependency>gnome-python-extras</Dependency>
+                <Dependency>python-configobj</Dependency>
+                <Dependency>mednafen</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/mfe</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-07-24</Date>
+                <Version>0.1.6</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mednafen</Name>
+            <Homepage>http://mednafen.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:console</IsA>
+            <PartOf>hardware.emulator</PartOf>
+            <Summary xml:lang="en">A command-line multi-system gaming emulator</Summary>
+            <Summary xml:lang="tr">Bir komut satırı çoklu sistem oyun emülatörü</Summary>
+            <Description xml:lang="en">Mednafen is a portable, utilizing OpenGL and SDL, argument(command-line)-driven multi-system emulator with many advanced features. The Atari Lynx, Game Boy (Color), Game Boy Advance, NES, PC Engine (TurboGrafx 16), SuperGrafx, Neo Geo Pocket (Color), PC-FX, and WonderSwan (Color) are emulated.</Description>
+            <Description xml:lang="tr">Mednafen, portatif, OpenGL ve SDL kullanan, komut satırı üzerinden parametrelerle çalıştırılabilen pek çok özelliğe sahip bir çoklu sistem oyun emülatörüdür. Atari Lynx, Game Boy (Color), Game Boy Advance, NES, PC Engine (TurboGrafx 16), SuperGrafx, Neo Geo Pocket (Color), PC-FX, ve WonderSwan (Color) oyunlarını çalıştırabilmektedir.</Description>
+            <Archive type="tarbz2" sha1sum="b19b92101853cb653506456fd8ab1c0bb0b6e636">mirrors://sourceforge/mednafen/Mednafen/0.8.D.3/mednafen-0.8.D.3.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>alsa-lib-devel</Dependency>
+                <Dependency>libcdio-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>libsndfile-devel</Dependency>
+                <Dependency>sdl-net-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>hardware/emulator/mednafen/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mednafen</Name>
+            <RuntimeDependencies>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>libcdio</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>libsndfile</Dependency>
+                <Dependency>sdl-net</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-07-24</Date>
+                <Version>0.8</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
     <Component>
         <Name>library</Name>
         <LocalName xml:lang="en">FIXME</LocalName>
