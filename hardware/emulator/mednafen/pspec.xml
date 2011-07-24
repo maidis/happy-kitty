@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mednafen</Name>
+        <Homepage>http://mednafen.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>A command-line multi-system gaming emulator</Summary>
+        <Description>Mednafen is a portable, utilizing OpenGL and SDL, argument(command-line)-driven multi-system emulator with many advanced features. The Atari Lynx, Game Boy (Color), Game Boy Advance, NES, PC Engine (TurboGrafx 16), SuperGrafx, Neo Geo Pocket (Color), PC-FX, and WonderSwan (Color) are emulated.</Description>
+        <Archive sha1sum="b19b92101853cb653506456fd8ab1c0bb0b6e636" type="tarbz2">mirrors://sourceforge/mednafen/Mednafen/0.8.D.3/mednafen-0.8.D.3.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>alsa-lib-devel</Dependency>
+            <Dependency>libcdio-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>libsndfile-devel</Dependency>
+            <Dependency>sdl-net-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mednafen</Name>
+        <RuntimeDependencies>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libcdio</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>libsndfile</Dependency>
+            <Dependency>sdl-net</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-07-24</Date>
+            <Version>0.8</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
