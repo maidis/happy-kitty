@@ -1,5 +1,5 @@
---- HappyFrog.pro.orig	2011-04-10 13:07:36.000000000 +0300
-+++ HappyFrog.pro	2011-04-10 14:37:27.859000024 +0300
+--- HappyFrog.pro.orig	2011-07-23 21:02:26.000000000 +0300
++++ HappyFrog.pro	2011-07-28 23:48:16.722000016 +0300
 @@ -1,47 +1,14 @@
  QT     += core gui declarative xml xmlpatterns
  
@@ -96,7 +96,7 @@
      slingshot.h \
      frog.h \
      fixture.h \
-@@ -135,11 +68,10 @@
+@@ -147,7 +80,7 @@
      maemo5 {
          target.path = /opt/usr/bin
      } else {
@@ -105,7 +105,3 @@
      }
      INSTALLS += target
  }
- # Please do not modify the following two lines. Required for deployment.
- include(deployment.pri)
- qtcAddDeployment()
--

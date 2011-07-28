@@ -13,14 +13,13 @@
         <IsA>app:gui</IsA>
         <Summary>A funny game based on Qt and Box2D</Summary>
         <Description>HappyFrog is a funny, Angry Birds similar game which is based on Qt and Box2D.</Description>
-        <Archive sha1sum="7094ebaa375bd1c2791b56bb293f7d0b53df2be9" type="tarbz2">http://happyfrog.googlecode.com/files/happyfrog-Src-0.0.2.tar.bz2</Archive>
+        <Archive sha1sum="540256c882b9bc60e72b3d9e4bc1f174a702e8e7" type="tarbz2">http://happyfrog.googlecode.com/files/Happyfrog-Src-0.0.3.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>box2d</Dependency>
             <Dependency>qt-mobility</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>happyfrog-0.0.2-deployment.pri.diff</Patch>
-            <Patch>happyfrog-0.0.2-desktop-file.diff</Patch>
             <Patch>happyfrog-0.0.2-project-file.diff</Patch>
         </Patches>
     </Source>
@@ -37,9 +36,19 @@
             <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/HappyFrog.desktop">HappyFrog.desktop</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2011-07-28</Date>
+            <Version>0.0.3</Version>
+            <Comment>Version bump</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="3">
             <Date>2011-04-12</Date>
             <Version>0.0.2</Version>
