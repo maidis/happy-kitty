@@ -7,7 +7,7 @@
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import qt4
 
-WorkDir = "happyfrog"
+WorkDir = "HappyFrog"
 
 def setup():
     qt4.configure()
@@ -18,4 +18,4 @@ def build():
 def install():
     qt4.install()
 
-    pisitools.dodoc("LICENSE", "ReadMe.txt")
+    pisitools.dodoc("changelog", "LICENSE", "ReadMe.txt")
