@@ -1,5 +1,5 @@
---- barrage.desktop.in.orig	2010-12-24 12:45:45.000000000 +0200
-+++ barrage.desktop.in	2011-03-27 14:56:50.132000022 +0200
+--- barrage.desktop.orig	2011-07-28 18:00:11.000000000 +0300
++++ barrage.desktop	2011-08-02 12:40:47.317000004 +0300
 @@ -1,7 +1,14 @@
  [Desktop Entry]
 +Type=Application
@@ -12,10 +12,10 @@
 +Comment=A rather destructive action game
 +Comment[tr]=Yıkıcı bir aksiyon oyunu
  Exec=barrage
--Icon=
+-Icon=barrage.png
 -Type=Application
 -Categories=Game;
-+Icon=
++Icon=barrage
 +Terminal=false
 +StartupNotify=false
 +Categories=Application;Game;ActionGame;

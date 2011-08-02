@@ -13,10 +13,14 @@ def setup():
     autotools.automake("-afc")
     autotools.configure()
 
+    pisitools.dosed("configure.in", "datadir/games/barrage", "datadir/barrage")
+
 def build():
     autotools.make()
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    pisitools.insinto("/usr/share/pixmaps", "barrage48.gif", "barrage.gif")
+
+    pisitools.insinto("/usr/share/pixmaps", "barrage48.png", "barrage.png")
+
     pisitools.dodoc("AUTHORS", "BUGS", "ChangeLog", "COPYING", "README")
