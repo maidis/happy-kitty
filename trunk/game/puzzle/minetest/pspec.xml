@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A Minecraft clone</Summary>
         <Description>Minetest is one of the first InfiniMiner / Minecraft inspired games with a goal of taking the survival multiplayer gameplay to a slightly different direction.</Description>
-        <Archive sha1sum="178ab6c1f483b18df3c919f34459a7f70b26e126" type="tarbz2">http://dl.dropbox.com/u/1836567/Paketler/minetest-0.0.tar.bz2</Archive>
+        <Archive sha1sum="1c8413efff52d013382274c6f688bd4bc382c2e1" type="targz">http://dl.dropbox.com/u/1836567/Paketler/celeron55-minetest-b277d01700f6.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>irrlicht-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
@@ -22,7 +22,7 @@
             <Dependency>libX11-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>ambiguous-reference.diff</Patch>
+            <Patch>ambiguous-reference2.diff</Patch>
         </Patches>
     </Source>
 
@@ -40,6 +40,7 @@
             <Path fileType="data">/usr/share/minetest</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
         <AdditionalFiles>
@@ -49,6 +50,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2011-08-02</Date>
+            <Version>0.2</Version>
+            <Comment>Version bump</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-06-12</Date>
             <Version>0.0</Version>
