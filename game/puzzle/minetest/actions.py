@@ -8,6 +8,8 @@ from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
+WorkDir = "celeron55-minetest-b277d01700f6"
+
 def setup():
     cmaketools.configure()
 

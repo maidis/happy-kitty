@@ -1,0 +1,16 @@
+--- src/common_irrlicht.h.orig	2011-07-31 15:54:54.000000000 +0300
++++ src/common_irrlicht.h	2011-08-02 14:59:10.121000001 +0300
+@@ -37,11 +37,11 @@
+ 
+ #ifdef _MSC_VER
+ 	// Windows
+-	typedef unsigned long long u64;
++	//typedef unsigned long long u64;
+ #else
+ 	// Posix
+ 	#include <stdint.h>
+-	typedef uint64_t u64;
++	//typedef uint64_t u64;
+ 	//typedef unsigned long long u64;
+ #endif
+ 
