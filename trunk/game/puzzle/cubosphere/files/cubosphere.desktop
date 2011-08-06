@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Cubosphere
+GenericName=Marble Rolling Game
+GenericName[tr]=Bilye Yuvarlama Oyunu
+Comment=3d puzzle game similar to Kula World / Roll Away
+Comment[tr]=3d puzzle game similar to Kula World / Roll Away
+Icon=cubosphere
+Exec=cubosphere
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;

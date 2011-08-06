@@ -1,0 +1,20 @@
+--- Makefile.orig	2011-08-01 09:42:56.000000000 +0300
++++ Makefile	2011-08-05 19:59:19.438000009 +0300
+@@ -1,4 +1,4 @@
+-PREFIX=/usr/local
++PREFIX=/usr/
+ BINDIR=$(PREFIX)/bin
+ DATADIR=$(PREFIX)/share/cubosphere
+ 
+@@ -7,9 +7,9 @@
+ CC=g++ 
+ 
+ #LUAINC=$(shell if which lua-config50 >/dev/null; then lua-config50 --include; else echo "";fi)
+-#LUALIBS=$(shell if which lua-config50 >/dev/null; then lua-config50 --libs; else echo "-llua -llualib";fi)
++#LUALIBS=$(shell if which lua-config50 >/dev/null; then lua-config50 --libs; else echo "-llua ";fi)
+ 
+-LUALIBS=-llua5.1
++LUALIBS=-llua
+ LUAINC=-I/usr/include/lua5.1
+ 
+ CFLAGS+=$(LUAINC) $(shell sdl-config --cflags) -o $(EXECUTABLE)

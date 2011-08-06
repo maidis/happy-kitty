@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>cubosphere</Name>
+        <Summary xml:lang="tr">Kula World / Roll Away benzeri 3b bulmaca oyunu</Summary>
+        <Description xml:lang="tr">Cubosphere, PSX oyunu Kula World / Roll Away benzeri bir oyundur.</Description>
+    </Source>
+</PISI>

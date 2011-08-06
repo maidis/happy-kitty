@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>cubosphere</Name>
+        <Homepage>http://cubosphere.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>cubosphere</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>3d puzzle game similar to Kula World / Roll Away</Summary>
+        <Description>Cubosphere is a freeware game similar to the PSX game Kula World / Roll Away.</Description>
+        <Archive sha1sum="2cd7ef01771e27677d213b3c0d8c9298b0de92ac" type="tar">mirrors://sourceforge/cubosphere/cubosphere_beta_0.1_unix.tar</Archive>
+        <BuildDependencies>
+            <Dependency>lua-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>jpeg-devel</Dependency>
+            <Dependency>glew-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-ttf-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>cubosphere</Name>
+        <RuntimeDependencies>
+            <Dependency>lua</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>jpeg</Dependency>
+            <Dependency>glew</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-ttf</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/cubosphere</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/cubosphere.desktop">cubosphere.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/cubosphere.png">cubosphere.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-08-06</Date>
+            <Version>0.1</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
