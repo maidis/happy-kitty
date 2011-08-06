@@ -6022,6 +6022,67 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>cubosphere</Name>
+            <Homepage>http://cubosphere.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">3d puzzle game similar to Kula World / Roll Away</Summary>
+            <Summary xml:lang="tr">Kula World / Roll Away benzeri 3b bulmaca oyunu</Summary>
+            <Description xml:lang="en">Cubosphere is a freeware game similar to the PSX game Kula World / Roll Away.</Description>
+            <Description xml:lang="tr">Cubosphere, PSX oyunu Kula World / Roll Away benzeri bir oyundur.</Description>
+            <Icon>cubosphere</Icon>
+            <Archive type="tar" sha1sum="2cd7ef01771e27677d213b3c0d8c9298b0de92ac">mirrors://sourceforge/cubosphere/cubosphere_beta_0.1_unix.tar</Archive>
+            <BuildDependencies>
+                <Dependency>lua-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>jpeg-devel</Dependency>
+                <Dependency>glew-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-ttf-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/puzzle/cubosphere/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>cubosphere</Name>
+            <RuntimeDependencies>
+                <Dependency>lua</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>jpeg</Dependency>
+                <Dependency>glew</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-ttf</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/cubosphere</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/cubosphere.desktop" permission="0644" owner="root">cubosphere.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/cubosphere.png" permission="0644" owner="root">cubosphere.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-08-06</Date>
+                <Version>0.1</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>unknown-horizons</Name>
             <Homepage>http://www.unknown-horizons.org</Homepage>
             <Packager>
