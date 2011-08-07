@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>openclonk</Name>
+        <Summary xml:lang="tr">Aksiyon dolu bir strateji, taktik ve beceri oyunu</Summary>
+        <Description xml:lang="tr">OpenClonk, küçük, zeki ve çevik insansı varlıklar olan clonkları kontrol ettiğiniz bir çevrimiçi aksiyon oyunudur. OpenClonk, temel olarak madenciliğe, yerleşmeye ve hızlı tempolu meydan kavgalarına dayalı bir oyundur.</Description>
+    </Source>
+</PISI>
