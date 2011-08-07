@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>openclonk</Name>
+        <Homepage>http://www.openclonk.org</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>as-is</License>
+        <License>LLGPL-2.1</License>
+        <License>xiph</License>
+        <License>openssl</License>
+        <License>ISC</License>
+        <Icon>clonk</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>An action-packed game of strategy, tactics, and skill</Summary>
+        <Description>OpenClonk is a free multiplayer action game where you control clonks, small but witty and nimble humanoid beings. The game is mainly about mining, settling and fast-paced melees.</Description>
+        <Archive sha1sum="6df3b13459282252ba2b0ab51467036a00fcf517" type="targz">http://dl.dropbox.com/u/1836567/Paketler/openclonk.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>jpeg-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>glew-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>libXpm-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>freetype-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>libXrandr-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>libXxf86vm-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>openclonk</Name>
+        <RuntimeDependencies>
+            <Dependency>jpeg</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>glew</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>libXpm</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXxf86vm</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/opt/openclonk/clonk</Path>
+            <Path fileType="data">/opt/openclonk</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/clonk">clonk</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-08-07</Date>
+            <Version>5.1.2.1</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
