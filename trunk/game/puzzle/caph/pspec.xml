@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>caph</Name>
+        <Homepage>http://caphgame.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>caph</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A sandbox game, based on physics</Summary>
+        <Description>Caph is a sandbox game, based on physics. The game aim is to make contact red object with green object. You can use various objects, solid, wire (rope), and bendable objects. Gravitation will help you.</Description>
+        <Archive sha1sum="ccfbcd3c49ba2f8ff4c3dc92af675757015541d9" type="tarbz2">mirrors://sourceforge/caphgame/caph/caphgame-1.1/caph-1.1.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">caph-linux.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>caph</Name>
+        <RuntimeDependencies>
+            <Dependency>mesa</Dependency>
+            <Dependency>libsdl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/caph</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/caph.desktop">caph.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-08-11</Date>
+            <Version>1.1</Version>
+            <Comment>Copy paste from numptyphysics package :)</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

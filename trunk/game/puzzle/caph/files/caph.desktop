@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Caph
+GenericName=Drawing Puzzle Game
+GenericName[tr]=Çizim Bulmaca Oyunu
+Comment=A sandbox game, based on physics
+Comment[tr]=Fizik temelli çizim oyunu
+Icon=caph
+Exec=caph
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;
