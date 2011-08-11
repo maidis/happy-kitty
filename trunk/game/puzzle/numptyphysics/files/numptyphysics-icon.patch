@@ -1,0 +1,58 @@
+Index: configure.in
+===================================================================
+--- configure.in.orig
++++ configure.in
+@@ -44,34 +44,22 @@ if test "x${enable_hildon}" = "xyes" ; t
+    desktopentrydir=`$PKG_CONFIG osso-af-settings --variable=desktopentrydir`
+    serviceentrydir=`$PKG_CONFIG osso-af-settings --variable=dbusservicedir`
+    numptyphysicsdir=/opt/numptyphysics
+-   icon_26x26dir=$datadir/icons/hicolor/26x26/hildon
+-   icon_34x34dir=$datadir/icons/hicolor/34x34/hildon
+-   icon_40x40dir=$datadir/icons/hicolor/40x40/hildon
+-   icon_50x50dir=$datadir/icons/hicolor/50x50/hildon
++   icon_48x48dir=$datadir/icons/hicolor/48x48/hildon
+    icon_64x64dir=$datadir/icons/hicolor/64x64/hildon
+-   icon_scalabledir=$datadir/icons/hicolor/scalable/hildon
+    AC_SUBST(HILDON_CFLAGS)
+    AC_SUBST(HILDON_LIBS)
+ else
+    desktopentrydir=/usr/share/applications
+    serviceentrydir=$datadir/numptyphysics
+    numptyphysicsdir=$datadir/numptyphysics
+-   icon_26x26dir=$datadir/icons/hicolor/26x26/apps
+-   icon_34x34dir=$datadir/icons/hicolor/34x34/apps
+-   icon_40x40dir=$datadir/icons/hicolor/40x40/apps
+-   icon_50x50dir=$datadir/icons/hicolor/50x50/apps
++   icon_48x48dir=$datadir/icons/hicolor/48x48/apps
+    icon_64x64dir=$datadir/icons/hicolor/64x64/apps
+-   icon_scalabledir=$datadir/icons/hicolor/scalable/apps
+ fi
+ AC_SUBST(desktopentrydir)
+ AC_SUBST(serviceentrydir)
+ AC_SUBST(numptyphysicsdir)
+-AC_SUBST(icon_26x26dir)
+-AC_SUBST(icon_34x34dir)
+-AC_SUBST(icon_40x40dir)
+-AC_SUBST(icon_50x50dir)
++AC_SUBST(icon_48x48dir)
+ AC_SUBST(icon_64x64dir)
+-AC_SUBST(icon_scalabledir)
+ 
+ 
+ AC_CHECK_LIB(stdc++, main)
+Index: Makefile.am
+===================================================================
+--- Makefile.am.orig
++++ Makefile.am
+@@ -4,10 +4,8 @@ INCLUDES = -IBox2D/Include
+ 
+ desktopentry_DATA = data/numptyphysics.desktop
+ serviceentry_DATA = data/numptyphysics.service
+-icon_26x26_DATA = data/icon26/numptyphysics.png 
+-#icon_40x40_DATA = data/icon40/numptyphysics.png
++icon_48x48_DATA = data/icon48/numptyphysics.png
+ icon_64x64_DATA = data/icon64/numptyphysics.png
+-icon_scalable_DATA = data/icon64/numptyphysics.png
+ 
+ numptyphysics_SOURCES = \
+ 	Path.cpp \

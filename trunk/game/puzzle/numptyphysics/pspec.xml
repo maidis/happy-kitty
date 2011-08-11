@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>numptyphysics</Name>
+        <Homepage>http://numptyphysics.garage.maemo.org</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <License>as-is</License>
+        <Icon>numptyphysics</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A crayon-drawing based physics puzzle game</Summary>
+        <Description>Numpty Physics is a drawing puzzle game in the spirit and style of Crayon Physics that you harness gravity with your crayon and set about creating blocks, ramps, levers, pulleys and whatever else you fancy to get the little red thing to the little yellow thing.</Description>
+        <Archive sha1sum="d37b74fbbad1ddfaacdad77b2ddd05384eb95928" type="tarbz2">http://happy-kitty.googlecode.com/files/numptyphysics-svn-r157.tar.bz2</Archive>
+        <Archive sha1sum="373a3fb13b3525201af419d927a2aff06437ce78" type="tarbz2" target="numptyphysics-svn-r157">http://happy-kitty.googlecode.com/files/numptyphysics-levels.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-ttf-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>numptyphysics-icon.patch</Patch>
+            <Patch>numptyphysics-nonvoid.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>numptyphysics</Name>
+        <RuntimeDependencies>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-ttf</Dependency>
+            <Dependency>libsdl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/numptyphysics</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/numptyphysics.desktop">numptyphysics.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="3">
+            <Date>2011-08-11</Date>
+            <Version>0.3_20110811</Version>
+            <Comment>Take over package.</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+        <Update release="2">
+            <Date>2009-06-05</Date>
+            <Version>0.3_20090103</Version>
+            <Comment>Add missing libsdl dependency.</Comment>
+            <Name>H. İbrahim Güngör</Name>
+            <Email>h.ibrahim.gungor@gmail.com</Email>
+        </Update>
+        <Update release="1">
+            <Date>2009-01-03</Date>
+            <Version>0.3_20090103</Version>
+            <Comment>First release.</Comment>
+            <Name>H. İbrahim Güngör</Name>
+            <Email>h.ibrahim.gungor@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

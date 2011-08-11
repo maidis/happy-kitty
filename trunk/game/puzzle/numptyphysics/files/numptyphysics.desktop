@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Numpty Physics
+GenericName=Drawing Puzzle Game
+GenericName[tr]=Çizim Bulmaca Oyunu
+Comment=Crayon Pyhsics like game
+Comment[tr]=Crayon Physics benzeri bir oyun
+Icon=numptyphysics
+Exec=numptyphysics
+Terminal=false
+StartupNotify=false
+MimeType=application/x-numptyphysics-level;application/x-numptyphysics-collection;
+Categories=Application;Game;LogicGame;
