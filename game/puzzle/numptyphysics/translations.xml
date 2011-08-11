@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>numptyphysics</Name>
+        <Summary xml:lang="tr">Renkli kalemlerle çizilen, fizik kuralları geçerli olan bir bulmaca oyunu</Summary>
+        <Description xml:lang="tr">Numpty Physics, renkli kalemlerle bloklar, rampalar, kaldıraçlar ya da canınız ne isterse çizdiğiniz, yerçekimini kullanarak kırmızı küçük şeyi sarı şeye ulaştırmaya çalıştığınız Crayon Physics tarzı çizim bulmaca oyunudur.</Description>
+    </Source>
+</PISI>
