@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>caph</Name>
+        <Summary xml:lang="tr">Bir fizik temelli çizim oyunu</Summary>
+        <Description xml:lang="tr">Caph fizik temelli bir çizim oyunudur. Oyunun amacı, yeşil nesne ile kırmızı nesneyi bir araya getirmeye çalışmaktır. Oyunda katı cisim, ip, bükülebilir nesneler vb. kullanabilirsiniz. Yerçekimi de size yardımcı olacaktır.</Description>
+    </Source>
+</PISI>
