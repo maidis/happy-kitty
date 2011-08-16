@@ -1,0 +1,24 @@
+--- meandmyshadow.desktop.orig	2011-05-03 10:01:13.000000000 +0300
++++ meandmyshadow.desktop	2011-08-16 13:39:37.687000014 +0300
+@@ -1,10 +1,14 @@
+-#!/usr/bin/env xdg-open
+ [Desktop Entry]
+-Version=0.1.1
+ Type=Application
++Version=1.0
++Encoding=UTF-8
+ Name=MeAndMyShadow
+-Comment=MeAndMyShadow is a puzzle platformer
+-TryExec=meandmyshadow
+-Exec=meandmyshadow
++GenericName=Me and My Shadow
++GenericName[tr]=Ben ve Gölgem
++Comment=A puzzle platformer
++Comment[tr]=Bir bulmaca platform oyunu
+ Icon=meandmyshadow
+-Categories=Game;PuzzleGame; 
+\ Dosya sonunda yenisatır yok.
++Exec=meandmyshadow
++Terminal=false
++StartupNotify=false
++Categories=Application;Game;LogicGame;
