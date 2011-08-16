@@ -5463,6 +5463,62 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>meandmyshadow</Name>
+            <Homepage>http://meandmyshadow.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <License>public-domain</License>
+            <License>CCPL-Attribution-ShareAlike-3.0</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A puzzle platformer</Summary>
+            <Summary xml:lang="tr">Bir bulmaca platform oyunu</Summary>
+            <Description xml:lang="en">Me and My Shadow is a 2D puzzle platform game that has a unique system.</Description>
+            <Description xml:lang="tr">Me and My Shadow, eşsiz bir sisteme sahip 2B bulmaca platform oyunudur.</Description>
+            <Icon>meandmyshadow</Icon>
+            <Archive type="targz" sha1sum="4d75b7e435fce17905d8be6d2c0514a3aef730a6">mirrors://sourceforge/meandmyshadow/0.1.2/meandmyshadow-0.1.2.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-ttf-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>meandmyshadow.desktop.diff</Patch>
+            </Patches>
+            <SourceURI>game/puzzle/meandmyshadow/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>meandmyshadow</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-ttf</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/meandmyshadow</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-08-15</Date>
+                <Version>0.1.2</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>glpeces</Name>
             <Homepage>http://kde-apps.org/content/show.php/Peces+(Tangram+game)?content=123490</Homepage>
             <Packager>
