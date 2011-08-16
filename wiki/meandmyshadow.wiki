@@ -1,0 +1,5 @@
+#summary A 2D puzzle platform game
+#labels meandmyshadow,sdl,puzzle,game
+
+|| Me and My Shadow is a 2D puzzle platform game that has a unique system. || <wiki:video url="http://www.youtube.com/watch?v=aSdyQE-aMVs"/> ||
+||[http://meandmyshadow.sourceforge.net/ Me and My Shadow Home Page]|| Packager: [ozbekanil] ||
