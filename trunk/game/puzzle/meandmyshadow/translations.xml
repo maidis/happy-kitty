@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>meandmyshadow</Name>
+        <Summary xml:lang="tr">Bir bulmaca platform oyunu</Summary>
+        <Description xml:lang="tr">Me and My Shadow, eşsiz bir sisteme sahip 2B bulmaca platform oyunudur.</Description>
+    </Source>
+</PISI>
