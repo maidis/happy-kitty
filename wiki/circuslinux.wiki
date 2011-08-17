@@ -1,0 +1,5 @@
+#summary A clone of Circus Atari
+#labels circuslinux,game,arcade,sdl
+
+|| Circus Linux! is a clone of the Atari 2600 game Circus Atari. The object is to move a teeter-totter back and forth across the screen to bounce clowns up into the air. When they reach the top, they pop rows of balloons and then fall back down. || <wiki:video url="http://www.youtube.com/watch?v=RYbEAVoOSiY"/> ||
+||[http://www.newbreedsoftware.com/circus-linux Circus Linux! Home Page]|| Packager: [ozbekanil] ||
