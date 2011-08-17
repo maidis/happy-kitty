@@ -1,0 +1,5 @@
+#summary A Game Boy, Game Boy Color, and Game Boy Advance emulator
+#labels visualboyadvance,emulator,sdl
+
+|| VisualBoyAdvance is an emulator for Game Boy and Game Boy Advance systems. || <wiki:video url="http://www.youtube.com/watch?v=dcvlQrNZKsY"/> ||
+||[http://vba.ngemu.com VisualBoyAdvance Home Page]|| Packager: [ozbekanil] ||
