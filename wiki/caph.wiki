@@ -1,0 +1,5 @@
+#summary A sandbox game, based on physics
+#labels caph,game,puzzle,sdl
+
+|| Caph is a sandbox game, based on physics. The game aim is to make contact red object with green object. You can use various objects, solid, wire (rope), and bendable objects. Gravitation will help you. || <wiki:video url="http://www.youtube.com/watch?v=97uxzkrV2Tw"/> ||
+||[http://caphgame.sourceforge.net Caph Home Page]|| Packager: [ozbekanil] ||
