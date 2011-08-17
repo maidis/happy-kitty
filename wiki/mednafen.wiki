@@ -1,0 +1,5 @@
+#summary A command-line multi-system gaming emulator
+#labels mednafen,emulator,sdl
+
+|| Mednafen is a portable, utilizing OpenGL and SDL, argument(command-line)-driven multi-system emulator with many advanced features. The Atari Lynx, Game Boy (Color), Game Boy Advance, NES, PC Engine (TurboGrafx 16), SuperGrafx, Neo Geo Pocket (Color), PC-FX, and WonderSwan (Color) are emulated. || <wiki:video url="http://www.youtube.com/watch?v=H087lab5vTQ"/> ||
+||[http://mednafen.sourceforge.net Mednafen Home Page]|| Packager: [ozbekanil] ||
