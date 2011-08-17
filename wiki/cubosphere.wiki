@@ -1,0 +1,5 @@
+#summary 3d puzzle game similar to Kula World / Roll Away
+#labels cubosphere,game,lua,sdl,puzzle
+
+|| Cubosphere is a freeware game similar to the PSX game Kula World / Roll Away. || <wiki:video url="http://www.youtube.com/watch?v=aFXtppJnMBg"/> ||
+||[http://cubosphere.sourceforge.net Cubosphere Home Page]|| Packager: [ozbekanil] ||
