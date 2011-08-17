@@ -1,0 +1,5 @@
+#summary A Game Boy, Game Boy Color, and Game Boy Advance emulator
+#labels vbam,emulator,sdl
+
+|| VBA-M is an emulator for Game Boy and Game Boy Advance systems forked from VisualBoyAdvance. || <wiki:video url="http://www.youtube.com/watch?v=EbB9zHCqTCw"/> ||
+||[http://vba-m.ngemu.com VBA-M Home Page]|| Packager: [ozbekanil] ||
