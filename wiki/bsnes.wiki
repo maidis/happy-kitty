@@ -1,0 +1,5 @@
+#summary A Super Nintendo Entertainment System emulator
+#labels bsnes,emulator,sdl
+
+|| bsnes is a Super Nintendo Entertainment System (SNES) emulator focused on accuracy, debugging functionality, and clean code. The emulator does not focus on things that would hinder accuracy. This includes speed and game-specific hacks for compatibility. As a result, the minimum system requirements for bsnes are very high. || <wiki:video url="http://www.youtube.com/watch?v=T2nhyxfP8SM"/> ||
+||[http://byuu.org/bsnes bsnes Home Page]|| Packager: [ozbekanil] ||
