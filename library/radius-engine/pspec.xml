@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A 2D game engine built on top of SDL, OpenGL, and Lua</Summary>
         <Description>The Radius Engine is a free 2D game engine built on top of SDL, OpenGL, and Lua that currently works on both Windows and Linux.</Description>
-        <Archive sha1sum="1a37de00e978dd62ede79627723d7176ec790a50" type="targz">mirrors://sourceforge/radius-engine/radius-engine-0.6.tar.gz</Archive>
+        <Archive sha1sum="f0cd8e4ce14fb5486280c1ccb1a8f2bdc0462131" type="targz">mirrors://sourceforge/radius-engine/radius-engine-0.7.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libsdl-devel</Dependency>
             <Dependency>sdl-sound-devel</Dependency>
@@ -38,6 +38,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2011-08-21</Date>
+            <Version>0.7</Version>
+            <Comment>Version bump</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2010-12-10</Date>
             <Version>0.6</Version>
