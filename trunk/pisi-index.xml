@@ -2248,11 +2248,14 @@
             <Description xml:lang="en">Avoision is a straightforward, yet captivating distillation of vintage arcade entertainment requiring strategy, precision, and perseverance with a singular objective: capture the red square while evading innumerable cruel, spiteful white squares.</Description>
             <Description xml:lang="tr">Avoision, basit olduğu kadar çekici de olan ve strateji, dakiklik, sabır gibi anahtar ifadeleri bir potada eriten bir oyundur. Oyundaki ana amacınız kırmızı kutuları toplayıp, acımasız beyaz kutulardan kaçmak.</Description>
             <Icon>avoision</Icon>
-            <Archive type="targz" sha1sum="77b0e74ef1ff9f03636cd3a9d2d2777932d0bd9e">mirrors://sourceforge/avsn/avoision-0.6.tar.gz</Archive>
+            <Archive type="targz" sha1sum="99dd633fe2e52e210a6a085bc50ad1038881e462">mirrors://sourceforge/avsn/avoision-0.7.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>radius-engine</Dependency>
                 <Dependency>lua-devel</Dependency>
                 <Dependency>libsdl-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>physfs-devel</Dependency>
+                <Dependency>sdl-sound-devel</Dependency>
             </BuildDependencies>
             <SourceURI>game/arcade/avoision/pspec.xml</SourceURI>
         </Source>
@@ -2262,6 +2265,9 @@
                 <Dependency>radius-engine</Dependency>
                 <Dependency>lua</Dependency>
                 <Dependency>libsdl</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>physfs</Dependency>
+                <Dependency>sdl-sound</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
@@ -2276,6 +2282,13 @@
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2011-08-21</Date>
+                <Version>0.7</Version>
+                <Comment>Version bump</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2010-12-14</Date>
                 <Version>0.6</Version>
@@ -7641,7 +7654,7 @@
             <Summary xml:lang="tr">SDL, OpenGL ve Lua üzerine kurulu bir 2B oyun motoru</Summary>
             <Description xml:lang="en">The Radius Engine is a free 2D game engine built on top of SDL, OpenGL, and Lua that currently works on both Windows and Linux.</Description>
             <Description xml:lang="tr">Radius Engine; SDL, OpenGL ve Lua üzerine kurulu bir 2B oyun motorudur. Şu an GNU/Linux dışında yalnızca Windows üzerinde çalışmaktadır.</Description>
-            <Archive type="targz" sha1sum="1a37de00e978dd62ede79627723d7176ec790a50">mirrors://sourceforge/radius-engine/radius-engine-0.6.tar.gz</Archive>
+            <Archive type="targz" sha1sum="f0cd8e4ce14fb5486280c1ccb1a8f2bdc0462131">mirrors://sourceforge/radius-engine/radius-engine-0.7.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>libsdl-devel</Dependency>
                 <Dependency>sdl-sound-devel</Dependency>
@@ -7666,6 +7679,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2011-08-21</Date>
+                <Version>0.7</Version>
+                <Comment>Version bump</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2010-12-10</Date>
                 <Version>0.6</Version>
