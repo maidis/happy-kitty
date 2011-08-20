@@ -60,7 +60,6 @@ The table below describes Additional Categories.
 [Desktop Entry]
 Type=Application
 Version=1.0
-Encoding=UTF-8
 Name=Airstrike
 GenericName=Dogfight Game
 GenericName[tr]=İtdalaşı Oyunu
