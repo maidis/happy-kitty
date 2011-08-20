@@ -13,11 +13,14 @@
         <IsA>app:gui</IsA>
         <Summary>A box hunting game</Summary>
         <Description>Avoision is a straightforward, yet captivating distillation of vintage arcade entertainment requiring strategy, precision, and perseverance with a singular objective: capture the red square while evading innumerable cruel, spiteful white squares.</Description>
-        <Archive sha1sum="77b0e74ef1ff9f03636cd3a9d2d2777932d0bd9e" type="targz">mirrors://sourceforge/avsn/avoision-0.6.tar.gz</Archive>
+        <Archive sha1sum="99dd633fe2e52e210a6a085bc50ad1038881e462" type="targz">mirrors://sourceforge/avsn/avoision-0.7.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>radius-engine</Dependency>
             <Dependency>lua-devel</Dependency>
             <Dependency>libsdl-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>physfs-devel</Dependency>
+            <Dependency>sdl-sound-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -27,6 +30,9 @@
             <Dependency>radius-engine</Dependency>
             <Dependency>lua</Dependency>
             <Dependency>libsdl</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>physfs</Dependency>
+            <Dependency>sdl-sound</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -42,6 +48,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2011-08-21</Date>
+            <Version>0.7</Version>
+            <Comment>Version bump</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2010-12-14</Date>
             <Version>0.6</Version>
