@@ -92,3 +92,93 @@ endif("${CMAKE_SYSTEM_NAME}" MATCHES "Linux")
 
 #endif
 }}}
+
+
+*Globals.h*
+{{{
+#ifndef GLOBALS_H
+#define GLOBALS_H
+
+...
+
+#ifdef WIN32
+//#define DATA_PATH
+#else
+#include "config.h"
+#endif
+
+...
+
+#endif
+}}}
+
+
+*Functions.cpp*
+{{{
+...
+
+#include "Globals.h"
+
+...
+
+string m_sUserPath,m_sDataPath,m_sAppPath,m_sEXEName;
+
+...
+
+    //get the data path
+    {
+        FILE *f;
+        string s;
+        for(;;){
+            //try existing one
+            if(!m_sDataPath.empty()){
+                s=m_sDataPath+"data/font/ComicBook.ttf";
+                if((f=fopen(s.c_str(),"rb"))!=NULL){
+                    fclose(f);
+                    break;
+                }
+            }
+            //try "./"
+            m_sDataPath="./";
+            s=m_sDataPath+"data/font/ComicBook.ttf";
+            if((f=fopen(s.c_str(),"rb"))!=NULL){
+                fclose(f);
+                break;
+...
+
+            //try DATA_PATH
+#ifdef DATA_PATH
+            m_sDataPath=DATA_PATH;
+            s=m_sDataPath+"data/font/ComicBook.ttf";
+            if((f=fopen(s.c_str(),"rb"))!=NULL){
+                fclose(f);
+                break;
+            }
+#endif
+            //error: can't find file
+            return false;
+        }
+        font = TTF_OpenFont(s.c_str(), 28);
+        font_small = TTF_OpenFont(s.c_str(), 20);
+    }
+
+    s_dark_block = load_image(GetDataPath()+"data/gfx/dark.png");
+    s_black = load_image(GetDataPath()+"data/gfx/black.png");
+    music = Mix_LoadMUS((GetDataPath()+"data/sfx/Music.mid").c_str());
+    bool b=o_mylevels.load_levels("%DATA%/data/level/levellist.txt","levelprogress.txt");
+    b=s_dark_block!=NULL && s_black!=NULL
+        && font!=NULL && font_small != NULL && b;
+
+    if(music==NULL)
+        printf("Warning: Unable to load background music! \n");
+
+    if(b){
+        printf("Data files will be fetched from: '%s'\n",m_sDataPath.c_str());
+        printf("User preferences will be fetched from: '%s'\n",m_sUserPath.c_str());
+    }
+    return b;
+}
+
+...
+
+}}}
