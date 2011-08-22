@@ -10,6 +10,7 @@
   * Contribute
     * [BecomingSponsor]
     * [BuildingSourceRepository]
+    * [CMake]
     * [DesktopFiles]
     * [EmulatorMission]
     * [HappyPenguinMission]
