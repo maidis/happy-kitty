@@ -14,11 +14,17 @@ To become a Happy Kitty user does not need to do anything special. Just add Happ
 
 
 == As Happy Kitty Packager ==
-Anyone who can make a package for Pardus be a packager at Happy Kitty. There are just some of the conditions. Using Pardus. Love to playing and packaging. Know at least a basic level of programming. Like research and debugging...
+Anyone who can make a package for Pardus could be a packager at Happy Kitty. There are just some conditions.
+  * Using Pardus.
+  * Love to playing and packaging.
+  * Know at least a basic level of programming.
+  * Like research and debugging
+  * ...
 
 Happy Kitty doesn't have an exact policy yet. This is only a primitive state of such a future document. Just a draft.
 
 Here's the plan. Do one of the following tasks and be one of the first packagers at Happy Kitty. They often will not be easy. Beware of dragons because you are crunchy and taste good with ketchup!
+  *
 
 
 == As Happy Kitty Developer ==
