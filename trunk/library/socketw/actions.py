@@ -9,7 +9,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def build():
-    autotools.make()
+    autotools.make("--silent shared")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
