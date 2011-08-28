@@ -3257,10 +3257,11 @@
             <Description xml:lang="en">Plee the Bear will be a 2d platform game like those we found on consoles in the beginning of the 90&apos;s.</Description>
             <Description xml:lang="tr">Plee the Bear, 90&apos;ların başında oyun konsollarında oynadığımız 2b platform oyunlarının bir benzeri olacak bir oyun projesidir.</Description>
             <Icon>ptb</Icon>
-            <Archive type="targz" sha1sum="55f793b8bc775b90cc5df776a27769222ac6f9e9">mirrors://sourceforge/plee-the-bear/Plee%20the%20Bear/0.5/plee-the-bear-0.5.1.tar.gz</Archive>
+            <Archive type="targz" sha1sum="595021ecbdba4b35b39357e43a45b23ee032900f">mirrors://sourceforge/plee-the-bear/Plee%20the%20Bear/0.6/plee-the-bear-0.6.0.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>libclaw</Dependency>
                 <Dependency>boost-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
                 <Dependency>sdl-mixer-devel</Dependency>
                 <Dependency>mesa-devel</Dependency>
             </BuildDependencies>
@@ -3271,6 +3272,7 @@
             <RuntimeDependencies>
                 <Dependency>libclaw</Dependency>
                 <Dependency>boost</Dependency>
+                <Dependency>libsdl</Dependency>
                 <Dependency>sdl-mixer</Dependency>
                 <Dependency>mesa</Dependency>
             </RuntimeDependencies>
@@ -3287,6 +3289,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2011-08-28</Date>
+                <Version>0.6.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2011-05-02</Date>
                 <Version>0.5.1</Version>
@@ -8476,7 +8485,7 @@
             <Summary xml:lang="tr">Kesinlikle harika bir C++ kütüphanesi</Summary>
             <Description xml:lang="en">Claw is a C++ Library Absolutely Wonderful. Claw groups some small tools for game programming.</Description>
             <Description xml:lang="tr">Claw, oyun programlaması için çeşitli küçük araçları bir araya getiren kesinlikle harika bir C++ kütüphanesidir.</Description>
-            <Archive type="targz" sha1sum="a57dcd0a7c74eb49270a375f7f52c0ebfcc1970f">mirrors://sourceforge/libclaw/libclaw/1.6.1/libclaw-1.6.1.tar.gz</Archive>
+            <Archive type="targz" sha1sum="abbfeb6bd75d3c1c77621b745264ff09ce83acee">mirrors://sourceforge/libclaw/libclaw/1.7.0/libclaw-1.7.0.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>jpeg-devel</Dependency>
             </BuildDependencies>
@@ -8497,6 +8506,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2011-08-28</Date>
+                <Version>1.7.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2011-05-02</Date>
                 <Version>1.6.1</Version>
