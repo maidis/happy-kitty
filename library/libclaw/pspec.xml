@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>C++ Library Absolutely Wonderful</Summary>
         <Description>Claw is a C++ Library Absolutely Wonderful. Claw groups some small tools for game programming.</Description>
-        <Archive sha1sum="a57dcd0a7c74eb49270a375f7f52c0ebfcc1970f" type="targz">mirrors://sourceforge/libclaw/libclaw/1.6.1/libclaw-1.6.1.tar.gz</Archive>
+        <Archive sha1sum="abbfeb6bd75d3c1c77621b745264ff09ce83acee" type="targz">mirrors://sourceforge/libclaw/libclaw/1.7.0/libclaw-1.7.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>jpeg-devel</Dependency>
         </BuildDependencies>
@@ -34,6 +34,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2011-08-28</Date>
+            <Version>1.7.0</Version>
+            <Comment>Version bump</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-05-02</Date>
             <Version>1.6.1</Version>
