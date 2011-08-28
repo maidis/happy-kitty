@@ -9,6 +9,8 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
+    pisitools.dosed("CMakeLists.txt", "} DESTINATION doc", "} DESTINATION share/doc")
+
     cmaketools.configure()
 
 def build():
@@ -16,5 +18,3 @@ def build():
 
 def install():
     cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
-
-    pisitools.dodoc("Contributors.txt", "gpl.txt", "lgpl.txt", "ReadMe.txt")
