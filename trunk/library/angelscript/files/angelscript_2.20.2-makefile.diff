@@ -1,5 +1,5 @@
---- makefile.orig	2010-10-20 22:03:26.000000000 +0300
-+++ makefile	2011-04-09 02:40:39.714000038 +0300
+--- makefile.orig	2011-08-20 13:51:42.000000000 +0300
++++ makefile	2011-08-28 13:50:59.624000007 +0300
 @@ -2,7 +2,7 @@
  # Type 'make' then 'make install' to complete the installation of the library
  
@@ -9,7 +9,7 @@
  
  # If you want to build a shared library, then run make with SHARED=1 and VERSION=version
  ifdef SHARED
-@@ -20,7 +20,7 @@
+@@ -21,7 +21,7 @@
  	OBJDIR = obj-iphone
  	LIBDIR = ../../lib-iphone
  	CXX = $(IPHONEBIN)/arm-apple-darwin9-g++-4.0.1 
@@ -18,7 +18,7 @@
  else ifeq ($(TARGETPLATFORM), android)
  	ANDROIDNDKROOT = /cygdrive/c/android/android-ndk-1.6_r1
  	ANDROIDBIN = $(ANDROIDNDKROOT)/build/prebuilt/windows/arm-eabi-4.2.1/bin
-@@ -28,7 +28,7 @@
+@@ -29,7 +29,7 @@
  	OBJDIR = obj-android
  	LIBDIR = ../../lib-android
  	CXX = $(ANDROIDBIN)/arm-eabi-gcc
@@ -27,7 +27,7 @@
  	-Wall \
  	-DANDROID \
  	-fno-exceptions \
-@@ -40,7 +40,7 @@
+@@ -41,7 +41,7 @@
  	CXX ?= gcc
  	# On i686 architecture you may need to add -march=i686 if you get 
  	# an undefined symbol for __sync_sub_and_fetch_4 in as_atomic.cpp.
@@ -36,7 +36,7 @@
  endif
  
  AR ?= ar
-@@ -126,19 +126,19 @@
+@@ -128,19 +128,19 @@
  clean:
  	$(DELETER) $(OBJ) $(BIN) $(LIBDIR)/$(DEVLIB)
  
