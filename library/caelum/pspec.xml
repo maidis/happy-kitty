@@ -13,14 +13,12 @@
         <IsA>library</IsA>
         <Summary>A library for Ogre targeted to help creating photorealistic atmospheric effects</Summary>
         <Description>Caelum is a plug-in / library for Ogre targeted to help creating nice-looking (photorealistic if possible) atmospheric effects such as sky colour, clouds and weather phenomena such as rain or snow.</Description>
-        <Archive sha1sum="c101e110371853b3bd3bef971ef646b851a8b8f5" type="tarbz2">http://dl.dropbox.com/u/1836567/Paketler/caelum-0.5.0.tar.bz2</Archive>
+        <Archive sha1sum="9c97e850617de20ea70f6eabec995137f144cd65" type="targz">http://caelum.googlecode.com/files/caelum-0.6.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>ois-devel</Dependency>
             <Dependency>ogre-devel</Dependency>
+            <Dependency>doxygen</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch>no-doc-for-now.diff</Patch>
-        </Patches>
     </Source>
 
     <Package>
@@ -31,12 +29,20 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2011-08-28</Date>
+            <Version>0.6.1</Version>
+            <Comment>Version bump</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-04-09</Date>
             <Version>0.5.0</Version>
