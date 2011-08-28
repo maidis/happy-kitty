@@ -9,7 +9,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    pisitools.dosed("CMakeLists.txt", "} DESTINATION doc", "} DESTINATION share/doc")
+    pisitools.dosed("CMakeLists.txt", "} DESTINATION doc", "} DESTINATION share/doc/caelum")
 
     cmaketools.configure()
 
