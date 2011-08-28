@@ -14,10 +14,11 @@
         <IsA>app:gui</IsA>
         <Summary>A classic 2d platform game</Summary>
         <Description>Plee the Bear will be a 2d platform game like those we found on consoles in the beginning of the 90's.</Description>
-        <Archive sha1sum="55f793b8bc775b90cc5df776a27769222ac6f9e9" type="targz">mirrors://sourceforge/plee-the-bear/Plee%20the%20Bear/0.5/plee-the-bear-0.5.1.tar.gz</Archive>
+        <Archive sha1sum="595021ecbdba4b35b39357e43a45b23ee032900f" type="targz">mirrors://sourceforge/plee-the-bear/Plee%20the%20Bear/0.6/plee-the-bear-0.6.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libclaw</Dependency>
             <Dependency>boost-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
             <Dependency>sdl-mixer-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
         </BuildDependencies>
@@ -28,6 +29,7 @@
         <RuntimeDependencies>
             <Dependency>libclaw</Dependency>
             <Dependency>boost</Dependency>
+            <Dependency>libsdl</Dependency>
             <Dependency>sdl-mixer</Dependency>
             <Dependency>mesa</Dependency>
         </RuntimeDependencies>
@@ -45,6 +47,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2011-08-28</Date>
+            <Version>0.6.0</Version>
+            <Comment>Version bump</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-05-02</Date>
             <Version>0.5.1</Version>

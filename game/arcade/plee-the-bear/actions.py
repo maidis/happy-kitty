@@ -9,6 +9,9 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
+    # docbook-to-man ? docbook-utils
+    # Unused direct dependency
+    # RPATH=/usr/lib
     cmaketools.configure("-DBEAR_NO_EDITOR=TRUE")
 
 def build():
