@@ -8,17 +8,17 @@ from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "my-gui-4296"
+WorkDir = "my-gui-4141"
 
 def setup():
     cmaketools.configure("-DCMAKE_BUILD_TYPE=release \
                           -DMYGUI_BUILD_SAMPLES:BOOL=OFF \
                           -DMYGUI_INSTALL_SAMPLES:BOOL=OFF \
                           -DMYGUI_INSTALL_SAMPLES_SOURCE=ON \
-                          -DMYGUI_BUILD_TOOLS:BOOL=ON \
+                          -DMYGUI_BUILD_TOOLS:BOOL=OFF \
                           -DMYGUI_INSTALL_TOOLS:BOOL=ON \
                           -DMYGUI_INSTALL_MEDIA:BOOL=ON \
-                          -DMYGUI_BUILD_PLUGINS:BOOL=ON \
+                          -DMYGUI_BUILD_PLUGINS:BOOL=OFF \
                           -DMYGUI_INSTALL_DOCS:BOOL=ON", installPrefix="/usr")
 
 def build():
