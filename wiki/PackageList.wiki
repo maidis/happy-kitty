@@ -2,6 +2,7 @@
 #labels Featured,Restrict-AddWikiComment-Commit
 
   * [AboutUs]
+  * [Brainstorm]
   * [History]
   * Help
     * [LinuxGamingSites]
