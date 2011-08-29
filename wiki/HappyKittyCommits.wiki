@@ -1,0 +1,2 @@
+#labels list,devel
+<wiki:gadget url="http://dl.dropbox.com/u/1836567/happy-kitty/group-happy-kitty.xml" width="800" height="600" />
