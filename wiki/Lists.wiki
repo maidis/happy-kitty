@@ -1,1 +1,1 @@
-<wiki:gadget url="http://dl.dropbox.com/u/1836567/groups.xml"/>
+<iframe src="http://spreadsheets.google.com/embeddedform?key=pcei2KUN61t4vbuSjTGjzNw" width="310" height="566" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
