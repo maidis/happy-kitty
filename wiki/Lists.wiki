@@ -1,5 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" ?> 
-<Module>
-  <ModulePrefs title="Gadget Form Example" />
-  <Content type="url" href="http://spreadsheets.google.com/embeddedform?key=pcei2KUN61t4vbuSjTGjzNw" />
-</Module>
+<wiki:gadget url="http://dl.dropbox.com/u/1836567/groups.xml" width="310" height="566" />
