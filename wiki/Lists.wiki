@@ -1,1 +1,1 @@
-<wiki:gadget url="http://dl.dropbox.com/u/1836567/groups.xml" width="310" height="566" />
+<wiki:gadget url="http://dl.dropbox.com/u/1836567/groups.xml" width="800" height="600" />
