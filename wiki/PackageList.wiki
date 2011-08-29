@@ -3,6 +3,9 @@
 
   * [AboutUs]
   * [Brainstorm]
+  * [HappyKittyCommits]
+  * [HappyKittyDevel]
+  * [HappyKittyUsers]
   * [History]
   * Help
     * [LinuxGamingSites]
