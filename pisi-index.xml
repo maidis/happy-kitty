@@ -5485,6 +5485,53 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>nottetris2</Name>
+            <Homepage>http://stabyourself.net/nottetris2</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>MIT</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A tetris game with physics</Summary>
+            <Summary xml:lang="tr">Fiziksel bir tetris</Summary>
+            <Description xml:lang="en">Not Tetris 2 is the spiritual successor of the classic Tetris mixed with physics. The result is a fun spinoff in which blocks are no longer bound to the usual grid. Blocks can be rotated and placed at any angle, resulting in a complete mess if not careful.</Description>
+            <Description xml:lang="tr">Not Tetris 2, klasik tetris oyunun fizik içeren bir sürümüdür. Sonuç eğlenceli olmakla birlikte bloklar gerçek cisimler gibi hareket ettiğinden dikkatli olmazsanız kolayca işleri karıştırabilirsiniz.</Description>
+            <Icon>nottetris2</Icon>
+            <Archive type="zip" sha1sum="4634de695e7c264d325c885380f7aa769155c656">http://happy-kitty.googlecode.com/files/nottetris2-source.zip</Archive>
+            <SourceURI>game/puzzle/nottetris2/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>nottetris2</Name>
+            <RuntimeDependencies>
+                <Dependency>love</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/nottetris2</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/nottetris2.desktop" permission="0644" owner="root">nottetris2.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/nottetris2.png" permission="0644" owner="root">nottetris2.png</AdditionalFile>
+                <AdditionalFile target="/usr/bin/nottetris2" permission="0755" owner="root">nottetris2</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-09-06</Date>
+                <Version>1</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>meandmyshadow</Name>
             <Homepage>http://meandmyshadow.sourceforge.net</Homepage>
             <Packager>
@@ -8080,6 +8127,72 @@
             <Update release="1">
                 <Date>2011-04-10</Date>
                 <Version>1.1.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>love</Name>
+            <Homepage>http://love2d.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>ZLIB</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">An 2D game engine which uses the Lua</Summary>
+            <Summary xml:lang="tr">Lua kullanan 2B oyun motoru</Summary>
+            <Description xml:lang="en">LÖVE is an awesome framework you can use to make 2D games in Lua.</Description>
+            <Description xml:lang="tr">LÖVE, Lua&apos;da 2B oyunlar yapmak için harika bir çatıdır.</Description>
+            <Archive type="targz" sha1sum="876f527fc6908a6dd462080aa599ffa1ad47afa5">https://bitbucket.org/rude/love/downloads/love-0.7.2-linux-src.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>lua-devel</Dependency>
+                <Dependency>DevIL-devel</Dependency>
+                <Dependency>physfs-devel</Dependency>
+                <Dependency>mpg123-devel</Dependency>
+                <Dependency>openal-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>freetype-devel</Dependency>
+                <Dependency>libvorbis-devel</Dependency>
+                <Dependency>libmodplug-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>library/love/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>love</Name>
+            <RuntimeDependencies>
+                <Dependency>lua</Dependency>
+                <Dependency>DevIL</Dependency>
+                <Dependency>physfs</Dependency>
+                <Dependency>mpg123</Dependency>
+                <Dependency>openal</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>libvorbis</Dependency>
+                <Dependency>libmodplug</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="man">/usr/share/mime</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/icons/hicolor/scalable/apps/love.svg" permission="0644" owner="root">app.svg</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/hicolor/scalable/mimetypes/gnome-mime-application-x-love-game.svg" permission="0644" owner="root">game.svg</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/love.desktop" permission="0644" owner="root">love.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/mime/packages/love.xml" permission="0644" owner="root">love.xml</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-09-06</Date>
+                <Version>0.7.2</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
