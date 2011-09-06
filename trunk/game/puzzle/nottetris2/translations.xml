@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>nottetris2</Name>
+        <Summary xml:lang="tr">Fiziksel bir tetris</Summary>
+        <Description xml:lang="tr">Not Tetris 2, klasik tetris oyunun fizik içeren bir sürümüdür. Sonuç eğlenceli olmakla birlikte bloklar gerçek cisimler gibi hareket ettiğinden dikkatli olmazsanız kolayca işleri karıştırabilirsiniz.</Description>
+    </Source>
+</PISI>
