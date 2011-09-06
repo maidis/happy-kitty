@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Not Tetris 2
+GenericName=Tetris
+GenericName[tr]=Tetris
+Comment=A tetris game with physics
+Comment[tr]=Fiziksel öğeler içeren bir tetris oyunu
+Icon=nottetris2
+Exec=nottetris2
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;BlocksGame;

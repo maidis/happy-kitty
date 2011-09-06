@@ -1,0 +1,4 @@
+#!/bin/bash
+# Game Not Tetris 2
+
+love /usr/share/nottetris2/Not\ Tetris\ 2.love

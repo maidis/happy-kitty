@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>nottetris2</Name>
+        <Homepage>http://stabyourself.net/nottetris2</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <Icon>nottetris2</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A tetris game with physics</Summary>
+        <Description>Not Tetris 2 is the spiritual successor of the classic Tetris mixed with physics. The result is a fun spinoff in which blocks are no longer bound to the usual grid. Blocks can be rotated and placed at any angle, resulting in a complete mess if not careful.</Description>
+        <Archive sha1sum="4634de695e7c264d325c885380f7aa769155c656" type="zip">http://happy-kitty.googlecode.com/files/nottetris2-source.zip</Archive>
+    </Source>
+
+    <Package>
+        <Name>nottetris2</Name>
+        <RuntimeDependencies>
+            <Dependency>love</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/nottetris2</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/nottetris2.desktop">nottetris2.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/nottetris2.png">nottetris2.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/nottetris2">nottetris2</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-09-06</Date>
+            <Version>1</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
