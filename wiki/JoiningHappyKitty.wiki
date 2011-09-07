@@ -26,6 +26,8 @@ Happy Kitty doesn't have an exact policy yet. This is only a primitive state of 
 Here's the plan. Do one of the following tasks and be one of the first packagers at Happy Kitty. They often will not be easy. Beware of dragons because you are crunchy and taste good with ketchup!
   * issue 31: Package uhc and all of its dependencies
   * issue 65: Package rainy-day and all of its dependencies
+  * List all non-packaged games from Pardus Contrib 2009 devel repository and package them all for Happy Kitty. [http://packages.pardus.org.tr/info/contrib/2009/devel/sources.html Packages] | [https://svn.pardus.org.tr/contrib/2009/devel/game/ SVN]
+  * Write a Pardus related platform game (use Pardusman as protagonist, collect PiSi packages instead of golds) in LÖVE and package it for Happy Kitty.
 
 
 == As Happy Kitty Developer ==
