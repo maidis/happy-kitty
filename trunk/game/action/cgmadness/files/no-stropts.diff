@@ -1,0 +1,10 @@
+--- libgrapple/grapple_configure_substitute.h.orig	2011-09-09 20:55:46.000000000 +0300
++++ libgrapple/grapple_configure_substitute.h	2011-09-10 17:00:10.300000030 +0300
+@@ -71,7 +71,6 @@
+ #define HAVE_LINUX_LIMITS_H
+ #define HAVE_LIMITS_H
+ #define HAVE_FCNTL_H
+-#define HAVE_STROPTS_H
+ #define HAVE_INET_NTOP
+ #define HAVE_INET_PTON
+ 
