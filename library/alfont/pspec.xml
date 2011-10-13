@@ -17,6 +17,9 @@
             <Dependency>allegro-devel</Dependency>
             <Dependency>freetype-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch>no-pentium.diff</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -33,6 +36,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2011-10-13</Date>
+            <Version>2.0.9</Version>
+            <Comment>Fix 64 bit build</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-04-17</Date>
             <Version>2.0.9</Version>
