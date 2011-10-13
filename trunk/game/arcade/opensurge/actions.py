@@ -9,7 +9,7 @@ from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "opensurge-src-build563"
+WorkDir = "opensurge-src-build597"
 
 def setup():
     shelltools.system("./configure")

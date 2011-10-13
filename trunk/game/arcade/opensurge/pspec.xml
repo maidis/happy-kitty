@@ -13,12 +13,12 @@
         <IsA>app:gui</IsA>
         <Summary>A game based on the Sonic the Hedgehog universe</Summary>
         <Description>Open Sonic is an open-source game based on the Sonic the Hedgehog universe. It introduces a different style of gameplay called cooperative play, in which it's possible to control 3 characters simultaneously. Unlike most similar games, Open Sonic provides a greater level of interaction between the player and the levels. It's more than just a jump'n'run; the user must come up with some strategy in order to get through the levels.</Description>
-        <Archive sha1sum="b324fad1d89bad70b6c0a074b00d87d49c65827f" type="targz">http://dl.dropbox.com/u/1836567/Paketler/opensurge-src-build563.tar.gz</Archive>
+        <Archive sha1sum="d11f97bdbd95e43195600a4849d878203b16dfd5" type="targz">http://dl.dropbox.com/u/1836567/Paketler/opensurge-src-build597.tar.gz</Archive>
         <BuildDependencies>
+            <Dependency>alfont</Dependency>
             <Dependency>allegro-devel</Dependency>
             <Dependency>dumb</Dependency>
             <Dependency>libpng-devel</Dependency>
-            <Dependency>alfont</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>opensurge-paths.diff</Patch>
@@ -28,9 +28,9 @@
     <Package>
         <Name>opensurge</Name>
         <RuntimeDependencies>
+            <Dependency>alfont</Dependency>
             <Dependency>allegro</Dependency>
             <Dependency>dumb</Dependency>
-            <Dependency>alfont</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -46,6 +46,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2011-10-13</Date>
+            <Version>0.2.0</Version>
+            <Comment>Version bump</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-05-03</Date>
             <Version>0.2.0</Version>
