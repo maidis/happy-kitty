@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>frogatto</Name>
+        <Summary xml:lang="tr">Eski tarz bir 2b platform oyunu</Summary>
+        <Description xml:lang="tr">Frogatto, hayalperest bir kurbağanın başrolde olduğu bol koşmalı ve zıplamalı bir platform oyunudur.</Description>
+    </Source>
+</PISI>
