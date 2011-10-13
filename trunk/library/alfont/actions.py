@@ -6,6 +6,10 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import get
+
+def setup():
+    pisitools.dosed("Makefile", "pardus_flags", "%s" % get.CFLAGS())
 
 def build():
     autotools.make()
