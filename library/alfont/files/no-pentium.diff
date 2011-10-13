@@ -5,7 +5,7 @@
  # DJGPP_STATIC
  ifeq ($(TARGET),DJGPP_STATIC)
 -TARGETFLAGS=-Wall -O2 -march=pentium -fomit-frame-pointer -finline-functions -ffast-math
-+TARGETFLAGS=-Wall -O2 -fomit-frame-pointer -finline-functions -ffast-math
++TARGETFLAGS=-Wall -O2 -fomit-frame-pointer -finline-functions -ffast-math pardus_flags
  LIBS=../lib/djgpp/libiconv.a  -liconv
  OBJDIR=obj/djgpp/static
  LIBDEST=lib/djgpp/libalfont.a
@@ -14,7 +14,7 @@
  ifeq ($(TARGET),MINGW32_STATIC)
  LFLAGS=-mwindows
 -TARGETFLAGS=-Wall -O2 -march=pentium -fomit-frame-pointer -finline-functions -ffast-math
-+TARGETFLAGS=-Wall -O2 -fomit-frame-pointer -finline-functions -ffast-math
++TARGETFLAGS=-Wall -O2 -fomit-frame-pointer -finline-functions -ffast-math pardus_flags
  OBJDIR=obj/mingw32/static
  LIBDEST=lib/mingw32/libalfont.a
  endif
@@ -23,7 +23,7 @@
  ifeq ($(TARGET),MINGW32_DLL)
  LFLAGS=-mwindows -shared
 -TARGETFLAGS=-Wall -O2 -march=pentium -fomit-frame-pointer -finline-functions -ffast-math
-+TARGETFLAGS=-Wall -O2 -fomit-frame-pointer -finline-functions -ffast-math
++TARGETFLAGS=-Wall -O2 -fomit-frame-pointer -finline-functions -ffast-math pardus_flags
  OBJDIR=obj/mingw32/dll
  LIBIMP=lib/mingw32/libalfontdll.a
  LIBDEST=lib/mingw32/alfont.dll
@@ -32,7 +32,7 @@
  # LINUX_STATIC
  ifeq ($(TARGET),LINUX_STATIC)
 -TARGETFLAGS=-Wall -O2 -march=pentium -fomit-frame-pointer -finline-functions -ffast-math
-+TARGETFLAGS=-Wall -O2 -fomit-frame-pointer -finline-functions -ffast-math
++TARGETFLAGS=-Wall -O2 -fomit-frame-pointer pardus_flags
  OBJDIR=obj/linux/static
  LIBDEST=lib/linux/libalfont.a
  endif
