@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>frogatto</Name>
+        <Homepage>http://www.frogatto.com</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3+</License>
+        <License>as-is</License>
+        <IsA>app:gui</IsA>
+        <Summary>An old-school 2d platformer game</Summary>
+        <Description>Frogatto is an open-source platformer or jump-and-run game that starring a certain quixotic frog.</Description>
+        <Archive sha1sum="bc5576b96863562a0520453b5adb3f6f6be769c9" type="tarbz2">http://www.frogatto.com/files/frogatto-1.1.1.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>boost-devel</Dependency>
+            <Dependency>glew-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>sdl-ttf-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>frogatto</Name>
+        <RuntimeDependencies>
+            <Dependency>boost</Dependency>
+            <Dependency>glew</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>sdl-ttf</Dependency>
+            <Dependency>mesa</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/opt/frogatto/game</Path>
+            <Path fileType="executable">/opt/frogatto/server</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/opt/frogatto/data</Path>
+            <Path fileType="data">/opt/frogatto/images</Path>
+            <Path fileType="data">/opt/frogatto/music</Path>
+            <Path fileType="data">/opt/frogatto/sounds</Path>
+            <Path fileType="data">/opt/frogatto/*.ttf</Path>
+            <Path fileType="localedata">/opt/frogatto/locale</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/frogatto.desktop">frogatto.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/frogatto.png">frogatto.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-07-12</Date>
+            <Version>1.1.1</Version>
+            <Comment>First release.</Comment>
+            <Name>Özge Barbaros</Name>
+            <Email>ozgebarbaros@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

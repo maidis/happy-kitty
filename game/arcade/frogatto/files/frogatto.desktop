@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Frogatto
+GenericName=Frogatto & Friends
+GenericName[tr]=Frogatto ve Arkadaşları
+Comment=An old-school 2d platformer game
+Comment[tr]=Eski tarz 2B platform oyunu
+Icon=frogatto
+Exec=cd /opt/frogatto && exec /opt/frogatto/game $*
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;
