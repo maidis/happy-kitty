@@ -79,7 +79,7 @@
             <Description xml:lang="en">SFML is a simple, fast, cross-platform, and object-oriented multimedia API.</Description>
             <Description xml:lang="tr">SFML; basit, hızlı, çok platformlu ve nesne yönelimli bir çokluortam uygulama programlama arayüzüdür.</Description>
             <Icon>sfml</Icon>
-            <Archive type="targz" sha1sum="69b01a746575d9369cfdbbd78222bc4772ebb19d">http://dl.dropbox.com/u/1836567/Paketler/LaurentGomila-SFML-f9435eb.tar.gz</Archive>
+            <Archive type="targz" sha1sum="f4227f764b83ce278dd351f7362403bda15fd470">http://dl.dropbox.com/u/1836567/Paketler/LaurentGomila-SFML-bindings_removed-108-g512a7c6.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>freetype-devel</Dependency>
                 <Dependency>glew-devel</Dependency>
@@ -121,7 +121,7 @@
             <Description xml:lang="tr">SFML geliştirme paketi, SFML için geliştirme dosyaları sunar.</Description>
             <IsA>data</IsA>
             <RuntimeDependencies>
-                <Dependency release="2">sfml</Dependency>
+                <Dependency release="3">sfml</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="header">/usr/include</Path>
@@ -136,7 +136,7 @@
             <Description xml:lang="tr">SFML belge paketi, SFML için geliştirme belgeleri sunar.</Description>
             <IsA>data</IsA>
             <RuntimeDependencies>
-                <Dependency release="2">sfml</Dependency>
+                <Dependency release="3">sfml</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="data">/usr/share/SFML</Path>
@@ -144,6 +144,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="3">
+                <Date>2011-10-14</Date>
+                <Version>2.0</Version>
+                <Comment>Sync with git version</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="2">
                 <Date>2011-06-27</Date>
                 <Version>2.0</Version>
@@ -634,12 +641,12 @@
             <Description xml:lang="en">Open Sonic is an open-source game based on the Sonic the Hedgehog universe. It introduces a different style of gameplay called cooperative play, in which it&apos;s possible to control 3 characters simultaneously. Unlike most similar games, Open Sonic provides a greater level of interaction between the player and the levels. It&apos;s more than just a jump&apos;n&apos;run; the user must come up with some strategy in order to get through the levels.</Description>
             <Description xml:lang="tr">Open Surge, Sonic the Hedgehog dünyasını temel alan özgür bir oyundur. Sunduğu ortak oynama tarzıyla üç karakteri eşzamanlı olarak kontrol edebilirsiniz. Çoğu benzer oyunun aksine Open Surge, oyuncu ile bölümler arasında daha fazla etkileşim sunar. Oynadıkça görebileceğiniz üzere Open Surge, sıradan bir hoplama zıplama oyunundan daha öte stratejilerde geliştirmeniz gereken bir oyundur.</Description>
             <Icon>opensurge</Icon>
-            <Archive type="targz" sha1sum="b324fad1d89bad70b6c0a074b00d87d49c65827f">http://dl.dropbox.com/u/1836567/Paketler/opensurge-src-build563.tar.gz</Archive>
+            <Archive type="targz" sha1sum="d11f97bdbd95e43195600a4849d878203b16dfd5">http://dl.dropbox.com/u/1836567/Paketler/opensurge-src-build597.tar.gz</Archive>
             <BuildDependencies>
+                <Dependency>alfont</Dependency>
                 <Dependency>allegro-devel</Dependency>
                 <Dependency>dumb</Dependency>
                 <Dependency>libpng-devel</Dependency>
-                <Dependency>alfont</Dependency>
             </BuildDependencies>
             <Patches>
                 <Patch>opensurge-paths.diff</Patch>
@@ -649,9 +656,9 @@
         <Package>
             <Name>opensurge</Name>
             <RuntimeDependencies>
+                <Dependency>alfont</Dependency>
                 <Dependency>allegro</Dependency>
                 <Dependency>dumb</Dependency>
-                <Dependency>alfont</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
@@ -666,6 +673,13 @@
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2011-10-13</Date>
+                <Version>0.2.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2011-05-03</Date>
                 <Version>0.2.0</Version>
@@ -2367,7 +2381,7 @@
             <Description xml:lang="en">M.A.R.S. is a ridiculous space shooter with nice graphics.</Description>
             <Description xml:lang="tr">M.A.R.S., hoş grafiklere sahip hoş bir uzay ateş oyunudur.</Description>
             <Icon>marsshooter</Icon>
-            <Archive type="targz" sha1sum="05039b527578b979efe5304b78bed524fc8d0eaf">http://garr.dl.sourceforge.net/project/mars-game/mars_source_0.7.2.tar.gz</Archive>
+            <Archive type="targz" sha1sum="f776f322c50b87860838705045c753903838fb39">mirrors://sourceforge/mars-game/mars_source_0.7.4.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>sfml-devel</Dependency>
                 <Dependency>taglib-devel</Dependency>
@@ -2400,6 +2414,13 @@
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="3">
+                <Date>2011-10-14</Date>
+                <Version>0.7.4</Version>
+                <Comment>Versipn bump</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="2">
                 <Date>2011-06-27</Date>
                 <Version>0.7.2</Version>
@@ -2754,6 +2775,73 @@
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>frogatto</Name>
+            <Homepage>http://www.frogatto.com</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3+</License>
+            <License>as-is</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">An old-school 2d platformer game</Summary>
+            <Summary xml:lang="tr">Eski tarz bir 2b platform oyunu</Summary>
+            <Description xml:lang="en">Frogatto is an open-source platformer or jump-and-run game that starring a certain quixotic frog.</Description>
+            <Description xml:lang="tr">Frogatto, hayalperest bir kurbağanın başrolde olduğu bol koşmalı ve zıplamalı bir platform oyunudur.</Description>
+            <Archive type="tarbz2" sha1sum="bc5576b96863562a0520453b5adb3f6f6be769c9">http://www.frogatto.com/files/frogatto-1.1.1.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>boost-devel</Dependency>
+                <Dependency>glew-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-ttf-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/arcade/frogatto/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>frogatto</Name>
+            <RuntimeDependencies>
+                <Dependency>boost</Dependency>
+                <Dependency>glew</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>sdl-ttf</Dependency>
+                <Dependency>mesa</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/opt/frogatto/game</Path>
+                <Path fileType="executable">/opt/frogatto/server</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/opt/frogatto/data</Path>
+                <Path fileType="data">/opt/frogatto/images</Path>
+                <Path fileType="data">/opt/frogatto/music</Path>
+                <Path fileType="data">/opt/frogatto/sounds</Path>
+                <Path fileType="data">/opt/frogatto/*.ttf</Path>
+                <Path fileType="localedata">/opt/frogatto/locale</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/frogatto.desktop" permission="0644" owner="root">frogatto.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/frogatto.png" permission="0644" owner="root">frogatto.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-07-12</Date>
+                <Version>1.1.1</Version>
+                <Comment>First release.</Comment>
+                <Name>Özge Barbaros</Name>
+                <Email>ozgebarbaros@gmail.com</Email>
             </Update>
         </History>
     </SpecFile>
@@ -3453,7 +3541,7 @@
             <Description xml:lang="en">OpenClonk is a free multiplayer action game where you control clonks, small but witty and nimble humanoid beings. The game is mainly about mining, settling and fast-paced melees.</Description>
             <Description xml:lang="tr">OpenClonk, küçük, zeki ve çevik insansı varlıklar olan clonkları kontrol ettiğiniz bir çevrimiçi aksiyon oyunudur. OpenClonk, temel olarak madenciliğe, yerleşmeye ve hızlı tempolu meydan kavgalarına dayalı bir oyundur.</Description>
             <Icon>clonk</Icon>
-            <Archive type="targz" sha1sum="6df3b13459282252ba2b0ab51467036a00fcf517">http://dl.dropbox.com/u/1836567/Paketler/openclonk.tar.gz</Archive>
+            <Archive type="targz" sha1sum="da3798cbb63e0ee090f28b397b77c7d157e81e84">http://hg.openclonk.org/openclonk/archive/openclonk-release-5.2.1-src.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>jpeg-devel</Dependency>
                 <Dependency>gtk2-devel</Dependency>
@@ -3467,6 +3555,9 @@
                 <Dependency>gdk-pixbuf-devel</Dependency>
                 <Dependency>libXxf86vm-devel</Dependency>
             </BuildDependencies>
+            <Patches>
+                <Patch>dontstopmenow.diff</Patch>
+            </Patches>
             <SourceURI>game/action/openclonk/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -3488,15 +3579,21 @@
                 <Path fileType="executable">/usr/bin</Path>
                 <Path fileType="executable">/opt/openclonk/clonk</Path>
                 <Path fileType="data">/opt/openclonk</Path>
+                <Path fileType="data">/usr/share/openclonk</Path>
                 <Path fileType="data">/usr/share/applications</Path>
                 <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/icons</Path>
                 <Path fileType="doc">/usr/share/doc</Path>
             </Files>
-            <AdditionalFiles>
-                <AdditionalFile target="/usr/bin/clonk" permission="0755" owner="root">clonk</AdditionalFile>
-            </AdditionalFiles>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2011-10-14</Date>
+                <Version>5.2.1</Version>
+                <Comment>Version bump</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2011-08-07</Date>
                 <Version>5.1.2.1</Version>
@@ -6659,6 +6756,104 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>xonotic-data</Name>
+            <Homepage>http://www.xonotic.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>data</IsA>
+            <PartOf>game.fps</PartOf>
+            <Summary xml:lang="en">A fast-paced crossplatform first-person shooter</Summary>
+            <Summary xml:lang="tr">Hızlı tempolu bir çokplatformlu birinci tekil şahıs nişancılık oyunu</Summary>
+            <Description xml:lang="en">xonotic-data provides data files for Xonotic.</Description>
+            <Description xml:lang="tr">xonotic-data, Xonotic için veri dosyaları içerir.</Description>
+            <Icon>xonotic</Icon>
+            <Archive type="zip" sha1sum="716135609ef953f2fbed97bd6a3cf116b7afd7a9">http://dl.xonotic.org/xonotic-0.5.0.zip</Archive>
+            <SourceURI>game/fps/xonotic-data/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>xonotic-data</Name>
+            <Files>
+                <Path fileType="data">/usr/share/xonotic</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-10-13</Date>
+                <Version>0.5.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>xonotic</Name>
+            <Homepage>http://www.xonotic.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2+</License>
+            <License>GPLv3+</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.fps</PartOf>
+            <Summary xml:lang="en">A fast-paced crossplatform first-person shooter</Summary>
+            <Summary xml:lang="tr">Hızlı tempolu bir çokplatformlu birinci tekil şahıs nişancılık oyunu</Summary>
+            <Description xml:lang="en">Xonotic is a fast-paced first-person shooter. The project is geared towards providing addictive arena shooter gameplay which is all spawned and driven by the community itself.</Description>
+            <Description xml:lang="tr">Xonotic, hızlı tempolu bir çokplatformlu birinci tekil şahıs nişancılık oyunudur.</Description>
+            <Icon>xonotic</Icon>
+            <Archive type="zip" sha1sum="59491ac17bd2db1b44bd8e5b0b8a5aebd557984b">http://dl.xonotic.org/xonotic-0.5.0-source.zip</Archive>
+            <BuildDependencies>
+                <Dependency>jpeg-devel</Dependency>
+                <Dependency>libXpm-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>alsa-lib-devel</Dependency>
+                <Dependency>libXxf86vm-devel</Dependency>
+                <Dependency>libXxf86dga-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/fps/xonotic/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>xonotic</Name>
+            <RuntimeDependencies>
+                <Dependency>jpeg</Dependency>
+                <Dependency>libXpm</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>libXxf86vm</Dependency>
+                <Dependency>libXxf86dga</Dependency>
+                <Dependency>xonotic-data</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/xonotic.desktop" permission="0644" owner="root">xonotic.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/xonotic-sdl.desktop" permission="0644" owner="root">xonotic-sdl.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-10-13</Date>
+                <Version>0.5.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>tanglet</Name>
             <Homepage>http://gottcode.org/tanglet</Homepage>
             <Packager>
@@ -7787,6 +7982,9 @@
                 <Dependency>allegro-devel</Dependency>
                 <Dependency>freetype-devel</Dependency>
             </BuildDependencies>
+            <Patches>
+                <Patch>no-pentium.diff</Patch>
+            </Patches>
             <SourceURI>library/alfont/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -7802,6 +8000,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2011-10-13</Date>
+                <Version>2.0.9</Version>
+                <Comment>Fix 64 bit build</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2011-04-17</Date>
                 <Version>2.0.9</Version>
