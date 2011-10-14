@@ -1,0 +1,31 @@
+--- CMakeLists.txt.orig	2011-10-10 22:56:46.000000000 +0300
++++ CMakeLists.txt	2011-10-14 02:56:11.286000031 +0300
+@@ -1237,28 +1237,6 @@
+ 
+ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config.h)
+ 
+-############################################################################
+-# installation
+-############################################################################
+-# Install the icon into share/icons/hicolor/48x48/apps/clonk.png. Do this by
+-# extracting the correct size from oc.ico. Currently this is layer 2 - let's
+-# hope that it stays this way.
+-# TODO: Check for convert at configure step?
+-install(DIRECTORY DESTINATION share/icons/hicolor/48x48/apps)
+-install(CODE "
+-EXECUTE_PROCESS(COMMAND \"convert\" \"${CMAKE_CURRENT_SOURCE_DIR}/src/res/oc.ico[2]\" \"${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/48x48/apps/clonk.png\" RESULT_VARIABLE CONVERT_RESULT)
+-IF(NOT \${CONVERT_RESULT} EQUAL 0)
+-	MESSAGE(SEND_ERROR \"Creating icon failed\")
+-ENDIF()
+-")
+-
+-# Remove previously installed data files
+-FILE(GLOB OC_INSTALLED_DATA_FILES "${CMAKE_INSTALL_PREFIX}/share/openclonk/*.oc[dfgs]")
+-install(CODE "
+-FOREACH(CURRENT_FILE ${OC_INSTALLED_DATA_FILES})
+-	FILE(REMOVE \${CURRENT_FILE})
+-ENDFOREACH()
+-")
+ 
+ # Install new files
+ FILE(GLOB OC_DATA_FILES "${CMAKE_CURRENT_SOURCE_DIR}/planet/*.oc[dfgs]")

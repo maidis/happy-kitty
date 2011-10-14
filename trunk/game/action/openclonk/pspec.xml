@@ -17,7 +17,7 @@
         <IsA>app:gui</IsA>
         <Summary>An action-packed game of strategy, tactics, and skill</Summary>
         <Description>OpenClonk is a free multiplayer action game where you control clonks, small but witty and nimble humanoid beings. The game is mainly about mining, settling and fast-paced melees.</Description>
-        <Archive sha1sum="6df3b13459282252ba2b0ab51467036a00fcf517" type="targz">http://dl.dropbox.com/u/1836567/Paketler/openclonk.tar.gz</Archive>
+        <Archive sha1sum="da3798cbb63e0ee090f28b397b77c7d157e81e84" type="targz">http://hg.openclonk.org/openclonk/archive/openclonk-release-5.2.1-src.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>jpeg-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
@@ -31,6 +31,9 @@
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libXxf86vm-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch>dontstopmenow.diff</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -52,16 +55,25 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="executable">/opt/openclonk/clonk</Path>
             <Path fileType="data">/opt/openclonk</Path>
+            <Path fileType="data">/usr/share/openclonk</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
-        <AdditionalFiles>
+        <!--AdditionalFiles>
             <AdditionalFile owner="root" permission="0755" target="/usr/bin/clonk">clonk</AdditionalFile>
-        </AdditionalFiles>
+        </AdditionalFiles-->
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2011-10-14</Date>
+            <Version>5.2.1</Version>
+            <Comment>Version bump</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-08-07</Date>
             <Version>5.1.2.1</Version>

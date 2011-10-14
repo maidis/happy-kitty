@@ -8,7 +8,7 @@ from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "openclonk"
+WorkDir = "openclonk-release-%s-src" % get.srcVERSION()
 
 def setup():
     cmaketools.configure()
@@ -17,10 +17,12 @@ def build():
     cmaketools.make()
 
 def install():
-    pisitools.dobin("clonk", "/opt/openclonk")
-    pisitools.insinto("/opt/openclonk", "planet/*")
-    pisitools.remove("/opt/openclonk/AUTHORS")
-    pisitools.remove("/opt/openclonk/COPYING")
+    cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
+
+    # pisitools.dobin("clonk", "/opt/openclonk")
+    # pisitools.insinto("/opt/openclonk", "planet/*")
+    # pisitools.remove("/opt/openclonk/AUTHORS")
+    # pisitools.remove("/opt/openclonk/COPYING")
     pisitools.insinto("/usr/share/applications", "clonk.desktop")
     pisitools.insinto("/usr/share/pixmaps", "planet/Graphics.ocg/Player.png", "clonk.png")
 
