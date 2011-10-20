@@ -1,0 +1,71 @@
+<PISI>
+    <Source>
+        <Name>SecondLife</Name>
+        <Homepage>http://secondlife.com</Homepage>
+        <Packager>
+            <Name>Safa Arıman</Name>
+            <Email>safaariman@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+	<Icon>secondlife.png</Icon>
+        <PartOf>game.simulation</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>Second Life is a free 3D life simulation game.</Summary>
+        <Description>Second Life is a free 3D virtual world where users can socialize, connect and create using free voice and text chat.</Description>
+        <Archive sha1sum="2492800920e4f8db1ff12de2aafc854d95982d87" type="tarbz2">http://download.cloud.secondlife.com/Viewer-3/SecondLife-i686-3.1.0.243176.tar.bz2</Archive>
+        <Patches/>
+    </Source>
+    <Package>
+        <Name>SecondLife</Name>
+	<RuntimeDependencies>
+            <Dependency>apr</Dependency>
+            <Dependency>apr-util</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>curl</Dependency>
+            <!--Dependency>elfio</Dependency-->
+            <Dependency>expat</Dependency>
+            <!--Dependency>fmodex</Dependency-->
+            <Dependency>freealut</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>gst-plugins-bad</Dependency>
+            <Dependency>gst-plugins-good</Dependency>
+            <Dependency>gst-plugins-ugly</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>libgpg-error</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libXau</Dependency>
+            <Dependency>libXdmcp</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXinerama</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>openal</Dependency>
+            <Dependency>openjpeg</Dependency>
+            <Dependency>openssl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable" permanent="0">/usr/bin</Path>
+            <Path fileType="data" permanent="0">/usr/share/SecondLife</Path>
+            <Path fileType="data" permanent="0">/usr/share/applications</Path>
+            <Path fileType="doc" permanent="0">/usr/share/doc</Path>
+            <Path fileType="data" permanent="0">/usr/share/pixmaps</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/secondlife.desktop" permission="0644" group="root" owner="root">secondlife.desktop</AdditionalFile>
+	    <AdditionalFile target="/usr/bin/secondlife" permission="0755" group="root" owner="root">secondlife.sh</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2011-10-18</Date>
+            <Version>3.1.0.243176</Version>
+            <Comment>Life Simulation Game</Comment>
+            <Name>Safa Arıman</Name>
+            <Email>safaariman@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
