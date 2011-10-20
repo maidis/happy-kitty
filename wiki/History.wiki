@@ -12,3 +12,5 @@
   * *2011.06.20* - I officially announced the project at [http://www.eksisozluk.com/show.asp?t=happy+kitty Ekşi Sözlük] and [http://penguenlerdeoynar.blogspot.com/2011/06/happy-kitty.html Penguenler de Oynar].
   * *2011.08.23* - Happy Kitty reached r500. Contribution policy updated.
   * *2011.08.29* - I split the happy-kitty e-mail list into three parts. We have now happy-kitty for commits, happy-kitty-users for users, and happy-kitty-devel for developers. Also all of these e-mail lists and brainstorm now embeded to Happy Kitty project page, see: [Brainstorm], [HappyKittyCommits], [HappyKittyDevel], [HappyKittyUsers]
+  * *2011.10.13* - [https://plus.google.com/108119453562648749330/about Kaan Özdinçer] joined to Happy Kitty.
+  * *2011.10.20* - [https://plus.google.com/106959515347736325484/about Safa Arıman] joined to Happy Kitty.
