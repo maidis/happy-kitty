@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>barrage</Name>
+        <Summary xml:lang="tr">Üç boyutlu bir yaşam simülasyon oyunu</Summary>
+        <Description xml:lang="tr">SecondLife, binlerce oyuncusu bulunan çevirimiçi bir hayat simülasyon oyunudur.</Description>
+    </Source>
+</PISI>
