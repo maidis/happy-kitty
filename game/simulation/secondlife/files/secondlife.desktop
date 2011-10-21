@@ -1,14 +1,13 @@
-#!/usr/bin/env xdg-open
 [Desktop Entry]
-Encoding=UTF-8
+Type=Application
 Version=1.0
 Name=SecondLife
-Name[tr]=SecondLife
-GenericName=3D Life Simulation Game
-GenericName[tr]=3B Yaşam Simülasyon Oyunu
+GenericName=Life Simulation Game
+GenericName[tr]=Yaşam Simülasyon Oyunu
+Comment=A 3d life simulation game
+Comment[tr]=Üç boyutlu bir yaşam simülasyon oyunu
 Icon=secondlife
 Exec=secondlife
 Terminal=false
 StartupNotify=false
-Type=Application
 Categories=Game;Simulation;

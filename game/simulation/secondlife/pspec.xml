@@ -1,23 +1,24 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>SecondLife</Name>
+        <Name>secondlife</Name>
         <Homepage>http://secondlife.com</Homepage>
         <Packager>
             <Name>Safa Arıman</Name>
             <Email>safaariman@gmail.com</Email>
         </Packager>
-        <License>GPLv2</License>
-	<Icon>secondlife.png</Icon>
-        <PartOf>game.simulation</PartOf>
         <IsA>app:gui</IsA>
-        <Summary>Second Life is a free 3D life simulation game.</Summary>
-        <Description>Second Life is a free 3D virtual world where users can socialize, connect and create using free voice and text chat.</Description>
+        <License>GPLv2</License>
+        <Icon>secondlife</Icon>
+        <Summary>A free 3D life simulation game</Summary>
+        <Description>A free 3D virtual world where users can socialize, connect and create using free voice and text chat.</Description>
         <Archive sha1sum="2492800920e4f8db1ff12de2aafc854d95982d87" type="tarbz2">http://download.cloud.secondlife.com/Viewer-3/SecondLife-i686-3.1.0.243176.tar.bz2</Archive>
-        <Patches/>
     </Source>
+    
     <Package>
         <Name>SecondLife</Name>
-	<RuntimeDependencies>
+        <RuntimeDependencies>
             <Dependency>apr</Dependency>
             <Dependency>apr-util</Dependency>
             <Dependency>boost</Dependency>
@@ -48,22 +49,23 @@
             <Dependency>openssl</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable" permanent="0">/usr/bin</Path>
-            <Path fileType="data" permanent="0">/usr/share/SecondLife</Path>
-            <Path fileType="data" permanent="0">/usr/share/applications</Path>
-            <Path fileType="doc" permanent="0">/usr/share/doc</Path>
-            <Path fileType="data" permanent="0">/usr/share/pixmaps</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/opt/secondlife</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
         </Files>
         <AdditionalFiles>
-            <AdditionalFile target="/usr/share/applications/secondlife.desktop" permission="0644" group="root" owner="root">secondlife.desktop</AdditionalFile>
-	    <AdditionalFile target="/usr/bin/secondlife" permission="0755" group="root" owner="root">secondlife.sh</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/secondlife.desktop">secondlife.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/bin/secondlife">secondlife.sh</AdditionalFile>
         </AdditionalFiles>
     </Package>
+    
     <History>
         <Update release="1">
             <Date>2011-10-18</Date>
             <Version>3.1.0.243176</Version>
-            <Comment>Life Simulation Game</Comment>
+            <Comment>First release</Comment>
             <Name>Safa Arıman</Name>
             <Email>safaariman@gmail.com</Email>
         </Update>
