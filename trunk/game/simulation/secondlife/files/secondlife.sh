@@ -1,6 +1,3 @@
-#!/bin/bash
 
-#ugly thing
-
-cd /usr/share/SecondLife
+cd /opt/secondlife
 ./secondlife
