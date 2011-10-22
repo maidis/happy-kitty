@@ -1,0 +1,5 @@
+#summary An action-packed game of strategy, tactics, and skill
+#labels openclonk,game.action,libsdl
+
+|| OpenClonk is a free multiplayer action game where you control clonks, small but witty and nimble humanoid beings. The game is mainly about mining, settling and fast-paced melees. || <wiki:video url="http://www.youtube.com/watch?v=zydiZSXpn0w"/> ||
+||[http://www.openclonk.org/ OpenClonk Home Page]|| Packager: [http://code.google.com/p/happy-kitty/people/detail?u=ozbekanil ozbekanil] ||
