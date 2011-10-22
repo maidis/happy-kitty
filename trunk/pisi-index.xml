@@ -233,6 +233,93 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>foobillard++</Name>
+            <Homepage>http://foobillardplus.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.sports</PartOf>
+            <Summary xml:lang="en">3D billard game</Summary>
+            <Summary xml:lang="tr">3B bilardo oyunu</Summary>
+            <Description xml:lang="en">Foobillard++ is a 3D 8ball, 9ball, snooker and carambol game. It based on FooBillard 3.0a with patches, new features, hud, jumpshots, correct detection of lost balls, more sound and graphics etc.</Description>
+            <Description xml:lang="tr">Foobillard++, 8 top, 9 top, snooker ve karambol oynanabilen üç boyutlu bilardo oyunudur. Pek çok yama uygulanmış FooBillard 3.0a sürümünü temel alır, yeni özellikler, sesler ve grafikler sunar.</Description>
+            <Icon>foobillardplus</Icon>
+            <Archive type="targz" sha1sum="d8723568e460ee62cb913b0c8d7c9a9f557395ee">mirrors://sourceforge/foobillardplus/source/foobillardplus-3.4beta.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>libXi-devel</Dependency>
+                <Dependency>libXaw-devel</Dependency>
+                <Dependency>sdl-net-devel</Dependency>
+                <Dependency>freetype-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">from-arch.diff</Patch>
+            </Patches>
+            <SourceURI>game/sports/foobillard++/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>foobillard++</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>libXaw</Dependency>
+                <Dependency>sdl-net</Dependency>
+                <Dependency>freetype</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/foobillardplus</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="5">
+                <Date>2011-10-22</Date>
+                <Version>3.4</Version>
+                <Comment>Repackage foobillard as foobillard++</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2010-12-17</Date>
+                <Version>3.0a</Version>
+                <Comment>Tidy up dependencies for 2011, change of archive address</Comment>
+                <Name>Beyza Ermis</Name>
+                <Email>beyza@pardus.org.tr</Email>
+            </Update>
+            <Update release="3">
+                <Date>2009-07-26</Date>
+                <Version>3.0a</Version>
+                <Comment>Make package as-needed compatible</Comment>
+                <Name>Onur Küçük</Name>
+                <Email>onur@pardus.org.tr</Email>
+            </Update>
+            <Update release="2">
+                <Date>2008-11-11</Date>
+                <Version>3.0a</Version>
+                <Comment>Fix desktop files to make them XDG compliant</Comment>
+                <Name>Ozan Çağlayan</Name>
+                <Email>ozan@pardus.org.tr</Email>
+            </Update>
+            <Update release="1">
+                <Date>2006-02-14</Date>
+                <Version>3.0a</Version>
+                <Comment>First release</Comment>
+                <Name>Onur Küçük</Name>
+                <Email>onur@pardus.org.tr</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>freetennis</Name>
             <Homepage>http://freetennis.sourceforge.net</Homepage>
             <Packager>
@@ -645,7 +732,7 @@
             <BuildDependencies>
                 <Dependency>alfont</Dependency>
                 <Dependency>allegro-devel</Dependency>
-                <Dependency>dumb</Dependency>
+                <Dependency>dumb-devel</Dependency>
                 <Dependency>libpng-devel</Dependency>
             </BuildDependencies>
             <Patches>
@@ -799,6 +886,58 @@
             <Update release="1">
                 <Date>2010-11-30</Date>
                 <Version>2.10.4</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>opentyrian</Name>
+            <Homepage>http://code.google.com/p/opentyrian</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A port of the classic DOS game Tyrian</Summary>
+            <Summary xml:lang="tr">Klasik DOS oyunu Tyrian&apos;ın portu</Summary>
+            <Description xml:lang="en">OpenTyrian is an arcade-style vertical scrolling shooter. The story is set in 20,031 where you play as Trent Hawkins, a skilled fighter-pilot employed to fight MicroSol and save the galaxy.</Description>
+            <Description xml:lang="tr">OpenTyrian, dikey ekranda kaymalı, ateri stili bir vurma oyunudur. Hikaye 20,031&apos;de yetenekli bir savaş pilotu olana Trent Hawkins&apos;in kötülerle savaşarak galaksiyi kurtarmasını konu almaktadır.</Description>
+            <Icon>opentyrian</Icon>
+            <Archive type="tarbz2" sha1sum="2d00007c58504cff69f492da29555d2d808c7c32">http://happy-kitty.googlecode.com/files/opentyrian-0.0.946.tar.bz2</Archive>
+            <Archive type="zip" sha1sum="29827de99c92cdba7ac8d8b1307776c8f473cd44">http://sites.google.com/a/camanis.net/opentyrian/tyrian/tyrian21.zip</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-net-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>not-werror.patch</Patch>
+            </Patches>
+            <SourceURI>game/arcade/opentyrian/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>opentyrian</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-net</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/opentyrian</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2010-11-08</Date>
+                <Version>0.0.946</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -3004,6 +3143,74 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>pink-pony</Name>
+            <Homepage>http://code.google.com/p/pink-pony</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <License>OFL</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A Tron­-like multiplayer racing­ game</Summary>
+            <Summary xml:lang="tr">Tron benzeri çok oyunculu yarış oyunu</Summary>
+            <Description xml:lang="en">You control little ponies that leave a trail of flowers everywhere they step. You have to evade these trails and force other ponies into them. The last pony standing wins the game.</Description>
+            <Description xml:lang="tr">Pink Pony, küçük midillileri kontrol ederek her yere çiçeklerden çizgi çizdiğiniz ve rakiplerinizin bu çizgilere çarpması için uğraştığınız bir yarış oyunudur. Son kalan midilli kazanır.</Description>
+            <Icon>pink-pony</Icon>
+            <Archive type="tarbz2" sha1sum="d4168fa6b95e114129236a4e7ac7fb92e6a5143e">http://pink-pony.googlecode.com/files/pink-pony-1.2.1.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>DevIL-devel</Dependency>
+                <Dependency>audiere</Dependency>
+                <Dependency>ftgl-devel</Dependency>
+                <Dependency>glfw-devel</Dependency>
+                <Dependency>ilmbase-devel</Dependency>
+                <Dependency>libXrandr-devel</Dependency>
+                <Dependency>libsigc++-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>protobuf-devel</Dependency>
+                <Dependency>scons</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/arcade/pink-pony/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>pink-pony</Name>
+            <RuntimeDependencies>
+                <Dependency>DevIL</Dependency>
+                <Dependency>audiere</Dependency>
+                <Dependency>ftgl</Dependency>
+                <Dependency>glfw</Dependency>
+                <Dependency>ilmbase</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>libsigc++</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>protobuf</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="executable">/opt/pink-pony/Pony</Path>
+                <Path fileType="data">/opt/pink-pony</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/pink-pony.desktop" permission="0644" owner="root">pink-pony.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/pink-pony.png" permission="0644" owner="root">pink-pony.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-10-22</Date>
+                <Version>1.2.1</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>ballz</Name>
             <Homepage>http://code.google.com/p/db-tins07</Homepage>
             <Packager>
@@ -3022,7 +3229,7 @@
             <BuildDependencies>
                 <Dependency>allegro-devel</Dependency>
                 <Dependency>guichan</Dependency>
-                <Dependency>dumb</Dependency>
+                <Dependency>dumb-devel</Dependency>
             </BuildDependencies>
             <SourceURI>game/arcade/ballz/pspec.xml</SourceURI>
         </Source>
@@ -7310,6 +7517,71 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>fretsonfire</Name>
+            <Homepage>http://fretsonfire.sourceforge.net/</Homepage>
+            <Packager>
+                <Name>Kaan Özdinçer</Name>
+                <Email>kaanozdincer@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.misc</PartOf>
+            <Summary xml:lang="en">Game of musical skill and fast fingers</Summary>
+            <Summary xml:lang="tr">Müzik yeteneği ve parmak hızı gerektiren bir oyun</Summary>
+            <Description xml:lang="en">Frets On Fire is a game of musical skill and fast fingers. The aim of the game is to play guitar with keyboard as accurately as possible.</Description>
+            <Description xml:lang="tr">Frets on fire, müzik yeteneği ve parmak hızı gerektiren bir oyundur. Amacı gitarı klavye ile düzgün bir şekilde çalmaktır.</Description>
+            <Icon>fretsonfire</Icon>
+            <Archive type="targz" sha1sum="7c4922cd47304f983f7ae9fb063111ebe1122cbb">http://downloads.sourceforge.net/project/fretsonfire/fretsonfire/1.3.110/FretsOnFire-1.3.110.tar.gz</Archive>
+            <Patches>
+                <Patch>settings.patch</Patch>
+                <Patch level="1">typeerror.patch</Patch>
+                <Patch level="1">datapath.patch</Patch>
+                <Patch level="1">keep_sound_when_failed.patch</Patch>
+                <Patch level="1">fix_window_height_bug.patch</Patch>
+                <Patch level="1">credits_music.patch</Patch>
+                <Patch level="1">font-revert.patch</Patch>
+                <Patch level="1">fonts_lower_cpu.patch</Patch>
+            </Patches>
+            <SourceURI>game/misc/fretsonfire/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>fretsonfire</Name>
+            <RuntimeDependencies>
+                <Dependency>mesa</Dependency>
+                <Dependency>glew</Dependency>
+                <Dependency>python-imaging</Dependency>
+                <Dependency>python-PyOpenGL</Dependency>
+                <Dependency>python-pyvorbis</Dependency>
+                <Dependency>python-numpy</Dependency>
+                <Dependency>python-epydoc</Dependency>
+                <Dependency>python-pyogg</Dependency>
+                <Dependency>pygame</Dependency>
+                <Dependency>dejavu-fonts</Dependency>
+                <Dependency>MgOpen-fonts</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/pixmaps/fretsonfire.png" permission="0644" owner="root">fretsonfire.png</AdditionalFile>
+                <AdditionalFile target="/usr/bin/fretsonfire" permission="0755" owner="root">fretsonfire.sh</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/fretsonfire.desktop" permission="0644" owner="root">fretsonfire.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-10-10</Date>
+                <Version>1.3.110</Version>
+                <Comment>First release.</Comment>
+                <Name>Kaan Özdinçer</Name>
+                <Email>kaanozdincer@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>construo</Name>
             <Homepage>http://www.nongnu.org/construo</Homepage>
             <Packager>
@@ -7421,6 +7693,75 @@
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>secondlife</Name>
+            <Homepage>http://secondlife.com</Homepage>
+            <Packager>
+                <Name>Safa Arıman</Name>
+                <Email>safaariman@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.simulation</PartOf>
+            <Summary xml:lang="en">A free 3D life simulation game</Summary>
+            <Description xml:lang="en">A free 3D virtual world where users can socialize, connect and create using free voice and text chat.</Description>
+            <Icon>secondlife</Icon>
+            <Archive type="tarbz2" sha1sum="2492800920e4f8db1ff12de2aafc854d95982d87">http://download.cloud.secondlife.com/Viewer-3/SecondLife-i686-3.1.0.243176.tar.bz2</Archive>
+            <SourceURI>game/simulation/secondlife/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>SecondLife</Name>
+            <RuntimeDependencies>
+                <Dependency>apr</Dependency>
+                <Dependency>apr-util</Dependency>
+                <Dependency>boost</Dependency>
+                <Dependency>curl</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>freealut</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>gstreamer</Dependency>
+                <Dependency>gst-plugins-bad</Dependency>
+                <Dependency>gst-plugins-good</Dependency>
+                <Dependency>gst-plugins-ugly</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>libgcrypt</Dependency>
+                <Dependency>libgpg-error</Dependency>
+                <Dependency>libogg</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>libvorbis</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libXau</Dependency>
+                <Dependency>libXdmcp</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXinerama</Dependency>
+                <Dependency>libvorbis</Dependency>
+                <Dependency>openal</Dependency>
+                <Dependency>openjpeg</Dependency>
+                <Dependency>openssl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/opt/secondlife</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/secondlife.desktop" permission="0644" owner="root">secondlife.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/bin/secondlife" permission="0644" owner="root">secondlife.sh</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-10-18</Date>
+                <Version>3.1.0.243176</Version>
+                <Comment>First release</Comment>
+                <Name>Safa Arıman</Name>
+                <Email>safaariman@gmail.com</Email>
             </Update>
         </History>
     </SpecFile>
@@ -8250,52 +8591,6 @@
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>dumb</Name>
-            <Homepage>http://dumb.sourceforge.net</Homepage>
-            <Packager>
-                <Name>Anıl Özbek</Name>
-                <Email>ozbekanil@gmail.com</Email>
-            </Packager>
-            <License>GPLv2</License>
-            <IsA>library</IsA>
-            <PartOf>library</PartOf>
-            <Summary xml:lang="en">Dynamic Universal Music Bibliotheque</Summary>
-            <Summary xml:lang="tr">Dynamic Universal Music Bibliotheque</Summary>
-            <Description xml:lang="en">DUMB is an IT, XM, S3M and MOD player library.</Description>
-            <Description xml:lang="tr">DUMB, bir IT, XM, S3M ve MOD oynatıcı kütüphanedir.</Description>
-            <Archive type="tarbz2" sha1sum="dfbecaf553edb7edc5b18b03b19e9d3048c442e7">http://dl.dropbox.com/u/1836567/Paketler/dumb-0.9.3.tar.bz2</Archive>
-            <BuildDependencies>
-                <Dependency>allegro-devel</Dependency>
-            </BuildDependencies>
-            <Patches>
-                <Patch level="1">dumb-0.9.3_CVE-2006-3668.patch</Patch>
-            </Patches>
-            <SourceURI>library/dumb/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>dumb</Name>
-            <RuntimeDependencies>
-                <Dependency>allegro</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2010-05-30</Date>
-                <Version>0.9.3</Version>
-                <Comment>First release</Comment>
-                <Name>Anıl Özbek</Name>
-                <Email>ozbekanil@gmail.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
             <Name>ogre-pagedgeometry</Name>
             <Homepage>http://www.ogre3d.org/tikiwiki/PagedGeometry+Engine</Homepage>
             <Packager>
@@ -8579,6 +8874,79 @@
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>audiere</Name>
+            <Homepage>http://audiere.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <IsA>app:console</IsA>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">A high-level audio API</Summary>
+            <Summary xml:lang="tr">Bir yüksek seviye ses UPA</Summary>
+            <Description xml:lang="en">Audiere can play Ogg Vorbis, MP3, FLAC, uncompressed WAV, AIFF, MOD, S3M, XM, and IT files.</Description>
+            <Description xml:lang="tr">Audiere, Ogg Vorbis, MP3, FLAC, sıkıştırılmamış WAV, AIFF, MOD, S3M, XM ve IT dosyalarını oynatabilir.</Description>
+            <Archive type="targz" sha1sum="3219f1569ff7f2f754570ddc903d65e9a56754b9">mirrors://sourceforge/audiere/audiere-1.9.4.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>audiofile-devel</Dependency>
+                <Dependency>flac-devel</Dependency>
+                <Dependency>libcdaudio-devel</Dependency>
+                <Dependency>libogg-devel</Dependency>
+                <Dependency>libvorbis-devel</Dependency>
+                <Dependency>speex-devel</Dependency>
+                <Dependency>wxGTK-devel</Dependency>
+                <Dependency>wxBase-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">audiere-1.9.4-configure.in.patch</Patch>
+                <Patch>aud2.patch</Patch>
+                <Patch>gcc4.4.patch</Patch>
+                <Patch level="1">audiere-1.9.4-Makefile.am.patch</Patch>
+                <Patch>audiere-1.9.4-speex-path.patch</Patch>
+                <Patch>audiere-1.9.4-wx-fixes.patch</Patch>
+            </Patches>
+            <SourceURI>library/audiere/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>audiere</Name>
+            <RuntimeDependencies>
+                <Dependency>audiofile</Dependency>
+                <Dependency>flac</Dependency>
+                <Dependency>libcdaudio</Dependency>
+                <Dependency>libogg</Dependency>
+                <Dependency>libvorbis</Dependency>
+                <Dependency>speex</Dependency>
+                <Dependency>wxGTK</Dependency>
+                <Dependency>wxBase</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="2">
+                <Date>2011-10-22</Date>
+                <Version>1.9.4</Version>
+                <Comment>Some changes for Happy Kitty</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2007-10-15</Date>
+                <Version>1.9.4</Version>
+                <Comment>First release</Comment>
+                <Name>Murat Şenel</Name>
+                <Email>muratasenel@gmail.com</Email>
             </Update>
         </History>
     </SpecFile>
@@ -9135,6 +9503,52 @@
             <Update release="1">
                 <Date>2011-03-17</Date>
                 <Version>1.1.4</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>python-pysfml</Name>
+            <Homepage>http://pysfml2-cython.readthedocs.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>ZLIB</License>
+            <IsA>library</IsA>
+            <PartOf>programming.language.python</PartOf>
+            <Summary xml:lang="en">A Python binding for SFML 2, written with Cython</Summary>
+            <Summary xml:lang="tr">SFML 2 için Cython ile yazılmış Python bağlayıcıları</Summary>
+            <Description xml:lang="en">PySFML 2 is a new Python binding for SFML 2, made with Cython. Many features of SFML are currently available, but this is still a work in progress.</Description>
+            <Description xml:lang="tr">PySFML 2, SFML 2 için Cython ile yazılmış yeni Python bağlayıcılarıdır. SFML&apos;nin pek çok özelliği şu an mevcut olmakla birlikte çalışmalar devam etmektedir.</Description>
+            <Archive type="tarbz2" sha1sum="9d4291f262cf001608cd6f4d20a78623511357d3">http://dl.dropbox.com/u/1836567/Paketler/pysfml2-cython.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>sfml-devel</Dependency>
+                <Dependency>python-devel</Dependency>
+                <Dependency>cython</Dependency>
+            </BuildDependencies>
+            <SourceURI>programming/language/python/python-pysfml/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>python-pysfml</Name>
+            <RuntimeDependencies>
+                <Dependency>sfml</Dependency>
+                <Dependency>python</Dependency>
+                <Dependency>cython</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/python-pysfml</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-10-22</Date>
+                <Version>0.0.1</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
