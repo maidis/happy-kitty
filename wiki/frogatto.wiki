@@ -1,0 +1,5 @@
+#summary An old-school 2d platformer game
+#labels frogatto,gpl,game.arcade,libsdl
+
+|| Frogatto is an open-source platformer or jump-and-run game that starring a certain quixotic frog. || <wiki:video url="http://www.youtube.com/watch?v=HpuquomnmmY"/> ||
+||[http://www.frogatto.com/ Frogatto & Friends Home Page]|| Packager: [http://code.google.com/p/happy-kitty/people/detail?u=ozbekanil ozbekanil] ||
