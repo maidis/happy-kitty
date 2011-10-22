@@ -1,0 +1,23 @@
+diff -aur src/audiere.h src/audiere.h
+--- ./src/audiere.h	2009-05-29 21:39:42.000000000 +0200
++++ ./src/audiere.h	2009-06-14 23:37:45.000000000 +0200
+@@ -29,6 +29,7 @@
+ #include <vector>
+ #include <cstring>
+ #include <string>
++#include <string.h>
+ 
+ #ifdef _MSC_VER
+ #pragma warning(disable : 4786)
+diff -aur src/utility.cpp src/utility.cpp
+--- ./src/utility.cpp	2009-05-29 21:37:19.000000000 +0200
++++ ./src/utility.cpp	2009-05-29 21:45:23.000000000 +0200
+@@ -2,7 +2,7 @@
+ #pragma warning(disable : 4786)
+ #endif
+ 
+-
++#include <cstdio>
+ #include <ctype.h>
+ #include "utility.h"
+ #include "internal.h"

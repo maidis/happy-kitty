@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>audiere</Name>
+        <Homepage>http://audiere.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>A high-level audio API</Summary>
+        <Description>Audiere can play Ogg Vorbis, MP3, FLAC, uncompressed WAV, AIFF, MOD, S3M, XM, and IT files.</Description>
+        <Archive sha1sum="3219f1569ff7f2f754570ddc903d65e9a56754b9" type="targz">mirrors://sourceforge/audiere/audiere-1.9.4.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>audiofile-devel</Dependency>
+            <Dependency>flac-devel</Dependency>
+            <Dependency>libcdaudio-devel</Dependency>
+            <Dependency>libogg-devel</Dependency>
+            <Dependency>libvorbis-devel</Dependency>
+            <Dependency>speex-devel</Dependency>
+            <Dependency>wxGTK-devel</Dependency>
+            <Dependency>wxBase-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">audiere-1.9.4-configure.in.patch</Patch>
+            <Patch>aud2.patch</Patch>
+            <Patch>gcc4.4.patch</Patch>
+            <Patch level="1">audiere-1.9.4-Makefile.am.patch</Patch>
+            <Patch>audiere-1.9.4-speex-path.patch</Patch>
+            <Patch>audiere-1.9.4-wx-fixes.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>audiere</Name>
+        <RuntimeDependencies>
+            <Dependency>audiofile</Dependency>
+            <Dependency>flac</Dependency>
+            <Dependency>libcdaudio</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>speex</Dependency>
+            <Dependency>wxGTK</Dependency>
+            <Dependency>wxBase</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="2">
+            <Date>2011-10-22</Date>
+            <Version>1.9.4</Version>
+            <Comment>Some changes for Happy Kitty</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+        <Update release="1">
+            <Date>2007-10-15</Date>
+            <Version>1.9.4</Version>
+            <Comment>First release</Comment>
+            <Name>Murat Şenel</Name>
+            <Email>muratasenel@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

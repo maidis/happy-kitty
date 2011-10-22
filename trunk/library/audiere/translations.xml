@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>audiere</Name>
+        <Summary xml:lang="tr">Bir yüksek seviye ses UPA</Summary>
+        <Description xml:lang="tr">Audiere, Ogg Vorbis, MP3, FLAC, sıkıştırılmamış WAV, AIFF, MOD, S3M, XM ve IT dosyalarını oynatabilir.</Description>
+    </Source>
+</PISI>
