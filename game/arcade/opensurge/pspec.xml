@@ -17,7 +17,7 @@
         <BuildDependencies>
             <Dependency>alfont</Dependency>
             <Dependency>allegro-devel</Dependency>
-            <Dependency>dumb</Dependency>
+            <Dependency>dumb-devel</Dependency>
             <Dependency>libpng-devel</Dependency>
         </BuildDependencies>
         <Patches>

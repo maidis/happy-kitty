@@ -17,7 +17,7 @@
         <BuildDependencies>
             <Dependency>allegro-devel</Dependency>
             <Dependency>guichan</Dependency>
-            <Dependency>dumb</Dependency>
+            <Dependency>dumb-devel</Dependency>
         </BuildDependencies>
     </Source>
 
