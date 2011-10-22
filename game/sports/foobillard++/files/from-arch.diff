@@ -1,0 +1,60 @@
+diff -Naur foobillardplus-3.4beta.orig/configure foobillardplus-3.4beta/configure
+--- foobillardplus-3.4beta.orig/configure	2011-09-14 01:55:10.000000000 +0300
++++ foobillardplus-3.4beta/configure	2011-10-22 21:18:31.689000002 +0300
+@@ -5675,16 +5675,16 @@
+ if test "x$prefix" = "xNONE" ; then
+   prefix="/opt/foobillardplus"
+ else
+-  prefix=$prefix/foobillardplus
++  prefix=$prefix
+ fi
+ if test "x$exec_prefix" = "xNONE" ; then
+   exec_prefix=$prefix
+ fi
+ bindir=$prefix/bin
+-datarootdir=$prefix/data
+-datadir=$prefix/data
+-localedir=$prefix/data/locale
+-docdir=$prefix/data/locale
++datarootdir=$prefix/share/foobillardplus
++datadir=$prefix/share/foobillardplus
++localedir=$prefix/share/foobillardplus/locale
++docdir=$prefix/share/foobillardplus/locale
+ PREFIX=$prefix
+ 
+ EXECPREFIX=$prefix
+diff -Naur foobillardplus-3.4beta.orig/foobillardplus.desktop foobillardplus-3.4beta/foobillardplus.desktop
+--- foobillardplus-3.4beta.orig/foobillardplus.desktop	2011-09-14 02:10:55.000000000 +0300
++++ foobillardplus-3.4beta/foobillardplus.desktop	2011-10-22 21:21:29.861000002 +0300
+@@ -1,12 +1,12 @@
+-
+ [Desktop Entry]
+ Version=1.0
+ Type=Application
+ Terminal=false
+-Icon=/opt/foobillardplus/foobillardplus.png
++Icon=foobillardplus
+ Name=Foobillard++
+-Exec=/opt/foobillardplus/bin/foobillardplus
+-Comment=OpenGL Billiard Game
+-Name=Foobillard++
+-Comment=OpenGL Billiard Game
+-GenericName=OpenGL Billiard Game
++Exec=foobillardplus
++GenericName=3D Billard Game
++GenericName[tr]=3B Bilardo Oyunu
++Comment=OpenGL billiard game
++Comment[tr]=OpenGL bilardo oyunu
++Categories=Application;Game;SportsGame;
+diff -Naur foobillardplus-3.4beta.orig/src/language.c foobillardplus-3.4beta/src/language.c
+--- foobillardplus-3.4beta.orig/src/language.c	2011-07-31 23:35:44.000000000 +0300
++++ foobillardplus-3.4beta/src/language.c	2011-10-22 21:18:31.697000002 +0300
+@@ -77,7 +77,7 @@
+   if((cp = strrchr(program,'/'))) { //extract the bin from path
+     cp[0] = 0;
+   }
+-  strcat(program,"/data");
++  strcat(program,"/share/foobillardplus");
+   //fprintf(stderr,"%d %s\n",strlen(program),program);
+   if(chdir(program) ){
+       fprintf(stderr,"Foobillard++ seems not to be correctly installed\n");
