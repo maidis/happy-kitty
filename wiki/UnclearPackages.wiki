@@ -1,10 +1,14 @@
 #summary Some unclear situations about packages
-#labels devel
+#labels devel,package,license
 
 = kof =
 Status: packaged
   * License of graphics?
   * Copyright of characters?
+
+= opentyrian =
+Status: packaged
+  * License of assets?
 
 = Resources =
   * [https://fedoraproject.org/wiki/SIGs/Games#List_of_games_we_will_NOT_package List of games we will NOT package]
