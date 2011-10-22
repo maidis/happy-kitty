@@ -1,0 +1,5 @@
+#summary A crayon-drawing based physics puzzle game
+#labels numptyphysics,game.puzzle,libsdl,gpl
+
+|| Numpty Physics is a drawing puzzle game in the spirit and style of Crayon Physics that you harness gravity with your crayon and set about creating blocks, ramps, levers, pulleys and whatever else you fancy to get the little red thing to the little yellow thing. || <wiki:video url="http://www.youtube.com/watch?v=h_meXQyPHmw"/> ||
+||[http://numptyphysics.garage.maemo.org/ Numpty Physics Home Page]|| Packager: [http://code.google.com/p/happy-kitty/people/detail?u=ozbekanil ozbekanil] ||
