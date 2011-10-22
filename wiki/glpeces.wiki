@@ -1,0 +1,5 @@
+#summary A tangram game
+#labels glpeces,game.puzzle,qt,gpl
+
+|| Peces is an open source game based on the Chinese game called Tangram. The main objective of the game is to create different figures by putting together pieces like squares, triangles, rectangles, and others. This simple yet challenging game has at least 33 gaming modes and 4 different difficulty levels. || <wiki:video url="http://www.youtube.com/watch?v=TZfrUAQLI78"/> ||
+||[http://qt-apps.org/content/show.php?content=132713 Peces Home Page]|| Packager: [http://code.google.com/p/happy-kitty/people/detail?u=ozbekanil ozbekanil] ||
