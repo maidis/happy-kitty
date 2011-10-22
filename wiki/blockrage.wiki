@@ -1,0 +1,5 @@
+#summary A falling-blocks arcade game
+#labels blockrage,game.puzzle,libsdl,gpl
+
+|| Block Rage is falling blocks game with a 2-player hoseat mode, detailed graphics and animated plasmatic backgrounds. It is a remake of the awesome DOS classic Xixit. || <wiki:video url="http://www.youtube.com/watch?v=D7_tJk0o7rk"/> ||
+||[http://blockrage.sourceforge.net/ Block Rage Home Page]|| Packager: [http://code.google.com/p/happy-kitty/people/detail?u=ozbekanil ozbekanil] ||
