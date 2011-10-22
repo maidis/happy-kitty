@@ -1,0 +1,22 @@
+diff -Nur ./src/audiere.h ./src/audiere.h
+--- ./src/audiere.h	2008-11-05 23:16:34.000000000 +0100
++++ ./src/audiere.h	2008-11-05 23:17:38.000000000 +0100
+@@ -27,6 +27,7 @@
+ 
+ 
+ #include <vector>
++#include <cstring>
+ #include <string>
+ 
+ #ifdef _MSC_VER
+diff -Nur audiere-1.9.4.old/src/debug.h audiere-1.9.4/src/debug.h
+--- ./src/debug.h	2008-11-05 23:16:34.000000000 +0100
++++ ./src/debug.h	2008-11-05 23:18:26.000000000 +0100
+@@ -4,6 +4,7 @@
+ 
+ #include <assert.h>
+ #include <stdio.h>
++#include <cstdlib>
+ #include <string>
+ 
+ 
