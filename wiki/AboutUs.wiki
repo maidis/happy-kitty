@@ -29,7 +29,7 @@ We aim to accomplish this goal through a variety of activities:
   * Package all game console emulators (see [EmulatorMission] for details).
   * Create high quality packages of gaming-related libraries, and game development tools.
   * Document [http://code.google.com/p/happy-kitty/wiki/PackageList the available games].
-  * Provide [http://groups.google.com/group/happy-kitty a list] where users and developers can discuss issues related to current games, and game packaging issues.
+  * Provide [http://code.google.com/p/happy-kitty/wiki/InternetSites#Discussion_Groups electronic mailing lists] where users and developers can discuss issues related to current games, and game packaging issues.
   * Seek publicity for games in Pardus.
   * Actively review each other's game packages to shorten the time it takes to get games approved and imported into official Pardus repository.
   * Design additional guidelines on top of the [http://developer.pardus.org.tr/guides/packaging/index.html Pardus Packaging guidelines] that are specific to games.
