@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>opentyrian</Name>
+        <Homepage>http://code.google.com/p/opentyrian</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>opentyrian</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A port of the classic DOS game Tyrian</Summary>
+        <Description>OpenTyrian is an arcade-style vertical scrolling shooter. The story is set in 20,031 where you play as Trent Hawkins, a skilled fighter-pilot employed to fight MicroSol and save the galaxy.</Description>
+        <Archive sha1sum="2d00007c58504cff69f492da29555d2d808c7c32" type="tarbz2">http://happy-kitty.googlecode.com/files/opentyrian-0.0.946.tar.bz2</Archive>
+        <Archive sha1sum="29827de99c92cdba7ac8d8b1307776c8f473cd44" type="zip">http://sites.google.com/a/camanis.net/opentyrian/tyrian/tyrian21.zip</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-net-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>not-werror.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>opentyrian</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-net</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/opentyrian</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-11-08</Date>
+            <Version>0.0.946</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>opentyrian</Name>
+        <Summary xml:lang="tr">Klasik DOS oyunu Tyrian'ın portu</Summary>
+        <Description xml:lang="tr">OpenTyrian, dikey ekranda kaymalı, ateri stili bir vurma oyunudur. Hikaye 20,031'de yetenekli bir savaş pilotu olana Trent Hawkins'in kötülerle savaşarak galaksiyi kurtarmasını konu almaktadır.</Description>
+    </Source>
+</PISI>

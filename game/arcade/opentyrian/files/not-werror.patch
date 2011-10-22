@@ -1,0 +1,11 @@
+--- Makefile.orig	2010-11-08 14:28:13.618000024 +0200
++++ Makefile	2010-11-08 14:29:12.070000024 +0200
+@@ -19,7 +19,7 @@
+ # FLAGS ####################################################
+ 
+ ifneq ($(MAKECMDGOALS), release)
+-    EXTRA_CFLAGS += -g3 -O0 -Werror
++    EXTRA_CFLAGS += -g3 -O0
+ else
+     EXTRA_CFLAGS += -g0 -O2 -DNDEBUG
+ endif
