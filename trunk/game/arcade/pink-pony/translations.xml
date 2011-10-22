@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>pink-pony</Name>
+        <Summary xml:lang="tr">Tron benzeri çok oyunculu yarış oyunu</Summary>
+        <Description xml:lang="tr">Pink Pony, küçük midillileri kontrol ederek her yere çiçeklerden çizgi çizdiğiniz ve rakiplerinizin bu çizgilere çarpması için uğraştığınız bir yarış oyunudur. Son kalan midilli kazanır.</Description>
+    </Source>
+</PISI>

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Pink Pony
+GenericName=Tron­-like Racing Game
+GenericName[tr]=Tron­-benzeri Yarış Oyunu
+Comment=Tron­-like multiplayer racing­ game
+Comment[tr]=Tron benzeri çok oyunculu yarış oyunu
+Icon=pink-pony
+Exec=pink-pony
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;
