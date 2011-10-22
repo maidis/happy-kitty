@@ -1,0 +1,5 @@
+#summary A fast-paced crossplatform first-person shooter
+#labels xonotic,libsdl,game.fps,gpl
+
+|| Xonotic is a fast-paced first-person shooter. The project is geared towards providing addictive arena shooter gameplay which is all spawned and driven by the community itself. || <wiki:video url="http://www.youtube.com/watch?v=9Zsp1ahGgWE"/> ||
+||[http://www.xonotic.org/ Xonotic Home Page]|| Packager: [http://code.google.com/p/happy-kitty/people/detail?u=ozbekanil ozbekanil] ||
