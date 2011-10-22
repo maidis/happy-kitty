@@ -1,0 +1,5 @@
+#summary 3D billard game
+#labels foobillardplus,game.sports,libsdl,gpl
+
+|| Foobillard++ is a 3D 8ball, 9ball, snooker and carambol game. It based on FooBillard 3.0a with patches, new features, hud, jumpshots, correct detection of lost balls, more sound and graphics etc. || <wiki:video url="http://www.youtube.com/watch?v=_yBv86PlOPU"/> ||
+||[http://foobillardplus.sourceforge.net/ Foobillard++ Home Page]|| Packager: [http://code.google.com/p/happy-kitty/people/detail?u=ozbekanil ozbekanil] ||
