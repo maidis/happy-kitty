@@ -28,11 +28,14 @@ $ svn ci airstrike
   # If the package depends on other packages currently in reviewing process, the bug report should depend on those other packages’ bug reports to establish a dependency relationship between them.
   # All changes done to the package during the reviewing process (e.g. All modifications committed under playground/review) should be reflected as a comment to the relevant bug report using the following special keyword in the SVN commit messages:
 {{{
+
+airstrike: some fixing for review
+
+Update issue 99998
+
 * license file added to package
 * issues on 64bit build fixed
 * ...
-
-Update issue 99998
 }}}
   # In order to decide that the package is suitable for a package repository, it should take necessary number of approvals. The approval comments will be given firstly by the supervisor of the package component, then by an other package maintainer.
   # In order to complete the package reviewing process 2 approval is necessary. One of these approvals should be given by component supervisor. If the package maintainer is also the component supervisor, the other package maintainers can give these two approvals.
