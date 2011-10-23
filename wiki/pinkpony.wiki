@@ -1,0 +1,5 @@
+#summary A Tron­-like multiplayer racing­ game
+#labels pinkpony,game.arcade,gpl
+
+|| Pink Pony is a game that you control little ponies that leave a trail of flowers everywhere they step. You have to evade these trails and force other ponies into them. The last pony standing wins the game. || <wiki:video url="http://www.youtube.com/watch?v=g3wy1Nh8-KA"/> ||
+||[http://code.google.com/p/pink-pony/ Pink Pony Home Page]|| Packager: [http://code.google.com/p/happy-kitty/people/detail?u=ozbekanil ozbekanil] ||
