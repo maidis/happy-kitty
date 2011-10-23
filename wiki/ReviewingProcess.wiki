@@ -3,7 +3,7 @@
 
 = Introduction =
 
-The person who want to put his package in review and add it to Happy Kitty repository, he should be a Happy Kitty packager. (see [http://code.google.com/p/happy-kitty/wiki/JoiningHappyKitty#As_Happy_Kitty_Packager JoiningHappyKitty])
+The person who want to put his package in review and add it to Happy Kitty repository, he should be a [http://code.google.com/p/happy-kitty/wiki/JoiningHappyKitty#As_Happy_Kitty_Packager Happy Kitty packager].
 
 Package maintainers and the reviewers must follow the package review process and they should pay attention that the package adheres to [http://developer.pardus.org.tr/guides/packaging/packaging_guidelines.html#packaging-guidelines Pardus' Packaging Guidelines].
 
@@ -11,7 +11,7 @@ They also pay attention that the package in review is not yet part of Happy Kitt
 
 
 = Review Process =
-  # The package reviewing process steps on [http://code.google.com/p/happy-kitty/issues/list Happy Kitty Issue Tracking System];
+The package reviewing process steps on [http://code.google.com/p/happy-kitty/issues/list Happy Kitty Issue Tracking System];
   # When the packager thinks that his/her new package is ready for the reviewing process, he/she should copy it under the appropriate component.
   # If a bug is reported for requesting this new package on the bug tracking system, the process starts at this point.
   # The developer who wants to maintain this new package, assigns the bug report to (him/her)self and changes the bug status to Accepted. This operation can only be done by the members of Committer group.
