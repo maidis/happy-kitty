@@ -13,6 +13,12 @@ They also pay attention that the package in review is not yet part of Happy Kitt
 = Review Process =
 The package reviewing process steps on [http://code.google.com/p/happy-kitty/issues/list Happy Kitty Issue Tracking System];
   # When the packager thinks that his/her new package is ready for the reviewing process, he/she should copy it under the appropriate component.
+{{{
+$ pwd
+/happy-kitty/game/arcade
+$ svn add airstrike
+$ svn ci airstrike
+}}}
   # If a bug is reported for requesting this new package on the bug tracking system, the process starts at this point.
   # The developer who wants to maintain this new package, assigns the bug report to (him/her)self and changes the bug status to Accepted. This operation can only be done by the members of Committer group.
   # After the developer assigns the bug to (him/her)self, A new bug report which will block the package request bug will be created. (From now on, this new bug report will be mentioned as the bug report)
