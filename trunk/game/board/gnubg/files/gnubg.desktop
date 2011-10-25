@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=GNU Backgammon
+GenericName=Backgammon Game
+GenericName[tr]=Tavla Oyunu
+Comment=A backgammon game
+Comment[tr]=Bir tavla oyunu
+Icon=gnubg
+Exec=gnubg
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;BoardGame;
