@@ -57,7 +57,7 @@
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/secondlife.desktop">secondlife.desktop</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/usr/bin/secondlife">secondlife.sh</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/secondlife">secondlife.sh</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
