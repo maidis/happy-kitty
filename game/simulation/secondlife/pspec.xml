@@ -12,12 +12,12 @@
         <License>GPLv2</License>
         <Icon>secondlife</Icon>
         <Summary>A free 3D life simulation game</Summary>
-        <Description>A free 3D virtual world where users can socialize, connect and create using free voice and text chat.</Description>
+        <Description>SecondLife is a free 3D virtual world where users can socialize, connect and create using free voice and text chat.</Description>
         <Archive sha1sum="2492800920e4f8db1ff12de2aafc854d95982d87" type="tarbz2">http://download.cloud.secondlife.com/Viewer-3/SecondLife-i686-3.1.0.243176.tar.bz2</Archive>
     </Source>
-    
+
     <Package>
-        <Name>SecondLife</Name>
+        <Name>secondlife</Name>
         <RuntimeDependencies>
             <Dependency>apr</Dependency>
             <Dependency>apr-util</Dependency>
@@ -60,7 +60,7 @@
             <AdditionalFile owner="root" permission="0644" target="/usr/bin/secondlife">secondlife.sh</AdditionalFile>
         </AdditionalFiles>
     </Package>
-    
+
     <History>
         <Update release="1">
             <Date>2011-10-18</Date>
