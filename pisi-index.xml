@@ -7854,10 +7854,26 @@
             <Description xml:lang="tr">SecondLife, binlerce oyuncusu bulunan çevirimiçi bir hayat simülasyon oyunudur.</Description>
             <Icon>secondlife</Icon>
             <Archive type="tarbz2" sha1sum="2492800920e4f8db1ff12de2aafc854d95982d87">http://download.cloud.secondlife.com/Viewer-3/SecondLife-i686-3.1.0.243176.tar.bz2</Archive>
+            <AdditionalFiles>
+                <AdditionalFile target="secondlife-foo" permission="0755" owner="root">secondlife.sh</AdditionalFile>
+                <AdditionalFile target="secondlife.desktop" permission="0644" owner="root">secondlife.desktop</AdditionalFile>
+            </AdditionalFiles>
             <SourceURI>game/simulation/secondlife/pspec.xml</SourceURI>
         </Source>
         <Package>
             <Name>secondlife</Name>
+            <RuntimeDependencies>
+                <Dependency release="1">secondlife-binary</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/opt/secondlife</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>secondlife-binary</Name>
             <RuntimeDependencies>
                 <Dependency>apr</Dependency>
                 <Dependency>apr-util</Dependency>
@@ -7887,19 +7903,47 @@
                 <Dependency>openssl</Dependency>
             </RuntimeDependencies>
             <Files>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="data">/opt/secondlife</Path>
-                <Path fileType="data">/usr/share/applications</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="executable">/usr/bin/secondlife</Path>
             </Files>
-            <Provides>
-                <COMAR script="package.py">System.Package</COMAR>
-            </Provides>
-            <AdditionalFiles>
-                <AdditionalFile target="/usr/share/applications/secondlife.desktop" permission="0644" owner="root">secondlife.desktop</AdditionalFile>
-                <AdditionalFile target="/usr/bin/secondlife" permission="0755" owner="root">secondlife.sh</AdditionalFile>
-            </AdditionalFiles>
+        </Package>
+        <Package>
+            <Name>secondlife-binary</Name>
+            <Summary xml:lang="en">Executable file for SecondLife</Summary>
+            <RuntimeDependencies>
+                <Dependency>apr</Dependency>
+                <Dependency>apr-util</Dependency>
+                <Dependency>boost</Dependency>
+                <Dependency>curl</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>freealut-32bit</Dependency>
+                <Dependency>freetype-32bit</Dependency>
+                <Dependency>gstreamer-32bit</Dependency>
+                <Dependency>gst-plugins-bad</Dependency>
+                <Dependency>gst-plugins-good</Dependency>
+                <Dependency>gst-plugins-ugly</Dependency>
+                <Dependency>gtk2-32bit</Dependency>
+                <Dependency>libgcrypt-32bit</Dependency>
+                <Dependency>libgpg-error-32bit</Dependency>
+                <Dependency>libogg-32bit</Dependency>
+                <Dependency>libsdl-32bit</Dependency>
+                <Dependency>libvorbis-32bit</Dependency>
+                <Dependency>libX11-32bit</Dependency>
+                <Dependency>libXau-32bit</Dependency>
+                <Dependency>libXdmcp-32bit</Dependency>
+                <Dependency>libXext-32bit</Dependency>
+                <Dependency>libXinerama-32bit</Dependency>
+                <Dependency>libvorbis-32bit</Dependency>
+                <Dependency>openal-32bit</Dependency>
+                <Dependency>openjpeg</Dependency>
+                <Dependency>openssl-32bit</Dependency>
+                <Dependency>libidn-32bit</Dependency>
+                <Dependency>mesa-32bit</Dependency>
+                <Dependency>alsa-lib-32bit</Dependency>
+                <Dependency>pulseaudio-libs-32bit</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin/32/secondlife</Path>
+            </Files>
         </Package>
         <History>
             <Update release="1">
