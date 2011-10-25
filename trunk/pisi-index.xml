@@ -10049,9 +10049,11 @@
             <Archive type="tarbz2" sha1sum="b19b92101853cb653506456fd8ab1c0bb0b6e636">mirrors://sourceforge/mednafen/Mednafen/0.8.D.3/mednafen-0.8.D.3.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>alsa-lib-devel</Dependency>
+                <Dependency>jack-audio-connection-kit-devel</Dependency>
                 <Dependency>libcdio-devel</Dependency>
                 <Dependency>libsdl-devel</Dependency>
                 <Dependency>libsndfile-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
                 <Dependency>sdl-net-devel</Dependency>
             </BuildDependencies>
             <SourceURI>hardware/emulator/mednafen/pspec.xml</SourceURI>
@@ -10060,9 +10062,11 @@
             <Name>mednafen</Name>
             <RuntimeDependencies>
                 <Dependency>alsa-lib</Dependency>
+                <Dependency>jack-audio-connection-kit</Dependency>
                 <Dependency>libcdio</Dependency>
                 <Dependency>libsdl</Dependency>
                 <Dependency>libsndfile</Dependency>
+                <Dependency>mesa</Dependency>
                 <Dependency>sdl-net</Dependency>
             </RuntimeDependencies>
             <Files>
@@ -10088,8 +10092,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>system</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10099,8 +10103,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>system</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10110,8 +10114,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>other</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10121,8 +10125,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>games</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10132,8 +10136,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>games</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10143,8 +10147,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>games</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10154,8 +10158,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>programming</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10165,8 +10169,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>games</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10176,8 +10180,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>games</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10187,8 +10191,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>games</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10198,8 +10202,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>games</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10209,8 +10213,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>games</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10220,8 +10224,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>games</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10231,8 +10235,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>games</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10242,8 +10246,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>games</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10253,8 +10257,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>games</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10264,8 +10268,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>games</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10275,8 +10279,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>multimedia</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10286,8 +10290,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>multimedia</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10297,8 +10301,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>multimedia</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10308,8 +10312,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>programming</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10319,8 +10323,8 @@
         <Description xml:lang="en">Programming libraries, tools, debuggers, profilers, etc.</Description>
         <Group>programming</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10330,8 +10334,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>science</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10341,8 +10345,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>science</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10352,8 +10356,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>programming</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
     <Component>
@@ -10363,8 +10367,8 @@
         <Description xml:lang="en">FIXME</Description>
         <Group>programming</Group>
         <Maintainer>
-            <Name>FIXME</Name>
-            <Email>FIXME</Email>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
         </Maintainer>
     </Component>
 </PISI>
