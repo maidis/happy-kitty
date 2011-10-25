@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>gnubg</Name>
+        <Summary xml:lang="tr">GNU Tavla oyunu</Summary>
+        <Description xml:lang="tr">gnubg, tavla maçları yapıp ardından maçlarınızı analiz edebileceğiniz bir tavla oyunudur.</Description>
+    </Source>
+
+    <Package>
+        <Name>gnubg-docs</Name>
+        <Summary xml:lang="tr">gnubg dökümanları</Summary>
+        <Description xml:lang="tr">gnubg için belgelendirme dosyaları.</Description>
+    </Package>
+</PISI>
