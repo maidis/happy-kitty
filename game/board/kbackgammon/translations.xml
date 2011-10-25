@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>kbackgammon</Name>
+        <Summary xml:lang="tr">KDE için bir tavla oyunu</Summary>
+        <Description xml:lang="tr">KBackgammon, tavla ve benzeri oyunlar için bir KDE yazılımıdır.</Description>
+    </Source>
+</PISI>
