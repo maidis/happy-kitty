@@ -7160,6 +7160,57 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>kbackgammon</Name>
+            <Homepage>http://kde-apps.org/content/show.php/KBackgammon?content=142680</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.board</PartOf>
+            <Summary xml:lang="en">A backgammon game for KDE</Summary>
+            <Summary xml:lang="tr">KDE için bir tavla oyunu</Summary>
+            <Description xml:lang="en">KBackgammon is KDE application to play backgammon like games.</Description>
+            <Description xml:lang="tr">KBackgammon, tavla ve benzeri oyunlar için bir KDE yazılımıdır.</Description>
+            <Icon>kbackgammon</Icon>
+            <Archive type="targz" sha1sum="e666d39b931574770e20dc2f6175ed41c5d13a33">http://dl.dropbox.com/u/1836567/Paketler/142680-KBackgammon_0.15.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>qt-devel</Dependency>
+                <Dependency>kdelibs-devel</Dependency>
+                <Dependency>kdegames-core</Dependency>
+                <Dependency>kdegames-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/board/kbackgammon/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>kbackgammon</Name>
+            <RuntimeDependencies>
+                <Dependency>qt</Dependency>
+                <Dependency>kdelibs</Dependency>
+                <Dependency>kdegames-core</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/config.kcfg</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/kde4</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-10-25</Date>
+                <Version>0.15</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>neodraughts</Name>
             <Homepage>http://ndraughts.sourceforge.net</Homepage>
             <Packager>
@@ -7360,6 +7411,96 @@
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gnubg</Name>
+            <Homepage>http://www.gnubg.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.board</PartOf>
+            <Summary xml:lang="en">GNU Backgammon</Summary>
+            <Summary xml:lang="tr">GNU Tavla oyunu</Summary>
+            <Description xml:lang="en">GNU Backgammon (gnubg) plays and analyses backgammon games and matches.</Description>
+            <Description xml:lang="tr">gnubg, tavla maçları yapıp ardından maçlarınızı analiz edebileceğiniz bir tavla oyunudur.</Description>
+            <Icon>gnubg</Icon>
+            <Archive type="targz" sha1sum="b0e8003c9d1b22d7505e52b195e56c4bf6229e73">http://dl.dropbox.com/u/1836567/Paketler/gnubg-source-SNAPSHOT-20111025.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>esound-devel</Dependency>
+                <Dependency>freetype-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>gmp-devel</Dependency>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>gtkglext-devel</Dependency>
+                <Dependency>libcanberra-devel</Dependency>
+                <Dependency>libcanberra-gtk</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/board/gnubg/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnubg</Name>
+            <RuntimeDependencies>
+                <Dependency>cairo</Dependency>
+                <Dependency>esound</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gmp</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>gtkglext</Dependency>
+                <Dependency>libcanberra-gtk</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>pango</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/gnubg</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="man">/usr/share/man</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/gnubg.desktop" permission="0644" owner="root">gnubg.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <Package>
+            <Name>gnubg-docs</Name>
+            <Summary xml:lang="en">GNU Backgammon docs</Summary>
+            <Summary xml:lang="tr">gnubg dökümanları</Summary>
+            <Description xml:lang="en">gnubg-docs provides doc files for GNU Backgammon.</Description>
+            <Description xml:lang="tr">gnubg için belgelendirme dosyaları.</Description>
+            <IsA>data:doc</IsA>
+            <RuntimeDependencies>
+                <Dependency release="2">gnubg</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/doc/gnubg</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="2">
+                <Date>2011-10-25</Date>
+                <Version>0.0_20111025</Version>
+                <Comment>Version bump</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2009-09-14</Date>
+                <Version>0.0_20090817</Version>
+                <Comment>First release.</Comment>
+                <Name>Cihan Okyay</Name>
+                <Email>okyaycihan@gmail.com</Email>
             </Update>
         </History>
     </SpecFile>
@@ -7708,13 +7849,15 @@
             <IsA>app:gui</IsA>
             <PartOf>game.simulation</PartOf>
             <Summary xml:lang="en">A free 3D life simulation game</Summary>
-            <Description xml:lang="en">A free 3D virtual world where users can socialize, connect and create using free voice and text chat.</Description>
+            <Summary xml:lang="tr">Üç boyutlu bir yaşam simülasyon oyunu</Summary>
+            <Description xml:lang="en">SecondLife is a free 3D virtual world where users can socialize, connect and create using free voice and text chat.</Description>
+            <Description xml:lang="tr">SecondLife, binlerce oyuncusu bulunan çevirimiçi bir hayat simülasyon oyunudur.</Description>
             <Icon>secondlife</Icon>
             <Archive type="tarbz2" sha1sum="2492800920e4f8db1ff12de2aafc854d95982d87">http://download.cloud.secondlife.com/Viewer-3/SecondLife-i686-3.1.0.243176.tar.bz2</Archive>
             <SourceURI>game/simulation/secondlife/pspec.xml</SourceURI>
         </Source>
         <Package>
-            <Name>SecondLife</Name>
+            <Name>secondlife</Name>
             <RuntimeDependencies>
                 <Dependency>apr</Dependency>
                 <Dependency>apr-util</Dependency>
@@ -7750,9 +7893,12 @@
                 <Path fileType="doc">/usr/share/doc</Path>
                 <Path fileType="data">/usr/share/pixmaps</Path>
             </Files>
+            <Provides>
+                <COMAR script="package.py">System.Package</COMAR>
+            </Provides>
             <AdditionalFiles>
                 <AdditionalFile target="/usr/share/applications/secondlife.desktop" permission="0644" owner="root">secondlife.desktop</AdditionalFile>
-                <AdditionalFile target="/usr/bin/secondlife" permission="0644" owner="root">secondlife.sh</AdditionalFile>
+                <AdditionalFile target="/usr/bin/secondlife" permission="0755" owner="root">secondlife.sh</AdditionalFile>
             </AdditionalFiles>
         </Package>
         <History>
