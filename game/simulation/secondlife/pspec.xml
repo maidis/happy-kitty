@@ -14,10 +14,31 @@
         <Summary>A free 3D life simulation game</Summary>
         <Description>SecondLife is a free 3D virtual world where users can socialize, connect and create using free voice and text chat.</Description>
         <Archive sha1sum="2492800920e4f8db1ff12de2aafc854d95982d87" type="tarbz2">http://download.cloud.secondlife.com/Viewer-3/SecondLife-i686-3.1.0.243176.tar.bz2</Archive>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0755" target="secondlife-foo">secondlife.sh</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="secondlife.desktop">secondlife.desktop</AdditionalFile>
+        </AdditionalFiles>
     </Source>
 
     <Package>
         <Name>secondlife</Name>
+        <RuntimeDependencies>
+            <Dependency release="current">secondlife-binary</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/opt/secondlife</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <!--AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/secondlife.desktop">secondlife.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/secondlife">secondlife.sh</AdditionalFile>
+        </AdditionalFiles-->
+    </Package>
+
+    <Package>
+        <Name>secondlife-binary</Name>
         <RuntimeDependencies>
             <Dependency>apr</Dependency>
             <Dependency>apr-util</Dependency>
@@ -49,16 +70,50 @@
             <Dependency>openssl</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="data">/opt/secondlife</Path>
-            <Path fileType="data">/usr/share/applications</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
-            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="executable">/usr/bin/secondlife</Path>
         </Files>
-        <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/secondlife.desktop">secondlife.desktop</AdditionalFile>
-            <AdditionalFile owner="root" permission="0755" target="/usr/bin/secondlife">secondlife.sh</AdditionalFile>
-        </AdditionalFiles>
+    </Package>
+
+    <Package>
+        <Name>secondlife-binary</Name>
+        <Summary>Executable file for SecondLife</Summary>
+        <RuntimeDependencies>
+            <Dependency>apr</Dependency>
+            <Dependency>apr-util</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>curl</Dependency>
+            <!--Dependency>elfio</Dependency-->
+            <Dependency>expat</Dependency>
+            <!--Dependency>fmodex</Dependency-->
+            <Dependency>freealut-32bit</Dependency>
+            <Dependency>freetype-32bit</Dependency>
+            <Dependency>gstreamer-32bit</Dependency>
+            <Dependency>gst-plugins-bad</Dependency>
+            <Dependency>gst-plugins-good</Dependency>
+            <Dependency>gst-plugins-ugly</Dependency>
+            <Dependency>gtk2-32bit</Dependency>
+            <Dependency>libgcrypt-32bit</Dependency>
+            <Dependency>libgpg-error-32bit</Dependency>
+            <Dependency>libogg-32bit</Dependency>
+            <Dependency>libsdl-32bit</Dependency>
+            <Dependency>libvorbis-32bit</Dependency>
+            <Dependency>libX11-32bit</Dependency>
+            <Dependency>libXau-32bit</Dependency>
+            <Dependency>libXdmcp-32bit</Dependency>
+            <Dependency>libXext-32bit</Dependency>
+            <Dependency>libXinerama-32bit</Dependency>
+            <Dependency>libvorbis-32bit</Dependency>
+            <Dependency>openal-32bit</Dependency>
+            <Dependency>openjpeg</Dependency>
+            <Dependency>openssl-32bit</Dependency>
+            <Dependency>libidn-32bit</Dependency>
+            <Dependency>mesa-32bit</Dependency>
+            <Dependency>alsa-lib-32bit</Dependency>
+            <Dependency>pulseaudio-libs-32bit</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin/32/secondlife</Path>
+        </Files>
     </Package>
 
     <History>
