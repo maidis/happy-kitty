@@ -59,6 +59,9 @@
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/secondlife.desktop">secondlife.desktop</AdditionalFile>
             <AdditionalFile owner="root" permission="0755" target="/usr/bin/secondlife">secondlife.sh</AdditionalFile>
         </AdditionalFiles>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
     </Package>
 
     <History>
