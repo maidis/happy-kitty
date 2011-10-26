@@ -5018,6 +5018,55 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>minecraft</Name>
+            <Homepage>http://www.minecraft.net</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>as-is</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A game about placing blocks</Summary>
+            <Summary xml:lang="tr">Blok yerleştirmeyle ilgili bir oyun</Summary>
+            <Description xml:lang="en">Minecraft is a game about placing blocks to build anything you can imagine. At night monsters come out, make sure to build a shelter before that happens.</Description>
+            <Description xml:lang="tr">Minecraft, hayal edeceğiniz her şeyi inşa etmek için blokları kullanabileceğiniz bir oyundur. Gece canavarlar çıkıp bir tarafınızı ısırmadan bir barınak inşa etmeye bakın.</Description>
+            <Icon>minecraft</Icon>
+            <Archive type="binary" sha1sum="80055b408e0cbe42ca2fe29667c5616153cff634">http://www.minecraft.net/download/minecraft.jar</Archive>
+            <SourceURI>game/puzzle/minecraft/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>minecraft</Name>
+            <RuntimeDependencies>
+                <Dependency>openal</Dependency>
+                <Dependency>sun-jre</Dependency>
+                <Dependency>xorg-util</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/minecraft</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/minecraft.desktop" permission="0644" owner="root">minecraft.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/minecraft.png" permission="0644" owner="root">minecraft.png</AdditionalFile>
+                <AdditionalFile target="/usr/bin/minecraft" permission="0755" owner="root">minecraft</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-10-26</Date>
+                <Version>0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>somyeol2d</Name>
             <Homepage>http://www.somyeol.com</Homepage>
             <Packager>
