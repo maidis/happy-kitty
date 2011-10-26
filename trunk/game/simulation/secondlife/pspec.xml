@@ -70,7 +70,7 @@
             <Dependency>openssl</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin/secondlife</Path>
+            <Path fileType="executable">/usr/bin/secondlife32</Path>
         </Files>
     </Package>
 
@@ -112,7 +112,7 @@
             <Dependency>pulseaudio-libs-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin/32/secondlife</Path>
+            <Path fileType="executable">/usr/bin/secondlife64</Path>
         </Files>
     </Package>
 

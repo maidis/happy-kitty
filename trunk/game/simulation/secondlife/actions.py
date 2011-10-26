@@ -21,10 +21,10 @@ def install():
     pisitools.dobin("secondlife-foo")
 
     if get.ARCH() == "x86_64":
-        pisitools.domove("/usr/bin/secondlife-foo", "/usr/bin/32", "secondlife")
-        pisitools.dosed("secondlife.desktop", "Exec=secondlife", "Exec=/usr/bin/32/secondlife")
+        pisitools.domove("/usr/bin/secondlife-foo", "/usr/bin", "secondlife64")
+        pisitools.dosed("secondlife.desktop", "Exec=secondlife32", "Exec=secondlife64")
     else:
-        pisitools.domove("/usr/bin/secondlife-foo", "/usr/bin", "secondlife")
+        pisitools.domove("/usr/bin/secondlife-foo", "/usr/bin", "secondlife32")
 
     pisitools.insinto("/usr/share/applications", "secondlife.desktop")
 
