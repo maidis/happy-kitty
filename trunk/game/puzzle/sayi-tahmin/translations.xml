@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>sayi-tahmin</Name>
+        <Summary xml:lang="tr">Bir sayı tahmin oyunu</Summary>
+        <Description xml:lang="tr">sayi-tahmin, ilk olarak QBasic ile yazılmış ve daha sonra C++' port edilmiş basit bir sayı tahmin oyunudur. Bu oyunun C++ sürümüdür.</Description>
+    </Source>
+</PISI>
