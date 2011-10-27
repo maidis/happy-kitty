@@ -99,4 +99,6 @@ Here you can find some address that includes source package files for both Pardu
 
 = References =
   * [http://tr.pardus-wiki.org/Pardus:Paket_depo_ba%C4%9Flant%C4%B1lar%C4%B1 Paket Depo Bağlantıları (Turkish)]
+  * [http://distributions.freedesktop.org/wiki/DistributionLocations Distributions Wiki - DistributionLocations]
+  * [http://lists.pardus.org.tr/teknik/2011-October/000465.html Teknik - Diğer dağıtımların paket kaynak depoları (Turkish)]
   * [http://en.wikipedia.org/ Wikipedia]
