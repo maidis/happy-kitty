@@ -6652,6 +6652,53 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>sayi-tahmin</Name>
+            <Homepage>http://code.google.com/p/sayi-tahmin</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>LGPLv3</License>
+            <IsA>app:console</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A number guess game</Summary>
+            <Summary xml:lang="tr">Bir sayı tahmin oyunu</Summary>
+            <Description xml:lang="en">sayi-tahmin is a simple number guess game which previously written with QBasic and than ported to C++. This is C++&apos;ized version of the game.</Description>
+            <Description xml:lang="tr">sayi-tahmin, ilk olarak QBasic ile yazılmış ve daha sonra C++&apos; port edilmiş basit bir sayı tahmin oyunudur. Bu oyunun C++ sürümüdür.</Description>
+            <Icon>sayi-tahmin</Icon>
+            <Archive type="targz" sha1sum="24911d6d200ef1de5307760883fca9665b97b102">http://dl.dropbox.com/u/1836567/Paketler/sayi-tahmin-0.5.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>gettext-devel</Dependency>
+                <Dependency>ncurses</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/puzzle/sayi-tahmin/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>sayi-tahmin</Name>
+            <RuntimeDependencies>
+                <Dependency>ncurses</Dependency>
+                <Dependency>kdebase</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-10-27</Date>
+                <Version>0.5</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>bubble-chains</Name>
             <Homepage>http://bubble-chains.sintegrial.com</Homepage>
             <Packager>
