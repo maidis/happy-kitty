@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>phlipple</Name>
+        <Summary xml:lang="tr">Benzersiz bir bulmaca oyunu</Summary>
+        <Description xml:lang="tr">Phlipple, benzersiz bir bulmaca oyunudur. Her bölümde gerçekleştirmeye çalıştığınız hedef, bir üç boyutlu şekli tek bir kareye indirgemektir. Bunun içinse yapmanız gereken tek şey karton kutulardaki gibi kenarları çevirmektir.</Description>
+    </Source>
+</PISI>
