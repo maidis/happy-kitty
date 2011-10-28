@@ -5331,6 +5331,60 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>phlipple</Name>
+            <Homepage>http://phuzzboxmedia.com/index.php/games/phlipple</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A unique puzzle game</Summary>
+            <Summary xml:lang="tr">Benzersiz bir bulmaca oyunu</Summary>
+            <Description xml:lang="en">Phlipple is a unique puzzle game. The goal of every level is to reduce a 3D shape to a single square. Elimination of squares is done by flipping edges around just like in a cardboard box.</Description>
+            <Description xml:lang="tr">Phlipple, benzersiz bir bulmaca oyunudur. Her bölümde gerçekleştirmeye çalıştığınız hedef, bir üç boyutlu şekli tek bir kareye indirgemektir. Bunun içinse yapmanız gereken tek şey karton kutulardaki gibi kenarları çevirmektir.</Description>
+            <Icon>phlipple</Icon>
+            <Archive type="targz" sha1sum="8d6a46180570c5e6a180ed8a7d704ad3cf277b08">mirrors://sourceforge/phlipple/phlipple-0.8.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>glew-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/puzzle/phlipple/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>phlipple</Name>
+            <RuntimeDependencies>
+                <Dependency>glew</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>sdl-image</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/phlipple</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-10-29</Date>
+                <Version>0.8.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>netwalk</Name>
             <Homepage>http://code.google.com/p/netwalk</Homepage>
             <Packager>
