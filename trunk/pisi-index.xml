@@ -7225,7 +7225,7 @@
             <Description xml:lang="en">Tanglet is a single player word finding game based on Boggle. The object of the game is to list as many words as you can before the time runs out. Every time you find a new word, you are given more time.</Description>
             <Description xml:lang="tr">Tanglet, Boggle temelli, tek kişilik bir kelime bulma oyunudur. Oyunun ulvi amacı süre dolmadan önce olabildiğince çok kelime bulmaktır. Bulduğunuz her yeni kelime size daha çok süre olarak geri dönecektir.</Description>
             <Icon>tanglet</Icon>
-            <Archive type="tarbz2" sha1sum="ad2ab4e4cff348a9345294fcdcf6d60fc866fd24">http://gottcode.org/tanglet/tanglet-1.1.1-src.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="09b74a7d6ec48c9ca7d76d6fcd7d550d1d4b1d05">http://gottcode.org/tanglet/tanglet-1.2.0-src.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>qt-devel</Dependency>
             </BuildDependencies>
@@ -7243,11 +7243,19 @@
                 <Path fileType="executable">/usr/bin</Path>
                 <Path fileType="data">/usr/share/applications</Path>
                 <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
                 <Path fileType="data">/usr/share/tanglet</Path>
                 <Path fileType="doc">/usr/share/doc/tanglet</Path>
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2011-11-02</Date>
+                <Version>1.2.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2010-07-24</Date>
                 <Version>1.1.1</Version>
