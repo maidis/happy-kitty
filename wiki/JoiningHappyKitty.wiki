@@ -30,6 +30,7 @@ Here's the plan. Do one of the following tasks and be one of the first packagers
   * Write a Pardus related platform game (use Pardusman as protagonist, collect PiSi packages instead of golds) in LÖVE and package it for Happy Kitty.
   * Package [http://springrts.com/ Spring Engine] and [http://zero-k.info/ Zero-K].
   * Add Turkish support (not only translation!) to [http://gottcode.org/tanglet/ Tanglet].
+  * Package [http://sourceforge.net/projects/ice3/ iCE³] and all of [http://www.sfml-dev.org/forum/viewtopic.php?t=5382&postdays=0&postorder=asc&start=0 its dependencies].
   * Find yourself a great idea or a really good game to package, and then apply to participate in.
 
 
