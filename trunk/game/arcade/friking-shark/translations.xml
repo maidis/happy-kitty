@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>friking-shark</Name>
+        <Summary xml:lang="tr">Dikey kaydırmalı uçak oyunu</Summary>
+        <Description xml:lang="tr">friking-shark, Sky Shark ve Hishouzame olarak da bilinen Flying Shark'ın bir yeniden yapımı olan dikey kaydırmalı uçak oyunudur.</Description>
+    </Source>
+</PISI>
