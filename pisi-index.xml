@@ -2327,6 +2327,66 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>friking-shark</Name>
+            <Homepage>http://code.google.com/p/friking-shark</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">A vertical scrolling shooter arcade game</Summary>
+            <Summary xml:lang="tr">Dikey kaydırmalı uçak oyunu</Summary>
+            <Description xml:lang="en">friking-shark is a vertical scrolling shooter arcade game and remake of Flying Shark (Also known as Sky Shark and Hishouzame).</Description>
+            <Description xml:lang="tr">friking-shark, Sky Shark ve Hishouzame olarak da bilinen Flying Shark&apos;ın bir yeniden yapımı olan dikey kaydırmalı uçak oyunudur.</Description>
+            <Icon>friking-shark</Icon>
+            <Archive type="tarxz" sha1sum="3cf679e548e336a63eb6617b13ab4f04400528f5">http://dl.dropbox.com/u/1836567/Paketler/friking-shark-1.01.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>freealut-devel</Dependency>
+                <Dependency>libXinerama-devel</Dependency>
+                <Dependency>libXrandr-devel</Dependency>
+                <Dependency>libvorbis-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>openal-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>png.diff</Patch>
+                <Patch>paths.diff</Patch>
+            </Patches>
+            <SourceURI>game/arcade/friking-shark/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>friking-shark</Name>
+            <RuntimeDependencies>
+                <Dependency>freealut</Dependency>
+                <Dependency>libXinerama</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>libvorbis</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>openal</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/frikingshark</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-11-11</Date>
+                <Version>1.01</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>osgg</Name>
             <Homepage>http://sourceforge.net/projects/osgg</Homepage>
             <Packager>
