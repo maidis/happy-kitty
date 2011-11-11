@@ -1,0 +1,12 @@
+--- GameGraphics/OpenGLTexture.cpp.orig	2011-08-19 13:15:07.000000000 +0300
++++ GameGraphics/OpenGLTexture.cpp	2011-11-11 13:51:21.547000026 +0200
+@@ -24,6 +24,9 @@
+ #define PNG_SKIP_SETJMP_CHECK
+ #include <png.h>
+ 
++#define png_voidp_NULL (png_voidp)NULL
++#define png_error_ptr_NULL (png_error_ptr)NULL
++
+ #pragma pack(push,1)
+ struct BMPFILEHEADER
+ {
