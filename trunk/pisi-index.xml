@@ -6945,7 +6945,7 @@
             <Description xml:lang="en">Unknown Horizons is a 2D realtime strategy simulation with an emphasis on economy and city building. Expand your small settlement to a strong and wealthy colony, collect taxes and supply your inhabitants with valuable goods. Increase your power with a well balanced economy and with strategic trade and diplomacy.</Description>
             <Description xml:lang="tr">Unknown Horizons (Bilinmeyen Ufuklar), ekonomiye ve şehir inşasına dayalı bir 2B gerçek zamanlı strateji oyunudur. Küçük yerleşiminizi varlıklı ve güçlü bir koloni haline getirmek için dengeli bir ekonomi, stratejik ticaret ve diplomosi uygulayın.</Description>
             <Icon>unknown-horizons</Icon>
-            <Archive type="targz" sha1sum="bf382c12487106b2787b1d12d86417feb835f2a6">mirrors://sourceforge/unknownhorizons/Unknown%20Horizons/2011.2/unknown-horizons-2011.2.tar.gz</Archive>
+            <Archive type="tarbz2" sha1sum="51346724a69265beaddb34266ae8df8f40f2084a">mirrors://sourceforge/unknownhorizons/Unknown%20Horizons/2011.3/unknown-horizons-2011.3-source.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>fife</Dependency>
                 <Dependency>python-PyYAML</Dependency>
@@ -6972,6 +6972,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="3">
+                <Date>2011-11-12</Date>
+                <Version>2011.03</Version>
+                <Comment>Version bump</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="2">
                 <Date>2011-07-02</Date>
                 <Version>2011.02</Version>
@@ -9541,7 +9548,7 @@
     <SpecFile>
         <Source>
             <Name>fife</Name>
-            <Homepage>http://www.fifengine.de</Homepage>
+            <Homepage>http://fifengine.net</Homepage>
             <Packager>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -9553,7 +9560,7 @@
             <Summary xml:lang="tr">Çok platformlu bir oyun üretim çatısı</Summary>
             <Description xml:lang="en">FIFE (Flexible Isometric Free Engine) is a multi-platform isometric game engine.</Description>
             <Description xml:lang="tr">FIFE (Flexible Isometric Free Engine), çok platformlu izometrik bir oyun motorudur.</Description>
-            <Archive type="tarbz2" sha1sum="01a17401da1f8e88516dcbc4c0369bd00381c222">http://dl.dropbox.com/u/1836567/Paketler/fife-0.3.3.tar.bz2</Archive>
+            <Archive type="targz" sha1sum="a01724b568abdf7950e672a1b6c26e6499ff9fae">mirrors://sourceforge/fife/active/src/fife-0.3.3r2.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>boost-devel</Dependency>
                 <Dependency>guichan</Dependency>
@@ -9569,6 +9576,7 @@
                 <Dependency>sdl-image-devel</Dependency>
                 <Dependency>sdl-ttf-devel</Dependency>
                 <Dependency>swig</Dependency>
+                <Dependency>tinyxml-devel</Dependency>
                 <Dependency>zlib-devel</Dependency>
             </BuildDependencies>
             <SourceURI>library/fife/pspec.xml</SourceURI>
@@ -9590,6 +9598,7 @@
                 <Dependency>sdl-image</Dependency>
                 <Dependency>sdl-ttf</Dependency>
                 <Dependency>swig</Dependency>
+                <Dependency>tinyxml</Dependency>
                 <Dependency>zlib</Dependency>
             </RuntimeDependencies>
             <Files>
@@ -9599,6 +9608,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2011-11-12</Date>
+                <Version>0.3.3</Version>
+                <Comment>Use upstream archive</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2011-06-12</Date>
                 <Version>0.3.3</Version>
