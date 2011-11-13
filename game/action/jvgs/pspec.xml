@@ -18,20 +18,24 @@
         <Description>JVGS takes place in a world much like ours, which has started fading away. At a point where nearly everything has gone, a poet finds himself, alone in a strange world of danger. He starts a journey along the broken stream of thoughts that's left.</Description>
         <Archive sha1sum="b0439da607f4476530b2db185c2b16e07078061c" type="targz">mirrors://sourceforge/jvgs/jvgs-0.5/jvgs-0.5-src.tar.gz</Archive>
         <BuildDependencies>
+            <Dependency>freetype-devel</Dependency>
             <Dependency>libsdl-devel</Dependency>
+            <Dependency>lua-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
             <Dependency>sdl-mixer-devel</Dependency>
             <Dependency>swig</Dependency>
-            <Dependency>lua-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>jvgs</Name>
         <RuntimeDependencies>
+            <Dependency>freetype</Dependency>
             <Dependency>libsdl</Dependency>
+            <Dependency>lua</Dependency>
+            <Dependency>mesa</Dependency>
             <Dependency>sdl-mixer</Dependency>
             <Dependency>swig</Dependency>
-            <Dependency>lua</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/opt/jvgs/jvgs</Path>
@@ -51,6 +55,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2011-11-12</Date>
+            <Version>0.5</Version>
+            <Comment>Add missing dependencies</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2010-06-26</Date>
             <Version>0.5</Version>
