@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A unique puzzle game</Summary>
         <Description>Phlipple is a unique puzzle game. The goal of every level is to reduce a 3D shape to a single square. Elimination of squares is done by flipping edges around just like in a cardboard box.</Description>
-        <Archive sha1sum="8d6a46180570c5e6a180ed8a7d704ad3cf277b08" type="targz">mirrors://sourceforge/phlipple/phlipple-0.8.0.tar.gz</Archive>
+        <Archive sha1sum="393da230ae93d1aec514bb5ce7bb21b35be805df" type="targz">mirrors://sourceforge/phlipple/phlipple-0.8.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>glew-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
@@ -43,6 +43,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2011-11-22</Date>
+            <Version>0.8.2</Version>
+            <Comment>Version bump</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-10-29</Date>
             <Version>0.8.0</Version>
