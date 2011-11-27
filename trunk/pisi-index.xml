@@ -6043,6 +6043,54 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>orthorobot</Name>
+            <Homepage>http://stabyourself.net/orthorobot</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>MIT</License>
+            <License>CCPL-Attribution-ShareAlike-NonCommercial-3.0</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A perspective based puzzle game</Summary>
+            <Summary xml:lang="tr">Perspektif temelli bulmaca oyunu</Summary>
+            <Description xml:lang="en">Ortho Robot is a perspective based puzzle game, where you flatten the view to move across gaps. Your objective is to reach the ending green block (either by standing directly on it or standing on it in relative space).</Description>
+            <Description xml:lang="tr">Ortho Robot, boşlukları geçmek için görüntüyü düzleştirdiğiniz perspektif temelli bir bulmaca oyunudur. Oyundaki hedefiniz doğrudan ya da göreceli uzaya geçerek son yeşil bloğa erişmeye çalışmak.</Description>
+            <Icon>orthorobot</Icon>
+            <Archive type="zip" sha1sum="6bde9d6e95208551bf9736806402ae94569254a3">http://happy-kitty.googlecode.com/files/orthorobot-source.zip</Archive>
+            <SourceURI>game/puzzle/orthorobot/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>orthorobot</Name>
+            <RuntimeDependencies>
+                <Dependency>love</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/orthorobot</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/orthorobot.desktop" permission="0644" owner="root">orthorobot.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/orthorobot.png" permission="0644" owner="root">orthorobot.png</AdditionalFile>
+                <AdditionalFile target="/usr/bin/orthorobot" permission="0755" owner="root">orthorobot</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-11-27</Date>
+                <Version>1</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>nottetris2</Name>
             <Homepage>http://stabyourself.net/nottetris2</Homepage>
             <Packager>
