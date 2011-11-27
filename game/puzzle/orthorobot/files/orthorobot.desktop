@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Ortho Robot
+GenericName=Perspective Game
+GenericName[tr]=Perspektif Oyunu
+Comment=A perspective based puzzle game
+Comment[tr]=Perspektif temelli bulmaca oyunu
+Icon=orthorobot
+Exec=orthorobot
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;
