@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>orthorobot</Name>
+        <Summary xml:lang="tr">Perspektif temelli bulmaca oyunu</Summary>
+        <Description xml:lang="tr">Ortho Robot, boşlukları geçmek için görüntüyü düzleştirdiğiniz perspektif temelli bir bulmaca oyunudur. Oyundaki hedefiniz doğrudan ya da göreceli uzaya geçerek son yeşil bloğa erişmeye çalışmak.</Description>
+    </Source>
+</PISI>

@@ -1,0 +1,4 @@
+#!/bin/bash
+# Game Ortho Robot
+
+love /usr/share/orthorobot/Ortho\ Robot.love

@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>orthorobot</Name>
+        <Homepage>http://stabyourself.net/orthorobot</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <License>CCPL-Attribution-ShareAlike-NonCommercial-3.0</License>
+        <Icon>orthorobot</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A perspective based puzzle game</Summary>
+        <Description>Ortho Robot is a perspective based puzzle game, where you flatten the view to move across gaps. Your objective is to reach the ending green block (either by standing directly on it or standing on it in relative space).</Description>
+        <Archive sha1sum="6bde9d6e95208551bf9736806402ae94569254a3" type="zip">http://happy-kitty.googlecode.com/files/orthorobot-source.zip</Archive>
+    </Source>
+
+    <Package>
+        <Name>orthorobot</Name>
+        <RuntimeDependencies>
+            <Dependency>love</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/orthorobot</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/orthorobot.desktop">orthorobot.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/orthorobot.png">orthorobot.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/orthorobot">orthorobot</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-11-27</Date>
+            <Version>1</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
