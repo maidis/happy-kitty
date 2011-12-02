@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>ftjam</Name>
+        <Summary xml:lang="tr">Jam inşa aracının geliştirilmiş sürümü</Summary>
+        <Description xml:lang="tr">FT Jam, Make yerine kullanılabilecek küçük ve özgür bir inşa aracıdır. Jam, Make gibi güçlüdür ve kullanımı Make'den çok daha kolaydır.</Description>
+    </Source>
+</PISI>
