@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ftjam</Name>
+        <Homepage>http://freetype.org/jam</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>as-is</License>
+        <IsA>app:console</IsA>
+        <Summary>An enhanced version of the Jam build tool</Summary>
+        <Description>FT Jam is a small open-source build tool that can be used as a replacement for Make. Even though Jam is a lot simpler to use than Make, it is far more powerful and easy to master.</Description>
+        <Archive sha1sum="683c9f000cccc37f48c2f3fd94a69ed70801fb75" type="tarbz2">http://david.freetype.org/jam/ftjam-2.5.3rc2.tar.bz2</Archive>
+    </Source>
+
+    <Package>
+        <Name>ftjam</Name>
+        <Conflicts>
+            <Package>jam</Package>
+        </Conflicts>
+        <!--Replaces>
+            <Package>jam</Package>
+        </Replaces-->
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-12-02</Date>
+            <Version>2.5.3_rc2</Version>
+            <Comment>Thanks Onur Küçük and Gökçen Eraslan for their previous work on jam.</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
