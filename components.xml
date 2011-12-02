@@ -221,6 +221,17 @@
             </Maintainer>
         </Component>
         <Component>
+            <Name>programming.build</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>programming</Group>
+            <Maintainer>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Maintainer>
+        </Component>
+        <Component>
             <Name>programming.language</Name>
             <LocalName xml:lang="en">FIXME</LocalName>
             <Summary xml:lang="en">FIXME</Summary>
