@@ -10034,6 +10034,44 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>ftjam</Name>
+            <Homepage>http://freetype.org/jam</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>as-is</License>
+            <IsA>app:console</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">An enhanced version of the Jam build tool</Summary>
+            <Summary xml:lang="tr">Jam inşa aracının geliştirilmiş sürümü</Summary>
+            <Description xml:lang="en">FT Jam is a small open-source build tool that can be used as a replacement for Make. Even though Jam is a lot simpler to use than Make, it is far more powerful and easy to master.</Description>
+            <Description xml:lang="tr">FT Jam, Make yerine kullanılabilecek küçük ve özgür bir inşa aracıdır. Jam, Make gibi güçlüdür ve kullanımı Make&apos;den çok daha kolaydır.</Description>
+            <Archive type="tarbz2" sha1sum="683c9f000cccc37f48c2f3fd94a69ed70801fb75">http://david.freetype.org/jam/ftjam-2.5.3rc2.tar.bz2</Archive>
+            <SourceURI>programming/build/ftjam/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>ftjam</Name>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <Conflicts>
+                <Package>jam</Package>
+            </Conflicts>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-12-02</Date>
+                <Version>2.5.3_rc2</Version>
+                <Comment>Thanks Onur Küçük and Gökçen Eraslan for their previous work on jam.</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>pyglet</Name>
             <Homepage>http://www.pyglet.org</Homepage>
             <Packager>
@@ -10860,6 +10898,17 @@
         <Summary xml:lang="en">FIXME</Summary>
         <Description xml:lang="en">FIXME</Description>
         <Group>multimedia</Group>
+        <Maintainer>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>programming.build</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>programming</Group>
         <Maintainer>
             <Name>Anıl Özbek</Name>
             <Email>ozbekanil@gmail.com</Email>
