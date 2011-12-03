@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>minetest</Name>
-        <Homepage>http://celeron.55.lt/~celeron55/minetest</Homepage>
+        <Homepage>http://c55.me/minetest</Homepage>
         <Packager>
             <Name>Anıl Özbek</Name>
             <Email>ozbekanil@gmail.com</Email>
@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A Minecraft clone</Summary>
         <Description>Minetest is one of the first InfiniMiner / Minecraft inspired games with a goal of taking the survival multiplayer gameplay to a slightly different direction.</Description>
-        <Archive sha1sum="1c8413efff52d013382274c6f688bd4bc382c2e1" type="targz">http://dl.dropbox.com/u/1836567/Paketler/celeron55-minetest-b277d01700f6.tar.gz</Archive>
+        <Archive sha1sum="1fcf630a6c17e4076c4cca3cbf66dd8a1a5f4374" type="targz">http://dl.dropbox.com/u/1836567/Paketler/celeron55-minetest-0.4.dev-20111203-3-3-gd566ffa.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>irrlicht-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
@@ -21,9 +21,6 @@
             <Dependency>mesa-devel</Dependency>
             <Dependency>libX11-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch>ambiguous-reference2.diff</Patch>
-        </Patches>
     </Source>
 
     <Package>
@@ -50,6 +47,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2011-12-03</Date>
+            <Version>0.4</Version>
+            <Comment>Version bump</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2011-08-02</Date>
             <Version>0.2</Version>
