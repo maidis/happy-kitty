@@ -8,9 +8,11 @@ from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "celeron55-minetest-b277d01700f6"
+WorkDir = "celeron55-minetest-d566ffa"
 
 def setup():
+    pisitools.dosed("src/irrlichttypes.h", "typedef uint64_t u64;", "//typedef uint64_t u64;")
+
     cmaketools.configure()
 
 def build():
@@ -19,4 +21,4 @@ def build():
 def install():
     cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.dodoc("doc/*")
+    pisitools.dodoc("README.txt", "doc/*")
