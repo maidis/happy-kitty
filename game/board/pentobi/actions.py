@@ -9,6 +9,9 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
+    pisitools.dosed("CMakeLists.txt", "1.45 1.45.0", "1.44.0 1.45 1.45.0")
+    pisitools.dosed("CMakeLists.txt", "Boost 1.45", "Boost 1.44.0")
+
     cmaketools.configure()
 
 def build():
