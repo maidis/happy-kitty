@@ -8666,7 +8666,7 @@
             <Summary xml:lang="tr">2B katı cisin simülasyon kütüphanesi</Summary>
             <Description xml:lang="en">Box2D is a 2D rigid body simulation library for games.</Description>
             <Description xml:lang="tr">Box2D, oyunlar için bir 2B katı cisin simülasyon kütüphanesidir.</Description>
-            <Archive type="zip" sha1sum="b1f09f38fc130ae6c17e1767747a3a82bf8e517f">http://box2d.googlecode.com/files/Box2D_v2.1.2.zip</Archive>
+            <Archive type="zip" sha1sum="f97e75227a19b01858b1431e5f3eb6b8827bed12">http://box2d.googlecode.com/files/Box2D_v2.2.1.zip</Archive>
             <BuildDependencies>
                 <Dependency>freeglut-devel</Dependency>
             </BuildDependencies>
@@ -8685,6 +8685,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2011-12-08</Date>
+                <Version>2.2.1</Version>
+                <Comment>Version bump</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2010-09-12</Date>
                 <Version>2.1.2</Version>
