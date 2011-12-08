@@ -8,10 +8,9 @@ from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "Box2D_v%s/Box2D" % get.srcVERSION()
+WorkDir = "Box2D_v%s" % get.srcVERSION()
 
 def setup():
-    pisitools.dosed("CMakeLists.txt", "share/doc/Box2D", "share/doc/box2d") 
     cmaketools.configure("-DCMAKE_INSTALL_PREFIX=/usr \
                           -DBOX2D_BUILD_SHARED=ON \
                           -DBOX2D_BUILD_STATIC=OFF \
