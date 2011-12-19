@@ -5040,6 +5040,67 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>beret</Name>
+            <Homepage>http://kiwisauce.com/beret</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>LGPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.action</PartOf>
+            <Summary xml:lang="en">A 2D puzzle platformer about a telekinetic scientist</Summary>
+            <Summary xml:lang="tr">Telekinetik bir bilim insanı hakkında bir 2B bulmaca platform oyunu</Summary>
+            <Description xml:lang="en">Beret is a 2D puzzle-platformer game about a scientist, astonishingly named Beret, who has gained telekinetic abilities through his research at the Evil Corporation. He decides that the Evil Corporation is a tad too evil for his liking, and begins his solitary quest to overthrow the corporation and punish the evil deeds of his employers.</Description>
+            <Description xml:lang="tr">Beret, Evil Corporation&apos;da yaptığı araştırmayla telekinetik yetenekler kazanmış Beret isimli bir bilim insanı hakkında bir 2B bulmaca platfor oyunudur. Kahramanımız Beret, Evil Corporation&apos;ın kendisi için fazla şeytani olduğuna karar verir. Akabinde de şirketi devirmek ve patronlarının şeytani zombilerini cezalandırmak için yalnız bir yolculuğa başlar.</Description>
+            <Icon>beret</Icon>
+            <Archive type="tarbz2" sha1sum="1a8ee9569da894e5ac6635886eb77c689cd1b493">http://dl.dropbox.com/u/1836567/Paketler/beret-0.0.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-ttf-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">arch-linux.diff</Patch>
+                <Patch level="1">beret-paths.diff</Patch>
+            </Patches>
+            <SourceURI>game/action/beret/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>beret</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-ttf</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/beret</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/beret.desktop" permission="0644" owner="root">beret.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/beret.png" permission="0644" owner="root">beret.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/doc/beret/lgpl-3.0.txt" permission="0644" owner="root">lgpl-3.0.txt</AdditionalFile>
+                <AdditionalFile target="/usr/share/doc/beret/README.txt" permission="0644" owner="root">README.txt</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-12-19</Date>
+                <Version>0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>madbomber</Name>
             <Homepage>http://www.newbreedsoftware.com/madbomber</Homepage>
             <Packager>
