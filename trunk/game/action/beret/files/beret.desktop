@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Beret
+GenericName=Puzzle Platformer
+GenericName[tr]=Bulmaca Platform Oyunu
+Comment=A 2D puzzle platformer about a telekinetic scientist
+Comment[tr]=Telekinetik bir bilim insanı hakkında bir 2B bulmaca platform oyunu
+Icon=beret
+Exec=beret
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ActionGame;
