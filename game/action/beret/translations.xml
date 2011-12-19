@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>beret</Name>
+        <Summary xml:lang="tr">Telekinetik bir bilim insanı hakkında bir 2B bulmaca platform oyunu</Summary>
+        <Description xml:lang="tr">Beret, Evil Corporation'da yaptığı araştırmayla telekinetik yetenekler kazanmış Beret isimli bir bilim insanı hakkında bir 2B bulmaca platfor oyunudur. Kahramanımız Beret, Evil Corporation'ın kendisi için fazla şeytani olduğuna karar verir. Akabinde de şirketi devirmek ve patronlarının şeytani zombilerini cezalandırmak için yalnız bir yolculuğa başlar.</Description>
+    </Source>
+</PISI>

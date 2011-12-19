@@ -1,0 +1,46 @@
+diff -Naur beret-0.0.orig/game.c beret-0.0/game.c
+--- beret-0.0.orig/game.c	2011-12-19 01:20:59.000000000 +0200
++++ beret-0.0/game.c	2011-12-19 01:56:55.015000033 +0200
+@@ -1,7 +1,7 @@
+-#include "SDL.h"
+-#include "SDL_image.h"
+-#include "SDL_ttf.h"
+-#include "SDL_mixer.h"
++#include "SDL/SDL.h"
++#include "SDL/SDL_image.h"
++#include "SDL/SDL_ttf.h"
++#include "SDL/SDL_mixer.h"
+ #include <math.h>
+ #include "tile.h"
+ #include "thing.h"
+diff -Naur beret-0.0.orig/Makefile beret-0.0/Makefile
+--- beret-0.0.orig/Makefile	2011-12-19 01:20:59.000000000 +0200
++++ beret-0.0/Makefile	2011-12-19 01:57:04.966000033 +0200
+@@ -1,6 +1,6 @@
+ CC= gcc
+ CFLAGS= -Wall -g
+-LFLAGS= -lSDLmain -lSDL -lSDL_image -lSDL_ttf -lSDL_mixer
++LFLAGS= -lSDLmain -lSDL -lSDL_image -lSDL_ttf -lSDL_mixer -lm
+ 
+ default: beret
+ 
+diff -Naur beret-0.0.orig/physics.c beret-0.0/physics.c
+--- beret-0.0.orig/physics.c	2011-12-19 01:21:00.000000000 +0200
++++ beret-0.0/physics.c	2011-12-19 01:56:55.021000033 +0200
+@@ -1,4 +1,4 @@
+-#include "SDL.h"
++#include "SDL/SDL.h"
+ #include "tile.h"
+ #include "thing.h"
+ #include "game.h"
+diff -Naur beret-0.0.orig/thing.c beret-0.0/thing.c
+--- beret-0.0.orig/thing.c	2011-12-19 01:21:00.000000000 +0200
++++ beret-0.0/thing.c	2011-12-19 01:56:55.046000033 +0200
+@@ -1,6 +1,6 @@
+ #include <stdlib.h>
+ #include <math.h>
+-#include "SDL.h"
++#include "SDL/SDL.h"
+ #include "thing.h"
+ #include "tile.h"
+ #include "physics.h"
