@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>opengoo</Name>
+        <Summary xml:lang="tr">Özgür bir World of GOO klonu</Summary>
+        <Description xml:lang="tr">OpenGOO, özgür bir World of GOO klonudur.</Description>
+    </Source>
+</PISI>

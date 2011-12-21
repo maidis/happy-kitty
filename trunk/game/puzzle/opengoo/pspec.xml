@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>opengoo</Name>
+        <Homepage>http://qt-apps.org/content/show.php/OpenGOO?content=147716</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>opengoo</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A free and open source clone of World of GOO</Summary>
+        <Description>OpenGOO is a free and open source clone of World of GOO.</Description>
+        <Archive sha1sum="cc7e792b2fa1e13a57df68e33491140b8baed2c3" type="targz">http://dl.dropbox.com/u/1836567/Paketler/opengoo.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>box2d</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>opengoo-paths.diff</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>opengoo</Name>
+        <RuntimeDependencies>
+            <Dependency>qt</Dependency>
+            <Dependency>box2d</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/opengoo</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/opengoo.desktop">opengoo.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/opengoo.png">opengoo.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-12-21</Date>
+            <Version>0.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
