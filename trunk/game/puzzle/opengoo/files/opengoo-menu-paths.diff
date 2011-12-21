@@ -1,0 +1,11 @@
+--- menu.cpp.ori	2011-12-21 15:33:10.000000000 +0200
++++ menu.cpp	2011-12-21 17:32:10.267000023 +0200
+@@ -29,7 +29,7 @@
+ }
+ 
+ void Menu::loadMenuFile(){
+-    QFile file("menu.index");
++    QFile file("/usr/share/opengoo/menu.index");
+     if (file.open(QFile::ReadOnly)){
+         QTextStream in(&file);
+         QString tmp;

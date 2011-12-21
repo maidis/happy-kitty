@@ -19,5 +19,6 @@ def install():
     pisitools.rename("/usr/bin/OpenGOO", "opengoo")
 
     pisitools.insinto("/usr/share/opengoo", "*.level")
+    pisitools.insinto("/usr/share/opengoo", "menu.index")
 
     pisitools.dodoc("LICENSE", "README")
