@@ -5157,6 +5157,60 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>opengoo</Name>
+            <Homepage>http://qt-apps.org/content/show.php/OpenGOO?content=147716</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">A free and open source clone of World of GOO</Summary>
+            <Summary xml:lang="tr">Özgür bir World of GOO klonu</Summary>
+            <Description xml:lang="en">OpenGOO is a free and open source clone of World of GOO.</Description>
+            <Description xml:lang="tr">OpenGOO, özgür bir World of GOO klonudur.</Description>
+            <Icon>opengoo</Icon>
+            <Archive type="targz" sha1sum="cc7e792b2fa1e13a57df68e33491140b8baed2c3">http://dl.dropbox.com/u/1836567/Paketler/opengoo.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>qt-devel</Dependency>
+                <Dependency>box2d</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>opengoo-paths.diff</Patch>
+            </Patches>
+            <SourceURI>game/puzzle/opengoo/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>opengoo</Name>
+            <RuntimeDependencies>
+                <Dependency>qt</Dependency>
+                <Dependency>box2d</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/opengoo</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/opengoo.desktop" permission="0644" owner="root">opengoo.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/opengoo.png" permission="0644" owner="root">opengoo.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-12-21</Date>
+                <Version>0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>l-echo</Name>
             <Homepage>http://code.google.com/p/l-echo</Homepage>
             <Packager>
