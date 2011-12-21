@@ -5178,6 +5178,7 @@
             </BuildDependencies>
             <Patches>
                 <Patch>opengoo-paths.diff</Patch>
+                <Patch>opengoo-menu-paths.diff</Patch>
             </Patches>
             <SourceURI>game/puzzle/opengoo/pspec.xml</SourceURI>
         </Source>
