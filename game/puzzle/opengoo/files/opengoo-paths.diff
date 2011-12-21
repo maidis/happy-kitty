@@ -1,0 +1,11 @@
+--- mainwidget.cpp.ori	2011-12-21 15:33:10.000000000 +0200
++++ mainwidget.cpp	2011-12-21 16:06:23.653000023 +0200
+@@ -8,7 +8,7 @@
+ {
+     this->showFullScreen();
+     this->setGeometry(geometry);
+-    level=new Level(geometry,"l01.level",this);
++    level=new Level(geometry,"/usr/share/opengoo/l01.level",this);
+     level->show();
+     connect(level,SIGNAL(closing()),this,SLOT(close()));
+ 

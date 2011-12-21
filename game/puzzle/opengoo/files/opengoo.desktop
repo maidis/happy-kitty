@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=OpenGOO
+GenericName=World of GOO Clone
+GenericName[tr]=World of GOO Klonu
+Comment=A free and open source clone of World of GOO
+Comment[tr]=Özgür bir World of GOO klonu
+Icon=opengoo
+Exec=opengoo
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;
