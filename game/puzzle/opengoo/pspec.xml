@@ -20,6 +20,7 @@
         </BuildDependencies>
         <Patches>
             <Patch>opengoo-paths.diff</Patch>
+            <Patch>opengoo-menu-paths.diff</Patch>
         </Patches>
     </Source>
 
