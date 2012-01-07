@@ -13,9 +13,11 @@
         <IsA>app:gui</IsA>
         <Summary>A falling sand physics sandbox</Summary>
         <Description>Powder Toy is a desktop version of the classic falling sand physics sandbox, it simulates air pressure and velocity as well as heat.</Description>
-        <Archive sha1sum="a71ed2242ce62923588de2d1064e7a63ef2a763b" type="zip">http://happy-kitty.googlecode.com/files/FacialTurd-The-Powder-Toy-50.6-0-g8751350.zip</Archive>
+        <Archive sha1sum="0d7b843a594cd79acf8a3560a4319c73acccedff" type="zip">http://happy-kitty.googlecode.com/files/powder-70.1-src.zip</Archive>
         <BuildDependencies>
+            <Dependency>fftw3-devel</Dependency>
             <Dependency>libsdl-devel</Dependency>
+            <Dependency>lua-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">lua.diff</Patch>
@@ -25,7 +27,9 @@
     <Package>
         <Name>powder-toy</Name>
         <RuntimeDependencies>
+            <Dependency>fftw3</Dependency>
             <Dependency>libsdl</Dependency>
+            <Dependency>lua</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -40,6 +44,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-01-07</Date>
+            <Version>70.1</Version>
+            <Comment>Version bump</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2011-06-19</Date>
             <Version>50.6</Version>
