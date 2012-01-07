@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>legendofedgar</Name>
+        <Summary xml:lang="tr">Bir platform oyunu</Summary>
+        <Description xml:lang="tr">Legend of Edgar, bir platform oyunudur. Edgar, babasını bulmak için çıktığı tehlikeli yolculukta amacına ulaşmak için bulmacaları çözmeye ve güçlü düşmanlarını yenmeye çalışıyor.</Description>
+    </Source>
+</PISI>
