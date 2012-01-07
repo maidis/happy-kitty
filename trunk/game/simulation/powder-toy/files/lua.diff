@@ -1,6 +1,6 @@
-diff -Naur FacialTurd-The-Powder-Toy-0fb9990.orig/includes/luaconsole.h FacialTurd-The-Powder-Toy-0fb9990/includes/luaconsole.h
---- FacialTurd-The-Powder-Toy-0fb9990.orig/includes/luaconsole.h	2011-06-15 10:35:56.000000000 +0300
-+++ FacialTurd-The-Powder-Toy-0fb9990/includes/luaconsole.h	2011-06-19 17:57:38.695000012 +0300
+diff -Naur powder-70.1-src.orig/includes/luaconsole.h powder-70.1-src/includes/luaconsole.h
+--- powder-70.1-src.orig/includes/luaconsole.h	2011-12-19 23:40:51.000000000 +0200
++++ powder-70.1-src/includes/luaconsole.h	2012-01-07 14:55:40.857000011 +0200
 @@ -5,9 +5,9 @@
  #include <lauxlib.h>
  #include <lualib.h>
@@ -14,15 +14,18 @@ diff -Naur FacialTurd-The-Powder-Toy-0fb9990.orig/includes/luaconsole.h FacialTu
  #endif
  #include <defines.h>
  
-diff -Naur FacialTurd-The-Powder-Toy-0fb9990.orig/Makefile FacialTurd-The-Powder-Toy-0fb9990/Makefile
---- FacialTurd-The-Powder-Toy-0fb9990.orig/Makefile	2011-06-15 10:35:56.000000000 +0300
-+++ FacialTurd-The-Powder-Toy-0fb9990/Makefile	2011-06-19 17:57:06.857000012 +0300
-@@ -9,7 +9,7 @@
+diff -Naur powder-70.1-src.orig/Makefile powder-70.1-src/Makefile
+--- powder-70.1-src.orig/Makefile	2011-12-19 23:40:51.000000000 +0200
++++ powder-70.1-src/Makefile	2012-01-07 14:55:12.608000012 +0200
+@@ -4,9 +4,9 @@
  
- CFLAGS := -w -std=c99 -D_POSIX_C_SOURCE=200112L -DLUACONSOLE -Iincludes/
+ CFLAGS := -w -std=c99 -D_POSIX_C_SOURCE=200112L -DLUACONSOLE -DGRAVFFT -Iincludes/ -D_GNU_SOURCE
  OFLAGS := -O3 -ffast-math -ftree-vectorize -funsafe-math-optimizations
--LFLAGS := -lpthread -lSDL -lm -lbz2 -llua5.1 #-lpython$(PY_VERSION) -L$(PY_LIBPATH) -I$(PY_INCPATH) $(PY_LDFLAGS)
-+LFLAGS := -lpthread -lSDL -lm -lbz2 -llua #-lpython$(PY_VERSION) -L$(PY_LIBPATH) -I$(PY_INCPATH) $(PY_LDFLAGS)
- LFLAGS_X := -lm -lbz2 -lSDLmain -I/Library/Frameworks/Python.framework/Versions/$(PY_VERSION)/include/python$(PY_VERSION)
+-LFLAGS := -lpthread -lSDL -lfftw3f -lm -lbz2 -lX11 -llua5.1 -lrt
++LFLAGS := -lpthread -lSDL -lfftw3f -lm -lbz2 -lX11 -llua -lrt
+ LFLAGS_X := -lm -lbz2 -lSDLmain
+-LFLAGS_WIN := -lmingw32 -lgnurx -lws2_32 -lSDLmain -lpthread -lSDL -lfftw3f -lm -lbz2 -llua5.1
++LFLAGS_WIN := -lmingw32 -lgnurx -lws2_32 -lSDLmain -lpthread -lSDL -lfftw3f -lm -lbz2 -llua
  MFLAGS_SSE3 := -march=native -DX86 -DX86_SSE3 -msse3
  MFLAGS_SSE2 := -march=native -DX86 -DX86_SSE2 -msse2
+ MFLAGS_SSE := -march=native -DX86 -DX86_SSE
