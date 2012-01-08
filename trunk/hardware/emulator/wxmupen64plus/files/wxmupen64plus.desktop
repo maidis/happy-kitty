@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=wxMupen64Plus
+GenericName=Mupen64Plus N64 Emulator
+GenericName[tr]=Mupen64Plus N64 Emülatörü
+Comment=A frontend to the Mupen64Plus N64 emulator
+Comment[tr]=Mupen64Plus N64 için bir önyüz
+Icon=wxmupen64plus
+Exec=wxmupen64plus
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;Emulator;
