@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mupen64plus-video-rice</Name>
+        <Homepage>https://bitbucket.org/richard42/mupen64plus-video-rice</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Video plugin for Mupen64Plus</Summary>
+        <Description>Video plugin for Mupen64Plus v2.0, a Nintendo 64 emulator, using OpenGL.</Description>
+        <Archive sha1sum="55463e1cd9430bec7fdcfb1c353ca8af9dd6f4df" type="targz">http://dl.dropbox.com/u/1836567/Paketler/mupen64plus/mupen64plus-video-rice.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>mupen64plus-core</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mupen64plus-video-rice</Name>
+        <RuntimeDependencies>
+            <Dependency>mupen64plus-core</Dependency>
+            <Dependency>libsdl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/mupen64plus</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2012-01-08</Date>
+            <Version>0.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
