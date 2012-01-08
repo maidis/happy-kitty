@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>mupen64plus-video-rice</Name>
+        <Summary xml:lang="tr">Mupen64Plus için video eklentisi</Summary>
+        <Description xml:lang="tr">Nintendo 64 emülatörü Mupen64Plus için OpenGL kullanan bir video eklentisi.</Description>
+    </Source>
+</PISI>
