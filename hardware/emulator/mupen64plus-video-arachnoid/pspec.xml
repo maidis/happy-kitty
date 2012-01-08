@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mupen64plus-video-arachnoid</Name>
+        <Homepage>https://bitbucket.org/wahrhaft/mupen64plus-video-arachnoid</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Video plugin for Mupen64Plus</Summary>
+        <Description>Video plugin for Mupen64Plus v2.0, a Nintendo 64 emulator, based on Arachnoid for Project64.</Description>
+        <Archive sha1sum="5414ea372c4c87d082ccf4753ba7cf74192f2bbf" type="targz">http://dl.dropbox.com/u/1836567/Paketler/mupen64plus/mupen64plus-video-arachnoid.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>mupen64plus-core</Dependency>
+            <Dependency>mesa-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mupen64plus-video-arachnoid</Name>
+        <RuntimeDependencies>
+            <Dependency>mupen64plus-core</Dependency>
+            <Dependency>mesa</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2012-01-08</Date>
+            <Version>0.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
