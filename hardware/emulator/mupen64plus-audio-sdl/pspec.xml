@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mupen64plus-audio-sdl</Name>
+        <Homepage>https://bitbucket.org/richard42/mupen64plus-audio-sdl</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Audio plugin for Mupen64Plus</Summary>
+        <Description>Audio plugin for Mupen64Plus v2.0, a Nintendo 64 emulator, using SDL.</Description>
+        <Archive sha1sum="ab5c686fc41b67bf5307e119cec4044f32420331" type="targz">http://dl.dropbox.com/u/1836567/Paketler/mupen64plus/mupen64plus-audio-sdl.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>libsamplerate-devel</Dependency>
+            <Dependency>mupen64plus-core</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mupen64plus-audio-sdl</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>libsamplerate</Dependency>
+            <Dependency>mupen64plus-core</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2012-01-08</Date>
+            <Version>0.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
