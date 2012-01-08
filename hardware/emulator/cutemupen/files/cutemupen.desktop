@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=CuteMupen
+GenericName=Mupen64Plus Emulator
+GenericName[tr]=Mupen64Plus Emülatörü
+Comment=A graphical front-end for Mupen64Plus
+Comment[tr]=Mupen64Plus için grafiksel bir önyüz
+Icon=cutemupen
+Exec=cutemupen
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;Emulator;
