@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>dolphin-emu</Name>
+        <Homepage>http://www.dolphin-emulator.com</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>dolphin-emu</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A Gamecube and Wii emulator</Summary>
+        <Description>Dolphin is a Gamecube and Wii emulator. Most games run perfectly or with minor bugs. Games are playable at HD quality, up to 1080p. This is a remarkable feature the actual Gamecube and Wii consoles are not capable of.</Description>
+        <Archive sha1sum="82c7ea358882f49bee8d66f7f97cf3196c24cad1" type="targz">http://dl.dropbox.com/u/1836567/Paketler/dolphin-emu-0.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>cg-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>glew-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>wxGTK-devel</Dependency>
+            <Dependency>openal-devel</Dependency>
+            <Dependency>wxBase-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>libgomp</Dependency>
+            <Dependency>alsa-lib-devel</Dependency>
+            <Dependency>libXrandr-devel</Dependency>
+            <Dependency>portaudio-devel</Dependency>
+            <Dependency>pulseaudio-libs-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>dolphin-emu</Name>
+        <RuntimeDependencies>
+            <Dependency>cg</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>glew</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>wxGTK</Dependency>
+            <Dependency>openal</Dependency>
+            <Dependency>wxBase</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>libgomp</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>portaudio</Dependency>
+            <Dependency>pulseaudio-libs</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/dolphin-emu</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/dolphin-emu.desktop">dolphin-emu.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/dolphin-emu.png">dolphin-emu.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2012-01-08</Date>
+            <Version>0.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
