@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>cutemupen</Name>
+        <Summary xml:lang="tr">Mupen64Plus için grafiksel önyüz</Summary>
+        <Description xml:lang="tr">CuteMupen, Mupen64Plus emülatörü için Qt tabanlı bir grafiksel önyüzdür.</Description>
+    </Source>
+</PISI>
