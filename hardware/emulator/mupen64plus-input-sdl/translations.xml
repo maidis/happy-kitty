@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>mupen64plus-input-sdl</Name>
+        <Summary xml:lang="tr">Mupen64Plus için girdi eklentisi</Summary>
+        <Description xml:lang="tr">Nintendo 64 emülatörü Mupen64Plus için girdi eklentisi.</Description>
+    </Source>
+</PISI>
