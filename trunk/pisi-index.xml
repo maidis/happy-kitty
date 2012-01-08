@@ -10795,6 +10795,80 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>dolphin-emu</Name>
+            <Homepage>http://www.dolphin-emulator.com</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>hardware.emulator</PartOf>
+            <Summary xml:lang="en">A Gamecube and Wii emulator</Summary>
+            <Summary xml:lang="tr">Bir Gamecube ve Wii emülatörü</Summary>
+            <Description xml:lang="en">Dolphin is a Gamecube and Wii emulator. Most games run perfectly or with minor bugs. Games are playable at HD quality, up to 1080p. This is a remarkable feature the actual Gamecube and Wii consoles are not capable of.</Description>
+            <Description xml:lang="tr">Dolphin, bir Gamecube ve Wii emülatörüdür. Çoğu oyun harika şekilde veya çok küçük hatalarla çalışmaktadır. Oyunlar 1080p&apos;ye kadar yüksek kalitede oynanabilir. Bu gerçek Gamecube ve Wii konsollarının sahip olmadığı dikkat çekici bir özelliktir.</Description>
+            <Icon>dolphin-emu</Icon>
+            <Archive type="targz" sha1sum="82c7ea358882f49bee8d66f7f97cf3196c24cad1">http://dl.dropbox.com/u/1836567/Paketler/dolphin-emu-0.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>cg-devel</Dependency>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>glew-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>wxGTK-devel</Dependency>
+                <Dependency>openal-devel</Dependency>
+                <Dependency>wxBase-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>libgomp</Dependency>
+                <Dependency>alsa-lib-devel</Dependency>
+                <Dependency>libXrandr-devel</Dependency>
+                <Dependency>portaudio-devel</Dependency>
+                <Dependency>pulseaudio-libs-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>hardware/emulator/dolphin-emu/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>dolphin-emu</Name>
+            <RuntimeDependencies>
+                <Dependency>cg</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>glew</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>wxGTK</Dependency>
+                <Dependency>openal</Dependency>
+                <Dependency>wxBase</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>libgomp</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>portaudio</Dependency>
+                <Dependency>pulseaudio-libs</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/dolphin-emu</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/dolphin-emu.desktop" permission="0644" owner="root">dolphin-emu.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/dolphin-emu.png" permission="0644" owner="root">dolphin-emu.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-01-08</Date>
+                <Version>0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>mupen64plus-video-rice</Name>
             <Homepage>https://bitbucket.org/richard42/mupen64plus-video-rice</Homepage>
             <Packager>
@@ -10831,6 +10905,69 @@
             <Update release="1">
                 <Date>2012-01-08</Date>
                 <Version>0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>lxdream</Name>
+            <Homepage>http://www.lxdream.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>hardware.emulator</PartOf>
+            <Summary xml:lang="en">A Sega Dreamcast emulator</Summary>
+            <Summary xml:lang="tr">Bir Sega Dreamcast emülatörü</Summary>
+            <Description xml:lang="en">Lxdream is an emulator for the Sega Dreamcast system.</Description>
+            <Description xml:lang="tr">Lxdream, bir Sega Dreamcast emülatörüdür.</Description>
+            <Icon>lxdream</Icon>
+            <Archive type="targz" sha1sum="575775970ab2fd1690e2e69affe7d071cfa65355">http://dl.dropbox.com/u/1836567/Paketler/lxdream-0.9.1_svn.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>alsa-lib-devel</Dependency>
+                <Dependency>esound-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>libisofs-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>pulseaudio-libs-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>hardware/emulator/lxdream/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lxdream</Name>
+            <RuntimeDependencies>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>esound</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>libisofs</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>pulseaudio-libs</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/lxdream</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-01-08</Date>
+                <Version>0.9.1</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -11195,6 +11332,65 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>yabause</Name>
+            <Homepage>http://yabause.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>hardware.emulator</PartOf>
+            <Summary xml:lang="en">A Sega Saturn emulator</Summary>
+            <Summary xml:lang="tr">Bir Sega Saturn emülatörü</Summary>
+            <Description xml:lang="en">Yabause is a Sega Saturn emulator. Yabause support booting games using Saturn CDs or ISO files.</Description>
+            <Description xml:lang="tr">Yabause, bir Sega Saturn emülatörüdür. Yabause, hem Saturn CD&apos;lerini hem de ISO dosyalarını desteklemektedir.</Description>
+            <Icon>yabause</Icon>
+            <Archive type="targz" sha1sum="46c23913107fcaa637a530a05343a1c45d66575b">mirrors://sourceforge/yabause/yabause/0.9.11/yabause-0.9.11.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>freeglut-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>gtkglext-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>openal-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>hardware/emulator/yabause/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>yabause</Name>
+            <RuntimeDependencies>
+                <Dependency>freeglut</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>gtkglext</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>openal</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/yabause</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/yabause.desktop" permission="0644" owner="root">yabause.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-01-08</Date>
+                <Version>0.9.11.1</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>vbam</Name>
             <Homepage>http://vba-m.ngemu.com</Homepage>
             <Packager>
@@ -11241,6 +11437,87 @@
                 <Comment>First release.</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>desmume</Name>
+            <Homepage>http://desmume.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>hardware.emulator</PartOf>
+            <Summary xml:lang="en">Nintendo DS emulator</Summary>
+            <Summary xml:lang="tr">Nintendo DS emülatörü</Summary>
+            <Description xml:lang="en">DeSmuME is a Nintendo DS emulator.</Description>
+            <Description xml:lang="tr">DeSmuME, bir Nintendo DS emülatörüdür.</Description>
+            <Icon>desmume</Icon>
+            <Archive type="targz" sha1sum="18e00f675d3e6217474a6bbf3c554aade9aceee5">mirrors://sourceforge/desmume/desmume/0.9.7/desmume-0.9.7.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>alsa-lib-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>gtkglext-devel</Dependency>
+                <Dependency>libglade-devel</Dependency>
+                <Dependency>libpcap-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>zziplib-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>hardware/emulator/desmume/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>desmume</Name>
+            <RuntimeDependencies>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>gtkglext</Dependency>
+                <Dependency>libglade</Dependency>
+                <Dependency>libpcap</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>zziplib</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/desmume</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="3">
+                <Date>2012-01-08</Date>
+                <Version>0.9.7</Version>
+                <Comment>Version bump</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2009-01-20</Date>
+                <Version>0.9</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Uğur Tutar</Name>
+                <Email>tutarugur@gmail.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2008-07-29</Date>
+                <Version>0.8</Version>
+                <Comment>First Release</Comment>
+                <Name>Uğur Tutar</Name>
+                <Email>tutarugur@gmail.com</Email>
             </Update>
         </History>
     </SpecFile>
