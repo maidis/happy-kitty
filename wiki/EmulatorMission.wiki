@@ -13,9 +13,6 @@ In this mission we are going to package all emulators for Pardus. it sounds fun 
 = Emulators =
   * [http://atari800.sourceforge.net/ Atari800]
     * http://aur.archlinux.org/packages.php?ID=19710
-  * [http://dolphin-emulator.com/ Dolphin]:
-    * http://hata.pardus.org.tr/show_bug.cgi?id=12375
-    * http://aur.archlinux.org/packages.php?ID=21990
   * [http://sdlemu.ngemu.com/handysdl.php Handy]
     * http://gpo.zugaina.org/games-emulation/handy
   * [http://rainemu.swishparty.co.uk/ RAINE]
@@ -24,8 +21,6 @@ In this mission we are going to package all emulators for Pardus. it sounds fun 
     * http://aur.archlinux.org/packages.php?ID=38905
   * [http://stella.sourceforge.net/ Stella]
     * http://aur.archlinux.org/packages.php?ID=19715
-  * [http://www.trzy.org/Supermodel/index.html Supermodel]
-    * http://gpo.zugaina.org/games-emulation/Supermodel
   * [http://www.whimsey.com/z26/ z26]
     * http://aur.archlinux.org/packages.php?ID=22796
     * http://aur.archlinux.org/packages.php?ID=31119
