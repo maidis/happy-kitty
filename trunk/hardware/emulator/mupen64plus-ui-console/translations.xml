@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>mupen64plus-ui-console</Name>
+        <Summary xml:lang="tr">Mupen64Plus komut satırı istemci</Summary>
+        <Description xml:lang="tr">Nintendo 64 emülatörü Mupen64Plus için komut satırı istemci.</Description>
+    </Source>
+</PISI>

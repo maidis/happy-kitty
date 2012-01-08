@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mupen64plus-ui-console</Name>
+        <Homepage>https://bitbucket.org/richard42/mupen64plus-ui-console</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>CLI fontent for Mupen64Plus</Summary>
+        <Description>CLI fontent for Mupen64Plus v2.0, a Nintendo 64 emulator.</Description>
+        <Archive sha1sum="5b62951c744abe3629b4f774227a7bdec62e6936" type="targz">http://dl.dropbox.com/u/1836567/Paketler/mupen64plus/mupen64plus-ui-console.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>mupen64plus-core</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mupen64plus-ui-console</Name>
+        <RuntimeDependencies>
+            <Dependency>mupen64plus-core</Dependency>
+            <Dependency>mupen64plus-input-sdl</Dependency>
+            <Dependency>mupen64plus-rsp-hle</Dependency>
+            <Dependency>mupen64plus-rsp-z64</Dependency>
+            <Dependency>mupen64plus-video-arachnoid</Dependency>
+            <Dependency>mupen64plus-video-glide64</Dependency>
+            <Dependency>mupen64plus-video-rice</Dependency>
+            <Dependency>mupen64plus-video-z64</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2012-01-08</Date>
+            <Version>0.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
