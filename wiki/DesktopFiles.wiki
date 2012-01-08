@@ -1,5 +1,5 @@
 #summary Desktop files for games
-#labels devel
+#labels devel,Featured
 
 = Introduction =
 
