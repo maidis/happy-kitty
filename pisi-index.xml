@@ -5047,6 +5047,63 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>legendofedgar</Name>
+            <Homepage>http://www.parallelrealities.co.uk/p/legend-of-edgar.html</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.action</PartOf>
+            <Summary xml:lang="en">A platform game</Summary>
+            <Summary xml:lang="tr">Bir platform oyunu</Summary>
+            <Description xml:lang="en">The Legend of Edgar is a platform game, not unlike those found on the Amiga and SNES. Edgar must battle his way across the world, solving puzzles and defeating powerful enemies to achieve his quest.</Description>
+            <Description xml:lang="tr">Legend of Edgar, bir platform oyunudur. Edgar, babasını bulmak için çıktığı tehlikeli yolculukta amacına ulaşmak için bulmacaları çözmeye ve güçlü düşmanlarını yenmeye çalışıyor.</Description>
+            <Icon>legendofedgar</Icon>
+            <Archive type="targz" sha1sum="badde303bda3190aaba38d63338ca5e987c9c4a3">mirrors://sourceforge/legendofedgar/0.95/edgar-0.95-1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-net-devel</Dependency>
+                <Dependency>sdl-ttf-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>from-arch-with-love.diff</Patch>
+            </Patches>
+            <SourceURI>game/action/legendofedgar/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>legendofedgar</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>sdl-net</Dependency>
+                <Dependency>sdl-ttf</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/edgar</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-01-07</Date>
+                <Version>0.95</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>beret</Name>
             <Homepage>http://kiwisauce.com/beret</Homepage>
             <Packager>
@@ -8593,7 +8650,7 @@
     <SpecFile>
         <Source>
             <Name>wxgtk-2.9</Name>
-            <Homepage>http://www.wxwidgets.org/</Homepage>
+            <Homepage>http://www.wxwidgets.org</Homepage>
             <Packager>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -8610,7 +8667,7 @@
             <Description xml:lang="en">wxWidgets/GTK2 is the GTK2 port of the C++ cross-platform wxWidgets GUI library, offering classes for all common GUI controls as well as a comprehensive set of helper classes for most common application tasks, ranging from networking to HTML display and image manipulation.</Description>
             <Description xml:lang="tr">wxWidgets/GTK2 birçok platform için ortak bir C++ arayüz kitaplığı olan wxWidgets&apos;ın GTK2 sürümüdür. Ağ araçları, HTML gösterimi ve resim işleme gibi en yaygın kullanılan uygulama görevleri için kapsamlı bir sınıf kümesinin yanında tüm genel GUI denetimlerini içerir.</Description>
             <Description xml:lang="es">wxWidgets/GTK2 es la versión portada a GTK2 de la librería GUI wxWidgets cross-plataforma en C++, con clases para todos los controles GUI comunes y tambien un conjunto de clases con ayudantes para la mayoría de las tareas comunes de aplicaciones, desde networking a visualización HTML y manipulación de imagenes.</Description>
-            <Archive type="tarbz2" sha1sum="3ffe0614acce46448f5c14942176fb2daa6efd00">mirrors://sourceforge/wxwindows/2.9.1/wxWidgets-2.9.1.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="e0a3463f419053ab1fd800eaed7319289746772a">mirrors://sourceforge/wxwindows/2.9.3/wxWidgets-2.9.3.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>gst-plugins-base-devel</Dependency>
                 <Dependency>gstreamer-devel</Dependency>
@@ -8625,7 +8682,7 @@
                 <Dependency>tiff-devel</Dependency>
             </BuildDependencies>
             <Patches>
-                <Patch level="1">wxWidgets-2.9.1.diff</Patch>
+                <Patch>wxWidgets-2.9.1.diff</Patch>
             </Patches>
             <SourceURI>library/wxgtk-2.9/pspec.xml</SourceURI>
         </Source>
@@ -8655,7 +8712,7 @@
             <Summary xml:lang="en">Development files for wxGTK toolkit</Summary>
             <Summary xml:lang="tr">wxGTK araç seti için geliştirme dosyaları</Summary>
             <RuntimeDependencies>
-                <Dependency release="17">wxgtk-2.9</Dependency>
+                <Dependency release="18">wxgtk-2.9</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
@@ -8666,6 +8723,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="18">
+                <Date>2012-01-08</Date>
+                <Version>2.9.3</Version>
+                <Comment>Version bump</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="17">
                 <Date>2011-04-09</Date>
                 <Version>2.9.1</Version>
@@ -10206,6 +10270,57 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>waf</Name>
+            <Homepage>http://code.google.com/p/waf</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>BSD</License>
+            <IsA>app:console</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">The meta build system</Summary>
+            <Summary xml:lang="tr">Bir inşa sistemi</Summary>
+            <Description xml:lang="en">Waf is a Python-based framework for configuring, compiling and installing applications.</Description>
+            <Description xml:lang="tr">Waf, Python temelli bir yapılandırma, derleme, kurulum çatısıdır.</Description>
+            <Archive type="tarbz2" sha1sum="f270b7c6560f3952a67ea7236783bc2ae666edba">http://waf.googlecode.com/files/waf-1.6.10.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>python-devel</Dependency>
+                <Dependency>python-sphinx</Dependency>
+                <Dependency>graphviz-devel</Dependency>
+                <Dependency>imagemagick-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>jobs.diff</Patch>
+                <Patch>waf-1.6.2-libdir.patch</Patch>
+                <Patch level="1">waf-1.6.9-logo.patch</Patch>
+            </Patches>
+            <SourceURI>programming/build/waf/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>waf</Name>
+            <RuntimeDependencies>
+                <Dependency>python-sphinx</Dependency>
+                <Dependency>graphviz</Dependency>
+                <Dependency>imagemagick</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-01-08</Date>
+                <Version>1.6.10</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>ftjam</Name>
             <Homepage>http://freetype.org/jam</Homepage>
             <Packager>
@@ -10574,6 +10689,199 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>mupen64plus-audio-sdl</Name>
+            <Homepage>https://bitbucket.org/richard42/mupen64plus-audio-sdl</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>hardware.emulator</PartOf>
+            <Summary xml:lang="en">Audio plugin for Mupen64Plus</Summary>
+            <Summary xml:lang="tr">Mupen64Plus için ses eklentisi</Summary>
+            <Description xml:lang="en">Audio plugin for Mupen64Plus v2.0, a Nintendo 64 emulator, using SDL.</Description>
+            <Description xml:lang="tr">Nintendo 64 emülatörü Mupen64Plus için ses eklentisi.</Description>
+            <Archive type="targz" sha1sum="ab5c686fc41b67bf5307e119cec4044f32420331">http://dl.dropbox.com/u/1836567/Paketler/mupen64plus/mupen64plus-audio-sdl.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>libsamplerate-devel</Dependency>
+                <Dependency>mupen64plus-core</Dependency>
+            </BuildDependencies>
+            <SourceURI>hardware/emulator/mupen64plus-audio-sdl/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mupen64plus-audio-sdl</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>libsamplerate</Dependency>
+                <Dependency>mupen64plus-core</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-01-08</Date>
+                <Version>0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>wxmupen64plus</Name>
+            <Homepage>https://bitbucket.org/auria/wxmupen64plus/wiki/Home</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>hardware.emulator</PartOf>
+            <Summary xml:lang="en">A Mupen64Plus 2.0 GUI frontend</Summary>
+            <Summary xml:lang="tr">Mupen64Plus GKA önyüz</Summary>
+            <Description xml:lang="en">wxMupen64Plus is a Mupen64Plus 2.0 GUI frontend written using wxWidgets 2.9.x.</Description>
+            <Description xml:lang="tr">wxMupen64Plus, wxWidgets ile yazılmış bir GKA önyüzüdür.</Description>
+            <Icon>wxmupen64plus</Icon>
+            <Archive type="tarbz2" sha1sum="e0c45ebc60466fcbc29748c5b298df1e858b28fc">http://dl.dropbox.com/u/1836567/Paketler/mupen64plus/auria-wxmupen64plus-4bce967ba4ce.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>waf</Dependency>
+                <Dependency>mupen64plus-core</Dependency>
+                <Dependency>wxgtk-2.9-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>hardware/emulator/wxmupen64plus/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>wxmupen64plus</Name>
+            <RuntimeDependencies>
+                <Dependency>wxgtk-2.9</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>mupen64plus-core</Dependency>
+                <Dependency>mupen64plus-input-sdl</Dependency>
+                <Dependency>mupen64plus-rsp-hle</Dependency>
+                <Dependency>mupen64plus-rsp-z64</Dependency>
+                <Dependency>mupen64plus-video-arachnoid</Dependency>
+                <Dependency>mupen64plus-video-glide64</Dependency>
+                <Dependency>mupen64plus-video-rice</Dependency>
+                <Dependency>mupen64plus-video-z64</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/wxmupen64plus</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/wxmupen64plus.desktop" permission="0644" owner="root">wxmupen64plus.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/wxmupen64plus.png" permission="0644" owner="root">wxmupen64plus.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-01-08</Date>
+                <Version>0.2</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mupen64plus-video-rice</Name>
+            <Homepage>https://bitbucket.org/richard42/mupen64plus-video-rice</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>hardware.emulator</PartOf>
+            <Summary xml:lang="en">Video plugin for Mupen64Plus</Summary>
+            <Summary xml:lang="tr">Mupen64Plus için video eklentisi</Summary>
+            <Description xml:lang="en">Video plugin for Mupen64Plus v2.0, a Nintendo 64 emulator, using OpenGL.</Description>
+            <Description xml:lang="tr">Nintendo 64 emülatörü Mupen64Plus için OpenGL kullanan bir video eklentisi.</Description>
+            <Archive type="targz" sha1sum="55463e1cd9430bec7fdcfb1c353ca8af9dd6f4df">http://dl.dropbox.com/u/1836567/Paketler/mupen64plus/mupen64plus-video-rice.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>mupen64plus-core</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>hardware/emulator/mupen64plus-video-rice/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mupen64plus-video-rice</Name>
+            <RuntimeDependencies>
+                <Dependency>mupen64plus-core</Dependency>
+                <Dependency>libsdl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/mupen64plus</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-01-08</Date>
+                <Version>0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mupen64plus-video-arachnoid</Name>
+            <Homepage>https://bitbucket.org/wahrhaft/mupen64plus-video-arachnoid</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>hardware.emulator</PartOf>
+            <Summary xml:lang="en">Video plugin for Mupen64Plus</Summary>
+            <Summary xml:lang="tr">Mupen64Plus için video eklentisi</Summary>
+            <Description xml:lang="en">Video plugin for Mupen64Plus v2.0, a Nintendo 64 emulator, based on Arachnoid for Project64.</Description>
+            <Description xml:lang="tr">Nintendo 64 emülatörü Mupen64Plus için Arachnoid&apos;i temel alan bir video eklentisi.</Description>
+            <Archive type="targz" sha1sum="5414ea372c4c87d082ccf4753ba7cf74192f2bbf">http://dl.dropbox.com/u/1836567/Paketler/mupen64plus/mupen64plus-video-arachnoid.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>mupen64plus-core</Dependency>
+                <Dependency>mesa-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>hardware/emulator/mupen64plus-video-arachnoid/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mupen64plus-video-arachnoid</Name>
+            <RuntimeDependencies>
+                <Dependency>mupen64plus-core</Dependency>
+                <Dependency>mesa</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-01-08</Date>
+                <Version>0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>visualboyadvance</Name>
             <Homepage>http://vba.ngemu.com</Homepage>
             <Packager>
@@ -10621,6 +10929,150 @@
                 <Comment>First release.</Comment>
                 <Name>Uğur Çetin</Name>
                 <Email>jnmbk@users.sourceforge.net</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mupen64plus-rsp-z64</Name>
+            <Homepage>https://bitbucket.org/wahrhaft/mupen64plus-rsp-z64</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>hardware.emulator</PartOf>
+            <Summary xml:lang="en">Low-level RSP processor plugin for Mupen64Plus</Summary>
+            <Summary xml:lang="tr">Mupen64Plus için alt seviye RSP işlemci eklentisi</Summary>
+            <Description xml:lang="en">Low-level RSP processor plugin for Mupen64Plus v2.0, a Nintendo 64 emulator.</Description>
+            <Description xml:lang="tr">Nintendo 64 emülatörü Mupen64Plus için alt seviye RSP işlemci eklentisi.</Description>
+            <Archive type="targz" sha1sum="cfbde667f8d9066ac4e594cc57d629c166f6245b">http://dl.dropbox.com/u/1836567/Paketler/mupen64plus/mupen64plus-rsp-z64.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>mupen64plus-core</Dependency>
+            </BuildDependencies>
+            <SourceURI>hardware/emulator/mupen64plus-rsp-z64/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mupen64plus-rsp-z64</Name>
+            <RuntimeDependencies>
+                <Dependency>mupen64plus-core</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-01-08</Date>
+                <Version>0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mupen64plus-input-sdl</Name>
+            <Homepage>http://bitbucket.org/richard42/mupen64plus-input-sdl</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>hardware.emulator</PartOf>
+            <Summary xml:lang="en">Input plugin for Mupen64Plus</Summary>
+            <Summary xml:lang="tr">Mupen64Plus için girdi eklentisi</Summary>
+            <Description xml:lang="en">Input plugin for Mupen64Plus v2.0, a Nintendo 64 emulator, using SDL.</Description>
+            <Description xml:lang="tr">Nintendo 64 emülatörü Mupen64Plus için girdi eklentisi.</Description>
+            <Archive type="targz" sha1sum="0d317768a3d121b52db31d24b364521d6459c996">http://dl.dropbox.com/u/1836567/Paketler/mupen64plus/mupen64plus-input-sdl.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>mupen64plus-core</Dependency>
+            </BuildDependencies>
+            <SourceURI>hardware/emulator/mupen64plus-input-sdl/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mupen64plus-input-sdl</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>mupen64plus-core</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/mupen64plus</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-01-07</Date>
+                <Version>0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>cutemupen</Name>
+            <Homepage>http://sourceforge.net/userapps/mediawiki/vknecht/index.php?title=CuteMupen</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>hardware.emulator</PartOf>
+            <Summary xml:lang="en">A graphical front-end for Mupen64Plus</Summary>
+            <Summary xml:lang="tr">Mupen64Plus için grafiksel önyüz</Summary>
+            <Description xml:lang="en">CuteMupen is a graphical front-end for Mupen64Plus emulator written using Qt and the Mupen64Plus v2.0 API, so it can go beyond being a &quot;simple&quot; launcher.</Description>
+            <Description xml:lang="tr">CuteMupen, Mupen64Plus emülatörü için Qt tabanlı bir grafiksel önyüzdür.</Description>
+            <Icon>cutemupen</Icon>
+            <Archive type="tarbz2" sha1sum="a436c9ecd9da1d74a88ce4999a0bb8f902b80d12">mirrors://sourceforge/cutemupen/0.0.6/cutemupen-src-0.0.6.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>qt-devel</Dependency>
+                <Dependency>mupen64plus-core</Dependency>
+            </BuildDependencies>
+            <SourceURI>hardware/emulator/cutemupen/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>cutemupen</Name>
+            <RuntimeDependencies>
+                <Dependency>qt</Dependency>
+                <Dependency>mupen64plus-core</Dependency>
+                <Dependency>mupen64plus-input-sdl</Dependency>
+                <Dependency>mupen64plus-rsp-hle</Dependency>
+                <Dependency>mupen64plus-rsp-z64</Dependency>
+                <Dependency>mupen64plus-video-arachnoid</Dependency>
+                <Dependency>mupen64plus-video-glide64</Dependency>
+                <Dependency>mupen64plus-video-rice</Dependency>
+                <Dependency>mupen64plus-video-z64</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/cutemupen</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/cutemupen.desktop" permission="0644" owner="root">cutemupen.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/cutemupen.png" permission="0644" owner="root">cutemupen.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-01-08</Date>
+                <Version>0.0.6</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
             </Update>
         </History>
     </SpecFile>
@@ -10701,6 +11153,48 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>mupen64plus-video-glide64</Name>
+            <Homepage>https://bitbucket.org/wahrhaft/mupen64plus-video-glide64</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>hardware.emulator</PartOf>
+            <Summary xml:lang="en">Port of the Glide64 video plugin to Mupen64Plus</Summary>
+            <Summary xml:lang="tr">Glide64 video eklentisinin Mupen64Plus portu</Summary>
+            <Description xml:lang="en">Port of the Glide64 video plugin to Mupen64Plus v2.0, a Nintendo 64 emulator.</Description>
+            <Description xml:lang="tr">Glide64 video eklentisinin Nintendo 64 emülatörü Mupen64Plus portu.</Description>
+            <Archive type="targz" sha1sum="62c49e5a7e3512f5c0630ab9051b5b6aa95e5296">http://dl.dropbox.com/u/1836567/Paketler/mupen64plus/mupen64plus-video-glide64.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>mupen64plus-core</Dependency>
+            </BuildDependencies>
+            <SourceURI>hardware/emulator/mupen64plus-video-glide64/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mupen64plus-video-glide64</Name>
+            <RuntimeDependencies>
+                <Dependency>mupen64plus-core</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/mupen64plus</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-01-08</Date>
+                <Version>0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>vbam</Name>
             <Homepage>http://vba-m.ngemu.com</Homepage>
             <Packager>
@@ -10745,6 +11239,55 @@
                 <Date>2011-07-23</Date>
                 <Version>1.8.0.1009</Version>
                 <Comment>First release.</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mupen64plus-ui-console</Name>
+            <Homepage>https://bitbucket.org/richard42/mupen64plus-ui-console</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:console</IsA>
+            <PartOf>hardware.emulator</PartOf>
+            <Summary xml:lang="en">CLI fontent for Mupen64Plus</Summary>
+            <Summary xml:lang="tr">Mupen64Plus komut satırı istemci</Summary>
+            <Description xml:lang="en">CLI fontent for Mupen64Plus v2.0, a Nintendo 64 emulator.</Description>
+            <Description xml:lang="tr">Nintendo 64 emülatörü Mupen64Plus için komut satırı istemci.</Description>
+            <Archive type="targz" sha1sum="5b62951c744abe3629b4f774227a7bdec62e6936">http://dl.dropbox.com/u/1836567/Paketler/mupen64plus/mupen64plus-ui-console.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>mupen64plus-core</Dependency>
+            </BuildDependencies>
+            <SourceURI>hardware/emulator/mupen64plus-ui-console/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mupen64plus-ui-console</Name>
+            <RuntimeDependencies>
+                <Dependency>mupen64plus-core</Dependency>
+                <Dependency>mupen64plus-input-sdl</Dependency>
+                <Dependency>mupen64plus-rsp-hle</Dependency>
+                <Dependency>mupen64plus-rsp-z64</Dependency>
+                <Dependency>mupen64plus-video-arachnoid</Dependency>
+                <Dependency>mupen64plus-video-glide64</Dependency>
+                <Dependency>mupen64plus-video-rice</Dependency>
+                <Dependency>mupen64plus-video-z64</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-01-08</Date>
+                <Version>0.0</Version>
+                <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
             </Update>
@@ -10849,6 +11392,142 @@
             <Update release="1">
                 <Date>2011-07-24</Date>
                 <Version>0.8</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mupen64plus-core</Name>
+            <Homepage>https://bitbucket.org/richard42/mupen64plus-core</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>hardware.emulator</PartOf>
+            <Summary xml:lang="en">A Nintendo 64 emulator</Summary>
+            <Summary xml:lang="tr">Bir Nintendo 64 emülatörü</Summary>
+            <Description xml:lang="en">Core of Mupen64Plus v2.0, a Nintendo 64 emulator.</Description>
+            <Description xml:lang="tr">Nintendo 64 emülatörü Mupen64Plus&apos;ın çekirdeği.</Description>
+            <Archive type="targz" sha1sum="e5dc087472f09a46914639bd52e74ec3be8f6404">http://dl.dropbox.com/u/1836567/Paketler/mupen64plus/mupen64plus-core.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>freetype-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>minizip-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>hardware/emulator/mupen64plus-core/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mupen64plus-core</Name>
+            <RuntimeDependencies>
+                <Dependency>freetype</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>minizip</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/share/mupen64plus</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-01-07</Date>
+                <Version>0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mupen64plus-rsp-hle</Name>
+            <Homepage>https://bitbucket.org/richard42/mupen64plus-rsp-hle</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>hardware.emulator</PartOf>
+            <Summary xml:lang="en">RSP processor plugin for Mupen64Plus</Summary>
+            <Summary xml:lang="tr">Mupen64Plus için RSP işlemci eklentisi</Summary>
+            <Description xml:lang="en">RSP processor plugin for Mupen64Plus v2.0, a Nintendo 64 emulator.</Description>
+            <Description xml:lang="tr">Nintendo 64 emülatörü Mupen64Plus için RSP işlemci eklentisi.</Description>
+            <Archive type="targz" sha1sum="38dca2d6fbb97e09522e38f611587bde06d4a9ed">http://dl.dropbox.com/u/1836567/Paketler/mupen64plus/mupen64plus-rsp-hle.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>mupen64plus-core</Dependency>
+            </BuildDependencies>
+            <SourceURI>hardware/emulator/mupen64plus-rsp-hle/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mupen64plus-rsp-hle</Name>
+            <RuntimeDependencies>
+                <Dependency>mupen64plus-core</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-01-08</Date>
+                <Version>0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mupen64plus-video-z64</Name>
+            <Homepage>https://bitbucket.org/wahrhaft/mupen64plus-video-z64</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>hardware.emulator</PartOf>
+            <Summary xml:lang="en">Low-level RDP plugin for Mupen64Plus</Summary>
+            <Summary xml:lang="tr">Mupen64Plus için alt seviye RDP eklentisi</Summary>
+            <Description xml:lang="en">Low-level RDP plugin for Mupen64Plus v2.0, a Nintendo 64 emulator.</Description>
+            <Description xml:lang="tr">Nintendo emülatörü Mupen64Plus için alt seviye RDP eklentisi.</Description>
+            <Archive type="targz" sha1sum="7eb7eb73823b0f55c22d713af08c40c7ef624600">http://dl.dropbox.com/u/1836567/Paketler/mupen64plus/mupen64plus-video-z64.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>mupen64plus-core</Dependency>
+                <Dependency>glew-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>hardware/emulator/mupen64plus-video-z64/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mupen64plus-video-z64</Name>
+            <RuntimeDependencies>
+                <Dependency>mupen64plus-core</Dependency>
+                <Dependency>glew</Dependency>
+                <Dependency>libsdl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/mupen64plus</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-01-08</Date>
+                <Version>0.0</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
