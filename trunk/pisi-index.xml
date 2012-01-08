@@ -11490,6 +11490,62 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>supermodel</Name>
+            <Homepage>http://www.supermodel3.com</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:console</IsA>
+            <PartOf>hardware.emulator</PartOf>
+            <Summary xml:lang="en">A Sega Model 3 arcade emulator</Summary>
+            <Summary xml:lang="tr">Bir Sega Model 3 emülatörü</Summary>
+            <Description xml:lang="en">Supermodel emulates Sega&apos;s Model 3 arcade platform, allowing you to play a number of ground-breaking arcade classics on your PC.</Description>
+            <Description xml:lang="tr">Supermodel, Sega&apos;nın Model 3 ateri platformunu emüle ederek pek çok harika oyunu bilgisayarınızda oynamanızı sağlayan bir uygulamadır.</Description>
+            <Archive type="zip" sha1sum="ca885931c1f0cf599599ce043f2cef16d5fb49ce">http://www.supermodel3.com/Files/Supermodel_0.2a_Src.zip</Archive>
+            <BuildDependencies>
+                <Dependency>glew-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>minizip-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">multiuser.patch</Patch>
+                <Patch level="1">Supermodel-0.2a-unbundle-libs.patch</Patch>
+            </Patches>
+            <SourceURI>hardware/emulator/supermodel/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>supermodel</Name>
+            <RuntimeDependencies>
+                <Dependency>glew</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>minizip</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="executable">/opt/supermodel/Supermodel</Path>
+                <Path fileType="data">/opt/supermodel/Config</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/bin/supermodel" permission="0755" owner="root">supermodel.sh</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-01-08</Date>
+                <Version>0.2a</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>mupen64plus-video-z64</Name>
             <Homepage>https://bitbucket.org/wahrhaft/mupen64plus-video-z64</Homepage>
             <Packager>
