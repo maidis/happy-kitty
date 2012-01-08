@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>mupen64plus-video-z64</Name>
+        <Summary xml:lang="tr">Mupen64Plus için alt seviye RDP eklentisi</Summary>
+        <Description xml:lang="tr">Nintendo emülatörü Mupen64Plus için alt seviye RDP eklentisi.</Description>
+    </Source>
+</PISI>
