@@ -10278,7 +10278,7 @@
             </Packager>
             <License>BSD</License>
             <IsA>app:console</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>programming.build</PartOf>
             <Summary xml:lang="en">The meta build system</Summary>
             <Summary xml:lang="tr">Bir inşa sistemi</Summary>
             <Description xml:lang="en">Waf is a Python-based framework for configuring, compiling and installing applications.</Description>
@@ -10329,7 +10329,7 @@
             </Packager>
             <License>as-is</License>
             <IsA>app:console</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>programming.build</PartOf>
             <Summary xml:lang="en">An enhanced version of the Jam build tool</Summary>
             <Summary xml:lang="tr">Jam inşa aracının geliştirilmiş sürümü</Summary>
             <Description xml:lang="en">FT Jam is a small open-source build tool that can be used as a replacement for Make. Even though Jam is a lot simpler to use than Make, it is far more powerful and easy to master.</Description>
