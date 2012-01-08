@@ -13,12 +13,13 @@
         <IsA>app:gui</IsA>
         <Summary>A Sega Dreamcast emulator</Summary>
         <Description>Lxdream is an emulator for the Sega Dreamcast system.</Description>
-        <Archive sha1sum="ea64402b145d7247166eddf251f655d2c8c84af0" type="targz">http://www.lxdream.org/files/lxdream-0.9.1.tar.gz</Archive>
+        <Archive sha1sum="575775970ab2fd1690e2e69affe7d071cfa65355" type="targz">http://dl.dropbox.com/u/1836567/Paketler/lxdream-0.9.1_svn.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>alsa-lib-devel</Dependency>
             <Dependency>esound-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
+            <Dependency>libisofs-devel</Dependency>
             <Dependency>libsdl-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>pulseaudio-libs-devel</Dependency>
@@ -32,6 +33,7 @@
             <Dependency>esound</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>gtk2</Dependency>
+            <Dependency>libisofs</Dependency>
             <Dependency>libsdl</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
