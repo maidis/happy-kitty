@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>wxgtk-2.9</Name>
-        <Homepage>http://www.wxwidgets.org/</Homepage>
+        <Homepage>http://www.wxwidgets.org</Homepage>
         <Packager>
             <Name>Anıl Özbek</Name>
             <Email>ozbekanil@gmail.com</Email>
@@ -15,7 +15,7 @@
         <IsA>library</IsA>
         <Summary>GTK+ version of wxWindows, a cross-platform C++ GUI toolkit</Summary>
         <Description>wxWidgets/GTK2 is the GTK2 port of the C++ cross-platform wxWidgets GUI library, offering classes for all common GUI controls as well as a comprehensive set of helper classes for most common application tasks, ranging from networking to HTML display and image manipulation.</Description>
-        <Archive sha1sum="3ffe0614acce46448f5c14942176fb2daa6efd00" type="tarbz2">mirrors://sourceforge/wxwindows/2.9.1/wxWidgets-2.9.1.tar.bz2</Archive>
+        <Archive sha1sum="e0a3463f419053ab1fd800eaed7319289746772a" type="tarbz2">mirrors://sourceforge/wxwindows/2.9.3/wxWidgets-2.9.3.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gst-plugins-base-devel</Dependency>
             <Dependency>gstreamer-devel</Dependency>
@@ -30,7 +30,7 @@
             <Dependency>tiff-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">wxWidgets-2.9.1.diff</Patch>
+            <Patch>wxWidgets-2.9.1.diff</Patch>
         </Patches>
     </Source>
 
@@ -72,6 +72,13 @@
     </Package>
 
     <History>
+        <Update release="18">
+            <Date>2012-01-08</Date>
+            <Version>2.9.3</Version>
+            <Comment>Version bump</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="17">
             <Date>2011-04-09</Date>
             <Version>2.9.1</Version>

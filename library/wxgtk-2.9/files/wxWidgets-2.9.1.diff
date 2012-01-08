@@ -1,12 +1,11 @@
-diff -Naur wxWidgets-2.9.1.orig/configure wxWidgets-2.9.1/configure
---- wxWidgets-2.9.1.orig/configure	2010-07-18 16:39:20.000000000 +0300
-+++ wxWidgets-2.9.1/configure	2011-04-09 12:26:01.726000001 +0300
-@@ -26434,7 +26434,7 @@
- { echo "$as_me:$LINENO: result: $wx_cv_std_libpath" >&5
- echo "${ECHO_T}$wx_cv_std_libpath" >&6; }
+--- configure.orig	2011-12-14 20:42:11.000000000 +0200
++++ configure	2012-01-08 02:41:30.582000066 +0200
+@@ -27260,7 +27260,7 @@
+ fi
  
--SEARCH_LIB="`echo "$SEARCH_INCLUDE" | sed s@include@$wx_cv_std_libpath@g` /usr/$wx_cv_std_libpath"
-+SEARCH_LIB="`echo "$SEARCH_INCLUDE" | sed s@include@$wx_cv_std_libpath@g` /usr/$wx_cv_std_libpath /usr/lib"
+ if test -z "$wx_cv_std_libfullpath"; then
+-    wx_cv_std_libfullpath="/usr/$wx_cv_std_libpath"
++    wx_cv_std_libfullpath="/usr/$wx_cv_std_libpath /usr/lib"
+ fi
  
- if test "$build" != "$host" -a "$GCC" = yes; then
-                     if cross_root=`$CC -print-prog-name=ld 2>/dev/null`; then
+ 
