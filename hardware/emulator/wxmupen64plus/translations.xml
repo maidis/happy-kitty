@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>wxmupen64plus</Name>
+        <Summary xml:lang="tr">Mupen64Plus GKA önyüz</Summary>
+        <Description xml:lang="tr">wxMupen64Plus, wxWidgets ile yazılmış bir GKA önyüzüdür.</Description>
+    </Source>
+</PISI>
