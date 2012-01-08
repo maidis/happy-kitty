@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>mupen64plus-video-glide64</Name>
+        <Summary xml:lang="tr">Glide64 video eklentisinin Mupen64Plus portu</Summary>
+        <Description xml:lang="tr">Glide64 video eklentisinin Nintendo 64 emülatörü Mupen64Plus portu.</Description>
+    </Source>
+</PISI>
