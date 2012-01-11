@@ -16,6 +16,7 @@
         <Archive sha1sum="575775970ab2fd1690e2e69affe7d071cfa65355" type="targz">http://dl.dropbox.com/u/1836567/Paketler/lxdream-0.9.1_svn.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>alsa-lib-devel</Dependency>
+            <Dependency>audiofile-devel</Dependency>
             <Dependency>esound-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
@@ -30,6 +31,7 @@
         <Name>lxdream</Name>
         <RuntimeDependencies>
             <Dependency>alsa-lib</Dependency>
+            <Dependency>audiofile</Dependency>
             <Dependency>esound</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>gtk2</Dependency>
@@ -52,6 +54,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-01-11</Date>
+            <Version>0.9.1</Version>
+            <Comment>Add missing audiofile dependency</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-01-08</Date>
             <Version>0.9.1</Version>
