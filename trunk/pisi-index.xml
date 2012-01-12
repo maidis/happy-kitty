@@ -11789,7 +11789,7 @@
             <Summary xml:lang="tr">Bir Sega Model 3 emülatörü</Summary>
             <Description xml:lang="en">Supermodel emulates Sega&apos;s Model 3 arcade platform, allowing you to play a number of ground-breaking arcade classics on your PC.</Description>
             <Description xml:lang="tr">Supermodel, Sega&apos;nın Model 3 ateri platformunu emüle ederek pek çok harika oyunu bilgisayarınızda oynamanızı sağlayan bir uygulamadır.</Description>
-            <Archive type="zip" sha1sum="ca885931c1f0cf599599ce043f2cef16d5fb49ce">http://www.supermodel3.com/Files/Supermodel_0.2a_Src.zip</Archive>
+            <Archive type="zip" sha1sum="0ad2348708cf5792ff727ff85bf36b5b51cc3c2f">http://dl.dropbox.com/u/1836567/Paketler/Supermodel_0.2a_Src.zip</Archive>
             <BuildDependencies>
                 <Dependency>glew-devel</Dependency>
                 <Dependency>libsdl-devel</Dependency>
@@ -11798,7 +11798,6 @@
             </BuildDependencies>
             <Patches>
                 <Patch level="1">multiuser.patch</Patch>
-                <Patch level="1">Supermodel-0.2a-unbundle-libs.patch</Patch>
             </Patches>
             <SourceURI>hardware/emulator/supermodel/pspec.xml</SourceURI>
         </Source>
@@ -11821,6 +11820,13 @@
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2012-01-12</Date>
+                <Version>0.2a</Version>
+                <Comment>Fix changed sha1sum</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2012-01-08</Date>
                 <Version>0.2a</Version>
