@@ -9,7 +9,7 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "angelscript/projects/gnuc"
+WorkDir = "sdk/angelscript/projects/gnuc"
 
 def build():
     autotools.make()

@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A flexible, cross platform scripting library</Summary>
         <Description>AngelScript is an extremely flexible cross platform scripting library designed to allow applications to extend their functionality through external scripts. It has been designed from the beginning to be an easy to use component, both for the application programmer and the script writer.</Description>
-        <Archive sha1sum="262c71142dabf2225d56450058726745b2ed3d2b" type="zip">http://www.angelcode.com/angelscript/sdk/files/angelscript_2.21.1.zip</Archive>
+        <Archive sha1sum="4c4d99ca1f6e21cd2f50b09cf6357bac4604be66" type="zip">http://www.angelcode.com/angelscript/sdk/files/angelscript_2.22.1.zip</Archive>
         <Patches>
             <Patch>angelscript_2.20.2-makefile.diff</Patch>
         </Patches>
@@ -28,6 +28,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-01-17</Date>
+            <Version>2.22.1</Version>
+            <Comment>Version bump</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2011-08-28</Date>
             <Version>2.21.1</Version>
