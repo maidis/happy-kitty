@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>rigsofrods-content-pack</Name>
+        <Homepage>http://www.rigsofrods.com</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>as-is</License>
+        <Icon>RoR</Icon>
+        <IsA>data</IsA>
+        <Summary>Official content pack for Rigs of Rods</Summary>
+        <Description>rigsofrods-content-pack provides contents for Rigs of Rods.</Description>
+        <Archive sha1sum="36872d1fdf6f7cfae576cf424f5f3df1f269bc8b" type="zip">mirrors://sourceforge/rigsofrods/rigsofrods/0.37/content-pack-0.37.zip</Archive>
+    </Source>
+
+    <Package>
+        <Name>rigsofrods-content-pack</Name>
+        <Files>
+            <Path fileType="data">/opt/rigsofrods</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2012-01-18</Date>
+            <Version>0.37</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

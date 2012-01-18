@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>rigsofrods-content-pack</Name>
+        <Summary xml:lang="tr">Rigs of Rods resmi içerik paketi</Summary>
+        <Description xml:lang="tr">rigsofrods-content-pack, Rigs of Rods için içerik dosyaları sunar.</Description>
+    </Source>
+</PISI>
