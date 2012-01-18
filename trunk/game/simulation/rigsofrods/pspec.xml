@@ -1,0 +1,82 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>rigsofrods</Name>
+        <Homepage>http://www.rigsofrods.com</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>rigsofrods</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>An open source vehicle simulator</Summary>
+        <Description>Rigs of Rods is an open source vehicle simulator based on soft-body physics.</Description>
+        <Archive sha1sum="a6cb5f66d979373eb7faaed4870c86f421adb829" type="tarbz2">http://dl.dropbox.com/u/1836567/Paketler/ror-2311.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>wxGTK-devel</Dependency>
+            <Dependency>lua-devel</Dependency>
+            <Dependency>ogre-devel</Dependency>
+            <Dependency>ois-devel</Dependency>
+            <Dependency>socketw</Dependency>
+            <Dependency>ogre-hydrax</Dependency>
+            <Dependency>ogre-pagedgeometry</Dependency>
+            <Dependency>openal-devel</Dependency>
+            <Dependency>mygui</Dependency>
+            <Dependency>mofilereader</Dependency>
+            <Dependency>caelum</Dependency>
+            <Dependency>angelscript</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>rigsofrods</Name>
+        <RuntimeDependencies>
+            <Dependency>wxGTK</Dependency>
+            <Dependency>wxBase</Dependency>
+            <Dependency>lua</Dependency>
+            <Dependency>ogre</Dependency>
+            <Dependency>ois</Dependency>
+            <Dependency>socketw</Dependency>
+            <Dependency>ogre-hydrax</Dependency>
+            <Dependency>ogre-pagedgeometry</Dependency>
+            <Dependency>openal</Dependency>
+            <Dependency>mygui</Dependency>
+            <Dependency>mofilereader</Dependency>
+            <Dependency>caelum</Dependency>
+            <Dependency>angelscript</Dependency>
+            <Dependency>rigsofrods-content-pack</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/opt/rigsofrods/RoR</Path>
+            <Path fileType="executable">/opt/rigsofrods/rorconfig</Path>
+            <Path fileType="executable">/opt/rigsofrods/tdr2svg</Path>
+            <Path fileType="library">/opt/rigsofrods/libangelscript_addons.a</Path>
+            <Path fileType="data">/opt/rigsofrods/plugins.cfg</Path>
+            <Path fileType="data">/opt/rigsofrods/resources</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/rigsofrods.desktop">rigsofrods.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/rorconfig.desktop">rorconfig.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/rigsofrods.png">rigsofrods.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/opt/rigsofrods/plugins.cfg">plugins.cfg</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/rigsofrods">rigsofrods.sh</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2012-01-17</Date>
+            <Version>0.39</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

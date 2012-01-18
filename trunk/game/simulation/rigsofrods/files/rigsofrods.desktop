@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Rigs of Rods
+GenericName=Vehicle Simulator
+GenericName[tr]=Araç Simülatörü
+Comment=An open source vehicle simulator based on soft-body physics
+Comment[tr]= Yumuşak gövde fiziği temelli bir özgür araç simülatörü
+Icon=rigsofrods
+Exec=rigsofrods
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;Simulation;

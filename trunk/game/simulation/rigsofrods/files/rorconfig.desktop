@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Rigs of Rods (Config)
+GenericName=RoR (Config)
+GenericName[tr]=RoR (Ayarlar)
+Comment=Configuration utility for Rigs of Rods
+Comment[tr]=Rigs of Rods için ayar aracı
+Icon=rigsofrods
+Exec=/opt/rigsofrods/rorconfig
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;Simulation;
