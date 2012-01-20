@@ -14,7 +14,7 @@ def setup():
     cmaketools.configure()
 
 def build():
-    cmaketools.make()
+    cmaketools.make("-j1")
 
 def install():
     cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
