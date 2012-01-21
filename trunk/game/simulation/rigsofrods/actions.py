@@ -25,6 +25,8 @@ def setup():
                           -DROR_USE_CURL=TRUE \
                           -DSOCKETW_INCLUDE_DIRS=/usr/include \
                           -DSOCKETW_LIBRARIES=/usr/lib/libSocketW.so \
+                          -DCURL_INCLUDE_DIRS=/usr/include/MYGUI \
+                          -DCURL_LIBRARIES=/usr/lib/libMyGUIEngine.so \
                           -DCMAKE_PREFIX_PATH=/opt/rigsofrods")
 
 def build():
