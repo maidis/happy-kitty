@@ -79,7 +79,7 @@
             <Description xml:lang="en">SFML is a simple, fast, cross-platform, and object-oriented multimedia API.</Description>
             <Description xml:lang="tr">SFML; basit, hızlı, çok platformlu ve nesne yönelimli bir çokluortam uygulama programlama arayüzüdür.</Description>
             <Icon>sfml</Icon>
-            <Archive type="targz" sha1sum="2b5aeaced69582a55bae3ccebb23550123f01652">http://dl.dropbox.com/u/1836567/Paketler/LaurentGomila-SFML-09854ba.tar.gz</Archive>
+            <Archive type="targz" sha1sum="032518e81aca20ba715401c9f62c11bd5852c03c">http://happy-kitty.googlecode.com/files/LaurentGomila-SFML-bindings_removed-183-g369f450.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>freetype-devel</Dependency>
                 <Dependency>glew-devel</Dependency>
@@ -121,7 +121,7 @@
             <Description xml:lang="tr">SFML geliştirme paketi, SFML için geliştirme dosyaları sunar.</Description>
             <IsA>data</IsA>
             <RuntimeDependencies>
-                <Dependency release="4">sfml</Dependency>
+                <Dependency release="5">sfml</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="header">/usr/include</Path>
@@ -136,7 +136,7 @@
             <Description xml:lang="tr">SFML belge paketi, SFML için geliştirme belgeleri sunar.</Description>
             <IsA>data</IsA>
             <RuntimeDependencies>
-                <Dependency release="4">sfml</Dependency>
+                <Dependency release="5">sfml</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="data">/usr/share/SFML</Path>
@@ -144,6 +144,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="5">
+                <Date>2012-01-23</Date>
+                <Version>2.0</Version>
+                <Comment>Sync with git</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="4">
                 <Date>2011-11-26</Date>
                 <Version>2.0</Version>
@@ -697,7 +704,7 @@
             <Description xml:lang="en">XIX is a heavily modified version of the 1980s arcade game QIX.</Description>
             <Description xml:lang="tr">XIX, 80&apos;lerin meşhur oyunu QIX&apos;in C++&apos;da yazılmış bir klonudur.</Description>
             <Icon>xix</Icon>
-            <Archive type="targz" sha1sum="a5734f8d3b4a1601811c683babcd87142a0d7257">http://dl.dropbox.com/u/1836567/Paketler/xix100.tgz</Archive>
+            <Archive type="targz" sha1sum="a5734f8d3b4a1601811c683babcd87142a0d7257">http://happy-kitty.googlecode.com/files/xix100.tgz</Archive>
             <BuildDependencies>
                 <Dependency>libXext-devel</Dependency>
             </BuildDependencies>
@@ -1030,7 +1037,7 @@
             <Description xml:lang="en">Ultimate Smash Friends is a 2d arcade fight game, inspired by the Super Smash Bros Nintendo series. It&apos;s written in Python with pygame.</Description>
             <Description xml:lang="tr">Ultimate Smash Friends, Super Smash Bros&apos;tan esinlenmiş ve Python, pygame kullanılarak yazılmış 2b ateri tarzı dövüş oyunudur.</Description>
             <Icon>usf</Icon>
-            <Archive type="tarbz2" sha1sum="c4fbdfa6a88c07810192bf9cabd7e6908f1706c7">http://dl.dropbox.com/u/1836567/Paketler/usf-0.1.6.tar.bz2</Archive>
+            <Archive type="targz" sha1sum="518ac962f30a38e4faf6ccf215f8cafb495fc0d2">http://happy-kitty.googlecode.com/files/ultimate-smash-friends-0.1.6.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>pygame</Dependency>
                 <Dependency>python-numeric</Dependency>
@@ -1057,6 +1064,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2012-01-23</Date>
+                <Version>0.1.6</Version>
+                <Comment>Use original archive</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2011-05-09</Date>
                 <Version>0.1.6</Version>
@@ -3746,7 +3760,7 @@
             <Description xml:lang="en">TuxPuck is an air hockey simulator. You will lots of fun trying to beat Tux.</Description>
             <Description xml:lang="tr">TuxPuck, bir hava okeyi simülatörüdür. Tux&apos;u yenmeye çalışırken çok eğleneceksiniz.</Description>
             <Icon>tuxpuck</Icon>
-            <Archive type="tarbz2" sha1sum="998b6a989d44cfdf03fc88c14ee2aeabbe9e501d">http://dl.dropbox.com/u/1836567/Paketler/tuxpuck-0.9.0.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="998b6a989d44cfdf03fc88c14ee2aeabbe9e501d">http://happy-kitty.googlecode.com/files/tuxpuck-0.9.0.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>libsdl-devel</Dependency>
                 <Dependency>libvorbis-devel</Dependency>
@@ -7093,7 +7107,7 @@
             <Description xml:lang="en">sayi-tahmin is a simple number guess game which previously written with QBasic and than ported to C++. This is C++&apos;ized version of the game.</Description>
             <Description xml:lang="tr">sayi-tahmin, ilk olarak QBasic ile yazılmış ve daha sonra C++&apos; port edilmiş basit bir sayı tahmin oyunudur. Bu oyunun C++ sürümüdür.</Description>
             <Icon>sayi-tahmin</Icon>
-            <Archive type="targz" sha1sum="24911d6d200ef1de5307760883fca9665b97b102">http://dl.dropbox.com/u/1836567/Paketler/sayi-tahmin-0.5.tar.gz</Archive>
+            <Archive type="targz" sha1sum="24911d6d200ef1de5307760883fca9665b97b102">http://sayi-tahmin.googlecode.com/files/sayi-tahmin-0.5.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>gettext-devel</Dependency>
                 <Dependency>ncurses</Dependency>
@@ -11576,20 +11590,24 @@
             </Packager>
             <License>GPLv2</License>
             <IsA>app:console</IsA>
+            <IsA>app:gui</IsA>
             <PartOf>hardware.emulator</PartOf>
             <Summary xml:lang="en">A Game Boy, Game Boy Color, and Game Boy Advance emulator</Summary>
             <Summary xml:lang="tr">Bir Game Boy, Game Boy Color ve Game Boy Advance emülatörü</Summary>
             <Description xml:lang="en">VBA-M is an emulator for Game Boy and Game Boy Advance systems forked from VisualBoyAdvance.</Description>
             <Description xml:lang="tr">VBA-M; Game Boy ve türevi sistemler için VisualBoyAdvance&apos;dan çatallanmış bir emülatördür.</Description>
-            <Archive type="targz" sha1sum="71027b29e5abd73a4dae5310d3b169eeefcde23b">http://dl.dropbox.com/u/1836567/Paketler/vbam-1.8.0.1009.tar.gz</Archive>
+            <Archive type="targz" sha1sum="952889a9b5e6f819537d0e9049f23048ff9f7107">http://happy-kitty.googlecode.com/files/vbam-1.8.0.1054-src.tar.gz</Archive>
             <BuildDependencies>
-                <Dependency>libsdl-devel</Dependency>
-                <Dependency>libglademm-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>ffmpeg-devel</Dependency>
                 <Dependency>gtkglextmm</Dependency>
+                <Dependency>libglademm-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>wxBase-devel</Dependency>
+                <Dependency>wxGTK-devel</Dependency>
             </BuildDependencies>
             <Patches>
                 <Patch level="1">vbam-1.8.0.1009-desktop.patch</Patch>
-                <Patch level="1">vbam-1.8.0.1009-no-nls.patch</Patch>
                 <Patch>03vs02.diff</Patch>
             </Patches>
             <SourceURI>hardware/emulator/vbam/pspec.xml</SourceURI>
@@ -11597,17 +11615,31 @@
         <Package>
             <Name>vbam</Name>
             <RuntimeDependencies>
-                <Dependency>libsdl</Dependency>
-                <Dependency>libglademm</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>ffmpeg</Dependency>
                 <Dependency>gtkglextmm</Dependency>
+                <Dependency>libglademm</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>wxBase</Dependency>
+                <Dependency>wxGTK</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
                 <Path fileType="config">/etc</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
                 <Path fileType="doc">/usr/share/doc</Path>
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2012-01-23</Date>
+                <Version>1.8.0.1054</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2011-07-23</Date>
                 <Version>1.8.0.1009</Version>
