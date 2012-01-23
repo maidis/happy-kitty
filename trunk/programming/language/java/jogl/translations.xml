@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>jogl</Name>
+        <Summary xml:lang="tr">OpenGL için Java bağlayıcıları</Summary>
+        <Description xml:lang="tr">Jogl, OpenGL için Java bağlayıcılarıdır.</Description>
+    </Source>
+</PISI>
