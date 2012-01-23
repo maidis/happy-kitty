@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A QIX remake</Summary>
         <Description>XIX is a heavily modified version of the 1980s arcade game QIX.</Description>
-        <Archive sha1sum="a5734f8d3b4a1601811c683babcd87142a0d7257" type="targz">http://dl.dropbox.com/u/1836567/Paketler/xix100.tgz</Archive>
+        <Archive sha1sum="a5734f8d3b4a1601811c683babcd87142a0d7257" type="targz">http://happy-kitty.googlecode.com/files/xix100.tgz</Archive>
         <BuildDependencies>
             <Dependency>libXext-devel</Dependency>
         </BuildDependencies>
