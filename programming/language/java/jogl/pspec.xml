@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>jogl</Name>
+        <Homepage>http://java.net/projects/jogl</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>library</IsA>
+        <Summary>Java bindings for OpenGL</Summary>
+        <Description>Jogl is Java bindings for OpenGL.</Description>
+        <Archive sha1sum="49cbe6ce797592ee5e7ebf8d16d45db3d3b20fe0" type="zip" target="i686">http://download.java.net/media/jogl/builds/archive/jsr-231-1.1.1/jogl-1.1.1-linux-i586.zip</Archive>
+        <Archive sha1sum="767aa3c70adaab186c61523246cb99356110051c" type="zip" target="x86_64">http://download.java.net/media/jogl/builds/archive/jsr-231-1.1.1/jogl-1.1.1-linux-amd64.zip</Archive>
+    </Source>
+
+    <Package>
+        <Name>jogl</Name>
+        <RuntimeDependencies>
+            <Dependency>cg</Dependency>
+            <Dependency>libXxf86vm</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>sun-jre</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/java/jogl</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2012-01-23</Date>
+            <Version>1.1.1</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
