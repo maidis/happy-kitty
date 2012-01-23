@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>A number guess game</Summary>
         <Description>sayi-tahmin is a simple number guess game which previously written with QBasic and than ported to C++. This is C++'ized version of the game.</Description>
-        <Archive sha1sum="24911d6d200ef1de5307760883fca9665b97b102" type="targz">http://dl.dropbox.com/u/1836567/Paketler/sayi-tahmin-0.5.tar.gz</Archive>
+        <Archive sha1sum="24911d6d200ef1de5307760883fca9665b97b102" type="targz">http://sayi-tahmin.googlecode.com/files/sayi-tahmin-0.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gettext-devel</Dependency>
             <Dependency>ncurses</Dependency>
