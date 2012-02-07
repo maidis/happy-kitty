@@ -4636,7 +4636,7 @@
             <Description xml:lang="en">Yo Frankie! is based on the universe and characters of the open source film Big Buck Bunny. In the game, players assume the role of Frank, the sugar glider who was the antagonist of the film Big Buck Bunny.</Description>
             <Description xml:lang="tr">Yo Frankie!, açık kaynak kodlu Big Buck Bunny adlı filmin dünyasını ve karakterlerini temel almış bir 3B platform oyunudur. Oyuncular, oyunda Big Buck Bunny&apos;deki uçan sincap Frank&apos;ı yönetmektedir.</Description>
             <Icon>yofrankie-bge</Icon>
-            <Archive type="tarxz" sha1sum="5377b3271b96d030156cbade52aa4b74a4af8ceb">http://dl.dropbox.com/u/1836567/Paketler/yofrankie-1.1b.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="5377b3271b96d030156cbade52aa4b74a4af8ceb">http://happy-kitty.googlecode.com/files/yofrankie-1.1b.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>blender</Dependency>
                 <Dependency>imagemagick</Dependency>
@@ -8479,7 +8479,7 @@
             <Description xml:lang="en">Rigs of Rods is an open source vehicle simulator based on soft-body physics.</Description>
             <Description xml:lang="tr">Rigs of Rods, yumuşak gövde fiziği temelli bir özgür araç simülatörüdür.</Description>
             <Icon>rigsofrods</Icon>
-            <Archive type="tarbz2" sha1sum="a6cb5f66d979373eb7faaed4870c86f421adb829">http://dl.dropbox.com/u/1836567/Paketler/ror-2311.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="a6cb5f66d979373eb7faaed4870c86f421adb829">http://happy-kitty.googlecode.com/files/ror-2311.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>wxGTK-devel</Dependency>
                 <Dependency>lua-devel</Dependency>
