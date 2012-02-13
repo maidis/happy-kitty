@@ -5573,6 +5573,64 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>tuxmath</Name>
+            <Homepage>http://tux4kids.alioth.debian.org/tuxmath</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.puzzle</PartOf>
+            <Summary xml:lang="en">Educational math game</Summary>
+            <Summary xml:lang="tr">Eğitsel matematik oyunu</Summary>
+            <Description xml:lang="en">TuxMath is an arcade game that helps kids practice their math facts. The main goal is to make it effective and fun!</Description>
+            <Description xml:lang="tr">TuxMath, başrolde Linux maskotu Tux&apos;un olduğu, çocuklara özel eğitim amaçlı, matematik problemlerinin çözüldüğü bir oyundur.</Description>
+            <Icon>tuxmath</Icon>
+            <Archive type="targz" sha1sum="7a73430c29e5f1fdb20d33dbce484ed1655044f6">http://happy-kitty.googlecode.com/files/tuxmath_w_fonts-2.0.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-net-devel</Dependency>
+                <Dependency>sdl-ttf-devel</Dependency>
+                <Dependency>sdl-pango-devel</Dependency>
+                <Dependency>librsvg-devel</Dependency>
+                <Dependency>t4k_common</Dependency>
+            </BuildDependencies>
+            <SourceURI>game/puzzle/tuxmath/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>tuxmath</Name>
+            <RuntimeDependencies>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>sdl-net</Dependency>
+                <Dependency>sdl-ttf</Dependency>
+                <Dependency>sdl-pango</Dependency>
+                <Dependency>librsvg</Dependency>
+                <Dependency>t4k_common</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/tuxmath</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="doc">/usr/share/doc/tuxmath</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-02-13</Date>
+                <Version>2.0.1</Version>
+                <Comment>First release. Thanks Murat Şenel and Doruk Fişek for their previous work.</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>puzsion</Name>
             <Homepage>http://dl.openhandhelds.org/cgi-bin/caanoo.cgi?0,0,0,0,25,483</Homepage>
             <Packager>
@@ -9160,6 +9218,65 @@
             <Update release="1">
                 <Date>2011-04-09</Date>
                 <Version>0.5.0</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>t4k_common</Name>
+            <Homepage>http://tux4kids.alioth.debian.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">Tux4Kids common</Summary>
+            <Summary xml:lang="tr">Tux4Kids ortak kütüphanesi</Summary>
+            <Description xml:lang="en">t4k_common is a common library for code shared by TuxType and TuxMath.</Description>
+            <Description xml:lang="tr">t4k_common, TuxType ve TuxMath tarafından kullanılan bir kütüphanedir.</Description>
+            <Archive type="targz" sha1sum="626eddedee86059ccab593a226c8d98571018b46">http://happy-kitty.googlecode.com/files/t4k_common-0.1.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>librsvg-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>sdl-image-devel</Dependency>
+                <Dependency>sdl-mixer-devel</Dependency>
+                <Dependency>sdl-net-devel</Dependency>
+                <Dependency>sdl-pango-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>library/t4k_common/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>t4k_common</Name>
+            <RuntimeDependencies>
+                <Dependency>cairo</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>librsvg</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>sdl-image</Dependency>
+                <Dependency>sdl-mixer</Dependency>
+                <Dependency>sdl-net</Dependency>
+                <Dependency>sdl-pango</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/share/t4k_common</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-02-13</Date>
+                <Version>0.1.1</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
