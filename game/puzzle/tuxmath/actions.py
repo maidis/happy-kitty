@@ -22,4 +22,4 @@ def install():
     pisitools.insinto("/usr/share/applications", "tuxmath.desktop")
     pisitools.dosym("/usr/share/tuxmath/images/icons/icon.png", "/usr/share/pixmaps/tuxmath.png")
 
-    pisitools.dodoc("doc/COPYING.txt", "doc/TODO.txt", "doc/README*", "doc/OFL.txt", "doc/changelog")
+    pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "README")
