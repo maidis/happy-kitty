@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>tuxmath</Name>
+        <Summary xml:lang="tr">Eğitsel matematik oyunu</Summary>
+        <Description xml:lang="tr">TuxMath, başrolde Linux maskotu Tux'un olduğu, çocuklara özel eğitim amaçlı, matematik problemlerinin çözüldüğü bir oyundur.</Description>
+    </Source>
+</PISI>
