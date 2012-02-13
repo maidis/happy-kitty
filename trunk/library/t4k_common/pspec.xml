@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>t4k_common</Name>
+        <Homepage>http://tux4kids.alioth.debian.org</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>library</IsA>
+        <Summary>Tux4Kids common</Summary>
+        <Description>t4k_common is a common library for code shared by TuxType and TuxMath.</Description>
+        <Archive sha1sum="626eddedee86059ccab593a226c8d98571018b46" type="targz">http://happy-kitty.googlecode.com/files/t4k_common-0.1.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>cairo-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>librsvg-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>sdl-net-devel</Dependency>
+            <Dependency>sdl-pango-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>t4k_common</Name>
+        <RuntimeDependencies>
+            <Dependency>cairo</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>librsvg</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>sdl-net</Dependency>
+            <Dependency>sdl-pango</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share/t4k_common</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2012-02-13</Date>
+            <Version>0.1.1</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
