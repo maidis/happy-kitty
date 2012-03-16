@@ -8,7 +8,7 @@ from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "LaurentGomila-SFML-e3d75f6"
+WorkDir = "LaurentGomila-SFML-78e7dce"
 
 def setup():
     cmaketools.configure("-DBUILD_DOC=TRUE")
