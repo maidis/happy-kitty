@@ -21,6 +21,7 @@
         <Patches>
             <Patch level="1">opengoo-paths.diff</Patch>
             <Patch level="0">opengoo-menu-paths.diff</Patch>
+            <Patch level="0">opengoo-levelloader.diff</Patch>
         </Patches>
     </Source>
 

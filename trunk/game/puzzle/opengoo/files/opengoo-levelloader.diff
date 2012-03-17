@@ -1,0 +1,11 @@
+--- levelloader.cpp.orig	2012-03-13 11:32:12.000000000 +0200
++++ levelloader.cpp	2012-03-17 01:03:42.343542575 +0200
+@@ -9,7 +9,7 @@
+     QObject(parent)
+ {
+     initFlags();
+-    this->path=path;//Path of the level;
++    this->path="/usr/share/opengoo/l01.level";//Path of the level;
+     wC=0;
+     hC=0;
+ }
