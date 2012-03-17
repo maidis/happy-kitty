@@ -79,7 +79,7 @@
             <Description xml:lang="en">SFML is a simple, fast, cross-platform, and object-oriented multimedia API.</Description>
             <Description xml:lang="tr">SFML; basit, hızlı, çok platformlu ve nesne yönelimli bir çokluortam uygulama programlama arayüzüdür.</Description>
             <Icon>sfml</Icon>
-            <Archive type="targz" sha1sum="dac29cd6d14f9e6bb7550922e754244bf06d3bc6">http://happy-kitty.googlecode.com/files/LaurentGomila-SFML-bindings_removed-196-ge3d75f6.tar.gz</Archive>
+            <Archive type="zip" sha1sum="247c44f82e61e607104a6372f675a60b929d5216">http://happy-kitty.googlecode.com/files/LaurentGomila-SFML-bindings_removed-218-g78e7dce.zip</Archive>
             <BuildDependencies>
                 <Dependency>freetype-devel</Dependency>
                 <Dependency>glew-devel</Dependency>
@@ -121,7 +121,7 @@
             <Description xml:lang="tr">SFML geliştirme paketi, SFML için geliştirme dosyaları sunar.</Description>
             <IsA>data</IsA>
             <RuntimeDependencies>
-                <Dependency release="6">sfml</Dependency>
+                <Dependency release="7">sfml</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="header">/usr/include</Path>
@@ -136,7 +136,7 @@
             <Description xml:lang="tr">SFML belge paketi, SFML için geliştirme belgeleri sunar.</Description>
             <IsA>data</IsA>
             <RuntimeDependencies>
-                <Dependency release="6">sfml</Dependency>
+                <Dependency release="7">sfml</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="data">/usr/share/SFML</Path>
@@ -144,6 +144,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="7">
+                <Date>2012-03-17</Date>
+                <Version>2.0</Version>
+                <Comment>Sync with git</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="6">
                 <Date>2012-02-10</Date>
                 <Version>2.0</Version>
@@ -5256,14 +5263,15 @@
             <Description xml:lang="en">OpenGOO is a free and open source clone of World of GOO.</Description>
             <Description xml:lang="tr">OpenGOO, özgür bir World of GOO klonudur.</Description>
             <Icon>opengoo</Icon>
-            <Archive type="targz" sha1sum="cc7e792b2fa1e13a57df68e33491140b8baed2c3">http://dl.dropbox.com/u/1836567/Paketler/opengoo.tar.gz</Archive>
+            <Archive type="targz" sha1sum="9bb9a91c5bdb9081c973b8adac385736f4cfc6e7">http://happy-kitty.googlecode.com/files/opengoo-0.1b.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>qt-devel</Dependency>
                 <Dependency>box2d</Dependency>
             </BuildDependencies>
             <Patches>
-                <Patch>opengoo-paths.diff</Patch>
-                <Patch>opengoo-menu-paths.diff</Patch>
+                <Patch level="1">opengoo-paths.diff</Patch>
+                <Patch level="0">opengoo-menu-paths.diff</Patch>
+                <Patch level="0">opengoo-levelloader.diff</Patch>
             </Patches>
             <SourceURI>game/puzzle/opengoo/pspec.xml</SourceURI>
         </Source>
@@ -5286,6 +5294,13 @@
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2012-03-16</Date>
+                <Version>0.1b</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2011-12-21</Date>
                 <Version>0.0</Version>
