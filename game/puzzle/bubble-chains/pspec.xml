@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A 2d arcade puzzle game</Summary>
         <Description>Bubble Chains is a 2d arcade puzzle game. The aim is to collect chains of same-color bubbles, and to destroy all the target items.</Description>
-        <Archive sha1sum="a2ae12f41a783f9f6efaae141dca0232b5a59e27" type="tarbz2">http://dl.dropbox.com/u/1836567/Paketler/chains-0.1.1-src.tar.bz2</Archive>
+        <Archive sha1sum="a2ae12f41a783f9f6efaae141dca0232b5a59e27" type="tarbz2">http://happy-kitty.googlecode.com/files/chains-0.1.1-src.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>libsdl-devel</Dependency>
