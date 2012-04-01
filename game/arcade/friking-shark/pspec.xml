@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A vertical scrolling shooter arcade game</Summary>
         <Description>friking-shark is a vertical scrolling shooter arcade game and remake of Flying Shark (Also known as Sky Shark and Hishouzame).</Description>
-        <Archive sha1sum="3cf679e548e336a63eb6617b13ab4f04400528f5" type="tarxz">http://dl.dropbox.com/u/1836567/Paketler/friking-shark-1.01.tar.xz</Archive>
+        <Archive sha1sum="3cf679e548e336a63eb6617b13ab4f04400528f5" type="tarxz">http://happy-kitty.googlecode.com/files/friking-shark-1.01.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>freealut-devel</Dependency>
             <Dependency>libXinerama-devel</Dependency>
