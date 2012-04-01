@@ -1,6 +1,6 @@
---- CMakeLists.txt.orig	2011-10-13 11:00:18.000000000 +0300
-+++ CMakeLists.txt	2011-10-13 21:08:06.786000032 +0300
-@@ -478,16 +478,12 @@
+--- CMakeLists.txt.orig	2012-03-26 20:44:50.000000000 +0300
++++ CMakeLists.txt	2012-04-01 16:42:33.394105700 +0300
+@@ -541,16 +541,12 @@
  
  # Installing on *nix
  IF(UNIX)
@@ -10,8 +10,9 @@
 +  SET(GAME_FINAL_DIR "${DESTDIR}/usr/bin")
  
    INSTALL(CODE "MESSAGE(\"Installing ${GAME_NAME} ${GAME_VERSION}... Make sure you have root privileges.\")")
-   INSTALL(TARGETS ${GAME_UNIXNAME} RUNTIME DESTINATION ${GAME_INSTALL_DIR})
-   INSTALL(FILES license.txt readme.html DESTINATION ${GAME_INSTALL_DIR})
+-  INSTALL(TARGETS ${GAME_UNIXNAME} RUNTIME DESTINATION ${GAME_INSTALL_DIR})
++  INSTALL(TARGETS ${GAME_UNIXNAME} RUNTIME DESTINATION ${GAME_FINAL_DIR})
+   INSTALL(FILES license.txt readme.html bg.png icon.png logo_big.png logo.png surge.png DESTINATION ${GAME_INSTALL_DIR})
    INSTALL(DIRECTORY characters src objects sprites config images levels licenses musics quests samples screenshots themes languages fonts ttf DESTINATION ${GAME_INSTALL_DIR} PATTERN ".svn" EXCLUDE)
  
 -  INSTALL(CODE "MESSAGE(\"Creating files at ${GAME_FINAL_DIR}...\")")

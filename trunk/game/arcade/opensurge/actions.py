@@ -9,21 +9,17 @@ from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "opensurge-src-build597"
+WorkDir = "opensurge-src-build697"
 
 def setup():
-    shelltools.system("./configure")
-    #cmaketools.configure()
+    pisitools.dosed("CMakeLists.txt", "icon.png logo_big.png", " ")
+
+    shelltools.system("./configure -DUSE_OPENAL=NO")
 
 def build():
     cmaketools.make()
 
 def install():
     cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
-    pisitools.dobin("opensurge")
-    pisitools.insinto("/usr/share/opensurge/characters", "characters/*")
-    pisitools.remove("/usr/share/opensurge/opensurge")
-    pisitools.remove("/usr/share/opensurge/readme.html")
-    pisitools.remove("/usr/share/opensurge/license.txt")
 
-    pisitools.dodoc("readme.html", "bleeding_edge.txt", "license.txt")
+    pisitools.dodoc("readme.html", "license.txt")
