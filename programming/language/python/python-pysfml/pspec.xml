@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A Python binding for SFML 2, written with Cython</Summary>
         <Description>PySFML 2 is a new Python binding for SFML 2, made with Cython. Many features of SFML are currently available, but this is still a work in progress.</Description>
-        <Archive sha1sum="9d4291f262cf001608cd6f4d20a78623511357d3" type="tarbz2">http://dl.dropbox.com/u/1836567/Paketler/pysfml2-cython.tar.bz2</Archive>
+        <Archive sha1sum="9d4291f262cf001608cd6f4d20a78623511357d3" type="tarbz2">http://happy-kitty.googlecode.com/files/pysfml2-cython.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>sfml-devel</Dependency>
             <Dependency>python-devel</Dependency>
