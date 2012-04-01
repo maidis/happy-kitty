@@ -1,0 +1,41 @@
+--- src/entities/background.c.orig	2010-12-27 03:29:01.000000000 +0200
++++ src/entities/background.c	2012-04-01 16:59:05.553216605 +0300
+@@ -369,7 +369,7 @@
+         actor_change_animation(bg->actor, bg->data->animation_data[0]);
+     }
+     else
+-        fatal_error("Can't read background. Unknown identifier: '%s'", identifier);
++        logfile_message("Can't read background. Unknown identifier: '%s'", identifier);
+ 
+     return 0;
+ }
+@@ -452,7 +452,7 @@
+             );
+         }
+         else
+-            fatal_error("Unknown background behavior: '%s'", nanoparser_get_string(p1));
++            logfile_message("Unknown background behavior: '%s'", nanoparser_get_string(p1));
+     }
+     else if(str_icmp(identifier, "repeat_x") == 0) {
+         p1 = nanoparser_get_nth_parameter(param_list, 1);
+@@ -477,7 +477,7 @@
+         bg->data = spriteinfo_create(nanoparser_get_program(p1));
+     }
+     else
+-        fatal_error("Can't read background attributes. Unknown identifier: '%s'", identifier);
++        logfile_message("Can't read background attributes. Unknown identifier: '%s'", identifier);
+ 
+     return 0;
+ }
+@@ -485,9 +485,9 @@
+ void validate_background(const background_t *bg)
+ {
+     if(bg->data == NULL)
+-        fatal_error("Can't read background: no sprite data given");
++        logfile_message("Can't read background: no sprite data given");
+ 
+     if(bg->strategy == NULL)
+-        fatal_error("Can't read background: no behavior given");
++        logfile_message("Can't read background: no behavior given");
+ }
+ 
