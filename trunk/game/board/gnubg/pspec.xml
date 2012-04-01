@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNU Backgammon</Summary>
         <Description>GNU Backgammon (gnubg) plays and analyses backgammon games and matches.</Description>
-        <Archive sha1sum="b0e8003c9d1b22d7505e52b195e56c4bf6229e73" type="targz">http://dl.dropbox.com/u/1836567/Paketler/gnubg-source-SNAPSHOT-20111025.tar.gz</Archive>
+        <Archive sha1sum="b0e8003c9d1b22d7505e52b195e56c4bf6229e73" type="targz">http://happy-kitty.googlecode.com/files/gnubg-source-SNAPSHOT-20111025.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>cairo-devel</Dependency>
             <Dependency>esound-devel</Dependency>
