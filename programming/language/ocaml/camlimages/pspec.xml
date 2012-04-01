@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>An image manipulation library for ocaml</Summary>
         <Description>CamlImages is an image processing library, which provides basic functions for image processing and loading/saving various image file formats.</Description>
-        <Archive sha1sum="0800c8f1204fe161a6115422cb701bf26dc273d5" type="tarbz2">http://dl.dropbox.com/u/1836567/Paketler/camlimages-4.0.0.tar.bz2</Archive>
+        <Archive sha1sum="0800c8f1204fe161a6115422cb701bf26dc273d5" type="tarbz2">http://happy-kitty.googlecode.com/files/camlimages-4.0.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>freeglut-devel</Dependency>
             <Dependency>ocaml</Dependency>
