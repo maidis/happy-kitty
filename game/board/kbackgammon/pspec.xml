@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A backgammon game for KDE</Summary>
         <Description>KBackgammon is KDE application to play backgammon like games.</Description>
-        <Archive sha1sum="e666d39b931574770e20dc2f6175ed41c5d13a33" type="targz">http://dl.dropbox.com/u/1836567/Paketler/142680-KBackgammon_0.15.tar.gz</Archive>
+        <Archive sha1sum="e666d39b931574770e20dc2f6175ed41c5d13a33" type="targz">http://happy-kitty.googlecode.com/files/142680-KBackgammon_0.15.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>kdelibs-devel</Dependency>
