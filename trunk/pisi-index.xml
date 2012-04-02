@@ -819,15 +819,17 @@
             <Description xml:lang="en">Open Sonic is an open-source game based on the Sonic the Hedgehog universe. It introduces a different style of gameplay called cooperative play, in which it&apos;s possible to control 3 characters simultaneously. Unlike most similar games, Open Sonic provides a greater level of interaction between the player and the levels. It&apos;s more than just a jump&apos;n&apos;run; the user must come up with some strategy in order to get through the levels.</Description>
             <Description xml:lang="tr">Open Surge, Sonic the Hedgehog dünyasını temel alan özgür bir oyundur. Sunduğu ortak oynama tarzıyla üç karakteri eşzamanlı olarak kontrol edebilirsiniz. Çoğu benzer oyunun aksine Open Surge, oyuncu ile bölümler arasında daha fazla etkileşim sunar. Oynadıkça görebileceğiniz üzere Open Surge, sıradan bir hoplama zıplama oyunundan daha öte stratejilerde geliştirmeniz gereken bir oyundur.</Description>
             <Icon>opensurge</Icon>
-            <Archive type="targz" sha1sum="d11f97bdbd95e43195600a4849d878203b16dfd5">http://dl.dropbox.com/u/1836567/Paketler/opensurge-src-build597.tar.gz</Archive>
+            <Archive type="tarbz2" sha1sum="b91bc7b2fac4501f34361de56f4535a479d1482e">http://happy-kitty.googlecode.com/files/opensurge-src-build697.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>alfont</Dependency>
                 <Dependency>allegro-devel</Dependency>
+                <Dependency>alure-devel</Dependency>
                 <Dependency>dumb-devel</Dependency>
                 <Dependency>libpng-devel</Dependency>
             </BuildDependencies>
             <Patches>
                 <Patch>opensurge-paths.diff</Patch>
+                <Patch>not-fatal.diff</Patch>
             </Patches>
             <SourceURI>game/arcade/opensurge/pspec.xml</SourceURI>
         </Source>
@@ -836,6 +838,7 @@
             <RuntimeDependencies>
                 <Dependency>alfont</Dependency>
                 <Dependency>allegro</Dependency>
+                <Dependency>alure</Dependency>
                 <Dependency>dumb</Dependency>
             </RuntimeDependencies>
             <Files>
@@ -851,6 +854,13 @@
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="3">
+                <Date>2012-04-01</Date>
+                <Version>0.2.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="2">
                 <Date>2011-10-13</Date>
                 <Version>0.2.0</Version>
@@ -2439,7 +2449,7 @@
             <Description xml:lang="en">friking-shark is a vertical scrolling shooter arcade game and remake of Flying Shark (Also known as Sky Shark and Hishouzame).</Description>
             <Description xml:lang="tr">friking-shark, Sky Shark ve Hishouzame olarak da bilinen Flying Shark&apos;ın bir yeniden yapımı olan dikey kaydırmalı uçak oyunudur.</Description>
             <Icon>friking-shark</Icon>
-            <Archive type="tarxz" sha1sum="3cf679e548e336a63eb6617b13ab4f04400528f5">http://dl.dropbox.com/u/1836567/Paketler/friking-shark-1.01.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="3cf679e548e336a63eb6617b13ab4f04400528f5">http://happy-kitty.googlecode.com/files/friking-shark-1.01.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>freealut-devel</Dependency>
                 <Dependency>libXinerama-devel</Dependency>
@@ -4416,7 +4426,7 @@
             <Description xml:lang="en">Chickennix is a classic Shoot em up game. The plot of this game is to shoot everything appearing on the screen down and climp up the highscore.</Description>
             <Description xml:lang="tr">Chickennix, klasik bir hepsini vur oyunudur. Oyuncuların oyundaki amacı ekranda gördükleri her şeyi vurmak ve yüksekskorlara imza atmaktır.</Description>
             <Icon>chickennix</Icon>
-            <Archive type="targz" sha1sum="589bcc5e5cfa68714b9ea9268fb8ccbc3ff3e6f0">http://dl.dropbox.com/u/1836567/Paketler/chickennix-0.1.tar.gz</Archive>
+            <Archive type="targz" sha1sum="589bcc5e5cfa68714b9ea9268fb8ccbc3ff3e6f0">http://happy-kitty.googlecode.com/files/chickennix-0.1.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>sdl-image-devel</Dependency>
                 <Dependency>sdl-mixer-devel</Dependency>
@@ -5035,7 +5045,7 @@
             <Description xml:lang="en">Gish isn&apos;t your average hero, in fact he&apos;s not your average anything... see Gish is a ball of tar.</Description>
             <Description xml:lang="tr">Gish, bildiğiniz sıradan kahramanlardan biri değil, daha önceden bildiğiniz şeylere de benzemiyor, o Gish, bir zift topu.</Description>
             <Icon>gish</Icon>
-            <Archive type="targz" sha1sum="4e0e9e7a79264c6267bd479625ec2a0606ac1d0d">http://dl.dropbox.com/u/1836567/Paketler/FrozenCow-gish-v1.53-156-g14a41db.tar.gz</Archive>
+            <Archive type="targz" sha1sum="4e0e9e7a79264c6267bd479625ec2a0606ac1d0d">http://happy-kitty.googlecode.com/files/FrozenCow-gish-v1.53-156-g14a41db.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>libvorbis-devel</Dependency>
                 <Dependency>openal-devel</Dependency>
@@ -5146,7 +5156,7 @@
             <Description xml:lang="en">Beret is a 2D puzzle-platformer game about a scientist, astonishingly named Beret, who has gained telekinetic abilities through his research at the Evil Corporation. He decides that the Evil Corporation is a tad too evil for his liking, and begins his solitary quest to overthrow the corporation and punish the evil deeds of his employers.</Description>
             <Description xml:lang="tr">Beret, Evil Corporation&apos;da yaptığı araştırmayla telekinetik yetenekler kazanmış Beret isimli bir bilim insanı hakkında bir 2B bulmaca platfor oyunudur. Kahramanımız Beret, Evil Corporation&apos;ın kendisi için fazla şeytani olduğuna karar verir. Akabinde de şirketi devirmek ve patronlarının şeytani zombilerini cezalandırmak için yalnız bir yolculuğa başlar.</Description>
             <Icon>beret</Icon>
-            <Archive type="tarbz2" sha1sum="1a8ee9569da894e5ac6635886eb77c689cd1b493">http://dl.dropbox.com/u/1836567/Paketler/beret-0.0.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="1a8ee9569da894e5ac6635886eb77c689cd1b493">http://happy-kitty.googlecode.com/files/beret-0.0.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>libsdl-devel</Dependency>
                 <Dependency>sdl-ttf-devel</Dependency>
@@ -5483,7 +5493,7 @@
             <Description xml:lang="en">Minetest is one of the first InfiniMiner / Minecraft inspired games with a goal of taking the survival multiplayer gameplay to a slightly different direction.</Description>
             <Description xml:lang="tr">Minetest, başlıca amacı çok oyunculu hayatta kalma oyun kipini biraz daha farklı bir yöne taşımak olan, InfiniMiner / Minecraft&apos;tan ilham almış ilk oyunlardan biridir.</Description>
             <Icon>minetest</Icon>
-            <Archive type="targz" sha1sum="1fcf630a6c17e4076c4cca3cbf66dd8a1a5f4374">http://dl.dropbox.com/u/1836567/Paketler/celeron55-minetest-0.4.dev-20111203-3-3-gd566ffa.tar.gz</Archive>
+            <Archive type="targz" sha1sum="1fcf630a6c17e4076c4cca3cbf66dd8a1a5f4374">http://happy-kitty.googlecode.com/files/celeron55-minetest-0.4.dev-20111203-3-3-gd566ffa.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>irrlicht-devel</Dependency>
                 <Dependency>jpeg-devel</Dependency>
@@ -7234,7 +7244,7 @@
             <Description xml:lang="en">Bubble Chains is a 2d arcade puzzle game. The aim is to collect chains of same-color bubbles, and to destroy all the target items.</Description>
             <Description xml:lang="tr">Bubble Chains, bir 2b ateri bulmaca oyunudur. Oyuncuların oyundaki amacı aynı renkli baloncuk zincirlerini toplamak ve hedefleri yok etmektir.</Description>
             <Icon>bubble-chains</Icon>
-            <Archive type="tarbz2" sha1sum="a2ae12f41a783f9f6efaae141dca0232b5a59e27">http://dl.dropbox.com/u/1836567/Paketler/chains-0.1.1-src.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="a2ae12f41a783f9f6efaae141dca0232b5a59e27">http://happy-kitty.googlecode.com/files/chains-0.1.1-src.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>qt-devel</Dependency>
                 <Dependency>libsdl-devel</Dependency>
@@ -7827,7 +7837,7 @@
             <Description xml:lang="en">KBackgammon is KDE application to play backgammon like games.</Description>
             <Description xml:lang="tr">KBackgammon, tavla ve benzeri oyunlar için bir KDE yazılımıdır.</Description>
             <Icon>kbackgammon</Icon>
-            <Archive type="targz" sha1sum="e666d39b931574770e20dc2f6175ed41c5d13a33">http://dl.dropbox.com/u/1836567/Paketler/142680-KBackgammon_0.15.tar.gz</Archive>
+            <Archive type="targz" sha1sum="e666d39b931574770e20dc2f6175ed41c5d13a33">http://happy-kitty.googlecode.com/files/142680-KBackgammon_0.15.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>qt-devel</Dependency>
                 <Dependency>kdelibs-devel</Dependency>
@@ -8089,7 +8099,7 @@
             <Description xml:lang="en">GNU Backgammon (gnubg) plays and analyses backgammon games and matches.</Description>
             <Description xml:lang="tr">gnubg, tavla maçları yapıp ardından maçlarınızı analiz edebileceğiniz bir tavla oyunudur.</Description>
             <Icon>gnubg</Icon>
-            <Archive type="targz" sha1sum="b0e8003c9d1b22d7505e52b195e56c4bf6229e73">http://dl.dropbox.com/u/1836567/Paketler/gnubg-source-SNAPSHOT-20111025.tar.gz</Archive>
+            <Archive type="targz" sha1sum="b0e8003c9d1b22d7505e52b195e56c4bf6229e73">http://happy-kitty.googlecode.com/files/gnubg-source-SNAPSHOT-20111025.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>cairo-devel</Dependency>
                 <Dependency>esound-devel</Dependency>
@@ -10023,7 +10033,7 @@
             <Summary xml:lang="tr">Hızlı ve basit OGRE GKA</Summary>
             <Description xml:lang="en">MyGUI is a library for creating Graphical User Interfaces for games and 3D applications. The main goals of mygui are: speed, flexibility and ease of use.</Description>
             <Description xml:lang="tr">MyGUI, oyunlar ve 3B uygulamalar için Grafik Kullanıcı Arayüzleri oluşturmak için bir kütüphanedir. MyGUI&apos;nin ana hedefi hız, esneklik ve kullanım kolaylığıdır.</Description>
-            <Archive type="tarbz2" sha1sum="02ca65a3a36378b80b33a5b2cd3a153856cba765">http://dl.dropbox.com/u/1836567/Paketler/my-gui-4332.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="02ca65a3a36378b80b33a5b2cd3a153856cba765">http://happy-kitty.googlecode.com/files/my-gui-4332.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>freetype-devel</Dependency>
                 <Dependency>ogre-devel</Dependency>
@@ -10687,7 +10697,7 @@
             <Summary xml:lang="tr">SFML 2 için Cython ile yazılmış Python bağlayıcıları</Summary>
             <Description xml:lang="en">PySFML 2 is a new Python binding for SFML 2, made with Cython. Many features of SFML are currently available, but this is still a work in progress.</Description>
             <Description xml:lang="tr">PySFML 2, SFML 2 için Cython ile yazılmış yeni Python bağlayıcılarıdır. SFML&apos;nin pek çok özelliği şu an mevcut olmakla birlikte çalışmalar devam etmektedir.</Description>
-            <Archive type="tarbz2" sha1sum="9d4291f262cf001608cd6f4d20a78623511357d3">http://dl.dropbox.com/u/1836567/Paketler/pysfml2-cython.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="9d4291f262cf001608cd6f4d20a78623511357d3">http://happy-kitty.googlecode.com/files/pysfml2-cython.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>sfml-devel</Dependency>
                 <Dependency>python-devel</Dependency>
@@ -10866,7 +10876,7 @@
             <Summary xml:lang="tr">Objective Caml için bir resim işleme kütüphanesi</Summary>
             <Description xml:lang="en">CamlImages is an image processing library, which provides basic functions for image processing and loading/saving various image file formats.</Description>
             <Description xml:lang="tr">CamlImages, Objective Caml için bir resim işleme kütüphanesidir. Resim işleme, çeşitli biçimlerde resim kaydetme ve açma için basit fonksiyonlar sunar.</Description>
-            <Archive type="tarbz2" sha1sum="0800c8f1204fe161a6115422cb701bf26dc273d5">http://dl.dropbox.com/u/1836567/Paketler/camlimages-4.0.0.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="0800c8f1204fe161a6115422cb701bf26dc273d5">http://happy-kitty.googlecode.com/files/camlimages-4.0.0.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>freeglut-devel</Dependency>
                 <Dependency>ocaml</Dependency>
