@@ -7,6 +7,8 @@
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import qt4
 
+WorkDir = "Mandarancio-OpenGOO-e3b79f7"
+
 def setup():
     qt4.configure()
 
@@ -16,9 +18,8 @@ def build():
 def install():
     pisitools.dobin("OpenGOO")
 
-    pisitools.rename("/usr/bin/OpenGOO", "opengoo")
-
-    pisitools.insinto("/usr/share/opengoo", "*.level")
+    pisitools.insinto("/usr/share/opengoo", "*level*")
     pisitools.insinto("/usr/share/opengoo", "menu.index")
+    pisitools.insinto("/usr/share/opengoo/Artwork", "Artwork/*")
 
     pisitools.dodoc("LICENSE", "README")
