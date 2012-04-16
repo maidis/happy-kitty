@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A free and open source clone of World of GOO</Summary>
         <Description>OpenGOO is a free and open source clone of World of GOO.</Description>
-        <Archive sha1sum="9bb9a91c5bdb9081c973b8adac385736f4cfc6e7" type="targz">http://happy-kitty.googlecode.com/files/opengoo-0.1b.tar.gz</Archive>
+        <Archive sha1sum="e71e8c894015a75be6b7868bdc34b8cf4ad54867" type="targz">http://happy-kitty.googlecode.com/files/Mandarancio-OpenGOO-e3b79f7.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>box2d</Dependency>
@@ -21,7 +21,6 @@
         <Patches>
             <Patch level="1">opengoo-paths.diff</Patch>
             <Patch level="0">opengoo-menu-paths.diff</Patch>
-            <Patch level="0">opengoo-levelloader.diff</Patch>
         </Patches>
     </Source>
 
@@ -45,6 +44,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-04-16</Date>
+            <Version>0.1b</Version>
+            <Comment>Sync with git</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2012-03-16</Date>
             <Version>0.1b</Version>
