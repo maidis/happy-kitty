@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Simple and Fast Multimedia Library</Summary>
         <Description>SFML is a simple, fast, cross-platform, and object-oriented multimedia API.</Description>
-        <Archive sha1sum="247c44f82e61e607104a6372f675a60b929d5216" type="zip">http://happy-kitty.googlecode.com/files/LaurentGomila-SFML-bindings_removed-218-g78e7dce.zip</Archive>
+        <Archive sha1sum="50c5023aa97d0f0e125608bc7a63c9520a545826" type="targz">http://happy-kitty.googlecode.com/files/LaurentGomila-SFML-2.0-rc-7-geebaa27.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>freetype-devel</Dependency>
             <Dependency>glew-devel</Dependency>
@@ -77,6 +77,13 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-04-21</Date>
+            <Version>2.0</Version>
+            <Comment>Sync with git</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="7">
             <Date>2012-03-17</Date>
             <Version>2.0</Version>
