@@ -79,7 +79,7 @@
             <Description xml:lang="en">SFML is a simple, fast, cross-platform, and object-oriented multimedia API.</Description>
             <Description xml:lang="tr">SFML; basit, hızlı, çok platformlu ve nesne yönelimli bir çokluortam uygulama programlama arayüzüdür.</Description>
             <Icon>sfml</Icon>
-            <Archive type="zip" sha1sum="247c44f82e61e607104a6372f675a60b929d5216">http://happy-kitty.googlecode.com/files/LaurentGomila-SFML-bindings_removed-218-g78e7dce.zip</Archive>
+            <Archive type="targz" sha1sum="50c5023aa97d0f0e125608bc7a63c9520a545826">http://happy-kitty.googlecode.com/files/LaurentGomila-SFML-2.0-rc-7-geebaa27.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>freetype-devel</Dependency>
                 <Dependency>glew-devel</Dependency>
@@ -121,7 +121,7 @@
             <Description xml:lang="tr">SFML geliştirme paketi, SFML için geliştirme dosyaları sunar.</Description>
             <IsA>data</IsA>
             <RuntimeDependencies>
-                <Dependency release="7">sfml</Dependency>
+                <Dependency release="8">sfml</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="header">/usr/include</Path>
@@ -136,7 +136,7 @@
             <Description xml:lang="tr">SFML belge paketi, SFML için geliştirme belgeleri sunar.</Description>
             <IsA>data</IsA>
             <RuntimeDependencies>
-                <Dependency release="7">sfml</Dependency>
+                <Dependency release="8">sfml</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="data">/usr/share/SFML</Path>
@@ -144,6 +144,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="8">
+                <Date>2012-04-21</Date>
+                <Version>2.0</Version>
+                <Comment>Sync with git</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="7">
                 <Date>2012-03-17</Date>
                 <Version>2.0</Version>
