@@ -8,10 +8,12 @@ from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "LaurentGomila-SFML-78e7dce"
+WorkDir = "LaurentGomila-SFML-eebaa27"
 
 def setup():
-    cmaketools.configure("-DBUILD_DOC=TRUE")
+    pisitools.dosed("CMakeLists.txt", "SFML_BUILD_DOC FALSE", "SFML_BUILD_DOC TRUE")
+
+    cmaketools.configure()
 
 def build():
     cmaketools.make()
@@ -19,10 +21,6 @@ def build():
 def install():
     cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.removeDir("/usr/share/SFML")
-
     pisitools.insinto("/usr/share/SFML", "examples/*")
 
-    pisitools.dohtml("doc/*")
-
-    pisitools.dodoc("license.txt")
+    pisitools.dodoc("license.txt", "readme.txt")
