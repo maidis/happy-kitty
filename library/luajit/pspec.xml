@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>luajit</Name>
+        <Homepage>http://luajit.org</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>app:console</IsA>
+        <Summary>A Just-In-Time compiler for Lua</Summary>
+        <Description>LuaJIT is a Just-In-Time compiler for Lua.</Description>
+        <Archive sha1sum="c9e5b262b53b4ac714d3ce42be7e7ca0e41ad7f3" type="targz">http://luajit.org/download/LuaJIT-2.0.0-beta9.tar.gz</Archive>
+        <Patches>
+            <Patch level="1">beta9_hotfix1.patch</Patch>
+            <Patch>luaconf.patch</Patch>
+            <Patch>Makefile.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>luajit</Name>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency>gcc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share/lua</Path>
+            <Path fileType="data">/usr/share/luajit-*</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2012-04-23</Date>
+            <Version>2.0.0_beta9</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
