@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=LÖVE 0.7
+GenericName=2D Game Engine
+GenericName[tr]=2B Oyun Motoru
+Comment=The unquestionably awesome 2D game engine
+Comment[tr]=Harika bir 2B oyun motoru
+Icon=love
+Exec=love
+Terminal=false
+StartupNotify=false
+NoDisplay=true
+MimeType=application/x-love-game;
+Categories=Application;Development;Game;

@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>love</Name>
+        <Homepage>http://love2d.org</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>ZLIB</License>
+        <IsA>library</IsA>
+        <Summary>An 2D game engine which uses the Lua</Summary>
+        <Description>LÖVE is an awesome framework you can use to make 2D games in Lua.</Description>
+        <Archive sha1sum="876f527fc6908a6dd462080aa599ffa1ad47afa5" type="targz">https://bitbucket.org/rude/love/downloads/love-0.7.2-linux-src.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>lua-devel</Dependency>
+            <Dependency>DevIL-devel</Dependency>
+            <Dependency>physfs-devel</Dependency>
+            <Dependency>mpg123-devel</Dependency>
+            <Dependency>openal-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>freetype-devel</Dependency>
+            <Dependency>libvorbis-devel</Dependency>
+            <Dependency>libmodplug-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>love</Name>
+        <RuntimeDependencies>
+            <Dependency>lua</Dependency>
+            <Dependency>DevIL</Dependency>
+            <Dependency>physfs</Dependency>
+            <Dependency>mpg123</Dependency>
+            <Dependency>openal</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>libmodplug</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="man">/usr/share/mime</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/icons/hicolor/scalable/apps/love.svg">app.svg</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/icons/hicolor/scalable/mimetypes/gnome-mime-application-x-love-game.svg">game.svg</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/love.desktop">love.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/mime/packages/love.xml">love.xml</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-09-06</Date>
+            <Version>0.7.2</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
