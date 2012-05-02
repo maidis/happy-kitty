@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>mari0</Name>
+        <Summary xml:lang="tr">Portal silahlı Mario</Summary>
+        <Description xml:lang="tr">Mari0, Portal silah mekaniklerini içeren bir Mario oyunudur.</Description>
+    </Source>
+</PISI>
