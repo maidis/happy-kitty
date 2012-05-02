@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <PISI>
     <Source>
-        <Name>love</Name>
+        <Name>love07</Name>
         <Summary xml:lang="tr">Lua kullanan 2B oyun motoru</Summary>
         <Description xml:lang="tr">LÖVE, Lua'da 2B oyunlar yapmak için harika bir çatıdır.</Description>
     </Source>

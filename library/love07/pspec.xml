@@ -2,7 +2,7 @@
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>love</Name>
+        <Name>love07</Name>
         <Homepage>http://love2d.org</Homepage>
         <Packager>
             <Name>Anıl Özbek</Name>
@@ -27,7 +27,7 @@
     </Source>
 
     <Package>
-        <Name>love</Name>
+        <Name>love07</Name>
         <RuntimeDependencies>
             <Dependency>lua</Dependency>
             <Dependency>DevIL</Dependency>
@@ -39,6 +39,9 @@
             <Dependency>libvorbis</Dependency>
             <Dependency>libmodplug</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package>love</Package>
+        </Conflicts>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/icons</Path>
@@ -56,7 +59,7 @@
 
     <History>
         <Update release="1">
-            <Date>2011-09-06</Date>
+            <Date>2012-05-02</Date>
             <Version>0.7.2</Version>
             <Comment>First release</Comment>
             <Name>Anıl Özbek</Name>
