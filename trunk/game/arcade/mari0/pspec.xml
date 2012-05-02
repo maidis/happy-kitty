@@ -8,7 +8,7 @@
             <Name>Anıl Özbek</Name>
             <Email>ozbekanil@gmail.com</Email>
         </Packager>
-        <License>GPLv2</License>
+        <License>CCPL-Attribution-ShareAlike-NonCommercial-3.0</License>
         <Icon>mari0</Icon>
         <IsA>app:gui</IsA>
         <Summary>Mario game with Portal gun mechanics</Summary>
