@@ -20,7 +20,7 @@
     <Package>
         <Name>orthorobot</Name>
         <RuntimeDependencies>
-            <Dependency>love</Dependency>
+            <Dependency>love07</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
