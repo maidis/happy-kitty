@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>An 2D game engine which uses the Lua</Summary>
         <Description>LÖVE is an awesome framework you can use to make 2D games in Lua.</Description>
-        <Archive sha1sum="876f527fc6908a6dd462080aa599ffa1ad47afa5" type="targz">https://bitbucket.org/rude/love/downloads/love-0.7.2-linux-src.tar.gz</Archive>
+        <Archive sha1sum="8c6ad95b7b0e3c6530b4778b9523f126ba9c9d90" type="targz">https://bitbucket.org/rude/love/downloads/love-0.8.0-linux-src.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>lua-devel</Dependency>
             <Dependency>DevIL-devel</Dependency>
@@ -55,6 +55,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-04-23</Date>
+            <Version>0.8.0</Version>
+            <Comment>Version bump</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-09-06</Date>
             <Version>0.7.2</Version>

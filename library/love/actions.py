@@ -8,8 +8,6 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "love-HEAD"
-
 def setup():
     autotools.configure()
 
@@ -19,4 +17,4 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.dodoc("changes.txt", "license.txt", "readme.txt")
+    pisitools.dodoc("changes.txt", "license.txt", "readme.md")
