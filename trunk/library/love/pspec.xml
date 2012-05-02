@@ -39,6 +39,9 @@
             <Dependency>libvorbis</Dependency>
             <Dependency>libmodplug</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package>love07</Package>
+        </Conflicts>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/icons</Path>
