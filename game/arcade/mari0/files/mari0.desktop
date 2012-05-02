@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Mari0
+GenericName=Mario with Portal Gun
+GenericName[tr]=Portal Silahlı Mario
+Comment=Mario game with Portal gun mechanics
+Comment[tr]=Portal silah mekaniklerini içeren Mario oyunu
+Icon=mari0
+Exec=mari0
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;ArcadeGame;

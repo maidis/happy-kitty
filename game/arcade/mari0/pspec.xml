@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mari0</Name>
+        <Homepage>http://stabyourself.net/mari0</Homepage>
+        <Packager>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>mari0</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Mario game with Portal gun mechanics</Summary>
+        <Description>Mari0 is a Mario game with Portal gun mechanics.</Description>
+        <Archive sha1sum="e950f741ce1ac185191e332716585f57058d0811" type="zip">http://stabyourself.net/dl.php?file=mari0-1006/mari0-source.zip</Archive>
+    </Source>
+
+    <Package>
+        <Name>mari0</Name>
+        <RuntimeDependencies>
+            <Dependency>love</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/mari0</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/mari0.desktop">mari0.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/mari0.png">mari0.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/mari0">mari0</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2012-05-02</Date>
+            <Version>1.6</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
