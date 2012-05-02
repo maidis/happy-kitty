@@ -2145,6 +2145,53 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>mari0</Name>
+            <Homepage>http://stabyourself.net/mari0</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>game.arcade</PartOf>
+            <Summary xml:lang="en">Mario game with Portal gun mechanics</Summary>
+            <Summary xml:lang="tr">Portal silahlı Mario</Summary>
+            <Description xml:lang="en">Mari0 is a Mario game with Portal gun mechanics.</Description>
+            <Description xml:lang="tr">Mari0, Portal silah mekaniklerini içeren bir Mario oyunudur.</Description>
+            <Icon>mari0</Icon>
+            <Archive type="zip" sha1sum="e950f741ce1ac185191e332716585f57058d0811">http://stabyourself.net/dl.php?file=mari0-1006/mari0-source.zip</Archive>
+            <SourceURI>game/arcade/mari0/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mari0</Name>
+            <RuntimeDependencies>
+                <Dependency>love</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/mari0</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/mari0.desktop" permission="0644" owner="root">mari0.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/mari0.png" permission="0644" owner="root">mari0.png</AdditionalFile>
+                <AdditionalFile target="/usr/bin/mari0" permission="0755" owner="root">mari0</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-05-02</Date>
+                <Version>1.6</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>gorillas</Name>
             <Homepage>http://inventwithpython.com/blog/2010/06/25/gorilla-py-a-remake-of-gorilla-bas</Homepage>
             <Packager>
@@ -6365,7 +6412,7 @@
         <Package>
             <Name>orthorobot</Name>
             <RuntimeDependencies>
-                <Dependency>love</Dependency>
+                <Dependency>love07</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
@@ -6412,7 +6459,7 @@
         <Package>
             <Name>nottetris2</Name>
             <RuntimeDependencies>
-                <Dependency>love</Dependency>
+                <Dependency>love07</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
@@ -9143,6 +9190,75 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>love07</Name>
+            <Homepage>http://love2d.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>ZLIB</License>
+            <IsA>library</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">An 2D game engine which uses the Lua</Summary>
+            <Summary xml:lang="tr">Lua kullanan 2B oyun motoru</Summary>
+            <Description xml:lang="en">LÖVE is an awesome framework you can use to make 2D games in Lua.</Description>
+            <Description xml:lang="tr">LÖVE, Lua&apos;da 2B oyunlar yapmak için harika bir çatıdır.</Description>
+            <Archive type="targz" sha1sum="876f527fc6908a6dd462080aa599ffa1ad47afa5">https://bitbucket.org/rude/love/downloads/love-0.7.2-linux-src.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>lua-devel</Dependency>
+                <Dependency>DevIL-devel</Dependency>
+                <Dependency>physfs-devel</Dependency>
+                <Dependency>mpg123-devel</Dependency>
+                <Dependency>openal-devel</Dependency>
+                <Dependency>libsdl-devel</Dependency>
+                <Dependency>freetype-devel</Dependency>
+                <Dependency>libvorbis-devel</Dependency>
+                <Dependency>libmodplug-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>library/love07/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>love07</Name>
+            <RuntimeDependencies>
+                <Dependency>lua</Dependency>
+                <Dependency>DevIL</Dependency>
+                <Dependency>physfs</Dependency>
+                <Dependency>mpg123</Dependency>
+                <Dependency>openal</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>libvorbis</Dependency>
+                <Dependency>libmodplug</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="man">/usr/share/mime</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <Conflicts>
+                <Package>love</Package>
+            </Conflicts>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/icons/hicolor/scalable/apps/love.svg" permission="0644" owner="root">app.svg</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/hicolor/scalable/mimetypes/gnome-mime-application-x-love-game.svg" permission="0644" owner="root">game.svg</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/love.desktop" permission="0644" owner="root">love.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/mime/packages/love.xml" permission="0644" owner="root">love.xml</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-05-02</Date>
+                <Version>0.7.2</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>qt-mobility</Name>
             <Homepage>http://qt.nokia.com/products/qt-addons/mobility</Homepage>
             <Packager>
@@ -9371,6 +9487,55 @@
             <Update release="1">
                 <Date>2010-12-10</Date>
                 <Version>0.6</Version>
+                <Comment>First release</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>luajit</Name>
+            <Homepage>http://luajit.org</Homepage>
+            <Packager>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Packager>
+            <License>MIT</License>
+            <IsA>app:console</IsA>
+            <PartOf>library</PartOf>
+            <Summary xml:lang="en">A Just-In-Time compiler for Lua</Summary>
+            <Summary xml:lang="tr">Lua için Just-in-Time derleyici</Summary>
+            <Description xml:lang="en">LuaJIT is a Just-In-Time compiler for Lua.</Description>
+            <Description xml:lang="tr">LuaJIT, Lua için bir Just-in-Time derleyicidir.</Description>
+            <Archive type="targz" sha1sum="c9e5b262b53b4ac714d3ce42be7e7ca0e41ad7f3">http://luajit.org/download/LuaJIT-2.0.0-beta9.tar.gz</Archive>
+            <Patches>
+                <Patch level="1">beta9_hotfix1.patch</Patch>
+                <Patch>luaconf.patch</Patch>
+                <Patch>Makefile.patch</Patch>
+            </Patches>
+            <SourceURI>library/luajit/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>luajit</Name>
+            <RuntimeDependencies>
+                <Dependency>libgcc</Dependency>
+                <Dependency>gcc</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/share/lua</Path>
+                <Path fileType="data">/usr/share/luajit-*</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2012-04-23</Date>
+                <Version>2.0.0_beta9</Version>
                 <Comment>First release</Comment>
                 <Name>Anıl Özbek</Name>
                 <Email>ozbekanil@gmail.com</Email>
@@ -9739,7 +9904,7 @@
             <Summary xml:lang="tr">Lua kullanan 2B oyun motoru</Summary>
             <Description xml:lang="en">LÖVE is an awesome framework you can use to make 2D games in Lua.</Description>
             <Description xml:lang="tr">LÖVE, Lua&apos;da 2B oyunlar yapmak için harika bir çatıdır.</Description>
-            <Archive type="targz" sha1sum="876f527fc6908a6dd462080aa599ffa1ad47afa5">https://bitbucket.org/rude/love/downloads/love-0.7.2-linux-src.tar.gz</Archive>
+            <Archive type="targz" sha1sum="8c6ad95b7b0e3c6530b4778b9523f126ba9c9d90">https://bitbucket.org/rude/love/downloads/love-0.8.0-linux-src.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>lua-devel</Dependency>
                 <Dependency>DevIL-devel</Dependency>
@@ -9773,6 +9938,9 @@
                 <Path fileType="man">/usr/share/mime</Path>
                 <Path fileType="doc">/usr/share/doc</Path>
             </Files>
+            <Conflicts>
+                <Package>love07</Package>
+            </Conflicts>
             <AdditionalFiles>
                 <AdditionalFile target="/usr/share/icons/hicolor/scalable/apps/love.svg" permission="0644" owner="root">app.svg</AdditionalFile>
                 <AdditionalFile target="/usr/share/icons/hicolor/scalable/mimetypes/gnome-mime-application-x-love-game.svg" permission="0644" owner="root">game.svg</AdditionalFile>
@@ -9781,6 +9949,13 @@
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2012-04-23</Date>
+                <Version>0.8.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2011-09-06</Date>
                 <Version>0.7.2</Version>
