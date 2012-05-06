@@ -17,4 +17,4 @@ def build():
 def install():
     cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.dodoc("License", "Controls.txt", "data/sfx/Credits.txt")
+    pisitools.dodoc("Controls.txt", "License", "ThemeDescription.txt", "data/sfx/Credits.txt")
