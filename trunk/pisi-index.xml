@@ -6502,7 +6502,7 @@
             <Description xml:lang="en">Me and My Shadow is a 2D puzzle platform game that has a unique system.</Description>
             <Description xml:lang="tr">Me and My Shadow, eşsiz bir sisteme sahip 2B bulmaca platform oyunudur.</Description>
             <Icon>meandmyshadow</Icon>
-            <Archive type="targz" sha1sum="4d75b7e435fce17905d8be6d2c0514a3aef730a6">mirrors://sourceforge/meandmyshadow/0.1.2/meandmyshadow-0.1.2.tar.gz</Archive>
+            <Archive type="targz" sha1sum="a460084f75aa54105907811633200a8f57fc3492">mirrors://sourceforge/meandmyshadow/0.3/meandmyshadow-0.3-src.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>libsdl-devel</Dependency>
                 <Dependency>sdl-ttf-devel</Dependency>
@@ -6527,10 +6527,18 @@
                 <Path fileType="data">/usr/share/meandmyshadow</Path>
                 <Path fileType="data">/usr/share/applications</Path>
                 <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/icons</Path>
                 <Path fileType="doc">/usr/share/doc</Path>
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2012-05-06</Date>
+                <Version>0.3</Version>
+                <Comment>Version bump</Comment>
+                <Name>Anıl Özbek</Name>
+                <Email>ozbekanil@gmail.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2011-08-15</Date>
                 <Version>0.1.2</Version>
