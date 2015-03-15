@@ -1,0 +1,3 @@
+| Bubble Chains is a 2d arcade puzzle game. The aim is to collect chains of same-color bubbles, and to destroy all the target items. | <a href='http://www.youtube.com/watch?feature=player_embedded&v=IW_ADc8k3qw' target='_blank'><img src='http://img.youtube.com/vi/IW_ADc8k3qw/0.jpg' width='425' height=344 /></a> |
+|:-----------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|[Bubble Chains Home Page](http://bubble-chains.sintegrial.com/)| Packager: [ozbekanil](ozbekanil.md) |

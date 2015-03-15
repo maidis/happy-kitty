@@ -1,0 +1,3 @@
+| Frogatto is an open-source platformer or jump-and-run game that starring a certain quixotic frog. | <a href='http://www.youtube.com/watch?feature=player_embedded&v=HpuquomnmmY' target='_blank'><img src='http://img.youtube.com/vi/HpuquomnmmY/0.jpg' width='425' height=344 /></a> |
+|:--------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|[Frogatto & Friends Home Page](http://www.frogatto.com/)| Packager: [ozbekanil](http://code.google.com/p/happy-kitty/people/detail?u=ozbekanil) |

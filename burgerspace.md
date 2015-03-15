@@ -1,0 +1,3 @@
+| BurgerSpace is a clone of the 1982 BurgerTime video game by Data East. | <a href='http://www.youtube.com/watch?feature=player_embedded&v=uIvQvNnf7CI' target='_blank'><img src='http://img.youtube.com/vi/uIvQvNnf7CI/0.jpg' width='425' height=344 /></a> |
+|:-----------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|[BurgerSpace Home Page](http://perso.b2b2c.ca/sarrazip/dev/burgerspace.html)| Packager: [ozbekanil](ozbekanil.md) |

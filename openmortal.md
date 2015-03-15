@@ -1,0 +1,3 @@
+| OpenMortal is a spoof of the original Mortal Kombat fighting game. The funny thing about OpenMortal is that you can play the game AS YOURSELF. | <a href='http://www.youtube.com/watch?feature=player_embedded&v=sMoi-P39cgI' target='_blank'><img src='http://img.youtube.com/vi/sMoi-P39cgI/0.jpg' width='425' height=344 /></a> |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|[OpenMortal Home Page](http://openmortal.sourceforge.net)| Packager: [ozbekanil](ozbekanil.md) |

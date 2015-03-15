@@ -1,0 +1,3 @@
+| Plee the Bear will be a 2d platform game like those we found on consoles in the beginning of the 90's. | <a href='http://www.youtube.com/watch?feature=player_embedded&v=VWSZzPQa75o' target='_blank'><img src='http://img.youtube.com/vi/VWSZzPQa75o/0.jpg' width='425' height=344 /></a> |
+|:-------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|[Plee the Bear Home Page](http://plee-the-bear.sourceforge.net)| Packager: [ozbekanil](ozbekanil.md) |

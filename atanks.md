@@ -1,0 +1,3 @@
+| Atomic Tanks is a game in which you control an overly-powerful tank and attempt to blow up other highly powerful tanks. | <a href='http://www.youtube.com/watch?feature=player_embedded&v=nl6A87g2-mo' target='_blank'><img src='http://img.youtube.com/vi/nl6A87g2-mo/0.jpg' width='425' height=344 /></a> |
+|:------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|[Atomic Tanks Home Page](http://atanks.sourceforge.net/)| Packager: [ozbekanil](ozbekanil.md) |

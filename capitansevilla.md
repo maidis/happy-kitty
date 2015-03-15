@@ -1,0 +1,3 @@
+| capitan-sevilla is a remake of the spanish game Capitan Sevilla. | <a href='http://www.youtube.com/watch?feature=player_embedded&v=h76A3AEsp2g' target='_blank'><img src='http://img.youtube.com/vi/h76A3AEsp2g/0.jpg' width='425' height=344 /></a> |
+|:-----------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|[capitan-sevilla Home Page](http://computeremuzone.com/ficha.php?id=754)| Packager: [ozbekanil](ozbekanil.md) |

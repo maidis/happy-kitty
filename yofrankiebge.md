@@ -1,0 +1,5 @@
+| Yo Frankie! is based on the universe and characters of the open source film Big Buck Bunny. In the game, players assume the role of Frank, the sugar glider who was the antagonist of the film Big Buck Bunny. | <a href='http://www.youtube.com/watch?feature=player_embedded&v=RrNgj5A0Sao' target='_blank'><img src='http://img.youtube.com/vi/RrNgj5A0Sao/0.jpg' width='425' height=344 /></a> |
+|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|[Yo Frankie! Home Page](http://www.yofrankie.org/)| Packager: [ozbekanil](ozbekanil.md) |
+
+  * Please use yofrankie-bge as package name when installing game.

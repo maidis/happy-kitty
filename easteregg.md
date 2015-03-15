@@ -1,0 +1,1 @@
+&lt;wiki:gadget url="http://www.playitontheweb.com/gadgets/Flash-Tetris-gadg.xml" height="400" width="400" border="0" title="Easter Egg Tetris"/&gt;

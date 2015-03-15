@@ -1,0 +1,3 @@
+| Lugaru is a third-persion action game featuring a unique close-range combat system. | <a href='http://www.youtube.com/watch?feature=player_embedded&v=LWTxaAj5w-4' target='_blank'><img src='http://img.youtube.com/vi/LWTxaAj5w-4/0.jpg' width='425' height=344 /></a> |
+|:------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|[Lugaru Home Page](http://code.google.com/p/lugaru/)| Packager: [ozbekanil](ozbekanil.md) |

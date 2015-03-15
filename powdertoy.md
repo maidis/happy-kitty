@@ -1,0 +1,3 @@
+| Powder Toy is a desktop version of the classic falling sand physics sandbox, it simulates air pressure and velocity as well as heat. | <a href='http://www.youtube.com/watch?feature=player_embedded&v=Jdf2JSKHWe0' target='_blank'><img src='http://img.youtube.com/vi/Jdf2JSKHWe0/0.jpg' width='425' height=344 /></a> |
+|:-------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|[Powder Toy Home Page](http://powdertoy.co.uk/)| Packager: [ozbekanil](ozbekanil.md) |

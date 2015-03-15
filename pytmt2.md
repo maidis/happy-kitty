@@ -1,0 +1,4 @@
+| Too Many Troopers 2 is a Jedi game. You've got to reflect blaster shots with your lightsaber with your mouse. | <a href='http://www.youtube.com/watch?feature=player_embedded&v=zOWpM7kJzb8' target='_blank'><img src='http://img.youtube.com/vi/zOWpM7kJzb8/0.jpg' width='425' height=344 /></a> |
+|:--------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|[Too Many Troopers 2 pygame Page](http://pygame.org/project-Too+Many+Troopers+2-1707-.html)| Packager: [ozbekanil](ozbekanil.md) |
+| [Build files](http://code.google.com/p/happy-kitty/source/browse/trunk/game/arcade/pytmt2/) | Version: 0.9 |

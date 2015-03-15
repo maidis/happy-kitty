@@ -1,0 +1,3 @@
+| Ultimate Smash Friends is a 2d arcade fight game, inspired by the Super Smash Bros Nintendo series. It's written in Python with pygame. | <a href='http://www.youtube.com/watch?feature=player_embedded&v=yRbPC8tVkeY' target='_blank'><img src='http://img.youtube.com/vi/yRbPC8tVkeY/0.jpg' width='425' height=344 /></a> |
+|:----------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|[Ultimate Smash Friends Home Page](http://usf.tuxfamily.org)| Packager: [ozbekanil](ozbekanil.md) |

@@ -1,0 +1,1 @@
+&lt;wiki:gadget url="http://dl.dropbox.com/u/1836567/happy-kitty/group-happy-kitty-devel.xml" width="800" height="600" /&gt;
